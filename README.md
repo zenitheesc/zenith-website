@@ -1,4 +1,4 @@
-<h1 align="center" style="color:white; background-color:black">[PROJECT NAME]</h1>
+<h1 align="center" style="color:white; background-color:black">ZenSite 2021</h1>
 <h4 align="center">[insert *brief* project description]</h4>
 
 <p align="center">
