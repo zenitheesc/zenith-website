@@ -1,33 +1,33 @@
 <h1 align="center" style="color:white; background-color:black">ZenSite 2021</h1>
-<h4 align="center">[insert *brief* project description]</h4>
+<h4 align="center">Reimagining Zenith's web presence through a modern website that respects the group's technical knowledge and passion for development. We're a student group based in Brazil, you can check us out <a src="https://www.youtube.com/watch?v=QoqiUDDEepY">here</a>.</h4>
 
 <p align="center">
 	<a href="http://zenith.eesc.usp.br/">
-    <img src="https://img.shields.io/badge/Zenith-Embarcados-black?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Zenith-software-black?style=for-the-badge"/>
     </a>
     <a href="https://eesc.usp.br/">
     <img src="https://img.shields.io/badge/Linked%20to-EESC--USP-black?style=for-the-badge"/>
     </a>
-    <a href="https://github.com/zenitheesc/site-2021/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/zenitheesc/site-2021?style=for-the-badge"/>
+    <a href="https://github.com/zenitheesc/zenith-website/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/zenitheesc/zenith-website?style=for-the-badge"/>
     </a>
-    <a href="https://github.com/zenitheesc/site-2021/issues">
-    <img src="https://img.shields.io/github/issues/zenitheesc/site-2021?style=for-the-badge"/>
+    <a href="https://github.com/zenitheesc/zenith-website/issues">
+    <img src="https://img.shields.io/github/issues/zenitheesc/zenith-website?style=for-the-badge"/>
     </a>
-    <a href="https://github.com/zenitheesc/site-2021/commits/main">
-    <img src="https://img.shields.io/github/commit-activity/m/zenitheesc/site-2021?style=for-the-badge">
+    <a href="https://github.com/zenitheesc/zenith-website/commits/main">
+    <img src="https://img.shields.io/github/commit-activity/m/zenitheesc/zenith-website?style=for-the-badge">
     </a>
-    <a href="https://github.com/zenitheesc/site-2021/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/zenitheesc/site-2021?style=for-the-badge"/>
+    <a href="https://github.com/zenitheesc/zenith-website/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/zenitheesc/zenith-website?style=for-the-badge"/>
     </a>
-    <a href="https://github.com/zenitheesc/site-2021/commits/main">
-    <img src="https://img.shields.io/github/last-commit/zenitheesc/site-2021?style=for-the-badge"/>
+    <a href="https://github.com/zenitheesc/zenith-website/commits/main">
+    <img src="https://img.shields.io/github/last-commit/zenitheesc/zenith-website?style=for-the-badge"/>
     </a>
-    <a href="https://github.com/zenitheesc/site-2021/issues">
-    <img src="https://img.shields.io/github/issues-raw/zenitheesc/site-2021?style=for-the-badge" />
+    <a href="https://github.com/zenitheesc/zenith-website/issues">
+    <img src="https://img.shields.io/github/issues-raw/zenitheesc/zenith-website?style=for-the-badge" />
     </a>
-    <a href="https://github.com/zenitheesc/site-2021/pulls">
-    <img src = "https://img.shields.io/github/issues-pr-raw/zenitheesc/site-2021?style=for-the-badge">
+    <a href="https://github.com/zenitheesc/zenith-website/pulls">
+    <img src = "https://img.shields.io/github/issues-pr-raw/zenitheesc/zenith-website?style=for-the-badge">
     </a>
 </p>
 
@@ -47,9 +47,28 @@
 
 ## How to contribute
 
-`(optional, depends on the project) list of simple rules to help people work on the project.`
+Report bugs and/or feature-requests on our [_issue tab_](https://github.com/zenitheesc/zenith-website/issues). Maybe there's something there waiting for you to work on!
 
-`Examples: How to format a pull request\n How to format an issue`
+### Gitflow **Holy** Rules
+
+<p align="center">
+<a href="https://raw.githubusercontent.com/zenitheesc/zenith-website/assets/gitflow.png" target="_blank">
+<img src="https://raw.githubusercontent.com/zenitheesc/zenith-website/assets/gitflow.png" width=40% style="transform:rotate(90deg)"/>
+</a>
+</p>
+
+- **Never commit directly into the Production branch**;
+- **Always** run `git fetch && git status`, especially before merging or pushing (I always run it every 5 minutes or so);
+- Create a branch to work on;
+- **Before** merging into Develop, **TEST** your implementation (is it responsive?);
+
+### Naming conventions
+
+- **Variables**: camelCase;
+- **Functions**: camelCase;
+- **Classes**: PascalCase;
+- **Archives**: PascalCase;
+- **Folders**: kebab-case;
 
 ---
 
