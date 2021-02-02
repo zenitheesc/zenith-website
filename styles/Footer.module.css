@@ -1,0 +1,68 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    font-size: 13px;
+    color: white;
+    font-weight: 400;
+    padding: 1.5em 10em 1.5em 10em;
+}
+
+.footerLeftSide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerLeftSide > a > img {
+    width: 150px;
+    height: auto;
+    margin-right: 15px;
+}
+ 
+.footerData{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.829);
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.socialIconContainer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 212px;
+}
+
+.socialIcon {
+    color: #fff;
+    font-size: 24px;
+    height: 24px;
+}
+
+#zenithCopyright {
+    font-size: 12px;
+    margin-bottom: 1px;
+}
+
+#easterEgg {
+    font-weight: 400;
+}
+
+@media screen and (max-width: 960px) {
+    .footerData{text-align: center;}
+    .footer { 
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        padding: 1.5em 5em 1.5em 5em;
+    }
+    .footerLeftSide {  flex-direction: column; }
+    .footerRightSide { margin-top: 1.5em;}
+}
