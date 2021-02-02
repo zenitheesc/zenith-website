@@ -1,5 +1,14 @@
 <h1 align="center" style="color:white; background-color:black">ZenSite 2021</h1>
-<h4 align="center">Reimagining Zenith's web presence through a modern website that respects the group's technical knowledge and passion for development. We're a student group based in Brazil, you can check us out <a src="https://www.youtube.com/watch?v=QoqiUDDEepY">here</a>.</h4>
+
+<h4 align="center">Reimagining Zenith's web presence through a modern website that respects the group's technical knowledge and passion for development. We're a student group based in Brazil, we develop open software and hardware. #AdAstraPerAspera</h4>
+
+You can check us out [here](https://www.youtube.com/watch?v=QoqiUDDEepY)
+
+<p align = "center">
+<a href="http://vercel.com/?utm_source=zenith-aerospace&utm_campaign=oss">
+<img src="https://raw.githubusercontent.com/zenitheesc/zenith-website/assets/vercel-banner.png"/>
+</a>
+</p>
 
 <p align="center">
 	<a href="http://zenith.eesc.usp.br/">
@@ -53,13 +62,14 @@ Report bugs and/or feature-requests on our [_issue tab_](https://github.com/zeni
 
 <p align="center">
 <a href="https://raw.githubusercontent.com/zenitheesc/zenith-website/assets/gitflow.png" target="_blank">
-<img src="https://raw.githubusercontent.com/zenitheesc/zenith-website/assets/gitflow.png" width=40% style="transform:rotate(90deg)"/>
+<img src="https://raw.githubusercontent.com/zenitheesc/zenith-website/assets/gitflow.png"/>
 </a>
 </p>
 
 - **Never commit directly into the Production branch**;
-- **Always** run `git fetch && git status`, especially before merging or pushing (I always run it every 5 minutes or so);
+- **Always** run `git fetch && git status`, especially before merging (also run it on the branch you're trying to merge to) or pushing (I always run it every 5 minutes or so);
 - Create a branch to work on;
+- Name your branches according to their function. ex: "feature/feature-name"
 - **Before** merging into Develop, **TEST** your implementation (is it responsive?);
 
 ### Naming conventions
