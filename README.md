@@ -55,6 +55,7 @@ You can check us out [here](https://www.youtube.com/watch?v=QoqiUDDEepY)
 `A simple list of steps indicating how one can run and test the project.`
 
 ## How to contribute
+Check out our [figma](https://www.figma.com/file/eA9iZxhtQnhIC5erngA2CY/Prot%C3%B3tipos-Zenith?node-id=0%3A1).
 
 Report bugs and/or feature-requests on our [_issue tab_](https://github.com/zenitheesc/zenith-website/issues). Maybe there's something there waiting for you to work on!
 
