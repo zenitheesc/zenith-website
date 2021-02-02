@@ -1,0 +1,56 @@
+.bannersText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    color: white;
+    align-items: left;
+    padding-left: 4em;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+#gitHubButton{
+    height: 3vw;
+    width: 8vw;
+    margin-top: 40%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0.5em;
+    border-style: solid; 
+    border-color: white;
+    background-color: transparent;
+    font-size: 1vw;
+    color: white;
+    font-family: sans-serif;
+    
+}
+
+#gitHubIcon{
+    height: 2vw;
+    width: auto;
+}
+#gitHubButton:hover{
+    border-color: rgb(201, 199, 199);
+    color: rgb(201, 199, 199);
+}
+
+@media screen and (max-width: 960px) {
+    .bannersText {
+        width: auto;
+        font-size: 5vw;
+        padding-left: 1.5em;
+    }
+    #gitHubButton{
+        height: 2em;
+        width: 7em;
+        font-size: 1em;
+        margin-top: 0px;
+    }
+    #gitHubIcon{
+        height: 1.2em;
+        width: auto;
+    }
+}

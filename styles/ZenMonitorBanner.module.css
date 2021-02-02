@@ -1,0 +1,28 @@
+.zenMonitorBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    height: 40vw;
+    align-items: left;
+    padding-left: 0.3em;
+    padding-right: 1.5em;
+}
+
+.zenMonitorImage {
+    height: auto;
+    width: auto;
+    display: flex;
+    padding-right: 6em;
+}
+
+
+@media screen and (max-width: 960px) {
+    .zenMonitorBanner--data{text-align: left;}
+    .zenMonitorBanner {  flex-direction: column; align-items: center; height: 180vw;}
+    .zenMonitorImage {
+        width: 70vw;
+        display: flex;
+        padding-right: 0em;
+    }
+}
