@@ -11,7 +11,10 @@ import {
 	itensContainerActive,
 	itensContainerDeactive
 	} from '../styles/NavBar.module.css'
+
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+
 
 function NavBar() {
 	const [openMenu, setClick] = useState(true);
@@ -50,19 +53,24 @@ function NavBar() {
 								 (showMenu || openMenu) ? `${itensContainerActive}` : `${itensContainerDeactive}`
 								 ].join(" ")}>
 					<li className={navbarItem}>
-						<a href="./oZenith">O ZENITH</a>
+						<Link href="/Zenith">
+							<a >O ZENITH</a>
+						</Link>
 					</li>
 					<li className={navbarItem}>
-						<a href="./projetos">PROJETOS</a>
+						<Link href="/Projetos">
+							<a>PROJETOS</a>
+						</Link>
 					</li>
 					<li className={navbarItem}>
-						<a href="./kurumim">KURUMIM</a>
+						<Link href="/Kurumim">
+							<a>KURUMIM</a>
+						</Link>
 					</li>
 					<li className={navbarItem}>
-						<a href="./processoSeletivo">PROCESSO SELETIVO</a>
-					</li>
-					<li className={navbarItem}>
-						<a href="./contato">CONTATO</a>
+						<Link href="/ProcessoSeletivo">
+							<a>PROCESSO SELETIVO</a>
+						</Link>
 					</li>
 				</ul>
 			</div>
