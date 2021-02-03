@@ -30,8 +30,4 @@ function genusBanner() {
 }
 
 
-
-
-
-
 export default genusBanner;

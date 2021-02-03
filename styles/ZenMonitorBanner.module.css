@@ -5,15 +5,14 @@
     background-color: black;
     height: 40vw;
     align-items: left;
-    padding-left: 0.3em;
-    padding-right: 1.5em;
+    
 }
 
 .zenMonitorImage {
     height: auto;
-    width: auto;
+    /*width: auto;*/
     display: flex;
-    padding-right: 6em;
+    padding-right: 7em;
 }
 
 

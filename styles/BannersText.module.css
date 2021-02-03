@@ -10,10 +10,11 @@
     font-family: sans-serif;
 }
 
+
 #gitHubButton{
     height: 3vw;
     width: 8vw;
-    margin-top: 40%;
+    margin-top: 35%;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
