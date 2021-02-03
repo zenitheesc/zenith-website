@@ -11,20 +11,20 @@
 .genusImage {
     width: auto;
     height: 70%;
-    display: flex;
-    padding-right: 4em;
+    /*display: absolute;*/
+    margin-right: 3.5em;
     margin-top: 4em;
 }
 
 
 @media screen and (max-width: 960px) {
     .genusBanner--data{text-align: left;}
-    .genusBanner {  flex-direction: column; align-items: left; height: 180vw;}
+    .genusBanner {  flex-direction: column; align-items: center; height: 180vw;}
     .genusImage {
-        height: 40%;
-        align-items: center;
-        padding-left: 3em;
+        width: 90vw;
+        height: auto;
+        margin-right: 0em;
         margin-top: 0em;
-        margin-bottom: 1.3em;
+        margin-bottom: 1em;
     }
 }
