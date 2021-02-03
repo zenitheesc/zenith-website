@@ -8,7 +8,7 @@ function zenMonitorBanner() {
 			<div className={textStyles.bannersText}>
 				<h1>Zenith Monitor</h1>
 				<h2>Tecnologia para rastreamento de sondas aerospaciais</h2>
-				<form action="https://github.com/zenitheesc/Zenith-Monitor" target="_blank">
+				<form action="https://github.com/zenitheesc/Zenith-Monitor" target="_blank" >
                 	<button id={textStyles.gitHubButton} type="submit" >
 						<img id={textStyles.gitHubIcon} src="/images/GitHub-White-Icon.png" />
 						GITHUB 

@@ -21,7 +21,6 @@
     .zenMonitorImage {
         width: 70vw;
         height: auto;
-        display: flex;
         align-items: center;
         padding-right: 0em;
     }

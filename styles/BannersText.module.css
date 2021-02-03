@@ -1,20 +1,22 @@
 .bannersText {
     width: 50%;
-    display: flex;
+    position: relative;
     flex-direction: column;
     font-size: 1.5vw;
     color: white;
     align-items: left;
     padding-left: 4em;
-    font-weight: 300;
     font-family: sans-serif;
 }
 
+.bannersText > form{
+    position: absolute;
+    bottom: 2em;
+}
 
 #gitHubButton{
     height: 3vw;
     width: 8vw;
-    margin-top: 35%;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -27,6 +29,7 @@
     font-size: 1vw;
     color: white;
     font-family: sans-serif;
+    
     
 }
 
