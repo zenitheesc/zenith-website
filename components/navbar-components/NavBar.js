@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import NavHeader from './NavHeader';
+import NavMenu from './NavMenu';
 
 
 function NavBar() {
@@ -7,7 +7,8 @@ function NavBar() {
 
 	return (
 		<>
-
+			<NavHeader />
+			<NavMenu />
 		</>
 	)
 }
