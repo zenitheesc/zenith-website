@@ -55,14 +55,13 @@ function NavBar() {
 		};
 
 		window.addEventListener("scroll", onScroll);
-		console.log(scrollDir);
 
 		return () => window.removeEventListener("scroll", onScroll);
 
 	}, [scrollDir]);
 
 	return (
-		<div className={style.navBarContainer} style={{display: (scrollDir === "down") ? 'none' : 'flex'}}>
+		<div className={scrollDir === "down"? style.navBarContainerDeactive:  style.navBarContainerActive} >
 			<div className={style.navBarContainerBackground} style={{backgroundColor: (scrollDir === "top") ? 'transparent' : 'black'}}/>
 			<NavHeader toggleMenu={toggleMenu} isMenuOpen={menu} />
 			<NavMenu isMenuOpen={menu} />
