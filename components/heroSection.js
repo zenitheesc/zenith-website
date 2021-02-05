@@ -1,5 +1,5 @@
 import React from 'react';
-import { isMobileSafari, isIOS, isMobileOnly } from 'react-device-detect';
+import { isMobileSafari, isAndroid, isMobileOnly } from 'react-device-detect';
 import styles from '../styles/HeroSection.module.css';
 
 function HeroSection() {
@@ -17,7 +17,7 @@ function HeroSection() {
         </p>
       </div>
     );
-  } if (!isMobileOnly || isIOS) {
+  } if (!isMobileOnly || !isAndroid) {
     return (
       <div className={styles.heroContainer}>
         <video autoPlay loop muted playsInline preload="auto">
