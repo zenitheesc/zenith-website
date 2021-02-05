@@ -3,7 +3,21 @@ import { isMobileSafari, isAndroid, isMobileOnly } from 'react-device-detect';
 import styles from '../styles/HeroSection.module.css';
 
 function HeroSection() {
-  if (isMobileSafari) {
+  if (isAndroid) {
+    return (
+      <div className={styles.heroContainer}>
+        <video autoPlay loop muted>
+          <source src="images/HomePage/comp5.m4v"/>
+        </video>
+        <h1>A CASA DAS ESTRELAS EM SÃO CARLOS</h1>
+        <hr />
+        <p>
+          Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a oportunidade
+          de conquistar o espaço
+        </p>
+      </div>
+    );
+  } else if (isMobileSafari) {
     return (
       <div className={styles.heroContainer}>
         <video autoPlay loop muted playsInline preload="auto">
@@ -17,7 +31,7 @@ function HeroSection() {
         </p>
       </div>
     );
-  } if (!isMobileOnly || !isAndroid) {
+  } else {
     return (
       <div className={styles.heroContainer}>
         <video autoPlay loop muted playsInline preload="auto">
@@ -33,21 +47,7 @@ function HeroSection() {
         </p>
       </div>
     );
-  } else {
-    return (
-      <div className={styles.heroContainer}>
-        <video autoPlay loop muted>
-          <source src="images/HomePage/comp5.m4v"/>
-        </video>
-        <h1>A CASA DAS ESTRELAS EM SÃO CARLOS</h1>
-        <hr />
-        <p>
-          Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a oportunidade
-          de conquistar o espaço
-        </p>
-      </div>
-    );
-  }
+  } 
 }
 
 export default HeroSection;
