@@ -64,7 +64,7 @@
 }
 
 .menuIcon {
-
+    cursor: pointer;
     font-size: 24px;
     display: none;
     color: white;
