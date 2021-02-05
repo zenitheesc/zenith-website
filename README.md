@@ -6,7 +6,7 @@ You can check us out [here](https://www.youtube.com/watch?v=QoqiUDDEepY)
 
 <p align = "center">
 <a href="http://vercel.com/?utm_source=zenith-aerospace&utm_campaign=oss">
-<img src="https://raw.githubusercontent.com/zenitheesc/zenith-website/assets/vercel-banner.png"/>
+<img src="https://raw.githubusercontent.com/zenitheesc/zenith-website/8bfb22b1dbb8a86ada67ac7fbc0dfc34b9518b0d/powered-by-vercel.svg"/>
 </a>
 </p>
 

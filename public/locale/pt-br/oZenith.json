@@ -1,0 +1,50 @@
+{
+    "navBar": ["O ZENITH", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO", "CONTATO"],
+    "oZenithHero": {
+        "title": "O que é o Zenith?",
+        "subtitle": ["Nós somos CIÊNCIA", "Nós somos TECNOLOGIA", "Nós somos INOVAÇÃO", "Nós somos CONEXÕES"]
+    },
+    "oZenithCard1": {
+        "title":"Nós amamos o espaço",
+        "text": [
+            "Somos uma extracurricular da Escola de Engenharia de São Carlos (EESC) focada na construção de satélites e sondas aeroespaciais.",
+            "Unindo cerca de 60 estudantes da Universidade de São Paulo (USP) e da Universidade Federal de São Carlos (Ufscar), nós somos capazes de construir o hardware, software e estrutura dos nossos projetos."
+        ]
+    },
+    "oZenithCard2": {
+        "title":"O Começo",
+        "text": [
+            "O Zenith nasceu a partir da proposta de Lucas Fonseca, participante da missão Rosetta, de desenvolver um CubeSat dentro da universidade. A partir de 2013, alunos da graduação começaram a se reunir com Lucas e estudar a área espacial.",
+            "Mas, somente em 2014, o grupo se consolidou. Com uma comunicação com dois pesquisadores do Laboratório Nacional de Luz Síncrotron (LNLS), o Zenith começou a desenvolver um experimento em alta altitude e nunca mais parou de avançar."
+        ]
+    },
+    "oZenithCard3": {
+        "title":"Nossos valores",
+        "text": [
+            {
+                "title": "Ciência",
+                "text": "Incentivar a produção científica nacional e facilitar o acesso à ciência no ambiente universitário"
+            },
+            {
+                "title": "Pessoas",
+                "text": "O Zenith possui uma hierarquia horizontal, onde todos os integrantes possuem voz, mas responsabilidades distintas."
+            },
+            {
+                "title": "Capacitação profissional",
+                "text": "Os integrantes tem a oportunidade de desenvolver habilidades técnicas em grupo, praticando suas soft skills."
+            }
+        ]
+    },
+    "oZenithCard4": {
+        "title":"Você deseja ser parte dessa exploração?",
+        "text": [
+            "Todo ano nos abrimos um processo seletivo para recrutar novos integrantes!",
+            "Estamos buscando pessoas curiosas e tão apaixonadas pelo espaço e por tecnologia quanto nós!",
+            "Processo Seletivo"
+        ]
+    },
+    "footer": {
+        "copyright": "© 2020  Zenith Aerospace",
+        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
+    }
+}
