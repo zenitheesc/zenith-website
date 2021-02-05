@@ -3,18 +3,10 @@ import NavLinks from './NavLinks'
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-export default function NavHeader() {
-	const [menu, setMenuState] = useState(false);
+export default function NavHeader(props) {
 
-	const openMenu = (open) => {
-		setMenuState(open);
-	}
-
-	useEffect(function onFirstMount() {
-
-		window.addEventListener("resize", ()=>{openMenu(false)});
-
-	}, []);
+	const toggleMenu = props.toggleMenu;
+	const isMenuOpen = props.isMenuOpen;
 
 	return (
 		<>
@@ -25,9 +17,9 @@ export default function NavHeader() {
 
 				<NavLinks className={style.navigationHeader} />
 
-				{menu ?
-					<FaTimes className={style.menuIcon} onClick={() => { openMenu(false) }} /> :
-					<FaBars className={style.menuIcon} onClick={() => { openMenu(true) }} />
+				{isMenuOpen ?
+					<FaTimes className={style.menuIcon} onClick={() => { toggleMenu(false) }} /> :
+					<FaBars className={style.menuIcon} onClick={() => { toggleMenu(true) }} />
 				}
 
 
