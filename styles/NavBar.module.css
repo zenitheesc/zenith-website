@@ -1,4 +1,4 @@
-.navBarContainer {
+.navBarHeaderContainer {
     display: flex;
     flex-direction: row;
     background-color: transparent;
@@ -9,10 +9,33 @@
     padding-right: 1.5em;
     width: 100%;
     height: 90px;
-    position: fixed;
+    position: relative;
     z-index: 3;
     top: 0px;
     left: 0px;
+}
+.navdeactive{
+    display: none;
+    width: 100%;
+    z-index: 3;
+    top: 0px;
+    transition: max-height 1s ease-in-out;
+    background: black;
+}
+.navBarContainer{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 3;
+    top: 0px;
+}
+
+.navBarContainerBackground{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 .navigationMenu {
