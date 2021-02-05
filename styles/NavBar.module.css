@@ -16,10 +16,9 @@
 }
 
 .navigationMenu {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: fixed;
-    overflow: hidden;
     left: 0px;
     top: 0px;
     margin: 0px;
@@ -31,7 +30,7 @@
     height: 100%;
 }
 
-.navigationMenu .navbarItem {
+.navigationMenu .navBarItem {
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     border-bottom: 1px solid rgba(169, 169, 169, 0.301);
@@ -74,6 +73,7 @@
     .navigationHeader {
         display: none;
     }
+
     .menuIcon {
         display: flex;
     }
