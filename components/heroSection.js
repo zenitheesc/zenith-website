@@ -36,7 +36,7 @@ function HeroSection() {
   } else {
     return (
       <div className={styles.heroContainer}>
-        <video autoPlay loop muted playsInline preload="auto">
+        <video autoPlay loop muted>
           <source src="images/HomePage/comp5.m4v"/>
         </video>
         <h1>A CASA DAS ESTRELAS EM SÃO CARLOS</h1>
