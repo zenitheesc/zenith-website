@@ -48,14 +48,19 @@
         font-size: 5vw;
         padding-left: 1.5em;
     }
+    .bannersText > form{
+        position: relative;
+        top: 50px;
+    }
     #gitHubButton{
         height: 2em;
         width: 7em;
         font-size: 1em;
-        margin-top: 0px;
+        
     }
     #gitHubIcon{
         height: 1.2em;
         width: auto;
     }
+
 }
