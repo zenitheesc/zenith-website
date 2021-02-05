@@ -1,0 +1,51 @@
+.apoiadoresBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #807676;
+    height: 40vw;
+    align-items: left; 
+}
+
+.bannersText {
+    flex-direction: column;
+    font-size: 1.5vw;
+    color: white;
+    align-items: left;
+    padding-left: 4em;
+    padding-top: 5em;
+    font-family: sans-serif;
+}
+
+.apoiadoresImage {
+    width: auto;
+    height: 25vw;
+    align-items: center;
+    position: relative;
+    top: 5em;
+    right: 5em;
+    
+}
+
+
+@media screen and (max-width: 960px) {
+    .apoiadoresBanner--data{text-align: center;}
+    .apoiadoresBanner {  
+        flex-direction: column; 
+        height: 100vw;
+    }
+
+    .bannersText {
+        font-size: 3vw;
+        height: 40px;
+        align-items: center;
+        
+    }
+
+    .apoiadoresImage {
+        
+        top: 0em;
+        right: 0em;
+        bottom: 3em;
+    }
+}
