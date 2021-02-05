@@ -5,7 +5,7 @@ function HeroSection() {
     return (
         <div className={styles.heroContainer}>
             <video autoPlay loop muted playsInline preload="auto"> 
-                <source src='images/HomePage/video.mp4' type='video/mp4'/>            
+                <source src='images/HomePage/original.mp4' type='video/mp4'/>            
                 <source src='images/HomePage/video.webm' type='video/webm'/>            
                 <source src='images/HomePage/video.ogg' type='video/ogg'/>            
             </video>
