@@ -4,11 +4,17 @@ import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function NavHeader() {
-	const [menu, setMenuState] = useState(true);
+	const [menu, setMenuState] = useState(false);
 
 	const openMenu = (open) => {
 		setMenuState(open);
 	}
+
+	useEffect(function onFirstMount() {
+
+		window.addEventListener("resize", ()=>{openMenu(false)});
+
+	}, []);
 
 	return (
 		<>
