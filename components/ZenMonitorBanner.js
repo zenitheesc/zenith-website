@@ -15,7 +15,7 @@ function zenMonitorBanner() {
                 	</button>
             	</form>
 			</div>
-			<img className={styles.zenMonitorImage} src="/images/zenithmonitor 1.png" />
+			<img className={styles.zenMonitorImage} src="/images/monitor-banner/ZenithMonitor.png" />
 		</div>
 		
     )

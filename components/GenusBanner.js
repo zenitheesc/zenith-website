@@ -20,7 +20,7 @@ function genusBanner() {
             	</form>
 			</div>
 			
-			<img className={styles.genusImage} src="/images/pixlr-bg-result 1.png" width="20%" style={{display: "flex"}}/>
+			<img className={styles.genusImage} src="/images/genus-banner/Genus.png" width="20%" style={{display: "flex"}}/>
 			
 		</div>
 		

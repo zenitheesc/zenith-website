@@ -43,7 +43,8 @@
     }
 
     .apoiadoresImage {
-        
+        display: flex;
+        flex-direction: column;
         top: 0em;
         right: 0em;
         bottom: 3em;
