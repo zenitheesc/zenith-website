@@ -1,4 +1,4 @@
-import NavBar from '../components/NavBar';
+import NavBar from '../components/navbar-components/NavBar';
 import Footer from '../components/footer';
 
 function Kurumim() {
