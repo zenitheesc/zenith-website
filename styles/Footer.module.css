@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     background-color: black;
-    font-size: 13px;
+    font-size: 0.5em;
     color: white;
     font-weight: 400;
-    padding: 1.5em 10em 1.5em 10em;
+    padding: 1.5em 12em 1.5em 12em;
 }
 
 .footerLeftSide {
@@ -16,9 +16,9 @@
 }
 
 .footerLeftSide > a > img {
-    width: 150px;
+    width: 148px;
     height: auto;
-    margin-right: 15px;
+    margin-right: 16px;
 }
  
 .footerData{
@@ -33,7 +33,7 @@
 }
 
 .socialIconContainer {
-    margin-top: 15px;
+    margin-top: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,12 +56,12 @@
 }
 
 @media screen and (max-width: 960px) {
-    .footerData{text-align: center;}
+    .footerData{ text-align: center; }
     .footer { 
         flex-direction: column; 
         align-items: center;
         justify-content: center;
-        padding: 1.5em 5em 1.5em 5em;
+        padding: 1.5em 6em 1.5em 6em;
     }
     .footerLeftSide {  flex-direction: column; }
     .footerRightSide { margin-top: 1.5em;}
