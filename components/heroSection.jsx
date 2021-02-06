@@ -20,7 +20,6 @@ function HeroSection() {
 
   }, []);
 
-
   return (
     <div className={videoAutoPlayable ? styles.heroContainer : `${styles.heroContainer} ${styles.heroContainerStaticImage}`}>
       <video ref={videoElement} autoPlay loop muted playsInline preload="auto">
