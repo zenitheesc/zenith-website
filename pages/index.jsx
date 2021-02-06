@@ -1,13 +1,13 @@
 import React from 'react';
 import NavBar from '../components/navBar';
 import Footer from '../components/footer';
-import HeroSection from '../components/heroSection';
+import HomeHeroSection from '../components/heroSection';
 
 function Home() {
   return (
     <>
       <NavBar />
-      <HeroSection />
+      <HomeHeroSection />
       <Footer />
     </>
   );

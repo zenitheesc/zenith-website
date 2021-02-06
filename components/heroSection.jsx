@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../styles/HeroSection.module.css';
+import styles from '../styles/HomepageHeroSection.module.css';
 
-function HeroSection() {
+function HomepageHeroSection() {
   return (
     <div className={styles.heroContainer}>
       <video src="images/HomePage/video2.mp4" autoPlay loop muted />
@@ -15,4 +15,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default HomepageHeroSection;
