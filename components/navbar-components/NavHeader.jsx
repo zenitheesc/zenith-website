@@ -11,13 +11,16 @@ export default function NavHeader(props) {
   return (
     <>
       <div className={style.navBarHeaderContainer}>
+
         <a href="./">
           <img className={style.navBarIcon} src="/images/NavigationBar/logo.png" />
         </a>
 
         <NavLinks className={style.navigationHeader} />
 
-        <Hamburger size={24} className={style.menuIcon} color={"#FFF"} duration={0.3} toggled={isMenuOpen} toggle={toggleMenu} rounded />
+        <div className={style.menuIconWrapper}>
+          <Hamburger size={24} color="#FFF" duration={0.3} toggled={isMenuOpen} toggle={toggleMenu} rounded />
+        </div>
 
       </div>
     </>
