@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
 import { Fade as Hamburger } from 'hamburger-react';
 import style from '../../styles/NavBar.module.css';
 import NavLinks from './NavLinks';
