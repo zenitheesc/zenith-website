@@ -27,7 +27,6 @@ function HeroSection() {
       <p>
         Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a oportunidade
         de conquistar o espaço
-        test/homepage
       </p>
     </div>
   );
