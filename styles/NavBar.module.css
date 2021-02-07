@@ -52,6 +52,7 @@
     right: 0px;
     top: 0px;
     margin: 0px;
+    padding: 0px;
     padding-top: 100px;
     background-color: black;
     height: 100%;
@@ -60,6 +61,7 @@
 }
 
 .navigationMenuActive {
+    display: flex;
     height: 100%;
     width: 100%;
     display: flex;
