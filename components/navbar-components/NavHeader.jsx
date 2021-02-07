@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Fade as Hamburger } from 'hamburger-react';
 import style from '../../styles/NavBar.module.css';
 import NavLinks from './NavLinks';
 
@@ -16,9 +17,7 @@ export default function NavHeader(props) {
 
         <NavLinks className={style.navigationHeader} />
 
-        {isMenuOpen
-          ? <FaTimes className={style.menuIcon} onClick={() => { toggleMenu(false); }} />
-          : <FaBars className={style.menuIcon} onClick={() => { toggleMenu(true); }} />}
+        <Hamburger size={24} className={style.menuIcon} color={"#FFF"} duration={0.3} toggled={isMenuOpen} toggle={toggleMenu} rounded />
 
       </div>
     </>
