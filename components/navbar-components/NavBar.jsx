@@ -1,72 +1,65 @@
+import React, { useState, useEffect } from 'react';
 import NavHeader from './NavHeader';
 import NavMenu from './NavMenu';
 import style from '../../styles/NavBar.module.css';
-import React, { useState, useEffect } from 'react';
 
 function NavBar() {
-	const [menu, setMenuState] = useState(false);
-	const [scrollDir, setScrollDir] = useState("top");
+  const [menu, setMenuState] = useState(false);
+  const [scrollDir, setScrollDir] = useState('top');
 
-	const toggleMenu = (open) => {
-		setMenuState(open);
-	}
+  const toggleMenu = (open) => {
+    setMenuState(open);
+  };
 
-	useEffect(function onFirstMount() {
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      toggleMenu(false);
+    });
+  }, []);
 
-		window.addEventListener("resize", () => {
+  useEffect(() => {
+    toggleMenu(false);
+    const threshold = 5;
+    const topThreshHold = 90;
 
-			toggleMenu(false)
+    let lastYPos = window.pageYOffset;
+    let ticking = false;
 
-		});
-	}, []);
+    const updateScrollDir = () => {
+      const currYPos = window.pageYOffset;
 
-	useEffect(() => {
+      if (currYPos > topThreshHold) {
+        if (Math.abs(currYPos - lastYPos) < threshold) {
+          ticking = false;
+          return;
+        }
+        setScrollDir(currYPos > lastYPos ? 'down' : 'up');
+        lastYPos = currYPos > 0 ? currYPos : 0;
+      } else {
+        setScrollDir('top');
+      }
+      ticking = false;
+    };
 
-		toggleMenu(false)
-		const threshold = 5;
-		const topThreshHold = 90;
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateScrollDir);
+        ticking = true;
+      }
+    };
 
-		let lastYPos = window.pageYOffset;
-		let ticking = false;
+    window.addEventListener('scroll', onScroll);
 
-		const updateScrollDir = () => {
-			const currYPos = window.pageYOffset;
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [scrollDir]);
 
-			if (currYPos > topThreshHold) {
-
-				if (Math.abs(currYPos - lastYPos) < threshold) {
-					ticking = false;
-					return;
-				}
-				setScrollDir(currYPos > lastYPos ? "down" : "up");
-				lastYPos = currYPos > 0 ? currYPos : 0;
-
-			} else {
-				setScrollDir("top");
-			}
-			ticking = false;
-		};
-
-		const onScroll = () => {
-			if (!ticking) {
-				window.requestAnimationFrame(updateScrollDir);
-				ticking = true;
-			}
-		};
-
-		window.addEventListener("scroll", onScroll);
-
-		return () => window.removeEventListener("scroll", onScroll);
-
-	}, [scrollDir]);
-
-	return (
-		<div className={scrollDir === "down"? style.navBarContainerDeactive:  style.navBarContainerActive} >
-			<div className={style.navBarContainerBackground} style={{backgroundColor: (scrollDir === "top") ? 'transparent' : 'black'}}/>
-			<NavHeader toggleMenu={toggleMenu} isMenuOpen={menu} />
-			<NavMenu isMenuOpen={menu} />
-		</div>
-	)
+  return (
+    <div className={scrollDir === 'down' ? style.navBarContainerDeactive : style.navBarContainerActive}>
+      <div className={style.navBarContainerBackground} style={{ backgroundColor: (scrollDir === 'top') ? 'transparent' : 'black' }} />
+      <NavHeader toggleMenu={toggleMenu} isMenuOpen={menu} />
+      <NavMenu isMenuOpen={menu} />
+    </div>
+  );
 }
 
 export default NavBar;
