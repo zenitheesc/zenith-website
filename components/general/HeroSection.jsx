@@ -1,10 +1,9 @@
-import { urlObjectKeys } from 'next/dist/next-server/lib/utils';
 import React from 'react';
 import styles from '../../styles/HeroSection.module.css';
 
 export default function HeroSection(props) {
   const backgroundImage = {
-    background: `url(${props.imgPath}) center center/cover no-repeat`,
+    background: `${props.background} center center/cover no-repeat`,
   };
 
   return (

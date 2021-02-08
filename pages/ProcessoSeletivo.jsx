@@ -7,7 +7,7 @@ function ProcessoSeletivo() {
   return (
     <>
       <NavBar />
-      <HeroSection imgPath="" title="" subtitle="" />
+      <HeroSection background="" title="" subtitle="" />
       <Footer />
     </>
   );

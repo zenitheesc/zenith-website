@@ -7,7 +7,7 @@ function Projetos() {
   return (
     <>
       <NavBar />
-      <HeroSection imgPath="" title="" subtitle="" />
+      <HeroSection background="#000000" title="" subtitle="" />
       <Footer />
     </>
   );

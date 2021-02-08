@@ -7,7 +7,7 @@ function Zenith() {
   return (
     <>
       <NavBar />
-      <HeroSection imgPath="../images/Zenith/Header.webp" title="O que é o Zenith?" subtitle="Nós somos CIÊNCIA" />
+      <HeroSection background="url(../images/Zenith/Header.webp)" title="O que é o Zenith?" subtitle="Nós somos CIÊNCIA" />
       <Footer />
     </>
   );
