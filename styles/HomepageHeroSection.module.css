@@ -1,13 +1,17 @@
 .heroContainer {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: contain;
+    object-fit: cover;
     cursor: default;
+}
+
+.heroContainerStaticImage {
+    background: url('../public/images/HomePage/static.png') center center/cover no-repeat;
 }
 
 .heroContainer > video {
@@ -29,7 +33,7 @@
 }
 
 .heroContainer > hr {
-    color: #fff;
+    background-color: #fff;
     width: 90%;
 }
 

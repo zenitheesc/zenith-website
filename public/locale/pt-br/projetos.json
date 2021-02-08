@@ -116,7 +116,7 @@
         "projects": {
             "zenSat": {
                 "title": "ZenSat",
-                "detail": "",
+                "subtitle": "Nosso primeiro passo na direção da construção de nanossatélites e, também, a conquista do primeiro lugar na Cubedesign.",
                 "year": 2018,
                 "link": "https://github.com/zenitheesc/ZenSat_1.0",
                 "menus": ["OVERVIEW", "DOCUMENTAÇÃO"],
@@ -134,7 +134,7 @@
             },
             "uspSat": {
                 "title": "USPSat",
-                "detail": "",
+                "subtitle": "Nossa oportunidade de aprofundar e profissionalizar o desenvolvimento de nanossatélites 2U por meio da optimização de sistemas e aplicação de redudância nos sistemas.",
                 "year": 2019,
                 "link": "https://github.com/zenitheesc/USPSat-v.1.0",
                 "menus": ["OVERVIEW", "DOCUMENTAÇÃO"],

@@ -1,91 +1,140 @@
-.navbarContainer {
-    background-color: transparent;
+.navBarHeaderContainer {
     display: flex;
     flex-direction: row;
-    padding-left: 3em;
+    background-color: transparent;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    padding-left: 1.5em;
     padding-right: 1.5em;
     width: 100%;
-    flex-grow: 1;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
     height: 90px;
-    box-sizing: border-box;
-    position: fixed;
+    position: relative;
+    z-index: 3;
     top: 0px;
     left: 0px;
+
 }
 
-.navbarIcon {
+.navBarContainerDeactive {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 3;
+    top: 0px;
+    transition: opacity 0.2s ease-in;
+}
+
+.navBarContainerActive {
+    display: flex;
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    transition: opacity 0.2s ease-in;
+}
+
+.navBarContainerBackground {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.navigationMenuDeactive {
+    display: flex;
+    height: 0px;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    background-color: black;
+    width: 100%;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.navigationMenuActive {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+    top: 0px;
+    margin: 0px;
+    padding-top: 100px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    background-color: black;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.navigationMenuActive .navBarItem {
+    box-sizing: border-box;
+    padding-top: 1.2em;
+    opacity: 1;
+    padding-bottom: 1.2em;
+    border-bottom: 1px solid rgba(169, 169, 169, 0.301);
+    transition: opacity 0.4s;
+}
+
+.navigationMenuDeactive .navBarItem {
+    box-sizing: border-box;
+    opacity: 0;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    border-bottom: 1px solid rgba(169, 169, 169, 0.301);
+    transition: opacity 0.4s;
+}
+
+.navigationHeader {
+    display: flex;
+}
+
+.navBarIcon {
     width: 150px;
     height: auto;
 }
 
-.itensContainer {
-    box-sizing: border-box;
-    list-style-type: none;
+.navBarItem {
+    padding-right: 1em;
     justify-content: space-between;
-    align-content: center;
+    list-style: none;
 }
 
-.navbarItem {
-    margin-right: 1em;
-    justify-content: space-between;
-}
-
-.navbarItem > a {
+.navBarItem>a {
     text-decoration: none;
     font-size: 18px;
     color: white;
     font-weight: 300;
 }
 
-.navbarItem > a:hover {
+.navBarItem>a:hover {
     color: lightgray;
 }
 
-.itensContainerList {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-}
-
-.itensContainerMenu {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    z-index: 1;
-    left: 0px;
-    top: 100px;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    background-color: black;
-    width: 100%;
-    justify-content: right;
-    
-}
-
-.itensContainerMenu > li{
-    padding: 1em;
-    margin: 1em;
-}
-
-.menuIconDeactive {
+.menuIconWrapper{
+    cursor: pointer;
     display: none;
 }
 
-.menuIconActive {
-    color: white;
-    margin: 1.5em;
-    padding: 1em;
-}
+@media screen and (max-width: 960px) {
+    .navigationHeader {
+        display: none;
+    }
 
-.itensContainerActive {
-    display: flex;
-}
-
-.itensContainerDeactive {
-    display: none !important;
+    .menuIconWrapper{
+        display: flex;
+    }
 }
