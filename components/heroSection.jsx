@@ -8,7 +8,7 @@ function HomepageHeroSection() {
   const attemptPlay = () => {
     videoElement && videoElement.current && videoElement.current.play()
       .then(() => { setVideoAutoPlayable(true); })
-      .catch((err) => { setVideoAutoPlayable(false); });
+      .catch(() => { setVideoAutoPlayable(false); });
   };
 
   useEffect(() => {

@@ -3,6 +3,7 @@
     width: auto;
     object-fit: contain;
     padding-left: 1.5em;
+    padding-right: 1.5em;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -44,6 +45,7 @@
 @media (min-width: 768px) {
     .heroContainer {
         padding-left: 2em;
+        padding-right: 2em;
     }
     .heroContainer > h1 {
         font-size: 3rem;
