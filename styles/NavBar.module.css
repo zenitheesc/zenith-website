@@ -13,7 +13,6 @@
     z-index: 3;
     top: 0px;
     left: 0px;
-
 }
 
 .navBarContainerDeactive {
@@ -127,6 +126,13 @@
 .menuIconWrapper{
     cursor: pointer;
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .navBarHeaderContainer {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
 }
 
 @media screen and (max-width: 960px) {

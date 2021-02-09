@@ -12,7 +12,7 @@ export default function NavHeader(props) {
       <div className={style.navBarHeaderContainer}>
 
         <a href="./">
-          <img className={style.navBarIcon} src="/images/NavigationBar/logo.png" />
+          <img className={style.navBarIcon} src="/images/NavigationBar/logo.webp" />
         </a>
 
         <NavLinks className={style.navigationHeader} />

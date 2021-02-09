@@ -11,7 +11,7 @@
 }
 
 .heroContainerStaticImage {
-    background: url('../public/images/HomePage/static.png') center center/cover no-repeat;
+    background: url('../public/images/HomePage/static.webp') center center/cover no-repeat;
 }
 
 .heroContainer > video {

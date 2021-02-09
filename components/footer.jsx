@@ -13,7 +13,7 @@ function Footer() {
     <div className={styles.footer}>
       <div className={styles.footerLeftSide}>
         <a className="" href="#">
-          <img src="/images/NavigationBar/logo.png" alt="Logo" />
+          <img src="/images/Footer/logo.webp" alt="Logo" />
         </a>
         <div className={styles.footerData}>
           <span id={styles.zenithCopyright}>© 2021 Zenith Aerospace</span>
