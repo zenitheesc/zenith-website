@@ -15,10 +15,8 @@
     align-items: center;
 }
 
-.footerLeftSide > a > img {
-    width: 148px;
-    height: auto;
-    margin-right: 16px;
+.footerLeftSide > a > div {
+    margin-right: 16px !important;
 }
  
 .footerData{

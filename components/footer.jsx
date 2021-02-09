@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import {
   FaFacebook,
   FaInstagram,
@@ -13,7 +14,7 @@ function Footer() {
     <div className={styles.footer}>
       <div className={styles.footerLeftSide}>
         <a className="" href="#">
-          <img src="/images/Footer/logo.webp" alt="Logo" />
+          <Image src="/images/Footer/logo.webp" alt="Zenith Logo" width="148px" height="79px" />
         </a>
         <div className={styles.footerData}>
           <span id={styles.zenithCopyright}>© 2021 Zenith Aerospace</span>

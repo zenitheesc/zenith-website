@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Fade as Hamburger } from 'hamburger-react';
 import style from '../../styles/NavBar.module.css';
 import NavLinks from './NavLinks';
@@ -12,7 +13,7 @@ export default function NavHeader(props) {
       <div className={style.navBarHeaderContainer}>
 
         <a href="./">
-          <img className={style.navBarIcon} src="/images/NavigationBar/logo.webp" />
+          <Image src="/images/NavigationBar/logo.webp" alt="Zenith Logo" width="150px" height="79px" />
         </a>
 
         <NavLinks className={style.navigationHeader} />
