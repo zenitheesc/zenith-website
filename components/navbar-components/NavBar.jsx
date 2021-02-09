@@ -11,10 +11,15 @@ function NavBar() {
     setMenuState(open);
   };
 
-  useEffect(() => {
-    window.addEventListener('resize', () => {
+  useEffect(function onFirstMount(){
+
+    const closeMenu = () => {
       toggleMenu(false);
-    });
+    }
+
+    window.addEventListener('resize', closeMenu);
+
+    return () => window.removeEventListener('resize', closeMenu);
   }, []);
 
   useEffect(() => {
