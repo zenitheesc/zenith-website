@@ -123,9 +123,15 @@
     color: lightgray;
 }
 
+.menuIconWrapper {
+
+    cursor: pointer;
+    display: none;
+
+}
+
 .menuIconWrapper *{
 
-    display: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -135,6 +141,8 @@
     user-select: none;
 
 }
+
+
 
 .menuIconWrapper:focus *:focus {
     outline: none !important;
