@@ -7,7 +7,7 @@ function ProcessoSeletivo() {
   return (
     <>
       <NavBar />
-      <HeroSection background="url(../images/ProcessoSeletivo/header.webp)" title="Processo Seletivo" subtitle="Você deseja ser parte do Zenith Aerospace?" />
+      <HeroSection backgroundImage="url(../images/ProcessoSeletivo/header.webp)" title="Processo Seletivo" subtitle="Você deseja ser parte do Zenith Aerospace?" />
       <Footer />
     </>
   );

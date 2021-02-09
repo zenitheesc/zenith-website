@@ -6,7 +6,8 @@ export default function HeroSection(props) {
   const wordArray = props.array;
 
   const backgroundImage = {
-    backgroundImage: `${props.background}`,
+    backgroundImage: `${props.backgroundImage}`,
+    backgroundColor: `${props.backgroundColor}`,
   };
 
   return (

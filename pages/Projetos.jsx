@@ -7,7 +7,7 @@ function Projetos() {
   return (
     <>
       <NavBar />
-      <HeroSection background="#000000" title="Nossos projetos" subtitle="Integração de diversos campos da Engenharia no setor aeroespacial" />
+      <HeroSection backgroundColor="#000000" title="Nossos projetos" subtitle="Integração de diversos campos da Engenharia no setor aeroespacial" />
       <Footer />
     </>
   );
