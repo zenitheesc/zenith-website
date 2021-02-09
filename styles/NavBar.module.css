@@ -129,6 +129,12 @@
 
 }
 
+.menuIconWrapper *{
+
+    cursor: default !important;
+
+}
+
 @media screen and (max-width: 960px) {
     .navigationHeader {
         display: none;
@@ -137,4 +143,12 @@
     .menuIconWrapper{
         display: flex;
     }
+
+    .menuIconWrapper *{
+
+        cursor: default !important;
+    
+    }
+    
+
 }
