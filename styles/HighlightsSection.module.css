@@ -1,0 +1,49 @@
+.highlightsContainer{
+    width: auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	background-color: lightgrey;
+}
+
+.countUp {
+	margin: 1em;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.countUp > span {
+	font-size: 54px;
+	font-weight: 270;
+	color: #4B4B4B;
+}
+
+.countUp > h2{
+	font-size: 24px;
+	font-weight: 270;
+	text-align: center;
+	color: #4B4B4B;
+	display: flex;
+	flex-direction: row;
+}
+
+.countUp *{
+	font-size: 20px;
+}
+
+@media screen and (max-width: 980px) {
+    .countUp {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.highlightsContainer{ 
+		flex-direction: column-reverse;
+	}
+}
