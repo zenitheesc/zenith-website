@@ -1,12 +1,15 @@
 .highlightsContainer{
     width: auto;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding: 2.5em;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
 	align-items: center;
-	background-color: lightgrey;
+	background-color: #E5E5E5;
+}
+
+.countUpContainer{
+	width: 60%;
 }
 
 .countUp {
@@ -28,13 +31,26 @@
 	font-size: 24px;
 	font-weight: 270;
 	text-align: center;
+	margin-left: 1em;
 	color: #4B4B4B;
 	display: flex;
 	flex-direction: row;
 }
 
-.countUp *{
-	font-size: 20px;
+.textSection {
+	width: 30%;
+	text-align: right;
+}
+
+.textSection > h1{
+	font-weight:500;
+	font-size: 64px;
+}
+
+.textSection > h3{
+	font-weight: 300;
+	font-size: 24px;
+	color: #4B4B4B;
 }
 
 @media screen and (max-width: 980px) {
@@ -46,4 +62,33 @@
 	.highlightsContainer{ 
 		flex-direction: column-reverse;
 	}
+
+	.textSection {
+		width: 100%;
+		text-align: center;
+	}
+
+	.textSection > h1{
+		font-size: 32px;
+	}
+
+	.textSection > h3{
+		font-size: 16px;
+	}
+
+	.countUpContainer {
+		width: 100%;
+	}
+
+	.countUp > h2{ 
+		font-size: 20px;
+		margin: 0px;
+	}
+
+	.countUp {
+		width: 100%;
+		margin: 0px;
+		
+	}
+	
 }

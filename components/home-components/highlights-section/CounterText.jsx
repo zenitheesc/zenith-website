@@ -8,7 +8,6 @@ export default function CounterText(props) {
       <div className={countUp}>
         <CountUp prefix={props.plus ? '+' : ''} end={props.value} />
         <h2>
-          &emsp;
           {props.suffix}
         </h2>
         <br />
