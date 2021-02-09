@@ -1,9 +1,27 @@
+import React, { useEffect, useState, useRef } from 'react';
 import textStyles from '../styles/BannersText.module.css'
 import styles from '../styles/GenusBanner.module.css'
 
 
 
 function genusBanner() {
+	/*
+	const videoElement = useRef(null);
+  	const [videoAutoPlayable, setVideoAutoPlayable] = useState(true);
+
+  	const attemptPlay = () => {
+  	  videoElement && videoElement.current && videoElement.current.play()
+  	    .then(() => { setVideoAutoPlayable(true); })
+  	    .catch((err) => { setVideoAutoPlayable(false); });
+  	};
+	
+  	useEffect(() => {
+  	  attemptPlay();
+  	}, []);
+
+	  <video ref={videoElement} autoPlay loop muted playsInline preload="auto">
+	  			<source src="/images/genus-banner/Genus.mp4" type="video/mp4" />
+			</video>*/
 	
 	return (
         <div className={styles.genusBanner}>
@@ -20,7 +38,9 @@ function genusBanner() {
             	</form>
 			</div>
 			
-			<img className={styles.genusImage} src="/images/genus-banner/Genus.png" width="20%" style={{display: "flex"}}/>
+			<img className={styles.genusImage} src="/images/genus-banner/GenusSlow.gif"/>
+				
+			
 			
 		</div>
 		
