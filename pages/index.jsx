@@ -2,11 +2,12 @@ import React from 'react';
 import NavBar from '../components/navbar-components/NavBar';
 import Footer from '../components/footer';
 import HeroSection from '../components/heroSection';
+import TextConent from '../public/locale/pt-br/homePage.json';
 
 function Home() {
   return (
     <>
-      <NavBar />
+      <NavBar textContent={TextConent.navBar} />
       <HeroSection />
       <Footer />
     </>

@@ -15,7 +15,7 @@ export default function NavHeader(props) {
           <img className={style.navBarIcon} src="/images/NavigationBar/logo.png" />
         </a>
 
-        <NavLinks className={style.navigationHeader} />
+        <NavLinks textContent={props.textContent} className={style.navigationHeader} />
 
         <div className={style.menuIconWrapper}>
           <Hamburger size={24} color="#ffffff" duration={0.3} toggled={isMenuOpen} toggle={toggleMenu} rounded />

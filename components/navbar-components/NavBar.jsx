@@ -3,7 +3,7 @@ import NavHeader from './NavHeader';
 import NavMenu from './NavMenu';
 import style from '../../styles/NavBar.module.css';
 
-function NavBar() {
+function NavBar(props) {
   const [menu, setMenuState] = useState(false);
   const [scrollDir, setScrollDir] = useState('top');
 
@@ -11,7 +11,7 @@ function NavBar() {
     setMenuState(open);
   };
 
-  useEffect(function onFirstMount(){
+  useEffect(function onFirstMount() {
 
     const closeMenu = () => {
       toggleMenu(false);
@@ -61,8 +61,8 @@ function NavBar() {
   return (
     <div className={scrollDir === 'down' ? style.navBarContainerDeactive : style.navBarContainerActive}>
       <div className={style.navBarContainerBackground} style={{ backgroundColor: (scrollDir === 'top') ? 'transparent' : 'black' }} />
-      <NavHeader toggleMenu={toggleMenu} isMenuOpen={menu} />
-      <NavMenu isMenuOpen={menu} />
+      <NavHeader textContent={props.textContent} toggleMenu={toggleMenu} isMenuOpen={menu} />
+      <NavMenu textContent={props.textContent} isMenuOpen={menu} />
     </div>
   );
 }
