@@ -2,22 +2,26 @@ import React from 'react';
 import style from '../../../styles/HighlightsSection.module.css';
 import CounterText from './CounterText';
 
-export default function HighlightsSection() {
+export default function HighlightsSection(props) {
+  const { title } = props.TextContent;
+  const { subtitle } = props.TextContent;
+  const { statistics } = props.TextContent;
+
   return (
     <div className={style.highlightsContainer}>
       <div className={style.countUpContainer}>
-        <CounterText value={25} suffix="PROJETOS" />
-        <CounterText value={400} suffix="MEMBROS DESDE A FUNDAÇÃO" plus />
-        <CounterText value={2} suffix="CAMPUS PARTY" />
-        <CounterText value={3} suffix="CUBEDESIGNs" />
-        <CounterText value={7} suffix="REPORTAGENS NA MÍDIA" />
+        <CounterText value={statistics[0].number} suffix={statistics[0].description} />
+        <CounterText value={statistics[1].number} suffix={statistics[1].description} />
+        <CounterText value={statistics[2].number} suffix={statistics[2].description} />
+        <CounterText value={statistics[3].number} suffix={statistics[3].description} />
+        <CounterText value={statistics[4].number} suffix={statistics[4].description} />
       </div>
       <div className={style.textSection}>
         <h1>
-          Eficiência descrita em números
+          {title}
         </h1>
         <h3>
-          Desde 2014
+          {subtitle}
         </h3>
       </div>
     </div>

@@ -101,27 +101,27 @@
         }
     ],
     "homePageStatistics": {
-        "title": "eficiência descrita em números",
-        "subtitle": "desde 2014",
+        "title": "Eficiência descrita em números",
+        "subtitle": "Desde 2014",
         "statistics": [
             {
-                "number": "25",
+                "number": 25,
                 "description": "PROJETOS"
             },
             {
-                "number": "+400",
+                "number": 400,
                 "description": "MEMBROS DESDE A FUNDAÇÃO"
             },
             {
-                "number": "2",
+                "number": 2,
                 "description": "CAMPUS PARTY"
             },
             {
-                "number": "3",
+                "number": 3,
                 "description": "CUBEDESIGNs"
             },
             {
-                "number": "7",
+                "number": 7,
                 "description": "REPORTAGEM NA MÍDIA"
             }
         ]
