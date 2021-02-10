@@ -43,7 +43,7 @@
 }
 
 .navigationMenuDeactive {
-    display: flex;
+    visibility: hidden;
     height: 0px;
     flex-direction: column;
     position: fixed;
