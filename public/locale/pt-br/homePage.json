@@ -101,8 +101,8 @@
         }
     ],
     "homePageStatistics": {
-        "title": "Eficiência descrita em números",
-        "subtitle": "Desde 2014",
+        "title": "eficiência descrita em números",
+        "subtitle": "desde 2014",
         "statistics": [
             {
                 "number": 25,
@@ -111,6 +111,10 @@
             {
                 "number": 400,
                 "description": "MEMBROS DESDE A FUNDAÇÃO"
+            },
+            {
+                "number": 12775,
+                "description": "HORAS NA SALINHA"
             },
             {
                 "number": 2,
