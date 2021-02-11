@@ -11,6 +11,7 @@ function Home() {
       <NavBar />
       <HomeHeroSection />
       <HighlightsSection TextContent={TextContent.homePageStatistics} />
+      <NavBar textContent={TextContent.navBar} />
       <Footer />
     </>
   );
