@@ -7,15 +7,13 @@ import TextContent from '../public/locale/pt-br/homePage.json';
 function Zenith() {
   return (
     <>
-      <NavBar />
+      <NavBar textContent={TextContent.navBar} />
       <HeroSection
         backgroundImage="url(../images/Zenith/Header.webp)"
         title="O que é o Zenith?"
         subtitle="Nós somos "
         array={['CIÊNCIA', 'TECNOLOGIA', 'INOVAÇÃO', 'CONEXÕES', 'ZENITH']}
       />
-      <NavBar textContent={TextContent.navBar} />
-      Zenith
       <Footer />
     </>
   );

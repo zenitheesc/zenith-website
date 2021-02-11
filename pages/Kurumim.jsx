@@ -7,10 +7,8 @@ import TextContent from '../public/locale/pt-br/homePage.json';
 function Kurumim() {
   return (
     <>
-      <NavBar />
-      <HeroSection backgroundImage="url(../images/Kurumim/header.webp)" title="Kurumim" subtitle="A nova geração do Garatéa-E" />
       <NavBar textContent={TextContent.navBar} />
-      Kurumim
+      <HeroSection backgroundImage="url(../images/Kurumim/header.webp)" title="Kurumim" subtitle="A nova geração do Garatéa-E" />
       <Footer />
     </>
   );

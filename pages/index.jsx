@@ -8,10 +8,9 @@ import TextContent from '../public/locale/pt-br/homePage.json';
 function Home() {
   return (
     <>
-      <NavBar />
-      <HomeHeroSection />
-      <HighlightsSection TextContent={TextContent.homePageStatistics} />
       <NavBar textContent={TextContent.navBar} />
+      <HomeHeroSection />
+      <HighlightsSection textContent={TextContent.homePageStatistics} />
       <Footer />
     </>
   );

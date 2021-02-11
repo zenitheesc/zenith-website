@@ -3,9 +3,9 @@ import style from '../../../styles/HighlightsSection.module.css';
 import CounterText from './CounterText';
 
 export default function HighlightsSection(props) {
-  const { title } = props.TextContent;
-  const { subtitle } = props.TextContent;
-  const { statistics } = props.TextContent;
+  const { title } = props.textContent;
+  const { subtitle } = props.textContent;
+  const { statistics } = props.textContent;
 
   return (
     <div className={style.highlightsContainer}>

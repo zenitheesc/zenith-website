@@ -7,10 +7,8 @@ import TextContent from '../public/locale/pt-br/homePage.json';
 function Projetos() {
   return (
     <>
-      <NavBar />
-      <HeroSection backgroundColor="#000000" title="Nossos projetos" subtitle="Integração de diversos campos da Engenharia no setor aeroespacial" />
       <NavBar textContent={TextContent.navBar} />
-      Projetos
+      <HeroSection backgroundColor="#000000" title="Nossos projetos" subtitle="Integração de diversos campos da Engenharia no setor aeroespacial" />
       <Footer />
     </>
   );
