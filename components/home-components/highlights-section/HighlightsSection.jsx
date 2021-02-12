@@ -15,6 +15,7 @@ export default function HighlightsSection(props) {
         <CounterText value={statistics[2].number} suffix={statistics[2].description} />
         <CounterText value={statistics[3].number} suffix={statistics[3].description} />
         <CounterText value={statistics[4].number} suffix={statistics[4].description} />
+        <CounterText value={statistics[5].number} suffix={statistics[5].description} />
       </div>
       <div className={style.textSection}>
         <h1>
