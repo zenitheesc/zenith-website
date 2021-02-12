@@ -27,6 +27,7 @@
 .tabsTabLink {
     text-align: center;
     align-self: flex-end;
+    white-space: pre;
     font-size: 18px;
     line-height: 1.32;
     width: 100%;
@@ -49,7 +50,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
 
     .tabsTab {
         display: none;
