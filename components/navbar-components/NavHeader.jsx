@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Fade as Hamburger } from 'hamburger-react';
 import style from '../../styles/NavBar.module.css';
 import NavLinks from './NavLinks';
+import Link from 'next/link';
 
 export default function NavHeader(props) {
   const { toggleMenu } = props;
@@ -12,9 +13,11 @@ export default function NavHeader(props) {
     <>
       <div className={style.navBarHeaderContainer}>
 
-        <a href="./">
-          <Image src="/images/NavigationBar/logo.webp" alt="Zenith Logo" width="150px" height="79px" />
-        </a>
+        <Link href="/">
+          <a href="/">
+            <Image src="/images/NavigationBar/logo.webp" alt="Zenith Logo" width="150px" height="79px" />
+          </a>
+        </Link>
 
         <NavLinks textContent={props.textContent} className={style.navigationHeader} />
 
