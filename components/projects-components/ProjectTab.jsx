@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import SondasAeroespaciais from './projects/sondasAeroespaciais';
 import CubeSats from './projects/cubeSats';
 import Software from './projects/software';
@@ -8,13 +9,19 @@ import styles from '../../styles/ProjectTab.module.css';
 
 function Tab(props) {
   const {
-    className, label, isActive, onClick,
+    label, isActive, onClick, tabIndex, onLeftChevronClick, onRightChevronClick
   } = props;
 
   return (
-    <li className={styles.tabsTab}>
-      <a className={`${styles.tabsTabLink} ${isActive ? styles.tabsTabActive : ''}`} onClick={onClick}>
+    <li className={`${styles.tabsTab} ${isActive ? styles.tabsTabActive : ''}`}>
+      <a className={styles.chevron} onClick={onLeftChevronClick}>
+        <FaChevronLeft />
+      </a>
+      <a className={`${styles.tabsTabLink} ${isActive ? styles.tabsTabLinkActive : ''}`} onClick={onClick}>
         {label}
+      </a>
+      <a className={styles.chevron} onClick={onRightChevronClick}>
+        <FaChevronRight />
       </a>
     </li>
   );
@@ -40,6 +47,8 @@ function Tabs(props) {
         onClick={() => handleTabClick(index)}
         isActive={index === activeIndex}
         tabIndex={index}
+        onLeftChevronClick={() => handleTabClick(index === 0 ? 4 : index - 1)}
+        onRightChevronClick={() => handleTabClick(index === 4 ? 0 : index + 1)}
       />
     );
   }
