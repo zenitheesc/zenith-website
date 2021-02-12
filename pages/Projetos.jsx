@@ -1,7 +1,8 @@
 import React from 'react';
 import NavBar from '../components/navbar-components/NavBar';
-import Footer from '../components/footer';
 import HeroSection from '../components/general/HeroSection';
+import ProjectTab from '../components/projects-components/ProjectTab';
+import Footer from '../components/footer';
 import TextContent from '../public/locale/pt-br/homePage.json';
 
 function Projetos() {
@@ -9,6 +10,7 @@ function Projetos() {
     <>
       <NavBar textContent={TextContent.navBar} />
       <HeroSection backgroundColor="#000000" title="Nossos projetos" subtitle="Integração de diversos campos da Engenharia no setor aeroespacial" />
+      <ProjectTab />
       <Footer />
     </>
   );
