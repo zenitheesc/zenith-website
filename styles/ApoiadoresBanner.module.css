@@ -17,6 +17,24 @@
     width: 30vw;
 }
 
+.squares{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 18vw 18vw 18vw;
+    grid-template-rows: 18vw 18vw;
+    justify-items: center;
+    padding-right: 1.5vw;
+    padding-top: 1.5vw; 
+}
+
+.squares>*{
+    height: 15vw;
+    width: 15vw;
+    background-color: #E5E5E5;
+    /*background: #8D8F92;*/
+
+}
+
 .apoiadoresImage {
     width: auto;
     height: 40vw;
@@ -43,6 +61,20 @@
         padding-left: 0;
     }
 
+    .squares{
+        padding-bottom: 6em;
+        grid-template-columns: 48vw 48vw;
+        grid-template-rows: 48vw 48vw;
+    }
+    
+    .squares>*{
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .emptySquare{
+        display: none;
+    }
 
     .apoiadoresImage {
         display: flex;
