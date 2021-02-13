@@ -1,0 +1,82 @@
+.bannersText {
+    position: relative;
+    flex-direction: column;
+    color: white;
+    align-items: left;
+    padding-top: 4em;
+    padding-left: 4em;
+    font-size: 1.5vw;
+    font-family: sans-serif;
+}
+.bannersText > h1{
+    margin-bottom: 0;
+} 
+.bannersText > h2{
+    margin-top: 0em;
+    font-weight: lighter;
+    width: 35vw;
+}
+.bannersText > form{
+    position: absolute;
+    bottom: 2em;
+}
+
+#gitHubButton{
+    height: 3vw;
+    width: 8vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0.5em;
+    border: 1px;
+    border-style: solid; 
+    border-color: white;
+    background-color: transparent;
+    font-size: 1vw;
+    color: white;
+    font-family: sans-serif;
+    
+    
+}
+
+#gitHubIcon{
+    height: 2vw;
+    width: auto;
+}
+#gitHubButton:hover{
+    border-color: rgb(201, 199, 199);
+    color: rgb(201, 199, 199);
+}
+
+@media screen and (max-width: 768px) {
+    .bannersText {
+        font-size: 5vw;
+        padding-top: 1.5em;
+        padding-left: 1.5em;
+    }
+    .bannersText > h1{
+        line-height: 95%;
+        font-size: 12vw;
+    } 
+    .bannersText > h2{
+        width: auto;
+        padding-top: 6px;
+        font-size: 6vw;
+    }
+    .bannersText > form{
+        position: relative;
+        top: 50px;
+    }
+    #gitHubButton{
+        height: 2em;
+        width: 7em;
+        font-size: 1em;
+        
+    }
+    #gitHubIcon{
+        height: 1.2em;
+        width: auto;
+    }
+
+}

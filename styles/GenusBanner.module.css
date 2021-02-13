@@ -1,0 +1,34 @@
+.genusBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #605F62;
+    height: 40vw;
+    align-items: left; 
+}
+
+
+#genusVideo {
+    height: 80%;
+    margin-right: 3.9em;
+    margin-top: 3vw;
+}
+
+
+@media screen and (max-width: 768px) {
+    .genusBanner--data{
+        text-align: left;
+    }
+    .genusBanner {  
+        flex-direction: column; 
+        align-items: center; 
+        height: 200vw;
+    }
+    #genusVideo {
+        width: 100%;
+        height: auto;
+        margin-right: 0em;
+        margin-top: 0em;
+        margin-bottom: 6.6em;
+    }
+}
