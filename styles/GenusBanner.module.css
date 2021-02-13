@@ -8,10 +8,9 @@
 }
 
 
-.genusImage {
-    width: auto;
+#genusVideo {
     height: 80%;
-    margin-right: 2.7em;
+    margin-right: 3.9em;
     margin-top: 3vw;
 }
 
@@ -25,11 +24,11 @@
         align-items: center; 
         height: 200vw;
     }
-    .genusImage {
-        width: 90vw;
+    #genusVideo {
+        width: 100%;
         height: auto;
         margin-right: 0em;
         margin-top: 0em;
-        margin-bottom: 6em;
+        margin-bottom: 6.6em;
     }
 }

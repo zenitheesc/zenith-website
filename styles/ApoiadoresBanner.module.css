@@ -7,16 +7,6 @@
     align-items: left; 
 }
 
-.bannersText {
-    flex-direction: column;
-    font-size: 1.5vw;
-    color: white;
-    padding-left: 4em;
-    padding-top: 5em;
-    font-family: sans-serif;
-    width: 30vw;
-}
-
 .squares{
     align-items: center;
     display: grid;
@@ -27,27 +17,44 @@
     padding-top: 1.5vw; 
 }
 
-.squares>*{
+.squares > *{
     height: 15vw;
     width: 15vw;
     background-color: #E5E5E5;
-    /*background: #8D8F92;*/
-
-}
-
-.apoiadoresImage {
-    width: auto;
-    height: 40vw;
+    display: flex;
     align-items: center;
-    position: relative;
-    top: 5em;
-    right: 5em;
-    
+    justify-content: center;
 }
 
+#imageOne{
+    height: 50%;
+    -webkit-filter: contrast(0%) brightness(200%) saturate(0%) invert(60%);
+    filter: contrast(0%) brightness(200%) saturate(0%) invert(60%);
+}
 
+#imageTwo{
+    height: 30%;
+    -webkit-filter: contrast(0%) brightness(200%) saturate(0%) invert(70%);
+    filter: contrast(0%) brightness(200%) saturate(0%) invert(70%);
+}
+
+#imageThree{
+    height: 70%;
+    -webkit-filter: contrast(80%) brightness(200%) saturate(0%) invert(20%);
+    filter: contrast(80%) brightness(200%) saturate(0%) invert(20%);
+}
+
+#imageFour{
+    height: 18%;
+    -webkit-filter: contrast(70%) brightness(200%) saturate(0%) invert(20%);
+    filter: contrast(70%) brightness(200%) saturate(0%) invert(20%);
+}
+
+.squares > *:hover:not(.emptySquare){
+    background-color: #bdbbbb;
+}
 @media screen and (max-width: 768px) {
-    .apoiadoresBanner--data{text-align: center;}
+
     .apoiadoresBanner {
         flex-direction: column;
         align-items: center;
@@ -59,28 +66,27 @@
         font-size: 3vw;
         height: 40px;
         padding-left: 0;
+        
     }
 
     .squares{
+        padding-top: 0;
+        padding-right: 0;
         padding-bottom: 6em;
         grid-template-columns: 48vw 48vw;
         grid-template-rows: 48vw 48vw;
     }
     
-    .squares>*{
+    .squares > *{
         height: 40vw;
         width: 40vw;
+        
     }
 
     .emptySquare{
         display: none;
     }
-
-    .apoiadoresImage {
-        display: flex;
-        flex-direction: column;
-        top: 0em;
-        right: 0em;
-        bottom: 3em;
-    }
 }
+
+
+
