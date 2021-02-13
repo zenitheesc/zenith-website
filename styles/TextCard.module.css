@@ -1,0 +1,77 @@
+        .textCard {
+            padding: 0.42rem;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            background-color: #EFEFEF;
+            flex-wrap: wrap-reverse;
+        }
+        
+        .textCardReverse {
+            composes: textCard;
+            /* flex-direction: column-reverse; */
+        }
+        
+        .textCardText {
+            flex: 0 auto;
+            padding: 0.25rem 1rem;
+            border: 1px solid #dbdbdb;
+            border-top: 0px;
+            border-radius: 0.4rem;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            font-size: 1.4rem;
+            background-color: #f9f9f9;
+            color: #545454;
+        }
+        
+        .textCardText h2 {
+            color: black;
+        }
+        
+        .textCardImg {
+            border: 1px solid #dbdbdb;
+            border-bottom: 0px;
+            border-radius: 0.4rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .textCardImg img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.4rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        
+        @media (min-width: 1280px) {
+            .textCard {
+                gap: 3rem;
+                flex-direction: row;
+                padding: 2rem 3rem;
+                flex-wrap: nowrap;
+            }
+            .textCardReverse {
+                flex-direction: row-reverse;
+            }
+            .textCardText {
+                font-size: 2rem;
+                padding: 0 2rem;
+                border: 0;
+                border-radius: 0.4rem;
+                width: 50vw;
+            }
+            .textCardImg {
+                border: 0;
+            }
+            .textCardImg img {
+                width: 50vw;
+                border-radius: 0.4rem;
+                /* width: auto; */
+            }
+        }
+        
+        @media (min-width: 768px) {}
