@@ -10,20 +10,22 @@
 .squares{
     align-items: center;
     display: grid;
-    grid-template-columns: 18vw 18vw 18vw;
-    grid-template-rows: 18vw 18vw;
+    grid-template-columns: 15vw 15vw 15vw;
+    grid-template-rows: 15vw 15vw;
     justify-items: center;
-    padding-right: 1.5vw;
-    padding-top: 1.5vw; 
+    padding: 2.5em;
+    /*padding-right: 1.5vw;
+    padding-top: 1.5vw;*/ 
 }
 
 .squares > *{
-    height: 15vw;
-    width: 15vw;
+    height: 12vw;
+    width: 12vw;
     background-color: #E5E5E5;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 3px;
 }
 
 #imageOne{
