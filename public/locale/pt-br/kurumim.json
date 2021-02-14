@@ -1,0 +1,50 @@
+{
+    "navBar": ["O ZENITH", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO", "CONTATO"],
+    "kurumimHero": {
+        "title": "Kurumim",
+        "subtitle": "A nova geração do Garatéa-E"
+    },
+    "kurumimCard1": {
+        "title":"Conquistando a Lua",
+        "text": [
+            "O Kurumim é a expansão do Garatéa-E, mantendo o compromisso de promover a educação e a iniciação científica no ensino básico.",
+            "Nesse ano, considerando a Missão Artemis da NASA, a temática do projeto será Conquistando a Lua.",
+            "Apesar de não ser obrigatório que o experimento se encaixe na temática, os projetos que se encaixarem poderam concorrer na Olimpíada."
+        ]
+    },
+    "kurumimCard2": {
+        "title":"Expansão do projeto",
+        "text": [
+            "Nossa meta é conseguir alcançar cada vez mais crianças. Sendo assim, serão aceitas inscrições de toda a América Latina.",
+            "Os projetos, totalmente desenvolvidos por estudantes do Ensino Fundamental, Médio e Técnico, serão acoplados a uma sonda e enviados para a estratosfera.",
+            "ATÉ", "83", "PROJETOS SERÃO LANÇADOS",
+            "3", "MODELOS DE SATs"
+        ]
+    },
+    "kurumimCard3": {
+        "title":"Kurumim Sat",
+        "text": [
+            "Nosso novo objetivo é aproximar as crianças do desenvolvimento de um satélite, por meio de um ambiente de desenvolvimento facilitado.",
+            "As equipes vencedoras do Grande Prêmio da última edição da Garatéa-E serão convidadas a testarem um novo modelo de CanSat, o Kurumim Sat, o qual possui diversos sensores, um computador de bordo e um módulo de energia.",
+            "As crianças serão capazes de aprender conceitos de programação, desenvolver seu raciocínio lógico e se divertir com esse kit de desenvolvimento. "
+        ]
+    },
+    "kurumimCard4": {
+        "title":"Ansioso para participar?",
+        "text": [
+            "Antes de se inscrever, é importante ler o edital de participação.",
+            "EDITAL DE PARTICIPAÇÃO",
+            "Alguns documentos importantes para a sua pré-inscrição:",
+            "FICHA DE DADOS",
+            "TEMPLATE DO RELATÓRIO DE PARTICPIPAÇÃO",
+            "Está em dúvida como fazer os experimentos? Temos alguns exemplos de experimentos.",
+            "EXEMPLO DE MINISAT",
+            "EXEMPLO DE SMALLSAT",
+            "EXEMPLO DE BIGSAT"
+        ]
+    },
+    "footer": {
+        "copyright": "© 2020  Zenith Aerospace",
+        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
+    }
+}

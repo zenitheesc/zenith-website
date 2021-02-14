@@ -1,0 +1,108 @@
+.highlightsContainer{
+    width: auto;
+    padding: 2.5em;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	background-color: #E5E5E5;
+}
+
+.countUpContainer{
+	width: 60%;
+}
+
+.countUp {
+	margin: 1em;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.countUp > span {
+	font-size: 54px;
+	font-weight: 270;
+	color: #4B4B4B;
+}
+
+.countUp > h2{
+	font-size: 24px;
+	font-weight: 270;
+	text-align: center;
+	margin-left: 0.5em;
+	color: #4B4B4B;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 0px;
+}
+
+.textSection {
+	width: 30%;
+	text-align: right;
+}
+
+.textSection > h1{
+	font-weight:600;
+	margin-bottom: 0.1em;
+	font-size: 56px;
+}
+
+.textSection > h3{
+	font-weight: 300;
+	margin-top: 0.3em;
+	font-size: 24px;
+	color: #4B4B4B;
+}
+
+@media screen and (max-width: 1024px) {
+    .countUp {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.highlightsContainer{ 
+		flex-direction: column-reverse;
+	}
+
+	.textSection {
+		width: 100%;
+		text-align: center;
+	}
+
+	.textSection > h1{
+		font-size: 42px;
+	}
+
+	.textSection > h3{
+		font-size: 24px;
+	}
+
+	.countUpContainer {
+		width: 100%;
+	}
+
+	.countUp > h2{ 
+		font-size: 20px;
+		margin: 0px;
+	}
+
+	.countUp {
+		width: 100%;
+		margin: 0px;
+		
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	.textSection > h1{
+		font-size: 32px;
+	}
+
+	.textSection > h3{
+		font-size: 20px;
+	}
+	
+}

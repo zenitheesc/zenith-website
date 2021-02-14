@@ -1,0 +1,141 @@
+{
+    "navBar": ["O ZENITH", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO", "CONTATO"],
+    "homePageHero": [
+        "O LAR DAS ESTRELAS EM SÃO CARLOS",
+        "Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a oportunidade de chegar ao espaço"
+    ],
+    "homePageDepartaments": {
+        "title": "construindo tecnologia aeroespacial em todos os setores",
+        "subtitle": "construímos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
+        "embarcados": {
+            "title": "Embarcados",
+            "detail": "Esse departamento pesquisa e desenvolve tecnologias em sistemas embarcados voltada para aplicações aeroespaciais.",
+            "core": "NÚCLEOS",
+            "cores": [
+                {
+                    "title": "Hardware: ",
+                    "detail": "desenvolvem placas de circuito impresso para diversas aplicações aeroespaciais e realizam a manufatura das mesmas."
+                },
+                {
+                    "title": "Baixo Nível: ",
+                    "detail": "programam os microcontroladores envolvidos nos diversos projetos embarcados."
+                },
+                {
+                    "title": "Alto Nível: ",
+                    "detail": "programam aplicações web, mobile e desktop que auxiliam no sucesso das missões."
+                }
+            ]
+        },
+        "estruturas": {
+            "title": "Estruturas",
+            "detail": "Esse departamento realiza o desenvolvimento de modelos 3D de Sondas e CubeSats e realiza a manufatura desses. Além disso, atua projetando suportes para sistemas embarcados.",
+            "core": "NÚCLEOS",
+            "cores": [
+                {
+                    "title": "Desenvolvimento da Estrutura: ",
+                    "detail": "desenvolvem o modelo 3D do projeto CAD da estrutura."
+                },
+                {
+                    "title": "Atenuação de Vibração: ",
+                    "detail": "realizam teste e simulações para assegurar que a estrutura modelada suportará a vibração."
+                },
+                {
+                    "title": "Isolamento Térmico: ",
+                    "detail": "desenvolvem todo o modelamento térmico da estrutura, assegurando sua temperatura de trabalho."
+                }
+            ]
+        },
+        "astrobiologia": {
+            "title": "Astrobiologia",
+            "detail": "Esse departamento desenvolve experimentos biológicos a fim de expô-los a condições ambientais semelhantes às espaciais.",
+            "core": "NÚCLEOS",
+            "cores": [
+                {
+                    "title": "Suporte ao Projeto Kurumim: ",
+                    "detail": "selecionam e manipulam os experimentos educacionais do projeto Kurumim que serão embarcados em sondas estratosféricas."
+                },
+                {
+                    "title": "Científico: ",
+                    "detail": "produzem experimentos científicos que conduzem a publicação de artigos científicos."
+                },
+                {
+                    "title": "Parcerias: ",
+                    "detail": "fornecem o suporte técnico e operacional necessário para que pesquisadores interessados possam embarcar experimentos em veículos produzidos pelo Zenith."
+                }
+            ]
+        },
+        "gestão": {
+            "title": "Gestão",
+            "detail": "Esse departamento é responsável pela organização e administração do grupo.",
+            "core": "NÚCLEOS",
+            "cores": [
+                {
+                    "title": "Financeiro: ",
+                    "detail": "realizam o planejamento orçamentário, o controle de gastos e a busca e manutenção de patrocínios."
+                },
+                {
+                    "title": "Marketing: ",
+                    "detail": "atuam nas redes sociais do grupo, elaborando estratégias para atrair novas parcerias e divulgar o grupo."
+                },
+                {
+                    "title": "Recursos Humanos: ",
+                    "detail": "acompanham os membros do grupo, analizando o seu desempenho e satisfação."
+                },
+                {
+                    "title":"Eventos: ",
+                    "detail": "promovem a interação do grupo com a sociedade através de eventos educacionais, como o Sábado Aeroespacial."
+                }
+            ]
+        }
+    },
+    "homePageBanners": [
+        {
+            "title": "Genus",
+            "detail": "Hardware modularizado voltado para aplicações aeroespaciais",
+            "link": "https://github.com/zenitheesc/Genus"
+        },
+        {
+            "title": "Zenith Monitor",
+            "detail": "Tecnologia para rastreamento de sondas aeroespaciais",
+            "link": "https://github.com/zenitheesc/Zenith-Monitor"
+        }
+    ],
+    "homePageStatistics": {
+        "title": "eficiência descrita em números",
+        "subtitle": "desde 2014",
+        "statistics": [
+            {
+                "number": 25,
+                "description": "PROJETOS"
+            },
+            {
+                "number": 400,
+                "description": "MEMBROS DESDE A FUNDAÇÃO"
+            },
+            {
+                "number": 12775,
+                "description": "HORAS NA SALINHA"
+            },
+            {
+                "number": 2,
+                "description": "CAMPUS PARTY"
+            },
+            {
+                "number": 3,
+                "description": "CUBEDESIGNs"
+            },
+            {
+                "number": 7,
+                "description": "REPORTAGEM NA MÍDIA"
+            }
+        ]
+    },
+    "homePageSupporters": {
+        "title": "nossos apoiadores",
+        "subtitle": "sem eles, nada disso seria possível"
+    },
+    "footer": {
+        "copyright": "© 2020  Zenith Aerospace",
+        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
+    }
+}
