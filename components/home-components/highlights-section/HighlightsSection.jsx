@@ -10,20 +10,35 @@ export default function HighlightsSection(props) {
   return (
     <div className={style.highlightsContainer}>
       <div className={style.countUpContainer}>
-        <CounterText value={statistics[0].number} suffix={statistics[0].description} />
-        <CounterText value={statistics[1].number} suffix={statistics[1].description} plus/>
-        <CounterText value={statistics[2].number} suffix={statistics[2].description} />
-        <CounterText value={statistics[3].number} suffix={statistics[3].description} />
-        <CounterText value={statistics[4].number} suffix={statistics[4].description} />
-        <CounterText value={statistics[5].number} suffix={statistics[5].description} />
+        <CounterText
+          value={statistics[0].number}
+          suffix={statistics[0].description}
+        />
+        <CounterText
+          value={statistics[1].number}
+          suffix={statistics[1].description}
+          plus
+        />
+        <CounterText
+          value={statistics[2].number}
+          suffix={statistics[2].description}
+        />
+        <CounterText
+          value={statistics[3].number}
+          suffix={statistics[3].description}
+        />
+        <CounterText
+          value={statistics[4].number}
+          suffix={statistics[4].description}
+        />
+        <CounterText
+          value={statistics[5].number}
+          suffix={statistics[5].description}
+        />
       </div>
       <div className={style.textSection}>
-        <h1>
-          {title}
-        </h1>
-        <h3>
-          {subtitle}
-        </h3>
+        <h1>{title}</h1>
+        <h3>{subtitle}</h3>
       </div>
     </div>
   );

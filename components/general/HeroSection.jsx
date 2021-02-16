@@ -13,7 +13,11 @@ export default function HeroSection(props) {
       <h1>{props.title}</h1>
       <h2>
         {props.subtitle}
-        {props.array !== undefined ? <ReactRotatingText items={props.array} /> : <></>}
+        {props.array !== undefined ? (
+          <ReactRotatingText items={props.array} />
+        ) : (
+          <></>
+        )}
       </h2>
     </div>
   );

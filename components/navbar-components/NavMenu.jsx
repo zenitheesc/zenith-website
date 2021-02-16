@@ -6,7 +6,11 @@ export default function NavMenu(props) {
   return (
     <div>
       <NavLinks
-        className={props.isMenuOpen ? style.navigationMenuActive : style.navigationMenuDeactive}
+        className={
+          props.isMenuOpen
+            ? style.navigationMenuActive
+            : style.navigationMenuDeactive
+        }
         textContent={props.textContent}
       />
     </div>

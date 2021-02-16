@@ -8,7 +8,11 @@ function Kurumim() {
   return (
     <>
       <NavBar textContent={TextContent.navBar} />
-      <HeroSection backgroundImage="url(../images/Kurumim/header.webp)" title="Kurumim" subtitle="A nova geração do Garatéa-E" />
+      <HeroSection
+        backgroundImage="url(../images/Kurumim/header.webp)"
+        title="Kurumim"
+        subtitle="A nova geração do Garatéa-E"
+      />
       <Footer />
     </>
   );

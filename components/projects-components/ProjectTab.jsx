@@ -9,7 +9,12 @@ import styles from '../../styles/ProjectTab.module.css';
 
 function Tab(props) {
   const {
-    label, isActive, onClick, tabIndex, onLeftChevronClick, onRightChevronClick
+    label,
+    isActive,
+    onClick,
+    tabIndex,
+    onLeftChevronClick,
+    onRightChevronClick,
   } = props;
 
   return (
@@ -17,7 +22,11 @@ function Tab(props) {
       <a className={styles.chevron} onClick={onLeftChevronClick}>
         <FaChevronLeft />
       </a>
-      <a className={`${styles.tabsTabLink} ${isActive ? styles.tabsTabLinkActive : ''}`} onClick={onClick}>
+      <a
+        className={`${styles.tabsTabLink} ${
+          isActive ? styles.tabsTabLinkActive : ''
+        }`}
+        onClick={onClick}>
         {label}
       </a>
       <a className={styles.chevron} onClick={onRightChevronClick}>
@@ -73,12 +82,8 @@ function Tabs(props) {
 
   return (
     <section className={styles.tabs}>
-      <ul className={styles.tabsList}>
-        {renderChildrenTabs()}
-      </ul>
-      <div className={styles.tabsContent}>
-        {renderActiveTabContent()}
-      </div>
+      <ul className={styles.tabsList}>{renderChildrenTabs()}</ul>
+      <div className={styles.tabsContent}>{renderActiveTabContent()}</div>
     </section>
   );
 }

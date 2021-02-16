@@ -9,7 +9,11 @@ function Projetos() {
   return (
     <>
       <NavBar textContent={TextContent.navBar} />
-      <HeroSection backgroundColor="#000000" title="Nossos projetos" subtitle="Integração de diversos campos da Engenharia no setor aeroespacial" />
+      <HeroSection
+        backgroundColor="#000000"
+        title="Nossos projetos"
+        subtitle="Integração de diversos campos da Engenharia no setor aeroespacial"
+      />
       <ProjectTab />
       <Footer />
     </>

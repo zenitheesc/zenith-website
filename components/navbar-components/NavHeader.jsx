@@ -11,17 +11,30 @@ export default function NavHeader(props) {
   return (
     <>
       <div className={style.navBarHeaderContainer}>
-
         <a href="./">
-          <Image src="/images/NavigationBar/logo.webp" alt="Zenith Logo" width="150px" height="79px" />
+          <Image
+            src="/images/NavigationBar/logo.webp"
+            alt="Zenith Logo"
+            width="150px"
+            height="79px"
+          />
         </a>
 
-        <NavLinks textContent={props.textContent} className={style.navigationHeader} />
+        <NavLinks
+          textContent={props.textContent}
+          className={style.navigationHeader}
+        />
 
         <div className={style.menuIconWrapper}>
-          <Hamburger size={24} color="#ffffff" duration={0.3} toggled={isMenuOpen} toggle={toggleMenu} rounded />
+          <Hamburger
+            size={24}
+            color="#ffffff"
+            duration={0.3}
+            toggled={isMenuOpen}
+            toggle={toggleMenu}
+            rounded
+          />
         </div>
-
       </div>
     </>
   );

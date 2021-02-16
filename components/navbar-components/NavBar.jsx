@@ -12,10 +12,9 @@ function NavBar(props) {
   };
 
   useEffect(function onFirstMount() {
-
     const closeMenu = () => {
       toggleMenu(false);
-    }
+    };
 
     window.addEventListener('resize', closeMenu);
 
@@ -59,9 +58,23 @@ function NavBar(props) {
   }, [scrollDir]);
 
   return (
-    <div className={scrollDir === 'down' ? style.navBarContainerDeactive : style.navBarContainerActive}>
-      <div className={style.navBarContainerBackground} style={{ backgroundColor: (scrollDir === 'top') ? 'transparent' : 'black' }} />
-      <NavHeader textContent={props.textContent} toggleMenu={toggleMenu} isMenuOpen={menu} />
+    <div
+      className={
+        scrollDir === 'down'
+          ? style.navBarContainerDeactive
+          : style.navBarContainerActive
+      }>
+      <div
+        className={style.navBarContainerBackground}
+        style={{
+          backgroundColor: scrollDir === 'top' ? 'transparent' : 'black',
+        }}
+      />
+      <NavHeader
+        textContent={props.textContent}
+        toggleMenu={toggleMenu}
+        isMenuOpen={menu}
+      />
       <NavMenu textContent={props.textContent} isMenuOpen={menu} />
     </div>
   );
