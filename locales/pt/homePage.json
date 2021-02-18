@@ -1,8 +1,8 @@
 {
-    "homePageHero": [
-        "O LAR DAS ESTRELAS EM SÃO CARLOS",
-        "Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a oportunidade de chegar ao espaço"
-    ],
+    "homePageHero": {
+        "title": "O LAR DAS ESTRELAS EM SÃO CARLOS",
+        "subtitle": "Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a oportunidade de chegar ao espaço"
+    },
     "homePageDepartaments": {
         "title": "construindo tecnologia aeroespacial em todos os setores",
         "subtitle": "construímos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
