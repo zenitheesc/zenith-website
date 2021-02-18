@@ -1,6 +1,3 @@
-module.exports = {
-  i18n: {
-    locales: ['pt', 'en', 'es'],
-    defaultLocale: 'en',
-  },
-};
+const nextTranslate = require('next-translate');
+
+module.exports = nextTranslate();
