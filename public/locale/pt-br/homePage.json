@@ -6,7 +6,7 @@
     ],
     "homePageDepartaments": {
         "title": "construindo tecnologia aeroespacial em todos os setores",
-        "subtitle": "construímos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
+        "subtitle": "projetamos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
         "embarcados": {
             "title": "Embarcados",
             "detail": "Esse departamento pesquisa e desenvolve tecnologias em sistemas embarcados voltada para aplicações aeroespaciais.",
@@ -64,7 +64,7 @@
                 }
             ]
         },
-        "gestão": {
+        "gestao": {
             "title": "Gestão",
             "detail": "Esse departamento é responsável pela organização e administração do grupo.",
             "core": "NÚCLEOS",

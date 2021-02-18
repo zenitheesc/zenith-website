@@ -1,6 +1,21 @@
+.section {
+	justify-content: center;
+	position: relative;
+	padding: 0px;
+	display: flex;
+	background-color: #E5E5E5;
+}
+
+.article {
+	display: flex;
+	width: 100%;
+	max-width: 1328px;
+	justify-content: center;
+}
+
 .highlightsContainer{
     width: auto;
-    padding: 2.5em;
+    padding: 4em;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
@@ -13,28 +28,28 @@
 }
 
 .countUp {
-	margin: 1em;
+	margin: 0.75em;
 	align-items: center;
 	text-align: center;
 	display: flex;
 	flex-direction: row;
-	
 }
 
 .countUp > span {
-	font-size: 54px;
+	font-size: 3.25rem;
 	font-weight: 270;
 	color: #4B4B4B;
 }
 
 .countUp > h2{
-	font-size: 24px;
+	font-size: 1.45rem;
 	font-weight: 270;
 	text-align: center;
 	margin-left: 0.5em;
 	color: #4B4B4B;
 	display: flex;
 	flex-direction: row;
+	line-height: 1em;
 	margin-bottom: 0px;
 }
 
@@ -44,15 +59,15 @@
 }
 
 .textSection > h1{
-	font-weight:600;
+	font-weight: 550;
 	margin-bottom: 0.1em;
-	font-size: 56px;
+	font-size: 3rem;
 }
 
 .textSection > h3{
 	font-weight: 300;
 	margin-top: 0.3em;
-	font-size: 24px;
+	font-size: 1.125rem;
 	color: #4B4B4B;
 }
 
@@ -71,12 +86,8 @@
 		text-align: center;
 	}
 
-	.textSection > h1{
-		font-size: 42px;
-	}
-
-	.textSection > h3{
-		font-size: 24px;
+	.textSection > h1 {
+		font-size: 2.5rem;
 	}
 
 	.countUpContainer {
@@ -97,12 +108,9 @@
 }
 
 @media screen and (max-width: 768px) {
+
 	.textSection > h1{
-		font-size: 32px;
+		font-size: 1.75rem;
 	}
 
-	.textSection > h3{
-		font-size: 20px;
-	}
-	
 }
