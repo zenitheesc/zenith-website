@@ -1,25 +1,27 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { languageSelector } from '../styles/Footer.module.css';
 
 export default function LanguageSelector() {
+  const currPage = useRouter().asPath;
   return (
     <>
 
       <div className={languageSelector}>
         <ul>
           <li>
-            <Link href="#" locale="pt">
+            <Link href={currPage} locale="pt">
               Português
             </Link>
           </li>
           <li>
-            <Link href="#" locale="en">
+            <Link href={currPage} locale="en">
               English
             </Link>
           </li>
           <li>
-            <Link href="#" locale="es">
+            <Link href={currPage} locale="es">
               Español
             </Link>
           </li>
