@@ -19,7 +19,7 @@ export default function NavHeader(props) {
           </a>
         </Link>
 
-        <NavLinks textContent={props.textContent} className={style.navigationHeader} />
+        <NavLinks className={style.navigationHeader} />
 
         <div className={style.menuIconWrapper}>
           <Hamburger size={24} color="#ffffff" duration={0.3} toggled={isMenuOpen} toggle={toggleMenu} rounded />

@@ -11,11 +11,10 @@ function NavBar(props) {
     setMenuState(open);
   };
 
-  useEffect(function onFirstMount() {
-
+  useEffect(() => {
     const closeMenu = () => {
       toggleMenu(false);
-    }
+    };
 
     window.addEventListener('resize', closeMenu);
 
@@ -61,8 +60,8 @@ function NavBar(props) {
   return (
     <div className={scrollDir === 'down' ? style.navBarContainerDeactive : style.navBarContainerActive}>
       <div className={style.navBarContainerBackground} style={{ backgroundColor: (scrollDir === 'top') ? 'transparent' : 'black' }} />
-      <NavHeader textContent={props.textContent} toggleMenu={toggleMenu} isMenuOpen={menu} />
-      <NavMenu textContent={props.textContent} isMenuOpen={menu} />
+      <NavHeader toggleMenu={toggleMenu} isMenuOpen={menu} />
+      <NavMenu isMenuOpen={menu} />
     </div>
   );
 }

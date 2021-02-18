@@ -1,9 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 import { navBarItem } from '../../styles/NavBar.module.css';
 
 export default function NavLinks(props) {
-  const {textContent} = props;
+  const { t } = useTranslation();
+  const textContent = t('common:navBar', { count: -1 }, { returnObjects: true });
   return (
     <>
       <ul className={props.className}>
