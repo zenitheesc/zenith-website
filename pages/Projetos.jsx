@@ -1,14 +1,17 @@
 import React from 'react';
+import useTranslation from 'next-translate/useTranslation';
 import NavBar from '../components/navbar-components/NavBar';
 import Footer from '../components/footer';
 import HeroSection from '../components/general/HeroSection';
-import TextContent from '../public/locale/pt-br/homePage.json';
 
 function Projetos() {
+  const { t } = useTranslation();
+  const title = t('projetos:projetosHero.title');
+  const subtitle = t('projetos:projetosHero.subtitle');
   return (
     <>
-      <NavBar textContent={TextContent.navBar} />
-      <HeroSection backgroundColor="#000000" title="Nossos projetos" subtitle="Integração de diversos campos da Engenharia no setor aeroespacial" />
+      <NavBar />
+      <HeroSection backgroundColor="#000000" title={title} subtitle={subtitle} />
       <Footer />
     </>
   );
