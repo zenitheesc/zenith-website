@@ -1,5 +1,4 @@
 {
-    "navBar": ["THE ZENITH", "PROJECTS", "KURUMIM", "PROCESSO SELETIVO", "CONTACT"],
     "homePageHero": [
         "O LAR DAS ESTRELAS EM SÃO CARLOS",
         "Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a oportunidade de chegar ao espaço"
@@ -129,9 +128,5 @@
     "homePageSupporters": {
         "title": "nossos apoiadores",
         "subtitle": "sem eles, nada disso seria possível"
-    },
-    "footer": {
-        "copyright": "© 2020  Zenith Aerospace",
-        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
     }
 }
