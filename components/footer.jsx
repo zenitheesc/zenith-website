@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import useTranslation from 'next-translate/useTranslation';
 import {
   FaFacebook,
   FaInstagram,
@@ -11,16 +12,19 @@ import styles from '../styles/Footer.module.css';
 import LanguageSelector from './LanguageSelector';
 
 function Footer() {
+  const { t } = useTranslation();
+  const copyright = t('common:footer.copyright');
+  const easterEgg = t('common:footer.easterEgg');
   return (
     <div className={styles.footer}>
       <div>
         <div className={styles.footerLeftSide}>
-          <a className="" href="#">
+          <a href="#">
             <Image src="/images/Footer/logo.webp" alt="Zenith Logo" width="148px" height="79px" />
           </a>
           <div className={styles.footerData}>
-            <span id={styles.zenithCopyright}>© 2021 Zenith Aerospace</span>
-            <span id={styles.easterEgg}>FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD</span>
+            <span id={styles.zenithCopyright}>{copyright}</span>
+            <span id={styles.easterEgg}>{easterEgg}</span>
           </div>
         </div>
         <LanguageSelector />
