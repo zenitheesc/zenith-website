@@ -7,7 +7,7 @@ export default function HighlightsSection() {
   const { t } = useTranslation();
   const title = t('homePage:homePageStatistics.title');
   const subtitle = t('homePage:homePageStatistics.subtitle');
-  const statistics = t('homePage:homePageStatistics.array', { count: -1 }, { returnObjects: true });
+  const statistics = t('homePage:homePageStatistics.statistics', { count: 1 }, { returnObjects: true });
 
   return (
     <div className={style.highlightsContainer}>
