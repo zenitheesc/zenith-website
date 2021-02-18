@@ -4,7 +4,7 @@
     "pages"        : {
 		"*" : ["common"],
 		"/"                : ["homePage"],
-		"/Kurumin"         : ["kurumin"],
+		"/Kurumim"         : ["kurumim"],
 		"/ProcessoSeletivo": ["processoSeletivo"],
 		"/Projetos"        : ["projetos"],
 		"/Zenith"          : ["oZenith"]
