@@ -1,4 +1,8 @@
 import React from 'react';
+import Embarcados from './icons/Embarcados';
+import Estruturas from './icons/Estruturas';
+import Astrobiologia from './icons/Astrobiologia';
+import Gestão from './icons/Gestão';
 import SectorsButtons from './SectorsButtons';
 import styles from '../../../styles/Sectors.module.css';
 
@@ -16,7 +20,20 @@ function Sectors(props) {
           {subtitle}
         </h3>
       </div>
-      <SectorsButtons textContent={props.textContent} />
+      <div className={styles.sectorsButtons}>
+        <SectorsButtons label={props.textContent.embarcados}>
+          <Embarcados />
+        </SectorsButtons>
+        <SectorsButtons label={props.textContent.estruturas}>
+          <Estruturas />
+        </SectorsButtons>
+        <SectorsButtons label={props.textContent.astrobiologia}>
+          <Astrobiologia />
+        </SectorsButtons>
+        <SectorsButtons label={props.textContent.gestao}>
+          <Gestão />
+        </SectorsButtons>
+      </div>
     </div>
   );
 }
