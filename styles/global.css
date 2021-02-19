@@ -1,8 +1,51 @@
 body, html {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: -Roboto, apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    position: relative;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: -Roboto, apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  position: relative;
+}
+
+/* Homepage standards */
+
+.-section {
+  justify-content: center;
+	position: relative;
+	padding: 0px;
+	display: flex;
+}
+
+.-standardContainer {
+  padding: 4em;
+  max-width: 1328px;
+}
+
+.-homepage-section-title {
+  font-weight: 550;
+	margin: 0px;
+	margin-bottom: 0.1em;
+	font-size: 3rem;
+}
+
+.-homepage-section-subtitle {
+	font-weight: 300;
+	margin-top: 0.3em;
+	font-size: 1.125rem;
+}  
+
+@media screen and (max-width: 1024px) {
+
+  	.-homepage-section-title {
+		font-size: 2.5rem;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+  
+	.-homepage-section-title {
+		font-size: 1.75rem;
+	}
+
 }

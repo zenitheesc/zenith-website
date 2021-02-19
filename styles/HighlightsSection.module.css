@@ -1,15 +1,8 @@
 .section {
-	justify-content: center;
-	position: relative;
-	padding: 0px;
-	display: flex;
 	background-color: #E5E5E5;
 }
 
 .highlightsContainer{
-	width: 100%;
-	padding: 4em 0em;
-    max-width: 1328px;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
@@ -48,16 +41,7 @@
 	text-align: right;
 }
 
-.textSection > h1{
-	font-weight: 550;
-	margin-bottom: 0.1em;
-	font-size: 3rem;
-}
-
 .textSection > h3{
-	font-weight: 300;
-	margin-top: 0.3em;
-	font-size: 1.125rem;
 	color: #4B4B4B;
 }
 
@@ -77,10 +61,6 @@
 		text-align: center;
 	}
 
-	.textSection > h1 {
-		font-size: 2.5rem;
-	}
-
 	.countUpContainer {
 		width: 100%;
 	}
@@ -95,12 +75,4 @@
 		margin: 0px;
 	}
 	
-}
-
-@media screen and (max-width: 768px) {
-
-	.textSection > h1{
-		font-size: 1.75rem;
-	}
-
 }

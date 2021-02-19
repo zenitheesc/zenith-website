@@ -1,6 +1,6 @@
 import React from 'react';
-import style from '../../../styles/HighlightsSection.module.css';
 import CounterText from './CounterText';
+import style from '../../../styles/HighlightsSection.module.css';
 
 export default function HighlightsSection(props) {
   const { title } = props.textContent;
@@ -8,8 +8,8 @@ export default function HighlightsSection(props) {
   const { statistics } = props.textContent;
 
   return (
-    <section className={style.section}>
-      <div className={style.highlightsContainer}>
+    <section className={`-section ${style.section}`}>
+      <div className={`-standardContainer ${style.highlightsContainer}`}>
         <div className={style.countUpContainer}>
           <CounterText value={statistics[0].number} suffix={statistics[0].description} />
           <CounterText value={statistics[1].number} suffix={statistics[1].description} plus />
@@ -19,10 +19,10 @@ export default function HighlightsSection(props) {
           <CounterText value={statistics[5].number} suffix={statistics[5].description} />
         </div>
         <div className={style.textSection}>
-          <h1>
+          <h1 className="-homepage-section-title">
             {title}
           </h1>
-          <h3>
+          <h3 className="-homepage-section-subtitle">
             {subtitle}
           </h3>
         </div>

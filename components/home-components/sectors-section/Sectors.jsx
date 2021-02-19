@@ -11,12 +11,12 @@ function Sectors(props) {
   const { subtitle } = props.textContent;
 
   return (
-    <div className={styles.sectorsContainer}>
+    <div className={`-standardContainer ${styles.sectorsContainer}`}>
       <div className={styles.textSection}>
-        <h1>
+        <h1 className="-homepage-section-title">
           {title}
         </h1>
-        <h3>
+        <h3 className="-homepage-section-subtitle">
           {subtitle}
         </h3>
       </div>
