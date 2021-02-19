@@ -1,8 +1,7 @@
 .sectorsContainer{
-    width: auto;
     padding: 64px 4em;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 	align-items: center;
 	background-color: #E5E5E5;
@@ -15,7 +14,8 @@
 
 .textSection > h1 {
 	font-weight: 550;
-	margin: 0 0 0.1em 0;
+	margin: 0px;
+	margin-bottom: 0.1em;
 	font-size: 3rem;
 }
 
@@ -24,7 +24,8 @@
 	margin-top: 0.3em;
 	font-size: 1.125rem;
 	color: #4B4B4B;
-}         
+}     
+
 .sectorsButtons {
 	display: flex;
 	flex-direction: row;
@@ -36,7 +37,7 @@
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	margin: 0 2.75rem;
+	margin: 0rem 2.75rem;
 }
 
 .sectorsButton > button {
@@ -46,7 +47,15 @@
 	width: 100%;
 }
 
-.sectorsButton > button > svg{
+.sectorsButton > button:hover {
+	fill: #3c3b3d;
+}
+
+.sectorsButton > button:hover + h3{
+	color: #3c3b3d;
+}
+
+.sectorsButton > button > svg {
 	width: 10em;
 	height: auto;
 }

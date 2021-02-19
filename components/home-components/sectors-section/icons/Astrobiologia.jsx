@@ -13,7 +13,6 @@ function Astrobiologia() {
 
       <g
         transform="translate(0.000000,800.000000) scale(0.100000,-0.100000)"
-        fill="#000000"
         stroke="none"
       >
         <path d="M3860 7989 c-14 -4 -56 -15 -95 -24 -94 -21 -251 -100 -356 -179 -98

@@ -6,21 +6,14 @@
 	background-color: #E5E5E5;
 }
 
-.article {
-	display: flex;
-	width: 100%;
-	max-width: 1328px;
-	justify-content: center;
-}
-
 .highlightsContainer{
-    width: auto;
-    padding: 4em;
+	width: 100%;
+	padding: 4em 0em;
+    max-width: 1328px;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
 	align-items: center;
-	background-color: #E5E5E5;
 }
 
 .countUpContainer{
@@ -33,12 +26,12 @@
 	text-align: center;
 	display: flex;
 	flex-direction: row;
+	color: #4B4B4B;
 }
 
 .countUp > span {
 	font-size: 3.25rem;
 	font-weight: 270;
-	color: #4B4B4B;
 }
 
 .countUp > h2{
@@ -46,11 +39,8 @@
 	font-weight: 270;
 	text-align: center;
 	margin-left: 0.5em;
-	color: #4B4B4B;
-	display: flex;
-	flex-direction: row;
-	line-height: 1em;
 	margin-bottom: 0px;
+	line-height: 1em;
 }
 
 .textSection {
@@ -72,13 +62,14 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .countUp {
-		display: flex;
-		flex-direction: column;
-	}
 
 	.highlightsContainer{ 
 		flex-direction: column-reverse;
+	}
+
+    .countUp {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.textSection {
@@ -93,16 +84,15 @@
 	.countUpContainer {
 		width: 100%;
 	}
-
-	.countUp > h2{ 
-		font-size: 20px;
-		margin: 0px;
-	}
-
+	
 	.countUp {
 		width: 100%;
 		margin: 0px;
-		
+	}
+	
+	.countUp > h2{ 
+		font-size: 20px;
+		margin: 0px;
 	}
 	
 }
