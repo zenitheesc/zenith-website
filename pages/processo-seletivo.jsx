@@ -1,22 +1,21 @@
 import React from 'react';
 import NavBar from '../components/navbar-components/NavBar';
-import Footer from '../components/footer';
 import HeroSection from '../components/general/HeroSection';
+import Footer from '../components/Footer';
 import TextContent from '../public/locale/pt-br/homePage.json';
 
-function Zenith() {
+function ProcessoSeletivo() {
   return (
     <>
       <NavBar textContent={TextContent.navBar} />
       <HeroSection
-        backgroundImage="url(../images/Zenith/Header.webp)"
-        title="O que é o Zenith?"
-        subtitle="Nós somos "
-        array={['CIÊNCIA', 'TECNOLOGIA', 'INOVAÇÃO', 'CONEXÕES', 'ZENITH']}
+        backgroundImage="url(../images/ProcessoSeletivo/header.webp)"
+        title="Processo Seletivo"
+        subtitle="Você deseja ser parte do Zenith Aerospace?"
       />
       <Footer />
     </>
   );
 }
 
-export default Zenith;
+export default ProcessoSeletivo;
