@@ -1,0 +1,34 @@
+.technologiesRow {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.technologiesContainer {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.technologieContainer {
+    display: flex;
+	padding: 7px;
+	margin: 3px;
+	background-color: #8D8F92;
+    justify-content: center;
+	justify-items: center;
+	width: 85px !important;
+	height: 85px !important;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.technologieContainer img{
+    width: 100%;
+	height: 100%;
+    object-fit: contain;
+	filter: grayscale(100%);
+}
+
+
+
