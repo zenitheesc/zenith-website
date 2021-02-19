@@ -1,0 +1,11 @@
+.projectTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.projectTitle > svg{
+	margin: 1em;
+	cursor: pointer;
+	font-size: 20px;
+}
