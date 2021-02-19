@@ -11,7 +11,7 @@ function Sectors(props) {
   const { subtitle } = props.textContent;
 
   return (
-    <div className={`-standardContainer ${styles.sectorsContainer}`}>
+    <div className={styles.sectorsContainer}>
       <div className={styles.textSection}>
         <h1 className="-homepage-section-title">
           {title}

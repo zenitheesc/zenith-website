@@ -11,9 +11,9 @@ body, html {
 
 .-section {
   justify-content: center;
-	position: relative;
-	padding: 0px;
-	display: flex;
+  position: relative;
+  padding: 0px;
+  display: flex;
 }
 
 .-standardContainer {

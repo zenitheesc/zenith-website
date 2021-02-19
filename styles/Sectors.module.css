@@ -1,4 +1,6 @@
 .sectorsContainer{
+	width: auto;
+	padding: 4em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
