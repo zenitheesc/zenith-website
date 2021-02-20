@@ -1,18 +1,17 @@
 import React from 'react'
 import styles from '../../../styles/projects/TechnologiesRow.module.css'
-import Image from 'next/image';
 
-function Technologie(props) {
+function Technology(props) {
 	const { name } = props;
 	const { alt } = props;
+	
 	return (
 		<div className={styles.technologieContainer}>
 			<img
-				src={`/images/technologies/${name}.png`}
+				src={`/images/technologies/${name}.svg`}
 				alt={alt}
 				width="80%"
 				height="auto"
-
 			/>
 		</div>
 	)
@@ -29,7 +28,7 @@ export default function TechnologiesRow(props) {
 			</h3>
 			<div className={styles.technologiesContainer}>
 				{technologies.map((value) => {
-					return <Technologie name={value} />
+					return <Technology name={value} />
 				})}
 			</div>
 		</div>

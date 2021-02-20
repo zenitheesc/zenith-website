@@ -10,13 +10,16 @@ import ProjectToggle from '../projects-structure/ProjectToggle';
 
 export default function SondasAeroespaciais() {
 
-  const itens = ["Loren ipsum dolor sit amet",
+  const itens = [
     "Loren ipsum dolor sit amet",
     "Loren ipsum dolor sit amet",
     "Loren ipsum dolor sit amet",
-    "Loren ipsum dolor sit amet"]
+    "Loren ipsum dolor sit amet",
+    "Loren ipsum dolor sit amet"
+  ];
 
-  const technologies = ["Atmel",
+  const technologies = [
+    "Atmel",
     "Electron",
     "Firebase",
     "Flutter",
@@ -24,14 +27,16 @@ export default function SondasAeroespaciais() {
     "LaTeX",
     "linux",
     "LoRa",
-    "Node.js",
+    "NodeJS",
     "NXP",
     "PCI Express",
     "Python",
     "Qt",
     "STmicroelectronics",
-    "TexasInstruments"]
-  return (
+    "TexasInstruments"
+  ];
+  
+    return (
     <div
       style={{ backgroundColor: '#E1E1E5', width: '100%', height: '100%' }}
     >
