@@ -3,7 +3,8 @@ import NavBar from "../components/navbar-components/NavBar";
 import Footer from "../components/footer";
 import HeroSection from "../components/general/HeroSection";
 import TextContent from "../public/locale/pt-br/homePage.json";
-import TextCard from "../components/general/TextCard";
+import Card from "../components/general/Card";
+import CardContainer from "../components/general/CardContainer";
 
 function Zenith() {
   return (
@@ -16,26 +17,8 @@ function Zenith() {
         array={['CIÊNCIA', 'TECNOLOGIA', 'INOVAÇÃO', 'CONEXÕES', 'ZENITH']}
       />
 
-            <TextCard />
-
-            <TextCard reverse />
-
-            <TextCard
-                bothText
-                img={
-                    <>
-                        <h2>Outro Titulo</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. A reiciendis ipsam illo earum rerum provident
-                            beatae. Ad, tempora! Soluta doloremque repellat
-                            numquam eveniet quo debitis nam quod molestiae quos
-                            vitae.
-                        </p>
-                    </>
-                }
-            />
-      <Footer />
+    <CardContainer />
+  <Footer />
     </>
   );
 }

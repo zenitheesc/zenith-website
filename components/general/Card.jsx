@@ -16,25 +16,22 @@ const defaultText = (
     </div>
 );
 const defaultImg = <img src="http://placekitten.com/960/600" />;
-function TextCard({
-    text = defaultText,
-    img = defaultImg,
-    reverse = false,
-    bothText = false,
+function Card({
+    left = defaultText,
+    right = defaultImg,
+    lean = "right"
 }) {
     return (
-        <div className={!reverse ? style.textCard : style.textCardReverse}>
-            <div className={style.textCardText}>{text}</div>
-            <div className={!bothText ? style.textCardImg : style.textCardText}>
-                {img}
-            </div>
+        <div className={style.card}>
+            <div className={style.card__left}>{left}</div>
+            <div className={style.card__right}>{right}</div>
         </div>
     );
 }
-TextCard.propTypes = {
-    text: PropTypes.node,
-    img: PropTypes.node,
-    reverse: PropTypes.bool,
-    bothText: PropTypes.bool,
+Card.propTypes = {
+    left: PropTypes.node,
+    right: PropTypes.node,
+    lean: PropTypes.string,
 };
-export default TextCard;
+
+export default Card;
