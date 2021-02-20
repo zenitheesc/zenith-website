@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { navBarItem } from '../../styles/NavBar.module.css';
+import { navBarItem } from 'styles/NavBar.module.css';
 
 export default function NavLinks(props) {
   const { textContent } = props;

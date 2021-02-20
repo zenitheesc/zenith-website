@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../styles/Sectors.module.css';
+import styles from 'styles/Sectors.module.css';
 
 export default function SectorsButtons(props) {
   const Icon = props.children;
