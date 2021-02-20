@@ -45,7 +45,7 @@
     margin-top: 8px;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
     .heroContainer > h1 {
         font-size: 45px;
     }
@@ -54,7 +54,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .heroContainer > h1 {
         font-size: 35px;
     }
