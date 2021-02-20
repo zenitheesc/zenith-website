@@ -70,7 +70,7 @@ function (_React$Component) {
         color: this.props.color
       };
       return _react.default.createElement("a", {
-        href: this.props.url + '/' + this.props.name,
+        // href: this.props.url + '/' + this.props.name,
         style: _objectSpread({}, tagStyle, otherStyle)
       }, this.props.name);
     }
