@@ -48,3 +48,11 @@
 .projectData.dark *{
     border-color: #666161 !important;
 }
+
+.projectData  svg{
+    color: #CCCCCC;
+}
+
+.projectData.dark  svg{
+    color: #666161;
+}
