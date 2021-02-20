@@ -161,17 +161,17 @@ const TagCloud =
         value: function componentDidMount() {
           const _this3 = this;
 
-          document.addEventListener('mousemove', function (e) {
-            const angleX =
-              2 * (e.clientX / document.body.getBoundingClientRect().width - 0.5) * _this3.state.speed * BASEANGLE;
-            const angleY =
-              2 * (e.clientY / document.body.getBoundingClientRect().height - 0.5) * _this3.state.speed * BASEANGLE;
+          // document.addEventListener('mousemove', function (e) {
+          //   const angleX =
+          //     2 * (e.clientX / document.body.getBoundingClientRect().width - 0.5) * _this3.state.speed * BASEANGLE;
+          //   const angleY =
+          //     2 * (e.clientY / document.body.getBoundingClientRect().height - 0.5) * _this3.state.speed * BASEANGLE;
 
-            _this3.setState({
-              angleX,
-              angleY,
-            });
-          });
+          //   _this3.setState({
+          //     angleX,
+          //     angleY,
+          //   });
+          // });
 
           if (this.props.tagName.length === 0) {
             return;
