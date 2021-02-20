@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Fade as Hamburger } from 'hamburger-react';
-import style from '../../styles/NavBar.module.css';
+import style from 'styles/NavBar.module.css';
 import NavLinks from './NavLinks';
 
 export default function NavHeader(props) {

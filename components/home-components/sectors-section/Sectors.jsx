@@ -4,7 +4,7 @@ import Estruturas from './icons/Estruturas';
 import Astrobiologia from './icons/Astrobiologia';
 import Gestão from './icons/Gestão';
 import SectorsButtons from './SectorsButtons';
-import styles from '../../../styles/Sectors.module.css';
+import styles from 'styles/Sectors.module.css';
 
 function Sectors(props) {
   const { title } = props.textContent;

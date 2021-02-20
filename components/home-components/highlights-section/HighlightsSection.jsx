@@ -1,6 +1,6 @@
 import React from 'react';
 import CounterText from './CounterText';
-import style from '../../../styles/HighlightsSection.module.css';
+import style from 'styles/HighlightsSection.module.css';
 
 export default function HighlightsSection(props) {
   const { title } = props.textContent;
