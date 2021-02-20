@@ -191,16 +191,7 @@ const TagCloud =
             animation();
           });
           this.move(this.props.tagName);
-        }, // handleMouseover(e) {
-        // 	const angleY = 2 * (e.clientX / document.body.getBoundingClientRect().width - 0.5) * speed * BASEANGLE;
-        // 	const angleX = 2 * (e.clientY / document.body.getBoundingClientRect().height - 0.5) * speed * BASEANGLE;
-        // 	this.setState({ angleX, angleY })
-        // }
-        // handleMouseout() {
-        // 	const angleX = this.state.speed * BASEANGLE
-        // 	const angleY = this.state.speed * BASEANGLE
-        // 	this.setState({ angleX, angleY })
-        // }
+        }, 
       },
       {
         key: 'move',
@@ -268,6 +259,8 @@ const TagCloud =
         key: 'render',
         value: function render() {
           const _this5 = this;
+
+//TO-DO: add css module import
 
           const containerStyle = {
             width: '100%',
