@@ -12,9 +12,9 @@ function Home() {
   return (
     <>
       <NavBar textContent={TextContent.navBar} />
-      <HomeHeroSection />
+      <HomeHeroSection/>
       <GenusBanner/>
-		  <ZenMonitorBanner/>
+      <ZenMonitorBanner/>
       <HighlightsSection textContent={TextContent.homePageStatistics} />
       <ApoiadoresBanner/>
       <Footer />

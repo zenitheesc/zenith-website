@@ -4,7 +4,8 @@
     justify-content: space-between;
     background-color: #605F62;
     height: 40vw;
-    align-items: left; 
+    align-items: left;
+    z-index: 2; 
 }
 
 .squares{
@@ -63,26 +64,18 @@
         height: 200vw;
     }
 
-    .bannersText {
-        align-items: center;
-        font-size: 3vw;
-        height: 40px;
-        padding-left: 0;
-        
-    }
-
     .squares{
         padding-top: 0;
         padding-right: 0;
-        padding-bottom: 6em;
-        grid-template-columns: 48vw 48vw;
-        grid-template-rows: 48vw 48vw;
+        padding-left: 0;
+        padding-bottom: 9em;
+        grid-template-columns: 45vw 45vw;
+        grid-template-rows: 45vw 45vw;
     }
     
     .squares > *{
         height: 40vw;
         width: 40vw;
-        
     }
 
     .emptySquare{

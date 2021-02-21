@@ -5,7 +5,7 @@
     background-color: black;
     height: 40vw;
     align-items: left;
-    
+    z-index: 2;
 }
 
 .zenMonitorImage {

@@ -4,12 +4,15 @@
     color: white;
     align-items: left;
     padding: 2.5em;
+    margin-left: 1em;
+    /*z-index: -1;*/
+    
 }
 .bannersText > h1{
-    font-family: sans-serif;
     font-size: 54px;
-	font-weight: 270;
-    margin-bottom: 0;
+	font-weight: 460;
+    margin: 0;
+    
 } 
 .bannersText > h2{
     font-size: 24px;
@@ -36,8 +39,7 @@
     font-size: 1vw;
     color: white;
     font-family: sans-serif;
-    
-    
+
 }
 
 #gitHubIcon{
@@ -56,13 +58,13 @@
         padding-left: 1.5em;
     }
     .bannersText > h1{
-        line-height: 95%;
-        font-size: 12vw;
+        /*line-height: 95%;*/
+        font-size: 32px;
     } 
     .bannersText > h2{
         width: auto;
         padding-top: 6px;
-        font-size: 6vw;
+        font-size: 20px;
     }
     .bannersText > form{
         position: relative;
