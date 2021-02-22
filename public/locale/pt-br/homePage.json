@@ -132,7 +132,21 @@
     },
     "homePageSupporters": {
         "title": "nossos apoiadores",
-        "subtitle": "sem eles, nada disso seria possível"
+        "subtitle": "sem eles, nada disso seria possível",
+        "website": [
+            {
+                "link": "https://www.ozprodutora.com.br/"
+            },
+            {
+                "link": "https://www5.usp.br/"
+            },
+            {
+                "link": "https://eesc.usp.br/"
+            },
+            {
+                "link":"https://vercel.com"
+            }
+        ]
     },
     "footer": {
         "copyright": "© 2020  Zenith Aerospace",

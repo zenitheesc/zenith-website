@@ -5,20 +5,23 @@
     align-items: left;
     padding: 2.5em;
     margin-left: 1em;
-    /*z-index: -1;*/
-    
+    /*height: 34px;
+    width: 56px;
+    background-color: red;*/
 }
+
 .bannersText > h1{
     font-size: 54px;
 	font-weight: 460;
     margin: 0;
-    
-} 
+}
+
 .bannersText > h2{
     font-size: 24px;
 	font-weight: 270;
     margin-top: 0em;
 }
+
 .bannersText > form{
     position: absolute;
     bottom: 2em;
@@ -39,7 +42,6 @@
     font-size: 1vw;
     color: white;
     font-family: sans-serif;
-
 }
 
 #gitHubIcon{

@@ -4,7 +4,7 @@ import styles from '../../styles/GenusBanner.module.css'
 
 
 
-function genusBanner() {
+function genusBanner(props) {
 	
 	const videoElement = useRef(null);
   	const [videoAutoPlayable, setVideoAutoPlayable] = useState(true);
@@ -20,15 +20,20 @@ function genusBanner() {
   	}, []);
 
 	  
+	const { title } = props.textContent[0];
+	const { detail } = props.textContent[0];
+	const { link } = props.textContent[0];
 	
 	return (
         <div className={styles.genusBanner}>
-			
-			
 			<div className={textStyles.bannersText}>
-				<h1>Genus</h1>
-				<h2>Hardware modularizado voltado para aplicações aerospaciais</h2>
-				<form action="https://github.com/zenitheesc/Genus" target="_blank">
+				<h1>
+					{title}
+				</h1>
+				<h2>
+					{detail}
+				</h2>
+				<form action={link} target="_blank">
                 	<button id={textStyles.gitHubButton} type="submit" >
 						<img id={textStyles.gitHubIcon} src="/images/banners/GitHubWhiteIcon.png" />
 						GITHUB  
@@ -39,9 +44,6 @@ function genusBanner() {
 			<video id={styles.genusVideo} ref={videoElement} autoPlay loop muted playsInline preload="auto">
 	  			<source src="/images/banners/genus-banner/Genus1.mp4" type="video/mp4" />
 			</video>
-				
-			
-			
 		</div>
 		
 	)

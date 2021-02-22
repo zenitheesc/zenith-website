@@ -13,10 +13,10 @@ function Home() {
     <>
       <NavBar textContent={TextContent.navBar} />
       <HomeHeroSection/>
-      <GenusBanner/>
-      <ZenMonitorBanner/>
+      <GenusBanner textContent={TextContent.homePageBanners}/>
+      <ZenMonitorBanner textContent={TextContent.homePageBanners}/>
       <HighlightsSection textContent={TextContent.homePageStatistics} />
-      <ApoiadoresBanner/>
+      <ApoiadoresBanner textContent={TextContent.homePageSupporters}/>
       <Footer />
     </>
   );
