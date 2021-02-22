@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NavHeader from './NavHeader';
 import NavMenu from './NavMenu';
-import style from '../../styles/NavBar.module.css';
+import style from 'styles/NavBar.module.css';
 
 function NavBar(props) {
   const [menu, setMenuState] = useState(false);

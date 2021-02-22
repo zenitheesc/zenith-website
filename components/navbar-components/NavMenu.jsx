@@ -1,6 +1,6 @@
 import React from 'react';
 import NavLinks from './NavLinks';
-import style from '../../styles/NavBar.module.css';
+import style from 'styles/NavBar.module.css';
 
 export default function NavMenu(props) {
   return (

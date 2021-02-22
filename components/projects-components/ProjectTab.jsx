@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import SondasAeroespaciais from './projects/sondasAeroespaciais';
-import CubeSats from './projects/cubeSats';
-import Software from './projects/software';
-import Hardware from './projects/hardware';
-import Educacional from './projects/educacional';
+import SondasAeroespaciais from './projects/SondasAeroespaciais';
+import CubeSats from './projects/CubeSats';
+import Software from './projects/Software';
+import Hardware from './projects/Hardware';
+import Educacional from './projects/Educacional';
 import styles from '../../styles/ProjectTab.module.css';
 
 function Tab(props) {

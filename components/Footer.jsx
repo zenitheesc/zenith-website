@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import {
   FaFacebook,
   FaInstagram,
@@ -14,8 +13,8 @@ function Footer() {
     <div className={styles.footer}>
       <div className={styles.footerLeftSide}>
         <a className="" href="#">
-          <Image
-            src="/images/Footer/logo.webp"
+          <img
+            src="/images/Footer/logo.svg"
             alt="Zenith Logo"
             width="148px"
             height="79px"

@@ -7,6 +7,7 @@ import TechnologiesRow from '../projects-structure/TechnologiesRow';
 import ProjectTable from '../projects-structure/ProjectTable';
 import ProjectDataRow from '../projects-structure/ProjectDataRow';
 import ProjectToggle from '../projects-structure/ProjectToggle';
+import ProjectsCarousel from '../ProjectsCarousel';
 
 export default function SondasAeroespaciais() {
 

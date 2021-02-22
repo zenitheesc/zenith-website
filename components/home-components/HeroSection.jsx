@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import styles from '../styles/HomepageHeroSection.module.css';
+import styles from 'styles/HomepageHeroSection.module.css';
 
 function HomepageHeroSection() {
   const videoElement = useRef(null);
