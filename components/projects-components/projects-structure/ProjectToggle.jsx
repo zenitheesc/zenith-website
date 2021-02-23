@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../../../styles/projects/ProjectToggle.module.css'
+import styles from 'styles/projects/ProjectToggle.module.css'
 
 export default function ProjectToggle(props) {
 	const [firstOptionSelected, setfirstOptionSelected] = useState(true)
@@ -14,7 +14,6 @@ export default function ProjectToggle(props) {
 				</h2>
 				<h2 onClick={() => { setfirstOptionSelected(false) }}
 					style={{ "text-decoration": firstOptionSelected ? "none" : "underline" }}
-
 				>
 					{secondTitle}
 				</h2>

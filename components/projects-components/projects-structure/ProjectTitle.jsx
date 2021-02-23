@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaGithub } from 'react-icons/fa'
-import Link from 'next/link';
-import styles from '../../../styles/projects/ProjectTitle.module.css'
+import styles from 'styles/projects/ProjectTitle.module.css'
 
 export default function ProjectTitle(props) {
 	const { title } = props;
@@ -13,14 +12,12 @@ export default function ProjectTitle(props) {
 				{title}
 			</h1>
 			{
-				gitLink != null? 
-				<Link href={gitLink}>
+				gitLink != null
+				? <a href={gitLink} aria-label="GitHub" target="_blank" rel="noopener noreferrer">
 					<FaGithub />
-				</Link>
-				: 
-				<></>
+				</a>
+				: <></>
 			}
-			
 		</div>
 	)
 }

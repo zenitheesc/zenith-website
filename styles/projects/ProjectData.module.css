@@ -41,17 +41,17 @@
 }
 
 .projectData *{
-    border-color: #CCCCCC !important;
+    border-color: #CCCCCC7c !important;
 }
 
 .projectData.dark *{
-    border-color: #666161 !important;
+    border-color: #6661617c !important;
 }
 
-.projectData  svg{
+.projectData svg{
     color: #CCCCCC;
 }
 
-.projectData.dark  svg{
+.projectData.dark svg{
     color: #666161;
 }

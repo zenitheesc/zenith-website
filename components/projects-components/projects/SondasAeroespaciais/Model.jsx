@@ -14,6 +14,7 @@ import styles from 'styles/Projects.module.css';
 function Model (props) {
     const { 
         title, 
+        link,
         menus,
         launchDate,
         altitude,
@@ -26,7 +27,7 @@ function Model (props) {
     return (  
         <div className={`-standardContainer ${styles.projectContainer}`}>
             <ProjectData dark>
-                <ProjectTitle title={ title } gitLink="" />
+                <ProjectTitle title={ title } gitLink={ link } />
                 <ProjectToggle firstTitle = {menus[0]} secondTitle = {menus[1]}>
                 <ProjectTable>
                     <ProjectDataRow label={launchDate[0]} value={launchDate[1]} />
