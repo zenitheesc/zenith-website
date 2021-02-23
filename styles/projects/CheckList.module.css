@@ -25,3 +25,23 @@
     margin-right: 0.4em;
     color: #8D8F92;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .checkList span {
+        width: 45em;
+    }
+
+    .checkListItem > svg {
+        margin-right: 0.6em;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .checkList span {
+        width: 25em;
+    }
+
+}

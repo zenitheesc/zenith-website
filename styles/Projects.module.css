@@ -7,12 +7,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 4em;
+    max-width: 1328px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .projectContainer {
+        flex-direction: column-reverse;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
 
     .projectContainer {
-        flex-direction: column-reverse;
+        padding: 2em 0em;
     }
 
 }

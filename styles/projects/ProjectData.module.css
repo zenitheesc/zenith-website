@@ -13,12 +13,12 @@
 }
 
 .projectData {
-    width: 50vh;
+    width: 55vw;
     background-color: black;
 }
 
 .projectData.dark {
-    width: 50vh;
+    width: 55vw;
     background-color: transparent;
 }
 
@@ -40,18 +40,60 @@
     font-size: 14px;
 }
 
-.projectData *{
+.projectData * {
     border-color: #CCCCCC7c !important;
 }
 
-.projectData.dark *{
+.projectData.dark * {
     border-color: #6661617c !important;
 }
 
-.projectData svg{
+.projectData svg {
     color: #CCCCCC;
 }
 
-.projectData.dark svg{
+.projectData.dark svg {
     color: #666161;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .projectData {
+        width: 70vw;
+    }
+    
+    .projectData.dark {
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .projectData {
+        width: 85vw;
+    }
+    
+    .projectData.dark {
+        width: 85vw;
+    }
+
+    .projectData h1 {
+        font-size: 30px;
+    } 
+    
+    .projectData h2 {
+        font-size: 15px;
+    }
+    
+    .projectData h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .projectData span {
+        font-size: 14px;
+    }
+
 }

@@ -1,9 +1,7 @@
 import React from 'react';
 import CheckList from '../../projects-structure/CheckList';
 import ProjectData from '../../ProjectData';
-import ProjectsContainer from '../../ProjectsContainer';
 import ProjectTitle from '../../projects-structure/ProjectTitle';
-import TechnologiesRow from '../../projects-structure/TechnologiesRow';
 import ProjectTable from '../../projects-structure/ProjectTable';
 import ProjectDataRow from '../../projects-structure/ProjectDataRow';
 import ProjectToggle from '../../projects-structure/ProjectToggle';
@@ -25,7 +23,7 @@ function Model (props) {
     } = props.textContent;
 
     return (  
-        <div className={`-standardContainer ${styles.projectContainer}`}>
+        <div className={styles.projectContainer}>
             <ProjectData dark>
                 <ProjectTitle title={ title } gitLink={ link } />
                 <ProjectToggle firstTitle = {menus[0]} secondTitle = {menus[1]}>

@@ -5,3 +5,24 @@
 .projectsCarousel > div {
     border-radius: 5px;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .projectsCarousel {
+        margin: 0px;
+        margin-bottom: 2em;
+    }
+
+    .projectsCarousel > div {
+        width: 70vw !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .projectsCarousel > div {
+        width: 85vw !important;
+    }
+
+}

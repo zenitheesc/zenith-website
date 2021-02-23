@@ -6,7 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 export default function ProjectsCarousel(props) {
   return (
     <Carousel 
-      width='35vw'
+      width='100%'
       className={style.projectsCarousel}
       showStatus={false}
       showThumbs={false}
