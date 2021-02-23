@@ -21,6 +21,7 @@ function Model (props) {
         embedded,
         structure
     } = props.textContent;
+    const { paths } = props;
 
     return (  
         <div className={styles.projectContainer}>
@@ -42,11 +43,7 @@ function Model (props) {
                 </ProjectTable>
                 </ProjectToggle>
             </ProjectData>
-            <ProjectsCarousel>
-                <div>
-                    <img src='/images/Kurumim/header.webp'/>
-                </div>
-            </ProjectsCarousel>
+            <ProjectsCarousel paths={paths} />
         </div>      
     );
 }
