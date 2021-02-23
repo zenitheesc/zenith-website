@@ -4,6 +4,7 @@
 
 .projectsCarousel > div {
     border-radius: 5px;
+    left: 10%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -15,6 +16,7 @@
 
     .projectsCarousel > div {
         width: 70vw !important;
+        left: 0px;
     }
 
 }
