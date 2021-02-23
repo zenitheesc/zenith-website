@@ -3,8 +3,7 @@ import NavBar from 'components/navbar-components/NavBar';
 import HeroSection from 'components/general/HeroSection';
 import ProjectTab from 'components/projects-components/ProjectTab';
 import Footer from 'components/Footer';
-import TextContent from 'public/locale/pt-br/homePage.json';
-
+import TextContent from 'public/locale/pt-br/projetos.json';
 
 function Projetos() {
   return (
@@ -15,7 +14,7 @@ function Projetos() {
         title="Nossos projetos"
         subtitle="Integração de diversos campos da Engenharia no setor aeroespacial"
       />
-      <ProjectTab />
+      <ProjectTab textContent={TextContent}/>
       <Footer />
     </>
   );

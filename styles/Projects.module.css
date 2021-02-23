@@ -1,3 +1,18 @@
-.projectsCarousel > div {
-    border-radius: 5px;
+.projectsSection {
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .projectContainer {
+        flex-direction: column-reverse;
+    }
+
 }

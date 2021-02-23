@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import SondasAeroespaciais from './projects/SondasAeroespaciais';
-import CubeSats from './projects/CubeSats';
-import Software from './projects/Software';
-import Hardware from './projects/Hardware';
-import Educacional from './projects/Educacional';
+import SondasAeroespaciais from './projects/SondasAeroespaciais/SondasAeroespaciais';
+import CubeSats from './projects/CubeSats/CubeSats';
+import Software from './projects/Software/Software';
+import Hardware from './projects/Hardware/Hardware';
+import Educacional from './projects/Educacional/Educacional';
 import styles from '../../styles/ProjectTab.module.css';
 
 function Tab(props) {
@@ -88,11 +88,13 @@ function Tabs(props) {
   );
 }
 
-function ProjectTab() {
+function ProjectTab(props) {
+  const { sondasAeroespaciais } = props.textContent;
+
   return (
     <Tabs>
       <Tab label="Sondas Aeroespaciais">
-        <SondasAeroespaciais />
+        <SondasAeroespaciais textContent={ sondasAeroespaciais }/>
       </Tab>
       <Tab label="CubeSats">
         <CubeSats />

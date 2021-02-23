@@ -1,16 +1,6 @@
 import React from 'react';
-import CheckList from '../projects-structure/CheckList';
-import ProjectData from '../ProjectData';
-import ProjectsContainer from '../ProjectsContainer';
-import ProjectTitle from '../projects-structure/ProjectTitle';
-import TechnologiesRow from '../projects-structure/TechnologiesRow';
-import ProjectTable from '../projects-structure/ProjectTable';
-import ProjectDataRow from '../projects-structure/ProjectDataRow';
-import ProjectToggle from '../projects-structure/ProjectToggle';
-import ProjectsCarousel from '../ProjectsCarousel';
 
-export default function SondasAeroespaciais() {
-
+export default function Software() {
   const itens = [
     "Loren ipsum dolor sit amet",
     "Loren ipsum dolor sit amet",

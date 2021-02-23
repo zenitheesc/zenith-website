@@ -1,12 +1,12 @@
 import React from 'react';
-import style from '../../styles/Projects.module.css'
+import style from 'styles/projects/ProjectCarousel.module.css';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
 export default function ProjectsCarousel(props) {
   return (
     <Carousel 
-      width='50%'
+      width='40vw'
       className={style.projectsCarousel}
       showStatus={false}
       showThumbs={false}

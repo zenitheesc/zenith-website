@@ -1,0 +1,7 @@
+.projectsCarousel {
+    margin-left: 4em;
+}
+
+.projectsCarousel > div {
+    border-radius: 5px;
+}

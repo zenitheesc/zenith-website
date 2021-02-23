@@ -4,7 +4,11 @@
     align-items: center;
 }
 
-.projectTitle > svg{
+.projectTitle > h1 {
+    margin: 0px;
+}
+
+.projectTitle > svg {
 	margin: 1em;
 	cursor: pointer;
 	font-size: 20px;
