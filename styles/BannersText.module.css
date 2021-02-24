@@ -1,13 +1,9 @@
 .bannersText {
-    position: relative;
     flex-direction: column;
     color: white;
     align-items: left;
     padding: 2.5em;
     margin-left: 1em;
-    /*height: 34px;
-    width: 56px;
-    background-color: red;*/
 }
 
 .bannersText > h1{
@@ -58,10 +54,13 @@
         font-size: 5vw;
         padding-top: 1.5em;
         padding-left: 1.5em;
+        z-index: 0;
     }
     .bannersText > h1{
+        
         /*line-height: 95%;*/
         font-size: 32px;
+        z-index: -1;
     } 
     .bannersText > h2{
         width: auto;
