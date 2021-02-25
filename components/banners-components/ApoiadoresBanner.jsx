@@ -19,13 +19,13 @@ function apoiadoresBanner(props) {
 			<div className={styles.squares}>
 				
 				<a href={website[0].link} target="_blank">
-					<img id={styles.imageOne} src="/images/banners/apoiadores-banner/oz.png"/>
+					<img id={styles.imageOne} src="/images/banners/apoiadores-banner/oz.webp"/>
 				</a>
 				<a href={website[1].link} target="_blank">
-					<img id={styles.imageTwo} src="/images/banners/apoiadores-banner/usp.png"/>
+					<img id={styles.imageTwo} src="/images/banners/apoiadores-banner/usp.webp"/>
 				</a>
 				<a href={website[2].link} target="_blank">
-					<img id={styles.imageThree} src="/images/banners/apoiadores-banner/eesc.png" alt=""/>
+					<img id={styles.imageThree} src="/images/banners/apoiadores-banner/eesc.webp" alt=""/>
 				</a>
 				<a href={website[3].link} target="_blank">
 					<img id={styles.imageFour} src="/images/banners/apoiadores-banner/vercel.svg" alt=""/>
