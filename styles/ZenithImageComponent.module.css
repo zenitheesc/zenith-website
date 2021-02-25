@@ -1,0 +1,16 @@
+.grid{
+    background-color: black;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 80vw 50vw;
+    grid-template-rows: 800px;
+    justify-items: center;
+    padding: 2em;
+}
+
+.grid > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
