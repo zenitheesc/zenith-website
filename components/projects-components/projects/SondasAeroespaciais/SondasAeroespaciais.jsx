@@ -41,12 +41,25 @@ export default function SondasAeroespaciais(props) {
     'SondasAeroespaciais/Garatéa-III/photo9.webp',
   ];
 
+  const garatea5Images = [
+    'SondasAeroespaciais/Garatéa-V/photo1.webp',
+    'SondasAeroespaciais/Garatéa-V/photo2.webp',
+    'SondasAeroespaciais/Garatéa-V/photo3.webp',
+    'SondasAeroespaciais/Garatéa-V/photo4.webp',
+    'SondasAeroespaciais/Garatéa-V/photo5.webp',
+    'SondasAeroespaciais/Garatéa-V/photo6.webp',
+    'SondasAeroespaciais/Garatéa-V/photo7.webp',
+    'SondasAeroespaciais/Garatéa-V/photo8.webp',
+    'SondasAeroespaciais/Garatéa-V/photo9.webp',
+    'SondasAeroespaciais/Garatéa-V/photo10.webp'
+  ];
+
   return (
     <section className={`-section ${styles.projectsSection}`} style={{backgroundColor: '#E1E1E5'}}>
       <Model textContent={ garatea1 } paths={garatea1Images}/>
       <Model textContent={ garatea2 } paths={garatea2Images}/> 
       <Model textContent={ garatea3 } paths={garatea3Images}/>
-      <Model textContent={ garatea5 } paths={garatea1Images}/>
+      <Model textContent={ garatea5 } paths={garatea5Images}/>
     </section>
   );
 }
