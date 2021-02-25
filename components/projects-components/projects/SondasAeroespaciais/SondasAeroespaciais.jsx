@@ -21,11 +21,31 @@ export default function SondasAeroespaciais(props) {
     'SondasAeroespaciais/Garatéa-I/photo10.webp'
   ];
 
+  const garatea2Images = [
+    'SondasAeroespaciais/Garatéa-II/photo1.webp',
+    'SondasAeroespaciais/Garatéa-II/photo2.webp',
+    'SondasAeroespaciais/Garatéa-II/photo3.webp',
+    'SondasAeroespaciais/Garatéa-II/photo4.webp',
+    'SondasAeroespaciais/Garatéa-II/photo5.webp',
+  ];
+
+  const garatea3Images = [
+    'SondasAeroespaciais/Garatéa-III/photo1.webp',
+    'SondasAeroespaciais/Garatéa-III/photo2.webp',
+    'SondasAeroespaciais/Garatéa-III/photo3.webp',
+    'SondasAeroespaciais/Garatéa-III/photo4.webp',
+    'SondasAeroespaciais/Garatéa-III/photo5.webp',
+    'SondasAeroespaciais/Garatéa-III/photo6.webp',
+    'SondasAeroespaciais/Garatéa-III/photo7.webp',
+    'SondasAeroespaciais/Garatéa-III/photo8.webp',
+    'SondasAeroespaciais/Garatéa-III/photo9.webp',
+  ];
+
   return (
     <section className={`-section ${styles.projectsSection}`} style={{backgroundColor: '#E1E1E5'}}>
       <Model textContent={ garatea1 } paths={garatea1Images}/>
-      <Model textContent={ garatea2 } paths={garatea1Images}/> 
-      <Model textContent={ garatea3 } paths={garatea1Images}/>
+      <Model textContent={ garatea2 } paths={garatea2Images}/> 
+      <Model textContent={ garatea3 } paths={garatea3Images}/>
       <Model textContent={ garatea5 } paths={garatea1Images}/>
     </section>
   );
