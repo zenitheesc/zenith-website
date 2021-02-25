@@ -18,7 +18,7 @@ export default function ProjectsCarousel(props) {
 
   return (
     <Carousel 
-      width='90%'
+      width='85%'
       className={style.projectsCarousel}
       showStatus={false}
       showThumbs={false}
