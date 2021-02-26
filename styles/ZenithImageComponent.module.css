@@ -1,6 +1,7 @@
 .imgSection{
     background-color: black;
     height: 55vw;
+    width: auto;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -15,11 +16,6 @@
     border-radius: 3px;
 }
 
-.test{
-    background-color: chartreuse;
-    height: 30vw;
-    width: 100%;
-}
 @media screen and (max-width: 768px) {
     .imgSection{
         padding-left: 1.5em;
@@ -27,16 +23,19 @@
     }
 }
 
-/*
+
 @media screen and (max-width: 600px) {
     .imgSection{
-        height: 70vw;
+        height: 220vw;
         flex-direction: column;
-        padding-top: 1.5em;
+        justify-content: space-around;
+        padding: 1.5em;
        
     }
 
     .imgSection > *{
-        height: 60vw;
+        width: 100%;
+        height: auto;
     }
-}*/
+    
+}

@@ -8,7 +8,6 @@ export default function ImageComponent() {
             <img id={styles.imgOne} src="/images/Zenith/DSC_01371.webp" alt=""/>
             <img id={styles.imgTwo} src="/images/Zenith/DSC_00911.webp" alt=""/>
         </div>
-        <div className={styles.test}></div>
         </>
     );
   }
