@@ -4,28 +4,39 @@
     display: flex;
     align-items: center;
     justify-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .imgSection > *{
+    margin: 0;
     height: 48vw;
     border-radius: 3px;
 }
 
-#imgOne{
-    padding-right: 1em;
-    padding-left: 2em;
-}
-
-#imgTwo{
-    padding-right: 2em;
-    padding-left: 1em;
-}
 .test{
     background-color: chartreuse;
     height: 30vw;
     width: 100%;
 }
 @media screen and (max-width: 768px) {
-    
+    .imgSection{
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
 }
+
+/*
+@media screen and (max-width: 600px) {
+    .imgSection{
+        height: 70vw;
+        flex-direction: column;
+        padding-top: 1.5em;
+       
+    }
+
+    .imgSection > *{
+        height: 60vw;
+    }
+}*/
