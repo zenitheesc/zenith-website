@@ -1,7 +1,7 @@
 import React from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import NavBar from '../components/navbar-components/NavBar';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import HeroSection from '../components/general/HeroSection';
 
 function Zenith() {

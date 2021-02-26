@@ -9,34 +9,27 @@ export default function NavLinks(props) {
   return (
     <>
       <ul className={props.className}>
-        <Link href="/Zenith">
+        <Link href="/zenith">
           <li className={navBarItem}>
-            <a href="/Zenith">{textContent[0]}</a>
+            <a href="/zenith">{textContent[0]}</a>
           </li>
         </Link>
-        <Link href="/Projetos">
+        <Link href="/projetos">
           <li className={navBarItem}>
-
-            <a href="/Projetos">{textContent[1]}</a>
-
+            <a href="/projetos">{textContent[1]}</a>
           </li>
         </Link>
-        <Link href="/Kurumim">
+        <Link href="/kurumim">
           <li className={navBarItem}>
-
-            <a href="/Kurumim">{textContent[2]}</a>
-
+            <a href="/kurumim">{textContent[2]}</a>
           </li>
         </Link>
-        <Link href="/ProcessoSeletivo">
+        <Link href="/processo-seletivo">
           <li className={navBarItem}>
-
-            <a href="/ProcessoSeletivo">{textContent[3]}</a>
-
+            <a href="/processo-seletivo">{textContent[3]}</a>
           </li>
         </Link>
       </ul>
-
     </>
   );
 }

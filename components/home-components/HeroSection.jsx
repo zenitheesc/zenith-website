@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import useTranslation from 'next-translate/useTranslation';
-import styles from '../styles/HomepageHeroSection.module.css';
+import styles from 'styles/HomepageHeroSection.module.css';
 
 function HomepageHeroSection() {
   const videoElement = useRef(null);
@@ -9,9 +9,16 @@ function HomepageHeroSection() {
   const title = t('homePage:homePageHero.title');
   const subtitle = t('homePage:homePageHero.subtitle');
   const attemptPlay = () => {
-    videoElement && videoElement.current && videoElement.current.play()
-      .then(() => { setVideoAutoPlayable(true); })
-      .catch(() => { setVideoAutoPlayable(false); });
+    videoElement &&
+      videoElement.current &&
+      videoElement.current
+        .play()
+        .then(() => {
+          setVideoAutoPlayable(true);
+        })
+        .catch(() => {
+          setVideoAutoPlayable(false);
+        });
   };
 
   useEffect(() => {
@@ -19,7 +26,12 @@ function HomepageHeroSection() {
   }, []);
 
   return (
-    <div className={videoAutoPlayable ? styles.heroContainer : `${styles.heroContainer} ${styles.heroContainerStaticImage}`}>
+    <div
+      className={
+        videoAutoPlayable
+          ? styles.heroContainer
+          : `${styles.heroContainer} ${styles.heroContainerStaticImage}`
+      }>
       <video ref={videoElement} autoPlay loop muted playsInline preload="auto">
         <source src="images/HomePage/videoIOS.mp4" type="video/mp4" />
         <source src="images/HomePage/video.mp4" type="video/mp4" />

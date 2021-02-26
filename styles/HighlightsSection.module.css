@@ -1,11 +1,12 @@
+.section {
+	background-color: #E5E5E5;
+}
+
 .highlightsContainer{
-    width: auto;
-    padding: 2.5em;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
 	align-items: center;
-	background-color: #E5E5E5;
 }
 
 .countUpContainer{
@@ -13,28 +14,26 @@
 }
 
 .countUp {
-	margin: 1em;
+	margin: 0.75em;
 	align-items: center;
 	text-align: center;
 	display: flex;
 	flex-direction: row;
-	
+	color: #4B4B4B;
 }
 
 .countUp > span {
-	font-size: 54px;
+	font-size: 3.25rem;
 	font-weight: 270;
-	color: #4B4B4B;
 }
 
 .countUp > h2{
-	font-size: 24px;
+	font-size: 1.45rem;
 	font-weight: 270;
 	text-align: center;
-	margin-left: 1em;
-	color: #4B4B4B;
-	display: flex;
-	flex-direction: row;
+	margin-left: 0.5em;
+	margin-bottom: 0px;
+	line-height: 1em;
 }
 
 .textSection {
@@ -42,27 +41,19 @@
 	text-align: right;
 }
 
-.textSection > h1{
-	font-weight:600;
-	margin-bottom: 0.3em;
-	font-size: 64px;
-}
-
 .textSection > h3{
-	font-weight: 300;
-	margin-top: 0.3em;
-	font-size: 24px;
 	color: #4B4B4B;
 }
 
-@media screen and (max-width: 980px) {
-    .countUp {
-		display: flex;
-		flex-direction: column;
-	}
+@media screen and (max-width: 1024px) {
 
 	.highlightsContainer{ 
 		flex-direction: column-reverse;
+	}
+
+    .countUp {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.textSection {
@@ -70,27 +61,18 @@
 		text-align: center;
 	}
 
-	.textSection > h1{
-		font-size: 32px;
-	}
-
-	.textSection > h3{
-		font-size: 16px;
-	}
-
 	.countUpContainer {
 		width: 100%;
 	}
-
-	.countUp > h2{ 
-		font-size: 20px;
-		margin: 0px;
-	}
-
+	
 	.countUp {
 		width: 100%;
 		margin: 0px;
-		
+	}
+	
+	.countUp > h2{ 
+		font-size: 20px;
+		margin: 0px;
 	}
 	
 }

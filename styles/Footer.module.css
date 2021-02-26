@@ -5,7 +5,7 @@
     font-size: 0.5em;
     color: white;
     font-weight: 400;
-    padding: 1.5em 12em 1.5em 12em;
+    padding: 3em 12em;
 }
 
 .footerLeftSide {
@@ -27,6 +27,7 @@
     font-weight: 500;
     letter-spacing: 0.8px;
     font-size: 10px;
+    margin-left: 16px;
     margin-top: 5px;
 }
 

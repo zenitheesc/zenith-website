@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NavHeader from './NavHeader';
 import NavMenu from './NavMenu';
-import style from '../../styles/NavBar.module.css';
+import style from 'styles/NavBar.module.css';
 
 function NavBar(props) {
   const [menu, setMenuState] = useState(false);
@@ -58,9 +58,22 @@ function NavBar(props) {
   }, [scrollDir]);
 
   return (
-    <div className={scrollDir === 'down' ? style.navBarContainerDeactive : style.navBarContainerActive}>
-      <div className={style.navBarContainerBackground} style={{ backgroundColor: (scrollDir === 'top') ? 'transparent' : 'black' }} />
-      <NavHeader toggleMenu={toggleMenu} isMenuOpen={menu} />
+    <div
+      className={
+        scrollDir === 'down'
+          ? style.navBarContainerDeactive
+          : style.navBarContainerActive
+      }>
+      <div
+        className={style.navBarContainerBackground}
+        style={{
+          backgroundColor: scrollDir === 'top' ? 'transparent' : 'black',
+        }}
+      />
+      <NavHeader
+        toggleMenu={toggleMenu}
+        isMenuOpen={menu}
+      />
       <NavMenu isMenuOpen={menu} />
     </div>
   );

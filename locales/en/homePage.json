@@ -5,7 +5,7 @@
     },
     "homePageDepartaments": {
         "title": "construindo tecnologia aeroespacial em todos os setores",
-        "subtitle": "construímos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
+        "subtitle": "projetamos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
         "embarcados": {
             "title": "Embarcados",
             "detail": "Esse departamento pesquisa e desenvolve tecnologias em sistemas embarcados voltada para aplicações aeroespaciais.",
@@ -63,7 +63,7 @@
                 }
             ]
         },
-        "gestão": {
+        "gestao": {
             "title": "Gestão",
             "detail": "Esse departamento é responsável pela organização e administração do grupo.",
             "core": "NÚCLEOS",
@@ -100,8 +100,8 @@
         }
     ],
     "homePageStatistics": {
-        "title": "Eficiência descrita em números",
-        "subtitle": "Desde 2014",
+        "title": "eficiência descrita em números",
+        "subtitle": "desde 2014",
         "statistics": [
             {
                 "number": 25,
@@ -110,6 +110,10 @@
             {
                 "number": 400,
                 "description": "MEMBROS DESDE A FUNDAÇÃO"
+            },
+            {
+                "number": 12775,
+                "description": "HORAS NA SALINHA"
             },
             {
                 "number": 2,

@@ -1,8 +1,8 @@
 import React from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import NavBar from '../components/navbar-components/NavBar';
-import Footer from '../components/footer';
 import HeroSection from '../components/general/HeroSection';
+import Footer from '../components/Footer';
 
 function ProcessoSeletivo() {
   const { t } = useTranslation();
@@ -11,7 +11,11 @@ function ProcessoSeletivo() {
   return (
     <>
       <NavBar />
-      <HeroSection backgroundImage="url(../images/ProcessoSeletivo/header.webp)" title={title} subtitle={subtitle} />
+      <HeroSection
+        backgroundImage="url(../images/ProcessoSeletivo/header.webp)"
+        title={title}
+        subtitle={subtitle}
+      />
       <Footer />
     </>
   );
