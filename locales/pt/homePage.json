@@ -63,7 +63,7 @@
                 }
             ]
         },
-        "gestão": {
+        "gestao": {
             "title": "Gestão",
             "detail": "Esse departamento é responsável pela organização e administração do grupo.",
             "core": "NÚCLEOS",

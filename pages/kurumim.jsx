@@ -13,8 +13,8 @@ function Kurumim() {
       <NavBar/>
       <HeroSection
         backgroundImage="url(../images/Kurumim/header.webp)"
-        title="Kurumim"
-        subtitle="A nova geração do Garatéa-E"
+        title={title}
+        subtitle={subtitle}
       />
       <Footer />
     </>

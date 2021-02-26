@@ -4,9 +4,9 @@
     "pages"        : {
 		"*" : ["common"],
 		"/"                : ["homePage"],
-		"/Kurumim"         : ["kurumim"],
-		"/ProcessoSeletivo": ["processoSeletivo"],
-		"/Projetos"        : ["projetos"],
-		"/Zenith"          : ["oZenith"]
+		"/kurumim"         : ["kurumim"],
+		"/processo-seletivo": ["processoSeletivo"],
+		"/projetos"        : ["projetos"],
+		"/zenith"          : ["oZenith"]
 	}
 }
