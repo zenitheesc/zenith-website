@@ -21,4 +21,6 @@ function ProcessoSeletivo() {
   );
 }
 
+export function getServerSideProps() { return { props: {} }; }
+
 export default ProcessoSeletivo;

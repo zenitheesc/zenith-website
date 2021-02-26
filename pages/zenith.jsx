@@ -23,4 +23,6 @@ function Zenith() {
   );
 }
 
+export function getServerSideProps() { return { props: {} }; }
+
 export default Zenith;

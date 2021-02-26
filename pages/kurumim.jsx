@@ -21,4 +21,6 @@ function Kurumim() {
   );
 }
 
+export function getServerSideProps() { return { props: {} }; }
+
 export default Kurumim;

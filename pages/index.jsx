@@ -17,4 +17,6 @@ function Home() {
   );
 }
 
+export function getServerSideProps() { return { props: {} }; }
+
 export default Home;

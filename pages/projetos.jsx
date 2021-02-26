@@ -24,4 +24,6 @@ function Projetos() {
   );
 }
 
+export function getServerSideProps() { return { props: {} }; }
+
 export default Projetos;
