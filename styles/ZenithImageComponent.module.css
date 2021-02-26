@@ -1,16 +1,31 @@
-.grid{
+.imgSection{
     background-color: black;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 80vw 50vw;
-    grid-template-rows: 800px;
-    justify-items: center;
-    padding: 2em;
-}
-
-.grid > *{
+    height: 55vw;
     display: flex;
     align-items: center;
+    justify-items: center;
     justify-content: center;
+}
+
+.imgSection > *{
+    height: 48vw;
     border-radius: 3px;
+}
+
+#imgOne{
+    padding-right: 1em;
+    padding-left: 2em;
+}
+
+#imgTwo{
+    padding-right: 2em;
+    padding-left: 1em;
+}
+.test{
+    background-color: chartreuse;
+    height: 30vw;
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    
 }
