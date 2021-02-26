@@ -14,7 +14,8 @@
 
 .projectData {
     width: 55vw;
-    background-color: black;
+    max-width: 27.5em;
+    background-color: transparent;
 }
 
 .projectData.dark {

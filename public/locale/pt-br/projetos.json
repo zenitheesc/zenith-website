@@ -121,7 +121,13 @@
                 "link": "https://github.com/zenitheesc/ZenSat_1.0",
                 "menus": ["OVERVIEW", "DOCUMENTAÇÃO"],
                 "award": ["PREMIAÇÃO", "1º Lugar - Cubedesign (INPE, 2018)"],
-                "tecnologies": "TECNOLOGIAS",
+                "tecnologies": [
+                    "TECNOLOGIAS",
+                    "Linux",
+                    "Atmel",
+                    "LoRa",
+                    "TexasInstruments"
+                ],
                 "embedded": [
                     "Processamento central do sistema baseado em Linux",
                     "Implementação do controle de atitude em 1 eixo",
@@ -134,12 +140,18 @@
             },
             "uspSat": {
                 "title": "USPSat",
-                "subtitle": "Nossa oportunidade de aprofundar e profissionalizar o desenvolvimento de nanossatélites 2U por meio da optimização de sistemas e aplicação de redudância nos sistemas.",
+                "subtitle": "Nossa oportunidade de aprofundar e de profissionalizar o desenvolvimento de nanossatélites 2U por meio da optimização de sistemas e aplicação de redudância nos sistemas.",
                 "year": 2019,
                 "link": "https://github.com/zenitheesc/USPSat-v.1.0",
                 "menus": ["OVERVIEW", "DOCUMENTAÇÃO"],
                 "award": ["PREMIAÇÃO", "2º Lugar - Cubedesign (INPE, 2013)"],
-                "tecnologies": "TECNOLOGIAS",
+                "tecnologies": [
+                    "TECNOLOGIAS",
+                    "Linux",
+                    "STmicroelectronics",
+                    "LoRa",
+                    "TexasInstruments"
+                ],
                 "embedded": [
                     "Arquitetura de sistemas distribuída, com redundância entre subsistemas",
                     "Telemetria bidirecional implementada em LoRa",
@@ -163,7 +175,11 @@
                 "detail": "Software criado para a automatização da geração de relatórios espaciais do Zenith Aerospace",
                 "year": 2020,
                 "link": "https://github.com/zenitheesc/Report_Maker",
-                "tecnologies": "TECNOLOGIAS",
+                "tecnologies": [
+                    "TECNOLOGIAS",
+                    "Python",
+                    "LaTeX"
+                ],
                 "techSpecification": [
                     "ESPECIFICAÇÕES TÉCNICAS", 
                     "Regex aplicado a leitura de logs",
@@ -176,7 +192,11 @@
                 "detail": "Aplicação mobile voltada para o rastreamento em tempo real de sondas aeroespaciais",
                 "year": 2020,
                 "link": "https://github.com/zenitheesc/Zenith-Monitor",
-                "tecnologies": "TECNOLOGIAS",
+                "tecnologies": [
+                    "TECNOLOGIAS",
+                    "Flutter",
+                    "Firebase"
+                ],
                 "techSpecification": [
                     "ESPECIFICAÇÕES TÉCNICAS", 
                     "Mobile Development",
@@ -190,7 +210,12 @@
                 "detail": "Aplicação desktop para criação de dashboards e visualização de dados em tempo real",
                 "year": 2021,
                 "link": "https://github.com/zenitheesc/ZenView",
-                "tecnologies": "TECNOLOGIAS",
+                "tecnologies": [
+                    "TECNOLOGIAS",
+                    "Electron",
+                    "JS",
+                    "NodeJS"
+                ],
                 "techSpecification": [
                     "ESPECIFICAÇÕES TÉCNICAS", 
                     "Desktop Application Development",
@@ -210,7 +235,11 @@
                 "detail": "Controlador PID analógico construído com propósitos educacionais ",
                 "year": 2019,
                 "link": "https://github.com/zenitheesc/Analog-PID-Controller",
-                "tecnologies": "TECNOLOGIAS",
+                "tecnologies": [
+                    "TECNOLOGIAS",
+                    "Atmel",
+                    "TexasInstruments"
+                ],
                 "techSpecification": [
                     "ESPECIFICAÇÕES TÉCNICAS", 
                     "Amplificação de Sinais Analógicos",
@@ -223,7 +252,11 @@
                 "detail": "Osciloscópio educacional construído com tecnologia de baixo custo",
                 "year": 2019,
                 "link": "https://github.com/zenitheesc/Zenith-Osciloscope",
-                "tecnologies": "TECNOLOGIAS",
+                "tecnologies": [
+                    "TECNOLOGIAS",
+                    "STmicroelectronics",
+                    "Qt"
+                ],
                 "techSpecification": [
                     "ESPECIFICAÇÕES TÉCNICAS", 
                     "Processamento digital de Sinais",
@@ -237,7 +270,13 @@
                 "detail": "Plataforma de hardware genérica para sistemas aeroespaciais",
                 "year": 2020,
                 "link": "https://github.com/zenitheesc/Genus",
-                "tecnologies": "TECNOLOGIAS",
+                "tecnologies": [
+                    "TECNOLOGIAS",
+                    "STmicroelectronics",
+                    "PCI Express",
+                    "Linux",
+                    "LoRa"
+                ],
                 "techSpecification": [
                     "ESPECIFICAÇÕES TÉCNICAS", 
                     "Arquitetura de sistema própria",
@@ -252,7 +291,11 @@
                 "detail": "Módulo de instrumentação independente para sondas estratosféricas",
                 "year": 2021,
                 "link": "",
-                "tecnologies": "TECNOLOGIAS",
+                "tecnologies": [
+                    "TECNOLOGIAS",
+                    "STmicroelectronics",
+                    "NXP"
+                ],
                 "techSpecification": [
                     "ESPECIFICAÇÕES TÉCNICAS", 
                     "Emprego de microcontrolador STM32 para o monitoramento de periféricos",
@@ -266,7 +309,12 @@
                 "detail": "Uma estação de telecomunicações portátil de fácil montagem integrada ao ZenView",
                 "year": 2021,
                 "link": "https://github.com/zenitheesc/GroundStation-Mobile",
-                "tecnologies": "TECNOLOGIAS",
+                "tecnologies": [
+                    "TECNOLOGIAS",
+                    "Linux",
+                    "STmicroelectronics",
+                    "LoRa"
+                ],
                 "techSpecification": [
                     "ESPECIFICAÇÕES TÉCNICAS", 
                     "Uso de rádios LoRa para comunicação a longa distância",

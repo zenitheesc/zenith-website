@@ -90,6 +90,9 @@ function Tabs(props) {
 
 function ProjectTab(props) {
   const { sondasAeroespaciais } = props.textContent;
+  const { cubeSats } = props.textContent;
+  const { software } = props.textContent;
+  const { hardware } = props.textContent;
 
   return (
     <Tabs>
@@ -97,13 +100,13 @@ function ProjectTab(props) {
         <SondasAeroespaciais textContent={ sondasAeroespaciais }/>
       </Tab>
       <Tab label="CubeSats">
-        <CubeSats />
+        <CubeSats textContent={ cubeSats }/>
       </Tab>
       <Tab label="Software">
-        <Software />
+        <Software textContent={ software }/>
       </Tab>
       <Tab label="Hardware">
-        <Hardware />
+        <Hardware textContent={ hardware }/>
       </Tab>
       <Tab label="Educacional">
         <Educacional />
