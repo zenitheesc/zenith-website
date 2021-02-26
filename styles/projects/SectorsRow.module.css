@@ -1,0 +1,25 @@
+.SectorRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.SectorRowContent {
+    display: flex;
+	flex-direction: column;
+}
+
+.SectorRowContent>span {
+    text-align: left;
+	font-size: 14px;
+	padding: 0.8em;
+}
+
+.SectorRow>div>svg {
+    padding: 1em;
+    width: 35px;
+    height: 35px;
+}
