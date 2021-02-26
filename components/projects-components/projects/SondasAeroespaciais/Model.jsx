@@ -6,7 +6,8 @@ import ProjectTable from '../../projects-structure/ProjectTable';
 import ProjectDataRow from '../../projects-structure/ProjectDataRow';
 import ProjectToggle from '../../projects-structure/ProjectToggle';
 import ProjectsCarousel from '../../projects-structure/ProjectsCarousel';
-
+import EmbeddedRow from 'components/projects-components/projects-structure/EmbeddedRow';
+import StructureRow from 'components/projects-components/projects-structure/StructureRow';
 import styles from 'styles/Projects.module.css';
 
 function Model (props) {
@@ -39,7 +40,8 @@ function Model (props) {
                     <CheckList title={experiments[0]} itens={experiments.slice(1)} dark />
                 </ProjectTable>
                 <ProjectTable>
-                    
+                        <EmbeddedRow content={embedded}/>
+                        <StructureRow content={structure}/>
                 </ProjectTable>
                 </ProjectToggle>
             </ProjectData>
