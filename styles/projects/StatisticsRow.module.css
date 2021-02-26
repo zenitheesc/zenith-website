@@ -1,0 +1,26 @@
+
+.statisticsContainer{
+	width         : 100%;
+	display       : flex;
+	flex-direction: row;
+	flex-wrap     : wrap;
+	align-content : space-between;
+}
+
+.countUp {
+	width         : 33%;
+	display       : flex;
+	flex-direction: column;
+	align-items   : center;
+	text-align    : center;
+}
+
+.countUp h2{
+	font-size  : 18;
+	font-weight: 300;
+}
+
+.countUp span{
+	font-size  : 48px;
+	font-weight: bold;
+}

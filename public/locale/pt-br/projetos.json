@@ -6,7 +6,7 @@
     },
     "picker": ["Sondas aeroespaciais", "CubeSats", "Software", "Hardware", "Educacional"],
     "sondasAeroespaciais": {
-        "title":"Sondas aeroespaciais",
+        "title": "Sondas aeroespaciais",
         "subtitle": "Veículos espaciais que levam experimentos astrobiológicos até a estratosfera",
         "projects": {
             "garatea1": {
@@ -18,18 +18,18 @@
                 "altitude": ["ALTITUDE ALCANÇADA", "27 km"],
                 "award": ["PREMIAÇÃO", "Melhor Experimento (GSBC 2016)"],
                 "experiments": [
-                    "EXPERIMENTOS", 
-                    "Testes de resistência em bactérias e fungos extraídos do deserto de Atacama (Chile)", 
+                    "EXPERIMENTOS",
+                    "Testes de resistência em bactérias e fungos extraídos do deserto de Atacama (Chile)",
                     "Análise dos padrões de degradação de biomoléculas"
                 ],
                 "embedded": [
-                    "Arquitetura de sistema baseada em Mbed", 
-                    "Utilização de módulos comerciais no sensoriamento de parâmetros ambientais", 
+                    "Arquitetura de sistema baseada em Mbed",
+                    "Utilização de módulos comerciais no sensoriamento de parâmetros ambientais",
                     "Utilização de sistema de geolocalização próprio"
                 ],
                 "structure": [
-                    "Acionamento de mecanismo de exposição dos experimentos", 
-                    "Estrutura em impressão 3D e fibra de vidro", 
+                    "Acionamento de mecanismo de exposição dos experimentos",
+                    "Estrutura em impressão 3D e fibra de vidro",
                     "Paraquedas confeccionado em fios de Kevlar e Nylon"
                 ]
             },
@@ -41,19 +41,19 @@
                 "launchDate": ["LANÇAMENTO", "19/12/2016"],
                 "altitude": ["ALTITUDE ALCANÇADA", "25,5 km"],
                 "experiments": [
-                    "EXPERIMENTOS", 
-                    "Testes de resistência em bactérias e fungos extraídos do deserto de Atacama (Chile)", 
+                    "EXPERIMENTOS",
+                    "Testes de resistência em bactérias e fungos extraídos do deserto de Atacama (Chile)",
                     "Análise dos padrões de degradação de biomoléculas"
                 ],
                 "embedded": [
-                    "Arquitetura de sistema baseada em Arduino ", 
-                    "Utilização de módulos comerciais no sensoriamento de parâmetros ambientais", 
+                    "Arquitetura de sistema baseada em Arduino ",
+                    "Utilização de módulos comerciais no sensoriamento de parâmetros ambientais",
                     "Utilização de sistema de geolocalização próprio",
                     "Utilização de painéis solares no carregamento das baterias"
                 ],
                 "structure": [
-                    "Isolamento térmico feito em Kapton e Depron Aeronáutico", 
-                    "Estrutura em impressão 3D e fibra de carbono", 
+                    "Isolamento térmico feito em Kapton e Depron Aeronáutico",
+                    "Estrutura em impressão 3D e fibra de carbono",
                     "Paraquedas confeccionado em fios de Kevlar e Nylon"
                 ]
             },
@@ -66,20 +66,20 @@
                 "altitude": ["ALTITUDE ALCANÇADA", "31,6 km"],
                 "award": ["PREMIAÇÃO", "3º Lugar em Melhor Design (GSBC 2018)"],
                 "experiments": [
-                    "EXPERIMENTOS", 
-                    "Co-cultura de leveduras fermentadoras e fungos extremófilos", 
+                    "EXPERIMENTOS",
+                    "Co-cultura de leveduras fermentadoras e fungos extremófilos",
                     "Cultura de protozoários em diferentes fases da vida e de sementes de alface"
                 ],
                 "embedded": [
-                    "Sistema de aquisição de dados, desenvolvido pelo grupo, baseado em Atmega328p-pu", 
-                    "Sistema de imageamento baseado em Linux", 
+                    "Sistema de aquisição de dados, desenvolvido pelo grupo, baseado em Atmega328p-pu",
+                    "Sistema de imageamento baseado em Linux",
                     "Utilização de sistema de geolocalização próprio",
                     "Medição de níveis de radiação com contador Geiger"
                 ],
                 "structure": [
-                    "Estrutura de hipercubo, desenvolvida para minimizar impactos e ser totalmente reaproveitável", 
+                    "Estrutura de hipercubo, desenvolvida para minimizar impactos e ser totalmente reaproveitável",
                     "Utilização de fibra de carbono e impressão 3D",
-                    "Isolamento térmico feito em Kapton e Depron Aeronáutico", 
+                    "Isolamento térmico feito em Kapton e Depron Aeronáutico",
                     "Paraquedas confeccionado em fios de Kevlar e Nylon"
                 ]
             },
@@ -92,18 +92,18 @@
                 "altitude": ["ALTITUDE ALCANÇADA", "?? km"],
                 "award": ["PREMIAÇÃO", "??"],
                 "experiments": [
-                    "EXPERIMENTOS", 
+                    "EXPERIMENTOS",
                     "??",
                     "??"
                 ],
                 "embedded": [
-                    "Sistema de aquisição de dados, desenvolvido pelo grupo, baseado em Atmega2560", 
-                    "Controle da altitude do vôo da sonda a partir do uso de válvula no balão", 
+                    "Sistema de aquisição de dados, desenvolvido pelo grupo, baseado em Atmega2560",
+                    "Controle da altitude do vôo da sonda a partir do uso de válvula no balão",
                     "Utilização de sistema de geolocalização próprio"
                 ],
                 "structure": [
-                    "Mecanismo de deploy do balão e do paraquedas", 
-                    "Utilização de impressão 3D", 
+                    "Mecanismo de deploy do balão e do paraquedas",
+                    "Utilização de impressão 3D",
                     "Isolamento térmico feito em Kapton e Depron Aeronáutico",
                     "Paraquedas confeccionado em fios de Kevlar e Nylon"
                 ]
@@ -111,7 +111,7 @@
         }
     },
     "cubeSats": {
-        "title":"CubeSat",
+        "title": "CubeSat",
         "subtitle": "Satélites com dimensões múltiplas à cubos de 10 cm de aresta",
         "projects": {
             "zenSat": {
@@ -131,7 +131,7 @@
                 "embedded": [
                     "Processamento central do sistema baseado em Linux",
                     "Implementação do controle de atitude em 1 eixo",
-                    "Telemetria bidirecional implementada em LoRa", 
+                    "Telemetria bidirecional implementada em LoRa",
                     "Determinação de Atitude implementada via visão computacional"
                 ],
                 "structure": [
@@ -155,7 +155,7 @@
                 "embedded": [
                     "Arquitetura de sistemas distribuída, com redundância entre subsistemas",
                     "Telemetria bidirecional implementada em LoRa",
-                    "Imageamento e determinação de atitude, em 1 eixo, baseados em Linux", 
+                    "Imageamento e determinação de atitude, em 1 eixo, baseados em Linux",
                     "Controle térmico ativo e gerenciamento do sistema de energia"
                 ],
                 "structure": [
@@ -167,7 +167,7 @@
         }
     },
     "software": {
-        "title":"Software",
+        "title": "Software",
         "subtitle": "Desenvolvimento de aplicações que auxiliam as nossas missões",
         "projects": {
             "reportMaker": {
@@ -181,7 +181,7 @@
                     "LaTeX"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS", 
+                    "ESPECIFICAÇÕES TÉCNICAS",
                     "Regex aplicado a leitura de logs",
                     "Aplicação de data science",
                     "Criação de GUI com Tkinter"
@@ -198,7 +198,7 @@
                     "Firebase"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS", 
+                    "ESPECIFICAÇÕES TÉCNICAS",
                     "Mobile Development",
                     "Data Modeling em banco de dados NoSQL",
                     "OAuth 2.0",
@@ -217,7 +217,7 @@
                     "NodeJS"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS", 
+                    "ESPECIFICAÇÕES TÉCNICAS",
                     "Desktop Application Development",
                     "Programação orientada a eventos",
                     "Programação orientada a objetos",
@@ -227,7 +227,7 @@
         }
     },
     "hardware": {
-        "title":"Hardware",
+        "title": "Hardware",
         "subtitle": "Desenvolvimento de plataformas para auxiliar as missões do grupo",
         "projects": {
             "controladorPID": {
@@ -241,7 +241,7 @@
                     "TexasInstruments"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS", 
+                    "ESPECIFICAÇÕES TÉCNICAS",
                     "Amplificação de Sinais Analógicos",
                     "Aplicação da Teoria de Controle",
                     "Aplicação de Eletrônica de Potência"
@@ -258,7 +258,7 @@
                     "Qt"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS", 
+                    "ESPECIFICAÇÕES TÉCNICAS",
                     "Processamento digital de Sinais",
                     "Aquisição e discretização de sinais análogicos com o microcontrolador STM32",
                     "Comunicação com dispositivos USB",
@@ -278,7 +278,7 @@
                     "LoRa"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS", 
+                    "ESPECIFICAÇÕES TÉCNICAS",
                     "Arquitetura de sistema própria",
                     "Implementação de barramento lógico desenvolvido pelo grupo, o Z-Bus",
                     "Rede de comunicação redundante com diversos protocolos",
@@ -297,7 +297,7 @@
                     "NXP"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS", 
+                    "ESPECIFICAÇÕES TÉCNICAS",
                     "Emprego de microcontrolador STM32 para o monitoramento de periféricos",
                     "Amplificação e processamento de sinais analógicos de sensores",
                     "Comunicação redundante com outros dispositivos via CAN, I2C, SPI e USB",
@@ -316,7 +316,7 @@
                     "LoRa"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS", 
+                    "ESPECIFICAÇÕES TÉCNICAS",
                     "Uso de rádios LoRa para comunicação a longa distância",
                     "Emprego de microcontrolador STM32 para gerenciamento dos rádios e dos dados recebidos",
                     "Linux Embarcado",
@@ -326,7 +326,7 @@
         }
     },
     "educacional": {
-        "title":"Educacional",
+        "title": "Educacional",
         "subtitle": "Influenciando a próxima geração de cientistas",
         "projects": {
             "garateaE2017": {
@@ -335,11 +335,23 @@
                 "year": 2017,
                 "launchDate": ["LANÇAMENTO", "24/06/2017"],
                 "altitude": ["ALTITUDE ALCANÇADA", "24 km"],
-                "statistics": [
-                    "+ 200", "ALUNOS PARTICIPANTES",
-                    "20", "PROJETOS INSCRITOS",
-                    "12", "CANSATs LANÇADOS",
-                    "8", "PONGSATs LANÇADOS"
+                "statistics": [{
+                        "numero": 200,
+                        "label": "ALUNOS PARTICIPANTES",
+                        "plus": true
+                    },
+                    {
+                        "numero": 20,
+                        "label": "PROJETOS INSCRITOS"
+                    },
+                    {
+                        "numero": 12,
+                        "label": "CANSATs LANÇADOS"
+                    },
+                    {
+                        "numero": 8,
+                        "label": "PONGSATs LANÇADOS"
+                    }
                 ]
             },
             "garateaE2018": {
@@ -348,11 +360,23 @@
                 "year": 2018,
                 "launchDate": ["LANÇAMENTO", "11/08/2018"],
                 "altitude": ["ALTITUDE ALCANÇADA", "23 km (Tracy)", "27,3 km (Valentina)"],
-                "statistics": [
-                    "+ 900", "ALUNOS PARTICIPANTES",
-                    "64", "PROJETOS INSCRITOS",
-                    "32", "PROJETOS LANÇADOS",
-                    "2", "SONDAS LANÇADAS"
+                "statistics": [{
+                        "numero": 900,
+                        "label": "ALUNOS PARTICIPANTES",
+                        "plus": true
+                    },
+                    {
+                        "numero": 64,
+                        "label": "PROJETOS INSCRITOS"
+                    },
+                    {
+                        "numero": 32,
+                        "label": "PROJETOS LANÇADOS"
+                    },
+                    {
+                        "numero": 2,
+                        "label": "SONDAS LANÇADAS"
+                    }
                 ]
             },
             "garateaE2019": {
@@ -361,10 +385,19 @@
                 "year": 2019,
                 "launchDate": ["LANÇAMENTO", "24/08/2019"],
                 "altitude": ["ALTITUDE ALCANÇADA", "23 km"],
-                "statistics": [
-                    "+ 600", "ALUNOS PARTICIPANTES",
-                    "70", "PROJETOS INSCRITOS",
-                    "64", "PROJETOS LANÇADOS"
+                "statistics": [{
+                        "numero": 600,
+                        "label": "ALUNOS PARTICIPANTES",
+                        "plus": true
+                    },
+                    {
+                        "numero": 70,
+                        "label": "PROJETOS INSCRITOS"
+                    },
+                    {
+                        "numero": 64,
+                        "label": "PROJETOS LANÇADOS"
+                    }
                 ]
             }
         }

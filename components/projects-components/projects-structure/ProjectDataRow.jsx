@@ -1,5 +1,5 @@
 import React from 'react'
-import {projectDataRow} from "../../../styles/projects/ProjectDataRow.module.css";
+import { projectDataRow } from "../../../styles/projects/ProjectDataRow.module.css";
 
 export default function ProjectDataRow(props) {
 	const { label, value } = props;
@@ -8,9 +8,20 @@ export default function ProjectDataRow(props) {
 			<h3>
 				{label}
 			</h3>
-			<span>
-				{value}
-			</span>
-		</div>
+			{
+				Array.isArray(value)
+					? <div>
+						{value.map((text) => {
+							return (
+								<>
+									<span>{text}</span>
+									<br />
+								</>
+							)
+						})}
+					</div>
+					: <span>{value}</span>
+			}
+		</div >
 	)
 }
