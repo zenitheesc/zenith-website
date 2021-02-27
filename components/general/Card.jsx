@@ -17,14 +17,25 @@ const defaultText = (
 );
 const defaultImg = <img src="http://placekitten.com/960/600" />;
 function Card({ left = defaultText, right = defaultImg, lean = "right" }) {
-    let l = lean == "left" ? style.bigger : style.smaller;
-    let r = lean == "left" ? style.smaller : style.bigger;
+    let l = style.bigger;
+    let r = style.smaller;
+    if (lean === "left") {
+        l = style.smaller;
+        r = style.bigger;
+    } else if (lean === "none") {
+        l = style.bigger;
+        r = l;
+    } else {
+    }
+    // let l = lean == "left" ? style.bigger : style.smaller;
+    // let r = lean == "left" ? style.smaller : style.bigger;
+    // l = lean == "none" ? style.bigger : style.smaller;
+    // r = lean == "none" ? style.bigger : style.bigger;
+
     return (
         <div className={style.card}>
             <div className={`${style.card__left} ${l}`}>{left}</div>
-            <div className={`${style.card__right} ${r}`}>
-                {right}
-            </div>
+            <div className={`${style.card__right} ${r}`}>{right}</div>
         </div>
     );
 }
