@@ -52,6 +52,7 @@ function Kurumim() {
             <Footer />
         </>
     );
+
 }
 
 export default Kurumim;

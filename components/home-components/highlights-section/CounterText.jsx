@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
-import { countUp } from '../../../styles/HighlightsSection.module.css';
+import { countUp } from 'styles/HighlightsSection.module.css';
 
 export default function CounterText(props) {
   const { value } = props;
@@ -18,23 +18,22 @@ export default function CounterText(props) {
   return (
     <>
       <div className={countUp}>
-        <CountUp prefix={plus ? '+' : ''} end={value} start={isVisible ? null : 0}>
+        <CountUp
+          prefix={plus ? '+' : ''}
+          end={value}
+          start={isVisible ? null : 0}>
           {({ countUpRef }) => (
             <VisibilitySensor
               active={!isVisible}
               onChange={startCounting}
-              delayedCall
-            >
+              delayedCall>
               <span ref={countUpRef} />
             </VisibilitySensor>
           )}
         </CountUp>
-        <h2>
-          {suffix}
-        </h2>
+        <h2>{suffix}</h2>
         <br />
       </div>
-
     </>
   );
 }
