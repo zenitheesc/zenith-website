@@ -1,6 +1,6 @@
 .genusBanner {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     justify-content: space-between;
     background-color: #605F62;
     height: 40vw;
@@ -13,7 +13,6 @@
     margin-right: 3.9em;
     margin-top: 3vw;
 }
-
 
 @media screen and (max-width: 768px) {
     .genusBanner {  

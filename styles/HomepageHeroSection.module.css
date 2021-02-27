@@ -15,9 +15,9 @@
 }
 
 .heroContainer > video {
-    object-fit: none;/*antes o cover dava um zoom no video conforme outros componentes eram adicionados na index*/
+    object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
     position: absolute;
 }

@@ -1,27 +1,23 @@
 .bannersText {
-    flex-direction: column;
     color: white;
-    align-items: left;
     padding: 2.5em;
-    margin-left: 1em;
 }
 
 .bannersText > h1{
-    font-size: 54px;
+    font-size: 56px;
 	font-weight: 460;
-    margin: 0;
+    margin-bottom: 0.1em;
 }
 
 .bannersText > h2{
     font-size: 24px;
 	font-weight: 270;
-    margin-top: 0em;
+    margin-top: 0.3em;
 }
 
-.bannersText > form{
-    position: relative;
-    top: 20vw;
-}
+/*.bannersText > form{
+    
+}*/
 
 #gitHubButton{
     height: 3vw;
@@ -49,18 +45,15 @@
     color: rgb(201, 199, 199);
 }
 
-@media screen and (max-width: 768px) {
-    .bannersText {
-        font-size: 5vw;
-        padding-top: 1.5em;
-        padding-left: 1.5em;
-        z-index: 0;
-    }
+/*@media screen and (max-width: 1024px) {
     .bannersText > h1{
-        
-        /*line-height: 95%;*/
+        font-size: 42px;
+    } 
+}*/ 
+
+@media screen and (max-width: 768px) {
+    .bannersText > h1{
         font-size: 32px;
-        z-index: -1;
     } 
     .bannersText > h2{
         width: auto;
