@@ -132,8 +132,8 @@
     },
     "homePageSupporters": {
         "title": "nossos apoiadores",
-        "subtitle": "sem eles, nada disso seria possível",
-        "website": [
+        "detail": "sem eles, nada disso seria possível",
+        "website": [ 
             {
                 "link": "https://www.ozprodutora.com.br/"
             },

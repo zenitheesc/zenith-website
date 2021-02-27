@@ -1,21 +1,15 @@
 import styles from '../../styles/ApoiadoresBanner.module.css'
-import textStyles from '../../styles/BannersText.module.css'
+import BannersTextSec from './BannersTextSec.jsx'
 
 function apoiadoresBanner(props) {
-	const { title } = props.textContent;
-	const { subtitle } = props.textContent;
+
 	const { website } = props.textContent;
 
 	return (
         <div className={styles.apoiadoresBanner}>
-			<div className={textStyles.bannersText} >
-				<h1>
-					{title}
-				</h1>
-				<h2>
-					{subtitle}
-				</h2>
-			</div>
+
+			<BannersTextSec textContent={props.textContent}/>
+
 			<div className={styles.squares}>
 				
 				<a href={website[0].link} target="_blank">
