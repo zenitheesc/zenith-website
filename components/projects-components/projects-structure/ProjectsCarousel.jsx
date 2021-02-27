@@ -26,8 +26,8 @@ export default function ProjectsCarousel(props) {
       infiniteLoop
       emulateTouch
     >
-      {paths.map((path) => {
-					return <CarouselImage path={path} />
+      {paths.map((path, index) => {
+					return <CarouselImage path={path} key={index}/>
 				})}
     </Carousel>
   );

@@ -49,13 +49,14 @@ function Tabs(props) {
     }
   }
 
-  function cloneTabElement(tab, index = 0) {
+  function cloneTabElement(tab, index) {
     return (
       <Tab
         label={tab.props.label}
         onClick={() => handleTabClick(index)}
         isActive={index === activeIndex}
         tabIndex={index}
+        key = {index}
         onLeftChevronClick={() => handleTabClick(index === 0 ? 4 : index - 1)}
         onRightChevronClick={() => handleTabClick(index === 4 ? 0 : index + 1)}
       />
@@ -65,9 +66,9 @@ function Tabs(props) {
   function renderChildrenTabs() {
     const { children } = props;
 
-    if (!Array.isArray(children)) return cloneTabElement(children);
+    if (!Array.isArray(children)) return cloneTabElement(children,0);
 
-    return children.map(cloneTabElement);
+    return children.map((value,index)=>cloneTabElement(value,index));
   }
 
   function renderActiveTabContent() {
