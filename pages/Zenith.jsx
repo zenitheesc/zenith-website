@@ -25,7 +25,6 @@ function Zenith() {
 
             <CardContainer>
                 <Card
-                    lean="left"
                     left={<img src="http://placedog.net/480/300" />}
                     right={
                         <>
@@ -36,6 +35,7 @@ function Zenith() {
                 />
 
                 <Card
+                    lean="left"
                     left={
                         <>
                             <h1>{TextContent.oZenithCard2.title}</h1>
@@ -46,6 +46,7 @@ function Zenith() {
                 />
 
                 <Card
+                    lean="left"
                     left={<img src="http://placedog.net/500/320" />}
                     right={
                         <>
@@ -63,6 +64,7 @@ function Zenith() {
                 />
 
                 <Card
+                    lean="left"
                     right={<img src="http://placedog.net/520/300" />}
                     left={
                         <>
