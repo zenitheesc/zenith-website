@@ -1,11 +1,10 @@
 .apoiadoresBanner {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     background-color: #605F62;
     height: 40vw;
-    align-items: left;
-    z-index: 2; 
 }
 
 .squares{
@@ -13,10 +12,8 @@
     display: grid;
     grid-template-columns: 15vw 15vw 15vw;
     grid-template-rows: 15vw 15vw;
-    justify-items: center;
-    padding: 2vw;
-    /*padding-right: 1.5vw;
-    padding-top: 1.5vw;*/ 
+    justify-items: right;
+    padding: 2.5em;  
 }
 
 .squares > *{
@@ -56,32 +53,52 @@
 .squares > *:hover:not(.emptySquare){
     background-color: #bdbbbb;
 }
+
 @media screen and (max-width: 768px) {
 
     .apoiadoresBanner {
         flex-direction: column;
         align-items: center;
-        height: 200vw;
+        height: 120vw;
     }
 
     .squares{
         padding-top: 0;
         padding-right: 0;
         padding-left: 0;
-        padding-bottom: 9em;
-        grid-template-columns: 45vw 45vw;
-        grid-template-rows: 45vw 45vw;
+        padding-bottom: 25%;
+        grid-template-columns: 30vw 30vw;
+        grid-template-rows: 30vw 30vw;
+        justify-items: center;
     }
     
     .squares > *{
-        height: 40vw;
-        width: 40vw;
+        height: 25vw;
+        width: 25vw;
     }
 
     .emptySquare{
         display: none;
     }
 }
+
+@media screen and (max-width: 556px) {
+    .apoiadoresBanner {
+        height: 180vw;
+    }
+
+    .squares{
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 40vw 40vw;
+    }
+
+    .squares > *{
+        height: 35vw;
+        width: 35vw;
+    }
+}
+
+
 
 
 

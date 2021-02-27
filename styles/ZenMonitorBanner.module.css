@@ -16,18 +16,26 @@
 
 
 @media screen and (max-width: 768px) {
-    .zenMonitorBanner--data{
-        text-align: left;
-    }
-    .zenMonitorBanner {
+    .zenMonitorBanner{
         flex-direction: column;
-        align-items: center;
-        height: 200vw;
+        height: 120vw;
     }
+
     .zenMonitorImage {
-        width: 70vw;
+        align-self: center;
+        width: 50vw; 
         height: auto;
         align-items: center;
-        padding-right: 0em;
+        padding-right: 0em; 
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .zenMonitorBanner{
+        height: 200vw;
+    }
+    
+    .zenMonitorImage {
+        width: 70vw;
     }
 }
