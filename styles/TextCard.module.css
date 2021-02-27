@@ -55,7 +55,7 @@
     .card {
         flex-flow: column nowrap;
         align-items: center;
-        gap: 1rem;
+        gap: 0rem;
         border: 1px solid lightgray;
         font-size: 1.4rem;
     }
