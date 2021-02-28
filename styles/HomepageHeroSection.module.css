@@ -27,7 +27,6 @@
     font-size: 4.6vw;
     width: 85%;
     font-weight: 250;
-    margin-top: -0.2%;
     margin-bottom: 8px;
     text-align: center;
 }
@@ -46,7 +45,7 @@
     margin-top: 8px;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
     .heroContainer > h1 {
         font-size: 45px;
     }
@@ -55,7 +54,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .heroContainer > h1 {
         font-size: 35px;
     }

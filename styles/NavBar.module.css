@@ -22,7 +22,6 @@
     width: 100%;
     z-index: 3;
     top: 0px;
-    transition: opacity 0.2s ease-in;
 }
 
 .navBarContainerActive {
@@ -30,6 +29,7 @@
     opacity: 1;
     position: fixed;
     width: 100%;
+    z-index: 100;
     transition: opacity 0.2s ease-in;
 }
 

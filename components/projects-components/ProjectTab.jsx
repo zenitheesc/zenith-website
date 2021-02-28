@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import SondasAeroespaciais from './projects/sondasAeroespaciais';
-import CubeSats from './projects/cubeSats';
-import Software from './projects/software';
-import Hardware from './projects/hardware';
-import Educacional from './projects/educacional';
+import SondasAeroespaciais from './projects/SondasAeroespaciais';
+import CubeSats from './projects/CubeSats';
+import Software from './projects/Software';
+import Hardware from './projects/Hardware';
+import Educacional from './projects/Educacional';
 import styles from '../../styles/ProjectTab.module.css';
 
 function Tab(props) {
   const {
-    label, isActive, onClick, tabIndex, onLeftChevronClick, onRightChevronClick
+    label,
+    isActive,
+    onClick,
+    tabIndex,
+    onLeftChevronClick,
+    onRightChevronClick,
   } = props;
 
   return (
@@ -17,7 +22,11 @@ function Tab(props) {
       <a className={styles.chevron} onClick={onLeftChevronClick}>
         <FaChevronLeft />
       </a>
-      <a className={`${styles.tabsTabLink} ${isActive ? styles.tabsTabLinkActive : ''}`} onClick={onClick}>
+      <a
+        className={`${styles.tabsTabLink} ${
+          isActive ? styles.tabsTabLinkActive : ''
+        }`}
+        onClick={onClick}>
         {label}
       </a>
       <a className={styles.chevron} onClick={onRightChevronClick}>
@@ -73,12 +82,8 @@ function Tabs(props) {
 
   return (
     <section className={styles.tabs}>
-      <ul className={styles.tabsList}>
-        {renderChildrenTabs()}
-      </ul>
-      <div className={styles.tabsContent}>
-        {renderActiveTabContent()}
-      </div>
+      <ul className={styles.tabsList}>{renderChildrenTabs()}</ul>
+      <div className={styles.tabsContent}>{renderActiveTabContent()}</div>
     </section>
   );
 }
