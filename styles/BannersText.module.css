@@ -1,23 +1,13 @@
 .bannersText {
     color: white;
-    padding: 2.5em;
+    flex-direction: column;
+    position: relative;
 }
 
-.bannersText > h1{
-    font-size: 56px;
-	font-weight: 460;
-    margin-bottom: 0.1em;
+.bannersText > form{
+    position: absolute;
+    bottom: 3vh;
 }
-
-.bannersText > h2{
-    font-size: 24px;
-	font-weight: 270;
-    margin-top: 0.3em;
-}
-
-/*.bannersText > form{
-    
-}*/
 
 #gitHubButton{
     height: 3vw; 
@@ -40,37 +30,21 @@
     height: 2vw;
     width: auto;
 }
-#gitHubButton:hover{
+#gitHubButton:hover{ 
     border-color: rgb(201, 199, 199);
     color: rgb(201, 199, 199);
 }
 
-@media screen and (max-width: 1024px) {
-    .bannersText > h1{
-        font-size: 42px;
-    }
-    .bannersText > h2{
-        font-size: 24px;
-    } 
-} 
 
-@media screen and (max-width: 768px) {
-    .bannersText > h1{
-        font-size: 32px;
-    } 
-    .bannersText > h2{
-        width: auto;
-        padding-top: 6px;
-        font-size: 20px;
-    }
+
+@media screen and (max-width: 1024px) {
     .bannersText > form{
-        top: 0px;
+        bottom: 1vh;
     }
     #gitHubButton{
         height: 2em;
         width: 7em;
         font-size: 1em;
-        
     }
     #gitHubIcon{
         height: 1.2em;

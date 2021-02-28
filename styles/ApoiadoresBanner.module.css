@@ -54,12 +54,13 @@
     background-color: #bdbbbb;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     .apoiadoresBanner {
         flex-direction: column;
         align-items: center;
         height: 120vw;
+        text-align: center;
     }
 
     .squares{

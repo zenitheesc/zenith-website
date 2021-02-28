@@ -7,13 +7,13 @@ function BannersTextSec(props) {
 	const { link } = props.textContent;
 
     return ( 
-        <div className={textStyles.bannersText}>
-			<h1>
+        <div className={`-standardContainer ${textStyles.bannersText}`}>
+			<h1 className="-homepage-section-title">
 				{title}
 			</h1>
-			<h2>
-				{detail}
-			</h2>
+			<h3 className="-homepage-section-subtitle">
+				{detail} 
+			</h3>
             {link ? 
 			<form action={link} target="_blank">
                 <button id={textStyles.gitHubButton} type="submit" >
