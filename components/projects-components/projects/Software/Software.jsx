@@ -9,9 +9,9 @@ export default function Software(props) {
 
   return (
     <section className={`-section ${styles.projectsSection}`} style={{backgroundColor: '#000000'}}>
-      <Model textContent={ reportMaker } />
-      <Model textContent={ zenithMonitor }/>
-      <Model textContent={ zenView }/> 
+      <Model textContent={ reportMaker } path={'images/Projetos/Software/ReportMaker.png'} />
+      <Model textContent={ zenithMonitor } path={'images/Projetos/Software/ReportMaker.png'} />
+      <Model textContent={ zenView } path={'images/Projetos/Software/ReportMaker.png'} /> 
     </section>
   );
 }
