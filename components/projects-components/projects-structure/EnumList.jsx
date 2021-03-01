@@ -1,26 +1,26 @@
 import React from 'react'
-import { FaCheckCircle } from 'react-icons/fa';
-import styles from '../../../styles/projects/CheckList.module.css'
+import styles from '../../../styles/projects/EnumList.module.css'
 
 function Item(props) {
 	const { text } = props;
+	const { num } = props;
 	return (
-		<div className={styles.checkListItem}>
-			<FaCheckCircle />
+		<div className={styles.enumListItem}>
+			<span> {num + 1} </span>
 			<span> {text} </span>
 		</div>
 	)
 }
 
-export default function CheckList(props) {
+export default function EnumList(props) {
 	const { itens } = props;
 	const { title } = props;
 
 	return (
-		<div className={styles.checkList}>
+		<div className={styles.enumList}>
 			<h3>{title}</h3>
 			{itens.map((value, index) => {
-				return <Item text={value} key={index}/>
+				return <Item text={value} key={index} num={index}/>
 			})}
 		</div>
 	)
