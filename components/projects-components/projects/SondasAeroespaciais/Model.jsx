@@ -1,5 +1,5 @@
 import React from 'react';
-import CheckList from '../../projects-structure/CheckList';
+import EnumList from '../../projects-structure/EnumList';
 import ProjectData from '../../ProjectData';
 import ProjectTitle from '../../projects-structure/ProjectTitle';
 import ProjectTable from '../../projects-structure/ProjectTable';
@@ -37,7 +37,7 @@ function Model (props) {
                         ? <ProjectDataRow label={award[0]} value={award[1]} />
                         : <> </>
                     }
-                    <CheckList title={experiments[0]} itens={experiments.slice(1)} dark />
+                    <EnumList title={experiments[0]} itens={experiments.slice(1)} dark />
                 </ProjectTable>
                 <ProjectTable>
                         <EmbeddedRow content={embedded}/>
