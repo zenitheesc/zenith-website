@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import SondasAeroespaciais from './projects/SondasAeroespaciais';
-import CubeSats from './projects/CubeSats';
-import Software from './projects/Software';
-import Hardware from './projects/Hardware';
-import Educacional from './projects/Educacional';
+import SondasAeroespaciais from './projects/SondasAeroespaciais/SondasAeroespaciais';
+import CubeSats from './projects/CubeSats/CubeSats';
+import Software from './projects/Software/Software';
+import Hardware from './projects/Hardware/Hardware';
+import Educacional from './projects/Educacional/Educacional';
 import styles from '../../styles/ProjectTab.module.css';
 
 function Tab(props) {
@@ -49,13 +49,14 @@ function Tabs(props) {
     }
   }
 
-  function cloneTabElement(tab, index = 0) {
+  function cloneTabElement(tab, index) {
     return (
       <Tab
         label={tab.props.label}
         onClick={() => handleTabClick(index)}
         isActive={index === activeIndex}
         tabIndex={index}
+        key = {index}
         onLeftChevronClick={() => handleTabClick(index === 0 ? 4 : index - 1)}
         onRightChevronClick={() => handleTabClick(index === 4 ? 0 : index + 1)}
       />
@@ -65,9 +66,9 @@ function Tabs(props) {
   function renderChildrenTabs() {
     const { children } = props;
 
-    if (!Array.isArray(children)) return cloneTabElement(children);
+    if (!Array.isArray(children)) return cloneTabElement(children,0);
 
-    return children.map(cloneTabElement);
+    return children.map((value,index)=>cloneTabElement(value,index));
   }
 
   function renderActiveTabContent() {
@@ -88,23 +89,29 @@ function Tabs(props) {
   );
 }
 
-function ProjectTab() {
+function ProjectTab(props) {
+  const { sondasAeroespaciais } = props.textContent;
+  const { cubeSats }            = props.textContent;
+  const { software }            = props.textContent;
+  const { hardware }            = props.textContent;
+  const { educacional }         = props.textContent;
+
   return (
     <Tabs>
       <Tab label="Sondas Aeroespaciais">
-        <SondasAeroespaciais />
+        <SondasAeroespaciais textContent={ sondasAeroespaciais }/>
       </Tab>
       <Tab label="CubeSats">
-        <CubeSats />
+        <CubeSats textContent={ cubeSats }/>
       </Tab>
       <Tab label="Software">
-        <Software />
+        <Software textContent={ software }/>
       </Tab>
       <Tab label="Hardware">
-        <Hardware />
+        <Hardware textContent={ hardware }/>
       </Tab>
       <Tab label="Educacional">
-        <Educacional />
+        <Educacional textContent={ educacional }/>
       </Tab>
     </Tabs>
   );

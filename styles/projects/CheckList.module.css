@@ -1,0 +1,47 @@
+.checkList {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkList span {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    width: 30.5em;
+}
+
+.checkListItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    text-align: justify;
+    padding: 0.2em;
+    margin-left: 1em;
+    margin-bottom: 0.4em;
+}
+
+.checkListItem > svg {
+    margin-right: 0.4em;
+    color: #8D8F92;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .checkList span {
+        width: 45em;
+    }
+
+    .checkListItem > svg {
+        margin-right: 0.6em;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .checkList span {
+        width: 25em;
+    }
+
+}

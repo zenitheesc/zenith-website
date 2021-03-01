@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
-import { countUp } from 'styles/HighlightsSection.module.css';
 
 export default function CounterText(props) {
   const { value } = props;
@@ -17,7 +16,7 @@ export default function CounterText(props) {
 
   return (
     <>
-      <div className={countUp}>
+      <div className={props.className}>
         <CountUp
           prefix={plus ? '+' : ''}
           end={value}
