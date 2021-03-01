@@ -6,7 +6,7 @@ function zenMonitorBanner(props) {
 	return (
         <div className={styles.zenMonitorBanner}>
 			<BannersTextSec textContent={props.textContent[1]}/>
-			<img className={styles.zenMonitorImage} src="/images/banners/monitor-banner/ZenithMonitor.png" />
+			<img className={styles.zenMonitorImage} src="/images/banners/monitor-banner/ZenithMonitor.webp" />
 		</div>
 		
     )
