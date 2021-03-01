@@ -11,12 +11,12 @@ export default function ProjectDataRow(props) {
 			{
 				Array.isArray(value)
 					? <div>
-						{value.map((text) => {
+						{value.map((text, index) => {
 							return (
-								<>
+								<div key={index}>
 									<span>{text}</span>
 									<br />
-								</>
+								</div>
 							)
 						})}
 					</div>

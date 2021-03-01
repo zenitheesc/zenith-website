@@ -1,4 +1,5 @@
 {
+    "navBar": ["O ZENITH", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO", "CONTATO"],
     "projetosHero": {
         "title": "Nossos projetos",
         "subtitle": "Integração de diversos campos da Engenharia no setor aeroespacial"
@@ -399,5 +400,9 @@
                 ]
             }
         }
+    },
+    "footer": {
+        "copyright": "© 2020  Zenith Aerospace",
+        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
     }
 }
