@@ -17,7 +17,7 @@ function Projetos() {
         title={title}
         subtitle={subtitle}
       />
-      <ProjectTab textContent={TextContent}/>
+      <ProjectTab />
       <Footer />
     </>
   );

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import SondasAeroespaciais from './projects/SondasAeroespaciais/SondasAeroespaciais';
+import useTranslation from 'next-translate/useTranslation';
 import CubeSats from './projects/CubeSats/CubeSats';
 import Software from './projects/Software/Software';
 import Hardware from './projects/Hardware/Hardware';
@@ -90,11 +91,13 @@ function Tabs(props) {
 }
 
 function ProjectTab(props) {
-  const { sondasAeroespaciais } = props.textContent;
-  const { cubeSats }            = props.textContent;
-  const { software }            = props.textContent;
-  const { hardware }            = props.textContent;
-  const { educacional }         = props.textContent;
+  const { t } = useTranslation();
+
+  const sondasAeroespaciais = t("projetos:sondasAeroespaciais", { count: -1 }, { returnObjects: true });
+  const cubeSats            = t("projetos:cubeSats", { count: -1 }, { returnObjects: true });
+  const software            = t("projetos:software", { count: -1 }, { returnObjects: true });
+  const hardware            = t("projetos:hardware", { count: -1 }, { returnObjects: true });
+  const educacional         = t("projetos:educacional", { count: -1 }, { returnObjects: true });
 
   return (
     <Tabs>
