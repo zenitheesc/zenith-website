@@ -9,8 +9,8 @@ import useTranslation from 'next-translate/useTranslation';
 
 function Sectors() {
   const { t } = useTranslation();
-  const { title } = t('homePage:homePageDepartaments.title');
-  const { subtitle } = t('homePage:homePageDepartaments.subtitle');
+  const title = t('homePage:homePageDepartaments.title');
+  const subtitle = t('homePage:homePageDepartaments.subtitle');
   const textContent= t('homePage:homePageDepartaments', { count: -1 }, { returnObjects: true });
   return (
     <div className={styles.sectorsContainer}>
