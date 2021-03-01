@@ -27,8 +27,8 @@ export default function TechnologiesRow(props) {
 				{title}
 			</h3>
 			<div className={styles.technologiesContainer}>
-				{technologies.map((value) => {
-					return <Technology name={value} />
+				{technologies.map((value, index) => {
+					return <Technology name={value} key={index}/>
 				})}
 			</div>
 		</div>
