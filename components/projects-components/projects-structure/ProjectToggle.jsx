@@ -8,12 +8,12 @@ export default function ProjectToggle(props) {
 		<div>
 			<div className={styles.projectToggleHeader} >
 				<h2 onClick={() => { setfirstOptionSelected(true) }}
-					style={{ "text-decoration": firstOptionSelected ? "underline" : "none" }}
+					style={{ "textDecoration": firstOptionSelected ? "underline" : "none" }}
 				>
 					{firstTitle}
 				</h2>
 				<h2 onClick={() => { setfirstOptionSelected(false) }}
-					style={{ "text-decoration": firstOptionSelected ? "none" : "underline" }}
+					style={{ "textDecoration": firstOptionSelected ? "none" : "underline" }}
 				>
 					{secondTitle}
 				</h2>
