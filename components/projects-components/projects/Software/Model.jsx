@@ -16,6 +16,7 @@ function Model (props) {
         tecnologies,
         techSpecification
     } = props.textContent;
+    const path = props.path;
 
     return (  
         <div className={styles.projectContainer}>
@@ -27,6 +28,9 @@ function Model (props) {
                     <CheckList title={techSpecification[0]} itens={techSpecification.slice(1)} dark />
                 </ProjectTable>
             </ProjectData>
+            <div className={styles.projectImageContainer}>
+                <img src={ path } />
+            </div>
         </div>      
     );
 }

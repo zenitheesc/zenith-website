@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import CheckList from '../../projects-structure/CheckList';
 import ProjectData from '../../ProjectData';
 import ProjectTitle from '../../projects-structure/ProjectTitle';
@@ -16,6 +16,26 @@ function Model (props) {
         tecnologies,
         techSpecification
     } = props.textContent;
+    const videoElement = useRef(null);
+    const [videoAutoPlayable, setVideoAutoPlayable] = useState(true);
+
+    const attemptPlay = () => {
+        videoElement &&
+        videoElement.current &&
+        videoElement.current
+            .play()
+            .then(() => {
+            setVideoAutoPlayable(true);
+            })
+            .catch(() => {
+            setVideoAutoPlayable(false);
+            });
+    };
+
+    useEffect(() => {
+        attemptPlay();
+    }, []);
+
 
     return (  
         <div className={styles.projectContainer}>
@@ -27,6 +47,13 @@ function Model (props) {
                     <CheckList title={techSpecification[0]} itens={techSpecification.slice(1)} dark />
                 </ProjectTable>
             </ProjectData>
+            {/* <div className={styles.projectImageContainer}>
+                <video ref={videoElement} autoPlay loop muted playsInline preload="auto">
+                    <source src="images/Projetos/Hardware/genus360-C4C4C4.m4v" type="video/mp4" />
+                    {/* <source src="images/HomePage/video.mp4" type="video/mp4" /> */}
+                    {/* <source src="images/HomePage/video.webm" type="video/webm" /> */} 
+                {/* </video>
+            </div> */}
         </div>      
     );
 }

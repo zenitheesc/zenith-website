@@ -6,15 +6,31 @@
 .projectContainer {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     padding: 4em;
     max-width: 1328px;
+}
+
+.projectImageContainer {
+    margin-left: 7em;
+    align-items: center;
+}
+
+.projectImageContainer img {
+    width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
 
     .projectContainer {
         flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .projectImageContainer {
+        margin: 0em;
+        margin-bottom: 2em;
+        width: 85%;
     }
 
 }
