@@ -8,7 +8,7 @@
     align-items: left;
 }
 
-.zenMonitorImage {
+.zenMonitorImage{
     height: 38vw;
     padding-right: 10em;
     position: absolute;
@@ -16,17 +16,23 @@
     bottom: 0;
 }
 
+.zenMonitorBanner > picture{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
 
 @media screen and (max-width: 1024px) {
     .zenMonitorBanner{
         flex-direction: column;
         height: 115vw;
     }
+    
 
-    .zenMonitorImage {
+    .zenMonitorImage{
         align-self: center;
         height: 75vw;
-        padding-right: 0em;
+        padding-right: 0;
         right: unset;
     }
 }
