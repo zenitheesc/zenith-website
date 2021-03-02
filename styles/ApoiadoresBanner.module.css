@@ -27,23 +27,23 @@
 }
 
 #imageOne{
-    height: 50%;
+    height: 6vw;
     -webkit-filter: contrast(0%) brightness(200%) saturate(0%) invert(60%);
     filter: contrast(0%) brightness(200%) saturate(0%) invert(60%);
 }
 
 #imageTwo{
-    height: 30%;
+    height: 4vw;
     -webkit-filter: contrast(0%) brightness(200%) saturate(0%) invert(70%);
     filter: contrast(0%) brightness(200%) saturate(0%) invert(70%);
 }
 
 #imageThree{
-    height: 70%;
+    height: 9vw;
     -webkit-filter: contrast(80%) brightness(200%) saturate(0%) invert(20%);
     filter: contrast(80%) brightness(200%) saturate(0%) invert(20%);
 }
-
+ 
 #imageFour{
     height: 18%;
     -webkit-filter: contrast(70%) brightness(200%) saturate(0%) invert(20%);
