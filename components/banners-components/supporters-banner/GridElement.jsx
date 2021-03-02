@@ -1,4 +1,4 @@
-import styles from 'styles/ApoiadoresBanner.module.css'
+import styles from 'styles/SupportersBanner.module.css'
 
 
 function GridElement(props) {
