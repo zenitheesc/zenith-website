@@ -1,32 +1,33 @@
 .zenMonitorBanner {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: black;
     height: 40vw;
     align-items: left;
-    z-index: 2;
 }
 
 .zenMonitorImage {
-    height: auto;
-    padding-right: 7.2em;
-    align-items: center;
+    height: 38vw;
+    padding-right: 10em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 
 @media screen and (max-width: 1024px) {
     .zenMonitorBanner{
         flex-direction: column;
-        height: 120vw;
+        height: 115vw;
     }
 
     .zenMonitorImage {
         align-self: center;
-        width: 50vw; 
-        height: auto;
-        align-items: center;
-        padding-right: 0em; 
+        height: 75vw;
+        padding-right: 0em;
+        right: unset;
     }
 }
 
@@ -36,6 +37,12 @@
     }
     
     .zenMonitorImage {
-        width: 70vw;
+        height: 140vw;
+    }
+}
+
+@media screen and (max-width: 369px) {
+    .zenMonitorBanner {
+        height: 230vw;
     }
 }

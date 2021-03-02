@@ -38,9 +38,6 @@
 
 
 @media screen and (max-width: 1024px) {
-    .bannersText > form{
-        bottom: 1vh;
-    }
     #gitHubButton{
         height: 2em;
         width: 7em;

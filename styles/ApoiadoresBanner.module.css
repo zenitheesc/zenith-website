@@ -59,7 +59,7 @@
     .apoiadoresBanner {
         flex-direction: column;
         align-items: center;
-        height: 120vw;
+        height: 100vw;
         text-align: center;
     }
 
@@ -91,6 +91,7 @@
     .squares{
         grid-template-columns: 40vw 40vw;
         grid-template-rows: 40vw 40vw;
+        padding-bottom: 40%;
     }
 
     .squares > *{
