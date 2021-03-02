@@ -17,6 +17,7 @@
 }
 
 .squares > *{
+    position: relative;
     height: 12vw;
     width: 12vw;
     background-color: #E5E5E5;
@@ -39,7 +40,7 @@
 }
 
 #imageThree{
-    height: 9vw;
+    height: 8vw;
     -webkit-filter: contrast(80%) brightness(200%) saturate(0%) invert(20%);
     filter: contrast(80%) brightness(200%) saturate(0%) invert(20%);
 }
@@ -78,6 +79,18 @@
         width: 25vw;
     }
 
+    #imageOne{
+        height: 12vw;
+    }
+    
+    #imageTwo{
+        height: 8vw;
+    }
+    
+    #imageThree{
+        height: 15vw;
+    }
+
     .emptySquare{
         display: none;
     }
@@ -97,6 +110,18 @@
     .squares > *{
         height: 35vw;
         width: 35vw;
+    }
+
+    #imageOne{
+        height: 16vw;
+    }
+    
+    #imageTwo{
+        height: 12vw;
+    }
+    
+    #imageThree{
+        height: 19vw;
     }
 }
 
