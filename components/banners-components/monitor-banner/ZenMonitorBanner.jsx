@@ -1,5 +1,5 @@
-import styles from '../../styles/ZenMonitorBanner.module.css'
-import BannersTextSec from './BannersTextSec.jsx'
+import styles from 'styles/ZenMonitorBanner.module.css'
+import BannersTextSec from '../BannersTextSec.jsx'
 
 function zenMonitorBanner(props) {
 

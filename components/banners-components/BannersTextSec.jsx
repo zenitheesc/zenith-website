@@ -1,4 +1,5 @@
 import textStyles from '../../styles/BannersText.module.css'
+import GitHubButton from './GitHubButton'
 
 function BannersTextSec(props) {
     
@@ -15,12 +16,7 @@ function BannersTextSec(props) {
 				{detail} 
 			</h3>
             {link ? 
-			<form action={link} target="_blank">
-                <button id={textStyles.gitHubButton} type="submit" >
-                    <img id={textStyles.gitHubIcon} src="/images/banners/GitHubWhiteIcon.png" />
-                    GITHUB  
-                </button>
-            </form>
+                <GitHubButton link={link}/>
             : null}
 		</div>
         

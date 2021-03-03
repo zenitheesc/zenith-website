@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
-import styles from '../../styles/GenusBanner.module.css'
-import BannersTextSec from './BannersTextSec.jsx'
+import styles from 'styles/GenusBanner.module.css'
+import BannersTextSec from '../BannersTextSec.jsx'
 
 
 
