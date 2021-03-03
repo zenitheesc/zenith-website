@@ -1,6 +1,7 @@
 import React from 'react';
+import styles from 'styles/projects/ProjectHeader.module.css';
 
-export default function ProjectHeader() {
+export default function ProjectHeader(props) {
   const { title } = props.textContent;
   const { subtitle } = props.textContent;
 
@@ -10,9 +11,9 @@ export default function ProjectHeader() {
         <h1>
           {title}
         </h1>
-        <h2>
-          {subtitle}
-        </h2>
+        {subtitle.map((value, index) => {
+          return (<p key={index}> {value} </p>);
+        })}
       </div>
     </section>
   );

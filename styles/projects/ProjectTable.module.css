@@ -1,8 +1,20 @@
-.projectTable >* {
+.projectTable {
+    width: 31em;
+}
+
+.projectTable > * {
     border-bottom: 1px solid;
     padding-bottom: 1em;
 }
 
 .projectTable :last-child {
     border-bottom: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .projectTable {
+        width: 100%;
+    }
+
 }
