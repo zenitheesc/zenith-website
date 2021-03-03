@@ -14,7 +14,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-}
+} 
 
 .zenMonitorBanner > picture{
     align-self: center;
@@ -31,7 +31,7 @@
 
     .zenMonitorImage{
         align-self: center;
-        height: 75vw;
+        height: 70vw;
         padding-right: 0;
         right: unset;
     }
@@ -43,12 +43,12 @@
     }
     
     .zenMonitorImage {
-        height: 140vw;
+        height: 135vw;
     }
 }
 
 @media screen and (max-width: 369px) {
     .zenMonitorBanner {
-        height: 230vw;
+        height: 225vw;
     }
 }
