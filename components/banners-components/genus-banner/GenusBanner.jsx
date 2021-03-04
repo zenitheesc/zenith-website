@@ -21,7 +21,7 @@ function genusBanner(props) {
 	
 	return (
         <div className={styles.genusBanner}>
-			<BannersTextSec textContent={props.textContent[0]}/>
+			<BannersTextSec textContent={props.textContent[0]} />
 			{videoAutoPlayable ? 
                 <video id={styles.genusVideo} ref={videoElement} autoPlay loop muted playsInline preload="auto">
 					<source src="/images/banners/genus-banner/Genus.mp4" type="video/mp4" />
@@ -44,4 +44,3 @@ function genusBanner(props) {
 
 
 export default genusBanner;
-//id={styles.} 

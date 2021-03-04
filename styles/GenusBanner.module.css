@@ -8,23 +8,29 @@
     z-index: auto; 
 }
 
-
 #genusVideo {
     height: 80%;
     padding: 2.5em;
-    
+    align-self: center;
 }
 
 #genusImage{
-    
     height: 25vw;
-    padding: 2.5em;
+    padding: 4em;
+    align-self: center;
 }
+
+.genusBanner > picture{
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (max-width: 1024px) {
     .genusBanner {  
         flex-direction: column;
         height: 115vw;
     }
+
     #genusVideo {
         align-self: center;
         width: 70vw;
@@ -32,6 +38,11 @@
         margin-right: 0.3em;
         margin-top: 0;
         margin-bottom: 15vw;
+    }
+
+    #genusImage{
+        width:calc(100% - 8em);
+        height: auto; 
     }
 }
 
@@ -42,5 +53,8 @@
     #genusVideo {
         margin-bottom: 30vw;
         width: 100%;
+    }
+    #genusImage{
+        padding-bottom: 12em;
     }
 }
