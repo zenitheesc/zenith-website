@@ -8,16 +8,22 @@
     z-index: auto; 
 }
 
+
 #genusVideo {
     height: 80%;
-    margin-right: 3.9em;
-    margin-top: 3vw;
+    padding: 2.5em;
+    
 }
 
+#genusImage{
+    
+    height: 25vw;
+    padding: 2.5em;
+}
 @media screen and (max-width: 1024px) {
     .genusBanner {  
         flex-direction: column;
-        height: 100vw;
+        height: 115vw;
     }
     #genusVideo {
         align-self: center;
@@ -25,11 +31,11 @@
         height: auto;
         margin-right: 0.3em;
         margin-top: 0;
-        margin-bottom: 15vw;/*6.6em;*/
+        margin-bottom: 15vw;
     }
 }
 
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 578px) {
     .genusBanner {  
         height: 200vw;
     }

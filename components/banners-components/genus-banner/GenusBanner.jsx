@@ -22,9 +22,19 @@ function genusBanner(props) {
 	return (
         <div className={styles.genusBanner}>
 			<BannersTextSec textContent={props.textContent[0]}/>
-			<video id={styles.genusVideo} ref={videoElement} autoPlay loop muted playsInline preload="auto">
-	  			<source src="/images/banners/genus-banner/Genus1.mp4" type="video/mp4" />
-			</video>
+			{videoAutoPlayable ? 
+                <video id={styles.genusVideo} ref={videoElement} autoPlay loop muted playsInline preload="auto">
+					<source src="/images/banners/genus-banner/Genus.mp4" type="video/mp4" />
+					<source src="/images/banners/genus-banner/Genus.webm" type="video/webm" />
+					<source src="/images/banners/genus-banner/Genus1280x720.mv4" type="video/mp4" />
+				</video>
+            	: 
+				<picture>
+					<source srcset="/images/banners/genus-banner/Genus.webp" type="image/webp" />
+					<img src="/images/banners/genus-banner/Genus.png" type="image/png" id={styles.genusImage}/>
+				</picture>
+			}
+			
 		</div>
 		
 	)
@@ -34,3 +44,4 @@ function genusBanner(props) {
 
 
 export default genusBanner;
+//id={styles.} 
