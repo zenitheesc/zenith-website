@@ -16,8 +16,6 @@ function CarouselImage(props) {
 
 const CarouselVideo = ({ url, isSelected }) => {
 
-  console.log(isSelected, url);
-
   return (
     <div className={style.carouselVideoDiv}>
       <ReactPlayer width="100%" height="100%" url={url} playing={isSelected} />
