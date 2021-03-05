@@ -1,6 +1,6 @@
-import styles from 'styles/SupportersBanner.module.css'
-import BannersTextSec from '../BannersTextSec'
-import GridElement from './GridElement'
+import BannersTextSec from './elements/BannersTextSec';
+import GridElement from './elements/GridElement';
+import styles from 'styles/SupportersBanner.module.css';
 
 function SupportersBanner(props) {
 	
@@ -8,9 +8,7 @@ function SupportersBanner(props) {
 		<section className={`-section ${styles.supportersSection}`}>
 			<div className={`-standardContainer ${styles.supportersBanner}`}>
 				<BannersTextSec textContent={props.textContent}/>
-				<div className={styles.squares}>
-					<GridElement supporters={props.textContent.supporters}/>
-				</div>
+				<GridElement supporters={props.textContent.supporters}/>
 			</div>
 		</section>
 	)

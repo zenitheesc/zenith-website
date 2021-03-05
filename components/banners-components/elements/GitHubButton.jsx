@@ -1,5 +1,5 @@
 import { FaGithub } from 'react-icons/fa';
-import styles from '../../styles/BannersText.module.css';
+import styles from 'styles/BannersText.module.css';
 
 function GitHubButton(props) {
 	const link = props.link;

@@ -10,23 +10,18 @@
 }
 
 .squares{
-    align-items: center;
     display: grid;
-    grid-template-columns: 12vw 12vw 12vw;
-    grid-template-rows: 12vw 12vw;
-    justify-items: right;
+    grid-template-columns: 11.5em 11.5em 11.5em;
+    grid-template-rows: 11.5em 11.5em;
+    gap: 1.2em;
+    margin-left: 3em;
 }
 
-.squares > *{
-    position: relative;
-    height: 9vw;
-    width: 9vw;
+.squares > * {
     padding: 1em;
-    background-color: #CCCCCC;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
+    border-radius: 4px;
+    background-color: #CCCCCC;
 }
 
 .supportersLogo {
@@ -42,72 +37,41 @@
     .supportersBanner {
         flex-direction: column;
         align-items: center;
-        height: 100vw;
         text-align: center;
     }
 
-    .squares{
-        padding-top: 0;
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 25%;
-        grid-template-columns: 30vw 30vw;
-        grid-template-rows: 30vw 30vw;
-        justify-items: center;
+    .squares {
+        margin: 0px;
+        margin-top: 2em;
+        grid-template-columns: 11.5em 11.5em;
+        grid-template-rows: 11.5em 11.5em;
     }
     
-    .squares > *{
-        height: 25vw;
-        width: 25vw;
-    }
-
-    #imageOne{
-        height: 12vw;
-    }
-    
-    #imageTwo{
-        height: 8vw;
-    }
-    
-    #imageThree{
-        height: 15vw;
-    }
-
-    .emptySquare{
+    .emptySquare {
         display: none;
     }
+
 }
 
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 798px) {
+    
     .supportersBanner {
-        height: 180vw;
+        padding: 4em 3em;
     }
 
     .squares{
-        grid-template-columns: 40vw 40vw;
-        grid-template-rows: 40vw 40vw;
-        padding-bottom: 40%;
+        grid-template-columns: 10em 10em;
+        grid-template-rows: 10em 10em;
+        gap: 1em;
     }
 
-    .squares > *{
-        height: 35vw;
-        width: 35vw;
-    }
-
-    #imageOne{
-        height: 16vw;
-    }
-    
-    #imageTwo{
-        height: 12vw;
-    }
-    
-    #imageThree{
-        height: 19vw;
-    }
 }
 
+@media screen and (max-width: 480px) {
 
+    .squares{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
 
-
-
+}

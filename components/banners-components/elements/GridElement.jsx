@@ -1,10 +1,10 @@
 import styles from 'styles/SupportersBanner.module.css'
 
 function GridElement(props) {
-	const supporters = props.supporters;
+    const supporters = props.supporters;
     
     return (
-        <>
+        <div className={styles.squares}>
             {
                 supporters.map((supporter, index) => {
 
@@ -16,10 +16,9 @@ function GridElement(props) {
 
                 })
             }
-
             <a className={styles.emptySquare}></a>
-			<a className={styles.emptySquare}></a> 
-        </>
+            <a className={styles.emptySquare}></a>
+        </div>
 	)
 }
 

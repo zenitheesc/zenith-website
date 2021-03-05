@@ -1,5 +1,5 @@
 import styles from 'styles/ZenMonitorBanner.module.css'
-import BannersTextSec from '../BannersTextSec.jsx'
+import BannersTextSec from './elements/BannersTextSec.jsx'
 
 function zenMonitorBanner(props) {
 
@@ -8,8 +8,8 @@ function zenMonitorBanner(props) {
 			<div className={`-standardContainer ${styles.zenMonitorBanner}`}>
 				<BannersTextSec textContent={props.textContent[1]}/>
 				<picture>
-					<source srcset="/images/HomePage/banners/monitor-banner/ZenithMonitor.webp" type="image/webp" />
-					<source srcset="/images/HomePage/banners/monitor-banner/ZenithMonitor.png" type="image/png" />
+					<source srcSet="/images/HomePage/banners/monitor-banner/ZenithMonitor.webp" type="image/webp" />
+					<source srcSet="/images/HomePage/banners/monitor-banner/ZenithMonitor.png" type="image/png" />
 					<img src="/images/HomePage/banners/monitor-banner/ZenithMonitor.png" type="image/png" className={styles.zenMonitorImage}/>
 				</picture>
 				

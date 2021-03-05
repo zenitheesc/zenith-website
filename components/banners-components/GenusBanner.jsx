@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
+import BannersTextSec from './elements/BannersTextSec.jsx'
 import styles from 'styles/GenusBanner.module.css'
-import BannersTextSec from '../BannersTextSec.jsx'
-
-
 
 function genusBanner(props) {
 	

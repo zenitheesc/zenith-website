@@ -1,5 +1,5 @@
-import textStyles from '../../styles/BannersText.module.css'
 import GitHubButton from './GitHubButton'
+import styles from 'styles/BannersText.module.css'
 
 function BannersTextSec(props) {
     
@@ -8,7 +8,7 @@ function BannersTextSec(props) {
 	const { link } = props.textContent;
 
     return ( 
-        <div className={textStyles.bannersText}>
+        <div className={styles.bannersText}>
             <h1 className="-homepage-section-title">
                 {title}
             </h1>
