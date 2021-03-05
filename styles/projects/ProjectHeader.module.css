@@ -1,0 +1,35 @@
+.projectHeader {
+    justify-content: space-around;
+    padding: 4em;
+    padding-top: 8em;
+}
+
+.textSection {
+    justify-content: space-around;
+    text-align: center;
+    max-width: 46rem;
+    color: #666161;
+}
+
+.textSection h1 {
+    font-size: 36px;
+    margin: 0px;
+    color: #484848;
+}
+
+.textSection p {
+    font-size: 18px;
+    color: #666161;
+}
+
+@media screen and (max-width: 768px) {
+
+    .textSection h1 {
+        font-size: 30px;
+    } 
+
+    .textSection p {
+        font-size: 16px;
+    } 
+
+}

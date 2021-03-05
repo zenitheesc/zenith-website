@@ -6,8 +6,12 @@
     },
     "picker": ["Sondas aeroespaciais", "CubeSats", "Software", "Hardware", "Educacional"],
     "sondasAeroespaciais": {
-        "title": "Sondas aeroespaciais",
-        "subtitle": "Veículos espaciais que levam experimentos astrobiológicos até a estratosfera",
+        "title": "O que são sondas aeroespaciais?",
+        "subtitle": [
+            "Nossas sondas aeroespaciais são balões, repletos de hélio, que levam experimentos astrobiológicos até a estratosfera, o que é essencial para que possamos responder a várias perguntas sobre a sobrevivência de seres vivos no espaço.", 
+            "Apesar de ser parte de um experimento científico, as sondas também são fascinantes sob o ponto de vista de um sistema embarcado. Nossas sondas são equipadas com microcontroladores, rádios, sensores e câmeras e, a cada missão, buscamos evoluir nossos sistemas para ter uma missão mais eficiente.",
+            "E, para sustentar todos os nossos experimentos e sistemas, construímos estruturas reaproveitáveis e duráveis, que nos possibilitam retornar várias vezes ao espaço."
+        ],
         "projects": {
             "garatea1": {
                 "title": "Garatéa-I",
@@ -90,11 +94,6 @@
                 "menus": ["OVERVIEW", "TECNOLOGIAS"],
                 "launchDate": ["LANÇAMENTO", "11/11/2018"],
                 "altitude": ["ALTITUDE ALCANÇADA", "?? km"],
-                "experiments": [
-                    "EXPERIMENTOS",
-                    "??",
-                    "??"
-                ],
                 "embedded": [
                     "Sistema de aquisição de dados, desenvolvido pelo grupo, baseado em Atmega2560",
                     "Controle da altitude do vôo da sonda a partir do uso de válvula no balão",

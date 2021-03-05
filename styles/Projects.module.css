@@ -17,7 +17,8 @@
 }
 
 .projectImageContainer img {
-    width: 100%;
+    width: 90%;
+    margin-left: 10%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -31,6 +32,11 @@
         margin: 0em;
         margin-bottom: 2em;
         width: 85%;
+    }
+    
+    .projectImageContainer img {
+        width: 100%;
+        margin: 0px;
     }
 
 }

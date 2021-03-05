@@ -1,5 +1,6 @@
 import React from 'react';
 import Model from './Model';
+import ProjectHeader from '../../ProjectHeader';
 import styles from 'styles/Projects.module.css';
 
 export default function SondasAeroespaciais(props) {
@@ -56,10 +57,11 @@ export default function SondasAeroespaciais(props) {
 
   return (
     <section className={`-section ${styles.projectsSection}`} style={{backgroundColor: '#E1E1E5'}}>
-      <Model textContent={ garatea1 } paths={garatea1Images}/>
-      <Model textContent={ garatea2 } paths={garatea2Images}/> 
-      <Model textContent={ garatea3 } paths={garatea3Images}/>
-      <Model textContent={ garatea5 } paths={garatea5Images}/>
+      <ProjectHeader textContent ={ props.textContent } />
+      <Model textContent={ garatea1 } paths={ garatea1Images } />
+      <Model textContent={ garatea2 } paths={ garatea2Images } /> 
+      <Model textContent={ garatea3 } paths={ garatea3Images } />
+      <Model textContent={ garatea5 } paths={ garatea5Images } />
     </section>
   );
 }

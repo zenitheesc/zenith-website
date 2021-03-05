@@ -37,7 +37,11 @@ function Model (props) {
                         ? <ProjectDataRow label={award[0]} value={award[1]} />
                         : <> </>
                     }
-                    <EnumList title={experiments[0]} itens={experiments.slice(1)} dark />
+                    {
+                    (experiments !== undefined) 
+                        ? <EnumList title={experiments[0]} itens={experiments.slice(1)} dark />
+                        : <> </>
+                    }
                 </ProjectTable>
                 <ProjectTable>
                         <EmbeddedRow content={embedded}/>
