@@ -85,7 +85,7 @@
 		grid-template-columns: 50% 50%;
 	} 
 	
-	.sectorsButton {
+	.sectorsButton { 
 		margin: 0rem 2.0rem;
 	}
 
@@ -101,9 +101,17 @@
 	.sectorsContainer {
 		padding: 2.5em 2em;
 	}
-	
+
 	.sectorsButton > button > svg {
 		width: 7em;
 	}
 
+}
+
+@media screen and (max-width: 350px) {
+
+	.sectorsButton {
+		margin: 0 5vw;
+	}
+	
 }
