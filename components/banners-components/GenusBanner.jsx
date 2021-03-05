@@ -20,7 +20,6 @@ function genusBanner(props) {
 	return (
 		<section className={`-section ${styles.genusSection}`}> 
 			<div className={`-standardContainer ${styles.genusBanner}`}>
-				<BannersTextSec textContent={props.textContent[0]} />
 				{videoAutoPlayable ? 
 					<video id={styles.genusVideo} ref={videoElement} autoPlay loop muted playsInline preload="auto">
 						<source src="/images/HomePage/banners/genus-banner/Genus.mp4" type="video/mp4" />
@@ -33,7 +32,7 @@ function genusBanner(props) {
 						<img src="/images/HomePage/banners/genus-banner/Genus.png" type="image/png" id={styles.genusImage}/>
 					</picture>
 				}
-				
+				<BannersTextSec textContent={props.textContent[0]} />
 			</div>
 		</section>
 		

@@ -12,12 +12,10 @@ function BannersTextSec(props) {
             <h1 className="-homepage-section-title">
                 {title}
             </h1>
-            <h3 className="-homepage-section-subtitle">
+            <h2 className="-homepage-section-title">
                 {detail} 
-            </h3>
-            {/* {link ? 
-                <GitHubButton link={link}/>
-                : null} */}
+            </h2>
+            <GitHubButton link={link}/>
         </div> 
     );
   }

@@ -1,23 +1,19 @@
-import { FaGithub } from 'react-icons/fa';
+import { FiArrowUpRight } from 'react-icons/fi';
 import styles from 'styles/BannersText.module.css';
 
 function GitHubButton(props) {
-	const link = props.link;
+	const { link } = props;
 
     return ( 
-        <form action={link} target="_blank">
-            <a className={styles.gitHubButton} type="submit" >
-                <a
-                    className={styles.gitHubIcon}
-                    aria-label="GitHub"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/zenitheesc">
-                    <FaGithub />
-                </a>
-                GitHub  
-            </a>
-        </form>
+        <a 
+        className={styles.gitHubButton} 
+        aria-label="GitHub"
+        target="_blank"
+        rel="noopener noreferrer"
+        href={link} >
+            GitHub  
+            <FiArrowUpRight />
+        </a>
     );
   }
   

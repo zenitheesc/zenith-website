@@ -3,54 +3,35 @@
     flex-direction: column;
     position: relative;
     align-items: center;
+    text-align: right;
+    align-self: center;
 }
 
-.bannersText > form {
-    position: absolute;
-    bottom: 3vh;
+.bannersText h1 {
+    margin: 0px;
 }
 
-.gitHubButton{
-    /* height: 3vw; 
-    width: 8vw;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+.bannersText h2 {
+    font-size: 1.9em;
+    margin-bottom: 0.5em;
+}
+
+.gitHubButton {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-flex;
     align-items: center;
-    border-radius: 0.5em;
-    border: 1px;
-    border-style: solid; 
-    border-color: white;
-    background-color: transparent;
-    font-size: 1vw; */
-
-    display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid #FFFFFF;
-    background-color: transparent;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    font-weight: 300;
-    color: #FFFFFF;
-    text-align: center;
-    align-items: center;
-    transition: all 0.2s;
+    background-size: 0px 8%, 100% 8%;
 }
 
-.gitHubIcon {
-    color: white;
-    font-size: 24px;
-    height: 24px;
-    margin-right: 8px;
-}
-
-.gitHubButton:hover{ 
-    color: #000000;
-    background-color: #FFFFFF;
+.gitHubButton svg {
+    margin-left: 4px;
+    font-size: 20px;
+    height: 20px;
 }
 
 @media screen and (max-width: 1024px) {
+
     .gitHubButton{
         height: 2em;
         width: 7em;
