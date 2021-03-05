@@ -7,6 +7,7 @@ import ProjectSubtitle from '../../projects-structure/ProjectSubtitle';
 
 import styles from 'styles/Projects.module.css';
 import StatisticsRow from 'components/projects-components/projects-structure/statisticsRow';
+import ProjectsCarousel from 'components/projects-components/projects-structure/ProjectsCarousel';
 
 function Model (props) {
     const { 
@@ -16,7 +17,8 @@ function Model (props) {
         altitude,
 		statistics
     } = props.textContent;
-
+    const { paths } = props;
+    
     return (  
         <div className={styles.projectContainer}>
             <ProjectData >
@@ -28,6 +30,7 @@ function Model (props) {
 					<StatisticsRow statistics={statistics}/>
                 </ProjectTable>
             </ProjectData>
+            <ProjectsCarousel paths={paths} />
         </div>      
     );
 }
