@@ -32,6 +32,7 @@ export default function Educacional(props) {
   ];
 
   const garateaE2019paths = [
+    'Educacional/garateaE2019/photo1.webp',
     'https://www.youtube.com/watch?v=nAI0hsjUrw4',
   ];
   
