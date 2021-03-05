@@ -1,5 +1,4 @@
 {
-    "navBar": ["O ZENITH", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO", "CONTATO"],
     "processoSeletivoHero": {
         "title": "Processo Seletivo",
         "subtitle": "Você deseja ser parte do Zenith Aerospace?"
@@ -32,9 +31,5 @@
             "1º Fase:", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur elit odio, ac aliquet tellus iaculis porta.",
             "2º Fase:", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur elit odio, ac aliquet tellus iaculis porta."
         ]
-    },
-    "footer": {
-        "copyright": "© 2020  Zenith Aerospace",
-        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
     }
 }

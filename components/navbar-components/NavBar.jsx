@@ -11,7 +11,7 @@ function NavBar(props) {
     setMenuState(open);
   };
 
-  useEffect(function onFirstMount() {
+  useEffect(() => {
     const closeMenu = () => {
       toggleMenu(false);
     };
@@ -71,11 +71,10 @@ function NavBar(props) {
         }}
       />
       <NavHeader
-        textContent={props.textContent}
         toggleMenu={toggleMenu}
         isMenuOpen={menu}
       />
-      <NavMenu textContent={props.textContent} isMenuOpen={menu} />
+      <NavMenu isMenuOpen={menu} />
     </div>
   );
 }

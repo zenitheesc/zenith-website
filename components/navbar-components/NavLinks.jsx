@@ -1,30 +1,32 @@
 import React from 'react';
 import Link from 'next/link';
-import { navBarItem } from 'styles/NavBar.module.css';
+import useTranslation from 'next-translate/useTranslation';
+import { navBarItem } from '../../styles/NavBar.module.css';
 
 export default function NavLinks(props) {
-  const { textContent } = props;
+  const { t } = useTranslation();
+  const navTexts = t('common:navBar', { count: -1 }, { returnObjects: true });
   return (
     <>
       <ul className={props.className}>
         <Link href="/zenith">
           <li className={navBarItem}>
-            <a href="/zenith">{textContent[0]}</a>
+            <a href="/zenith">{navTexts[0]}</a>
           </li>
         </Link>
         <Link href="/projetos">
           <li className={navBarItem}>
-            <a href="/projetos">{textContent[1]}</a>
+            <a href="/projetos">{navTexts[1]}</a>
           </li>
         </Link>
         <Link href="/kurumim">
           <li className={navBarItem}>
-            <a href="/kurumim">{textContent[2]}</a>
+            <a href="/kurumim">{navTexts[2]}</a>
           </li>
         </Link>
         <Link href="/processo-seletivo">
           <li className={navBarItem}>
-            <a href="/processo-seletivo">{textContent[3]}</a>
+            <a href="/processo-seletivo">{navTexts[3]}</a>
           </li>
         </Link>
       </ul>

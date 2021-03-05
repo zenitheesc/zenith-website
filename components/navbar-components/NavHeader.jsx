@@ -20,7 +20,6 @@ export default function NavHeader(props) {
         </a>
 
         <NavLinks
-          textContent={props.textContent}
           className={style.navigationHeader}
         />
 
