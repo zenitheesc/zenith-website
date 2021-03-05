@@ -1,22 +1,20 @@
-.zenMonitorBanner {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.zenMonitorSection {
     background-color: black;
-    height: 40vw;
+}
+
+.zenMonitorBanner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
     align-items: left;
 }
 
-.zenMonitorImage{
-    height: 38vw;
-    padding-right: 10em;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+.zenMonitorImage {
+    height: 30vw;
 } 
 
-.zenMonitorBanner > picture{
+.zenMonitorBanner > picture {
     align-self: center;
     display: flex;
     justify-content: center;

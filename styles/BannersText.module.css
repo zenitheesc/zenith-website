@@ -2,15 +2,16 @@
     color: white;
     flex-direction: column;
     position: relative;
+    align-items: center;
 }
 
-.bannersText > form{
+.bannersText > form {
     position: absolute;
     bottom: 3vh;
 }
 
-#gitHubButton{
-    height: 3vw; 
+.gitHubButton{
+    /* height: 3vw; 
     width: 8vw;
     display: flex;
     justify-content: space-around;
@@ -21,29 +22,42 @@
     border-style: solid; 
     border-color: white;
     background-color: transparent;
-    font-size: 1vw;
+    font-size: 1vw; */
+
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    background-color: transparent;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.gitHubIcon {
     color: white;
-    font-family: sans-serif;
+    font-size: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
 
-#gitHubIcon{
-    height: 2vw;
-    width: auto;
+.gitHubButton:hover{ 
+    color: #000000;
+    background-color: #FFFFFF;
 }
-#gitHubButton:hover{ 
-    border-color: rgb(201, 199, 199);
-    color: rgb(201, 199, 199);
-}
-
-
 
 @media screen and (max-width: 1024px) {
-    #gitHubButton{
+    .gitHubButton{
         height: 2em;
         width: 7em;
         font-size: 1em;
     }
-    #gitHubIcon{
+
+    .gitHubIcon{
         height: 1.2em;
         width: auto;
     }

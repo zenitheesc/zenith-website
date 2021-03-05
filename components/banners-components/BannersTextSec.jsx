@@ -8,18 +8,17 @@ function BannersTextSec(props) {
 	const { link } = props.textContent;
 
     return ( 
-        <div className={`-standardContainer ${textStyles.bannersText}`}>
-			<h1 className="-homepage-section-title">
-				{title}
-			</h1>
-			<h3 className="-homepage-section-subtitle">
-				{detail} 
-			</h3>
-            {link ? 
+        <div className={textStyles.bannersText}>
+            <h1 className="-homepage-section-title">
+                {title}
+            </h1>
+            <h3 className="-homepage-section-subtitle">
+                {detail} 
+            </h3>
+            {/* {link ? 
                 <GitHubButton link={link}/>
-            : null}
-		</div>
-        
+                : null} */}
+        </div> 
     );
   }
   

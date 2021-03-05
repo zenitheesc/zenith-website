@@ -1,14 +1,22 @@
-import textStyles from '../../styles/BannersText.module.css'
+import { FaGithub } from 'react-icons/fa';
+import styles from '../../styles/BannersText.module.css';
 
 function GitHubButton(props) {
 	const link = props.link;
 
     return ( 
         <form action={link} target="_blank">
-            <button id={textStyles.gitHubButton} type="submit" >
-                <img id={textStyles.gitHubIcon} src="/images/banners/GitHubWhiteIcon.png" />
-                GITHUB  
-            </button>
+            <a className={styles.gitHubButton} type="submit" >
+                <a
+                    className={styles.gitHubIcon}
+                    aria-label="GitHub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/zenitheesc">
+                    <FaGithub />
+                </a>
+                GitHub  
+            </a>
         </form>
     );
   }

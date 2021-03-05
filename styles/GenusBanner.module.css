@@ -1,39 +1,35 @@
-.genusBanner {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
+.genusSection {
     background-color: #605F62;
-    height: 40vw;
+}
+
+.genusBanner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
     align-items: left;
     z-index: auto; 
 }
 
 #genusVideo, #genusImage{
-    height: 80%;
-    padding-right: 4em;
     align-self: center;
+    width: 100%;
 }
 
 #genusImage{
     height: 25vw;
 }
 
-.genusBanner > picture{
+.genusBanner > picture {
     display: flex;
     justify-content: center;
 }
 
 @media screen and (max-width: 1024px) {
+    
     .genusBanner {  
+        display: flex;
         flex-direction: column;
-        height: 115vw;
-    }
-
-    #genusVideo, #genusImage {
-        padding: 4em;
-        padding-top: 0;
-        width:calc(100% - 8em);
-        height: auto;
     }
 
 }

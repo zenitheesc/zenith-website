@@ -133,18 +133,22 @@
     "homePageSupporters": {
         "title": "nossos apoiadores",
         "detail": "sem eles, nada disso seria possível",
-        "website": [ 
-            {
+        "supporters": [ 
+            {   
+                "logo": "OZ Produtora",
                 "link": "https://www.ozprodutora.com.br/"
             },
             {
+                "logo": "USP",
                 "link": "https://www5.usp.br/"
             },
             {
+                "logo": "EESC-USP",
                 "link": "https://eesc.usp.br/"
             },
             {
-                "link":"https://vercel.com"
+                "logo": "Vercel",
+                "link":"http://vercel.com/?utm_source=zenith-aerospace&utm_campaign=oss"
             }
         ]
     },
