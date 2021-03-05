@@ -11,7 +11,15 @@
     width: 100%;
     height: 100%;
 }
+.carouselVideoDiv {
+    width: 100%;
+    height: 100%;
+}
 
+.carouselVideoDiv iframe {
+    margin: 0px !important;
+    width: 100% !important;
+}
 .carouselImage {
     object-fit: cover;
     height: 100%;
