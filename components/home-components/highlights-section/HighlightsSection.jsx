@@ -1,6 +1,7 @@
 import React from 'react';
 import CounterText from '../../general/CounterText';
 import style from 'styles/HighlightsSection.module.css';
+import useTranslation from 'next-translate/useTranslation';
 import { countUp } from 'styles/HighlightsSection.module.css';
 
 export default function HighlightsSection() {
