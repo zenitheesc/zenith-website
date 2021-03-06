@@ -48,7 +48,8 @@ function (_React$Component) {
 
     return _possibleConstructorReturn(this, _getPrototypeOf(Tag).call(this, props));
   }
-
+  
+// CSS: edit individual tags
   _createClass(Tag, [{
     key: "render",
     value: function render() {
