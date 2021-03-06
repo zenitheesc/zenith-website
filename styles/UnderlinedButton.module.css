@@ -1,0 +1,36 @@
+.gitHubButton {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    background-size: 0px 8%, 100% 8%;
+    padding-bottom: 2.5px;
+}
+
+.gitHubButton::before {    
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #ffffff;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.gitHubButton:hover::before { 
+    right: 0 !important;
+}
+
+.gitHubButton svg {
+    margin-left: 4px;
+    font-size: 20px;
+    height: 20px;
+}

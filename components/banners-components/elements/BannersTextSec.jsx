@@ -1,4 +1,4 @@
-import GitHubButton from './GitHubButton'
+import UnderlinedButton from '../../general/UnderlinedButton'
 import styles from 'styles/BannersText.module.css'
 
 function BannersTextSec(props) {
@@ -15,7 +15,7 @@ function BannersTextSec(props) {
             <h2 className="-homepage-section-title">
                 {detail} 
             </h2>
-            <GitHubButton link={link}/>
+            <UnderlinedButton label={"GitHub"} link={link}/>
         </div> 
     );
   }

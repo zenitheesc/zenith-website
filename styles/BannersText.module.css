@@ -15,32 +15,3 @@
     font-size: 1.9em;
     margin-bottom: 0.5em;
 }
-
-.gitHubButton {
-    color: #ffffff;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    background-size: 0px 8%, 100% 8%;
-}
-
-.gitHubButton svg {
-    margin-left: 4px;
-    font-size: 20px;
-    height: 20px;
-}
-
-@media screen and (max-width: 1024px) {
-
-    .gitHubButton{
-        height: 2em;
-        width: 7em;
-        font-size: 1em;
-    }
-
-    .gitHubIcon{
-        height: 1.2em;
-        width: auto;
-    }
-
-}

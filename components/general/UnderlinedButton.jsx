@@ -1,8 +1,8 @@
 import { FiArrowUpRight } from 'react-icons/fi';
-import styles from 'styles/BannersText.module.css';
+import styles from 'styles/UnderlinedButton.module.css';
 
-function GitHubButton(props) {
-	const { link } = props;
+function UnderlinedButton (props) {
+	const { link, label } = props;
 
     return ( 
         <a 
@@ -10,11 +10,11 @@ function GitHubButton(props) {
         aria-label="GitHub"
         target="_blank"
         rel="noopener noreferrer"
-        href={link} >
-            GitHub  
+        href={ link } >
+            { label }  
             <FiArrowUpRight />
         </a>
     );
   }
   
-export default GitHubButton;
+export default UnderlinedButton;
