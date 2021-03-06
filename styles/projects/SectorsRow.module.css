@@ -13,9 +13,17 @@
 
 .SectorRowContent>span {
     text-align: left;
-	font-size: 14px;
-	padding: 0.8em;
+    font-weight: 400;
+	font-size: 16px ;
+	padding: 0.3em;
 }
+
+.SectorRowContent span {
+    text-align: left;
+    font-weight: 400;
+	font-size: 16px ;
+}
+
 
 .SectorRow>div>svg {
     padding: 1em;
