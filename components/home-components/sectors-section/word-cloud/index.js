@@ -260,10 +260,10 @@ const TagCloud =
         value: function render() {
           const _this5 = this;
 
-//TO-DO: add css module import
+//CSS: tag container styling:
 
           const containerStyle = {
-            width: '100%',
+            width: "90%",
             heght: '100%',
           };
           const wrapperStyle = {
