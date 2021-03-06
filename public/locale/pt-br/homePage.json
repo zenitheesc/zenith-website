@@ -88,18 +88,18 @@
             ]
         }
     },
-    "homePageBanners": [
-        {
+    "homePageBanners": {
+        "genus": {
             "title": "Genus",
             "detail": "Hardware modularizado voltado para aplicações aeroespaciais",
             "link": "https://github.com/zenitheesc/Genus"
         },
-        {
+        "zenithMonitor": {
             "title": "Zenith Monitor",
             "detail": "Tecnologia para rastreamento de sondas aeroespaciais",
             "link": "https://github.com/zenitheesc/Zenith-Monitor"
         }
-    ],
+    },
     "homePageStatistics": {
         "title": "eficiência descrita em números",
         "subtitle": "desde 2014",

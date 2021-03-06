@@ -1,21 +1,18 @@
-.zenMonitorSection {
-    background-color: black;
-}
-
-.zenMonitorBanner {
+.projectBannerContainer {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: space-between;
     align-items: left;
+    z-index: auto; 
 }
 
-.zenMonitorImage {
+.projectBannerMidia {
     align-self: center;
     width: 100%;
 } 
 
-.zenMonitorBanner > picture {
+.projectBannerContainer > picture {
     align-self: center;
     display: flex;
     justify-content: center;
@@ -23,26 +20,19 @@
 
 @media screen and (max-width: 1024px) {
 
-    .zenMonitorBanner{
+    .projectBannerContainer {
         display: flex;
         flex-direction: column;
     }
 
-    .zenMonitorImage{
+    .projectBannerMidia {
         align-self: center;
-        padding-right: 4em;
-        padding-left: 4em;
-        right: unset;
     }
 }
 
 @media screen and (max-width: 578px) {
-    .zenMonitorBanner{
+    .projectBannerContainer{
         height: 200vw;
     }
-    
-    .zenMonitorImage {
-        width: calc(100% - 8em);
-        height: auto;
-    }
+
 }
