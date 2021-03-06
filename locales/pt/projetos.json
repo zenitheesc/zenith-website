@@ -27,14 +27,14 @@
                     "Análise dos padrões de degradação de biomoléculas"
                 ],
                 "embedded": [
-                    "Arquitetura de sistema baseada em Mbed",
-                    "Utilização de módulos comerciais no sensoriamento de parâmetros ambientais",
-                    "Utilização de sistema de geolocalização próprio"
+                    "Arquitetura de sistema baseada em */Mbed/*",
+                    "Utilização de */módulos comerciais/* no sensoriamento de parâmetros ambientais",
+                    "Utilização de sistema de */geolocalização/* próprio"
                 ],
                 "structure": [
                     "Acionamento de mecanismo de exposição dos experimentos",
-                    "Estrutura em impressão 3D e fibra de vidro",
-                    "Paraquedas confeccionado em fios de Kevlar e Nylon"
+                    "Estrutura em */impressão 3D/* e */fibra de vidro/*",
+                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
                 ]
             },
             "garatea2": {
@@ -50,15 +50,15 @@
                     "Análise dos padrões de degradação de biomoléculas"
                 ],
                 "embedded": [
-                    "Arquitetura de sistema baseada em Arduino ",
-                    "Utilização de módulos comerciais no sensoriamento de parâmetros ambientais",
-                    "Utilização de sistema de geolocalização próprio",
-                    "Utilização de painéis solares no carregamento das baterias"
+                    "Arquitetura de sistema baseada em */Arduino/* ",
+                    "Utilização de */módulos comerciais/* no sensoriamento de parâmetros ambientais",
+                    "Utilização de sistema de */geolocalização/* próprio",
+                    "Utilização de */painéis solares no/* carregamento das baterias"
                 ],
                 "structure": [
-                    "Isolamento térmico feito em Kapton e Depron Aeronáutico",
-                    "Estrutura em impressão 3D e fibra de carbono",
-                    "Paraquedas confeccionado em fios de Kevlar e Nylon"
+                    "Isolamento térmico feito em */Kapton/* e */Depron Aeronáutico/*",
+                    "Estrutura em */impressão 3D/* e */fibra de carbono/*",
+                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
                 ]
             },
             "garatea3": {
@@ -75,16 +75,16 @@
                     "Cultura de protozoários em diferentes fases da vida e de sementes de alface"
                 ],
                 "embedded": [
-                    "Sistema de aquisição de dados, desenvolvido pelo grupo, baseado em Atmega328p-pu",
-                    "Sistema de imageamento baseado em Linux",
-                    "Utilização de sistema de geolocalização próprio",
-                    "Medição de níveis de radiação com contador Geiger"
+                    "Sistema de */aquisição de dados/*, desenvolvido pelo grupo, baseado em Atmega328p-pu",
+                    "Sistema de */imageamento/* baseado em */Linux/*",
+                    "Utilização de sistema de */geolocalização/* próprio",
+                    "Medição de níveis de radiação com */contador Geiger/*"
                 ],
                 "structure": [
-                    "Estrutura de hipercubo, desenvolvida para minimizar impactos e ser totalmente reaproveitável",
-                    "Utilização de fibra de carbono e impressão 3D",
+                    "Estrutura de */hipercubo/*, desenvolvida para */minimizar impactos/* e ser totalmente */reaproveitável/*",
+                    "Utilização de */fibra de carbono/* e */impressão 3D/*",
                     "Isolamento térmico feito em Kapton e Depron Aeronáutico",
-                    "Paraquedas confeccionado em fios de Kevlar e Nylon"
+                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
                 ]
             },
             "garatea5": {
@@ -100,15 +100,15 @@
                     "??"
                 ],
                 "embedded": [
-                    "Sistema de aquisição de dados, desenvolvido pelo grupo, baseado em Atmega2560",
+                    "Sistema de */aquisição de dados/*, desenvolvido pelo grupo, baseado em Atmega2560",
                     "Controle da altitude do vôo da sonda a partir do uso de válvula no balão",
-                    "Utilização de sistema de geolocalização próprio"
+                    "Utilização de sistema de */geolocalização próprio/*"
                 ],
                 "structure": [
-                    "Mecanismo de deploy do balão e do paraquedas",
-                    "Utilização de impressão 3D",
-                    "Isolamento térmico feito em Kapton e Depron Aeronáutico",
-                    "Paraquedas confeccionado em fios de Kevlar e Nylon"
+                    "Mecanismo de */deploy do balão e do paraquedas/*",
+                    "Utilização de */impressão 3D/*",
+                    "Isolamento térmico feito em */Kapton/* e */Depron Aeronáutico/*",
+                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
                 ]
             }
         }
@@ -132,13 +132,13 @@
                     "TexasInstruments"
                 ],
                 "embedded": [
-                    "Processamento central do sistema baseado em Linux",
-                    "Implementação do controle de atitude em 1 eixo",
-                    "Telemetria bidirecional implementada em LoRa",
-                    "Determinação de Atitude implementada via visão computacional"
+                    "Processamento central do sistema baseado em */Linux/*",
+                    "Implementação do controle de atitude em */1 eixo/*",
+                    "Telemetria bidirecional implementada em */LoRa/*",
+                    "Determinação de Atitude implementada via */visão computacional/*"
                 ],
                 "structure": [
-                    "O ZenSat é um satélite de dimensões 2U com estrutura de liga de Alumínio 7075-T6, sendo fabricada por meio de usinagem CNC e de impressão 3D, capaz de suportar uma vibração senoidal de 0-100 Hz."
+                    "O ZenSat é um satélite de */dimensões 2U/* com estrutura de */liga de Alumínio 7075-T6/*, sendo fabricada por meio de */usinagem CNC/* e de */impressão 3D/*, capaz de suportar uma vibração senoidal de 0-100 Hz."
                 ]
             },
             "uspSat": {
@@ -156,15 +156,15 @@
                     "TexasInstruments"
                 ],
                 "embedded": [
-                    "Arquitetura de sistemas distribuída, com redundância entre subsistemas",
-                    "Telemetria bidirecional implementada em LoRa",
-                    "Imageamento e determinação de atitude, em 1 eixo, baseados em Linux",
-                    "Controle térmico ativo e gerenciamento do sistema de energia"
+                    "Arquitetura de sistemas */distribuída/*, com */redundância/* entre subsistemas",
+                    "Telemetria bidirecional implementada em */LoRa/*",
+                    "*/Imageamento/* e */determinação de atitude/*, em */1 eixo/*, baseados em Linux",
+                    "*/Controle térmico ativo/* e */gerenciamento do sistema de energia/*"
                 ],
                 "structure": [
-                    "Estrutura de dimensões 2U de liga de Alumínio 7075-T6 e anodizada na cor preta",
-                    "Uso de chapas de fibra de carbono para fixar os componentes",
-                    "Mecanismo de deploy da antena na extremidades das placas extremantes."
+                    "Estrutura de */dimensões 2U/* de */liga de Alumínio 7075-T6/* e anodizada na cor preta",
+                    "Uso de chapas de */fibra de carbono/* para fixar os componentes",
+                    "Mecanismo de */deploy da antena/* na extremidades das placas extremantes."
                 ]
             }
         }
