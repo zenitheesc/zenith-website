@@ -1,5 +1,5 @@
 import React from 'react';
-import TagCloud from './tagCloud/index';
+import TagCloud from './word-cloud/index';
 import styles from 'styles/TagCanvas.module.css'
 // https://www.npmjs.com/package/react3dtagcloud
 
