@@ -1,15 +1,14 @@
 .projectBannerContainer {
     width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: left;
     z-index: auto; 
 }
 
 .projectBannerMidia {
     align-self: center;
-    width: 100%;
+    width: 50%;
 } 
 
 .projectBannerContainer > picture {
@@ -27,12 +26,6 @@
 
     .projectBannerMidia {
         align-self: center;
+        margin-bottom: 1em;
     }
-}
-
-@media screen and (max-width: 578px) {
-    .projectBannerContainer{
-        height: 200vw;
-    }
-
 }
