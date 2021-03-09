@@ -6,6 +6,18 @@ import TextContent from "../public/locale/pt-br/oZenith.json";
 import Card from "../components/general/Card";
 import CardContainer from "../components/general/CardContainer";
 
+
+function TextWithIcons(content, i) {
+    return <div style={{display:'flex', flexFlow:'row nowrap'}}>
+        <img style={{margin:'2rem'}}  src={`https://placedog.net/100/100/${i}`} />
+        <div>
+            <h2>{content.title}</h2>
+            <p>{content.text}</p>
+        </div>
+        </div>
+}
+
+
 function Zenith() {
     return (
         <>
@@ -28,8 +40,8 @@ function Zenith() {
                     left={<img src="http://placedog.net/480/300" />}
                     right={
                         <>
-                            <h1>{TextContent.oZenithCard1.title}</h1>
-                            <p>{TextContent.oZenithCard1.text}</p>
+                            <h1 className="-homepage-section-title">{TextContent.oZenithCard1.title}</h1>
+                            {TextContent.oZenithCard1.text.map(a=><p>{a}</p>)}
                         </>
                     }
                 />
@@ -38,8 +50,8 @@ function Zenith() {
                     lean="left"
                     left={
                         <>
-                            <h1>{TextContent.oZenithCard2.title}</h1>
-                            <p>{TextContent.oZenithCard2.text}</p>
+                            <h1 className="-homepage-section-title">{TextContent.oZenithCard2.title}</h1>
+                            {TextContent.oZenithCard2.text.map(a=><p>{a}</p>)}
                         </>
                     }
                     right={<img src="http://placedog.net/500/300" />}
@@ -50,15 +62,8 @@ function Zenith() {
                     left={<img src="http://placedog.net/500/320" />}
                     right={
                         <>
-                            <h1>{TextContent.oZenithCard3.title}</h1>
-                            {TextContent.oZenithCard3.text.map(
-                                ({ title, text }) => (
-                                    <>
-                                        <h2>{title}</h2>
-                                        <p>{text}</p>
-                                    </>
-                                )
-                            )}
+                            <h1 className="-homepage-section-title">{TextContent.oZenithCard3.title}</h1>
+                            {TextContent.oZenithCard3.text.map(TextWithIcons)}
                         </>
                     }
                 />
@@ -68,8 +73,8 @@ function Zenith() {
                     right={<img src="http://placedog.net/520/300" />}
                     left={
                         <>
-                            <h1>{TextContent.oZenithCard4.title}</h1>
-                            <p>{TextContent.oZenithCard4.text}</p>
+                            <h1 className="-homepage-section-title">{TextContent.oZenithCard4.title}</h1>
+                            {TextContent.oZenithCard4.text.map(a=><p>{a}</p>)}
                         </>
                     }
                 />
