@@ -1,0 +1,8 @@
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.row>img {
+    margin: auto 2rem;
+}

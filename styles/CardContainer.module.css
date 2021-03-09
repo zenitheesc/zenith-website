@@ -4,7 +4,6 @@
     flex-flow: column;
     padding: 2rem 3rem;
     margin: 0 auto;
-    /* border: 1px solid black; */
     background-color: #efefef;
     z-index: -1;
     gap: 2rem;
@@ -12,7 +11,7 @@
 
 @media only screen and (max-width: 1024px) {
     .card__container {
-        padding: 1rem 2rem;
-        width: 90%;
+        padding: 1rem 0;
+        width: 100%;
     }
 }

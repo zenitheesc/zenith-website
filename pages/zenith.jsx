@@ -5,17 +5,8 @@ import HeroSection from "../components/general/HeroSection";
 import TextContent from "../public/locale/pt-br/oZenith.json";
 import Card from "../components/general/Card";
 import CardContainer from "../components/general/CardContainer";
+import TextWithIcons from "../components/zenith-components/TextWithIcons";
 
-
-function TextWithIcons(content, i) {
-    return <div style={{display:'flex', flexFlow:'row nowrap'}}>
-        <img style={{margin:'2rem'}}  src={`https://placedog.net/100/100/${i}`} />
-        <div>
-            <h2>{content.title}</h2>
-            <p>{content.text}</p>
-        </div>
-        </div>
-}
 
 
 function Zenith() {
@@ -63,7 +54,7 @@ function Zenith() {
                     right={
                         <>
                             <h1 className="-homepage-section-title">{TextContent.oZenithCard3.title}</h1>
-                            {TextContent.oZenithCard3.text.map(TextWithIcons)}
+                            {TextContent.oZenithCard3.text.map((c, i)=> <TextWithIcons content={c} index={i}/>)}
                         </>
                     }
                 />
