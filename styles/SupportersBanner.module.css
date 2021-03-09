@@ -30,6 +30,7 @@
 
 .supportersLogo {
     width: 100%;
+    height: auto;
 }
 
 .squares > *:hover:not(.emptySquare){
@@ -60,7 +61,7 @@
 @media screen and (max-width: 798px) {
     
     .supportersBanner {
-        padding: 4em 3em;
+        padding: 4em 2em;
     }
 
     .squares{
@@ -73,9 +74,9 @@
 
 @media screen and (max-width: 480px) {
 
-    .squares{
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
+    .squares {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, min-content);
     }
-
+      
 }

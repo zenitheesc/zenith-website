@@ -9,7 +9,12 @@ function GridElement(props) {
                 supporters.map((supporter, index) => {
 
                     return(
-                        <a href={supporter.link} target="_blank" key={index}>
+                        <a 
+                        href={supporter.link} 
+                        aria-label={supporters.logo}
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        key={index}>
                             <img src={`/images/HomePage/banners/supporters-banner/${supporter.logo}.svg`} className={styles.supportersLogo}/>
                         </a>
                     );
