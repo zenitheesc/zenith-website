@@ -16,14 +16,14 @@
     "processoSeletivoCard2": {
         "title":"Cronograma",
         "text": [
-            "05/02", "LANÇAMENTO DO EDITAL",
-            "07/02", "LANÇAMENTO DO FORMULÁRIO DE INSCRIÇÃO",
-            "19/02", "MOSTRA DE OPORTUNIDADES DA EESC",
-            "02/03", "WEBINAR DE APRESENTAÇÃO",
-            "06/03", "FECHAMENTO DO FORMULÁRIO DE INSCRIÇÃO",
-            "09/03", "1º FASE DO PROCESSO SELETIVO",
-            "15/03 A 21/03", "2º FASE DO PROCESSO SELETIVO",
-            "22/03", "DIVULGAÇÃO DOS RESULTADOS"
+            ["05/02", "LANÇAMENTO DO EDITAL"],
+            ["07/02", "LANÇAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
+            ["19/02", "MOSTRA DE OPORTUNIDADES DA EESC"],
+            ["02/03", "WEBINAR DE APRESENTAÇÃO"],
+            ["06/03", "FECHAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
+            ["09/03", "1º FASE DO PROCESSO SELETIVO"],
+            ["15/03 A 21/03", "2º FASE DO PROCESSO SELETIVO"],
+            ["22/03", "DIVULGAÇÃO DOS RESULTADOS"]
         ]
     },
     "processoSeletivoCard3": {

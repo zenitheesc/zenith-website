@@ -6,6 +6,11 @@ import TextContent from "../public/locale/pt-br/processoSeletivo.json";
 import CardContainer from "../components/general/CardContainer";
 import Card from "../components/general/Card";
 
+function  mapTable(content){
+    return  <p><b>{content[0]}</b>: <span>{content[1]}</span></p>;
+}
+
+
 function ProcessoSeletivo() {
     return (
         <>
@@ -21,7 +26,8 @@ function ProcessoSeletivo() {
                     right={
                         <>
                             <h1>{TextContent.processoSeletivoCard1.title}</h1>
-                            <p>{TextContent.processoSeletivoCard1.text}</p>
+                            {TextContent.processoSeletivoCard1.text.map(a=><p>{a}</p>)}
+
                         </>
                     }
                 />
@@ -30,12 +36,9 @@ function ProcessoSeletivo() {
                     left={
                         <>
                             <h1>{TextContent.processoSeletivoCard2.title}</h1>
-                            <p>
-                                {
-                                    TextContent.processoSeletivoCard2
-                                        .text /* TODO: mudar no .json*/
-                                }
-                            </p>
+                            
+                                    {TextContent.processoSeletivoCard2.text.map(mapTable)}
+                            
                         </>
                     }
                     right={<img src="https://placedog.net/440/420" />}
@@ -45,7 +48,8 @@ function ProcessoSeletivo() {
                     right={
                         <>
                             <h1>{TextContent.processoSeletivoCard3.title}</h1>
-                            <p>{TextContent.processoSeletivoCard3.text}</p>
+                            {TextContent.processoSeletivoCard3.text.map(a=><p>{a}</p>)}
+
                         </>
                     }
                 />
