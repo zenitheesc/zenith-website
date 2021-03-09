@@ -78,12 +78,22 @@
         grid-template-columns: repeat(2, auto);
         grid-template-rows: auto auto;
         place-items: start;
+        position: relative;
     }
       
     .grid > *::before {
         content: "";
+        display: block;
         width: 100%;
         padding-bottom: 100%;
+    }
+
+    .grid > * {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
 
 }
