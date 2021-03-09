@@ -6,7 +6,7 @@ function UnderlinedButton (props) {
 
     return ( 
         <a 
-        className={styles.gitHubButton} 
+        className={styles.underlinedButton} 
         aria-label="GitHub"
         target="_blank"
         rel="noopener noreferrer"

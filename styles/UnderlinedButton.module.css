@@ -1,14 +1,13 @@
-.gitHubButton {
+.underlinedButton {
     color: #ffffff;
     text-decoration: none;
     display: inline-flex;
     position: relative;
     align-items: center;
-    background-size: 0px 8%, 100% 8%;
     padding-bottom: 2.5px;
 }
 
-.gitHubButton::before {    
+.underlinedButton::before {    
     content: '';
     position: absolute;
     z-index: 0;
@@ -25,12 +24,24 @@
     transition-timing-function: ease-out;
 }
 
-.gitHubButton:hover::before { 
+.underlinedButton:hover::before { 
     right: 0 !important;
 }
 
-.gitHubButton svg {
+.underlinedButton svg {
     margin-left: 4px;
     font-size: 20px;
-    height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .underlinedButton {
+        font-size: 16px;
+        height: 16px;
+    }
+
+    .underlinedButton svg {
+        font-size: 16px;
+    }
+
 }
