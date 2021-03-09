@@ -1,21 +1,24 @@
 import React from 'react';
-import NavBar from '../components/navbar-components/NavBar';
-import Footer from '../components/Footer';
-import HeroSection from '../components/general/HeroSection';
-import TextContent from '../public/locale/pt-br/homePage.json';
-import ImageComponent from '../components/zenith-page-components/ImageComponent';
+import NavBar from 'components/navbar-components/NavBar';
+import Footer from 'components/Footer';
+import HeroSection from 'components/general/HeroSection';
+import ImageComponent from 'components/zenith-page-components/ImageComponent';
+import TextContent from 'public/locale/pt-br/oZenith.json';
 
 function Zenith() {
   return (
     <>
       <NavBar textContent={TextContent.navBar} />
       <HeroSection
-        backgroundImage="url(../images/Zenith/Header.webp)"
-        title="O que é o Zenith?"
-        subtitle="Nós somos "
-        array={['CIÊNCIA', 'TECNOLOGIA', 'INOVAÇÃO', 'CONEXÕES', 'ZENITH']}
+        backgroundImage="url(images/Zenith/Header.webp)"
+        title={TextContent.oZenithHero.title}
+        subtitle={TextContent.oZenithHero.subtitle}
+        array={TextContent.oZenithHero.array}
       />
-      <ImageComponent/>
+      <ImageComponent 
+        images={["/images/Zenith/photo1.webp", "/images/Zenith/photo2.webp"]}
+        alt={["Mulher com camisa com o logo da EESC-USP", "Homem programando em seu notebook"]}
+      />
       <Footer />
     </>
   );
