@@ -6,7 +6,11 @@ import style from "../../styles/CardContainer.module.css";
 export default class CardContainer extends Component {
     render() {
         return (
-            <div className={style.card__container}>{this.props.children}</div>
+            <div >
+                <section className="-section">
+                <div className={`${style.card__container} -standardContainer`}>{this.props.children}</div>
+            </section>
+        </div>
         );
     }
 }
