@@ -76,7 +76,14 @@
 
     .squares {
         grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(2, min-content);
+        grid-template-rows: auto auto;
+        place-items: start;
     }
       
+    .grid > *::before {
+        content: "";
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
 }
