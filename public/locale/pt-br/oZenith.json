@@ -2,7 +2,8 @@
     "navBar": ["O ZENITH", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO", "CONTATO"],
     "oZenithHero": {
         "title": "O que é o Zenith?",
-        "subtitle": ["Nós somos CIÊNCIA", "Nós somos TECNOLOGIA", "Nós somos INOVAÇÃO", "Nós somos CONEXÕES"]
+        "subtitle": "Nós somos ",
+        "array": ["CIÊNCIA", "TECNOLOGIA", "INOVAÇÃO", "CONEXÕES", "ZENITH"]
     },
     "oZenithCard1": {
         "title":"Nós amamos o espaço",
