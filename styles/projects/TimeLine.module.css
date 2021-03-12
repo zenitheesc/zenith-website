@@ -83,7 +83,7 @@
 }
 
 .container.light .icon {
-    outline: 10px solid rgb(225, 225, 229)
+    outline: 10px solid rgb(225, 225, 229);
 }
 
 .container.dark .icon {
@@ -93,18 +93,21 @@
 .container.dark .date,
 .container.dark .icon,
 .container.dark .timeline::before {
+    color: black;
     background-color: #CCCCCC;
 }
 
 .container.gray .date,
 .container.gray .icon,
 .container.gray .timeline::before {
+    color: rgb(96, 95, 98);
     background-color: #CCCCCC;
 }
 
 .container.light .date,
 .container.light .icon,
 .container.light .timeline::before {
+    color: rgb(225, 225, 229);
     background-color: #666161;
 }
 
