@@ -1,13 +1,16 @@
 {
-    "navBar": ["O ZENITH", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO", "CONTATO"],
     "projetosHero": {
         "title": "Nossos projetos",
         "subtitle": "Integração de diversos campos da Engenharia no setor aeroespacial"
     },
     "picker": ["Sondas aeroespaciais", "CubeSats", "Software", "Hardware", "Educacional"],
     "sondasAeroespaciais": {
-        "title": "Sondas aeroespaciais",
-        "subtitle": "Veículos espaciais que levam experimentos astrobiológicos até a estratosfera",
+        "title": "O que são Sondas Aeroespaciais?",
+        "subtitle": [
+            "Nossas sondas aeroespaciais são balões, repletos de hélio, que levam experimentos astrobiológicos até a estratosfera, o que é essencial para que possamos responder a várias perguntas sobre a sobrevivência de seres vivos no espaço.", 
+            "Apesar de ser parte de um experimento científico, as sondas também são fascinantes sob o ponto de vista de um sistema embarcado. Nossas sondas são equipadas com microcontroladores, rádios, sensores e câmeras e, a cada missão, buscamos evoluir nossos sistemas para ter uma missão mais eficiente.",
+            "E, para sustentar todos os nossos experimentos e sistemas, construímos estruturas reaproveitáveis e duráveis, que nos possibilitam retornar várias vezes ao espaço."
+        ],
         "projects": {
             "garatea1": {
                 "title": "Garatéa-I",
@@ -23,14 +26,14 @@
                     "Análise dos padrões de degradação de biomoléculas"
                 ],
                 "embedded": [
-                    "Arquitetura de sistema baseada em Mbed",
-                    "Utilização de módulos comerciais no sensoriamento de parâmetros ambientais",
-                    "Utilização de sistema de geolocalização próprio"
+                    "Arquitetura de sistema baseada em */Mbed/*",
+                    "Utilização de */módulos comerciais/* no sensoriamento de parâmetros ambientais",
+                    "Utilização de sistema de */geolocalização/* próprio"
                 ],
                 "structure": [
                     "Acionamento de mecanismo de exposição dos experimentos",
-                    "Estrutura em impressão 3D e fibra de vidro",
-                    "Paraquedas confeccionado em fios de Kevlar e Nylon"
+                    "Estrutura em */impressão 3D/* e */fibra de vidro/*",
+                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
                 ]
             },
             "garatea2": {
@@ -46,15 +49,15 @@
                     "Análise dos padrões de degradação de biomoléculas"
                 ],
                 "embedded": [
-                    "Arquitetura de sistema baseada em Arduino ",
-                    "Utilização de módulos comerciais no sensoriamento de parâmetros ambientais",
-                    "Utilização de sistema de geolocalização próprio",
-                    "Utilização de painéis solares no carregamento das baterias"
+                    "Arquitetura de sistema baseada em */Arduino/* ",
+                    "Utilização de */módulos comerciais/* no sensoriamento de parâmetros ambientais",
+                    "Utilização de sistema de */geolocalização/* próprio",
+                    "Utilização de */painéis solares no/* carregamento das baterias"
                 ],
                 "structure": [
-                    "Isolamento térmico feito em Kapton e Depron Aeronáutico",
-                    "Estrutura em impressão 3D e fibra de carbono",
-                    "Paraquedas confeccionado em fios de Kevlar e Nylon"
+                    "Isolamento térmico feito em */Kapton/* e */Depron Aeronáutico/*",
+                    "Estrutura em */impressão 3D/* e */fibra de carbono/*",
+                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
                 ]
             },
             "garatea3": {
@@ -71,16 +74,16 @@
                     "Cultura de protozoários em diferentes fases da vida e de sementes de alface"
                 ],
                 "embedded": [
-                    "Sistema de aquisição de dados, desenvolvido pelo grupo, baseado em Atmega328p-pu",
-                    "Sistema de imageamento baseado em Linux",
-                    "Utilização de sistema de geolocalização próprio",
-                    "Medição de níveis de radiação com contador Geiger"
+                    "Sistema de */aquisição de dados/*, desenvolvido pelo grupo, baseado em Atmega328p-pu",
+                    "Sistema de */imageamento/* baseado em */Linux/*",
+                    "Utilização de sistema de */geolocalização/* próprio",
+                    "Medição de níveis de radiação com */contador Geiger/*"
                 ],
                 "structure": [
-                    "Estrutura de hipercubo, desenvolvida para minimizar impactos e ser totalmente reaproveitável",
-                    "Utilização de fibra de carbono e impressão 3D",
+                    "Estrutura de */hipercubo/*, desenvolvida para */minimizar impactos/* e ser totalmente */reaproveitável/*",
+                    "Utilização de */fibra de carbono/* e */impressão 3D/*",
                     "Isolamento térmico feito em Kapton e Depron Aeronáutico",
-                    "Paraquedas confeccionado em fios de Kevlar e Nylon"
+                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
                 ]
             },
             "garatea5": {
@@ -96,22 +99,26 @@
                     "??"
                 ],
                 "embedded": [
-                    "Sistema de aquisição de dados, desenvolvido pelo grupo, baseado em Atmega2560",
+                    "Sistema de */aquisição de dados/*, desenvolvido pelo grupo, baseado em Atmega2560",
                     "Controle da altitude do vôo da sonda a partir do uso de válvula no balão",
-                    "Utilização de sistema de geolocalização próprio"
+                    "Utilização de sistema de */geolocalização próprio/*"
                 ],
                 "structure": [
-                    "Mecanismo de deploy do balão e do paraquedas",
-                    "Utilização de impressão 3D",
-                    "Isolamento térmico feito em Kapton e Depron Aeronáutico",
-                    "Paraquedas confeccionado em fios de Kevlar e Nylon"
+                    "Mecanismo de */deploy do balão e do paraquedas/*",
+                    "Utilização de */impressão 3D/*",
+                    "Isolamento térmico feito em */Kapton/* e */Depron Aeronáutico/*",
+                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
                 ]
             }
         }
     },
     "cubeSats": {
-        "title": "CubeSat",
-        "subtitle": "Satélites com dimensões múltiplas à cubos de 10 cm de aresta",
+        "title": "O que são CubeSats?",
+        "subtitle": [
+            "CubeSats são nanossatélites que possuem tamanho, formato e peso reduzidos e muito bem especificados. Nós começamos a desenvolver CubeSats por conta de seu custo reduzido de produção e de lançamento, já que é possível produzir CubeSats com eletrônicos acessíveis e existem dispensers específicos para lançamento de CubeSats.",
+            "Um CubeSat é constituído, essencialmente, de alguns subsistemas: o */Estrutural/*, o */Sistema Energético/*, a */Telecomunicação/*, o */Controle e a Determinação de Atitude/*, o */Sensoriamento/* e um módulo de missão. Atualmente, nós temos uma experiência com missões envolvendo */Visão Computacional/*.",
+            "Apesar de ainda não termos lançado um CubeSat, todo ano nós levamos nossos satélites para a CubeDesign, uma competição desenvolvida pelo INPE, onde nossos CubeSats disputam o 1º lugar com outros satélites educacionais."    
+        ],
         "projects": {
             "zenSat": {
                 "title": "ZenSat",
@@ -128,13 +135,13 @@
                     "TexasInstruments"
                 ],
                 "embedded": [
-                    "Processamento central do sistema baseado em Linux",
-                    "Implementação do controle de atitude em 1 eixo",
-                    "Telemetria bidirecional implementada em LoRa",
-                    "Determinação de Atitude implementada via visão computacional"
+                    "Processamento central do sistema baseado em */Linux/*",
+                    "Implementação do controle de atitude em */1 eixo/*",
+                    "Telemetria bidirecional implementada em */LoRa/*",
+                    "Determinação de Atitude implementada via */visão computacional/*"
                 ],
                 "structure": [
-                    "O ZenSat é um satélite de dimensões 2U com estrutura de liga de Alumínio 7075-T6, sendo fabricada por meio de usinagem CNC e de impressão 3D, capaz de suportar uma vibração senoidal de 0-100 Hz."
+                    "O ZenSat é um satélite de */dimensões 2U/* com estrutura de */liga de Alumínio 7075-T6/*, sendo fabricada por meio de */usinagem CNC/* e de */impressão 3D/*, capaz de suportar uma vibração senoidal de 0-100 Hz."
                 ]
             },
             "uspSat": {
@@ -152,22 +159,25 @@
                     "TexasInstruments"
                 ],
                 "embedded": [
-                    "Arquitetura de sistemas distribuída, com redundância entre subsistemas",
-                    "Telemetria bidirecional implementada em LoRa",
-                    "Imageamento e determinação de atitude, em 1 eixo, baseados em Linux",
-                    "Controle térmico ativo e gerenciamento do sistema de energia"
+                    "Arquitetura de sistemas */distribuída/*, com */redundância/* entre subsistemas",
+                    "Telemetria bidirecional implementada em */LoRa/*",
+                    "*/Imageamento/* e */determinação de atitude/*, em */1 eixo/*, baseados em Linux",
+                    "*/Controle térmico ativo/* e */gerenciamento do sistema de energia/*"
                 ],
                 "structure": [
-                    "Estrutura de dimensões 2U de liga de Alumínio 7075-T6 e anodizada na cor preta",
-                    "Uso de chapas de fibra de carbono para fixar os componentes",
-                    "Mecanismo de deploy da antena na extremidades das placas extremantes."
+                    "Estrutura de */dimensões 2U/* de */liga de Alumínio 7075-T6/* e anodizada na cor preta",
+                    "Uso de chapas de */fibra de carbono/* para fixar os componentes",
+                    "Mecanismo de */deploy da antena/* na extremidades das placas extremantes."
                 ]
             }
         }
     },
     "software": {
-        "title": "Software",
-        "subtitle": "Desenvolvimento de aplicações que auxiliam as nossas missões",
+        "title": "Nossos Softwares",
+        "subtitle": [
+            "Apesar do Zenith Aerospace ser focado na criação de tecnologia aeroespacial, nós também precisamos desenvolver ferramentas para auxiliar o nosso trabalho na Terra.",
+            "Para isso, a equipe do Alto Nível trabalha com frameworks e linguagens com alto grau de abstração para criar softwares que os não-programadores do Zenith são capazes de usar. Em geral, o Alto Nível busca criar interfaces gráficas e estruturas de dados para automatizar e simplificar tarefas do dia a dia do Zenith."
+        ],
         "projects": {
             "reportMaker": {
                 "title": "Report Maker",
@@ -222,12 +232,35 @@
                     "Programação orientada a objetos",
                     "Algoritmos e Estrutura de dados"
                 ]
+            },
+            "website": {
+                "title": "Zenith Website",
+                "detail": "Recriação da imagem visual do Zenith Aerospace por meio de um site moderno e 100% desenvolvido por nós",
+                "year": 2021,
+                "link": "https://github.com/zenitheesc/zenith-website",
+                "tecnologies": [
+                    "TECNOLOGIAS",
+                    "NextJS",
+                    "React",
+                    "NodeJS"
+                ],
+                "techSpecification": [
+                    "ESPECIFICAÇÕES TÉCNICAS",
+                    "Web Development",
+                    "User Interface/User Experience (UI/UX)",
+                    "Responsive Design",
+                    "Search Engine Optimization"
+                ]
             }
         }
     },
     "hardware": {
         "title": "Hardware",
-        "subtitle": "Desenvolvimento de plataformas para auxiliar as missões do grupo",
+        "subtitle": [
+            "Júlio está escrevendo.",
+            "Júlio está escrevendo.",
+            "Júlio está escrevendo."
+        ],
         "projects": {
             "controladorPID": {
                 "title": "Controlador PID",
@@ -325,8 +358,12 @@
         }
     },
     "educacional": {
-        "title": "Educacional",
-        "subtitle": "Influenciando a próxima geração de cientistas",
+        "title": "Nossos Projetos Educacionais",
+        "subtitle": [
+            "O Garatéa-E nasceu do desejo do Zenith de levar a ciência para fora da universidade e, assim, incentivar jovens a terem gosto pelos estudos. Nosso projeto educacional traz para próximo dos alunos ao que só era visto por eles nas aulas de Física e Química, o */Espaço/*.",
+            "Os alunos do ensino fundamental e médio tiveram a oportunidade de desenvolver experimentos científicos, junto com os seus professores, e mandá-los para o espaço em uma de nossas sondas aeroespaciais. Isso possibilitou aos alunos a oportunidade de analisar as mudanças em seus experimentos após a exposição ao ambiente aeroespacial, instigando a curiosidade dos alunos.",
+            "Esta iniciativa já mobilizou milhares de estudantes em todo país nas últimas edições, trazendo resultados gratificantes aos alunos, aos professores e aos pais. Agora, o Garatéa-E possui um novo nome, */Kurumim/*, mas continua com os mesmos objetivos educacionais e planeja reunir alunos de toda a América Latina!"
+        ],
         "projects": {
             "garateaE2017": {
                 "title": "Garatéa-E 2017",
@@ -400,9 +437,5 @@
                 ]
             }
         }
-    },
-    "footer": {
-        "copyright": "© 2020  Zenith Aerospace",
-        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
     }
 }

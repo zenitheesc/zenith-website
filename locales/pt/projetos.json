@@ -1,5 +1,4 @@
 {
-    "navBar": ["O ZENITH", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO", "CONTATO"],
     "projetosHero": {
         "title": "Nossos projetos",
         "subtitle": "Integração de diversos campos da Engenharia no setor aeroespacial"
@@ -116,9 +115,9 @@
     "cubeSats": {
         "title": "O que são CubeSats?",
         "subtitle": [
-            "CubeSats são nanossatélites que possuem tamanho, formato e peso reduzidos e muito bem especificados. Nossa escolha pela produção de CubeSats é consequência do seu custo reduzido de produção e de lançamento, já que existem dispensers específicos para CubeSats.",
-            "Um CubeSat é constituído, essencialmente, de alguns subsistemas: o Estrutural, o Sistema Energético, a Telecomunicação, o Controle e a Determinação de Atitude, o Sensoriamento e um módulo de missão. Atualmente, nós temos uma experiência com missões envolvendo Visão Computacional.",
-            "Apesar de ainda não termos lançado um CubeSat, todo ano nós levamos nossos satélites para a CubeDesign, onde nossos CubeSats disputam o 1º lugar com outros satélites educacionais."    
+            "CubeSats são nanossatélites que possuem tamanho, formato e peso reduzidos e muito bem especificados. Nós começamos a desenvolver CubeSats por conta de seu custo reduzido de produção e de lançamento, já que é possível produzir CubeSats com eletrônicos acessíveis e existem dispensers específicos para lançamento de CubeSats.",
+            "Um CubeSat é constituído, essencialmente, de alguns subsistemas: o */Estrutural/*, o */Sistema Energético/*, a */Telecomunicação/*, o */Controle e a Determinação de Atitude/*, o */Sensoriamento/* e um módulo de missão. Atualmente, nós temos uma experiência com missões envolvendo */Visão Computacional/*.",
+            "Apesar de ainda não termos lançado um CubeSat, todo ano nós levamos nossos satélites para a CubeDesign, uma competição desenvolvida pelo INPE, onde nossos CubeSats disputam o 1º lugar com outros satélites educacionais."    
         ],
         "projects": {
             "zenSat": {
@@ -174,8 +173,11 @@
         }
     },
     "software": {
-        "title": "Software",
-        "subtitle": "Desenvolvimento de aplicações que auxiliam as nossas missões",
+        "title": "Nossos Softwares",
+        "subtitle": [
+            "Apesar do Zenith Aerospace ser focado na criação de tecnologia aeroespacial, nós também precisamos desenvolver ferramentas para auxiliar o nosso trabalho na Terra.",
+            "Para isso, a equipe do Alto Nível trabalha com frameworks e linguagens com alto grau de abstração para criar softwares que os não-programadores do Zenith são capazes de usar. Em geral, o Alto Nível busca criar interfaces gráficas e estruturas de dados para automatizar e simplificar tarefas do dia a dia do Zenith."
+        ],
         "projects": {
             "reportMaker": {
                 "title": "Report Maker",
@@ -230,12 +232,35 @@
                     "Programação orientada a objetos",
                     "Algoritmos e Estrutura de dados"
                 ]
+            },
+            "website": {
+                "title": "Zenith Website",
+                "detail": "Recriação da imagem visual do Zenith Aerospace por meio de um site moderno e 100% desenvolvido por nós",
+                "year": 2021,
+                "link": "https://github.com/zenitheesc/zenith-website",
+                "tecnologies": [
+                    "TECNOLOGIAS",
+                    "NextJS",
+                    "React",
+                    "NodeJS"
+                ],
+                "techSpecification": [
+                    "ESPECIFICAÇÕES TÉCNICAS",
+                    "Web Development",
+                    "User Interface/User Experience (UI/UX)",
+                    "Responsive Design",
+                    "Search Engine Optimization"
+                ]
             }
         }
     },
     "hardware": {
         "title": "Hardware",
-        "subtitle": "Desenvolvimento de plataformas para auxiliar as missões do grupo",
+        "subtitle": [
+            "Júlio está escrevendo.",
+            "Júlio está escrevendo.",
+            "Júlio está escrevendo."
+        ],
         "projects": {
             "controladorPID": {
                 "title": "Controlador PID",
@@ -333,8 +358,12 @@
         }
     },
     "educacional": {
-        "title": "Educacional",
-        "subtitle": "Influenciando a próxima geração de cientistas",
+        "title": "Nossos Projetos Educacionais",
+        "subtitle": [
+            "O Garatéa-E nasceu do desejo do Zenith de levar a ciência para fora da universidade e, assim, incentivar jovens a terem gosto pelos estudos. Nosso projeto educacional traz para próximo dos alunos ao que só era visto por eles nas aulas de Física e Química, o */Espaço/*.",
+            "Os alunos do ensino fundamental e médio tiveram a oportunidade de desenvolver experimentos científicos, junto com os seus professores, e mandá-los para o espaço em uma de nossas sondas aeroespaciais. Isso possibilitou aos alunos a oportunidade de analisar as mudanças em seus experimentos após a exposição ao ambiente aeroespacial, instigando a curiosidade dos alunos.",
+            "Esta iniciativa já mobilizou milhares de estudantes em todo país nas últimas edições, trazendo resultados gratificantes aos alunos, aos professores e aos pais. Agora, o Garatéa-E possui um novo nome, */Kurumim/*, mas continua com os mesmos objetivos educacionais e planeja reunir alunos de toda a América Latina!"
+        ],
         "projects": {
             "garateaE2017": {
                 "title": "Garatéa-E 2017",
@@ -408,9 +437,5 @@
                 ]
             }
         }
-    },
-    "footer": {
-        "copyright": "© 2020  Zenith Aerospace",
-        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
     }
 }
