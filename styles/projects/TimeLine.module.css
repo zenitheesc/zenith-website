@@ -37,7 +37,7 @@
 
 
 .timeline::before {
-    background-color: darkgrey;
+    background-color: #666161;
     content: '';
     margin-left: -1px;
     position: absolute;
@@ -54,7 +54,7 @@
 
 .icon {
     transform: rotate(45deg);
-    background-color: darkgray;
+    background-color: #666161;
     outline: 10px solid darkgray;
     display: block;
     margin: 0.5em 0.5em 0.5em -0.5em;
@@ -67,7 +67,7 @@
 
 .date {
     color: white;
-    background-color: darkgray;
+    background-color: #666161;
     box-shadow: inset 0 0 0 0em #ef795a;
     display: inline-block;
     margin-bottom: 1.2em;
@@ -88,6 +88,24 @@
 
 .container.dark .icon {
     outline: 10px solid black;
+}
+
+.container.dark .date,
+.container.dark .icon,
+.container.dark .timeline::before {
+    background-color: #CCCCCC;
+}
+
+.container.gray .date,
+.container.gray .icon,
+.container.gray .timeline::before {
+    background-color: #CCCCCC;
+}
+
+.container.light .date,
+.container.light .icon,
+.container.light .timeline::before {
+    background-color: #666161;
 }
 
 
