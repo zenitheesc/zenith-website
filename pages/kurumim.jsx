@@ -1,21 +1,26 @@
 import React from 'react';
-import NavBar from 'components/navbar-components/NavBar';
-import HeroSection from 'components/general/HeroSection';
-import Footer from 'components/Footer';
-import TextContent from 'public/locale/pt-br/kurumim.json';
+import useTranslation from 'next-translate/useTranslation';
+import NavBar from '../components/navbar-components/NavBar';
+import HeroSection from '../components/general/HeroSection';
+import Footer from '../components/Footer';
 
 function Kurumim() {
+  const { t } = useTranslation();
+  const title = t('kurumim:kurumimHero.title');
+  const subtitle = t('kurumim:kurumimHero.subtitle');
   return (
     <>
-      <NavBar textContent={TextContent.navBar} />
+      <NavBar/>
       <HeroSection
-        backgroundImage="url(images/Kurumim/header.webp)"
-        title={TextContent.kurumimHero.title}
-        subtitle={TextContent.kurumimHero.subtitle}
+        backgroundImage="url(../images/Kurumim/header.webp)"
+        title={title}
+        subtitle={subtitle}
       />
       <Footer />
     </>
   );
 }
+
+export function getServerSideProps() { return { props: {} }; }
 
 export default Kurumim;

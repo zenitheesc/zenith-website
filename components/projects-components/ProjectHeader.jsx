@@ -1,6 +1,7 @@
 import React from 'react';
+import useTranslation from 'next-translate/useTranslation';
 
-export default function ProjectHeader() {
+export default function ProjectHeader(props) {
   const { title } = props.textContent;
   const { subtitle } = props.textContent;
 

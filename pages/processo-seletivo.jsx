@@ -1,21 +1,26 @@
 import React from 'react';
-import NavBar from 'components/navbar-components/NavBar';
-import HeroSection from 'components/general/HeroSection';
-import Footer from 'components/Footer';
-import TextContent from 'public/locale/pt-br/processoSeletivo.json';
+import useTranslation from 'next-translate/useTranslation';
+import NavBar from '../components/navbar-components/NavBar';
+import HeroSection from '../components/general/HeroSection';
+import Footer from '../components/Footer';
 
 function ProcessoSeletivo() {
+  const { t } = useTranslation();
+  const title = t('processoSeletivo:processoSeletivoHero.title');
+  const subtitle = t('processoSeletivo:processoSeletivoHero.subtitle');
   return (
     <>
-      <NavBar textContent={TextContent.navBar} />
+      <NavBar />
       <HeroSection
-        backgroundImage="url(images/ProcessoSeletivo/header.webp)"
-        title={TextContent.processoSeletivoHero.title}
-        subtitle={TextContent.processoSeletivoHero.subtitle}
+        backgroundImage="url(../images/ProcessoSeletivo/header.webp)"
+        title={title}
+        subtitle={subtitle}
       />
       <Footer />
     </>
   );
 }
+
+export function getServerSideProps() { return { props: {} }; }
 
 export default ProcessoSeletivo;

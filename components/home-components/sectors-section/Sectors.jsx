@@ -5,11 +5,13 @@ import Astrobiologia from './icons/Astrobiologia';
 import Gestão from './icons/Gestão';
 import SectorsButtons from './SectorsButtons';
 import styles from 'styles/Sectors.module.css';
+import useTranslation from 'next-translate/useTranslation';
 
-function Sectors(props) {
-  const { title } = props.textContent;
-  const { subtitle } = props.textContent;
-
+function Sectors() {
+  const { t } = useTranslation();
+  const title = t('homePage:homePageDepartaments.title');
+  const subtitle = t('homePage:homePageDepartaments.subtitle');
+  const textContent= t('homePage:homePageDepartaments', { count: -1 }, { returnObjects: true });
   return (
     <div className={styles.sectorsContainer}>
       <div className={styles.textSection}>
@@ -21,16 +23,16 @@ function Sectors(props) {
         </h3>
       </div>
       <div className={styles.sectorsButtons}>
-        <SectorsButtons label={props.textContent.embarcados}>
+        <SectorsButtons label={textContent.embarcados}>
           <Embarcados />
         </SectorsButtons>
-        <SectorsButtons label={props.textContent.estruturas}>
+        <SectorsButtons label={textContent.estruturas}>
           <Estruturas />
         </SectorsButtons>
-        <SectorsButtons label={props.textContent.astrobiologia}>
+        <SectorsButtons label={textContent.astrobiologia}>
           <Astrobiologia />
         </SectorsButtons>
-        <SectorsButtons label={props.textContent.gestao}>
+        <SectorsButtons label={textContent.gestao}>
           <Gestão />
         </SectorsButtons>
       </div>

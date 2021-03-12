@@ -11,7 +11,6 @@ export default function NavMenu(props) {
             ? style.navigationMenuActive
             : style.navigationMenuDeactive
         }
-        textContent={props.textContent}
       />
     </div>
   );

@@ -1,5 +1,4 @@
 {
-    "navBar": ["O ZENITH", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO", "CONTATO"],
     "kurumimHero": {
         "title": "Kurumim",
         "subtitle": "A nova geração do Garatéa-E"
@@ -42,9 +41,5 @@
             "EXEMPLO DE SMALLSAT",
             "EXEMPLO DE BIGSAT"
         ]
-    },
-    "footer": {
-        "copyright": "© 2020  Zenith Aerospace",
-        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
     }
 }

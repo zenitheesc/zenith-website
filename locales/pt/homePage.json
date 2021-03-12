@@ -1,12 +1,11 @@
 {
-    "navBar": ["O ZENITH", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO", "CONTATO"],
-    "homePageHero": [
-        "O LAR DAS ESTRELAS EM SÃO CARLOS",
-        "Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a oportunidade de chegar ao espaço"
-    ],
+    "homePageHero": {
+        "title": "O LAR DAS ESTRELAS EM SÃO CARLOS",
+        "subtitle": "Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a oportunidade de chegar ao espaço"
+    },
     "homePageDepartaments": {
         "title": "construindo tecnologia aeroespacial em todos os setores",
-        "subtitle": "projetamos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
+        "subtitle": "construímos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
         "embarcados": {
             "title": "Embarcados",
             "detail": "Esse departamento pesquisa e desenvolve tecnologias em sistemas embarcados voltada para aplicações aeroespaciais.",
@@ -113,10 +112,6 @@
                 "description": "MEMBROS DESDE A FUNDAÇÃO"
             },
             {
-                "number": 12775,
-                "description": "HORAS NA SALINHA"
-            },
-            {
                 "number": 2,
                 "description": "CAMPUS PARTY"
             },
@@ -133,9 +128,5 @@
     "homePageSupporters": {
         "title": "nossos apoiadores",
         "subtitle": "sem eles, nada disso seria possível"
-    },
-    "footer": {
-        "copyright": "© 2020  Zenith Aerospace",
-        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
     }
 }

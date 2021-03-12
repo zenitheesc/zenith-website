@@ -1,5 +1,4 @@
 {
-    "navBar": ["O ZENITH", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO", "CONTATO"],
     "oZenithHero": {
         "title": "O que é o Zenith?",
         "subtitle": "Nós somos ",
@@ -43,9 +42,5 @@
             "Estamos buscando pessoas curiosas e tão apaixonadas pelo espaço e por tecnologia quanto nós!",
             "Processo Seletivo"
         ]
-    },
-    "footer": {
-        "copyright": "© 2020  Zenith Aerospace",
-        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
     }
 }
