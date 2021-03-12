@@ -1,7 +1,7 @@
+import React from 'react';
+import boldParser from 'components/utils/boldParser';
 import Embarcados from 'components/home-components/sectors-section/icons/Embarcados';
-import React from 'react'
-import style from 'styles/projects/SectorsRow.module.css'
-import boldParser from '../../utils/boldParser'
+import style from 'styles/projects/SectorsRow.module.css';
 
 export default function EmbeddedRow(props) {
 	const { content } = props;

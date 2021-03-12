@@ -1,5 +1,6 @@
 import React from 'react';
 import Model from './Model';
+import ProjectHeader from '../../ProjectHeader';
 import styles from 'styles/Projects.module.css';
 
 export default function Educacional(props) {
@@ -38,6 +39,7 @@ export default function Educacional(props) {
   
   return (
     <section className={`-section ${styles.projectsSection}`} style={{backgroundColor: '#605F62'}}>
+      <ProjectHeader textContent ={ props.textContent } h1Color={ '#E0E0E0' } pColor={ '#CCCCCC' } />
       <Model paths={garateaE2017paths} textContent={ garateaE2017 } />
       <Model paths={garateaE2018paths} textContent={ garateaE2018 }/>
       <Model paths={garateaE2019paths} textContent={ garateaE2019 }/>
