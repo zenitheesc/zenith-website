@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Model from './Model';
 import styles from 'styles/Projects.module.css';
+import { Timeline, Event } from "components/projects-components/projects-structure/TimeLine";
 
 export default function Educacional(props) {
   const { garateaE2017 } = props.textContent.projects;
@@ -16,7 +17,7 @@ export default function Educacional(props) {
     'https://www.youtube.com/watch?v=0w5wkIo5laE',
     'https://www.youtube.com/watch?v=Q_3MO0aVXbI',
     'https://www.youtube.com/embed/AkuKjHLjF-g',
-    
+
   ];
 
   const garateaE2018paths = [
@@ -35,12 +36,23 @@ export default function Educacional(props) {
     'Educacional/garateaE2019/photo1.webp',
     'https://www.youtube.com/watch?v=nAI0hsjUrw4',
   ];
-  
+
   return (
-    <section className={`-section ${styles.projectsSection}`} style={{backgroundColor: '#605F62'}}>
-      <Model paths={garateaE2017paths} textContent={ garateaE2017 } />
-      <Model paths={garateaE2018paths} textContent={ garateaE2018 }/>
-      <Model paths={garateaE2019paths} textContent={ garateaE2019 }/>
+    <section className={`-section ${styles.projectsSection}`} style={{ backgroundColor: '#605F62' }}>
+      <Fragment>
+        <Timeline>
+          <Event interval={"2017"} >
+            <Model paths={garateaE2017paths} textContent={garateaE2017} />
+          </Event>
+          <Event interval={"2018"}>
+            <Model paths={garateaE2018paths} textContent={garateaE2018} />
+          </Event>
+          <Event interval={"2019"}>
+            <Model paths={garateaE2019paths} textContent={garateaE2019} />
+          </Event>
+
+        </Timeline>
+      </Fragment>
     </section>
   );
 }
