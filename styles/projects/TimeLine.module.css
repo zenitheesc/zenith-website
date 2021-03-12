@@ -55,7 +55,7 @@
 .icon {
     transform: rotate(45deg);
     background-color: black;
-    outline: 10px solid white;
+    outline: 10px solid rgb(96, 95, 98);
     display: block;
     margin: 0.5em 0.5em 0.5em -0.5em;
     position: absolute;
@@ -84,4 +84,24 @@
 
 .date:hover{
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .icon {
+        left: 1em;
+    }
+
+    .timeline::before {
+        left: 1em;
+    }
+
+    .body {
+        padding: 2em 1em 0 2em;
+        position: relative;
+        top: -1.875em;
+        left: 1em;
+    
+    }
+
 }
