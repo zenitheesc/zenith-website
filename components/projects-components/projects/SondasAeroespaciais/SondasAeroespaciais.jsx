@@ -2,6 +2,7 @@ import React from 'react';
 import Model from './Model';
 import ProjectHeader from '../../ProjectHeader';
 import styles from 'styles/Projects.module.css';
+import { Timeline, Event } from "components/projects-components/projects-structure/TimeLine";
 
 export default function SondasAeroespaciais(props) {
   const { garatea1 } = props.textContent.projects;
@@ -56,12 +57,20 @@ export default function SondasAeroespaciais(props) {
   ];
 
   return (
-    <section className={`-section ${styles.projectsSection}`} style={{backgroundColor: '#E1E1E5'}}>
-      <ProjectHeader textContent ={ props.textContent } />
-      <Model textContent={ garatea1 } paths={ garatea1Images } />
-      <Model textContent={ garatea2 } paths={ garatea2Images } /> 
-      <Model textContent={ garatea3 } paths={ garatea3Images } />
-      <Model textContent={ garatea5 } paths={ garatea5Images } />
+    <section className={`-section ${styles.projectsSection}`} style={{ backgroundColor: '#E1E1E5' }}>
+      <ProjectHeader textContent={props.textContent} />
+      <Timeline theme="light">
+
+        <Event interval="2018">
+          <Model textContent={garatea5} paths={garatea5Images} />
+          <Model textContent={garatea3} paths={garatea3Images} />
+        </Event>
+        <Event interval="2016">
+          <Model textContent={garatea2} paths={garatea2Images} />
+          <Model textContent={garatea1} paths={garatea1Images} />
+        </Event>
+
+      </Timeline>
     </section>
   );
 }
