@@ -37,7 +37,7 @@
 
 
 .timeline::before {
-    background-color: black;
+    background-color: darkgrey;
     content: '';
     margin-left: -1px;
     position: absolute;
@@ -54,8 +54,8 @@
 
 .icon {
     transform: rotate(45deg);
-    background-color: black;
-    outline: 10px solid rgb(96, 95, 98);
+    background-color: darkgray;
+    outline: 10px solid darkgray;
     display: block;
     margin: 0.5em 0.5em 0.5em -0.5em;
     position: absolute;
@@ -67,7 +67,7 @@
 
 .date {
     color: white;
-    background-color: black;
+    background-color: darkgray;
     box-shadow: inset 0 0 0 0em #ef795a;
     display: inline-block;
     margin-bottom: 1.2em;
@@ -88,18 +88,11 @@
 
 .container.dark .icon {
     outline: 10px solid black;
-    background-color: white;
 }
 
-.container.dark .date {
-    color: black;
-    background-color: white;
 
-}
 
-.container.dark .timeline::before {
-    background-color: white;
-}
+
 
 .body {
     padding: 2em 2em 0 2em;

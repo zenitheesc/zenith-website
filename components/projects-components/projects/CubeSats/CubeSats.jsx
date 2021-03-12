@@ -9,7 +9,7 @@ export default function CubeSats(props) {
 
   return (
     <section className={`-section ${styles.projectsSection}`} style={{ backgroundColor: '#605F62' }}>
-      <Timeline theme="grey">
+      <Timeline theme="gray">
         <Event interval="2019">
           <Model textContent={uspSat} />
         </Event>
