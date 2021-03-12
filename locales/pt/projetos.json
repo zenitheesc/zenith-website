@@ -6,7 +6,7 @@
     },
     "picker": ["Sondas aeroespaciais", "CubeSats", "Software", "Hardware", "Educacional"],
     "sondasAeroespaciais": {
-        "title": "Sondas aeroespaciais",
+        "title": "O que são Sondas Aeroespaciais?",
         "subtitle": [
             "Nossas sondas aeroespaciais são balões, repletos de hélio, que levam experimentos astrobiológicos até a estratosfera, o que é essencial para que possamos responder a várias perguntas sobre a sobrevivência de seres vivos no espaço.", 
             "Apesar de ser parte de um experimento científico, as sondas também são fascinantes sob o ponto de vista de um sistema embarcado. Nossas sondas são equipadas com microcontroladores, rádios, sensores e câmeras e, a cada missão, buscamos evoluir nossos sistemas para ter uma missão mais eficiente.",
@@ -114,8 +114,12 @@
         }
     },
     "cubeSats": {
-        "title": "CubeSat",
-        "subtitle": "Satélites com dimensões múltiplas à cubos de 10 cm de aresta",
+        "title": "O que são CubeSats?",
+        "subtitle": [
+            "CubeSats são nanossatélites que possuem tamanho, formato e peso reduzidos e muito bem especificados. Nossa escolha pela produção de CubeSats é consequência do seu custo reduzido de produção e de lançamento, já que existem dispensers específicos para CubeSats.",
+            "Um CubeSat é constituído, essencialmente, de alguns subsistemas: o Estrutural, o Sistema Energético, a Telecomunicação, o Controle e a Determinação de Atitude, o Sensoriamento e um módulo de missão. Atualmente, nós temos uma experiência com missões envolvendo Visão Computacional.",
+            "Apesar de ainda não termos lançado um CubeSat, todo ano nós levamos nossos satélites para a CubeDesign, onde nossos CubeSats disputam o 1º lugar com outros satélites educacionais."    
+        ],
         "projects": {
             "zenSat": {
                 "title": "ZenSat",

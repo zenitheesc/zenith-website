@@ -1,0 +1,34 @@
+.imgSection {
+    background-color: black;
+}
+
+.imgContainer {
+    display: grid;
+    grid-template-columns: 62% 36%;
+    gap: 2%;
+    align-items: center;
+    justify-items: center;
+}
+
+.imgContainer > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .imgContainer {
+        padding: 4em 2em 3em 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .imgContainer > img {
+        margin-bottom: 1em;
+        width: 100%;
+        height: auto;
+    }
+    
+}
