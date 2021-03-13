@@ -9,15 +9,14 @@ export default function SectorCard({ textContent }) {
 
         <h1>{textContent.title}</h1>
         <span>{textContent.detail}</span>
-        <h2>{textContent.core}</h2>
-
+        <h2>{textContent.core}:</h2>
         <div>
           {
             cores.map((value, key) => {
               return (
-                <div key={key}>
+                <div key={key} className={style.infoContainer}>
                   <strong>{value.title}</strong>
-                  <spam>{value.detail}</spam>
+                  <span>{value.detail}</span>
                 </div>
               )
             })
@@ -26,7 +25,7 @@ export default function SectorCard({ textContent }) {
 
       </div>
       <div className={style.cloud}>
-
+      "TECNOLOGIAS"
       </div>
     </div>
   );
