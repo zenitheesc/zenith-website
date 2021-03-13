@@ -12,7 +12,7 @@ export default class TextWithIcons extends Component {
         return <div className={style.row}>
             <img  src={`https://placedog.net/100/100/${this.props.index}`} />
             <div>
-                <h2>{this.props.content.title}</h2>
+                <h3>{this.props.content.title}</h3>
                 <p>{this.props.content.text}</p>
             </div>
         </div>
