@@ -1,4 +1,5 @@
 import React from "react";
+import useTranslation from 'next-translate/useTranslation';
 import NavBar from "../components/navbar-components/NavBar";
 import Footer from "../components/Footer";
 import HeroSection from "../components/general/HeroSection";
@@ -21,16 +22,18 @@ function mapStylish(content){
 }
 
 
-function Kurumim() {
-    return (
-        <>
-            <NavBar textContent={TextContent.navBar} />
-            <HeroSection
-                backgroundImage="url(../images/Kurumim/header.webp)"
-                title="Kurumim"
-                subtitle="A nova geração do Garatéa-E"
-            />
-
+const { t } = useTranslation();
+  const title = t('kurumim:kurumimHero.title');
+  const subtitle = t('kurumim:kurumimHero.subtitle');
+  return (
+    <>
+      <NavBar/>
+      <HeroSection
+        backgroundImage="url(../images/Kurumim/header.webp)"
+        title={title}
+        subtitle={subtitle}
+      />
+  
             <CardContainer>
                 <Card
                     lean="none"
@@ -72,6 +75,6 @@ function Kurumim() {
         </>
     );
 
-}
+export function getServerSideProps() { return { props: {} }; }
 
 export default Kurumim;

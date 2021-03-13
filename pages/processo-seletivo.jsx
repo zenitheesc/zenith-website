@@ -1,4 +1,5 @@
 import React from "react";
+import useTranslation from 'next-translate/useTranslation';
 import NavBar from "../components/navbar-components/NavBar";
 import Footer from "../components/Footer";
 import HeroSection from "../components/general/HeroSection";
@@ -12,14 +13,17 @@ function  mapTable(content){
 
 
 function ProcessoSeletivo() {
-    return (
-        <>
-            <NavBar textContent={TextContent.navBar} />
-            <HeroSection
-                backgroundImage="url(../images/ProcessoSeletivo/header.webp)"
-                title="Processo Seletivo"
-                subtitle="Você deseja ser parte do Zenith Aerospace?"
-            />
+  const { t } = useTranslation();
+  const title = t('processoSeletivo:processoSeletivoHero.title');
+  const subtitle = t('processoSeletivo:processoSeletivoHero.subtitle');
+  return (
+    <>
+      <NavBar />
+      <HeroSection
+        backgroundImage="url(../images/ProcessoSeletivo/header.webp)"
+        title={title}
+        subtitle={subtitle}
+      />
             <CardContainer>
                 <Card
                     left={<img src="https://placedog.net/540/320" />}
@@ -59,5 +63,7 @@ function ProcessoSeletivo() {
         </>
     );
 }
+
+export function getServerSideProps() { return { props: {} }; }
 
 export default ProcessoSeletivo;

@@ -1,4 +1,5 @@
 import React from "react";
+import useTranslation from 'next-translate/useTranslation';
 import NavBar from "../components/navbar-components/NavBar";
 import Footer from "../components/Footer";
 import HeroSection from "../components/general/HeroSection";
@@ -8,23 +9,20 @@ import CardContainer from "../components/general/CardContainer";
 import TextWithIcons from "../components/zenith-components/TextWithIcons";
 
 
-
 function Zenith() {
-    return (
-        <>
-            <NavBar textContent={TextContent.navBar} />
-            <HeroSection
-                backgroundImage="url(../images/Zenith/Header.webp)"
-                title="O que é o Zenith?"
-                subtitle="Nós somos "
-                array={[
-                    "CIÊNCIA",
-                    "TECNOLOGIA",
-                    "INOVAÇÃO",
-                    "CONEXÕES",
-                    "ZENITH",
-                ]}
-            />
+  const { t } = useTranslation();
+  const title = t('oZenith:oZenithHero.title');
+  const subtitle = t('oZenith:oZenithHero.subtitle');
+  const array = t('oZenith:oZenithHero.array', { count: -1 }, { returnObjects: true });
+  return (
+    <>
+      <NavBar />
+      <HeroSection
+        backgroundImage="url(../images/Zenith/Header.webp)"
+        title={title}
+        subtitle={subtitle}
+        array={array}
+      />
 
             <CardContainer>
                 <Card
@@ -74,5 +72,7 @@ function Zenith() {
         </>
     );
 }
+
+export function getServerSideProps() { return { props: {} }; }
 
 export default Zenith;

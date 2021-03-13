@@ -1,10 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react';
+import useTranslation from 'next-translate/useTranslation';
 import styles from 'styles/HomepageHeroSection.module.css';
 
 function HomepageHeroSection() {
   const videoElement = useRef(null);
   const [videoAutoPlayable, setVideoAutoPlayable] = useState(true);
-
+  const { t } = useTranslation();
+  const title = t('homePage:homePageHero.title');
+  const subtitle = t('homePage:homePageHero.subtitle');
   const attemptPlay = () => {
     videoElement &&
       videoElement.current &&
@@ -34,11 +37,10 @@ function HomepageHeroSection() {
         <source src="images/HomePage/video.mp4" type="video/mp4" />
         <source src="images/HomePage/video.webm" type="video/webm" />
       </video>
-      <h1>O LAR DAS ESTRELAS EM SÃO CARLOS</h1>
+      <h1>{title}</h1>
       <hr />
       <p>
-        Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a
-        oportunidade de conquistar o espaço
+        {subtitle}
       </p>
     </div>
   );
