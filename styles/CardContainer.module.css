@@ -15,3 +15,8 @@
         width: 100%;
     }
 }
+
+.card__background {
+    background-color: #efefef;
+    z-index: -1;
+}

@@ -7,7 +7,7 @@ export default class CardContainer extends Component {
     render() {
         return (
             <div >
-                <section className="-section">
+                <section className={`-section ${style.card__background}`} >
                 <div className={`${style.card__container} -standardContainer`}>{this.props.children}</div>
             </section>
         </div>
