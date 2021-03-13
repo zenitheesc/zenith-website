@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: row;
     border: 0px;
-    font-size: 1.4rem;
+    font-size: 1.0rem;
     color: #545454;
     gap: 2rem;
     border-radius: 0.75rem;
@@ -14,9 +14,9 @@
 }
 
 .card>h1 {
-    margin: 2rem 0;
+    margin: 2rem 0 1rem 0;
     font-size: 2rem;
-    font-weight: 550;
+    font-weight: 570;
     color: #444;
 }
 
@@ -66,17 +66,17 @@
         align-items: center;
         gap: 0rem;
         border: 1px solid lightgray;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
     }
     .card__left {
         width: 100%;
         max-width: 100%;
+        border-radius: 0.75rem 0.75rem 0 0;
     }
     .card__right {
         width: 100%;
         max-width: 100%;
+        border-radius: 0 0 0.75rem 0.75rem;
     }
-    .card {
-        border-radius: 0;
-    }
+
 }
