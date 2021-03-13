@@ -1,0 +1,26 @@
+.container{
+	width: 100%;
+	min-height: 26vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: white;
+	padding: 1em;
+	border: 1px solid #D7D7D7;
+	border-radius: 5px;
+	max-width: 1328px;
+}
+
+.info{
+	width: 55%;
+	height: 100%;
+	text-align: left;
+	display: flex;
+	flex-direction:column;
+}
+
+.cloud{
+	width: 45%;
+	height: 100%;
+	background-color: blue;
+}

@@ -10,10 +10,10 @@ import SectorCard from './SectorCard';
 
 function SectorsCards({ textContent, currSector }) {
   const sectorsCards = {
-    gestao       : <SectorCard textContent={textContent.gestao}/>,
-    embarcados   : <SectorCard textContent={textContent.embarcados}/>,
-    estruturas   : <SectorCard textContent={textContent.estruturas}/>,
-    astrobiologia: <SectorCard textContent={textContent.astrobiologia}/>,
+    gestao       : <SectorCard textContent = {textContent.gestao} />,
+    embarcados   : <SectorCard textContent = {textContent.embarcados} />,
+    estruturas   : <SectorCard textContent = {textContent.estruturas} />,
+    astrobiologia: <SectorCard textContent = {textContent.astrobiologia} />,
   }
 
   return sectorsCards[currSector];
@@ -50,9 +50,7 @@ function Sectors() {
           <Gestão />
         </SectorsButtons>
       </div>
-      <div>
-        <SectorsCards textContent={textContent} currSector={currSector}/>
-      </div>
+      <SectorsCards textContent={textContent} currSector={currSector} />
     </div>
   );
 }
