@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation';
 import NavBar from "../components/navbar-components/NavBar";
 import Footer from "../components/Footer";
 import HeroSection from "../components/general/HeroSection";
-import TextContent from "../public/locale/pt-br/kurumim.json";
+import TextContent from "../locales/pt/kurumim.json";
 import CardContainer from "../components/general/CardContainer";
 import Card from "../components/general/Card";
 
@@ -18,11 +18,10 @@ function mapStylish(content){
             }
         })}
     </p>
-
 }
 
-
-const { t } = useTranslation();
+function Kurumim() {
+  const { t } = useTranslation();
   const title = t('kurumim:kurumimHero.title');
   const subtitle = t('kurumim:kurumimHero.subtitle');
   return (
@@ -74,7 +73,7 @@ const { t } = useTranslation();
             <Footer />
         </>
     );
-
+}
 export function getServerSideProps() { return { props: {} }; }
 
 export default Kurumim;

@@ -15,9 +15,11 @@
         "title":"Expansão do projeto",
         "text": [
             "Nossa meta é conseguir alcançar cada vez mais crianças. Sendo assim, serão aceitas inscrições de toda a América Latina.",
-            "Os projetos, totalmente desenvolvidos por estudantes do Ensino Fundamental, Médio e Técnico, serão acoplados a uma sonda e enviados para a estratosfera.",
-            "ATÉ", "83", "PROJETOS SERÃO LANÇADOS",
-            "3", "MODELOS DE SATs"
+            "Os projetos, totalmente desenvolvidos por estudantes do Ensino Fundamental, Médio e Técnico, serão acoplados a uma sonda e enviados para a estratosfera."
+        ],
+        "stylish": [
+            { "line": ["ATÉ ", 83, " PROJETOS SERÃO LANÇADOS"] },
+            { "line": [3, " MODELOS DE SATs"] }
         ]
     },
     "kurumimCard3": {

@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation';
 import NavBar from "../components/navbar-components/NavBar";
 import Footer from "../components/Footer";
 import HeroSection from "../components/general/HeroSection";
-import TextContent from "../public/locale/pt-br/oZenith.json";
+import TextContent from "../locales/pt/oZenith.json";
 import Card from "../components/general/Card";
 import CardContainer from "../components/general/CardContainer";
 import TextWithIcons from "../components/zenith-components/TextWithIcons";
