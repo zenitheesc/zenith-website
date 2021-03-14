@@ -33,7 +33,13 @@ function Zenith() {
                         </>
                     }
                 />
+                </CardContainer>
 
+                <ImageComponent 
+                images={["/images/Zenith/photo1.webp", "/images/Zenith/photo2.webp"]}
+                alt={["Mulher com camisa com o logo da EESC-USP", "Homem programando em seu notebook"]}
+                />
+                <CardContainer>
                 <Card
                     lean="left"
                     left={
@@ -67,10 +73,6 @@ function Zenith() {
                     }
                 />
             </CardContainer>
-      <ImageComponent 
-        images={["/images/Zenith/photo1.webp", "/images/Zenith/photo2.webp"]}
-        alt={["Mulher com camisa com o logo da EESC-USP", "Homem programando em seu notebook"]}
-      />
       <Footer />
     </>
   );
