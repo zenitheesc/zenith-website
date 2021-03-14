@@ -1,11 +1,9 @@
-import UnderlinedButton from '../../general/UnderlinedButton'
+import UnderlinedButton from 'components/general/UnderlinedButton'
 import styles from 'styles/BannersText.module.css'
 
 function BannersTextSec(props) {
     
-    const { title } = props.textContent;
-	const { detail } = props.textContent;
-	const { link } = props.textContent;
+    const { title, detail, link } = props.textContent;
 
     return ( 
         <div className={styles.bannersText}>
@@ -15,7 +13,7 @@ function BannersTextSec(props) {
             <h2 className="-homepage-section-title">
                 {detail} 
             </h2>
-            <UnderlinedButton label={"GitHub"} link={link}/>
+            <UnderlinedButton label={"GitHub"} link={ link }/>
         </div> 
     );
   }

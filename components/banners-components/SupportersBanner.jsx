@@ -3,7 +3,7 @@ import styles from 'styles/SupportersBanner.module.css';
 
 function SupportersBanner(props) {
 	const { title, detail, supporters } = props.textContent;
-	
+
 	return (
 		<section className={`-section ${styles.supportersSection}`}>
 			<div className={`-standardContainer ${styles.supportersBanner}`}>

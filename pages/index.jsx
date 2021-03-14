@@ -6,18 +6,21 @@ import ProjectBanner from 'components/banners-components/ProjectBanner';
 import SupportersBanner from 'components/banners-components/SupportersBanner';
 import Sectors from 'components/home-components/sectors-section/Sectors';
 import Footer from 'components/Footer';
-import TextContent from 'locales/pt/homePage.json';
+import useTranslation from 'next-translate/useTranslation';
 
 function Home() {
+
+  const { t } = useTranslation();
+
   return (
     <>
-      <NavBar textContent={TextContent.navBar} />
-      <HomeHeroSection/>
-      <Sectors textContent={TextContent.homePageDepartaments} />
-      <ProjectBanner textContent={TextContent.homePageBanners.genus} bgColor={"#605F62"} folderName={"genus-banner"} loop/>
-      <ProjectBanner textContent={TextContent.homePageBanners.zenithMonitor} bgColor={"#000000"} folderName={"monitor-banner"} />
-      <HighlightsSection textContent={TextContent.homePageStatistics} />
-      <SupportersBanner textContent={TextContent.homePageSupporters}/>
+      <NavBar />
+      <HomeHeroSection />
+      <Sectors />
+      <ProjectBanner textContent={t('homePage:homePageBanners.genus', { count: -1 }, { returnObjects: true })} bgColor={"#605F62"} folderName={"genus-banner"} loop/>
+      <ProjectBanner textContent={t('homePage:homePageBanners.zenithMonitor', { count: -1 }, { returnObjects: true })} bgColor={"#000000"} folderName={"monitor-banner"} />
+      <HighlightsSection />
+      <SupportersBanner textContent={t('homePage:homePageSupporters', { count: -1 }, { returnObjects: true })}/>
       <Footer />
     </>
   );
