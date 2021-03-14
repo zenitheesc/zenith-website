@@ -20,6 +20,7 @@ body, html {
   width: 100%;
   padding: 4em;
   max-width: 1328px;
+  width: 100%;
 }
 
 .-homepage-section-title {
