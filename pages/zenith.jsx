@@ -1,13 +1,13 @@
 import React from "react";
 import useTranslation from 'next-translate/useTranslation';
-import NavBar from "../components/navbar-components/NavBar";
-import Footer from "../components/Footer";
-import HeroSection from "../components/general/HeroSection";
+import NavBar from 'components/navbar-components/NavBar';
+import Footer from 'components/Footer';
+import HeroSection from 'components/general/HeroSection';
+import ImageComponent from 'components/zenith-page-components/ImageComponent';
 import TextContent from "../locales/pt/oZenith.json";
 import Card from "../components/general/Card";
 import CardContainer from "../components/general/CardContainer";
 import TextWithIcons from "../components/zenith-components/TextWithIcons";
-
 
 function Zenith() {
   const { t } = useTranslation();
@@ -23,7 +23,6 @@ function Zenith() {
         subtitle={subtitle}
         array={array}
       />
-
             <CardContainer>
                 <Card
                     left={<img src="http://placedog.net/480/300" />}
@@ -68,9 +67,13 @@ function Zenith() {
                     }
                 />
             </CardContainer>
-            <Footer />
-        </>
-    );
+      <ImageComponent 
+        images={["/images/Zenith/photo1.webp", "/images/Zenith/photo2.webp"]}
+        alt={["Mulher com camisa com o logo da EESC-USP", "Homem programando em seu notebook"]}
+      />
+      <Footer />
+    </>
+  );
 }
 
 export function getServerSideProps() { return { props: {} }; }

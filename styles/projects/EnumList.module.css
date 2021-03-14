@@ -1,0 +1,62 @@
+.enumList {
+    display: flex;
+    flex-direction: column;
+}
+
+.enumList span {
+    font-size: 14px;
+    line-height: 16px;
+    width: 30.5em;
+}
+
+.enumListItem>:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    margin: 15px;
+    color: white !important;
+    
+    background-color: #666161;
+    border-radius: 100%;
+    
+}
+
+
+.enumListItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 1em;
+}
+
+.enumListItem > svg {
+    margin-right: 0.4em;
+    color: #8D8F92;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .enumList span {
+        width: 45em;
+    }
+
+    .enumListItem > svg {
+        margin-right: 0.6em;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .enumList span {
+        width: 25em;
+    }
+
+}

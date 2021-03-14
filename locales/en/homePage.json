@@ -5,7 +5,7 @@
     },
     "homePageDepartaments": {
         "title": "construindo tecnologia aeroespacial em todos os setores",
-        "subtitle": "projetamos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
+        "subtitle": "construímos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
         "embarcados": {
             "title": "Embarcados",
             "detail": "Esse departamento pesquisa e desenvolve tecnologias em sistemas embarcados voltada para aplicações aeroespaciais.",
@@ -87,18 +87,18 @@
             ]
         }
     },
-    "homePageBanners": [
-        {
+    "homePageBanners": {
+        "genus": {
             "title": "Genus",
             "detail": "Hardware modularizado voltado para aplicações aeroespaciais",
             "link": "https://github.com/zenitheesc/Genus"
         },
-        {
+        "zenithMonitor": {
             "title": "Zenith Monitor",
             "detail": "Tecnologia para rastreamento de sondas aeroespaciais",
             "link": "https://github.com/zenitheesc/Zenith-Monitor"
         }
-    ],
+    },
     "homePageStatistics": {
         "title": "eficiência descrita em números",
         "subtitle": "desde 2014",
@@ -110,10 +110,6 @@
             {
                 "number": 400,
                 "description": "MEMBROS DESDE A FUNDAÇÃO"
-            },
-            {
-                "number": 12775,
-                "description": "HORAS NA SALINHA"
             },
             {
                 "number": 2,
@@ -131,6 +127,28 @@
     },
     "homePageSupporters": {
         "title": "nossos apoiadores",
-        "subtitle": "sem eles, nada disso seria possível"
+        "detail": "sem eles, nada disso seria possível",
+        "supporters": [ 
+            {   
+                "logo": "OZ Produtora",
+                "link": "https://www.ozprodutora.com.br/"
+            },
+            {
+                "logo": "USP",
+                "link": "https://www5.usp.br/"
+            },
+            {
+                "logo": "EESC-USP",
+                "link": "https://eesc.usp.br/"
+            },
+            {
+                "logo": "Vercel",
+                "link":"http://vercel.com/?utm_source=zenith-aerospace&utm_campaign=oss"
+            }
+        ]
+    },
+    "footer": {
+        "copyright": "© 2020  Zenith Aerospace",
+        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
     }
 }

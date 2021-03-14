@@ -1,0 +1,28 @@
+.projectTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.projectTitle > h1 {
+    margin: 0px;
+}
+
+.projectTitle > a {
+    margin: 0px;
+	margin-left: 1em;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.projectTitle > a > svg {
+	cursor: pointer;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.projectTitle > a > svg > path {
+    width: 100%;
+    height: 100%;
+}

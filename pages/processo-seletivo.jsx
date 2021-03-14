@@ -1,8 +1,8 @@
 import React from "react";
 import useTranslation from 'next-translate/useTranslation';
-import NavBar from "../components/navbar-components/NavBar";
-import Footer from "../components/Footer";
-import HeroSection from "../components/general/HeroSection";
+import NavBar from 'components/navbar-components/NavBar';
+import HeroSection from 'components/general/HeroSection';
+import Footer from 'components/Footer';
 import TextContent from "../locales/pt/processoSeletivo.json";
 import CardContainer from "../components/general/CardContainer";
 import Card from "../components/general/Card";
@@ -10,7 +10,6 @@ import Card from "../components/general/Card";
 function  mapTable(content){
     return  <p><b>{content[0]}</b>: <span>{content[1]}</span></p>;
 }
-
 
 function ProcessoSeletivo() {
   const { t } = useTranslation();
