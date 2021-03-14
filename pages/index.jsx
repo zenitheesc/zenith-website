@@ -6,7 +6,7 @@ import ProjectBanner from 'components/banners-components/ProjectBanner';
 import SupportersBanner from 'components/banners-components/SupportersBanner';
 import Sectors from 'components/home-components/sectors-section/Sectors';
 import Footer from 'components/Footer';
-import TextContent from 'public/locale/pt-br/homePage.json';
+import TextContent from 'locale/pt-br/homePage.json';
 
 function Home() {
   return (
