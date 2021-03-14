@@ -1,8 +1,8 @@
 import React from 'react';
 import useTranslation from 'next-translate/useTranslation';
-import NavBar from '../components/navbar-components/NavBar';
-import HeroSection from '../components/general/HeroSection';
-import Footer from '../components/Footer';
+import NavBar from 'components/navbar-components/NavBar';
+import HeroSection from 'components/general/HeroSection';
+import Footer from 'components/Footer';
 
 function Kurumim() {
   const { t } = useTranslation();

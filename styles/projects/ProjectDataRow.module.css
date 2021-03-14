@@ -1,0 +1,16 @@
+.projectDataRow{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.projectDataRow > h3{
+	text-align: left;
+	margin-bottom: 0px;
+}
+
+.projectDataRow  span{
+	text-align: right;
+	margin-bottom: 0px;
+}

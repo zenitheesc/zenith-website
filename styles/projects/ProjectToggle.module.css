@@ -1,0 +1,17 @@
+.projectToggleHeader{
+	display: flex;
+	flex-direction: row;
+}
+
+.projectToggleHeader h2{
+	cursor: pointer;
+}
+
+.projectToggleHeader :first-child{
+	padding-right: 1em;
+	border-right: 1px solid;
+}
+
+.projectToggleHeader :last-child{
+	padding-left: 1em;
+}
