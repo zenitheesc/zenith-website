@@ -50,7 +50,7 @@ function Kurumim() {
                         </>
                     }
                 />
-                <img  src="https://placedog.net/1024/320"/>
+                <img  src="../images/Kurumim/poster.webp"/>
                 <Card
                     lean="none"
                     left={

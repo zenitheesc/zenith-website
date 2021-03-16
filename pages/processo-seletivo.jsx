@@ -25,7 +25,7 @@ function ProcessoSeletivo() {
       />
             <CardContainer>
                 <Card
-                    left={<img src="https://placedog.net/540/320" />}
+                    left={<img src="../images/ProcessoSeletivo/Card-1.webp" />}
                     right={
                         <>
                             <h1>{TextContent.processoSeletivoCard1.title}</h1>
@@ -44,10 +44,10 @@ function ProcessoSeletivo() {
                             
                         </>
                     }
-                    right={<img src="https://placedog.net/440/420" />}
+                    right={<img src="../images/ProcessoSeletivo/Card-2.webp" />}
                 />
                 <Card
-                    left={<img src="https://placedog.net/520/320" />}
+                    left={<img src="../images/ProcessoSeletivo/Card-3.webp" />}
                     right={
                         <>
                             <h1>{TextContent.processoSeletivoCard3.title}</h1>

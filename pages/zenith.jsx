@@ -27,7 +27,7 @@ function Zenith() {
       />
             <CardContainer>
                 <Card
-                    left={<img src="http://placedog.net/480/300" />}
+                    left={<img src="../images/Zenith/Card-1.webp"/>}
                     right={
                         <>
                             <h1 className="-homepage-section-title">{TextContent.oZenithCard1.title}</h1>
@@ -52,23 +52,24 @@ function Zenith() {
                             {TextContent.oZenithCard2.text.map(a=><p>{a}</p>)}
                         </>
                     }
-                    right={<img src="http://placedog.net/500/300" />}
+                    right={<img src="../images/Zenith/Card-2.webp" />}
                 />
 
                 <Card
                     lean="left"
-                    left={<img src="http://placedog.net/500/320" />}
+                    left={<img src="../images/Zenith/Card-3.webp" />}
                     right={
                         <>
                             <h1 className="-homepage-section-title">{TextContent.oZenithCard3.title}</h1>
-                            {TextContent.oZenithCard3.text.map((c, i)=> <TextWithIcons content={c} index={i}/>)}
+                            {TextContent.oZenithCard3.text.map((c, i)=> <TextWithIcons content={c} index={i+1} icons={icons}/>)}
+                            <br/>
                         </>
                     }
                 />
 
                 <Card
                     lean="left"
-                    right={<img src="http://placedog.net/520/300" />}
+                    right={<img src="../images/Zenith/Card-4.webp" />}
                     left={
                         <>
                             <h1 className="-homepage-section-title">{TextContent.oZenithCard4.title}</h1>
