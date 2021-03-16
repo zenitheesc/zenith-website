@@ -9,6 +9,8 @@ import Card from "../components/general/Card";
 import CardContainer from "../components/general/CardContainer";
 import TextWithIcons from "../components/zenith-components/TextWithIcons";
 
+const icons = ['sat.png','sci.png', 'ppl.png', 'pro.png'];
+
 function Zenith() {
   const { t } = useTranslation();
   const title = t('oZenith:oZenithHero.title');
@@ -29,7 +31,9 @@ function Zenith() {
                     right={
                         <>
                             <h1 className="-homepage-section-title">{TextContent.oZenithCard1.title}</h1>
-                            {TextContent.oZenithCard1.text.map(a=><p>{a}</p>)}
+                            <TextWithIcons content={{title:"", text:TextContent.oZenithCard1.text[0]}} index={0} icons={icons} />
+                            <br/>
+                            <p>{TextContent.oZenithCard1.text[1]}</p>
                         </>
                     }
                 />

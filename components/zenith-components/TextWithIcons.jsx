@@ -5,12 +5,13 @@ import style from "../../styles/TextWithIcons.module.css";
 export default class TextWithIcons extends Component {
     static propTypes = {
         content: PropTypes.object,
-        index: PropTypes.number
+        index: PropTypes.number,
+        icons: PropTypes.array,
     }
 
     render() {
         return <div className={style.row}>
-            <img  src={`https://placedog.net/100/100/${this.props.index}`} />
+            <img width="100px" src={`../../images/Zenith/icons/${this.props.icons[this.props.index]}`} />
             <div>
                 <h3>{this.props.content.title}</h3>
                 <p>{this.props.content.text}</p>
