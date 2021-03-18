@@ -61,11 +61,11 @@ export default function SondasAeroespaciais(props) {
       <ProjectHeader textContent={props.textContent} />
       <Timeline theme="light">
 
-        <Event interval="2018">
+        <Event interval={2019}>
           <Model textContent={garatea5} paths={garatea5Images} />
           <Model textContent={garatea3} paths={garatea3Images} />
         </Event>
-        <Event interval="2016">
+        <Event interval={2017}>
           <Model textContent={garatea2} paths={garatea2Images} />
           <Model textContent={garatea1} paths={garatea1Images} />
         </Event>

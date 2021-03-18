@@ -15,14 +15,14 @@ export default function Hardware(props) {
 
       <Timeline theme="light">
 
-        <Event interval={"2021"}>
+        <Event interval={2021}>
           <Model textContent={groundStation} />
           <Model textContent={varella} />
         </Event>
-        <Event interval={"2020"}>
+        <Event interval={2020}>
           <Model textContent={genus} />
         </Event>
-        <Event interval={"2019"}>
+        <Event interval={2019}>
           <Model textContent={controladorPID} />
           <Model textContent={osciloscopio} />
         </Event>

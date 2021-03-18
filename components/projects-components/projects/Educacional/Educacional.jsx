@@ -40,18 +40,20 @@ export default function Educacional(props) {
   return (
     <section className={`-section ${styles.projectsSection}`} style={{ backgroundColor: '#605F62' }}>
 
-        <Timeline theme="gray">
-          <Event interval={"2017"} >
-            <Model paths={garateaE2017paths} textContent={garateaE2017} />
-          </Event>
-          <Event interval={"2018"}>
-            <Model paths={garateaE2018paths} textContent={garateaE2018} />
-          </Event>
-          <Event interval={"2019"}>
-            <Model paths={garateaE2019paths} textContent={garateaE2019} />
-          </Event>
+      <Timeline theme="gray">
+        <Event interval={2020}>
+          <Model paths={garateaE2019paths} textContent={garateaE2019} />
+        </Event>
+        <Event interval={2019}>
+          <Model paths={garateaE2018paths} textContent={garateaE2018} />
+        </Event>
+        <Event interval={2018} >
+          <Model paths={garateaE2017paths} textContent={garateaE2017} />
+        </Event>
 
-        </Timeline>
+
+
+      </Timeline>
     </section>
   );
 }
