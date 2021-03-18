@@ -12,7 +12,7 @@ export default function Software(props) {
       <Model textContent={ reportMaker } path={'images/Projetos/Software/ReportMaker.webp'} />
       <Model textContent={ zenithMonitor } path={'images/Projetos/Software/ZenithMonitor.webp'} />
       <Model textContent={ zenView } path={'images/Projetos/Software/ReportMaker.webp'} /> 
-      <Model textContent={ website } path={'images/Projetos/Software/ReportMaker.webp'} /> 
+      <Model textContent={ website } path={'images/Projetos/Software/Website.webp'} /> 
     </section>
   );
 }
