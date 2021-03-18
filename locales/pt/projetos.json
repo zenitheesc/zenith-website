@@ -5,6 +5,7 @@
         "subtitle": "Integração de diversos campos da Engenharia no setor aeroespacial"
     },
     "picker": ["Sondas aeroespaciais", "CubeSats", "Software", "Hardware", "Educacional"],
+    "atualmente": "Atualmente",
     "sondasAeroespaciais": {
         "title": "O que são Sondas Aeroespaciais?",
         "subtitle": [
