@@ -24,6 +24,10 @@
 
 @media screen and (max-width: 768px) {
 
+    .projectHeader {
+        padding: 3em 2em;
+    }
+
     .textSection h1 {
         font-size: 30px;
     } 

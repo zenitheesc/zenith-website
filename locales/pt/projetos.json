@@ -115,9 +115,9 @@
     "cubeSats": {
         "title": "O que são CubeSats?",
         "subtitle": [
-            "CubeSats são nanossatélites que possuem tamanho, formato e peso reduzidos e muito bem especificados. Nós começamos a desenvolver CubeSats por conta de seu custo reduzido de produção e de lançamento, já que é possível produzir CubeSats com eletrônicos acessíveis e existem dispensers específicos para lançamento de CubeSats.",
-            "Um CubeSat é constituído, essencialmente, de alguns subsistemas: o */Estrutural/*, o */Sistema Energético/*, a */Telecomunicação/*, o */Controle e a Determinação de Atitude/*, o */Sensoriamento/* e um módulo de missão. Atualmente, nós temos uma experiência com missões envolvendo */Visão Computacional/*.",
-            "Apesar de ainda não termos lançado um CubeSat, todo ano nós levamos nossos satélites para a CubeDesign, uma competição desenvolvida pelo INPE, onde nossos CubeSats disputam o 1º lugar com outros satélites educacionais."    
+            "CubeSats são nanossatélites que possuem tamanho, formato e peso reduzidos e muito bem especificados. Nós começamos a desenvolver CubeSats em razão de seu custo reduzido de produção e de lançamento, já que é possível produzir CubeSats com eletrônicos acessíveis e há dispensers genéricos para lançamento de CubeSats.",
+            "Um CubeSat é constituído, essencialmente, de alguns subsistemas: o */Estrutural/*, o */Sistema Energético/*, a */Telecomunicação/*, o */Controle e Determinação de Atitude/*, o */Sensoriamento/* e um módulo de missão. Atualmente, nós temos desenvolvido missões envolvendo */Visão Computacional/*.",
+            "Apesar de ainda não termos lançado um CubeSat, todo ano nós levamos nossos satélites para a */CubeDesign/*, competição desenvolvida pelo INPE, onde nossos CubeSats disputam o 1º lugar com outros satélites educacionais."    
         ],
         "projects": {
             "zenSat": {
@@ -255,11 +255,11 @@
         }
     },
     "hardware": {
-        "title": "Hardware",
+        "title": "Nosso desenvolvimento de Hardware",
         "subtitle": [
-            "Júlio está escrevendo.",
-            "Júlio está escrevendo.",
-            "Júlio está escrevendo."
+            "Nós também nos dedicamos ao desenvolvimento e manufatura de todos os componentes eletrônicos embarcados nos nossos projetos. A nossa equipe cria */Hardware modular/* e */reaproveitável/*, além de integrar diferentes subsistemas no nível de Hardware.",
+            "Para desenvolver Hardware para o ambiente aeroespacial, nós enfrentamos alguns desafios. Além de incorporar os conhecimentos de */Engenharia Eletrônica/*, nós também nos preocupamos em adotar componentes que permaneçam operacionais em */ambientes hostis/*, onde há baixas temperaturas, baixas pressões e elevados índices de radiação solar.",
+            "Cada */detalhe/* dos nossos Hardwares é pensado com atenção, visando satisfazer todas as necessidades do grupo, desde pensar sobre os requisitos definidos pela missão a ser efetuada até criar arquiteturas de sistema."
         ],
         "projects": {
             "controladorPID": {
@@ -360,9 +360,9 @@
     "educacional": {
         "title": "Nossos Projetos Educacionais",
         "subtitle": [
-            "O Garatéa-E nasceu do desejo do Zenith de levar a ciência para fora da universidade e, assim, incentivar jovens a terem gosto pelos estudos. Nosso projeto educacional traz para próximo dos alunos ao que só era visto por eles nas aulas de Física e Química, o */Espaço/*.",
-            "Os alunos do ensino fundamental e médio tiveram a oportunidade de desenvolver experimentos científicos, junto com os seus professores, e mandá-los para o espaço em uma de nossas sondas aeroespaciais. Isso possibilitou aos alunos a oportunidade de analisar as mudanças em seus experimentos após a exposição ao ambiente aeroespacial, instigando a curiosidade dos alunos.",
-            "Esta iniciativa já mobilizou milhares de estudantes em todo país nas últimas edições, trazendo resultados gratificantes aos alunos, aos professores e aos pais. Agora, o Garatéa-E possui um novo nome, */Kurumim/*, mas continua com os mesmos objetivos educacionais e planeja reunir alunos de toda a América Latina!"
+            "O */Garatéa-E/* nasceu do desejo do Zenith de levar a ciência para */fora da universidade/* e incentivar jovens a gostarem de pesquisar e estudar. Nosso projeto educacional traz para próximo dos alunos algo que só era visto por eles nas aulas de Física e Química, o */Espaço/*.",
+            "*/Alunos do ensino fundamental e médio/* tiveram a oportunidade de desenvolver experimentos científicos, junto com os seus professores, e mandá-los para o espaço em uma de nossas sondas aeroespaciais. Isso possibilitou que os alunos pudessem analisar as mudanças em seus experimentos após a exposição ao ambiente aeroespacial, instigando a */curiosidade/* dos estudantes.",
+            "Esta iniciativa já mobilizou milhares de estudantes em todo país nas últimas edições, trazendo resultados gratificantes aos alunos, aos professores e aos pais. Agora, o Garatéa-E possui um novo nome, */Kurumim/*, mas continua com os mesmos objetivos educacionais e, agora, planeja reunir alunos de toda a América Latina!"
         ],
         "projects": {
             "garateaE2017": {
