@@ -128,15 +128,15 @@
 @media screen and (max-width: 768px) {
 
     .icon {
-        left: 1em;
+        left:0.4em;
     }
 
     .timeline::before {
-        left: 1em;
+        left:0.4em;
     }
 
     .body {
-        padding: 2em 1em 0 2em;
+        padding: 2em 1em 0 1em;
         position: relative;
         top: -1.875em;
         left: 1em;

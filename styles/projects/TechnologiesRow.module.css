@@ -5,29 +5,35 @@
 
 
 .technologiesContainer {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
 .technologieContainer {
     display: flex;
-	padding: 12px;
-	margin: 3px;
-	background-color: #CCCCCC;
+    padding: 12px;
+    margin: 3px;
+    background-color: #CCCCCC;
     justify-content: center;
-	justify-items: center;
-	width: 6.5em !important;
-	height: 6.5em !important;
-	box-sizing: border-box;
-	cursor: pointer;
+    justify-items: center;
+    width: 6.5em !important;
+    height: 6.5em !important;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
 .technologieContainer img {
     width: 100%;
-	height: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
+@media screen and (max-width: 768px) {
 
+    .technologieContainer {
+        width: 6em !important;
+        height: 6em !important;
+    }
 
+}
