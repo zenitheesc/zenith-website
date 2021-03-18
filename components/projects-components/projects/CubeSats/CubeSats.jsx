@@ -16,7 +16,6 @@ export default function CubeSats(props) {
         <Event interval={2019}>
           <Model textContent={zenSat} />
         </Event>
-        <Event interval={2018}/>
       </Timeline>
     </section>
   );

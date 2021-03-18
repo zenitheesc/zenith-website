@@ -26,7 +26,7 @@ export default function Hardware(props) {
           <Model textContent={controladorPID} />
           <Model textContent={osciloscopio} />
         </Event>
-        <Event interval={2018}/>
+
 
       </Timeline>
 

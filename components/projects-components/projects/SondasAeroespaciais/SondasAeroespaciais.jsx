@@ -69,7 +69,6 @@ export default function SondasAeroespaciais(props) {
           <Model textContent={garatea2} paths={garatea2Images} />
           <Model textContent={garatea1} paths={garatea1Images} />
         </Event>
-        <Event interval={2016}/>
 
       </Timeline>
     </section>

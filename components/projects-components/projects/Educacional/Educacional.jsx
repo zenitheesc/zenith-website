@@ -41,7 +41,6 @@ export default function Educacional(props) {
     <section className={`-section ${styles.projectsSection}`} style={{ backgroundColor: '#605F62' }}>
 
       <Timeline theme="gray">
-
         <Event interval={2020}>
           <Model paths={garateaE2019paths} textContent={garateaE2019} />
         </Event>
@@ -51,7 +50,8 @@ export default function Educacional(props) {
         <Event interval={2018} >
           <Model paths={garateaE2017paths} textContent={garateaE2017} />
         </Event>
-        <Event interval={2017} />
+
+
 
       </Timeline>
     </section>
