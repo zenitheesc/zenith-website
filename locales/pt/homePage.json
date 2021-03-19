@@ -10,6 +10,7 @@
             "title": "Embarcados",
             "detail": "Esse departamento pesquisa e desenvolve tecnologias em sistemas embarcados voltada para aplicações aeroespaciais.",
             "core": "NÚCLEOS",
+            "technologies": ["C","JavaScript","OpenCv","STM","AutoDesk","LoRa","Linux","Python","Raspberry","CubeIDE"],
             "cores": [
                 {
                     "title": "Hardware: ",
@@ -29,6 +30,7 @@
             "title": "Estruturas",
             "detail": "Esse departamento realiza o desenvolvimento de modelos 3D de Sondas e CubeSats e realiza a manufatura desses. Além disso, atua projetando suportes para sistemas embarcados.",
             "core": "NÚCLEOS",
+            "technologies": ["Solid Works","Solid Edge","ANSYS"],
             "cores": [
                 {
                     "title": "Desenvolvimento da Estrutura: ",
@@ -48,6 +50,7 @@
             "title": "Astrobiologia",
             "detail": "Esse departamento desenvolve experimentos biológicos a fim de expô-los a condições ambientais semelhantes às espaciais.",
             "core": "NÚCLEOS",
+            "technologies": ["TODO"],
             "cores": [
                 {
                     "title": "Suporte ao Projeto Kurumim: ",
@@ -67,6 +70,7 @@
             "title": "Gestão",
             "detail": "Esse departamento é responsável pela organização e administração do grupo.",
             "core": "NÚCLEOS",
+            "technologies": ["Slack","Trello","Facebook","Discord","Word","Excel","Instagram", "LinkedIn","Google Drive","Excel","Google Calendar"],
             "cores": [
                 {
                     "title": "Financeiro: ",
