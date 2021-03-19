@@ -1,8 +1,10 @@
 import React from 'react';
 import style from 'styles/SectorsCards.module.css'
+import TechnologiesCloud from './TechnologiesCloud';
 
 export default function SectorCard({ textContent }) {
   const { cores } = textContent;
+  const { technologies } = textContent;
   return (
     <div className={style.container}>
       <div className={style.info}>
@@ -25,7 +27,7 @@ export default function SectorCard({ textContent }) {
 
       </div>
       <div className={style.cloud}>
-      "TECNOLOGIAS"
+         <TechnologiesCloud stringList={technologies} speed={1.5} radius={150}/>
       </div>
     </div>
   );
