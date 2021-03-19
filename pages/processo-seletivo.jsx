@@ -3,18 +3,20 @@ import useTranslation from 'next-translate/useTranslation';
 import NavBar from 'components/navbar-components/NavBar';
 import HeroSection from 'components/general/HeroSection';
 import Footer from 'components/Footer';
-import TextContent from "../locales/pt/processoSeletivo.json";
 import CardContainer from "../components/general/CardContainer";
+import FormWrapper from "components/general/FormWrapper"
 import Card from "../components/general/Card";
 
-function mapTable(content) {
-    return <p><b>{content[0]}</b>: <span>{content[1]}</span></p>;
+function mapTable(content,idx) {
+    return <p key={idx}><b>{content[0]}</b>: <span key={idx}>{content[1]}</span></p>;
 }
 
 function ProcessoSeletivo() {
     const { t } = useTranslation();
     const title = t('processoSeletivo:processoSeletivoHero.title');
     const subtitle = t('processoSeletivo:processoSeletivoHero.subtitle');
+    const TextContent = t('processoSeletivo:cards', { count: -1 }, { returnObjects: true });
+
     return (
         <>
             <NavBar />
@@ -29,7 +31,7 @@ function ProcessoSeletivo() {
                     right={
                         <>
                             <h1>{TextContent.processoSeletivoCard1.title}</h1>
-                            {TextContent.processoSeletivoCard1.text.map(a => <p>{a}</p>)}
+                            {TextContent.processoSeletivoCard1.text.map((a, idx) => <p key={idx}>{a}</p>)}
 
                         </>
                     }
@@ -40,7 +42,7 @@ function ProcessoSeletivo() {
                         <>
                             <h1>{TextContent.processoSeletivoCard2.title}</h1>
 
-                            {TextContent.processoSeletivoCard2.text.map(mapTable)}
+                            {TextContent.processoSeletivoCard2.text.map((a, idx) => mapTable(a,idx))}
 
                         </>
                     }
@@ -51,13 +53,13 @@ function ProcessoSeletivo() {
                     right={
                         <>
                             <h1>{TextContent.processoSeletivoCard3.title}</h1>
-                            {TextContent.processoSeletivoCard3.text.map(a => <p>{a}</p>)}
+                            {TextContent.processoSeletivoCard3.text.map((a, idx) => <p key={idx}>{a}</p>)}
 
                         </>
                     }
                 />
             </CardContainer>
-
+            <FormWrapper link={"https://docs.google.com/forms/d/e/1FAIpQLSdFoITXWmuJYgJPlvQFGBNkeOm84htc2GHxZpzSLIi1UEoB1g/viewform?embedded=true"} />
             <Footer />
         </>
     );
