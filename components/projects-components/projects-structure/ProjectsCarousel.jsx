@@ -18,7 +18,7 @@ const CarouselVideo = ({ url, isSelected }) => {
 
   return (
     <div className={style.carouselVideoDiv}>
-      <ReactPlayer width="100%" height="100%" url={url} playing={isSelected} />
+      <ReactPlayer width="100%" height="100%" url={url} controls={true} />
     </div>
   )
 }
@@ -35,7 +35,9 @@ export default function ProjectsCarousel(props) {
       showStatus={false}
       showThumbs={false}
       renderItem={customRenderItem}
+      showIndicators={paths.length > 1}
     >
+
       {paths.map((path, index) => {
         {
           return (path.endsWith(".webp")) ?
