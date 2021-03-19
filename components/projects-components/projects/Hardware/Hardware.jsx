@@ -13,7 +13,7 @@ export default function Hardware(props) {
 
   return (
     <section className={`-section ${styles.projectsSection}`} style={{ backgroundColor: '#E1E1E5' }}>
-
+      <ProjectHeader textContent ={ props.textContent } />
       <Timeline theme="light">
 
         <Event interval={2021}>
