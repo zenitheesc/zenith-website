@@ -7,6 +7,7 @@ import ProjectTable from '../../projects-structure/ProjectTable';
 import TechnologiesRow from '../../projects-structure/TechnologiesRow';
 
 import styles from 'styles/Projects.module.css';
+import ProjectsCarousel from 'components/projects-components/projects-structure/ProjectsCarousel';
 
 function Model (props) {
     const { 
@@ -28,9 +29,7 @@ function Model (props) {
                     <CheckList title={techSpecification[0]} itens={techSpecification.slice(1)} dark />
                 </ProjectTable>
             </ProjectData>
-            <div className={styles.projectImageContainer}>
-                <img src={ path } />
-            </div>
+            <ProjectsCarousel paths={[path]}/>
         </div>      
     );
 }
