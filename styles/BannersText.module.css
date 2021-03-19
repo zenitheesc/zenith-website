@@ -1,0 +1,33 @@
+.bannersText {
+    color: white;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    text-align: right;
+    align-self: center;
+}
+
+.bannersText h1 {
+    margin: 0px;
+}
+
+.bannersText h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .bannersText h2 {
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .bannersText h2 {
+        font-size: 1.2em;
+    }
+
+}

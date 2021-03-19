@@ -90,7 +90,7 @@ function Tabs(props) {
   );
 }
 
-function ProjectTab(props) {
+function ProjectTab() {
   const { t } = useTranslation();
 
   const sondasAeroespaciais = t("projetos:sondasAeroespaciais", { count: -1 }, { returnObjects: true });

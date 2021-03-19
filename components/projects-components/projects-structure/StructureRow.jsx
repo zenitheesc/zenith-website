@@ -1,7 +1,7 @@
+import React from 'react';
+import boldParser from 'components/utils/boldParser';
 import Estruturas from 'components/home-components/sectors-section/icons/Estruturas';
-import React from 'react'
-import style from 'styles/projects/SectorsRow.module.css'
-import boldParser from '../../utils/boldParser'
+import style from 'styles/projects/SectorsRow.module.css';
 
 export default function StructureRow(props) {
 	const { content } = props;

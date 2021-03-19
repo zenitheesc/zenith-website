@@ -8,7 +8,6 @@
     justify-content: space-around;
     text-align: center;
     max-width: 46rem;
-    color: #666161;
 }
 
 .textSection h1 {
@@ -18,11 +17,16 @@
 }
 
 .textSection p {
+    text-align: justify;
     font-size: 18px;
     color: #666161;
 }
 
 @media screen and (max-width: 768px) {
+
+    .projectHeader {
+        padding: 3em 2em;
+    }
 
     .textSection h1 {
         font-size: 30px;

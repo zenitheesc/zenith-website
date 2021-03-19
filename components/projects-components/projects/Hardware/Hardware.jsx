@@ -1,5 +1,6 @@
 import React from 'react';
 import Model from './Model';
+import ProjectHeader from '../../ProjectHeader';
 import styles from 'styles/Projects.module.css';
 import { Timeline, Event } from "components/projects-components/projects-structure/TimeLine";
 

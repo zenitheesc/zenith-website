@@ -1,0 +1,84 @@
+.textSection {
+    color: white;
+}
+
+.supportersSection {
+    background-color: #605F62;
+}
+
+.supportersBanner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.squares{
+    display: grid;
+    grid-template-columns: 11.5em 11.5em 11.5em;
+    grid-template-rows: 11.5em 11.5em;
+    gap: 1.2em;
+    margin-left: 3em;
+}
+
+.squares > * {
+    padding: 1em;
+    display: flex;
+    border-radius: 4px;
+    background-color: #CCCCCC;
+}
+
+.supportersLogo {
+    width: 100%;
+    height: auto;
+}
+
+.squares > *:hover:not(.emptySquare){
+    background-color: #bdbbbb;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .supportersBanner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .squares {
+        margin: 0px;
+        margin-top: 2em;
+        grid-template-columns: 11.5em 11.5em;
+        grid-template-rows: 11.5em 11.5em;
+    }
+    
+    .emptySquare {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 798px) {
+    
+    .supportersBanner {
+        padding: 4em 2em;
+    }
+
+    .squares{
+        grid-template-columns: 10em 10em;
+        grid-template-rows: 10em 10em;
+        gap: 1em;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .squares {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, minmax(6rem, auto));
+        place-items: start;
+        position: relative;
+    }
+
+}
