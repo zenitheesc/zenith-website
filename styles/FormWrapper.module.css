@@ -11,7 +11,7 @@
     width: 100%;
     max-width: 1328px;
     background-color: white;
-	height: 100vh;
+	height: 60vh;
 }
 
 @media only screen and (max-width: 1024px) {
