@@ -50,7 +50,7 @@ export default function Educacional(props) {
         <Event interval={2018} >
           <Model paths={garateaE2017paths} textContent={garateaE2017} />
         </Event>
-
+        <Event interval={2017} />
 
 
       </Timeline>

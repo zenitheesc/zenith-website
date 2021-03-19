@@ -18,6 +18,7 @@ export default function Software(props) {
           <Model textContent={reportMaker} path={'images/Projetos/Software/ReportMaker.webp'} />
           <Model textContent={zenithMonitor} path={'images/Projetos/Software/ZenithMonitor.webp'} />
         </Event>
+        <Event interval={2019} />
       </Timeline>
     </section>
   );
