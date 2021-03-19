@@ -12,11 +12,11 @@ export default function Software(props) {
     <section className={`-section ${styles.projectsSection}`} style={{ backgroundColor: '#000000' }}>
       <Timeline theme="dark">
         <Event interval={2021}>
-          <Model textContent={zenView} path={'images/Projetos/Software/ReportMaker.webp'} />
+          <Model textContent={zenView} path={'Software/ReportMaker.webp'} />
         </Event>
         <Event interval={2020}>
-          <Model textContent={reportMaker} path={'images/Projetos/Software/ReportMaker.webp'} />
-          <Model textContent={zenithMonitor} path={'images/Projetos/Software/ZenithMonitor.webp'} />
+          <Model textContent={reportMaker} path={'Software/ReportMaker.webp'} />
+          <Model textContent={zenithMonitor} path={'Software/ZenithMonitor.webp'} />
         </Event>
         <Event interval={2019} />
       </Timeline>
