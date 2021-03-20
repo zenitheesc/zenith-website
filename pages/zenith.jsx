@@ -8,7 +8,8 @@ import TextContent from "../locales/pt/oZenith.json";
 import Card from "../components/general/Card";
 import CardContainer from "../components/general/CardContainer";
 import TextWithIcons from "../components/zenith-components/TextWithIcons";
-
+import boldParser from "components/utils/boldParser";
+import { FiArrowUpRight } from "react-icons/fi";
 const icons = ['sat.png','sci.png', 'ppl.png', 'pro.png'];
 
 function Zenith() {
@@ -49,7 +50,7 @@ function Zenith() {
                     left={
                         <>
                             <h1 className="-homepage-section-title">{TextContent.oZenithCard2.title}</h1>
-                            {TextContent.oZenithCard2.text.map(a=><p>{a}</p>)}
+                            {TextContent.oZenithCard2.text.map(a=><p>{boldParser(a)}</p>)}
                         </>
                     }
                     right={<img src="../images/Zenith/Card-2.webp" />}
@@ -73,7 +74,8 @@ function Zenith() {
                     left={
                         <>
                             <h1 className="-homepage-section-title">{TextContent.oZenithCard4.title}</h1>
-                            {TextContent.oZenithCard4.text.map(a=><p>{a}</p>)}
+                            {TextContent.oZenithCard4.text.map(a=><p>{boldParser(a)}</p>)}
+                            {TextContent.oZenithCard4.links.map(l=><p><a href={l.url}>{l.text }</a><FiArrowUpRight size="1.4rem"/></p>)}
                         </>
                     }
                 />

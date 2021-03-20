@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import style from "../../styles/TextWithIcons.module.css";
+import boldParser from 'components/utils/boldParser';
 
 export default class TextWithIcons extends Component {
     static propTypes = {
@@ -14,7 +15,7 @@ export default class TextWithIcons extends Component {
             <img width="100px" src={`../../images/Zenith/icons/${this.props.icons[this.props.index]}`} />
             <div>
                 <h3>{this.props.content.title}</h3>
-                <p>{this.props.content.text}</p>
+                <p>{boldParser(this.props.content.text)}</p>
             </div>
         </div>
     }
