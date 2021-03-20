@@ -76,9 +76,7 @@
 
     .squares {
         grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(2, minmax(6rem, auto));
-        place-items: start;
-        position: relative;
+        grid-template-rows: repeat(2, minmax(8rem, 9rem));
     }
 
 }
