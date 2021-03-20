@@ -1,0 +1,70 @@
+.heroContainer {
+    height: 100vh;
+    width: auto;
+    object-fit: contain;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: cover;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroContainer h1 {
+    margin: 0px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    font-size: 2rem;
+    line-height: 1.16;
+    color: #ffffff;
+}
+
+.heroContainer h2 {
+    margin: 0px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: #ffffff;
+}
+
+.videoContainer video {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (min-width: 1024px) {
+    .heroContainer {
+        background-position-x: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .heroContainer {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .heroContainer h1 {
+        font-size: 3rem;
+    }
+
+    .heroContainer>h2 {
+        font-size: 1.5rem;
+        line-height: 1.32;
+    }
+}
