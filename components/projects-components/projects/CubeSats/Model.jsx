@@ -6,7 +6,7 @@ import ProjectDataRow from '../../projects-structure/ProjectDataRow';
 import ProjectToggle from '../../projects-structure/ProjectToggle';
 import ProjectSubtitle from '../../projects-structure/ProjectSubtitle';
 import TechnologiesRow from '../../projects-structure/TechnologiesRow';
-
+import ProjectsCarousel from 'components/projects-components/projects-structure/ProjectsCarousel';
 import styles from 'styles/Projects.module.css';
 import EmbeddedRow from 'components/projects-components/projects-structure/EmbeddedRow';
 import StructureRow from 'components/projects-components/projects-structure/StructureRow';
@@ -41,6 +41,7 @@ function Model(props) {
                     </ProjectTable>
                 </ProjectToggle>
             </ProjectData>
+            <ProjectsCarousel paths={paths} />
         </div>
     );
 }
