@@ -42,7 +42,7 @@
             "Estamos buscando pessoas curiosas e tão apaixonadas pelo espaço e por tecnologia quanto nós!"
         ],
         "links": [
-            { "text": "Processo Seletivo", "url": "/processo-seletivo" }
+            { "text": "Processo Seletivo", "url": "processo-seletivo" }
         ]
     }
 }
