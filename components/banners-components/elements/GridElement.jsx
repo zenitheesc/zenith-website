@@ -21,8 +21,6 @@ function GridElement(props) {
 
                 })
             }
-            <a className={styles.emptySquare}></a>
-            <a className={styles.emptySquare}></a>
         </div>
 	)
 }
