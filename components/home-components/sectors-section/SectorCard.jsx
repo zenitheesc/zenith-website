@@ -27,7 +27,7 @@ export default function SectorCard({ textContent }) {
 
       </div>
       <div className={style.cloud}>
-         <TechnologiesCloud stringList={technologies} speed={1.5} radius={150}/>
+         "technologies"
       </div>
     </div>
   );
