@@ -18,4 +18,4 @@ function BannersTextSec(props) {
     );
   }
   
-  export default BannersTextSec;
+export default BannersTextSec;

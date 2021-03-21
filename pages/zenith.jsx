@@ -4,13 +4,14 @@ import NavBar from 'components/navbar-components/NavBar';
 import Footer from 'components/Footer';
 import HeroSection from 'components/general/HeroSection';
 import ImageComponent from 'components/zenith-page-components/ImageComponent';
-import TextContent from "../locales/pt/oZenith.json";
-import Card from "../components/general/Card";
-import CardContainer from "../components/general/CardContainer";
-import TextWithIcons from "../components/zenith-components/TextWithIcons";
+import TextContent from "locales/pt/oZenith.json";
+import Card from "components/general/Card";
+import CardContainer from "components/general/CardContainer";
+import TextWithIcons from "components/zenith-components/TextWithIcons";
 import boldParser from "components/utils/boldParser";
 import { FiArrowUpRight } from "react-icons/fi";
-const icons = ['sat.png','sci.png', 'ppl.png', 'pro.png'];
+
+const icons = ['sat.svg','sci.svg', 'ppl.svg', 'pro.svg'];
 
 function Zenith() {
   const { t } = useTranslation();
