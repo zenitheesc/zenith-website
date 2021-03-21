@@ -8,7 +8,25 @@ body, html {
   scroll-behavior: smooth;
 }
 
+
 /* Homepage standards */
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background:transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(194, 23, 23);
+
+}
 
 .-section {
   justify-content: center;
