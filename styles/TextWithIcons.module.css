@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.row>img {
+    margin: auto 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .row {
+        flex-flow: row wrap;
+    }
+    .row>img {
+        margin: 0 auto;
+    }
+    .row h3,
+    .row p {
+        padding: 0.5rem 1rem;
+        text-align: justify;
+        font-size: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 2px;
+    }
+}
