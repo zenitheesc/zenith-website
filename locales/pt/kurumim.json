@@ -7,16 +7,16 @@
         "kurumimCard1": {
             "title":"Conquistando a Lua",
             "text": [
-                "O Kurumim é a expansão do Garatéa-E, mantendo o compromisso de promover a educação e a iniciação científica no ensino básico.",
-                "Nesse ano, considerando a Missão Artemis da NASA, a temática do projeto será Conquistando a Lua.",
+                "O */Kurumim/* é a expansão do */Garatéa-E/*, mantendo o compromisso de */promover a educação e a iniciação científica/* no ensino básico.",
+                "Nesse ano, considerando a Missão Artemis da NASA, a temática do projeto será */Conquistando a Lua/*.",
                 "Apesar de não ser obrigatório que o experimento se encaixe na temática, os projetos que se encaixarem poderam concorrer na Olimpíada."
             ]
         },
         "kurumimCard2": {
             "title":"Expansão do projeto",
             "text": [
-                "Nossa meta é conseguir alcançar cada vez mais crianças. Sendo assim, serão aceitas inscrições de toda a América Latina.",
-                "Os projetos, totalmente desenvolvidos por estudantes do Ensino Fundamental, Médio e Técnico, serão acoplados a uma sonda e enviados para a estratosfera."
+                "Nossa meta é conseguir alcançar cada vez mais crianças. Sendo assim, serão aceitas inscrições de toda a */América Latina/*.",
+                "Os projetos, totalmente desenvolvidos por */estudantes do Ensino Fundamental, Médio e Técnico/*, serão acoplados a uma sonda e enviados para a estratosfera."
             ],
             "stylish": [
                 { "line": ["ATÉ ", 83, " PROJETOS SERÃO LANÇADOS"] },
@@ -27,8 +27,8 @@
             "title":"Kurumim Sat",
             "text": [
                 "Nosso novo objetivo é aproximar as crianças do desenvolvimento de um satélite, por meio de um ambiente de desenvolvimento facilitado.",
-                "As equipes vencedoras do Grande Prêmio da última edição da Garatéa-E serão convidadas a testarem um novo modelo de CanSat, o Kurumim Sat, o qual possui diversos sensores, um computador de bordo e um módulo de energia.",
-                "As crianças serão capazes de aprender conceitos de programação, desenvolver seu raciocínio lógico e se divertir com esse kit de desenvolvimento. "
+                "As equipes vencedoras do Grande Prêmio da última edição da Garatéa-E serão convidadas a testarem um novo modelo de CanSat, o */Kurumim Sat/*, o qual possui diversos sensores, um computador de bordo e um módulo de energia.",
+                "As crianças serão capazes de aprender */conceitos de programação/*, desenvolver seu */raciocínio lógico/* e se */divertir/* com esse kit de desenvolvimento. "
             ]
         },
         "kurumimCard4": {

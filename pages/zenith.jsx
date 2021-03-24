@@ -4,18 +4,24 @@ import NavBar from 'components/navbar-components/NavBar';
 import Footer from 'components/Footer';
 import HeroSection from 'components/general/HeroSection';
 import ImageComponent from 'components/zenith-page-components/ImageComponent';
-import TextContent from "../locales/pt/oZenith.json";
-import Card from "../components/general/Card";
-import CardContainer from "../components/general/CardContainer";
-import TextWithIcons from "../components/zenith-components/TextWithIcons";
+import UnderlinedButton from 'components/general/UnderlinedButton';
+import Card from "components/general/Card";
+import CardContainer from "components/general/CardContainer";
+import TextWithIcons from "components/zenith-components/TextWithIcons";
+import boldParser from "components/utils/boldParser";
 
-const icons = ['sat.png','sci.png', 'ppl.png', 'pro.png'];
+const icons = ['sat.svg','sci.svg', 'ppl.svg', 'pro.svg'];
 
 function Zenith() {
   const { t } = useTranslation();
   const title = t('oZenith:oZenithHero.title');
   const subtitle = t('oZenith:oZenithHero.subtitle');
   const array = t('oZenith:oZenithHero.array', { count: -1 }, { returnObjects: true });
+  const card1 = t('oZenith:oZenithCard1', { count: -1 }, { returnObjects: true });
+  const card2 = t('oZenith:oZenithCard2', { count: -1 }, { returnObjects: true });
+  const card3 = t('oZenith:oZenithCard3', { count: -1 }, { returnObjects: true });
+  const card4 = t('oZenith:oZenithCard4', { count: -1 }, { returnObjects: true });
+
   return (
     <>
       <NavBar />
@@ -25,59 +31,60 @@ function Zenith() {
         subtitle={subtitle}
         array={array}
       />
-            <CardContainer>
-                <Card
-                    left={<img src="../images/Zenith/Card-1.webp"/>}
-                    right={
-                        <>
-                            <h1 className="-homepage-section-title">{TextContent.oZenithCard1.title}</h1>
-                            <TextWithIcons content={{title:"", text:TextContent.oZenithCard1.text[0]}} index={0} icons={icons} />
-                            <br/>
-                            <p>{TextContent.oZenithCard1.text[1]}</p>
-                        </>
-                    }
-                />
-                </CardContainer>
+        <CardContainer>
+            <Card
+                left={<img src="../images/Zenith/Card-1.webp"/>}
+                right={
+                    <>
+                        <h1 className="-homepage-section-title">{card1.title}</h1>
+                        <TextWithIcons content={{title:"", text:card1.text[0]}} index={0} icons={icons} />
+                        <br/>
+                        <p>{card1.text[1]}</p>
+                    </>
+                }
+            />
+        </CardContainer>
 
-                <ImageComponent 
-                images={["/images/Zenith/photo1.webp", "/images/Zenith/photo2.webp"]}
-                alt={["Mulher com camisa com o logo da EESC-USP", "Homem programando em seu notebook"]}
-                />
-                <CardContainer>
-                <Card
-                    lean="left"
-                    left={
-                        <>
-                            <h1 className="-homepage-section-title">{TextContent.oZenithCard2.title}</h1>
-                            {TextContent.oZenithCard2.text.map(a=><p>{a}</p>)}
-                        </>
-                    }
-                    right={<img src="../images/Zenith/Card-2.webp" />}
-                />
+        <ImageComponent 
+        images={["/images/Zenith/photo1.webp", "/images/Zenith/photo2.webp"]}
+        alt={["Mulher com camisa com o logo da EESC-USP", "Homem programando em seu notebook"]}
+        />
+        <CardContainer> 
+            <Card
+                lean="left"
+                left={
+                    <>
+                        <h1 className="-homepage-section-title">{card2.title}</h1>
+                        {card2.text.map(a=><p>{boldParser(a)}</p>)}
+                    </>
+                }
+                right={<img src="../images/Zenith/Card-2.webp" />}
+            />
 
-                <Card
-                    lean="left"
-                    left={<img src="../images/Zenith/Card-3.webp" />}
-                    right={
-                        <>
-                            <h1 className="-homepage-section-title">{TextContent.oZenithCard3.title}</h1>
-                            {TextContent.oZenithCard3.text.map((c, i)=> <TextWithIcons content={c} index={i+1} icons={icons}/>)}
-                            <br/>
-                        </>
-                    }
-                />
+            <Card
+                lean="left"
+                left={<img src="../images/Zenith/Card-3.webp" />}
+                right={
+                    <>
+                        <h1 className="-homepage-section-title">{card3.title}</h1>
+                        {card3.text.map((c, i)=> <TextWithIcons content={c} index={i+1} icons={icons}/>)}
+                        <br/>
+                    </>
+                }
+            />
 
-                <Card
-                    lean="left"
-                    right={<img src="../images/Zenith/Card-4.webp" />}
-                    left={
-                        <>
-                            <h1 className="-homepage-section-title">{TextContent.oZenithCard4.title}</h1>
-                            {TextContent.oZenithCard4.text.map(a=><p>{a}</p>)}
-                        </>
-                    }
-                />
-            </CardContainer>
+            <Card
+                lean="left"
+                right={<img src="../images/Zenith/Card-4.webp" />}
+                left={
+                    <>
+                        <h1 className="-homepage-section-title">{card4.title}</h1>
+                        {card4.text.map(a=><p>{boldParser(a)}</p>)}
+                        {card4.links.map(l=><UnderlinedButton link={l.url} label={l.text} />)}
+                    </>
+                }
+            />
+        </CardContainer>
       <Footer />
     </>
   );

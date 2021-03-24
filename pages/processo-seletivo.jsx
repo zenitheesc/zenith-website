@@ -6,6 +6,7 @@ import Footer from 'components/Footer';
 import CardContainer from "../components/general/CardContainer";
 import FormWrapper from "components/general/FormWrapper"
 import Card from "../components/general/Card";
+import boldParser from "components/utils/boldParser";
 
 function mapTable(content,idx) {
     return <p key={idx}><b>{content[0]}</b>: <span key={idx}>{content[1]}</span></p>;
@@ -31,7 +32,7 @@ function ProcessoSeletivo() {
                     right={
                         <>
                             <h1>{TextContent.processoSeletivoCard1.title}</h1>
-                            {TextContent.processoSeletivoCard1.text.map((a, idx) => <p key={idx}>{a}</p>)}
+                            {TextContent.processoSeletivoCard1.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
 
                         </>
                     }
@@ -53,7 +54,7 @@ function ProcessoSeletivo() {
                     right={
                         <>
                             <h1>{TextContent.processoSeletivoCard3.title}</h1>
-                            {TextContent.processoSeletivoCard3.text.map((a, idx) => <p key={idx}>{a}</p>)}
+                            {TextContent.processoSeletivoCard3.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
 
                         </>
                     }
