@@ -3,33 +3,36 @@
         "title": "Processo Seletivo",
         "subtitle": "Você deseja ser parte do Zenith Aerospace?"
     },
-    "processoSeletivoCard1": {
-        "title":"Como participar?",
-        "text": [
-            "Todo ano nós abrimos um processo seletivo para recrutarmos novos membros ao Zenith.",
-            "Infelizmente, não podemos aceitar todos os interessados, então nós realizamos um processo seletivo para selecionar os candidatos.",
-            "Graduandos da USP São Carlos e da Ufscar podem se inscrever no nosso processo seletivo e nenhum conhecimento prévio é necessário!",
-            "Está interessado? Veja se o nosso processo seletivo está aberto."
-        ]
-    },
-    "processoSeletivoCard2": {
-        "title":"Cronograma",
-        "text": [
-            "05/02", "LANÇAMENTO DO EDITAL",
-            "07/02", "LANÇAMENTO DO FORMULÁRIO DE INSCRIÇÃO",
-            "19/02", "MOSTRA DE OPORTUNIDADES DA EESC",
-            "02/03", "WEBINAR DE APRESENTAÇÃO",
-            "06/03", "FECHAMENTO DO FORMULÁRIO DE INSCRIÇÃO",
-            "09/03", "1º FASE DO PROCESSO SELETIVO",
-            "15/03 A 21/03", "2º FASE DO PROCESSO SELETIVO",
-            "22/03", "DIVULGAÇÃO DOS RESULTADOS"
-        ]
-    },
-    "processoSeletivoCard3": {
-        "title":"Fases do Processo Seletivo",
-        "text": [
-            "1º Fase:", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur elit odio, ac aliquet tellus iaculis porta.",
-            "2º Fase:", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur elit odio, ac aliquet tellus iaculis porta."
-        ]
+    "cards": {
+        "processoSeletivoCard1": {
+            "title": "Como participar?",
+            "text": [
+                "Todo ano nós abrimos um processo seletivo para recrutarmos novos membros ao Zenith.",
+                "Infelizmente, não podemos aceitar todos os interessados, então nós realizamos um processo seletivo para selecionar os candidatos.",
+                "Graduandos da USP São Carlos e da Ufscar podem se inscrever no nosso processo seletivo e nenhum conhecimento prévio é necessário!",
+                "Está interessado? Veja se o nosso processo seletivo está aberto."
+            ]
+        },
+        "processoSeletivoCard2": {
+            "title": "Cronograma",
+            "text": [
+                ["19/04", "PALESTRA DE APRESENTAÇÃO"],
+                ["19/04", "LANÇAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
+                ["24/04", "FECHAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
+                ["26/04", "1º FASE DO PROCESSO SELETIVO"],
+                ["30/04", "DIVULGAÇÃO DOS APROVADOS DA PRIMEIRA FASE"],
+                ["03/05", "INÍCIO DA 2º FASE DO PROCESSO SELETIVO"],
+                ["07/05", "FIM DA 2º FASE DO PROCESSO SELETIVO"],
+                ["10/05", "DIVULGAÇÃO DOS RESULTADOS"]
+            ]
+        },
+        "processoSeletivoCard3": {
+            "title": "Fases do Processo Seletivo",
+            "text": [
+                "1º Fase:", "Na primeira fase, os candidatos serão divididos em grupos e expostos a uma situação problema inspirada em missões espaciais, onde serão avaliadas a capacidade de trabalhar em equipe, predisposição à liderança e a criatividade diante de uma situação problema.",
+                "2º Fase:", "Na segunda fase os candidatos aprovados na primeira fase serão entrevistados por membros do departamento no qual o candidato se inscreveu. O objetivo desta etapa é possibilitar que o grupo conheça melhor o candidato, conhecendo sua motivação e expectativas para fazer parte do grupo."
+            ]
+        }
     }
+
 }
