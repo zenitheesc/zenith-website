@@ -36,18 +36,20 @@ function ProcessoSeletivo() {
 
                         </>
                     }
+                    text={'right'}
                 />
 
                 <Card
                     left={
                         <>
                             <h1>{TextContent.processoSeletivoCard2.title}</h1>
-
+                            <p>{boldParser(TextContent.processoSeletivoCard2.detail)}</p>
                             {TextContent.processoSeletivoCard2.text.map((a, idx) => mapTable(a,idx))}
 
                         </>
                     }
                     right={<img src="../images/ProcessoSeletivo/Card-2.webp" />}
+                    text={'left'}
                 />
                 <Card
                     left={<img src="../images/ProcessoSeletivo/Card-3.webp" />}
@@ -58,6 +60,7 @@ function ProcessoSeletivo() {
 
                         </>
                     }
+                    text={'right'}
                 />
                 <FormWrapper link={"https://docs.google.com/forms/d/e/1FAIpQLSdFoITXWmuJYgJPlvQFGBNkeOm84htc2GHxZpzSLIi1UEoB1g/viewform?embedded=true"} />
             </CardContainer>

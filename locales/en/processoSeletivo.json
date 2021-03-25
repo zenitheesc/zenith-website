@@ -15,6 +15,7 @@
         },
         "processoSeletivoCard2": {
             "title": "Cronograma",
+            "detail": "Estamos ansiosos para receber novos membros no Zenith Aerospace esse ano. Nesse ano de */2021/*, o nosso processo seletivo vai ser 100% digital! Para se inscrever, preencha o */Google Forms/* abaixo e acompanhe os resultados nas nossas */Redes Sociais/*!",
             "text": [
                 ["19/04", "PALESTRA DE APRESENTAÇÃO"],
                 ["19/04", "LANÇAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
@@ -29,10 +30,9 @@
         "processoSeletivoCard3": {
             "title": "Fases do Processo Seletivo",
             "text": [
-                "1º Fase:", "Na primeira fase, os candidatos serão divididos em grupos e expostos a uma situação problema inspirada em missões espaciais, onde serão avaliadas a capacidade de trabalhar em equipe, predisposição à liderança e a criatividade diante de uma situação problema.",
-                "2º Fase:", "Na segunda fase os candidatos aprovados na primeira fase serão entrevistados por membros do departamento no qual o candidato se inscreveu. O objetivo desta etapa é possibilitar que o grupo conheça melhor o candidato, conhecendo sua motivação e expectativas para fazer parte do grupo."
+                "*/1º Fase: Dinâmica em Grupo/*", "Nessa fase, os candidatos serão divididos em */grupos/* e expostos a uma */situação-problema/* inspirada em missões espaciais. Nós avaliaremos a capacidade do candidato de */trabalhar em equipe/*, predisposição à */liderança/* e a */criatividade/* diante de um problema.",
+                "*/2º Fase: Entrevista/*", "Na 2º fase, os candidatos aprovados na 1º fase serão entrevistados por membros de departamentos do Zenith Aerospace. Nessa etapa, nós buscamos conhecer melhor o candidato, descobrindo suas */motivações/* e */expectativas/* sobre o grupo."
             ]
         }
     }
-
 }

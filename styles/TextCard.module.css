@@ -46,6 +46,10 @@
     margin: 0 2rem;
 }
 
+.text {
+    padding-bottom: 2rem;
+}
+
 .bigger {
     width: 60%;
 }
@@ -76,10 +80,6 @@
         gap: 0rem;
         border: 1px solid lightgray;
         font-size: 1.2rem;
-    }
-
-    .text {
-        padding-bottom: 2rem;
     }
 
     .card {
