@@ -4,6 +4,7 @@
     padding-right: 2rem;
     padding-bottom: 1rem;
     text-align: justify;
+    align-items: center;
 }
 
 .row h3 {
@@ -12,13 +13,15 @@
 }
 
 .row > img {
-    margin: auto 2rem;
+    margin: 0rem 2rem;
+    height: 100px;
 }
 
 @media only screen and (max-width: 1024px) {
 
     .row > img {
         width: 90px;
+        height: 90px;
     }
 
     .row h3,
@@ -44,10 +47,11 @@
     .row {
         padding-right: 1.5rem;
     }
-    
+
     .row > img {
-        margin: auto 1.5rem;
+        margin: 0rem 1.5rem;
         width: 75px;
+        height: 75px;
     }
 
     .row h3,
