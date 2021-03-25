@@ -17,7 +17,7 @@ function Home() {
       <NavBar />
       <HomeHeroSection />
       <Sectors />
-      <ProjectBanner textContent={t('homePage:homePageBanners.genus', { count: -1 }, { returnObjects: true })} bgColor={"#605F62"} folderName={"genus-banner"} loop/>
+      <ProjectBanner textContent={t('homePage:homePageBanners.genus', { count: -1 }, { returnObjects: true })} bgColor={"#605F62"} folderName={"genus-banner"} loop autoPlay/>
       <ProjectBanner textContent={t('homePage:homePageBanners.zenithMonitor', { count: -1 }, { returnObjects: true })} bgColor={"#000000"} folderName={"monitor-banner"} />
       <HighlightsSection />
       <SupportersBanner textContent={t('homePage:homePageSupporters', { count: -1 }, { returnObjects: true })}/>
