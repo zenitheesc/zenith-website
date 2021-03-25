@@ -33,11 +33,21 @@
     font-size: 20px;
 }
 
+.dark {
+    color: #444444;
+}
+
+.dark::before {
+    background: #444444;
+}
+
 @media screen and (max-width: 768px) {
 
     .underlinedButton {
         font-size: 16px;
         height: 16px;
+        padding: 0rem !important;
+        padding-bottom: 2.5px !important;
     }
 
     .underlinedButton svg {

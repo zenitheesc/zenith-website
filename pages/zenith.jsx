@@ -42,6 +42,7 @@ function Zenith() {
                         <p>{card1.text[1]}</p>
                     </>
                 }
+                text={'right'}
             />
         </CardContainer>
 
@@ -59,6 +60,7 @@ function Zenith() {
                     </>
                 }
                 right={<img src="../images/Zenith/Card-2.webp" />}
+                text={'left'}
             />
 
             <Card
@@ -80,9 +82,10 @@ function Zenith() {
                     <>
                         <h1 className="-homepage-section-title">{card4.title}</h1>
                         {card4.text.map(a=><p>{boldParser(a)}</p>)}
-                        {card4.links.map(l=><UnderlinedButton link={l.url} label={l.text} />)}
+                        {card4.links.map(l=><UnderlinedButton link={l.url} label={l.text} dark/>)}
                     </>
                 }
+                text={'left'}
             />
         </CardContainer>
       <Footer />

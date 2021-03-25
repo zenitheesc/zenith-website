@@ -1,25 +1,70 @@
 .row {
     display: flex;
     flex-flow: row nowrap;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    text-align: justify;
+    align-items: center;
 }
 
-.row>img {
-    margin: auto 2rem;
+.row h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.row > img {
+    margin: 0rem 2rem;
+    height: 100px;
 }
 
 @media only screen and (max-width: 1024px) {
-    .row {
-        flex-flow: row wrap;
+
+    .row > img {
+        width: 90px;
+        height: 90px;
     }
-    .row>img {
-        margin: 0 auto;
-    }
+
     .row h3,
     .row p {
-        padding: 0.5rem 1rem;
+        padding: 0.3rem 1rem;
         text-align: justify;
-        font-size: 1.2rem;
         margin-top: 0;
         margin-bottom: 2px;
     }
+
+    .row h3 {
+        font-size: 1.4rem;
+    }
+
+    .row p {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .row {
+        padding-right: 1.5rem;
+    }
+
+    .row > img {
+        margin: 0rem 1.5rem;
+        width: 75px;
+        height: 75px;
+    }
+
+    .row h3,
+    .row p {
+        padding: 0.3rem 0rem;
+    }
+   
+    .row h3 {
+        font-size: 1.2rem;
+    }
+
+    .row p {
+        font-size: 1.0rem;
+    }
+
 }

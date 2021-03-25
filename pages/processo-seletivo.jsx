@@ -3,13 +3,14 @@ import useTranslation from 'next-translate/useTranslation';
 import NavBar from 'components/navbar-components/NavBar';
 import HeroSection from 'components/general/HeroSection';
 import Footer from 'components/Footer';
-import CardContainer from "../components/general/CardContainer";
+import CardContainer from "components/general/CardContainer";
 import FormWrapper from "components/general/FormWrapper"
-import Card from "../components/general/Card";
+import Card from "components/general/Card";
 import boldParser from "components/utils/boldParser";
+import styles from 'styles/ProcessoSeletivo.module.css';
 
 function mapTable(content,idx) {
-    return <p key={idx}><b>{content[0]}</b>: <span key={idx}>{content[1]}</span></p>;
+    return <p className={styles.cronogram} key={idx}><b>{content[0]}</b>: <span key={idx}>{content[1]}</span></p>;
 }
 
 function ProcessoSeletivo() {
@@ -36,18 +37,20 @@ function ProcessoSeletivo() {
 
                         </>
                     }
+                    text={'right'}
                 />
 
                 <Card
                     left={
                         <>
                             <h1>{TextContent.processoSeletivoCard2.title}</h1>
-
+                            <p>{boldParser(TextContent.processoSeletivoCard2.detail)}</p>
                             {TextContent.processoSeletivoCard2.text.map((a, idx) => mapTable(a,idx))}
 
                         </>
                     }
                     right={<img src="../images/ProcessoSeletivo/Card-2.webp" />}
+                    text={'left'}
                 />
                 <Card
                     left={<img src="../images/ProcessoSeletivo/Card-3.webp" />}
@@ -58,9 +61,10 @@ function ProcessoSeletivo() {
 
                         </>
                     }
+                    text={'right'}
                 />
+                <FormWrapper link={"https://docs.google.com/forms/d/e/1FAIpQLSdFoITXWmuJYgJPlvQFGBNkeOm84htc2GHxZpzSLIi1UEoB1g/viewform?embedded=true"} />
             </CardContainer>
-            <FormWrapper link={"https://docs.google.com/forms/d/e/1FAIpQLSdFoITXWmuJYgJPlvQFGBNkeOm84htc2GHxZpzSLIi1UEoB1g/viewform?embedded=true"} />
             <Footer />
         </>
     );

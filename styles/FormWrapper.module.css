@@ -1,7 +1,7 @@
 .formWrapper {
     background-color: #efefef;
+    padding-top: 0rem;
     width: 100%;
-    padding-bottom: 3em;
 }
 
 .formWrapper iframe {
@@ -12,10 +12,5 @@
     max-width: 1328px;
     background-color: white;
 	height: 60vh;
-}
-
-@media only screen and (max-width: 1024px) {
-    .formWrapper iframe  {
-        margin: 1rem 0.75rem;
-    }
+    margin: 1rem 0rem;
 }
