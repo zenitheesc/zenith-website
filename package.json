@@ -42,10 +42,10 @@
   "dependencies": {
     "hamburger-react": "^2.4.0",
     "next": "^10.0.9",
-    "next-translate": "^1.0.4",
-    "react": "^17.0.1",
+    "next-translate": "^1.0.5",
+    "react": "^17.0.2",
     "react-countup": "^4.3.3",
-    "react-dom": "^17.0.1",
+    "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-player": "^2.9.0",
     "react-responsive-carousel": "^3.2.15",
@@ -59,7 +59,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react": "^7.23.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.2.1"
   }
