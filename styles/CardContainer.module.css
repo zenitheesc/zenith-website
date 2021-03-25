@@ -2,11 +2,9 @@
     position: relative;
     display: flex;
     flex-flow: column;
-    padding: 2rem;
-    margin: 0 auto;
+    padding: 3rem 2rem;
     background-color: #efefef;
     z-index: -1;
-    gap: 2rem;
 }
 
 .card__background {
@@ -17,5 +15,6 @@
 @media only screen and (max-width: 1024px) {
     .card__container {
         width: 100%;
+        padding: 1rem 2rem;
     }
 }
