@@ -11,6 +11,7 @@
 .card {
     background-color: #f9f9f9;
     border-radius: inherit;
+    border: 1px solid #D7D7D7;
 }
 
 .card>h1 {
@@ -39,10 +40,9 @@
 
 .card a {
     color: #444;
-    border-bottom: 1px solid #444;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.4rem;
+    margin: 0 2rem;
 }
 
 .bigger {

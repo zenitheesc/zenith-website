@@ -1,6 +1,13 @@
 .row {
     display: flex;
     flex-flow: row nowrap;
+    padding-right: 2rem;
+    text-align: justify;
+}
+
+.row h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
 }
 
 .row>img {
