@@ -120,6 +120,10 @@
         margin: 0 1.5rem;
     }
 
+    .card > img {
+        max-height: 80vh;
+    }
+
     .text {
         padding-bottom: 1.5rem;
     }
