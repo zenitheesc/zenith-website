@@ -4,8 +4,8 @@ import NavBar from 'components/navbar-components/NavBar';
 import HeroSection from 'components/general/HeroSection';
 import Footer from 'components/Footer';
 import FormWrapper from "components/general/FormWrapper"
-import CardContainer from "../components/general/CardContainer";
-import Card from "../components/general/Card";
+import CardContainer from "components/general/CardContainer";
+import Card from "components/general/Card";
 import boldParser from "components/utils/boldParser";
 
 function mapStylish(content,idx){
@@ -35,46 +35,47 @@ function Kurumim() {
         title={title}
         subtitle={subtitle}
       />
-  
-            <CardContainer>
-                <Card
-                    lean="none"
-                    left={
-                        <>
-                            <h1 className="-homepage-section-title">{TextContent.kurumimCard1.title}</h1>
-                            {TextContent.kurumimCard1.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
-                        </>
-                    }
-                    right={
-                        <>
-                            <h1 className="-homepage-section-title">{TextContent.kurumimCard2.title}</h1>
-                            {TextContent.kurumimCard2.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
-                            {TextContent.kurumimCard2.stylish.map(mapStylish)}
-                        </>
-                    }
-                />
-                <img  src="../images/Kurumim/poster.webp"/>
-                <Card
-                    lean="none"
-                    left={
-                        <>
-                            <h1 className="-homepage-section-title">{TextContent.kurumimCard3.title}</h1>
-                            {TextContent.kurumimCard3.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
+        <CardContainer>
+            <Card
+                lean="none"
+                left={
+                    <>
+                        <h1 className="-homepage-section-title">{TextContent.kurumimCard1.title}</h1>
+                        {TextContent.kurumimCard1.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
+                    </>
+                }
+                right={
+                    <>
+                        <h1 className="-homepage-section-title">{TextContent.kurumimCard2.title}</h1>
+                        {TextContent.kurumimCard2.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
+                        {TextContent.kurumimCard2.stylish.map(mapStylish)}
+                    </>
+                }
+                text={'right'}
+            />
+            <img style={{ borderRadius: '0.75rem', width: '100%' }} src="../images/Kurumim/poster.webp"/>
+            <Card
+                lean="none"
+                left={
+                    <>
+                        <h1 className="-homepage-section-title">{TextContent.kurumimCard3.title}</h1>
+                        {TextContent.kurumimCard3.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
 
-                        </>
-                    }
-                    right={
-                        <>
-                            <h1 className="-homepage-section-title">{TextContent.kurumimCard4.title}</h1>
-                            {TextContent.kurumimCard4.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
+                    </>
+                }
+                right={
+                    <>
+                        <h1 className="-homepage-section-title">{TextContent.kurumimCard4.title}</h1>
+                        {TextContent.kurumimCard4.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
 
-                        </>
-                    }
-                />
-            </CardContainer>
-            <FormWrapper link={"https://docs.google.com/forms/d/e/1FAIpQLSdFoITXWmuJYgJPlvQFGBNkeOm84htc2GHxZpzSLIi1UEoB1g/viewform?embedded=true"} />
-            <Footer />
-        </>
+                    </>
+                }
+                text={'right'}
+            />
+            <FormWrapper className={'-section'} link={"https://docs.google.com/forms/d/e/1FAIpQLSdFoITXWmuJYgJPlvQFGBNkeOm84htc2GHxZpzSLIi1UEoB1g/viewform?embedded=true"} />
+        </CardContainer>
+        <Footer />
+    </>
     );
 }
 export function getServerSideProps() { return { props: {} }; }
