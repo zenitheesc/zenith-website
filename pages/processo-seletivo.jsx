@@ -3,13 +3,14 @@ import useTranslation from 'next-translate/useTranslation';
 import NavBar from 'components/navbar-components/NavBar';
 import HeroSection from 'components/general/HeroSection';
 import Footer from 'components/Footer';
-import CardContainer from "../components/general/CardContainer";
+import CardContainer from "components/general/CardContainer";
 import FormWrapper from "components/general/FormWrapper"
-import Card from "../components/general/Card";
+import Card from "components/general/Card";
 import boldParser from "components/utils/boldParser";
+import styles from 'styles/ProcessoSeletivo.module.css';
 
 function mapTable(content,idx) {
-    return <p key={idx}><b>{content[0]}</b>: <span key={idx}>{content[1]}</span></p>;
+    return <p className={styles.cronogram} key={idx}><b>{content[0]}</b>: <span key={idx}>{content[1]}</span></p>;
 }
 
 function ProcessoSeletivo() {
