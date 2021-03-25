@@ -48,16 +48,12 @@ body, html {
   
   .-standardContainer {
     width: 100%;
-    padding: 4em 2em;
+    padding: 2em;
     max-width: 1328px;
   }  
 
 	.-homepage-section-title {
 		font-size: 1.75rem;
 	}
-
-  .-standardContainer {
-    padding: 2em;
-  }
 
 }
