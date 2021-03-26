@@ -1,0 +1,139 @@
+[{
+        "symbol": "Autodesk",
+        "name": "Autodesk",
+        "backgroundColor": "#EE1B2D",
+        "textColor": "white"
+    },
+    {
+        "symbol": "C",
+        "name": "Abbott Laboratories",
+        "backgroundColor": "#0096D7",
+        "textColor": "white"
+    },
+    {
+        "symbol": "JS",
+        "name": "AbbVie Inc.",
+        "backgroundColor": "#00003A",
+        "textColor": "white"
+    },
+    {
+        "symbol": "linux",
+        "name": "ABIOMED Inc",
+        "backgroundColor": "#F0F3FA",
+        "textColor": "black"
+    },
+    {
+        "symbol": "LoRa",
+        "name": "Accenture plc",
+        "backgroundColor": "#A100FF",
+        "textColor": "white"
+    },
+    {
+        "symbol": "OpenCV",
+        "name": "Activision Blizzard",
+        "backgroundColor": "#000000",
+        "textColor": "white"
+    },
+    {
+        "symbol": "Python",
+        "name": "Adobe Inc.",
+        "backgroundColor": "#ED1C24",
+        "textColor": "white"
+    },
+    {
+        "symbol": "Raspberry Pi",
+        "name": "Advanced Micro Devices Inc",
+        "backgroundColor": "#000000",
+        "textColor": "white"
+    },
+    {
+        "symbol": "STM32CubeIDE",
+        "name": "Advance Auto Parts",
+        "backgroundColor": "#EB1B2A",
+        "textColor": "white"
+    },
+    {
+        "symbol": "STmicroelectronics",
+        "name": "AES Corp",
+        "backgroundColor": "#000000",
+        "textColor": "white"
+    },
+    {
+        "symbol": "Ansys Workbench",
+        "name": "AFLAC Inc",
+        "backgroundColor": "#00A7E1",
+        "textColor": "white"
+    },
+    {
+        "symbol": "Solid Edge",
+        "name": "Agilent Technologies Inc",
+        "backgroundColor": "#008FFE",
+        "textColor": "white"
+    },
+    {
+        "symbol": "Solidworks",
+        "name": "Air Products & Chemicals Inc",
+        "backgroundColor": "#009539",
+        "textColor": "white"
+    },
+    {
+        "symbol": "calendar",
+        "name": "Akamai Technologies Inc",
+        "backgroundColor": "#000000",
+        "textColor": "white"
+    },
+    {
+        "symbol": "discord",
+        "name": "Alaska Air Group Inc",
+        "backgroundColor": "#00426A",
+        "textColor": "white"
+    },
+    {
+        "symbol": "excel",
+        "name": "Albemarle Corp",
+        "backgroundColor": "#008676",
+        "textColor": "white"
+    },
+    {
+        "symbol": "facebook",
+        "name": "Alexion Pharmaceuticals",
+        "backgroundColor": "#002898",
+        "textColor": "white"
+    },
+    {
+        "symbol": "Google Drive",
+        "name": "Align Technology",
+        "backgroundColor": "#47433E",
+        "textColor": "white"
+    },
+    {
+        "symbol": "Instagram",
+        "name": "Allegion",
+        "backgroundColor": "#FF661E",
+        "textColor": "black"
+    },
+    {
+        "symbol": "LinkedIn",
+        "name": "Alliant Energy Corp",
+        "backgroundColor": "#0886C8",
+        "textColor": "white"
+    },
+    {
+        "symbol": "Slack",
+        "name": "Allstate Corp",
+        "backgroundColor": "#0076B8",
+        "textColor": "white"
+    },
+    {
+        "symbol": "Trello",
+        "name": "Alphabet Inc. (Class A)",
+        "backgroundColor": "#F0F3FA",
+        "textColor": "black"
+    },
+    {
+        "symbol": "word",
+        "name": "Alphabet Inc. (Class C)",
+        "backgroundColor": "#F0F3FA",
+        "textColor": "black"
+    }
+]

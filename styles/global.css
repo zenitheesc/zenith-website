@@ -1,76 +1,121 @@
-body, html {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-  font-family: -Roboto, apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  position: relative;
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: -Roboto, apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    position: relative;
 }
 
 
 /* Homepage standards */
 ::-webkit-scrollbar {
-  width: 0.3em;
-  height: 0.5em;
+    width: 0.3em;
+    height: 0.5em;
 }
 
 ::-webkit-scrollbar-track {
-  background:transparent;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+    background: #888;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(194, 23, 23);
+    background: rgb(194, 23, 23);
 
 }
 
 .-section {
-  justify-content: center;
-  position: relative;
-  padding: 0px;
-  display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0px;
+    display: flex;
 }
 
 .-standardContainer {
-  width: 100%;
-  padding: 4em;
-  max-width: 1328px;
+    width: 100%;
+    padding: 4em;
+    max-width: 1328px;
 }
 
 .-homepage-section-title {
-  font-weight: 550;
-	margin: 0px;
-	margin-bottom: 0.1em;
-	font-size: 3rem;
+    font-weight: 550;
+    margin: 0px;
+    margin-bottom: 0.1em;
+    font-size: 3rem;
 }
 
 .-homepage-section-subtitle {
-	font-weight: 300;
-	margin-top: 0.3em;
-	font-size: 1.125rem;
-}  
+    font-weight: 300;
+    margin-top: 0.3em;
+    font-size: 1.125rem;
+}
 
 @media screen and (max-width: 1024px) {
 
-  	.-homepage-section-title {
-		font-size: 2.5rem;
-	}
+    .-homepage-section-title {
+        font-size: 2.5rem;
+    }
 
 }
 
 @media screen and (max-width: 768px) {
-  
-  .-standardContainer {
+
+    .-standardContainer {
+        width: 100%;
+        padding: 4em 2em;
+        max-width: 1328px;
+    }
+
+    .-homepage-section-title {
+        font-size: 1.75rem;
+    }
+
+}
+
+
+.bubbleUI {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0) !important;
     width: 100%;
-    padding: 4em 2em;
-    max-width: 1328px;
-  }  
+    max-width: 1000px;
+    height: 500px;
+    border-radius: 50px;
+    background-color: white !important;
+    overflow: hidden !important;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    margin-bottom: 10px;
+}
 
-	.-homepage-section-title {
-		font-size: 1.75rem;
-	}
+.bubbleUI>* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
+
+.companyBubble {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.1s ease;
+}
+
+.companyBubble:hover {
+    opacity: 0.5;
 }
