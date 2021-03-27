@@ -11,9 +11,12 @@
 } 
 
 .projectBannerContainer > picture {
-    align-self: center;
     display: flex;
     justify-content: center;
+}
+
+.projectBannerContainer > picture > img {
+    width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -36,7 +39,7 @@
     .projectBannerContainer {
         padding: 4em 2em;
     }
-
+    
     .projectBannerMidia {
         width: 100%;
     }
