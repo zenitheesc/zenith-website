@@ -1,29 +1,39 @@
 import React, { useEffect, useState, useRef } from 'react';
 import BannersTextSec from './elements/BannersTextSec.jsx';
 import styles from 'styles/ProjectBanner.module.css';
+import ReactVisibilitySensor from 'react-visibility-sensor';
 
 function ProjectBanner(props) {
-    const { textContent, bgColor, folderName, loop } = props;
+	const { textContent, bgColor, folderName, loop, autoPlay } = props;
 
-    const sectionStyle = {
-        backgroundColor: bgColor,
-    }
+	const sectionStyle = {
+		backgroundColor: bgColor,
+	}
 
-    const videoElement = useRef(null);
-  	const [videoAutoPlayable, setVideoAutoPlayable] = useState(true);
+	const videoElement = useRef(null);
+	const [videoAutoPlayable, setVideoAutoPlayable] = useState(true);
+	const [isVisible, setIsVisible] = useState(false);
 
-  	const attemptPlay = () => {
-  	  videoElement && videoElement.current && videoElement.current.play()
-  	    .then(() => { setVideoAutoPlayable(true); })
-  	    .catch((err) => { setVideoAutoPlayable(false); });
-  	};
-	
-  	useEffect(() => {
-  	  attemptPlay();
-  	}, []);
-	
+	const attemptPlay = () => {
+		videoElement?.current?.play()
+			.then(() => { setVideoAutoPlayable(true); })
+			.catch((err) => { setVideoAutoPlayable(false); });
+	};
+
+	const playVideo = (isInViewPort) => {
+		if (isInViewPort && !autoPlay) {
+			setIsVisible(true);
+			videoElement.current.play()
+		}
+	};
+
+
+	useEffect(() => {
+		if(autoPlay) attemptPlay();
+	}, []);
+
 	return (
-		<section style={sectionStyle} className={`-section`}> 
+		<section style={sectionStyle} className={`-section`}>
 			<div className={`-standardContainer ${styles.projectBannerContainer}`}>
 				<ReactVisibilitySensor
 					active={!isVisible}
@@ -45,7 +55,7 @@ function ProjectBanner(props) {
 				<BannersTextSec textContent={textContent} />
 			</div>
 		</section>
-		
+
 	)
 }
 

@@ -8,7 +8,25 @@ body, html {
   scroll-behavior: smooth;
 }
 
+
 /* Homepage standards */
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background:transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(194, 23, 23);
+
+}
 
 .-section {
   justify-content: center;
@@ -49,16 +67,12 @@ body, html {
   
   .-standardContainer {
     width: 100%;
-    padding: 4em 2em;
+    padding: 2em;
     max-width: 1328px;
   }  
 
 	.-homepage-section-title {
 		font-size: 1.75rem;
 	}
-
-  .-standardContainer {
-    padding: 2em;
-  }
 
 }
