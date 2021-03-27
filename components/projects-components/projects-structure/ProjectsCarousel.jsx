@@ -9,7 +9,7 @@ function CarouselImage(props) {
 
   return (
     <div className={style.carouselImageDiv}>
-      <img className={style.carouselImage} src={`/images/Projetos/${path}`} />
+      <img className={style.carouselImage} src={`/images/Projetos/${path}`} alt = "Carousel image" />
     </div>
   )
 }
