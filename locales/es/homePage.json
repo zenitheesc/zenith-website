@@ -87,21 +87,21 @@
             ]
         }
     },
-    "homePageBanners": [
-        {
+    "homePageBanners": {
+        "genus": {
             "title": "Genus",
             "detail": "Hardware modularizado voltado para aplicações aeroespaciais",
             "link": "https://github.com/zenitheesc/Genus"
         },
-        {
+        "zenithMonitor": {
             "title": "Zenith Monitor",
             "detail": "Tecnologia para rastreamento de sondas aeroespaciais",
             "link": "https://github.com/zenitheesc/Zenith-Monitor"
         }
-    ],
+    },
     "homePageStatistics": {
-        "title": "Eficiência descrita em números",
-        "subtitle": "Desde 2014",
+        "title": "eficiência descrita em números",
+        "subtitle": "desde 2014",
         "statistics": [
             {
                 "number": 25,
@@ -127,6 +127,28 @@
     },
     "homePageSupporters": {
         "title": "nossos apoiadores",
-        "subtitle": "sem eles, nada disso seria possível"
+        "detail": "sem eles, nada disso seria possível",
+        "supporters": [ 
+            {   
+                "logo": "OZ Produtora",
+                "link": "https://www.ozprodutora.com.br/"
+            },
+            {
+                "logo": "USP",
+                "link": "https://www5.usp.br/"
+            },
+            {
+                "logo": "EESC-USP",
+                "link": "https://eesc.usp.br/"
+            },
+            {
+                "logo": "Vercel",
+                "link":"http://vercel.com/?utm_source=zenith-aerospace&utm_campaign=oss"
+            }
+        ]
+    },
+    "footer": {
+        "copyright": "© 2020  Zenith Aerospace",
+        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
     }
 }

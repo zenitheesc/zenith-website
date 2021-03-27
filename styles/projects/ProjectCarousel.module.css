@@ -1,0 +1,48 @@
+.projectsCarousel {
+    margin-left: 5em;
+}
+
+.projectsCarousel > div {
+    border-radius: 5px;
+    left: 15%;
+}
+
+.carouselImageDiv {
+    width: 100%;
+    height: 100%;
+}
+.carouselVideoDiv {
+    width: 100%;
+    height: 100%;
+}
+
+.carouselVideoDiv iframe {
+    margin: 0px !important;
+    width: 100% !important;
+}
+.carouselImage {
+    object-fit: cover;
+    height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .projectsCarousel {
+        margin: 0px;
+        margin-bottom: 2em;
+    }
+
+    .projectsCarousel > div {
+        width: 70vw !important;
+        left: 0px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .projectsCarousel > div {
+        width: 85vw !important;
+    }
+
+}

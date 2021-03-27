@@ -1,0 +1,146 @@
+.container {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5;
+
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    vertical-align: baseline;
+}
+
+.container ul {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.container p {
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+
+
+.timeline {
+    position: relative;
+    max-width: 95%;
+    list-style: none;
+}
+
+
+.timeline::before {
+    background-color: #666161;
+    content: '';
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 2px;
+    height: 100%;
+}
+
+
+.event {
+    position: relative;
+}
+
+.icon {
+    transform: rotate(45deg);
+    background-color: #666161;
+    outline: 10px solid darkgray;
+    display: block;
+    margin: 0.5em 0.5em 0.5em -0.5em;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 1em;
+    height: 1em;
+}
+
+.date {
+    color: white;
+    background-color: #666161;
+    box-shadow: inset 0 0 0 0em #ef795a;
+    display: inline-block;
+    margin-bottom: 1.2em;
+    padding: 0.25em 1em 0.2em 1em;
+}
+
+.date:hover {
+    cursor: pointer;
+}
+
+.container.gray .icon {
+    outline: 10px solid rgb(96, 95, 98);
+}
+
+.container.light .icon {
+    outline: 10px solid rgb(225, 225, 229);
+}
+
+.container.dark .icon {
+    outline: 10px solid black;
+}
+
+.container.dark .date,
+.container.dark .icon,
+.container.dark .timeline::before {
+    color: black;
+    background-color: #CCCCCC;
+}
+
+.container.gray .date,
+.container.gray .icon,
+.container.gray .timeline::before {
+    color: rgb(96, 95, 98);
+    background-color: #CCCCCC;
+}
+
+.container.light .date,
+.container.light .icon,
+.container.light .timeline::before {
+    color: rgb(225, 225, 229);
+    background-color: #666161;
+}
+
+
+
+
+
+.body {
+    padding: 2em 2em 0 2em;
+    position: relative;
+    top: -1.875em;
+    left: 2em;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .icon {
+        left:0.4em;
+    }
+
+    .timeline::before {
+        left:0.4em;
+    }
+
+    .body {
+        padding: 2em 1em 0 1em;
+        position: relative;
+        top: -1.875em;
+        left: 1em;
+
+    }
+
+}

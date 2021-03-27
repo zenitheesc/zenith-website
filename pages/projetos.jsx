@@ -5,7 +5,6 @@ import HeroSection from 'components/general/HeroSection';
 import ProjectTab from 'components/projects-components/ProjectTab';
 import Footer from 'components/Footer';
 
-
 function Projetos() {
   const { t } = useTranslation();
   const title = t('projetos:projetosHero.title');
