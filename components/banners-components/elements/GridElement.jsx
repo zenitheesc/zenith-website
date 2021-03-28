@@ -15,7 +15,7 @@ function GridElement(props) {
                         target="_blank"
                         rel="noopener noreferrer" 
                         key={index}>
-                            <img src={`/images/HomePage/banners/supporters-banner/${supporter.logo}.svg`} className={styles.supportersLogo}/>
+                            <img src={`/images/HomePage/banners/supporters-banner/${supporter.logo}.svg`} className={styles.supportersLogo} alt = "Suporter Logo"/>
                         </a>
                     );
 

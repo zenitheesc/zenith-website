@@ -40,15 +40,13 @@ function ProjectBanner(props) {
 					onChange={playVideo}>
 					{videoAutoPlayable ?
 						<video className={styles.projectBannerMidia} ref={videoElement} loop={loop} muted playsInline preload="auto">
-							<source src={`/images/HomePage/banners/${folderName}/video.mp4`} type="video/mp4" />
-							<source src={`/images/HomePage/banners/${folderName}/video.webm`} type="video/webm" />
-							{/* <source src={`/images/HomePage/banners/${folderName}/video.mv4`} type="video/mp4" /> */}
+							<source src={`/images/HomePage/banners/${folderName}/video.mp4`} type="video/mp4" alt="MP4 Video Project" />
+							<source src={`/images/HomePage/banners/${folderName}/video.webm`} type="video/webm"  alt ="webm Video Project"/>
 						</video>
 						:
 						<picture>
 							<source srcset={`/images/HomePage/banners/${folderName}/static.webp`} type="image/webp" />
-							{/* <img src={`/images/HomePage/banners/${folderName}/static.png`} type="image/png" className={styles.projectBannerMidia}/> */}
-							<img src={`/images/HomePage/banners/${folderName}/static.webp`} type="image/webp" className={styles.projectBannerMidia} />
+							<img src={`/images/HomePage/banners/${folderName}/static.webp`} type="image/webp" className={styles.projectBannerMidia} alt = "Static Project Image"  />
 						</picture>
 					}
 				</ReactVisibilitySensor>
