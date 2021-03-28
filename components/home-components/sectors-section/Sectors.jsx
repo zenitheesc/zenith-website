@@ -37,16 +37,29 @@ function Sectors() {
         </h3>
       </div>
       <div className={styles.sectorsButtons}>
-        <SectorsButtons label={textContent.embarcados} onClick={() => setCurrSector("embarcados")}>
+        <SectorsButtons
+          selected={currSector === "embarcados"}
+          label={textContent.embarcados}
+          onClick={() => setCurrSector("embarcados")}
+        >
           <Embarcados />
         </SectorsButtons>
-        <SectorsButtons label={textContent.estruturas} onClick={() => setCurrSector("estruturas")}>
+        <SectorsButtons
+          selected={currSector === "estruturas"}
+          label={textContent.estruturas}
+          onClick={() => setCurrSector("estruturas")}>
           <Estruturas />
         </SectorsButtons>
-        <SectorsButtons label={textContent.astrobiologia} onClick={() => setCurrSector("astrobiologia")}>
+        <SectorsButtons
+          selected={currSector === "astrobiologia"}
+          label={textContent.astrobiologia}
+          onClick={() => setCurrSector("astrobiologia")}>
           <Astrobiologia />
         </SectorsButtons>
-        <SectorsButtons label={textContent.gestao} onClick={() => setCurrSector("gestao")}>
+        <SectorsButtons
+          selected={currSector === "gestao"}
+          label={textContent.gestao}
+          onClick={() => setCurrSector("gestao")}>
           <Gestão />
         </SectorsButtons>
       </div>

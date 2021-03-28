@@ -14,7 +14,7 @@
 }
 
 .textSection > h3 {
-	color: #4B4B4B;
+	color: #530000;
 }     
 
 .sectorsButtons {
@@ -34,21 +34,24 @@
 .sectorsButton > button {
 	background-color: transparent;
 	border: none;
+	outline: none;
 	padding: 0;
 	width: 100%;
 }
 
-.sectorsButton > button:hover {
-	fill: #3c3b3d;
-}
-
-.sectorsButton > button:hover + h3{
-	color: #3c3b3d;
-}
 
 .sectorsButton > button > svg {
 	width: 10em;
+	fill: #a3a3a3;
 	height: auto;
+}
+
+.sectorsButton:hover > button > svg{
+	fill: #4B4B4B;
+}
+
+.sectorsButton:hover > h3{
+	color: #4B4B4B;
 }
 
 .sectorsButton > h3 {
@@ -56,6 +59,16 @@
 	font-size: 1.125rem;
 	margin-top: 0.5em;
 	letter-spacing: -0.03em;
+	color: #a3a3a3;
+}
+
+
+.sectorsButtonSelected > button > svg{
+	fill: #4B4B4B;
+}
+
+.sectorsButtonSelected > h3 {
+	color: #4B4B4B;
 }
 
 .st0 {
