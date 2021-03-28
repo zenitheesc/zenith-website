@@ -1,119 +1,118 @@
 {
     "projetosHero": {
-        "title": "Nossos projetos",
-        "subtitle": "Integração de diversos campos da Engenharia no setor aeroespacial"
+        "title": "Our Projects",
+        "subtitle": "Integrating multiple engineering fields in the aerospace sector."
     },
-    "picker": ["Sondas aeroespaciais", "CubeSats", "Software", "Hardware", "Educacional"],
+    "picker": ["Aerospace probes", "CubeSats", "Software", "Hardware", "Educational"],
+    "atualmente": "Present",
     "sondasAeroespaciais": {
-        "title": "O que são Sondas Aeroespaciais?",
+        "title": "What are aerospace probes?",
         "subtitle": [
-            "Nossas sondas aeroespaciais são balões, repletos de hélio, que levam experimentos astrobiológicos até a estratosfera, o que é essencial para que possamos responder a várias perguntas sobre a sobrevivência de seres vivos no espaço.", 
-            "Apesar de ser parte de um experimento científico, as sondas também são fascinantes sob o ponto de vista de um sistema embarcado. Nossas sondas são equipadas com microcontroladores, rádios, sensores e câmeras e, a cada missão, buscamos evoluir nossos sistemas para ter uma missão mais eficiente.",
-            "E, para sustentar todos os nossos experimentos e sistemas, construímos estruturas reaproveitáveis e duráveis, que nos possibilitam retornar várias vezes ao espaço."
+            "Our aerospace probes are balloons filled with helium, carrying astrobiological experiments to the stratosphere, which is crucial so we can have a better understanding about how organisms can survive in space.", 
+            "Although they are part of a greater scientific experiment, the probes themselves are also fascinating from the point of view of embedded systems development. Our probes are equiped with microcontrolers, radios, sensors and cameras; every mission we aim to improve our systems so we can make the next mission even more efficient.",
+            "And, to sustain all our experiments and systems, we build reliable and reusable structures, that let us go to space multiple times."
         ],
         "projects": {
             "garatea1": {
                 "title": "Garatéa-I",
                 "year": 2016,
                 "link": "",
-                "menus": ["OVERVIEW", "TECNOLOGIAS"],
-                "launchDate": ["LANÇAMENTO", "14/05/2016"],
-                "altitude": ["ALTITUDE ALCANÇADA", "27 km"],
-                "award": ["PREMIAÇÃO", "Melhor Experimento (GSBC 2016)"],
+                "menus": ["OVERVIEW", "TECHNOLOGIES"],
+                "launchDate": ["LAUNCH DATE", "14/05/2016"],
+                "altitude": ["MAX ALTITUDE", "27 km"],
+                "award": ["AWARDS", "Best Experiment (GSBC 2016)"],
                 "experiments": [
-                    "EXPERIMENTOS",
-                    "Testes de resistência em bactérias e fungos extraídos do deserto de Atacama (Chile)",
-                    "Análise dos padrões de degradação de biomoléculas"
+                    "Experiments",
+                    "Resistance testing with bacteria and fungi extracted from the Atacama desert (Chile)",
+                    "Biomolecules degradation pattern analysis"
                 ],
                 "embedded": [
-                    "Arquitetura de sistema baseada em */Mbed/*",
-                    "Utilização de */módulos comerciais/* no sensoriamento de parâmetros ambientais",
-                    "Utilização de sistema de */geolocalização/* próprio"
+                    "*/Mbed/* based system architecture",
+                    "Usage of */commercial modules/* in environmental parameter sensing",
+                    "Usage of our own */geolocation/* system"
                 ],
                 "structure": [
-                    "Acionamento de mecanismo de exposição dos experimentos",
-                    "Estrutura em */impressão 3D/* e */fibra de vidro/*",
-                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
+                    "Mechanism that can be activated to safely expose the experiments to the external environment",
+                    "Structure made with */3D printing/* and */glass fiber/*",
+                    "Parachute made with */Kevlar strings/* and */Nylon/*"
                 ]
             },
             "garatea2": {
                 "title": "Garatéa-II",
                 "year": 2016,
                 "link": "https://github.com/zenitheesc/garatea2",
-                "menus": ["OVERVIEW", "TECNOLOGIAS"],
-                "launchDate": ["LANÇAMENTO", "19/12/2016"],
-                "altitude": ["ALTITUDE ALCANÇADA", "25,5 km"],
+                "menus": ["OVERVIEW", "TECHNOLOGIES"],
+                "launchDate": ["LAUNCH DATE", "19/12/2016"],
+                "altitude": ["MAX ALTITUDE", "25,5 km"],
                 "experiments": [
-                    "EXPERIMENTOS",
-                    "Testes de resistência em bactérias e fungos extraídos do deserto de Atacama (Chile)",
-                    "Análise dos padrões de degradação de biomoléculas"
+                    "Experiments",
+                    "Resistance testing with bacteria and fungi extracted from the Atacama desert (Chile)",
+                    "Biomolecules degradation pattern analysis"
                 ],
                 "embedded": [
-                    "Arquitetura de sistema baseada em */Arduino/* ",
-                    "Utilização de */módulos comerciais/* no sensoriamento de parâmetros ambientais",
-                    "Utilização de sistema de */geolocalização/* próprio",
-                    "Utilização de */painéis solares no/* carregamento das baterias"
+                    "*/Arduino/* based system architecture",
+                    "Usage of */commercial modules/* in environmental parameter sensing",
+                    "Usage of our own */geolocation/* system",
+                    "Usage of */solar pannels/* for battery charging"
                 ],
                 "structure": [
-                    "Isolamento térmico feito em */Kapton/* e */Depron Aeronáutico/*",
-                    "Estrutura em */impressão 3D/* e */fibra de carbono/*",
-                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
+                    "Thermal insulation made with */Kapton/* and */Aeronautic Depron/*",
+                    "Structure made with */3D printing/* and */glass fiber/*",
+                    "Parachute made with */Kevlar strings/* and */Nylon/*"
                 ]
             },
             "garatea3": {
                 "title": "Garatéa-III",
                 "year": 2018,
                 "link": "https://github.com/zenitheesc/garatea3",
-                "menus": ["OVERVIEW", "TECNOLOGIAS"],
-                "launchDate": ["LANÇAMENTO", "22/04/2018"],
-                "altitude": ["ALTITUDE ALCANÇADA", "31,6 km"],
-                "award": ["PREMIAÇÃO", "3º Lugar em Melhor Design (GSBC 2018)"],
+                "menus": ["OVERVIEW", "TECHNOLOGIES"],
+                "launchDate": ["LAUNCH DATE", "22/04/2018"],
+                "altitude": ["MAX ALTITUDE", "31,6 km"],
+                "award": ["AWARDS", "3rd Place in Best Design (GSBC 2018)"],
                 "experiments": [
-                    "EXPERIMENTOS",
-                    "Co-cultura de leveduras fermentadoras e fungos extremófilos",
-                    "Cultura de protozoários em diferentes fases da vida e de sementes de alface"
+                    "EXPERIMENTS",
+                    "Co-culture of fermenting yeasts and extremophilic fungi",
+                    "Culture of protozoa at different stages of life and lettuce seeds "
                 ],
                 "embedded": [
-                    "Sistema de */aquisição de dados/*, desenvolvido pelo grupo, baseado em Atmega328p-pu",
-                    "Sistema de */imageamento/* baseado em */Linux/*",
-                    "Utilização de sistema de */geolocalização/* próprio",
-                    "Medição de níveis de radiação com */contador Geiger/*"
+                    "*/Data acquisition/* system developed by the group, based on Atmega328p-pu",
+                    "*/Imaging/* system based on */Linux/*",
+                    "Usage of our own */geolocation/* system",
+                    "Measuring of radiation levels with */Geiger Counter/*"
                 ],
                 "structure": [
-                    "Estrutura de */hipercubo/*, desenvolvida para */minimizar impactos/* e ser totalmente */reaproveitável/*",
-                    "Utilização de */fibra de carbono/* e */impressão 3D/*",
-                    "Isolamento térmico feito em Kapton e Depron Aeronáutico",
-                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
+                    "/*Hypercube/* structure, developed to */minimize impacts/*  and be completely */re-usable/*",
+                    "*/Carbon fiber/* and */3D printing/* usage",
+                    "Thermal insulation made with */Kapton/* and */Aeronautic Depron/*",
+                    "Parachute made with */Kevlar strings/* and */Nylon/*"
                 ]
             },
             "garatea5": {
                 "title": "Garatéa-V",
                 "year": 2018,
                 "link": "https://github.com/zenitheesc/Garatea-V",
-                "menus": ["OVERVIEW", "TECNOLOGIAS"],
-                "launchDate": ["LANÇAMENTO", "11/11/2018"],
-                "altitude": ["ALTITUDE ALCANÇADA", "?? km"],
+                "menus": ["OVERVIEW", "TECHNOLOGIES"],
+                "launchDate": ["LAUNCH DATE", "11/11/2018"],
+                "altitude": ["MAX ALTITUDE", "?? km"],
                 "experiments": [
-                    "EXPERIMENTOS",
-                    "??",
-                    "??"
+                    "EXPERIMENTS"
                 ],
                 "embedded": [
-                    "Sistema de */aquisição de dados/*, desenvolvido pelo grupo, baseado em Atmega2560",
-                    "Controle da altitude do vôo da sonda a partir do uso de válvula no balão",
-                    "Utilização de sistema de */geolocalização próprio/*"
+                    "*/Data acquisition/* system developed by the group, based on Atmega2560",
+                    "Probe's flight altitude control through a valve in the balloon",
+                    "Usage of our own */geolocation/* system"
                 ],
                 "structure": [
-                    "Mecanismo de */deploy do balão e do paraquedas/*",
-                    "Utilização de */impressão 3D/*",
-                    "Isolamento térmico feito em */Kapton/* e */Depron Aeronáutico/*",
-                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
+                    "Baloon and parachute */deploy mechanism/*",
+                    "*/3D printing/* usage",
+                    "Thermal insulation made with */Kapton/* and */Aeronautic Depron/*",
+                    "Parachute made with */Kevlar strings/* and */Nylon/*"
                 ]
             }
         }
     },
     "cubeSats": {
-        "title": "O que são CubeSats?",
+        "title": "What are CubeSats?",
         "subtitle": [
             "CubeSats são nanossatélites que possuem tamanho, formato e peso reduzidos e muito bem especificados. Nós começamos a desenvolver CubeSats em razão de seu custo reduzido de produção e de lançamento, já que é possível produzir CubeSats com eletrônicos acessíveis e há dispensers genéricos para lançamento de CubeSats.",
             "Um CubeSat é constituído, essencialmente, de alguns subsistemas: o */Estrutural/*, o */Sistema Energético/*, a */Telecomunicação/*, o */Controle e Determinação de Atitude/*, o */Sensoriamento/* e um módulo de missão. Atualmente, nós temos desenvolvido missões envolvendo */Visão Computacional/*.",
@@ -125,10 +124,10 @@
                 "subtitle": "Nosso primeiro passo na direção da construção de nanossatélites e, também, a conquista do primeiro lugar na Cubedesign.",
                 "year": 2018,
                 "link": "https://github.com/zenitheesc/ZenSat_1.0",
-                "menus": ["OVERVIEW", "DOCUMENTAÇÃO"],
-                "award": ["PREMIAÇÃO", "1º Lugar - Cubedesign (INPE, 2018)"],
+                "menus": ["OVERVIEW", "DOCUMENTATION"],
+                "award": ["AWARDS", "1º Lugar - Cubedesign (INPE, 2018)"],
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Linux",
                     "Atmel",
                     "LoRa",
@@ -149,10 +148,10 @@
                 "subtitle": "Nossa oportunidade de aprofundar e de profissionalizar o desenvolvimento de nanossatélites 2U por meio da optimização de sistemas e aplicação de redudância nos sistemas.",
                 "year": 2019,
                 "link": "https://github.com/zenitheesc/USPSat-v.1.0",
-                "menus": ["OVERVIEW", "DOCUMENTAÇÃO"],
-                "award": ["PREMIAÇÃO", "2º Lugar - Cubedesign (INPE, 2019)"],
+                "menus": ["OVERVIEW", "DOCUMENTATION"],
+                "award": ["AWARDS", "2º Lugar - Cubedesign (INPE, 2019)"],
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Linux",
                     "STmicroelectronics",
                     "LoRa",
@@ -185,7 +184,7 @@
                 "year": 2020,
                 "link": "https://github.com/zenitheesc/Report_Maker",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Python",
                     "LaTeX"
                 ],
@@ -202,7 +201,7 @@
                 "year": 2020,
                 "link": "https://github.com/zenitheesc/Zenith-Monitor",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Flutter",
                     "Firebase"
                 ],
@@ -220,7 +219,7 @@
                 "year": 2021,
                 "link": "https://github.com/zenitheesc/ZenView",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Electron",
                     "JS",
                     "NodeJS"
@@ -239,7 +238,7 @@
                 "year": 2021,
                 "link": "https://github.com/zenitheesc/zenith-website",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "NextJS",
                     "React",
                     "NodeJS"
@@ -268,7 +267,7 @@
                 "year": 2019,
                 "link": "https://github.com/zenitheesc/Analog-PID-Controller",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Atmel",
                     "TexasInstruments"
                 ],
@@ -285,7 +284,7 @@
                 "year": 2019,
                 "link": "https://github.com/zenitheesc/Zenith-Osciloscope",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "STmicroelectronics",
                     "Qt"
                 ],
@@ -303,7 +302,7 @@
                 "year": 2020,
                 "link": "https://github.com/zenitheesc/Genus",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "STmicroelectronics",
                     "PCI Express",
                     "Linux",
@@ -324,7 +323,7 @@
                 "year": 2021,
                 "link": "",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "STmicroelectronics",
                     "NXP"
                 ],
@@ -342,7 +341,7 @@
                 "year": 2021,
                 "link": "https://github.com/zenitheesc/GroundStation-Mobile",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Linux",
                     "STmicroelectronics",
                     "LoRa"
@@ -369,8 +368,8 @@
                 "title": "Garatéa-E 2017",
                 "subtitle": "A primeira vez que inspiramos alunos e professores a ir além da teoria e alcançar o espaço",
                 "year": 2017,
-                "launchDate": ["LANÇAMENTO", "24/06/2017"],
-                "altitude": ["ALTITUDE ALCANÇADA", "24 km"],
+                "launchDate": ["LAUNCH DATE", "24/06/2017"],
+                "altitude": ["MAX ALTITUDE", "24 km"],
                 "statistics": [{
                         "numero": 200,
                         "label": "ALUNOS PARTICIPANTES",
@@ -394,8 +393,8 @@
                 "title": "Garatéa-E 2018",
                 "subtitle": "Nossa segunda oportunidade para apaixonar alunos entre 7 e 18 anos pela ciência e pelo espaço",
                 "year": 2018,
-                "launchDate": ["LANÇAMENTO", "11/08/2018"],
-                "altitude": ["ALTITUDE ALCANÇADA", "23 km (Tracy)", "27,3 km (Valentina)"],
+                "launchDate": ["LAUNCH DATE", "11/08/2018"],
+                "altitude": ["MAX ALTITUDE", "23 km (Tracy)", "27,3 km (Valentina)"],
                 "statistics": [{
                         "numero": 900,
                         "label": "ALUNOS PARTICIPANTES",
@@ -419,8 +418,8 @@
                 "title": "Garatéa-E 2019",
                 "subtitle": "Unindo alunos, professores e cientistas de todas as regiões do país no Sábado Aeroespacial pela terceira vez",
                 "year": 2019,
-                "launchDate": ["LANÇAMENTO", "24/08/2019"],
-                "altitude": ["ALTITUDE ALCANÇADA", "23 km"],
+                "launchDate": ["LAUNCH DATE", "24/08/2019"],
+                "altitude": ["MAX ALTITUDE", "23 km"],
                 "statistics": [{
                         "numero": 600,
                         "label": "ALUNOS PARTICIPANTES",
