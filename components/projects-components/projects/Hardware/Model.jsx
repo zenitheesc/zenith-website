@@ -40,7 +40,7 @@ function Model (props) {
     return (  
         <div className={styles.projectContainer}>
             <ProjectData dark>
-                <ProjectTitle title={ title } gitLink={ link } />
+                <ProjectTitle title={ title } gitLink={ link } noSpace />
                 <ProjectSubtitle subtitle={ detail } /> 
                 <ProjectTable>
                     <TechnologiesRow title={tecnologies[0]} technologies={tecnologies.slice(1)} />
