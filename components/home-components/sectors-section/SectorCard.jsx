@@ -10,7 +10,7 @@ export default function SectorCard({ textContent, name}) {
 
   const getStockBubbles = () => {
     return techData.map((tech, i) => {
-      return <TechBubble {...tech} key={i} backGroundColor={(tech.sector === name) ? "red" : "green"} />;
+      return <TechBubble {...tech} key={i} backGroundColor={(tech.sector === name) ? "#4B4B4B" : "#a3a3a3"} />;
     });
   };
   const stockBubbles = getStockBubbles();
