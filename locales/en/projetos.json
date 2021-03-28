@@ -114,18 +114,18 @@
     "cubeSats": {
         "title": "What are CubeSats?",
         "subtitle": [
-            "CubeSats são nanossatélites que possuem tamanho, formato e peso reduzidos e muito bem especificados. Nós começamos a desenvolver CubeSats em razão de seu custo reduzido de produção e de lançamento, já que é possível produzir CubeSats com eletrônicos acessíveis e há dispensers genéricos para lançamento de CubeSats.",
-            "Um CubeSat é constituído, essencialmente, de alguns subsistemas: o */Estrutural/*, o */Sistema Energético/*, a */Telecomunicação/*, o */Controle e Determinação de Atitude/*, o */Sensoriamento/* e um módulo de missão. Atualmente, nós temos desenvolvido missões envolvendo */Visão Computacional/*.",
-            "Apesar de ainda não termos lançado um CubeSat, todo ano nós levamos nossos satélites para a */CubeDesign/*, competição desenvolvida pelo INPE, onde nossos CubeSats disputam o 1º lugar com outros satélites educacionais."    
+            "CubeSats are nanosatellites that have reduced size and weight with a very specific format. We started developing CubeSats thanks to their reduced cost of production and launching, given that it is possible to develop CubeSats with accessible electronicsand there are generic dispensers for CubeSat launching.",
+            "A CubeSat has, generally speaking, the following subsystems: the */Structural/*, */Energetic/*, */Telecommunications/*, */Control and Attitude Determination/* and */Sensing/* subsystems and a mission module. At the moment, we've been developing missions related to */Computer Vision/*.",
+            "Although we've never launched a CubeSat, every year we bring our satellites to */CubeDesign/*, a competition hosted by INPE, where our CubeSats compete for the 1st place along with other educational satellites."    
         ],
         "projects": {
             "zenSat": {
                 "title": "ZenSat",
-                "subtitle": "Nosso primeiro passo na direção da construção de nanossatélites e, também, a conquista do primeiro lugar na Cubedesign.",
+                "subtitle": "Our first step towards nanosatellite development and, also, the 1st place in */CubeDesign/*.",
                 "year": 2018,
                 "link": "https://github.com/zenitheesc/ZenSat_1.0",
                 "menus": ["OVERVIEW", "DOCUMENTATION"],
-                "award": ["AWARDS", "1º Lugar - Cubedesign (INPE, 2018)"],
+                "award": ["AWARDS", "1st Place - Cubedesign (INPE, 2018)"],
                 "tecnologies": [
                     "TECHNOLOGIES",
                     "Linux",
@@ -134,22 +134,22 @@
                     "TexasInstruments"
                 ],
                 "embedded": [
-                    "Processamento central do sistema baseado em */Linux/*",
-                    "Implementação do controle de atitude em */1 eixo/*",
-                    "Telemetria bidirecional implementada em */LoRa/*",
-                    "Determinação de Atitude implementada via */visão computacional/*"
+                    "System central processing based in */Linux/*",
+                    "Implementation of 1-axis Attitude Control",
+                    "Bidirectional telemetry with */LoRa/*",
+                    "Attitude determination implemented through */Computer Vision/*"
                 ],
                 "structure": [
-                    "O ZenSat é um satélite de */dimensões 2U/* com estrutura de */liga de Alumínio 7075-T6/*, sendo fabricada por meio de */usinagem CNC/* e de */impressão 3D/*, capaz de suportar uma vibração senoidal de 0-100 Hz."
+                    "ZenSat is a */2U Satellite/* with its structure made with */7075iT6 alluminum alloy/* produced with */CNC machining/* and */3D printing/*, being able to support senoidal vibrations from 0-100Hz."
                 ]
             },
             "uspSat": {
                 "title": "USPSat",
-                "subtitle": "Nossa oportunidade de aprofundar e de profissionalizar o desenvolvimento de nanossatélites 2U por meio da optimização de sistemas e aplicação de redudância nos sistemas.",
+                "subtitle": "Our opportunity to learn more and adopt a more professional approach, developing a 2U nanosatellite with optimizations made to the system and the implementation of redundancies.",
                 "year": 2019,
                 "link": "https://github.com/zenitheesc/USPSat-v.1.0",
                 "menus": ["OVERVIEW", "DOCUMENTATION"],
-                "award": ["AWARDS", "2º Lugar - Cubedesign (INPE, 2019)"],
+                "award": ["AWARDS", "2nd Place - Cubedesign (INPE, 2019)"],
                 "tecnologies": [
                     "TECHNOLOGIES",
                     "Linux",
@@ -158,15 +158,15 @@
                     "TexasInstruments"
                 ],
                 "embedded": [
-                    "Arquitetura de sistemas */distribuída/*, com */redundância/* entre subsistemas",
-                    "Telemetria bidirecional implementada em */LoRa/*",
-                    "*/Imageamento/* e */determinação de atitude/*, em */1 eixo/*, baseados em Linux",
-                    "*/Controle térmico ativo/* e */gerenciamento do sistema de energia/*"
+                    "*/Distributed/* system architecture, with */redundancy/* between subsystems",
+                    "Bidirectional telemetry with */LoRa/*",
+                    "*/Imaging/* and */Attitude determination*/ in 1-axis, Linux based",
+                    "*/Active thermal control/* and */energy system management/*"
                 ],
                 "structure": [
-                    "Estrutura de */dimensões 2U/* de */liga de Alumínio 7075-T6/* e anodizada na cor preta",
-                    "Uso de chapas de */fibra de carbono/* para fixar os componentes",
-                    "Mecanismo de */deploy da antena/* na extremidades das placas extremantes."
+                    "*/2U dimension/ structure, made of */7075-T6 alluminum alloy/*, anodized in black",
+                    "Usage of */carbon fiber/* plates to keep the components in place",
+                    "*/Antenna deploy/* mechanism at the ends of the extreme plates"
                 ]
             }
         }
