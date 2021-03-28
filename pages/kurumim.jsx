@@ -53,7 +53,7 @@ function Kurumim() {
                 }
                 text={'right'}
             />
-            <img style={{ borderRadius: '0.75rem', width: '100%', margin: '1rem 0rem' }} src="../images/Kurumim/poster.webp"/>
+            <img style={{ borderRadius: '0.75rem', width: '100%', margin: '1rem 0rem' }} src="../images/Kurumim/poster.webp" alt = "Kurumin Poster"/>
             <Card
                 lean="none"
                 left={

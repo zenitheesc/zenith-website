@@ -22,6 +22,7 @@ export default function Educacional(props) {
   ];
 
   const garateaE2018paths = [
+    'Educacional/garateaE2018/photo8.webp',
     'Educacional/garateaE2018/photo1.webp',
     'Educacional/garateaE2018/photo2.webp',
     'Educacional/garateaE2018/photo3.webp',
@@ -29,7 +30,6 @@ export default function Educacional(props) {
     'Educacional/garateaE2018/photo5.webp',
     'Educacional/garateaE2018/photo6.webp',
     'Educacional/garateaE2018/photo7.webp',
-    'Educacional/garateaE2018/photo8.webp',
     'https://www.youtube.com/watch?v=Lap1VWlx7WI',
   ];
 

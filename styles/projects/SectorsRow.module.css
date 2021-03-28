@@ -3,7 +3,10 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
+}
 
+.SectorRow:last-child {
+    padding-top: 1em;
 }
 
 .SectorRowContent {
@@ -11,11 +14,11 @@
 	flex-direction: column;
 }
 
-.SectorRowContent>span {
+.SectorRowContent > span {
     text-align: left;
     font-weight: 400;
 	font-size: 16px ;
-	padding: 0.3em;
+	padding: 0.25em;
 }
 
 .SectorRowContent span {
@@ -24,8 +27,7 @@
 	font-size: 16px ;
 }
 
-
-.SectorRow>div>svg {
+.SectorRow > div > svg {
     padding: 1em;
     width: 35px;
     height: 35px;

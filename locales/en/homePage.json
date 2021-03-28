@@ -4,24 +4,25 @@
         "subtitle": "Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a oportunidade de chegar ao espaço"
     },
     "homePageDepartaments": {
-        "title": "construindo tecnologia aeroespacial em todos os setores",
-        "subtitle": "construímos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
+        "title": "Construindo tecnologia aeroespacial em todos os setores",
+        "subtitle": "Construímos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
         "embarcados": {
             "title": "Embarcados",
             "detail": "Esse departamento pesquisa e desenvolve tecnologias em sistemas embarcados voltada para aplicações aeroespaciais.",
             "core": "NÚCLEOS",
+            "technologies": ["C","JavaScript","OpenCv","STM","AutoDesk","LoRa","Linux","Python","Raspberry","CubeIDE"],
             "cores": [
                 {
                     "title": "Hardware: ",
-                    "detail": "desenvolvem placas de circuito impresso para diversas aplicações aeroespaciais e realizam a manufatura das mesmas."
+                    "detail": "Desenvolvem placas de circuito impresso para diversas aplicações aeroespaciais e realizam a manufatura das mesmas."
                 },
                 {
                     "title": "Baixo Nível: ",
-                    "detail": "programam os microcontroladores envolvidos nos diversos projetos embarcados."
+                    "detail": "Programam os microcontroladores envolvidos nos diversos projetos embarcados."
                 },
                 {
                     "title": "Alto Nível: ",
-                    "detail": "programam aplicações web, mobile e desktop que auxiliam no sucesso das missões."
+                    "detail": "Programam aplicações web, mobile e desktop que auxiliam no sucesso das missões."
                 }
             ]
         },
@@ -29,18 +30,19 @@
             "title": "Estruturas",
             "detail": "Esse departamento realiza o desenvolvimento de modelos 3D de Sondas e CubeSats e realiza a manufatura desses. Além disso, atua projetando suportes para sistemas embarcados.",
             "core": "NÚCLEOS",
+            "technologies": ["Solid Works","Solid Edge","ANSYS"],
             "cores": [
                 {
                     "title": "Desenvolvimento da Estrutura: ",
-                    "detail": "desenvolvem o modelo 3D do projeto CAD da estrutura."
+                    "detail": "Desenvolvem o modelo 3D do projeto CAD da estrutura."
                 },
                 {
                     "title": "Atenuação de Vibração: ",
-                    "detail": "realizam teste e simulações para assegurar que a estrutura modelada suportará a vibração."
+                    "detail": "Realizam teste e simulações para assegurar que a estrutura modelada suportará a vibração."
                 },
                 {
                     "title": "Isolamento Térmico: ",
-                    "detail": "desenvolvem todo o modelamento térmico da estrutura, assegurando sua temperatura de trabalho."
+                    "detail": "Desenvolvem todo o modelamento térmico da estrutura, assegurando sua temperatura de trabalho."
                 }
             ]
         },
@@ -48,18 +50,19 @@
             "title": "Astrobiologia",
             "detail": "Esse departamento desenvolve experimentos biológicos a fim de expô-los a condições ambientais semelhantes às espaciais.",
             "core": "NÚCLEOS",
+            "technologies": ["TODO"],
             "cores": [
                 {
                     "title": "Suporte ao Projeto Kurumim: ",
-                    "detail": "selecionam e manipulam os experimentos educacionais do projeto Kurumim que serão embarcados em sondas estratosféricas."
+                    "detail": "Selecionam e manipulam os experimentos educacionais do projeto Kurumim que serão embarcados em sondas estratosféricas."
                 },
                 {
                     "title": "Científico: ",
-                    "detail": "produzem experimentos científicos que conduzem a publicação de artigos científicos."
+                    "detail": "Produzem experimentos científicos que conduzem a publicação de artigos científicos."
                 },
                 {
                     "title": "Parcerias: ",
-                    "detail": "fornecem o suporte técnico e operacional necessário para que pesquisadores interessados possam embarcar experimentos em veículos produzidos pelo Zenith."
+                    "detail": "Fornecem o suporte técnico e operacional necessário para que pesquisadores interessados possam embarcar experimentos em veículos produzidos pelo Zenith."
                 }
             ]
         },
@@ -67,22 +70,39 @@
             "title": "Gestão",
             "detail": "Esse departamento é responsável pela organização e administração do grupo.",
             "core": "NÚCLEOS",
+            "technologies": ["Slack","Trello","Facebook","Discord","Word","Excel","Instagram", "LinkedIn","Google Drive","Excel","Google Calendar"],
             "cores": [
                 {
                     "title": "Financeiro: ",
-                    "detail": "realizam o planejamento orçamentário, o controle de gastos e a busca e manutenção de patrocínios."
+                    "detail": "Realizam o planejamento orçamentário, o controle de gastos e a busca e manutenção de patrocínios."
                 },
                 {
                     "title": "Marketing: ",
-                    "detail": "atuam nas redes sociais do grupo, elaborando estratégias para atrair novas parcerias e divulgar o grupo."
+                    "detail": "Atuam nas redes sociais do grupo, elaborando estratégias para atrair novas parcerias e divulgar o grupo."
                 },
                 {
                     "title": "Recursos Humanos: ",
-                    "detail": "acompanham os membros do grupo, analizando o seu desempenho e satisfação."
+                    "detail": "Acompanham os membros do grupo, analizando o seu desempenho e satisfação."
                 },
                 {
                     "title":"Eventos: ",
-                    "detail": "promovem a interação do grupo com a sociedade através de eventos educacionais, como o Sábado Aeroespacial."
+                    "detail": "Promovem a interação do grupo com a sociedade através de eventos educacionais, como o Sábado Aeroespacial."
+                }
+            ]
+        },
+        "astronautica": {
+            "title": "Astronáutica",
+            "detail": "alsçflka asdfjkças aksdjfakjsdç akjsdfkjaç ajskdjfçak kaskdfjç kjaçskdjfçakjsd kjçaksdjfçak",
+            "core": "NÚCLEOS",
+            "technologies": [],
+            "cores": [
+                {
+                    "title": "asdfasd: ",
+                    "detail": "Desenvolvem placas de circuito impresso para diversas aplicações aeroespaciais e realizam a manufatura das mesmas."
+                },
+                {
+                    "title": "asfasd asfasd: ",
+                    "detail": "Programam os microcontroladores envolvidos nos diversos projetos embarcados."
                 }
             ]
         }
@@ -100,7 +120,7 @@
         }
     },
     "homePageStatistics": {
-        "title": "eficiência descrita em números",
+        "title": "Eficiência descrita em números",
         "subtitle": "desde 2014",
         "statistics": [
             {
@@ -121,13 +141,17 @@
             },
             {
                 "number": 7,
-                "description": "REPORTAGEM NA MÍDIA"
+                "description": "REPORTAGENS NA MÍDIA"
+            },
+            {
+                "number": 12765,
+                "description": "HORAS NA SALINHA"
             }
         ]
     },
     "homePageSupporters": {
-        "title": "nossos apoiadores",
-        "detail": "sem eles, nada disso seria possível",
+        "title": "Nossos apoiadores",
+        "detail": "Sem eles, nada disso seria possível",
         "supporters": [ 
             {   
                 "logo": "OZ Produtora",

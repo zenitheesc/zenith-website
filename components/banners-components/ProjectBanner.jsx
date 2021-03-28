@@ -48,7 +48,7 @@ function ProjectBanner(props) {
 						<picture className={styles.projectBannerMidia}>
 							<source srcset={`/images/HomePage/banners/${folderName}/static.png`} type="image/png" />
 							<source srcset={`/images/HomePage/banners/${folderName}/static.webp`} type="image/webp" />
-							<img src={`/images/HomePage/banners/${folderName}/static.webp`} type="image/webp" />
+							<img src={`/images/HomePage/banners/${folderName}/static.webp`} type="image/webp" className={styles.projectBannerMidia} alt = "Static Project Image"  />
 						</picture>
 					}
 				</ReactVisibilitySensor>

@@ -9,6 +9,10 @@
     margin: 0px;
 }
 
+.noSpace {
+    margin-bottom: 0em !important;
+}
+
 .projectTitle > a {
     margin: 0px;
 	margin-left: 1em;
