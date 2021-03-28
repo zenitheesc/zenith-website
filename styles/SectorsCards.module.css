@@ -47,6 +47,40 @@
 	font-size: 18px;
 }
 
+
+
+.bubbleUI {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0) !important;
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    border-radius: 50px;
+    background-color: white !important;
+    overflow: hidden !important;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.bubbleUI>* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.bubbleUI img {
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+
 @media screen and (max-width: 1024px) {
 
 	.container {
