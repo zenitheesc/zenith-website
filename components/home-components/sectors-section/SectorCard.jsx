@@ -1,33 +1,33 @@
 import React from 'react';
 import style from 'styles/SectorsCards.module.css'
 import BubbleUI from "./TechBubble/BubblueElement";
-import companyData from "./TechBubble/companies.json";
-import CompanyBubble from "./TechBubble/TechBubble";
+import techData from "./TechBubble/technologies.json";
+import TechBubble from "./TechBubble/TechBubble";
 
-export default function SectorCard({ textContent }) {
+export default function SectorCard({ textContent, name}) {
+
   const { cores } = textContent;
-  const { technologies } = textContent;
 
   const getStockBubbles = () => {
-    return companyData.slice(0, 20).map((company, i) => {
-      return <CompanyBubble {...company} key={i} />;
+    return techData.map((tech, i) => {
+      return <TechBubble {...tech} key={i} backGroundColor={(tech.sector === name) ? "red" : "green"} />;
     });
   };
   const stockBubbles = getStockBubbles();
 
   const options = {
-    size: 180,
-    minSize: 20,
-    gutter: 8,
+    size: 240,
+    minsize: 30,
+    gutter: 20,
     provideProps: true,
     numCols: 6,
-    fringeWidth: 160,
-    yRadius: 130,
-    xRadius: 220,
+    fringeWidth: 260,
+    yRadius: 100,
+    xRadius: 100,
     cornerRadius: 50,
     showGuides: false,
     compact: true,
-    gravitation: 5,
+    gravitation: 4,
   };
 
   return (
@@ -52,9 +52,9 @@ export default function SectorCard({ textContent }) {
 
       </div>
       <div className={style.cloud}>
-      <BubbleUI className="bubbleUI" options={options}>
-        {stockBubbles}
-      </BubbleUI>
+        <BubbleUI className={style.bubbleUI} options={options}>
+          {stockBubbles}
+        </BubbleUI>
       </div>
     </div>
   );

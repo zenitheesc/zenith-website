@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react';
-import styles from "styles/TechBubble.module.css";
+import styles from "styles/BubbleElement.module.css";
 
 const defaultOptions = {
 	size: 200,
-	minSize: 20,
+	minsize: 20,
 	gutter: 16,
 	provideProps: false,
 	numCols: 6,
@@ -22,7 +22,7 @@ export default function BubbleElement(props) {
 	Object.assign(options, defaultOptions);
 	Object.assign(options, props.options);
 	options.numCols = Math.min(options.numCols, props.children.length);
-	const minProportion = options.minSize / options.size;
+	const minProportion = options.minsize / options.size;
 	const verticalPadding = `calc(50% - ${options.yRadius + options.size / 2 - options.cornerRadius * (1.414 - 1) / 1.414}px)`;
 	const horizontalPadding = `calc(50% - ${options.xRadius + options.size / 2 - options.cornerRadius * (1.414 - 1) / 1.414}px)`;
 	const scrollable = useRef(null);
@@ -74,7 +74,7 @@ export default function BubbleElement(props) {
 		const dx = xOffset - scrollLeft;
 		const distance = Math.sqrt(dx * dx + dy * dy);
 		let out = {
-			bubbleSize: 1,
+			bubblesize: 1,
 			translateX: 0,
 			translateY: 0,
 			distance: distance
@@ -110,8 +110,8 @@ export default function BubbleElement(props) {
 			}
 		}
 
-		out.bubbleSize = interpolate(0, options.fringeWidth, Math.min(distanceFromEdge, options.fringeWidth), 1, minProportion);
-		const translationMag = options.compact ? (options.size - options.minSize) / 2 : 0;
+		out.bubblesize = interpolate(0, options.fringeWidth, Math.min(distanceFromEdge, options.fringeWidth), 1, minProportion);
+		const translationMag = options.compact ? (options.size - options.minsize) / 2 : 0;
 		const interpolatedTranslationMag = interpolate(0, options.fringeWidth, distanceFromEdge, 0, translationMag);
 
 		if (distanceFromEdge > 0 && distanceFromEdge <= options.fringeWidth) {
@@ -190,7 +190,7 @@ export default function BubbleElement(props) {
 			}
 		}, row.map((comp, j) => {
 			const {
-				bubbleSize,
+				bubblesize,
 				translateX,
 				translateY,
 				distance
@@ -203,13 +203,13 @@ export default function BubbleElement(props) {
 					height: options.size,
 					marginRight: options.gutter / 2,
 					marginLeft: options.gutter / 2,
-					transform: `translateX(${translateX}px) translateY(${translateY}px) scale(${bubbleSize})`
+					transform: `translateX(${translateX}px) translateY(${translateY}px) scale(${bubblesize})`
 				}
 			}, options.provideProps ? React.cloneElement(comp, {
-				bubbleSize: bubbleSize * options.size,
-				distanceToCenter: distance,
-				maxSize: options.size,
-				minSize: options.minSize
+				bubblesize: bubblesize * options.size,
+				distancetocenter: distance,
+				maxsize: options.size,
+				minsize: options.minsize
 			}) : comp);
 		}));
 	})), /*#__PURE__*/React.createElement("div", {

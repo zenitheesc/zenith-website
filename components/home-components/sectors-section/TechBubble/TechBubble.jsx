@@ -1,13 +1,17 @@
 import React from "react";
+import style from 'styles/TechBubble.module.css'
 
-export default function CompanyBubble(props) {
+
+export default function TechBubble(props) {
+
+  const {backGroundColor} = props
 
   return (
     <div
       style={{
-        backgroundColor: props.backgroundColor + "d0",
+        backgroundColor: backGroundColor,
       }}
-      className={"companyBubble"}
+      className={style.techBubble}
     >
       {true ? (
         <div
@@ -17,31 +21,20 @@ export default function CompanyBubble(props) {
             alignItems: "center",
             flexDirection: "column",
             transition: "opacity 0.1s ease",
-            opacity: props.bubbleSize > 50 ? 1 : 0,
+            opacity: props.bubblesize > 50 ? 1 : 0,
             pointerEvents: "none",
           }}
         >
-          <img
-            src={`images/companyLogos/${props.symbol}.svg`}
+          {<img
+            src={`/images/technologies/${props.symbol}.svg`}
             alt=""
             style={{
-              width: 50,
-              borderRadius: `50%`,
-              marginBottom: 10,
+              maxHeight: "70%",
+              maxWidth: "70%",
+              fill: "red",
+              height: "auto"
             }}
-          ></img>
-          <p
-            style={{
-              color: props.textColor,
-              fontSize: 14,
-              marginBottom: 6,
-              fontWeight: 1000,
-              maxWidth: 150,
-              textAlign: "center",
-            }}
-          >
-            {props.name}
-          </p>
+          />}
         </div>
       ) : null}
     </div>
