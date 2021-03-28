@@ -29,7 +29,7 @@ function ProcessoSeletivo() {
             />
             <CardContainer>
                 <Card
-                    left={<img src="../images/ProcessoSeletivo/Card-1.webp" />}
+                    left={<img src="../images/ProcessoSeletivo/Card-1.webp" alt = "Processo Seletivo Card"/>}
                     right={
                         <>
                             <h1>{TextContent.processoSeletivoCard1.title}</h1>
@@ -49,11 +49,11 @@ function ProcessoSeletivo() {
 
                         </>
                     }
-                    right={<img src="../images/ProcessoSeletivo/Card-2.webp" />}
+                    right={<img src="../images/ProcessoSeletivo/Card-2.webp" alt = "Processo Seletivo Card"/>}
                     text={'left'}
                 />
                 <Card
-                    left={<img src="../images/ProcessoSeletivo/Card-3.webp" />}
+                    left={<img src="../images/ProcessoSeletivo/Card-3.webp" alt = "Processo Seletivo Card"/>}
                     right={
                         <>
                             <h1>{TextContent.processoSeletivoCard3.title}</h1>

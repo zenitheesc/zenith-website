@@ -22,7 +22,7 @@ function Model (props) {
     return (  
         <div className={styles.projectContainer}>
             <ProjectData >
-                <ProjectTitle title={ title }/>
+                <ProjectTitle title={ title } noSpace/>
 				<ProjectSubtitle subtitle={ subtitle } />
                 <ProjectTable>
                     <ProjectDataRow label={launchDate[0]} value={launchDate[1]} />

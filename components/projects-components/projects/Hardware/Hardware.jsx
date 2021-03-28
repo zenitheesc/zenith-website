@@ -11,21 +11,42 @@ export default function Hardware(props) {
   const { varella } = props.textContent.projects;
   const { groundStation } = props.textContent.projects;
 
+  const groundStationPaths = [
+    'Hardware/varella-e1e1e1.mov',
+  ];
+
+  const varellaPaths = [
+    'Hardware/varella-e1e1e1.mov',
+  ];
+
+  const genusPaths = [
+    'Hardware/varella-e1e1e1.mov',
+
+  ];
+
+  const controladorPIDPaths = [
+    'Hardware/varella-e1e1e1.mov',
+  ];
+
+  const osciloscopioPaths = [
+    'Hardware/varella-e1e1e1.mov',
+  ];
+
   return (
     <section className={`-section ${styles.projectsSection}`} style={{ backgroundColor: '#E1E1E5' }}>
       <ProjectHeader textContent ={ props.textContent } />
       <Timeline theme="light">
 
         <Event interval={2021}>
-          <Model textContent={groundStation} />
-          <Model textContent={varella} />
+          <Model paths={groundStationPaths} textContent={groundStation} />
+          <Model paths={varellaPaths} textContent={varella} />
         </Event>
         <Event interval={2020}>
-          <Model textContent={genus} />
+          <Model paths={genusPaths} textContent={genus} />
         </Event>
         <Event interval={2019}>
-          <Model textContent={controladorPID} />
-          <Model textContent={osciloscopio} />
+          <Model paths={controladorPIDPaths} textContent={controladorPID} />
+          <Model paths={osciloscopioPaths} textContent={osciloscopio} />
         </Event>
         <Event interval={2018} />
 

@@ -33,7 +33,7 @@ function Zenith() {
       />
         <CardContainer>
             <Card
-                left={<img src="../images/Zenith/Card-1.webp"/>}
+                left={<img src="../images/Zenith/Card-1.webp" alt = "Students working"/>}
                 right={
                     <>
                         <h1 className="-homepage-section-title">{card1.title}</h1>
@@ -59,13 +59,13 @@ function Zenith() {
                         {card2.text.map((a,idx)=><p key={idx}>{boldParser(a)}</p>)}
                     </>
                 }
-                right={<img src="../images/Zenith/Card-2.webp" />}
+                right={<img src="../images/Zenith/Card-2.webp" alt = "Image from space"/>}
                 text={'left'}
             />
 
             <Card
                 lean="left"
-                left={<img src="../images/Zenith/Card-3.webp" />}
+                left={<img src="../images/Zenith/Card-3.webp" alt = "Board stack"/>}
                 right={
                     <>
                         <h1 className="-homepage-section-title">{card3.title}</h1>
@@ -77,7 +77,7 @@ function Zenith() {
 
             <Card
                 lean="left"
-                right={<img src="../images/Zenith/Card-4.webp" />}
+                right={<img src="../images/Zenith/Card-4.webp" alt = "Joãozinho"/>}
                 left={
                     <>
                         <h1 className="-homepage-section-title">{card4.title}</h1>
