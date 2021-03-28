@@ -12,7 +12,7 @@ export default function Software(props) {
       <ProjectHeader textContent ={ props.textContent } h1Color={ '#CCCCCC' } pColor={ '#CCCCCC' } />
       <Timeline theme="dark">
         <Event interval={2021}>
-          <Model textContent={ zenView } path={'Software/ReportMaker.webp'} />
+          <Model textContent={ zenView } path={'Software/ZenView.webp'} />
           <Model textContent={ website } path={'Software/Website.webp'} /> 
         </Event>
         <Event interval={2020}>
