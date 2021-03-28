@@ -89,6 +89,22 @@
                     "detail": "Promovem a interação do grupo com a sociedade através de eventos educacionais, como o Sábado Aeroespacial."
                 }
             ]
+        },
+        "astronautica": {
+            "title": "Astronáutica",
+            "detail": "alsçflka asdfjkças aksdjfakjsdç akjsdfkjaç ajskdjfçak kaskdfjç kjaçskdjfçakjsd kjçaksdjfçak",
+            "core": "NÚCLEOS",
+            "technologies": [],
+            "cores": [
+                {
+                    "title": "asdfasd: ",
+                    "detail": "Desenvolvem placas de circuito impresso para diversas aplicações aeroespaciais e realizam a manufatura das mesmas."
+                },
+                {
+                    "title": "asfasd asfasd: ",
+                    "detail": "Programam os microcontroladores envolvidos nos diversos projetos embarcados."
+                }
+            ]
         }
     },
     "homePageBanners": {
