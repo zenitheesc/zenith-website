@@ -1,0 +1,246 @@
+[{
+        "symbol": "Autodesk",
+        "name": "Autodesk",
+        "backgroundColor": "#EE1B2D",
+        "textColor": "white",
+        "sector": "estruturas"
+    },
+    {
+        "symbol": "Google-Drive",
+        "name": "Google Drive",
+        "backgroundColor": "#47433E",
+        "textColor": "white",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "Linux",
+        "name": "Linux",
+        "backgroundColor": "#F0F3FA",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "calendar",
+        "name": "Calendar",
+        "backgroundColor": "#000000",
+        "textColor": "white",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "LoRa",
+        "name": "LoRa",
+        "backgroundColor": "#A100FF",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "LinkedIn",
+        "name": "LinkedIn",
+        "backgroundColor": "#0886C8",
+        "textColor": "white",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "OpenCV",
+        "name": "OpenCV",
+        "backgroundColor": "#000000",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Python",
+        "name": "Python",
+        "backgroundColor": "#ED1C24",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Raspberry-Pi",
+        "name": "Raspberry Pi",
+        "backgroundColor": "#000000",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "STM32CubeIDE",
+        "name": "Cube IDE",
+        "backgroundColor": "#EB1B2A",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "STmicroelectronics",
+        "name": "ST Microelectronics",
+        "backgroundColor": "#000000",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Ansys Workbench",
+        "name": "Ansys Workbench",
+        "backgroundColor": "#00A7E1",
+        "textColor": "white",
+        "sector": "estruturas"
+    },
+    {
+        "symbol": "Slack",
+        "name": "Slack",
+        "backgroundColor": "#0076B8",
+        "textColor": "white",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "C",
+        "name": "C",
+        "backgroundColor": "#0096D7",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "excel",
+        "name": "Excel",
+        "backgroundColor": "#008676",
+        "textColor": "white",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "Solid-Edge",
+        "name": "Solid Edge",
+        "backgroundColor": "#008FFE",
+        "textColor": "white",
+        "sector": "estruturas"
+    },
+    {
+        "symbol": "Instagram",
+        "name": "Instagram",
+        "backgroundColor": "#FF661E",
+        "textColor": "white",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "Atmel",
+        "name": "Atmel",
+        "backgroundColor": "#ED1C24",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Electron",
+        "name": "Electron",
+        "backgroundColor": "#000000",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Firebase",
+        "name": "Firebase",
+        "backgroundColor": "#EB1B2A",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Flutter",
+        "name": "Flutter",
+        "backgroundColor": "#000000",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "JS",
+        "name": "JavaScript",
+        "backgroundColor": "#00A7E1",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "LaTeX",
+        "name": "LaTeX",
+        "backgroundColor": "#008FFE",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "word",
+        "name": "Word",
+        "backgroundColor": "#F0F3FA",
+        "textColor": "white",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "Solidworks",
+        "name": "Solidworks",
+        "backgroundColor": "#009539",
+        "textColor": "white",
+        "sector": "estruturas"
+    },
+    {
+        "symbol": "NextJS",
+        "name": "NextJS",
+        "backgroundColor": "#00426A",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "NodeJS",
+        "name": "NodeJS",
+        "backgroundColor": "#008676",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "discord",
+        "name": "Discord",
+        "backgroundColor": "#00426A",
+        "textColor": "white",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "NXP",
+        "name": "NXP",
+        "backgroundColor": "#002898",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "PCI Express",
+        "name": "PCI Express",
+        "backgroundColor": "#47433E",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Qt",
+        "name": "Qt",
+        "backgroundColor": "#0886C8",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "facebook",
+        "name": "Facebook",
+        "backgroundColor": "#002898",
+        "textColor": "white",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "React",
+        "name": "React",
+        "backgroundColor": "#0076B8",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "TexasInstruments",
+        "name": "Texas Instruments",
+        "backgroundColor": "#F0F3FA",
+        "textColor": "white",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Trello",
+        "name": "Trello",
+        "backgroundColor": "#F0F3FA",
+        "textColor": "white",
+        "sector": "gestao"
+    }
+]
