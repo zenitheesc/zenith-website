@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
-import ReactPlayer from "react-player";
-import { Carousel } from 'react-responsive-carousel';
+import React, { useEffect, useState, useRef } from 'react';
 import style from 'styles/projects/ProjectCarousel.module.css';
+import ReactPlayer from "react-player"
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 
 function CarouselImage(props) {
   const { path } = props;

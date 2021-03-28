@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
-import dynamic from 'next/dynamic';
-import useTranslation from 'next-translate/useTranslation';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import styles from 'styles/ProjectTab.module.css';
+import SondasAeroespaciais from './projects/SondasAeroespaciais/SondasAeroespaciais';
+import useTranslation from 'next-translate/useTranslation';
+import CubeSats from './projects/CubeSats/CubeSats';
+import Software from './projects/Software/Software';
+import Hardware from './projects/Hardware/Hardware';
+import Educacional from './projects/Educacional/Educacional';
+import styles from '../../styles/ProjectTab.module.css';
 
 function Tab(props) {
   const {
@@ -94,12 +98,6 @@ function ProjectTab() {
   const software            = t("projetos:software", { count: -1 }, { returnObjects: true });
   const hardware            = t("projetos:hardware", { count: -1 }, { returnObjects: true });
   const educacional         = t("projetos:educacional", { count: -1 }, { returnObjects: true });
-
-  const SondasAeroespaciais = dynamic(() => import('./projects/SondasAeroespaciais/SondasAeroespaciais'));
-  const CubeSats            = dynamic(() => import('./projects/CubeSats/CubeSats'));
-  const Software            = dynamic(() => import('./projects/Software/Software'));
-  const Hardware            = dynamic(() => import('./projects/Hardware/Hardware'));
-  const Educacional         = dynamic(() => import('./projects/Educacional/Educacional'));
 
   return (
     <Tabs>
