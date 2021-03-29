@@ -1,6 +1,6 @@
 import React from 'react';
 import style from 'styles/SectorsCards.module.css'
-import BubbleUI from "./TechBubble/BubblueElement";
+import BubbleUI from "./TechBubble/BubbleElement";
 import techData from "./TechBubble/technologies.json";
 import TechBubble from "./TechBubble/TechBubble";
 
