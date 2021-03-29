@@ -357,7 +357,7 @@
         }
     },
     "educacional": {
-        "title": "Nossos Projetos Educacionais",
+        "title": "Our educational projects",
         "subtitle": [
             "O */Garatéa-E/* nasceu do desejo do Zenith de levar a ciência para */fora da universidade/* e incentivar jovens a gostarem de pesquisar e estudar. Nosso projeto educacional traz para próximo dos alunos algo que só era visto por eles nas aulas de Física e Química, o */Espaço/*.",
             "*/Alunos do ensino fundamental e médio/* tiveram a oportunidade de desenvolver experimentos científicos, junto com os seus professores, e mandá-los para o espaço em uma de nossas sondas aeroespaciais. Isso possibilitou que os alunos pudessem analisar as mudanças em seus experimentos após a exposição ao ambiente aeroespacial, instigando a */curiosidade/* dos estudantes.",
@@ -366,43 +366,43 @@
         "projects": {
             "garateaE2017": {
                 "title": "Garatéa-E 2017",
-                "subtitle": "A primeira vez que inspiramos alunos e professores a ir além da teoria e alcançar o espaço",
+                "subtitle": "The first time we inspired students and teachers to go beyond theory and reach for the stars",
                 "year": 2017,
                 "launchDate": ["LAUNCH DATE", "24/06/2017"],
                 "altitude": ["MAX ALTITUDE", "24 km"],
                 "statistics": [{
                         "numero": 200,
-                        "label": "ALUNOS PARTICIPANTES",
+                        "label": "STUDENTS PARTICIPATING",
                         "plus": true
                     },
                     {
                         "numero": 20,
-                        "label": "PROJETOS INSCRITOS"
+                        "label": "REGISTERED PROJECTS"
                     },
                     {
                         "numero": 12,
-                        "label": "CANSATs LANÇADOS"
+                        "label": "LAUNCHED CANSATs"
                     },
                     {
                         "numero": 8,
-                        "label": "PONGSATs LANÇADOS"
+                        "label": "LAUNCHED PONGSATs"
                     }
                 ]
             },
             "garateaE2018": {
                 "title": "Garatéa-E 2018",
-                "subtitle": "Nossa segunda oportunidade para apaixonar alunos entre 7 e 18 anos pela ciência e pelo espaço",
+                "subtitle": "Our second opportunity helping students between 7 and 18 fall in love with science and space",
                 "year": 2018,
                 "launchDate": ["LAUNCH DATE", "11/08/2018"],
                 "altitude": ["MAX ALTITUDE", "23 km (Tracy)", "27,3 km (Valentina)"],
                 "statistics": [{
                         "numero": 900,
-                        "label": "ALUNOS PARTICIPANTES",
+                        "label": "STUDENTS PARTICIPATING",
                         "plus": true
                     },
                     {
                         "numero": 64,
-                        "label": "PROJETOS INSCRITOS"
+                        "label": "REGISTERED PROJECTS"
                     },
                     {
                         "numero": 32,
@@ -416,18 +416,18 @@
             },
             "garateaE2019": {
                 "title": "Garatéa-E 2019",
-                "subtitle": "Unindo alunos, professores e cientistas de todas as regiões do país no Sábado Aeroespacial pela terceira vez",
+                "subtitle": "Uniting students, teachers, professors and scientists of all Brazilian Regions in 'Sábado Aeroespacial' ('Aerospace Saturday') for the third time",
                 "year": 2019,
                 "launchDate": ["LAUNCH DATE", "24/08/2019"],
                 "altitude": ["MAX ALTITUDE", "23 km"],
                 "statistics": [{
                         "numero": 600,
-                        "label": "ALUNOS PARTICIPANTES",
+                        "label": "STUDENTS PARTICIPATING",
                         "plus": true
                     },
                     {
                         "numero": 70,
-                        "label": "PROJETOS INSCRITOS"
+                        "label": "REGISTERED PROJECTS"
                     },
                     {
                         "numero": 64,
