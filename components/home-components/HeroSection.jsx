@@ -39,7 +39,7 @@ function HomepageHeroSection() {
         <source src="images/HomePage/video.webm" type="video/webm" />
       </video>
       <h1>{title}</h1>
-      <hr />
+      <hr className={styles.hrAnimation}/>
       <p>
         {subtitle}
       </p>
