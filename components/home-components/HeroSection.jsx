@@ -32,7 +32,7 @@ function HomepageHeroSection() {
           ? styles.heroContainer
           : `${styles.heroContainer} ${styles.heroContainerStaticImage}`
       }>
-      <img src={'images/HomePage/static.webp'} />
+      <img src={'images/HomePage/static.webp'} alt={"Fundo estático"} />
       <video ref={videoElement} autoPlay loop muted playsInline preload="auto">
         <source src="images/HomePage/videoIOS.mp4" type="video/mp4" />
         <source src="images/HomePage/video.mp4" type="video/mp4" />
