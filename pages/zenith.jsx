@@ -33,7 +33,7 @@ function Zenith() {
       />
         <CardContainer>
             <Card
-                left={<img src="../images/Zenith/Card-1.webp"/>}
+                left={<img src="../images/Zenith/Card-1.webp" alt = "Students working"/>}
                 right={
                     <>
                         <h1 className="-homepage-section-title">{card1.title}</h1>
@@ -56,20 +56,20 @@ function Zenith() {
                 left={
                     <>
                         <h1 className="-homepage-section-title">{card2.title}</h1>
-                        {card2.text.map(a=><p>{boldParser(a)}</p>)}
+                        {card2.text.map((a,idx)=><p key={idx}>{boldParser(a)}</p>)}
                     </>
                 }
-                right={<img src="../images/Zenith/Card-2.webp" />}
+                right={<img src="../images/Zenith/Card-2.webp" alt = "Image from space"/>}
                 text={'left'}
             />
 
             <Card
                 lean="left"
-                left={<img src="../images/Zenith/Card-3.webp" />}
+                left={<img src="../images/Zenith/Card-3.webp" alt = "Board stack"/>}
                 right={
                     <>
                         <h1 className="-homepage-section-title">{card3.title}</h1>
-                        {card3.text.map((c, i)=> <TextWithIcons content={c} index={i+1} icons={icons}/>)}
+                        {card3.text.map((c, i)=> <TextWithIcons content={c} key={i} index={i+1} icons={icons}/>)}
                         <br/>
                     </>
                 }
@@ -77,12 +77,12 @@ function Zenith() {
 
             <Card
                 lean="left"
-                right={<img src="../images/Zenith/Card-4.webp" />}
+                right={<img src="../images/Zenith/Card-4.webp" alt = "Joãozinho"/>}
                 left={
                     <>
                         <h1 className="-homepage-section-title">{card4.title}</h1>
-                        {card4.text.map(a=><p>{boldParser(a)}</p>)}
-                        {card4.links.map(l=><UnderlinedButton link={l.url} label={l.text} dark/>)}
+                        {card4.text.map((a,idx)=><p key={idx}>{boldParser(a)}</p>)}
+                        {card4.links.map((l,idx)=><UnderlinedButton key={idx} link={l.url} label={l.text} dark/>)}
                     </>
                 }
                 text={'left'}

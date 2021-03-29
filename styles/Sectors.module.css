@@ -11,17 +11,13 @@
 .textSection {
     text-align: center;
 	max-width: 1328px;
-}
-
-.textSection > h3 {
-	color: #530000;
-}     
+} 
 
 .sectorsButtons {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: 2.5em;
+	margin: 2.5em 0em;
 }
 
 .sectorsButton {
@@ -37,8 +33,16 @@
 	outline: none;
 	padding: 0;
 	width: 100%;
+	outline: none;
 }
 
+.sectorsButton > button:hover {
+	fill: #3c3b3d;
+}
+
+.sectorsButton > button:hover + h3 {
+	color: #3c3b3d;
+}
 
 .sectorsButton > button > svg {
 	width: 10em;

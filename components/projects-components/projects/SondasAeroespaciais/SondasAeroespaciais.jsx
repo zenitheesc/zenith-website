@@ -11,6 +11,7 @@ export default function SondasAeroespaciais(props) {
   const { garatea5 } = props.textContent.projects;
 
   const garatea1Images = [
+    'SondasAeroespaciais/Garatéa-I/photo8.webp',
     'SondasAeroespaciais/Garatéa-I/photo1.webp',
     'SondasAeroespaciais/Garatéa-I/photo2.webp',
     'SondasAeroespaciais/Garatéa-I/photo3.webp',
@@ -18,20 +19,20 @@ export default function SondasAeroespaciais(props) {
     'SondasAeroespaciais/Garatéa-I/photo5.webp',
     'SondasAeroespaciais/Garatéa-I/photo6.webp',
     'SondasAeroespaciais/Garatéa-I/photo7.webp',
-    'SondasAeroespaciais/Garatéa-I/photo8.webp',
     'SondasAeroespaciais/Garatéa-I/photo9.webp',
     'SondasAeroespaciais/Garatéa-I/photo10.webp'
   ];
 
   const garatea2Images = [
+    'SondasAeroespaciais/Garatéa-II/photo4.webp',
     'SondasAeroespaciais/Garatéa-II/photo1.webp',
     'SondasAeroespaciais/Garatéa-II/photo2.webp',
     'SondasAeroespaciais/Garatéa-II/photo3.webp',
-    'SondasAeroespaciais/Garatéa-II/photo4.webp',
     'SondasAeroespaciais/Garatéa-II/photo5.webp',
   ];
 
   const garatea3Images = [
+    'SondasAeroespaciais/Garatéa-III/photo9.webp',
     'SondasAeroespaciais/Garatéa-III/photo1.webp',
     'SondasAeroespaciais/Garatéa-III/photo2.webp',
     'SondasAeroespaciais/Garatéa-III/photo3.webp',
@@ -40,17 +41,16 @@ export default function SondasAeroespaciais(props) {
     'SondasAeroespaciais/Garatéa-III/photo6.webp',
     'SondasAeroespaciais/Garatéa-III/photo7.webp',
     'SondasAeroespaciais/Garatéa-III/photo8.webp',
-    'SondasAeroespaciais/Garatéa-III/photo9.webp',
   ];
 
   const garatea5Images = [
+    'SondasAeroespaciais/Garatéa-V/photo7.webp',
     'SondasAeroespaciais/Garatéa-V/photo1.webp',
     'SondasAeroespaciais/Garatéa-V/photo2.webp',
     'SondasAeroespaciais/Garatéa-V/photo3.webp',
     'SondasAeroespaciais/Garatéa-V/photo4.webp',
     'SondasAeroespaciais/Garatéa-V/photo5.webp',
     'SondasAeroespaciais/Garatéa-V/photo6.webp',
-    'SondasAeroespaciais/Garatéa-V/photo7.webp',
     'SondasAeroespaciais/Garatéa-V/photo8.webp',
     'SondasAeroespaciais/Garatéa-V/photo9.webp',
     'SondasAeroespaciais/Garatéa-V/photo10.webp'

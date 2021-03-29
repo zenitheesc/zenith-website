@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import style from 'styles/projects/ProjectCarousel.module.css';
 import ReactPlayer from "react-player"
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -9,17 +9,28 @@ function CarouselImage(props) {
 
   return (
     <div className={style.carouselImageDiv}>
-      <img className={style.carouselImage} src={`/images/Projetos/${path}`} />
+      <img className={style.carouselImage} src={`/images/Projetos/${path}`} alt = "Carousel image" />
     </div>
   )
 }
 
-const CarouselVideo = ({ url, isSelected }) => {
+function CarouselYoutubeVideo({ url, isSelected }) {
 
   return (
-    <div className={style.carouselVideoDiv}>
+    <div className={style.carouselYoutubeVideoDiv}>
       <ReactPlayer width="100%" height="100%" url={url} controls={true} />
     </div>
+  )
+}
+
+function CarouselVideo({ path }) {
+
+  const videoElement = useRef(null);
+
+  return (
+    <video className={style.carouselVideoDiv} ref={videoElement}  autoPlay loop muted playsInline preload="auto">
+      <source src={`/images/Projetos/${path}`}/>
+    </video>
   )
 }
 
@@ -35,6 +46,7 @@ export default function ProjectsCarousel(props) {
       showStatus={false}
       showThumbs={false}
       renderItem={customRenderItem}
+
       showIndicators={paths.length > 1}
     >
 
@@ -42,7 +54,10 @@ export default function ProjectsCarousel(props) {
         {
           return (path.endsWith(".webp")) ?
             <CarouselImage path={path} key={index} /> :
-            <CarouselVideo url={path} key={index} />
+            (path.startsWith("https://")) ?
+              <CarouselYoutubeVideo url={path} key={index} /> :
+              <CarouselVideo path={path} key={index} />
+
         }
       })}
     </Carousel>

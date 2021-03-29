@@ -14,6 +14,14 @@
     background: url('../public/images/HomePage/static.webp') center center/cover no-repeat;
 }
 
+.heroContainer > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    position: absolute;
+}
+
 .heroContainer > video {
     object-fit: cover;
     width: 100%;

@@ -4,8 +4,8 @@
         "subtitle": "Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a oportunidade de chegar ao espaço"
     },
     "homePageDepartaments": {
-        "title": "construindo tecnologia aeroespacial em todos os setores",
-        "subtitle": "construímos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
+        "title": "Construindo tecnologia aeroespacial em todos os setores",
+        "subtitle": "Construímos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
         "embarcados": {
             "title": "Embarcados",
             "detail": "Esse departamento pesquisa e desenvolve tecnologias em sistemas embarcados voltada para aplicações aeroespaciais.",
@@ -14,15 +14,15 @@
             "cores": [
                 {
                     "title": "Hardware: ",
-                    "detail": "desenvolvem placas de circuito impresso para diversas aplicações aeroespaciais e realizam a manufatura das mesmas."
+                    "detail": "Desenvolvem placas de circuito impresso para diversas aplicações aeroespaciais e realizam a manufatura das mesmas."
                 },
                 {
                     "title": "Baixo Nível: ",
-                    "detail": "programam os microcontroladores envolvidos nos diversos projetos embarcados."
+                    "detail": "Programam os microcontroladores envolvidos nos diversos projetos embarcados."
                 },
                 {
                     "title": "Alto Nível: ",
-                    "detail": "programam aplicações web, mobile e desktop que auxiliam no sucesso das missões."
+                    "detail": "Programam aplicações web, mobile e desktop que auxiliam no sucesso das missões."
                 }
             ]
         },
@@ -34,15 +34,15 @@
             "cores": [
                 {
                     "title": "Desenvolvimento da Estrutura: ",
-                    "detail": "desenvolvem o modelo 3D do projeto CAD da estrutura."
+                    "detail": "Desenvolvem o modelo 3D do projeto CAD da estrutura."
                 },
                 {
                     "title": "Atenuação de Vibração: ",
-                    "detail": "realizam teste e simulações para assegurar que a estrutura modelada suportará a vibração."
+                    "detail": "Realizam teste e simulações para assegurar que a estrutura modelada suportará a vibração."
                 },
                 {
                     "title": "Isolamento Térmico: ",
-                    "detail": "desenvolvem todo o modelamento térmico da estrutura, assegurando sua temperatura de trabalho."
+                    "detail": "Desenvolvem todo o modelamento térmico da estrutura, assegurando sua temperatura de trabalho."
                 }
             ]
         },
@@ -54,15 +54,15 @@
             "cores": [
                 {
                     "title": "Suporte ao Projeto Kurumim: ",
-                    "detail": "selecionam e manipulam os experimentos educacionais do projeto Kurumim que serão embarcados em sondas estratosféricas."
+                    "detail": "Selecionam e manipulam os experimentos educacionais do projeto Kurumim que serão embarcados em sondas estratosféricas."
                 },
                 {
                     "title": "Científico: ",
-                    "detail": "produzem experimentos científicos que conduzem a publicação de artigos científicos."
+                    "detail": "Produzem experimentos científicos que conduzem a publicação de artigos científicos."
                 },
                 {
                     "title": "Parcerias: ",
-                    "detail": "fornecem o suporte técnico e operacional necessário para que pesquisadores interessados possam embarcar experimentos em veículos produzidos pelo Zenith."
+                    "detail": "Fornecem o suporte técnico e operacional necessário para que pesquisadores interessados possam embarcar experimentos em veículos produzidos pelo Zenith."
                 }
             ]
         },
@@ -74,19 +74,39 @@
             "cores": [
                 {
                     "title": "Financeiro: ",
-                    "detail": "realizam o planejamento orçamentário, o controle de gastos e a busca e manutenção de patrocínios."
+                    "detail": "Realizam o planejamento orçamentário, o controle de gastos e a busca e manutenção de patrocínios."
                 },
                 {
                     "title": "Marketing: ",
-                    "detail": "atuam nas redes sociais do grupo, elaborando estratégias para atrair novas parcerias e divulgar o grupo."
+                    "detail": "Atuam nas redes sociais do grupo, elaborando estratégias para atrair novas parcerias e divulgar o grupo."
                 },
                 {
                     "title": "Recursos Humanos: ",
-                    "detail": "acompanham os membros do grupo, analizando o seu desempenho e satisfação."
+                    "detail": "Acompanham os membros do grupo, analizando o seu desempenho e satisfação."
                 },
                 {
                     "title":"Eventos: ",
-                    "detail": "promovem a interação do grupo com a sociedade através de eventos educacionais, como o Sábado Aeroespacial."
+                    "detail": "Promovem a interação do grupo com a sociedade através de eventos educacionais, como o Sábado Aeroespacial."
+                }
+            ]
+        },
+        "astronautica": {
+            "title": "Astronáutica",
+            "detail": "Esse departamento é responsável pela pesquisa e desenvolvimento das ferramentas necessárias para a exploração dos limites da atmosfera terrestre, bem como a execução das normas para tal atividade.",
+            "core": "NÚCLEOS",
+            "technologies": [],
+            "cores": [
+                {
+                    "title": "Dinâmica de Voo: ",
+                    "detail": "Realiza simulações de voo, fornece noções sobre estabilidade estática e dinâmica dos balões e traça estratégias de lançamento e de recuperação da sonda."
+                },
+                {
+                    "title": "Pesquisa e Desenvolvimento: ",
+                    "detail": "Realizam pesquisas no ramo da Fluidodinâmica e Mecânica Orbital, buscando aplicar modelos teóricos em missões futuras do Zenith."
+                },
+                {
+                    "title":"Legislação: ",
+                    "detail": "Responsável pela parte normativa das missões com balões estratosféricos, de acordo com as prescrições de uso do espaço aéreo brasileiro."
                 }
             ]
         }
@@ -104,7 +124,7 @@
         }
     },
     "homePageStatistics": {
-        "title": "eficiência descrita em números",
+        "title": "Eficiência descrita em números",
         "subtitle": "desde 2014",
         "statistics": [
             {
@@ -125,12 +145,16 @@
             },
             {
                 "number": 7,
-                "description": "REPORTAGEM NA MÍDIA"
+                "description": "REPORTAGENS NA MÍDIA"
+            },
+            {
+                "number": 12765,
+                "description": "HORAS NA SALINHA"
             }
         ]
     },
     "homePageSupporters": {
-        "title": "nossos apoiadores",
+        "title": "Nossos apoiadores",
         "detail": "sem eles, nada disso seria possível",
         "supporters": [ 
             {   
@@ -152,7 +176,7 @@
         ]
     },
     "footer": {
-        "copyright": "© 2020  Zenith Aerospace",
+        "copyright": "© 2021  Zenith Aerospace",
         "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
     }
 }

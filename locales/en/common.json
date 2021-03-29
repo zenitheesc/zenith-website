@@ -1,7 +1,7 @@
 {
-    "navBar": ["O ZENITH", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO"],
+    "navBar": ["ABOUT US", "PROJECTS", "KURUMIM", "SELECTION PROCESS"],
     "footer": {
-        "copyright": "© 2020  Zenith Aerospace",
-        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
+        "copyright": "© 2021  Zenith Aerospace",
+        "easterEgg": "MADE WITH TONS OF JAVASCRIPT AND CONFUSION ON DISCORD"
     }
 }

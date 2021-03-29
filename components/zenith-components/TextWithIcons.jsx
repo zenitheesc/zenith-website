@@ -12,7 +12,7 @@ export default class TextWithIcons extends Component {
 
     render() {
         return <div className={style.row}>
-            <img width="100px" src={`../../images/Zenith/icons/${this.props.icons[this.props.index]}`} />
+            <img width="100px" src={`../../images/Zenith/icons/${this.props.icons[this.props.index]}`} alt = "Icon"/>
             <div>
                 <h3>{this.props.content.title}</h3>
                 <p>{boldParser(this.props.content.text)}</p>

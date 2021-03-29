@@ -1,37 +1,38 @@
 {
     "processoSeletivoHero": {
-        "title": "Processo Seletivo",
-        "subtitle": "Você deseja ser parte do Zenith Aerospace?"
+        "title": "Selection Process",
+        "subtitle": "Would you like to be a part of Zenith Aerospace?"
     },
     "cards": {
         "processoSeletivoCard1": {
-            "title": "Como participar?",
+            "title": "How to participate?",
             "text": [
-                "Todo ano nós abrimos um processo seletivo para recrutarmos novos membros ao Zenith.",
-                "Infelizmente, não podemos aceitar todos os interessados, então nós realizamos um processo seletivo para selecionar os candidatos.",
-                "Graduandos da USP São Carlos e da Ufscar podem se inscrever no nosso processo seletivo e */nenhum/* conhecimento prévio é necessário!",
-                "*/Está interessado?/* Veja se o nosso processo seletivo está aberto."
+                "Every year we open a selection process to recruit new members.",
+                "Unfortunately, we can't accept everyone, so we must have a selection process.",
+                "Undergraduate students from USP São Carlos and UFSCar can participate in our selection process and */no/* previous knowledge is needed!",
+                "*/Interested?/* Check out if our selection process is open."
             ]
         },
         "processoSeletivoCard2": {
-            "title": "Cronograma",
-            "detail": "Estamos ansiosos para receber novos membros no Zenith Aerospace esse ano. Nesse ano de */2021/*, o nosso processo seletivo vai ser 100% digital! Para se inscrever, preencha o */Google Forms/* abaixo e acompanhe os resultados nas nossas */Redes Sociais/*!",
+            "title": "Timeline",
+            "detail": "We're looking forward to meeting our new members this year. In */2021/*, our selection process will be 100% on-line! To participate, fill in the */Google Forms/* below and follow us in our */Social Networks/* to be notified when the results come out!.",
             "text": [
-                ["19/04", "PALESTRA DE APRESENTAÇÃO"],
-                ["19/04", "LANÇAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
-                ["24/04", "FECHAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
-                ["26/04", "1º FASE DO PROCESSO SELETIVO"],
-                ["30/04", "DIVULGAÇÃO DOS APROVADOS DA PRIMEIRA FASE"],
-                ["03/05", "INÍCIO DA 2º FASE DO PROCESSO SELETIVO"],
-                ["07/05", "FIM DA 2º FASE DO PROCESSO SELETIVO"],
-                ["10/05", "DIVULGAÇÃO DOS RESULTADOS"]
+                ["05/04", "PARTICIPATION FORM OPENS"],
+                ["13/04", "WEB MEETING WITH ZENITH MEMBERS"],
+                ["19/04", "PRESENTATION TALK"],
+                ["24/04", "PARTICIPATION FORM CLOSES"],
+                ["26/04", "SELECTION PROCESS' 1st PART"],
+                ["30/04", "1st PART RESULTS"],
+                ["03/05", "SELECTION PROCESS 2nd PART STARTS"],
+                ["07/05", "SELECTION PROCESS 2nd PART ENDS"],
+                ["10/05", "FINAL RESULTS"]
             ]
         },
         "processoSeletivoCard3": {
-            "title": "Fases do Processo Seletivo",
+            "title": "Selection Process Parts",
             "text": [
-                "*/1º Fase: Dinâmica em Grupo/*", "Nessa fase, os candidatos serão divididos em */grupos/* e expostos a uma */situação-problema/* inspirada em missões espaciais. Nós avaliaremos a capacidade do candidato de */trabalhar em equipe/*, predisposição à */liderança/* e a */criatividade/* diante de um problema.",
-                "*/2º Fase: Entrevista/*", "Na 2º fase, os candidatos aprovados na 1º fase serão entrevistados por membros de departamentos do Zenith Aerospace. Nessa etapa, nós buscamos conhecer melhor o candidato, descobrindo suas */motivações/* e */expectativas/* sobre o grupo."
+                "*/1st Part: Group Dynamic/*", "In this part, the candidates will be divided in */groups/* and exposed to a */problem-situation/* inspired by real space missions. We will evaluate the candidate's affinity with */teamwork/*, */leadership/* predisposition and */creativity/* when facing a problem.",
+                "*/2nd Part: Interview/*", "In the 2nd part, the remaining candidates will be interviewed by Zenith Aerospace's members from multiple departments. Our goal in this part of the process is to get to know the candidate better, learning more about their */motivations/* and */expectations*/ towards the group."
             ]
         }
     }

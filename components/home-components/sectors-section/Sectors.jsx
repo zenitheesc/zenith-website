@@ -3,6 +3,7 @@ import Embarcados from './icons/Embarcados';
 import Estruturas from './icons/Estruturas';
 import Astrobiologia from './icons/Astrobiologia';
 import Gestão from './icons/Gestão';
+import Astronautica from './icons/Astronáutica';
 import SectorsButtons from './SectorsButtons';
 import styles from 'styles/Sectors.module.css';
 import useTranslation from 'next-translate/useTranslation';
@@ -14,6 +15,7 @@ function SectorsCards({ textContent, currSector }) {
     embarcados   : <SectorCard textContent = {textContent.embarcados} name={"embarcados"}/>,
     estruturas   : <SectorCard textContent = {textContent.estruturas} name={"estruturas"}/>,
     astrobiologia: <SectorCard textContent = {textContent.astrobiologia} name={"astrobiologia"}/>,
+    astronautica : <SectorCard textContent = {textContent.astronautica} name={"astronautica"} />,
   }
 
   return sectorsCards[currSector];
@@ -61,6 +63,12 @@ function Sectors() {
           label={textContent.gestao}
           onClick={() => setCurrSector("gestao")}>
           <Gestão />
+        </SectorsButtons>
+        <SectorsButtons 
+          selected={currSector === "astronautica"}
+          label={textContent.astronautica}
+          onClick={() => setCurrSector("astronautica")}>
+          <Astronautica />
         </SectorsButtons>
       </div>
       <SectorsCards textContent={textContent} currSector={currSector} />
