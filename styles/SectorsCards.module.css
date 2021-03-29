@@ -76,22 +76,28 @@
 @media screen and (max-width: 1024px) {
 
 	.container {
-		flex-direction: column-reverse;
+		padding: 2em;
+		flex-direction: column;
 	}
 
 	.info{
 		width: 100%;
 	}
 
+	.info > h1 {
+		margin-top: 0rem;
+	}
+
 	.cloud{
 		width: 100%;
+		padding-left: 0em;
 	}
 }
 
 @media screen and (max-width: 768px) {
 
 	.container {
-		padding: 1em;
+		padding: 2em 1em;
 	}
 
 	.info > h1 {
