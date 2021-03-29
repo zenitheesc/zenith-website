@@ -1,251 +1,250 @@
 {
     "projetosHero": {
-        "title": "Nossos projetos",
-        "subtitle": "Integração de diversos campos da Engenharia no setor aeroespacial"
+        "title": "Our Projects",
+        "subtitle": "Integrating multiple engineering fields in the aerospace sector."
     },
-    "picker": ["Sondas aeroespaciais", "CubeSats", "Software", "Hardware", "Educacional"],
+    "picker": ["Aerospace probes", "CubeSats", "Software", "Hardware", "Educational"],
+    "atualmente": "Present",
     "sondasAeroespaciais": {
-        "title": "O que são Sondas Aeroespaciais?",
+        "title": "What are aerospace probes?",
         "subtitle": [
-            "Nossas sondas aeroespaciais são balões, repletos de hélio, que levam experimentos astrobiológicos até a estratosfera, o que é essencial para que possamos responder a várias perguntas sobre a sobrevivência de seres vivos no espaço.", 
-            "Apesar de ser parte de um experimento científico, as sondas também são fascinantes sob o ponto de vista de um sistema embarcado. Nossas sondas são equipadas com microcontroladores, rádios, sensores e câmeras e, a cada missão, buscamos evoluir nossos sistemas para ter uma missão mais eficiente.",
-            "E, para sustentar todos os nossos experimentos e sistemas, construímos estruturas reaproveitáveis e duráveis, que nos possibilitam retornar várias vezes ao espaço."
+            "Our aerospace probes are balloons filled with helium, carrying astrobiological experiments to the stratosphere, which is crucial so we can have a better understanding about how organisms can survive in space.", 
+            "Although they are part of a greater scientific experiment, the probes themselves are also fascinating from the point of view of embedded systems development. Our probes are equiped with microcontrolers, radios, sensors and cameras; every mission we aim to improve our systems so we can make the next mission even more efficient.",
+            "And, to sustain all our experiments and systems, we build reliable and reusable structures, that let us go to space multiple times."
         ],
         "projects": {
             "garatea1": {
                 "title": "Garatéa-I",
                 "year": 2016,
                 "link": "",
-                "menus": ["OVERVIEW", "TECNOLOGIAS"],
-                "launchDate": ["LANÇAMENTO", "14/05/2016"],
-                "altitude": ["ALTITUDE ALCANÇADA", "27 km"],
-                "award": ["PREMIAÇÃO", "Melhor Experimento (GSBC 2016)"],
+                "menus": ["OVERVIEW", "TECHNOLOGIES"],
+                "launchDate": ["LAUNCH DATE", "14/05/2016"],
+                "altitude": ["MAX ALTITUDE", "27 km"],
+                "award": ["AWARDS", "Best Experiment (GSBC 2016)"],
                 "experiments": [
-                    "EXPERIMENTOS",
-                    "Testes de resistência em bactérias e fungos extraídos do deserto de Atacama (Chile)",
-                    "Análise dos padrões de degradação de biomoléculas"
+                    "Experiments",
+                    "Resistance testing with bacteria and fungi extracted from the Atacama desert (Chile)",
+                    "Biomolecules degradation pattern analysis"
                 ],
                 "embedded": [
-                    "Arquitetura de sistema baseada em */Mbed/*",
-                    "Utilização de */módulos comerciais/* no sensoriamento de parâmetros ambientais",
-                    "Utilização de sistema de */geolocalização/* próprio"
+                    "*/Mbed/* based system architecture",
+                    "Usage of */commercial modules/* in environmental parameter sensing",
+                    "Usage of our own */geolocation/* system"
                 ],
                 "structure": [
-                    "Acionamento de mecanismo de exposição dos experimentos",
-                    "Estrutura em */impressão 3D/* e */fibra de vidro/*",
-                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
+                    "Mechanism that can be activated to safely expose the experiments to the external environment",
+                    "Structure made with */3D printing/* and */glass fiber/*",
+                    "Parachute made with */Kevlar strings/* and */Nylon/*"
                 ]
             },
             "garatea2": {
                 "title": "Garatéa-II",
                 "year": 2016,
                 "link": "https://github.com/zenitheesc/garatea2",
-                "menus": ["OVERVIEW", "TECNOLOGIAS"],
-                "launchDate": ["LANÇAMENTO", "19/12/2016"],
-                "altitude": ["ALTITUDE ALCANÇADA", "25,5 km"],
+                "menus": ["OVERVIEW", "TECHNOLOGIES"],
+                "launchDate": ["LAUNCH DATE", "19/12/2016"],
+                "altitude": ["MAX ALTITUDE", "25,5 km"],
                 "experiments": [
-                    "EXPERIMENTOS",
-                    "Testes de resistência em bactérias e fungos extraídos do deserto de Atacama (Chile)",
-                    "Análise dos padrões de degradação de biomoléculas"
+                    "Experiments",
+                    "Resistance testing with bacteria and fungi extracted from the Atacama desert (Chile)",
+                    "Biomolecules degradation pattern analysis"
                 ],
                 "embedded": [
-                    "Arquitetura de sistema baseada em */Arduino/* ",
-                    "Utilização de */módulos comerciais/* no sensoriamento de parâmetros ambientais",
-                    "Utilização de sistema de */geolocalização/* próprio",
-                    "Utilização de */painéis solares no/* carregamento das baterias"
+                    "*/Arduino/* based system architecture",
+                    "Usage of */commercial modules/* in environmental parameter sensing",
+                    "Usage of our own */geolocation/* system",
+                    "Usage of */solar pannels/* for battery charging"
                 ],
                 "structure": [
-                    "Isolamento térmico feito em */Kapton/* e */Depron Aeronáutico/*",
-                    "Estrutura em */impressão 3D/* e */fibra de carbono/*",
-                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
+                    "Thermal insulation made with */Kapton/* and */Aeronautic Depron/*",
+                    "Structure made with */3D printing/* and */glass fiber/*",
+                    "Parachute made with */Kevlar strings/* and */Nylon/*"
                 ]
             },
             "garatea3": {
                 "title": "Garatéa-III",
                 "year": 2018,
                 "link": "https://github.com/zenitheesc/garatea3",
-                "menus": ["OVERVIEW", "TECNOLOGIAS"],
-                "launchDate": ["LANÇAMENTO", "22/04/2018"],
-                "altitude": ["ALTITUDE ALCANÇADA", "31,6 km"],
-                "award": ["PREMIAÇÃO", "3º Lugar em Melhor Design (GSBC 2018)"],
+                "menus": ["OVERVIEW", "TECHNOLOGIES"],
+                "launchDate": ["LAUNCH DATE", "22/04/2018"],
+                "altitude": ["MAX ALTITUDE", "31,6 km"],
+                "award": ["AWARDS", "3rd Place in Best Design (GSBC 2018)"],
                 "experiments": [
-                    "EXPERIMENTOS",
-                    "Co-cultura de leveduras fermentadoras e fungos extremófilos",
-                    "Cultura de protozoários em diferentes fases da vida e de sementes de alface"
+                    "EXPERIMENTS",
+                    "Co-culture of fermenting yeasts and extremophilic fungi",
+                    "Culture of protozoa at different stages of life and lettuce seeds "
                 ],
                 "embedded": [
-                    "Sistema de */aquisição de dados/*, desenvolvido pelo grupo, baseado em Atmega328p-pu",
-                    "Sistema de */imageamento/* baseado em */Linux/*",
-                    "Utilização de sistema de */geolocalização/* próprio",
-                    "Medição de níveis de radiação com */contador Geiger/*"
+                    "*/Data acquisition/* system developed by the group, based on Atmega328p-pu",
+                    "*/Imaging/* system based on */Linux/*",
+                    "Usage of our own */geolocation/* system",
+                    "Measuring of radiation levels with */Geiger Counter/*"
                 ],
                 "structure": [
-                    "Estrutura de */hipercubo/*, desenvolvida para */minimizar impactos/* e ser totalmente */reaproveitável/*",
-                    "Utilização de */fibra de carbono/* e */impressão 3D/*",
-                    "Isolamento térmico feito em Kapton e Depron Aeronáutico",
-                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
+                    "/*Hypercube/* structure, developed to */minimize impacts/*  and be completely */re-usable/*",
+                    "*/Carbon fiber/* and */3D printing/* usage",
+                    "Thermal insulation made with */Kapton/* and */Aeronautic Depron/*",
+                    "Parachute made with */Kevlar strings/* and */Nylon/*"
                 ]
             },
             "garatea5": {
                 "title": "Garatéa-V",
                 "year": 2018,
                 "link": "https://github.com/zenitheesc/Garatea-V",
-                "menus": ["OVERVIEW", "TECNOLOGIAS"],
-                "launchDate": ["LANÇAMENTO", "11/11/2018"],
-                "altitude": ["ALTITUDE ALCANÇADA", "?? km"],
+                "menus": ["OVERVIEW", "TECHNOLOGIES"],
+                "launchDate": ["LAUNCH DATE", "11/11/2018"],
+                "altitude": ["MAX ALTITUDE", "?? km"],
                 "experiments": [
-                    "EXPERIMENTOS",
-                    "??",
-                    "??"
+                    "EXPERIMENTS"
                 ],
                 "embedded": [
-                    "Sistema de */aquisição de dados/*, desenvolvido pelo grupo, baseado em Atmega2560",
-                    "Controle da altitude do vôo da sonda a partir do uso de válvula no balão",
-                    "Utilização de sistema de */geolocalização próprio/*"
+                    "*/Data acquisition/* system developed by the group, based on Atmega2560",
+                    "Probe's flight altitude control through a valve in the balloon",
+                    "Usage of our own */geolocation/* system"
                 ],
                 "structure": [
-                    "Mecanismo de */deploy do balão e do paraquedas/*",
-                    "Utilização de */impressão 3D/*",
-                    "Isolamento térmico feito em */Kapton/* e */Depron Aeronáutico/*",
-                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
+                    "Baloon and parachute */deploy mechanism/*",
+                    "*/3D printing/* usage",
+                    "Thermal insulation made with */Kapton/* and */Aeronautic Depron/*",
+                    "Parachute made with */Kevlar strings/* and */Nylon/*"
                 ]
             }
         }
     },
     "cubeSats": {
-        "title": "O que são CubeSats?",
+        "title": "What are CubeSats?",
         "subtitle": [
-            "CubeSats são nanossatélites que possuem tamanho, formato e peso reduzidos e muito bem especificados. Nós começamos a desenvolver CubeSats em razão de seu custo reduzido de produção e de lançamento, já que é possível produzir CubeSats com eletrônicos acessíveis e há dispensers genéricos para lançamento de CubeSats.",
-            "Um CubeSat é constituído, essencialmente, de alguns subsistemas: o */Estrutural/*, o */Sistema Energético/*, a */Telecomunicação/*, o */Controle e Determinação de Atitude/*, o */Sensoriamento/* e um módulo de missão. Atualmente, nós temos desenvolvido missões envolvendo */Visão Computacional/*.",
-            "Apesar de ainda não termos lançado um CubeSat, todo ano nós levamos nossos satélites para a */CubeDesign/*, competição desenvolvida pelo INPE, onde nossos CubeSats disputam o 1º lugar com outros satélites educacionais."    
+            "CubeSats are nanosatellites that have reduced size and weight with a very specific format. We started developing CubeSats thanks to their reduced cost of production and launching, given that it is possible to develop CubeSats with accessible electronicsand there are generic dispensers for CubeSat launching.",
+            "A CubeSat has, generally speaking, the following subsystems: the */Structural/*, */Energetic/*, */Telecommunications/*, */Control and Attitude Determination/* and */Sensing/* subsystems and a mission module. At the moment, we've been developing missions related to */Computer Vision/*.",
+            "Although we've never launched a CubeSat, every year we bring our satellites to */CubeDesign/*, a competition hosted by INPE, where our CubeSats compete for the 1st place along with other educational satellites."    
         ],
         "projects": {
             "zenSat": {
                 "title": "ZenSat",
-                "subtitle": "Nosso primeiro passo na direção da construção de nanossatélites e, também, a conquista do primeiro lugar na Cubedesign.",
+                "subtitle": "Our first step towards nanosatellite development and, also, the 1st place in */CubeDesign/*.",
                 "year": 2018,
                 "link": "https://github.com/zenitheesc/ZenSat_1.0",
-                "menus": ["OVERVIEW", "DOCUMENTAÇÃO"],
-                "award": ["PREMIAÇÃO", "1º Lugar - Cubedesign (INPE, 2018)"],
+                "menus": ["OVERVIEW", "DOCUMENTATION"],
+                "award": ["AWARDS", "1st Place - Cubedesign (INPE, 2018)"],
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Linux",
                     "Atmel",
                     "LoRa",
                     "TexasInstruments"
                 ],
                 "embedded": [
-                    "Processamento central do sistema baseado em */Linux/*",
-                    "Implementação do controle de atitude em */1 eixo/*",
-                    "Telemetria bidirecional implementada em */LoRa/*",
-                    "Determinação de Atitude implementada via */visão computacional/*"
+                    "System central processing based in */Linux/*",
+                    "Implementation of 1-axis Attitude Control",
+                    "Bidirectional telemetry with */LoRa/*",
+                    "Attitude determination implemented through */Computer Vision/*"
                 ],
                 "structure": [
-                    "O ZenSat é um satélite de */dimensões 2U/* com estrutura de */liga de Alumínio 7075-T6/*, sendo fabricada por meio de */usinagem CNC/* e de */impressão 3D/*, capaz de suportar uma vibração senoidal de 0-100 Hz."
+                    "ZenSat is a */2U Satellite/* with its structure made with */7075iT6 alluminum alloy/* produced with */CNC machining/* and */3D printing/*, being able to support senoidal vibrations from 0-100Hz."
                 ]
             },
             "uspSat": {
                 "title": "USPSat",
-                "subtitle": "Nossa oportunidade de aprofundar e de profissionalizar o desenvolvimento de nanossatélites 2U por meio da optimização de sistemas e aplicação de redudância nos sistemas.",
+                "subtitle": "Our opportunity to learn more and adopt a more professional approach, developing a 2U nanosatellite with optimizations made to the system and the implementation of redundancies.",
                 "year": 2019,
                 "link": "https://github.com/zenitheesc/USPSat-v.1.0",
-                "menus": ["OVERVIEW", "DOCUMENTAÇÃO"],
-                "award": ["PREMIAÇÃO", "2º Lugar - Cubedesign (INPE, 2019)"],
+                "menus": ["OVERVIEW", "DOCUMENTATION"],
+                "award": ["AWARDS", "2nd Place - Cubedesign (INPE, 2019)"],
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Linux",
                     "STmicroelectronics",
                     "LoRa",
                     "TexasInstruments"
                 ],
                 "embedded": [
-                    "Arquitetura de sistemas */distribuída/*, com */redundância/* entre subsistemas",
-                    "Telemetria bidirecional implementada em */LoRa/*",
-                    "*/Imageamento/* e */determinação de atitude/*, em */1 eixo/*, baseados em Linux",
-                    "*/Controle térmico ativo/* e */gerenciamento do sistema de energia/*"
+                    "*/Distributed/* system architecture, with */redundancy/* between subsystems",
+                    "Bidirectional telemetry with */LoRa/*",
+                    "*/Imaging/* and */Attitude determination*/ in 1-axis, Linux based",
+                    "*/Active thermal control/* and */energy system management/*"
                 ],
                 "structure": [
-                    "Estrutura de */dimensões 2U/* de */liga de Alumínio 7075-T6/* e anodizada na cor preta",
-                    "Uso de chapas de */fibra de carbono/* para fixar os componentes",
-                    "Mecanismo de */deploy da antena/* na extremidades das placas extremantes."
+                    "*/2U dimension/ structure, made of */7075-T6 alluminum alloy/*, anodized in black",
+                    "Usage of */carbon fiber/* plates to keep the components in place",
+                    "*/Antenna deploy/* mechanism at the ends of the extreme plates"
                 ]
             }
         }
     },
     "software": {
-        "title": "Nossos Softwares",
+        "title": "Our Software",
         "subtitle": [
-            "Apesar do Zenith Aerospace ser focado na criação de tecnologia aeroespacial, nós também precisamos desenvolver ferramentas para auxiliar o nosso trabalho na Terra.",
-            "Para isso, a equipe do Alto Nível trabalha com frameworks e linguagens com alto grau de abstração para criar softwares que os não-programadores do Zenith são capazes de usar. Em geral, o Alto Nível busca criar interfaces gráficas e estruturas de dados para automatizar e simplificar tarefas do dia a dia do Zenith."
+            "Although Zenith Aerospace is focused on the development of aerospace technology, we also develop tools to aid our work here on Earth.",
+            "For that, the High Level team works with languages and frameworks with high degrees of abstractions to create software that the non-programmers at Zenith are capable of using. In general, the High Level Department aims at the creation of graphical interfaces and data structures to automate and simplify Zenith's daily tasks."
         ],
         "projects": {
             "reportMaker": {
                 "title": "Report Maker",
-                "detail": "Software criado para a automatização da geração de relatórios espaciais do Zenith Aerospace",
+                "detail": "Software intended to automate Zenith Aerospace's report making",
                 "year": 2020,
                 "link": "https://github.com/zenitheesc/Report_Maker",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Python",
                     "LaTeX"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS",
-                    "Regex aplicado a leitura de logs",
-                    "Aplicação de data science",
-                    "Criação de GUI com Tkinter"
+                    "TECHNICAL SPECIFICATIONS",
+                    "Regex applied to log reading",
+                    "Data science application",
+                    "GUI creation with Tkinter"
                 ]
             },
             "zenithMonitor": {
                 "title": "Zenith Monitor",
-                "detail": "Aplicação mobile voltada para o rastreamento em tempo real de sondas aeroespaciais",
+                "detail": "Mobile application intended to track aerospace probes in real time",
                 "year": 2020,
                 "link": "https://github.com/zenitheesc/Zenith-Monitor",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Flutter",
                     "Firebase"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS",
+                    "TECHNICAL SPECIFICATIONS",
                     "Mobile Development",
-                    "Data Modeling em banco de dados NoSQL",
+                    "NoSQL databse Data Modeling",
                     "OAuth 2.0",
-                    "Consumo de API de terceiros"
+                    "Integrations with 3rd party APIs"
                 ]
             },
             "zenView": {
                 "title": "ZenView",
-                "detail": "Aplicação desktop para criação de dashboards e visualização de dados em tempo real",
+                "detail": "Desktop application for dashboard creation and real-time data visualization",
                 "year": 2021,
                 "link": "https://github.com/zenitheesc/ZenView",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Electron",
                     "JS",
                     "NodeJS"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS",
+                    "TECHNICAL SPECIFICATIONS",
                     "Desktop Application Development",
-                    "Programação orientada a eventos",
-                    "Programação orientada a objetos",
-                    "Algoritmos e Estrutura de dados"
+                    "Event Oriented Programming",
+                    "Object Oriented Programming",
+                    "Algorithms and data structures"
                 ]
             },
             "website": {
                 "title": "Zenith Website",
-                "detail": "Recriação da imagem visual do Zenith Aerospace por meio de um site moderno e 100% desenvolvido por nós",
+                "detail": "Zenith Aerospace's image rework through a modern website and 100% developed by us",
                 "year": 2021,
                 "link": "https://github.com/zenitheesc/zenith-website",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "NextJS",
                     "React",
                     "NodeJS"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS",
+                    "TECHNICAL SPECIFICATIONS",
                     "Web Development",
                     "User Interface/User Experience (UI/UX)",
                     "Responsive Design",
@@ -255,110 +254,110 @@
         }
     },
     "hardware": {
-        "title": "Nosso desenvolvimento de Hardware",
+        "title": "Our hardware development",
         "subtitle": [
-            "Nós também nos dedicamos ao desenvolvimento e manufatura de todos os componentes eletrônicos embarcados nos nossos projetos. A nossa equipe cria */Hardware modular/* e */reaproveitável/*, além de integrar diferentes subsistemas no nível de Hardware.",
-            "Para desenvolver Hardware para o ambiente aeroespacial, nós enfrentamos alguns desafios. Além de incorporar os conhecimentos de */Engenharia Eletrônica/*, nós também nos preocupamos em adotar componentes que permaneçam operacionais em */ambientes hostis/*, onde há baixas temperaturas, baixas pressões e elevados índices de radiação solar.",
-            "Cada */detalhe/* dos nossos Hardwares é pensado com atenção, visando satisfazer todas as necessidades do grupo, desde pensar sobre os requisitos definidos pela missão a ser efetuada até criar arquiteturas de sistema."
+            "We also dedicate ourselves to the development and manufacture of all the electronic components that are ambedded in our projects. Our team created */modular/* and */reusable/* hardware, besides integrating different subsystems at hardware-level.",
+            "We've faced some challenged while developing hardware for the aerospace environment. Beyond just applying */Electronic Engineering/* knowledge, we must also choose components that will continue operational in */hostile environments/*, whith low temperatures, low pressure and high solar radiation incidence.",
+            "Every */detail/* of our hardware is thought with care, aiming to please the group's necessities: from the mission-defined requirements to the system architecture creation."
         ],
         "projects": {
             "controladorPID": {
-                "title": "Controlador PID",
-                "detail": "Controlador PID analógico construído com propósitos educacionais ",
+                "title": "PID Controller",
+                "detail": "Analogic PID Controller built for educational purposes",
                 "year": 2019,
                 "link": "https://github.com/zenitheesc/Analog-PID-Controller",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Atmel",
                     "TexasInstruments"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS",
-                    "Amplificação de Sinais Analógicos",
-                    "Aplicação da Teoria de Controle",
-                    "Aplicação de Eletrônica de Potência"
+                    "TECHNICAL SPECIFICATIONS",
+                    "Analogic signal amplification",
+                    "Control Theory application",
+                    "Power Electronics application"
                 ]
             },
             "osciloscopio": {
-                "title": "Osciloscópio",
-                "detail": "Osciloscópio educacional construído com tecnologia de baixo custo",
+                "title": "Osciloscope",
+                "detail": "Educational osciloscope built with low-cost technology",
                 "year": 2019,
                 "link": "https://github.com/zenitheesc/Zenith-Osciloscope",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "STmicroelectronics",
                     "Qt"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS",
-                    "Processamento digital de Sinais",
-                    "Aquisição e discretização de sinais análogicos com o microcontrolador STM32",
-                    "Comunicação com dispositivos USB",
-                    "Interface gráfica para interação com usuário"
+                    "TECHNICAL SPECIFICATIONS",
+                    "Digital signal processing",
+                    "Use of STM32 to process analogic signals",
+                    "Communication with USB devices",
+                    "Graphical interface for user interaction"
                 ]
             },
             "genus": {
                 "title": "Genus",
-                "detail": "Plataforma de hardware genérica para sistemas aeroespaciais",
+                "detail": "Generic hardware platform for aerospace systems",
                 "year": 2020,
                 "link": "https://github.com/zenitheesc/Genus",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "STmicroelectronics",
                     "PCI Express",
                     "Linux",
                     "LoRa"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS",
-                    "Arquitetura de sistema própria",
-                    "Implementação de barramento lógico desenvolvido pelo grupo, o Z-Bus",
-                    "Rede de comunicação redundante com diversos protocolos",
-                    "Backup de dados em memórias Flash e EEPROM",
-                    "Multiplexação de entradas de vídeo e gerenciamento dos sistemas de energia  "
+                    "TECHNICAL SPECIFICATIONS",
+                    "Original system architecture",
+                    "Implementation of a logical bus developed by the group, the Z-Bus",
+                    "Redundant communication network with multiple protocols",
+                    "Data backup in Flash and EEPROM",
+                    "Video input multiplexing and energy system management"
                 ]
             },
             "varella": {
                 "title": "Varella Acquisition Module",
-                "detail": "Módulo de instrumentação independente para sondas estratosféricas",
+                "detail": "Independent instrumentation module for stratospheric probres",
                 "year": 2021,
                 "link": "",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "STmicroelectronics",
                     "NXP"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS",
-                    "Emprego de microcontrolador STM32 para o monitoramento de periféricos",
-                    "Amplificação e processamento de sinais analógicos de sensores",
-                    "Comunicação redundante com outros dispositivos via CAN, I2C, SPI e USB",
-                    "Backup de dados do lançamento em memórias Flash e EEPROM"
+                    "TECHNICAL SPECIFICATIONS",
+                    "Use of STM32 to monitor periferals",
+                    "Analogic signals amplification and processing",
+                    "Redundant communication between devices, through CAN, I2C, SPI and USB",
+                    "Data backup in Flash and EEPROM"
                 ]
             },
             "groundStation": {
                 "title": "Ground Station",
-                "detail": "Uma estação de telecomunicações portátil de fácil montagem integrada ao ZenView",
+                "detail": "A portable telecommunication station integrated with the ZenView software",
                 "year": 2021,
                 "link": "https://github.com/zenitheesc/GroundStation-Mobile",
                 "tecnologies": [
-                    "TECNOLOGIAS",
+                    "TECHNOLOGIES",
                     "Linux",
                     "STmicroelectronics",
                     "LoRa"
                 ],
                 "techSpecification": [
-                    "ESPECIFICAÇÕES TÉCNICAS",
-                    "Uso de rádios LoRa para comunicação a longa distância",
-                    "Emprego de microcontrolador STM32 para gerenciamento dos rádios e dos dados recebidos",
-                    "Linux Embarcado",
-                    "Teoria de antenas e telecomunicações"
+                    "TECHNICAL SPECIFICATIONS",
+                    "Use of LoRa radios for long-distance communication",
+                    "STM32 for radio and data managing",
+                    "Embedded Linux",
+                    "Antennas and Telecommunication Theory"
                 ]
             }
         }
     },
     "educacional": {
-        "title": "Nossos Projetos Educacionais",
+        "title": "Our educational projects",
         "subtitle": [
             "O */Garatéa-E/* nasceu do desejo do Zenith de levar a ciência para */fora da universidade/* e incentivar jovens a gostarem de pesquisar e estudar. Nosso projeto educacional traz para próximo dos alunos algo que só era visto por eles nas aulas de Física e Química, o */Espaço/*.",
             "*/Alunos do ensino fundamental e médio/* tiveram a oportunidade de desenvolver experimentos científicos, junto com os seus professores, e mandá-los para o espaço em uma de nossas sondas aeroespaciais. Isso possibilitou que os alunos pudessem analisar as mudanças em seus experimentos após a exposição ao ambiente aeroespacial, instigando a */curiosidade/* dos estudantes.",
@@ -367,43 +366,43 @@
         "projects": {
             "garateaE2017": {
                 "title": "Garatéa-E 2017",
-                "subtitle": "A primeira vez que inspiramos alunos e professores a ir além da teoria e alcançar o espaço",
+                "subtitle": "The first time we inspired students and teachers to go beyond theory and reach for the stars",
                 "year": 2017,
-                "launchDate": ["LANÇAMENTO", "24/06/2017"],
-                "altitude": ["ALTITUDE ALCANÇADA", "24 km"],
+                "launchDate": ["LAUNCH DATE", "24/06/2017"],
+                "altitude": ["MAX ALTITUDE", "24 km"],
                 "statistics": [{
                         "numero": 200,
-                        "label": "ALUNOS PARTICIPANTES",
+                        "label": "STUDENTS PARTICIPATING",
                         "plus": true
                     },
                     {
                         "numero": 20,
-                        "label": "PROJETOS INSCRITOS"
+                        "label": "REGISTERED PROJECTS"
                     },
                     {
                         "numero": 12,
-                        "label": "CANSATs LANÇADOS"
+                        "label": "LAUNCHED CANSATs"
                     },
                     {
                         "numero": 8,
-                        "label": "PONGSATs LANÇADOS"
+                        "label": "LAUNCHED PONGSATs"
                     }
                 ]
             },
             "garateaE2018": {
                 "title": "Garatéa-E 2018",
-                "subtitle": "Nossa segunda oportunidade para apaixonar alunos entre 7 e 18 anos pela ciência e pelo espaço",
+                "subtitle": "Our second opportunity helping students between 7 and 18 fall in love with science and space",
                 "year": 2018,
-                "launchDate": ["LANÇAMENTO", "11/08/2018"],
-                "altitude": ["ALTITUDE ALCANÇADA", "23 km (Tracy)", "27,3 km (Valentina)"],
+                "launchDate": ["LAUNCH DATE", "11/08/2018"],
+                "altitude": ["MAX ALTITUDE", "23 km (Tracy)", "27,3 km (Valentina)"],
                 "statistics": [{
                         "numero": 900,
-                        "label": "ALUNOS PARTICIPANTES",
+                        "label": "STUDENTS PARTICIPATING",
                         "plus": true
                     },
                     {
                         "numero": 64,
-                        "label": "PROJETOS INSCRITOS"
+                        "label": "REGISTERED PROJECTS"
                     },
                     {
                         "numero": 32,
@@ -417,18 +416,18 @@
             },
             "garateaE2019": {
                 "title": "Garatéa-E 2019",
-                "subtitle": "Unindo alunos, professores e cientistas de todas as regiões do país no Sábado Aeroespacial pela terceira vez",
+                "subtitle": "Uniting students, teachers, professors and scientists of all Brazilian Regions in 'Sábado Aeroespacial' ('Aerospace Saturday') for the third time",
                 "year": 2019,
-                "launchDate": ["LANÇAMENTO", "24/08/2019"],
-                "altitude": ["ALTITUDE ALCANÇADA", "23 km"],
+                "launchDate": ["LAUNCH DATE", "24/08/2019"],
+                "altitude": ["MAX ALTITUDE", "23 km"],
                 "statistics": [{
                         "numero": 600,
-                        "label": "ALUNOS PARTICIPANTES",
+                        "label": "STUDENTS PARTICIPATING",
                         "plus": true
                     },
                     {
                         "numero": 70,
-                        "label": "PROJETOS INSCRITOS"
+                        "label": "REGISTERED PROJECTS"
                     },
                     {
                         "numero": 64,

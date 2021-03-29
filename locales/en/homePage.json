@@ -1,92 +1,92 @@
 {
     "homePageHero": {
-        "title": "O LAR DAS ESTRELAS EM SÃO CARLOS",
-        "subtitle": "Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a oportunidade de chegar ao espaço"
+        "title": "HOME OF THE STARS IN SÃO CARLOS",
+        "subtitle": "Since 2014, Zenith Aerospace provides hundred of students with the opportunity to reach space"
     },
     "homePageDepartaments": {
-        "title": "Construindo tecnologia aeroespacial em todos os setores",
-        "subtitle": "Construímos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
+        "title": "Building aerospace technology in all sectors",
+        "subtitle": "We design and build our own products, from the mission conception to hardware and structure manufacture",
         "embarcados": {
-            "title": "Embarcados",
-            "detail": "Esse departamento pesquisa e desenvolve tecnologias em sistemas embarcados voltada para aplicações aeroespaciais.",
-            "core": "NÚCLEOS",
+            "title": "Embedded Systems",
+            "detail": "This department researches and develops embedded system technologies related to aerospace applications",
+            "core": "CORES",
             "technologies": ["C","JavaScript","OpenCv","STM","AutoDesk","LoRa","Linux","Python","Raspberry","CubeIDE"],
             "cores": [
                 {
                     "title": "Hardware: ",
-                    "detail": "Desenvolvem placas de circuito impresso para diversas aplicações aeroespaciais e realizam a manufatura das mesmas."
+                    "detail": "Circuit board development for aerospace applications and their manufacture."
                 },
                 {
-                    "title": "Baixo Nível: ",
-                    "detail": "Programam os microcontroladores envolvidos nos diversos projetos embarcados."
+                    "title": "Low Level: ",
+                    "detail": "Microcontroller programming related to multiple embedded system projects."
                 },
                 {
-                    "title": "Alto Nível: ",
-                    "detail": "Programam aplicações web, mobile e desktop que auxiliam no sucesso das missões."
+                    "title": "High Level: ",
+                    "detail": "Development of web, mobile and desktop aplications for mission support."
                 }
             ]
         },
         "estruturas": {
-            "title": "Estruturas",
-            "detail": "Esse departamento realiza o desenvolvimento de modelos 3D de Sondas e CubeSats e realiza a manufatura desses. Além disso, atua projetando suportes para sistemas embarcados.",
-            "core": "NÚCLEOS",
+            "title": "Structures",
+            "detail": "This department develops probes and CubeSats 3D models for their manufacturing. They also project supports for the embedded systems. ",
+            "core": "CORES",
             "technologies": ["Solid Works","Solid Edge","ANSYS"],
             "cores": [
                 {
-                    "title": "Desenvolvimento da Estrutura: ",
-                    "detail": "Desenvolvem o modelo 3D do projeto CAD da estrutura."
+                    "title": "Structure Development: ",
+                    "detail": "Development of the structure's CAD 3D model."
                 },
                 {
-                    "title": "Atenuação de Vibração: ",
-                    "detail": "Realizam teste e simulações para assegurar que a estrutura modelada suportará a vibração."
+                    "title": "Vibration Attenuation : ",
+                    "detail": "Responsible for tests and simulations to make sure that the modeled structure supports the vibrations."
                 },
                 {
-                    "title": "Isolamento Térmico: ",
-                    "detail": "Desenvolvem todo o modelamento térmico da estrutura, assegurando sua temperatura de trabalho."
+                    "title": "Thermal Insulation : ",
+                    "detail": "Development of the structure's complete thermal model, making sure it is in the correct working temperature."
                 }
             ]
         },
         "astrobiologia": {
-            "title": "Astrobiologia",
-            "detail": "Esse departamento desenvolve experimentos biológicos a fim de expô-los a condições ambientais semelhantes às espaciais.",
-            "core": "NÚCLEOS",
+            "title": "Astrobiology",
+            "detail": "This department develops biological experiments, aiming to expose those experiments to space-like environmental conditions.",
+            "core": "CORES",
             "technologies": ["TODO"],
             "cores": [
                 {
-                    "title": "Suporte ao Projeto Kurumim: ",
-                    "detail": "Selecionam e manipulam os experimentos educacionais do projeto Kurumim que serão embarcados em sondas estratosféricas."
+                    "title": "Kurumin Project support: ",
+                    "detail": "Selecting and manipulating Kurumin's educational experiments that will be attached to the stratospheric probes."
                 },
                 {
-                    "title": "Científico: ",
-                    "detail": "Produzem experimentos científicos que conduzem a publicação de artigos científicos."
+                    "title": "Scientific: ",
+                    "detail": "Conducting experiments which can lead to the publication of scientific papers"
                 },
                 {
-                    "title": "Parcerias: ",
-                    "detail": "Fornecem o suporte técnico e operacional necessário para que pesquisadores interessados possam embarcar experimentos em veículos produzidos pelo Zenith."
+                    "title": "Partnerships: ",
+                    "detail": "Providing needed technical and operational support to researchers interested in attaching experiments to vehicles made by Zenith "
                 }
             ]
         },
         "gestao": {
-            "title": "Gestão",
-            "detail": "Esse departamento é responsável pela organização e administração do grupo.",
+            "title": "Management",
+            "detail": "This department is responsible for organizing and administrating the group.",
             "core": "NÚCLEOS",
             "technologies": ["Slack","Trello","Facebook","Discord","Word","Excel","Instagram", "LinkedIn","Google Drive","Excel","Google Calendar"],
             "cores": [
                 {
-                    "title": "Financeiro: ",
-                    "detail": "Realizam o planejamento orçamentário, o controle de gastos e a busca e manutenção de patrocínios."
+                    "title": "Finances: ",
+                    "detail": "Budget and expenses control, responsible for looking for and maintaining sponsorships."
                 },
                 {
                     "title": "Marketing: ",
-                    "detail": "Atuam nas redes sociais do grupo, elaborando estratégias para atrair novas parcerias e divulgar o grupo."
+                    "detail": "Social network management, planning strategies to attract new partners and make the group known."
                 },
                 {
-                    "title": "Recursos Humanos: ",
-                    "detail": "Acompanham os membros do grupo, analizando o seu desempenho e satisfação."
+                    "title": "Human Resources: ",
+                    "detail": "Group members management, analyzing their performance and satisfaction."
                 },
                 {
-                    "title":"Eventos: ",
-                    "detail": "Promovem a interação do grupo com a sociedade através de eventos educacionais, como o Sábado Aeroespacial."
+                    "title":"Events: ",
+                    "detail": "Promoting interactions between the Group and society throught educational events, such as 'Sábado Aeroespacial'."
                 }
             ]
         },
@@ -110,26 +110,26 @@
     "homePageBanners": {
         "genus": {
             "title": "Genus",
-            "detail": "Hardware modularizado voltado para aplicações aeroespaciais",
+            "detail": "Modularized hardware to be used in aerospace applications",
             "link": "https://github.com/zenitheesc/Genus"
         },
         "zenithMonitor": {
             "title": "Zenith Monitor",
-            "detail": "Tecnologia para rastreamento de sondas aeroespaciais",
+            "detail": "Aerospace probes tracking technology",
             "link": "https://github.com/zenitheesc/Zenith-Monitor"
         }
     },
     "homePageStatistics": {
-        "title": "Eficiência descrita em números",
-        "subtitle": "desde 2014",
+        "title": "Eficiency described by numbers",
+        "subtitle": "since 2014",
         "statistics": [
             {
                 "number": 25,
-                "description": "PROJETOS"
+                "description": "PROJECTS"
             },
             {
                 "number": 400,
-                "description": "MEMBROS DESDE A FUNDAÇÃO"
+                "description": "MEMBERS SINCE FOUNDATION"
             },
             {
                 "number": 2,
@@ -141,17 +141,17 @@
             },
             {
                 "number": 7,
-                "description": "REPORTAGENS NA MÍDIA"
+                "description": "MEDIA REPORTS"
             },
             {
                 "number": 12765,
-                "description": "HORAS NA SALINHA"
+                "description": "HOURS WORKING"
             }
         ]
     },
     "homePageSupporters": {
-        "title": "Nossos apoiadores",
-        "detail": "Sem eles, nada disso seria possível",
+        "title": "Our supporters",
+        "detail": "without them, nothing would be possible",
         "supporters": [ 
             {   
                 "logo": "OZ Produtora",
@@ -172,7 +172,7 @@
         ]
     },
     "footer": {
-        "copyright": "© 2020  Zenith Aerospace",
-        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
+        "copyright": "© 2021  Zenith Aerospace",
+        "easterEgg": "MADE WITH TONS OF JAVASCRIPT AND CONFUSION ON DISCORD"
     }
 }
