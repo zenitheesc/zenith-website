@@ -70,3 +70,22 @@
         font-size: 18px;
     }
 }
+
+.hrAnimation {
+    width: 100%;
+    border: 1px solid white;
+    animation-name: horizontal-line;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes horizontal-line {
+    0% {
+        width: 5%;
+        opacity: 0%;
+    }
+    100% {
+        width: 90%;
+        opacity: 100%;
+    }
+}
