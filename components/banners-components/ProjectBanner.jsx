@@ -39,13 +39,13 @@ function ProjectBanner(props) {
 					active={!isVisible}
 					onChange={playVideo}>
 					{videoAutoPlayable ?
-						<video className={styles.projectBannerMidia} ref={videoElement} loop={loop} muted playsInline preload="auto">
+						<video data-aos="fade-right" className={styles.projectBannerMidia} ref={videoElement} loop={loop} muted playsInline preload="auto">
 							<source src={`/images/HomePage/banners/${folderName}/videoIOS.mp4`} type="video/mp4" />
 							<source src={`/images/HomePage/banners/${folderName}/video.webm`} type="video/webm" />
 							<source src={`/images/HomePage/banners/${folderName}/video.mp4`} type="video/mp4" />
 						</video>
 						:
-						<picture className={styles.projectBannerMidia}>
+						<picture data-aos="fade-right" className={styles.projectBannerMidia}>
 							<source srcset={`/images/HomePage/banners/${folderName}/static.png`} type="image/png" />
 							<source srcset={`/images/HomePage/banners/${folderName}/static.webp`} type="image/webp" />
 							<img src={`/images/HomePage/banners/${folderName}/static.webp`} type="image/webp" className={styles.projectBannerMidia} alt = "Static Project Image"  />
