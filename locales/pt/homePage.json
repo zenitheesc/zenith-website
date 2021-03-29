@@ -92,17 +92,21 @@
         },
         "astronautica": {
             "title": "Astronáutica",
-            "detail": "alsçflka asdfjkças aksdjfakjsdç akjsdfkjaç ajskdjfçak kaskdfjç kjaçskdjfçakjsd kjçaksdjfçak",
+            "detail": "Esse departamento é responsável pela pesquisa e desenvolvimento das ferramentas necessárias para a exploração dos limites da atmosfera terrestre, bem como a execução das normas para tal atividade.",
             "core": "NÚCLEOS",
             "technologies": [],
             "cores": [
                 {
-                    "title": "asdfasd: ",
-                    "detail": "Desenvolvem placas de circuito impresso para diversas aplicações aeroespaciais e realizam a manufatura das mesmas."
+                    "title": "Dinâmica de Voo: ",
+                    "detail": "Realiza simulações de voo, fornece noções sobre estabilidade estática e dinâmica dos balões e traça estratégias de lançamento e de recuperação da sonda."
                 },
                 {
-                    "title": "asfasd asfasd: ",
-                    "detail": "Programam os microcontroladores envolvidos nos diversos projetos embarcados."
+                    "title": "Pesquisa e Desenvolvimento: ",
+                    "detail": "Realizam pesquisas no ramo da Fluidodinâmica e Mecânica Orbital, buscando aplicar modelos teóricos em missões futuras do Zenith."
+                },
+                {
+                    "title":"Legislação: ",
+                    "detail": "Responsável pela parte normativa das missões com balões estratosféricos, de acordo com as prescrições de uso do espaço aéreo brasileiro."
                 }
             ]
         }
