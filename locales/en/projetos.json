@@ -257,13 +257,13 @@
         "title": "Our hardware development",
         "subtitle": [
             "We also dedicate ourselves to the development and manufacture of all the electronic components that are ambedded in our projects. Our team created */modular/* and */reusable/* hardware, besides integrating different subsystems at hardware-level.",
-            "Para desenvolver Hardware para o ambiente aeroespacial, nós enfrentamos alguns desafios. Além de incorporar os conhecimentos de */Engenharia Eletrônica/*, nós também nos preocupamos em adotar componentes que permaneçam operacionais em */ambientes hostis/*, onde há baixas temperaturas, baixas pressões e elevados índices de radiação solar.",
-            "Cada */detalhe/* dos nossos Hardwares é pensado com atenção, visando satisfazer todas as necessidades do grupo, desde pensar sobre os requisitos definidos pela missão a ser efetuada até criar arquiteturas de sistema."
+            "We've faced some challenged while developing hardware for the aerospace environment. Beyond just applying */Electronic Engineering/* knowledge, we must also choose components that will continue operational in */hostile environments/*, whith low temperatures, low pressure and high solar radiation incidence.",
+            "Every */detail/* of our hardware is thought with care, aiming to please the group's necessities: from the mission-defined requirements to the system architecture creation."
         ],
         "projects": {
             "controladorPID": {
-                "title": "Controlador PID",
-                "detail": "Controlador PID analógico construído com propósitos educacionais ",
+                "title": "PID Controller",
+                "detail": "Analogic PID Controller built for educational purposes",
                 "year": 2019,
                 "link": "https://github.com/zenitheesc/Analog-PID-Controller",
                 "tecnologies": [
@@ -273,14 +273,14 @@
                 ],
                 "techSpecification": [
                     "TECHNICAL SPECIFICATIONS",
-                    "Amplificação de Sinais Analógicos",
-                    "Aplicação da Teoria de Controle",
-                    "Aplicação de Eletrônica de Potência"
+                    "Analogic signal amplification",
+                    "Control Theory application",
+                    "Power Electronics application"
                 ]
             },
             "osciloscopio": {
-                "title": "Osciloscópio",
-                "detail": "Osciloscópio educacional construído com tecnologia de baixo custo",
+                "title": "Osciloscope",
+                "detail": "Educational osciloscope built with low-cost technology",
                 "year": 2019,
                 "link": "https://github.com/zenitheesc/Zenith-Osciloscope",
                 "tecnologies": [
@@ -290,15 +290,15 @@
                 ],
                 "techSpecification": [
                     "TECHNICAL SPECIFICATIONS",
-                    "Processamento digital de Sinais",
-                    "Aquisição e discretização de sinais análogicos com o microcontrolador STM32",
-                    "Comunicação com dispositivos USB",
-                    "Interface gráfica para interação com usuário"
+                    "Digital signal processing",
+                    "Use of STM32 to process analogic signals",
+                    "Communication with USB devices",
+                    "Graphical interface for user interaction"
                 ]
             },
             "genus": {
                 "title": "Genus",
-                "detail": "Plataforma de hardware genérica para sistemas aeroespaciais",
+                "detail": "Generic hardware platform for aerospace systems",
                 "year": 2020,
                 "link": "https://github.com/zenitheesc/Genus",
                 "tecnologies": [
@@ -310,16 +310,16 @@
                 ],
                 "techSpecification": [
                     "TECHNICAL SPECIFICATIONS",
-                    "Arquitetura de sistema própria",
-                    "Implementação de barramento lógico desenvolvido pelo grupo, o Z-Bus",
-                    "Rede de comunicação redundante com diversos protocolos",
-                    "Backup de dados em memórias Flash e EEPROM",
-                    "Multiplexação de entradas de vídeo e gerenciamento dos sistemas de energia  "
+                    "Original system architecture",
+                    "Implementation of a logical bus developed by the group, the Z-Bus",
+                    "Redundant communication network with multiple protocols",
+                    "Data backup in Flash and EEPROM",
+                    "Video input multiplexing and energy system management"
                 ]
             },
             "varella": {
                 "title": "Varella Acquisition Module",
-                "detail": "Módulo de instrumentação independente para sondas estratosféricas",
+                "detail": "Independent instrumentation module for stratospheric probres",
                 "year": 2021,
                 "link": "",
                 "tecnologies": [
@@ -329,15 +329,15 @@
                 ],
                 "techSpecification": [
                     "TECHNICAL SPECIFICATIONS",
-                    "Emprego de microcontrolador STM32 para o monitoramento de periféricos",
-                    "Amplificação e processamento de sinais analógicos de sensores",
-                    "Comunicação redundante com outros dispositivos via CAN, I2C, SPI e USB",
-                    "Backup de dados do lançamento em memórias Flash e EEPROM"
+                    "Use of STM32 to monitor periferals",
+                    "Analogic signals amplification and processing",
+                    "Redundant communication between devices, through CAN, I2C, SPI and USB",
+                    "Data backup in Flash and EEPROM"
                 ]
             },
             "groundStation": {
                 "title": "Ground Station",
-                "detail": "Uma estação de telecomunicações portátil de fácil montagem integrada ao ZenView",
+                "detail": "A portable telecommunication station integrated with the ZenView software",
                 "year": 2021,
                 "link": "https://github.com/zenitheesc/GroundStation-Mobile",
                 "tecnologies": [
@@ -348,10 +348,10 @@
                 ],
                 "techSpecification": [
                     "TECHNICAL SPECIFICATIONS",
-                    "Uso de rádios LoRa para comunicação a longa distância",
-                    "Emprego de microcontrolador STM32 para gerenciamento dos rádios e dos dados recebidos",
-                    "Linux Embarcado",
-                    "Teoria de antenas e telecomunicações"
+                    "Use of LoRa radios for long-distance communication",
+                    "STM32 for radio and data managing",
+                    "Embedded Linux",
+                    "Antennas and Telecommunication Theory"
                 ]
             }
         }
