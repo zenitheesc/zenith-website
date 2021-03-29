@@ -5,7 +5,10 @@ import 'aos/dist/aos.css';
 
 export default function MyApp({ Component, pageProps }) {
     useEffect(() => {
-        AOS.init();
+        AOS.init({
+            duration: 1500,
+            // easing: 'ease-in',
+        });
       }, []);
     
     return <Component {...pageProps} />;
