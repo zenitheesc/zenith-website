@@ -16,7 +16,7 @@ function Projetos() {
         backgroundColor="#000000"
         title={title}
         subtitle={subtitle}
-        path={"Hero/cube-01-black.mp4"}
+        path={"Hero/render.png"}
       />
       <ProjectTab />
       <Footer />

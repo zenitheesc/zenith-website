@@ -9,7 +9,6 @@ export default function HeroSection(props) {
   };
 
   const { path } = props
-  const videoElement = useRef(null);
 
   return (
     <div style={backgroundImage} className={styles.heroContainer}>
@@ -24,10 +23,8 @@ export default function HeroSection(props) {
           )}
         </h2>
       </div>
-      <div className={styles.videoContainer}>
-        <video ref={videoElement} autoPlay loop muted playsInline preload="auto">
-          <source src={`/images/Projetos/${path}`} />
-        </video>
+      <div className={styles.imgContainer}>
+        <img src={`/images/Projetos/${path}`} />
       </div>
 
     </div>
