@@ -12,31 +12,29 @@ export default function Hardware(props) {
   const { groundStation } = props.textContent.projects;
 
   const groundStationPaths = [
-    'Hardware/varella-e1e1e1.mov',
+    'Hardware/GroundStation.mp4',
   ];
 
   const varellaPaths = [
-    'Hardware/varella-e1e1e1.mov',
+    'Hardware/VarellaAcquisitionModule.webm',
   ];
 
   const genusPaths = [
-    'Hardware/varella-e1e1e1.mov',
-
+    'Hardware/Genus.mp4',
   ];
 
   const controladorPIDPaths = [
-    'Hardware/varella-e1e1e1.mov',
+    'Hardware/Genus.mp4',
   ];
 
   const osciloscopioPaths = [
-    'Hardware/varella-e1e1e1.mov',
+    'Hardware/Genus.mp4',
   ];
 
   return (
     <section className={`-section ${styles.projectsSection}`} style={{ backgroundColor: '#E1E1E5' }}>
       <ProjectHeader textContent ={ props.textContent } />
       <Timeline theme="light">
-
         <Event interval={2021}>
           <Model paths={groundStationPaths} textContent={groundStation} />
           <Model paths={varellaPaths} textContent={varella} />

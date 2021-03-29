@@ -1,4 +1,3 @@
-import React, { useRef, useState, useEffect } from 'react';
 import CheckList from '../../projects-structure/CheckList';
 import ProjectData from '../../ProjectData';
 import ProjectTitle from '../../projects-structure/ProjectTitle';
