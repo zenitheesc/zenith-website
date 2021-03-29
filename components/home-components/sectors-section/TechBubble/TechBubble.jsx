@@ -4,7 +4,7 @@ import style from 'styles/TechBubble.module.css'
 
 export default function TechBubble(props) {
 
-  const {backGroundColor} = props
+  const {backGroundColor, alt} = props
 
   return (
     <div
@@ -27,11 +27,10 @@ export default function TechBubble(props) {
         >
           {<img
             src={`/images/technologies/${props.symbol}.svg`}
-            alt=""
+            alt={alt}
             style={{
-              maxHeight: "70%",
-              maxWidth: "70%",
-              fill: "red",
+              maxHeight: "65%",
+              maxWidth: "65%",
               height: "auto"
             }}
           />}

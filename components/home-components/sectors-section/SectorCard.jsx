@@ -10,24 +10,24 @@ export default function SectorCard({ textContent, name}) {
 
   const getStockBubbles = () => {
     return techData.map((tech, i) => {
-      return <TechBubble {...tech} key={i} backGroundColor={(tech.sector === name) ? "#4B4B4B" : "#a3a3a3"} />;
+      return <TechBubble {...tech} key={i} alt={tech.name} backGroundColor={(tech.sector === name) ? "#545454" : "#CCCCCC"} />;
     });
   };
   const stockBubbles = getStockBubbles();
 
   const options = {
-    size: 240,
-    minsize: 30,
-    gutter: 20,
+    size: 140,
+    minsize: 20,
+    gutter: 8,
     provideProps: true,
     numCols: 6,
-    fringeWidth: 260,
-    yRadius: 100,
-    xRadius: 100,
-    cornerRadius: 50,
+    fringeWidth: 180,
+    yRadius: 90,
+    xRadius: 180,
+    cornerRadius: 70,
     showGuides: false,
     compact: true,
-    gravitation: 4,
+    gravitation: 5,
   };
 
   return (
