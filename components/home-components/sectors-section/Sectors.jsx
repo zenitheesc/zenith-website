@@ -11,11 +11,11 @@ import SectorCard from './SectorCard';
 
 function SectorsCards({ textContent, currSector }) {
   const sectorsCards = {
-    gestao       : <SectorCard textContent = {textContent.gestao} />,
-    embarcados   : <SectorCard textContent = {textContent.embarcados} />,
-    estruturas   : <SectorCard textContent = {textContent.estruturas} />,
-    astrobiologia: <SectorCard textContent = {textContent.astrobiologia} />,
-    astronautica : <SectorCard textContent = {textContent.astronautica} />,
+    gestao       : <SectorCard textContent = {textContent.gestao} name={"gestao"}/>,
+    embarcados   : <SectorCard textContent = {textContent.embarcados} name={"embarcados"}/>,
+    estruturas   : <SectorCard textContent = {textContent.estruturas} name={"estruturas"}/>,
+    astrobiologia: <SectorCard textContent = {textContent.astrobiologia} name={"astrobiologia"}/>,
+    astronautica : <SectorCard textContent = {textContent.astronautica} name={"astronautica"} />,
   }
 
   return sectorsCards[currSector];
@@ -39,19 +39,35 @@ function Sectors() {
         </h3>
       </div>
       <div className={styles.sectorsButtons}>
-        <SectorsButtons label={textContent.embarcados} onClick={() => setCurrSector("embarcados")}>
+        <SectorsButtons
+          selected={currSector === "embarcados"}
+          label={textContent.embarcados}
+          onClick={() => setCurrSector("embarcados")}
+        >
           <Embarcados />
         </SectorsButtons>
-        <SectorsButtons label={textContent.estruturas} onClick={() => setCurrSector("estruturas")}>
+        <SectorsButtons
+          selected={currSector === "estruturas"}
+          label={textContent.estruturas}
+          onClick={() => setCurrSector("estruturas")}>
           <Estruturas />
         </SectorsButtons>
-        <SectorsButtons label={textContent.astrobiologia} onClick={() => setCurrSector("astrobiologia")}>
+        <SectorsButtons
+          selected={currSector === "astrobiologia"}
+          label={textContent.astrobiologia}
+          onClick={() => setCurrSector("astrobiologia")}>
           <Astrobiologia />
         </SectorsButtons>
-        <SectorsButtons label={textContent.gestao} onClick={() => setCurrSector("gestao")}>
+        <SectorsButtons
+          selected={currSector === "gestao"}
+          label={textContent.gestao}
+          onClick={() => setCurrSector("gestao")}>
           <Gestão />
         </SectorsButtons>
-        <SectorsButtons label={textContent.astronautica} onClick={() => setCurrSector("astronautica")}>
+        <SectorsButtons 
+          selected={currSector === "astronautica"}
+          label={textContent.astronautica}
+          onClick={() => setCurrSector("astronautica")}>
           <Astronautica />
         </SectorsButtons>
       </div>

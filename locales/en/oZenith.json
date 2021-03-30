@@ -1,48 +1,48 @@
 {
     "oZenithHero": {
-        "title": "O que é o Zenith?",
-        "subtitle": "Nós somos ",
-        "array": ["CIÊNCIA", "TECNOLOGIA", "INOVAÇÃO", "CONEXÕES", "ZENITH"]
+        "title": "What is Zenith?",
+        "subtitle": "We are ",
+        "array": ["SCIENCE", "TECHNOLOGY", "INOVATION", "TECHNOLOGY", "ZENITH"]
     },
     "oZenithCard1": {
-        "title":"Nós amamos o espaço",
+        "title":"We love space",
         "text": [
-            "Somos uma extracurricular da Escola de Engenharia de São Carlos (EESC) focada na construção de */satélites/* e */sondas aeroespaciais/*.",
-            "Unindo cerca de 60 estudantes da Universidade de São Paulo (USP) e da Universidade Federal de São Carlos (Ufscar), nós somos capazes de construir o hardware, software e estrutura dos nossos projetos."
+            "We are an extracurricular group from the University of São Paulo (EESC-USP) focused on building */satellites/* and */aerospace probes/*.",
+            "Uniting around 60 students from the University of São Paulo (USP) and the Federal University of São Carlos (UFSCar), we are capable of building the hardware, software and structures needed for our projects."
         ]
     },
     "oZenithCard2": {
-        "title":"O Começo",
+        "title":"The Beggining",
         "text": [
-            "O Zenith nasceu a partir da proposta de Lucas Fonseca, participante da missão Rosetta, de desenvolver um CubeSat dentro da universidade. A partir de 2013, alunos da graduação começaram a se reunir com Lucas e estudar a área espacial.",
-            "Mas, somente em 2014, o grupo se consolidou. Com uma comunicação com dois pesquisadores do Laboratório Nacional de Luz Síncrotron (LNLS), o Zenith começou a desenvolver um experimento em alta altitude e  */nunca mais parou de avançar/*."
+            "Zenith was born from Lucas Fonseca's idea, member of the Rosetta mission, to develop a CubeSat inside the university. Since 2013, undergraduates started meeting with Lucas and studying the space. ",
+            "But, only in 2014, the group consolidated itself. With connections to two researchers from the Brazilian Synchrotron Light Laboratory (LNLS), Zenith started developing an experiment in high altitudes and it */never stopped going forwards/*."
         ]
     },
     "oZenithCard3": {
-        "title":"Nossos valores",
+        "title":"Our values",
         "text": [
             {
-                "title": "Ciência",
-                "text": "Incentivar a produção científica nacional e facilitar o acesso à ciência no ambiente universitário."
+                "title": "Science",
+                "text": "Fuel national scientific research and facilitate the access to science."
             },
             {
-                "title": "Pessoas",
-                "text": "O Zenith possui uma */hierarquia horizontal/*, onde todos os integrantes possuem voz, mas responsabilidades distintas."
+                "title": "People",
+                "text": "Zenith has an */horizontal hierarchy system/*, where all members have a voice, but distinct responsabilities."
             },
             {
-                "title": "Capacitação profissional",
-                "text": "Os integrantes tem a oportunidade de desenvolver habilidades técnicas em grupo, praticando suas */soft skills/*."
+                "title": "Professional training",
+                "text": "Members have the opportunity to develop technical abilities in our group, practicing their */soft skills/*."
             }
         ]
     },
     "oZenithCard4": {
-        "title":"Você deseja ser parte dessa exploração?",
+        "title":"Would you like to be a part of this mission?",
         "text": [
-            "Todo ano nos abrimos um */processo seletivo/* para recrutar novos integrantes!",
-            "Estamos buscando pessoas curiosas e tão apaixonadas pelo espaço e por tecnologia quanto nós!"
+            "Every year we open our */selection process/* to recruit new members!",
+            "We're looking for curious people that are also in love with space and technology!"
         ],
         "links": [
-            { "text": "Processo Seletivo", "url": "processo-seletivo" }
+            { "text": "Selection Process", "url": "processo-seletivo" }
         ]
     }
 }

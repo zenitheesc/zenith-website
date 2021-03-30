@@ -11,11 +11,7 @@
 .textSection {
     text-align: center;
 	max-width: 1328px;
-}
-
-.textSection > h3 {
-	color: #4B4B4B;
-}     
+} 
 
 .sectorsButtons {
 	display: flex;
@@ -34,6 +30,7 @@
 .sectorsButton > button {
 	background-color: transparent;
 	border: none;
+	outline: none;
 	padding: 0;
 	width: 100%;
 	outline: none;
@@ -49,7 +46,16 @@
 
 .sectorsButton > button > svg {
 	width: 10em;
+	fill: #a3a3a3;
 	height: auto;
+}
+
+.sectorsButton:hover > button > svg{
+	fill: #4B4B4B;
+}
+
+.sectorsButton:hover > h3{
+	color: #4B4B4B;
 }
 
 .sectorsButton > h3 {
@@ -57,6 +63,17 @@
 	font-size: 1.125rem;
 	margin-top: 0.5em;
 	letter-spacing: -0.03em;
+	color: #a3a3a3;
+}
+
+
+.sectorsButtonSelected > button > svg{
+	fill: #4B4B4B;
+}
+
+.sectorsButtonSelected > h3 {
+	text-align: center;
+	color: #4B4B4B;
 }
 
 .st0 {

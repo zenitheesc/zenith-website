@@ -1,17 +1,16 @@
-.container{
+.container {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	background-color: white;
-	padding: 2em;
-	align-items: center;
+	padding: 0em 2em;
 	border: 1px solid #D7D7D7;
 	border-radius: 5px;
 	text-align: justify;
 	max-width: 1328px;
 }
 
-.info{
+.info {
 	width: 55%;
 	text-align: justify;
 	display: flex;
@@ -19,11 +18,12 @@
 	color: #545454;
 }
 
-.cloud{
+.cloud {
 	display: flex;
 	justify-content: center;
-	width: 45%;
+	width: 60%;
 	height: 100%;
+	padding-left: 3em;
 }
 
 .infoContainer{
@@ -31,7 +31,7 @@
 }
 
 .info > h1 {
-	margin-top: 0px;
+	margin-top: 2rem;
 	margin-bottom: 10px;
 	font-size: 36px;
 }
@@ -47,25 +47,57 @@
 	font-size: 18px;
 }
 
+.bubbleUI {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0) !important;
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    border-radius: 50px;
+    background-color: white !important;
+    overflow: hidden !important;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+.bubbleUI>* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 @media screen and (max-width: 1024px) {
 
 	.container {
-		flex-direction: column-reverse;
+		padding: 2em;
+		flex-direction: column;
 	}
 
 	.info{
 		width: 100%;
 	}
 
+	.info > h1 {
+		margin-top: 0rem;
+	}
+
 	.cloud{
 		width: 100%;
+		padding-left: 0em;
 	}
 }
 
 @media screen and (max-width: 768px) {
 
 	.container {
-		padding: 1em;
+		padding: 2em 1em;
 	}
 
 	.info > h1 {

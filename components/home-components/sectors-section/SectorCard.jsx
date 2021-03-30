@@ -1,10 +1,35 @@
 import React from 'react';
 import style from 'styles/SectorsCards.module.css'
-import TechnologiesCloud from './TechnologiesCloud';
+import BubbleUI from "./TechBubble/BubbleElement";
+import techData from "./TechBubble/technologies.json";
+import TechBubble from "./TechBubble/TechBubble";
 
-export default function SectorCard({ textContent }) {
+export default function SectorCard({ textContent, name}) {
+
   const { cores } = textContent;
-  const { technologies } = textContent;
+
+  const getStockBubbles = () => {
+    return techData.map((tech, i) => {
+      return <TechBubble {...tech} key={i} alt={tech.name} backGroundColor={(tech.sector === name) ? "#545454" : "#CCCCCC"} />;
+    });
+  };
+  const stockBubbles = getStockBubbles();
+
+  const options = {
+    size: 140,
+    minsize: 20,
+    gutter: 8,
+    provideProps: true,
+    numCols: 6,
+    fringeWidth: 180,
+    yRadius: 90,
+    xRadius: 180,
+    cornerRadius: 70,
+    showGuides: false,
+    compact: true,
+    gravitation: 5,
+  };
+
   return (
     <div className={style.container}>
       <div className={style.info}>
@@ -27,7 +52,9 @@ export default function SectorCard({ textContent }) {
 
       </div>
       <div className={style.cloud}>
-         "technologies"
+        <BubbleUI className={style.bubbleUI} options={options}>
+          {stockBubbles}
+        </BubbleUI>
       </div>
     </div>
   );

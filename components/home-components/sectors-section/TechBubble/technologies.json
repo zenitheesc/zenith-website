@@ -1,0 +1,192 @@
+[
+    {
+        "symbol": "Ansys-Workbench",
+        "name": "Ansys Workbench",
+        "sector": "estruturas"
+    },
+    {
+        "symbol": "Atmel",
+        "name": "Atmel",
+        "sector": "embarcados"
+    },  
+    {
+        "symbol": "Autodesk",
+        "name": "Autodesk",
+        "sector": "estruturas"
+    },
+    {
+        "symbol": "C",
+        "name": "C",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Calendar",
+        "name": "Google Calendar",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "Discord",
+        "name": "Discord",
+        "sector": "gestao"
+    },    
+    {
+        "symbol": "Electron",
+        "name": "Electron",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Excel",
+        "name": "Excel",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "Facebook",
+        "name": "Facebook",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "Firebase",
+        "name": "Firebase",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Flutter",
+        "name": "Flutter",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Google-Drive",
+        "name": "Google Drive",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "Instagram",
+        "name": "Instagram",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "JS",
+        "name": "JavaScript",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Keyshot",
+        "name": "Keyshot",
+        "sector": "estruturas"
+    },
+    {
+        "symbol": "KiCad",
+        "name": "KiCad",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "LaTeX",
+        "name": "LaTeX",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "LinkedIn",
+        "name": "LinkedIn",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "Linux",
+        "name": "Linux",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "LoRa",
+        "name": "LoRa",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "NextJS",
+        "name": "NextJS",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "NodeJS",
+        "name": "NodeJS",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "NXP",
+        "name": "NXP",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "OpenCV",
+        "name": "OpenCV",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "PCI Express",
+        "name": "PCI Express",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Python",
+        "name": "Python",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Qt",
+        "name": "Qt",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Raspberry-Pi",
+        "name": "Raspberry Pi",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "React",
+        "name": "React",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Slack",
+        "name": "Slack",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "Solid-Edge",
+        "name": "Solid Edge",
+        "sector": "estruturas"
+    },
+    {
+        "symbol": "Solidworks",
+        "name": "SolidWorks",
+        "sector": "estruturas"
+    },
+    {
+        "symbol": "STM32CubeIDE",
+        "name": "STM32CubeIDE",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "STmicroelectronics",
+        "name": "STMicroelectronics",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "TensorFlow",
+        "name": "TensorFlow",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "TexasInstruments",
+        "name": "Texas Instruments",
+        "sector": "embarcados"
+    },
+    {
+        "symbol": "Trello",
+        "name": "Trello",
+        "sector": "gestao"
+    },
+    {
+        "symbol": "Word",
+        "name": "Word",
+        "sector": "gestao"
+    }   
+]

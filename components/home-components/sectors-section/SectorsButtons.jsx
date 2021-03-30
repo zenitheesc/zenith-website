@@ -2,14 +2,17 @@ import React from 'react';
 import styles from 'styles/Sectors.module.css';
 
 export default function SectorsButtons(props) {
-  const Icon = props.children;
+  const { children } = props;
   const { title } = props.label;
   const { onClick } = props;
+  const { selected } = props;
+
+
 
   return (
-    <div className={styles.sectorsButton} onClick={onClick}>
+    <div className={[styles.sectorsButton,selected? styles.sectorsButtonSelected:""].join(" ")} onClick={onClick}>
       <button type="button">
-        {Icon}
+        {children}
       </button>
       <h3>
         {title}
