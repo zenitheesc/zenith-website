@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://zenith.eesc.usp.br
+
+# Sitemaps
+Sitemap: https://zenith.eesc.usp.br/sitemap.xml
