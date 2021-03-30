@@ -6,7 +6,7 @@ import CubeSats from './projects/CubeSats/CubeSats';
 import Software from './projects/Software/Software';
 import Hardware from './projects/Hardware/Hardware';
 import Educacional from './projects/Educacional/Educacional';
-import styles from '../../styles/ProjectTab.module.css';
+import styles from 'styles/ProjectTab.module.css';
 
 function Tab(props) {
   const {
@@ -93,6 +93,7 @@ function Tabs(props) {
 function ProjectTab() {
   const { t } = useTranslation();
 
+  const picker              = t("projetos:picker", { count: -1 }, { returnObjects: true });
   const sondasAeroespaciais = t("projetos:sondasAeroespaciais", { count: -1 }, { returnObjects: true });
   const cubeSats            = t("projetos:cubeSats", { count: -1 }, { returnObjects: true });
   const software            = t("projetos:software", { count: -1 }, { returnObjects: true });
@@ -101,19 +102,19 @@ function ProjectTab() {
 
   return (
     <Tabs>
-      <Tab label="Sondas Aeroespaciais">
+      <Tab label={picker[0]}>
         <SondasAeroespaciais textContent={ sondasAeroespaciais }/>
       </Tab>
-      <Tab label="CubeSats">
+      <Tab label={picker[1]}>
         <CubeSats textContent={ cubeSats }/>
       </Tab>
-      <Tab label="Software">
+      <Tab label={picker[2]}>
         <Software textContent={ software }/>
       </Tab>
-      <Tab label="Hardware">
+      <Tab label={picker[3]}>
         <Hardware textContent={ hardware }/>
       </Tab>
-      <Tab label="Educacional">
+      <Tab label={picker[4]}>
         <Educacional textContent={ educacional }/>
       </Tab>
     </Tabs>

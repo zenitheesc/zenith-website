@@ -94,9 +94,6 @@
                 "menus": ["OVERVIEW", "TECNOLOGIAS"],
                 "launchDate": ["LANÇAMENTO", "11/11/2018"],
                 "altitude": ["ALTITUDE ALCANÇADA", "?? km"],
-                "experiments": [
-                    "EXPERIMENTOS"
-                ],
                 "embedded": [
                     "Sistema de */aquisição de dados/*, desenvolvido pelo grupo, baseado em Atmega2560",
                     "Controle da altitude do vôo da sonda a partir do uso de válvula no balão",

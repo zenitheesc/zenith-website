@@ -94,9 +94,6 @@
                 "menus": ["OVERVIEW", "TECHNOLOGIES"],
                 "launchDate": ["LAUNCH DATE", "11/11/2018"],
                 "altitude": ["MAX ALTITUDE", "?? km"],
-                "experiments": [
-                    "EXPERIMENTS"
-                ],
                 "embedded": [
                     "*/Data acquisition/* system developed by the group, based on Atmega2560",
                     "Probe's flight altitude control through a valve in the balloon",
@@ -319,7 +316,7 @@
             },
             "varella": {
                 "title": "Varella Acquisition Module",
-                "detail": "Independent instrumentation module for stratospheric probres",
+                "detail": "Independent instrumentation module for stratospheric probes",
                 "year": 2021,
                 "link": "",
                 "tecnologies": [

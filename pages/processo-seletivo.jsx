@@ -8,8 +8,9 @@ import FormWrapper from "components/general/FormWrapper"
 import Card from "components/general/Card";
 import boldParser from "components/utils/boldParser";
 import styles from 'styles/ProcessoSeletivo.module.css';
+import { NextSeo } from 'next-seo';
 
-function mapTable(content,idx) {
+function mapTable(content, idx) {
     return <p className={styles.cronogram} key={idx}><b>{content[0]}</b>: <span key={idx}>{content[1]}</span></p>;
 }
 
@@ -21,6 +22,10 @@ function ProcessoSeletivo() {
 
     return (
         <>
+            <NextSeo
+                title="Zenith | Processo Seletivo"
+                description="Explicação detalhada sobre o processo de ingresso na equipe."
+            />
             <NavBar />
             <HeroSection
                 backgroundImage="url(../images/ProcessoSeletivo/header.webp)"
@@ -29,7 +34,7 @@ function ProcessoSeletivo() {
             />
             <CardContainer>
                 <Card
-                    left={<img src="../images/ProcessoSeletivo/Card-1.webp" alt = "Processo Seletivo Card"/>}
+                    left={<img src="../images/ProcessoSeletivo/Card-1.webp" alt="Processo Seletivo Card" />}
                     right={
                         <>
                             <h1>{TextContent.processoSeletivoCard1.title}</h1>
@@ -45,15 +50,15 @@ function ProcessoSeletivo() {
                         <>
                             <h1>{TextContent.processoSeletivoCard2.title}</h1>
                             <p>{boldParser(TextContent.processoSeletivoCard2.detail)}</p>
-                            {TextContent.processoSeletivoCard2.text.map((a, idx) => mapTable(a,idx))}
+                            {TextContent.processoSeletivoCard2.text.map((a, idx) => mapTable(a, idx))}
 
                         </>
                     }
-                    right={<img src="../images/ProcessoSeletivo/Card-2.webp" alt = "Processo Seletivo Card"/>}
+                    right={<img src="../images/ProcessoSeletivo/Card-2.webp" alt="Processo Seletivo Card" />}
                     text={'left'}
                 />
                 <Card
-                    left={<img src="../images/ProcessoSeletivo/Card-3.webp" alt = "Processo Seletivo Card"/>}
+                    left={<img src="../images/ProcessoSeletivo/Card-3.webp" alt="Processo Seletivo Card" />}
                     right={
                         <>
                             <h1>{TextContent.processoSeletivoCard3.title}</h1>

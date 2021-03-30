@@ -4,6 +4,7 @@ import useTranslation from 'next-translate/useTranslation';
 import HeroSection from 'components/projects-components/HeroSection';
 import ProjectTab from 'components/projects-components/ProjectTab';
 import Footer from 'components/Footer';
+import { NextSeo } from 'next-seo';
 
 function Projetos() {
   const { t } = useTranslation();
@@ -11,6 +12,10 @@ function Projetos() {
   const subtitle = t('projetos:projetosHero.subtitle');
   return (
     <>
+      <NextSeo
+        title="Zenith | Projetos"
+        description="Descrição detalhada de diversos projetos da equipe."
+      />
       <NavBar />
       <HeroSection
         backgroundColor="#000000"
