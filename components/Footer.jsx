@@ -5,7 +5,7 @@ import {
   FaInstagram,
   FaYoutube,
   FaGithub,
-  FaLinkedin,
+  FaMedium
 } from 'react-icons/fa';
 import styles from '../styles/Footer.module.css';
 import LanguageSelector from './LanguageSelector';
@@ -69,11 +69,11 @@ function Footer() {
           </a>
           <a
             className={styles.socialIcon}
-            aria-label="LinkedIn"
+            aria-label="Medium"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.linkedin.com/company/zenith-aerospace/">
-            <FaLinkedin />
+            href="https://zenith-eesc.medium.com">
+            <FaMedium />
           </a>
         </div>
         <a href="http://vercel.com/?utm_source=zenith-aerospace&utm_campaign=oss">
