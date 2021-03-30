@@ -59,7 +59,10 @@ function Kurumim() {
                     }
                     text={'right'}
                 />
-                <img style={{ borderRadius: '0.75rem', width: '100%', margin: '1rem 0rem' }} src="../images/Kurumim/poster.webp" alt="Kurumin Poster" />
+                <picture>
+                    <source media="(max-width: 768px)" srcSet="images/Kurumim/mobilePoster.webp" type="image/webp"/>
+                    <img style={{ borderRadius: '0.75rem', width: '100%', margin: '0rem' }} src="../images/Kurumim/poster.webp" alt="Kurumim 2021 - Home Edition poster" />
+                </picture>
                 <Card
                     lean="none"
                     left={
