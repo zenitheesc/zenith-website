@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import style from "../../styles/TextWithIcons.module.css";
+import style from "styles/TextWithIcons.module.css";
 import boldParser from 'components/utils/boldParser';
 
 export default class TextWithIcons extends Component {

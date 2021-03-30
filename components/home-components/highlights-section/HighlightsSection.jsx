@@ -13,12 +13,12 @@ export default function HighlightsSection() {
     <section className={`-section ${style.section}`}>
       <div className={`-standardContainer ${style.highlightsContainer}`}>
         <div className={style.countUpContainer}>
-          <CounterText className={countUp} value={statistics[0].number} suffix={statistics[0].description} />
+          <CounterText className={countUp} value={statistics[0].number} suffix={statistics[0].description} plus/>
+          <CounterText className={countUp} value={statistics[5].number} suffix={statistics[5].description} plus/>
           <CounterText className={countUp} value={statistics[1].number} suffix={statistics[1].description} plus />
           <CounterText className={countUp} value={statistics[2].number} suffix={statistics[2].description} />
           <CounterText className={countUp} value={statistics[3].number} suffix={statistics[3].description} />
           <CounterText className={countUp} value={statistics[4].number} suffix={statistics[4].description} />
-          <CounterText className={countUp} value={statistics[5].number} suffix={statistics[5].description} plus/>
         </div>
         <div className={style.textSection}>
           <h1 className="-homepage-section-title">

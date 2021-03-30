@@ -36,7 +36,7 @@ function CarouselVideo({ path }) {
 
 
 export default function ProjectsCarousel(props) {
-  const { paths } = props;
+  const { paths, autoPlay } = props;
   const customRenderItem = (item, props) => <item.type {...item.props} {...props} />;
 
   return (
@@ -46,8 +46,10 @@ export default function ProjectsCarousel(props) {
       showStatus={false}
       showThumbs={false}
       renderItem={customRenderItem}
-
       showIndicators={paths.length > 1}
+      autoPlay={autoPlay}
+      infiniteLoop={autoPlay}
+      emulateTouch={autoPlay}
     >
 
       {paths.map((path, index) => {

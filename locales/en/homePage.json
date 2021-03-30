@@ -10,7 +10,6 @@
             "title": "Embedded Systems",
             "detail": "This department researches and develops embedded system technologies related to aerospace applications",
             "core": "CORES",
-            "technologies": ["C","JavaScript","OpenCv","STM","AutoDesk","LoRa","Linux","Python","Raspberry","CubeIDE"],
             "cores": [
                 {
                     "title": "Hardware: ",
@@ -30,7 +29,6 @@
             "title": "Structures",
             "detail": "This department develops probes and CubeSats 3D models for their manufacturing. They also project supports for the embedded systems. ",
             "core": "CORES",
-            "technologies": ["Solid Works","Solid Edge","ANSYS"],
             "cores": [
                 {
                     "title": "Structure Development: ",
@@ -50,7 +48,6 @@
             "title": "Astrobiology",
             "detail": "This department develops biological experiments, aiming to expose those experiments to space-like environmental conditions.",
             "core": "CORES",
-            "technologies": ["TODO"],
             "cores": [
                 {
                     "title": "Kurumin Project support: ",
@@ -70,7 +67,6 @@
             "title": "Management",
             "detail": "This department is responsible for organizing and administrating the group.",
             "core": "NÚCLEOS",
-            "technologies": ["Slack","Trello","Facebook","Discord","Word","Excel","Instagram", "LinkedIn","Google Drive","Excel","Google Calendar"],
             "cores": [
                 {
                     "title": "Finances: ",
@@ -94,7 +90,6 @@
             "title": "Astronáutica",
             "detail": "Esse departamento é responsável pela pesquisa e desenvolvimento das ferramentas necessárias para a exploração dos limites da atmosfera terrestre, bem como a execução das normas para tal atividade.",
             "core": "NÚCLEOS",
-            "technologies": [],
             "cores": [
                 {
                     "title": "Dinâmica de Voo: ",
