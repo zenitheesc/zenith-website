@@ -7,8 +7,6 @@ export default function SectorsButtons(props) {
   const { onClick } = props;
   const { selected } = props;
 
-
-
   return (
     <div className={[styles.sectorsButton,selected? styles.sectorsButtonSelected:""].join(" ")} onClick={onClick}>
       <button type="button">

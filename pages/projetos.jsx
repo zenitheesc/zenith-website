@@ -14,7 +14,7 @@ function Projetos() {
     <>
       <NextSeo
         title="Zenith | Projetos"
-        description="Descrição da página inicial"
+        description="Descrição detalhada de diversos projetos da equipe."
       />
       <NavBar />
       <HeroSection
