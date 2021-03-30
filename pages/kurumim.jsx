@@ -7,7 +7,9 @@ import FormWrapper from "components/general/FormWrapper"
 import CardContainer from "components/general/CardContainer";
 import Card from "components/general/Card";
 import boldParser from "components/utils/boldParser";
+import Config from "configs/configs.json";
 import { NextSeo } from 'next-seo';
+import Head from "next/head";
 
 function mapStylish(content, idx) {
     // TODO: Put style in class
@@ -30,6 +32,11 @@ function Kurumim() {
 
     return (
         <>
+            <Head>
+                <link rel="alternate" href="https://zenith.eesc.usp.br/es/kurumim" hrefLang="es" />
+                <link rel="alternate" href="https://zenith.eesc.usp.br/en/kurumim" hrefLang="en" />
+                <link rel="alternate" href="https://zenith.eesc.usp.br/kurumim" hrefLang="pt" />
+            </Head>
             <NextSeo
                 title="Zenith | Kurumim"
                 description="Explicação detalhada sobre o projeto educacional Kurumim."
@@ -58,7 +65,10 @@ function Kurumim() {
                     }
                     text={'right'}
                 />
-                <img style={{ borderRadius: '0.75rem', width: '100%', margin: '1rem 0rem' }} src="../images/Kurumim/poster.webp" alt="Kurumin Poster" />
+                <picture>
+                    <source media="(max-width: 768px)" srcSet="images/Kurumim/mobilePoster.webp" type="image/webp" />
+                    <img style={{ borderRadius: '0.75rem', width: '100%', margin: '0rem' }} src="../images/Kurumim/poster.webp" alt="Kurumim 2021 - Home Edition poster" />
+                </picture>
                 <Card
                     lean="none"
                     left={
@@ -77,7 +87,10 @@ function Kurumim() {
                     }
                     text={'right'}
                 />
-                <FormWrapper className={'-section'} link={"https://docs.google.com/forms/d/e/1FAIpQLSdFoITXWmuJYgJPlvQFGBNkeOm84htc2GHxZpzSLIi1UEoB1g/viewform?embedded=true"} />
+                {(Config.kurumimOpen)
+                    ? <FormWrapper className={'-section'} link={Config.kurumimForms} />
+                    : <> </>
+                }
             </CardContainer>
             <Footer />
         </>

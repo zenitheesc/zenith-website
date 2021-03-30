@@ -16,8 +16,8 @@ export default function Software(props) {
           <Model textContent={ website } path={'Software/Website.webp'} /> 
         </Event>
         <Event interval={2020}>
-          <Model textContent={ reportMaker } path={'Software/ReportMaker.webp'} />
           <Model textContent={ zenithMonitor } path={'Software/ZenithMonitor.webp'} />
+          <Model textContent={ reportMaker } path={'Software/ReportMaker.webp'} />
         </Event>
         <Event interval={2019} />
       </Timeline>

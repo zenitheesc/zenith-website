@@ -75,7 +75,7 @@
                     "Culture of protozoa at different stages of life and lettuce seeds "
                 ],
                 "embedded": [
-                    "*/Data acquisition/* system developed by the group, based on Atmega328p-pu",
+                    "*/Data acquisition/* system developed by the group, based on ATmega328p-pu",
                     "*/Imaging/* system based on */Linux/*",
                     "Usage of our own */geolocation/* system",
                     "Measuring of radiation levels with */Geiger Counter/*"
@@ -95,7 +95,7 @@
                 "launchDate": ["LAUNCH DATE", "11/11/2018"],
                 "altitude": ["MAX ALTITUDE", "?? km"],
                 "embedded": [
-                    "*/Data acquisition/* system developed by the group, based on Atmega2560",
+                    "*/Data acquisition/* system developed by the group, based on ATmega2560",
                     "Probe's flight altitude control through a valve in the balloon",
                     "Usage of our own */geolocation/* system"
                 ],

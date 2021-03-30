@@ -7,9 +7,10 @@ import ImageComponent from 'components/zenith-page-components/ImageComponent';
 import UnderlinedButton from 'components/general/UnderlinedButton';
 import Card from "components/general/Card";
 import CardContainer from "components/general/CardContainer";
-import TextWithIcons from "components/zenith-components/TextWithIcons";
+import TextWithIcons from "components/general/TextWithIcons";
 import boldParser from "components/utils/boldParser";
 import { NextSeo } from 'next-seo';
+import Head from "next/head";
 
 const icons = ['sat.svg', 'sci.svg', 'ppl.svg', 'pro.svg'];
 
@@ -25,6 +26,11 @@ function Zenith() {
 
     return (
         <>
+            <Head>
+                <link rel="alternate" href="https://zenith.eesc.usp.br/es/zenith" hrefLang="es" />
+                <link rel="alternate" href="https://zenith.eesc.usp.br/en/zenith" hrefLang="en" />
+                <link rel="alternate" href="https://zenith.eesc.usp.br/zenith" hrefLang="pt" />
+            </Head>
             <NextSeo
                 title="Zenith | Sobre Nós"
                 description="Apresentação da equipe e de seu histórico."

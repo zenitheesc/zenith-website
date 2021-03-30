@@ -5,6 +5,7 @@ import HeroSection from 'components/projects-components/HeroSection';
 import ProjectTab from 'components/projects-components/ProjectTab';
 import Footer from 'components/Footer';
 import { NextSeo } from 'next-seo';
+import Head from "next/head";
 
 function Projetos() {
   const { t } = useTranslation();
@@ -12,6 +13,11 @@ function Projetos() {
   const subtitle = t('projetos:projetosHero.subtitle');
   return (
     <>
+      <Head>
+        <link rel="alternate" href="https://zenith.eesc.usp.br/es/projetos" hrefLang="es" />
+        <link rel="alternate" href="https://zenith.eesc.usp.br/en/projetos" hrefLang="en" />
+        <link rel="alternate" href="https://zenith.eesc.usp.br/projetos" hrefLang="pt" />
+      </Head>
       <NextSeo
         title="Zenith | Projetos"
         description="Descrição detalhada de diversos projetos da equipe."

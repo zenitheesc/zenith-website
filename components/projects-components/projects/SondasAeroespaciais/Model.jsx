@@ -49,7 +49,7 @@ function Model (props) {
                 </ProjectTable>
                 </ProjectToggle>
             </ProjectData>
-            <ProjectsCarousel paths={paths} />
+            <ProjectsCarousel paths={paths} autoPlay/>
         </div>      
     );
 }

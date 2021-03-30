@@ -7,8 +7,10 @@ import CardContainer from "components/general/CardContainer";
 import FormWrapper from "components/general/FormWrapper"
 import Card from "components/general/Card";
 import boldParser from "components/utils/boldParser";
+import Config from "configs/configs.json";
 import styles from 'styles/ProcessoSeletivo.module.css';
 import { NextSeo } from 'next-seo';
+import Head from "next/head";
 
 function mapTable(content, idx) {
     return <p className={styles.cronogram} key={idx}><b>{content[0]}</b>: <span key={idx}>{content[1]}</span></p>;
@@ -22,6 +24,11 @@ function ProcessoSeletivo() {
 
     return (
         <>
+            <Head>
+                <link rel="alternate" href="https://zenith.eesc.usp.br/es/processo-seletivo" hrefLang="es" />
+                <link rel="alternate" href="https://zenith.eesc.usp.br/en/processo-seletivo" hrefLang="en" />
+                <link rel="alternate" href="https://zenith.eesc.usp.br/processo-seletivo" hrefLang="pt" />
+            </Head>
             <NextSeo
                 title="Zenith | Processo Seletivo"
                 description="Explicação detalhada sobre o processo de ingresso na equipe."
@@ -68,7 +75,10 @@ function ProcessoSeletivo() {
                     }
                     text={'right'}
                 />
-                <FormWrapper link={"https://docs.google.com/forms/d/e/1FAIpQLSdFoITXWmuJYgJPlvQFGBNkeOm84htc2GHxZpzSLIi1UEoB1g/viewform?embedded=true"} />
+                {(Config.processoSeletivoOpen)
+                    ? <FormWrapper className={'-section'} link={Config.processoSeletivoForms} />
+                    : <> </>
+                }
             </CardContainer>
             <Footer />
         </>
