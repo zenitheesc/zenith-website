@@ -1,0 +1,39 @@
+{
+    "processoSeletivoHero": {
+        "title": "Selection Process",
+        "subtitle": "Would you like to be a part of Zenith Aerospace?"
+    },
+    "cards": {
+        "processoSeletivoCard1": {
+            "title": "How to participate?",
+            "text": [
+                "Every year we open a selection process to recruit new members.",
+                "Unfortunately, we can't accept everyone, so we must have a selection process.",
+                "Undergraduate students from USP São Carlos and UFSCar can participate in our selection process and */no/* previous knowledge is needed!",
+                "*/Interested?/* Check out if our selection process is open."
+            ]
+        },
+        "processoSeletivoCard2": {
+            "title": "Timeline",
+            "detail": "We're looking forward to meeting our new members this year. In */2021/*, our selection process will be 100% on-line! To participate, fill in the */Google Forms/* below and follow us in our */Social Networks/* to be notified when the results come out!.",
+            "text": [
+                ["05/04", "PARTICIPATION FORM OPENS"],
+                ["13/04", "WEB MEETING WITH ZENITH MEMBERS"],
+                ["19/04", "PRESENTATION TALK"],
+                ["24/04", "PARTICIPATION FORM CLOSES"],
+                ["26/04", "SELECTION PROCESS' 1st PART"],
+                ["30/04", "1st PART RESULTS"],
+                ["03/05", "SELECTION PROCESS 2nd PART STARTS"],
+                ["07/05", "SELECTION PROCESS 2nd PART ENDS"],
+                ["10/05", "FINAL RESULTS"]
+            ]
+        },
+        "processoSeletivoCard3": {
+            "title": "Selection Process Parts",
+            "text": [
+                "*/1st Part: Group Dynamic/*", "In this part, the candidates will be divided in */groups/* and exposed to a */problem-situation/* inspired by real space missions. We will evaluate the candidate's affinity with */teamwork/*, */leadership/* predisposition and */creativity/* when facing a problem.",
+                "*/2nd Part: Interview/*", "In the 2nd part, the remaining candidates will be interviewed by Zenith Aerospace's members from multiple departments. Our goal in this part of the process is to get to know the candidate better, learning more about their */motivations/* and */expectations*/ towards the group."
+            ]
+        }
+    }
+}

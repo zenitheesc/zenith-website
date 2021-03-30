@@ -1,0 +1,182 @@
+{
+    "homePageHero": {
+        "title": "HOME OF THE STARS IN SÃO CARLOS",
+        "subtitle": "Since 2014, Zenith Aerospace provides hundred of students with the opportunity to reach space"
+    },
+    "homePageDepartaments": {
+        "title": "Building aerospace technology in all sectors",
+        "subtitle": "We design and build our own products, from the mission conception to hardware and structure manufacture",
+        "embarcados": {
+            "title": "Embedded Systems",
+            "detail": "This department researches and develops embedded system technologies related to aerospace applications",
+            "core": "CORES",
+            "technologies": ["C","JavaScript","OpenCv","STM","AutoDesk","LoRa","Linux","Python","Raspberry","CubeIDE"],
+            "cores": [
+                {
+                    "title": "Hardware: ",
+                    "detail": "Circuit board development for aerospace applications and their manufacture."
+                },
+                {
+                    "title": "Low Level: ",
+                    "detail": "Microcontroller programming related to multiple embedded system projects."
+                },
+                {
+                    "title": "High Level: ",
+                    "detail": "Development of web, mobile and desktop aplications for mission support."
+                }
+            ]
+        },
+        "estruturas": {
+            "title": "Structures",
+            "detail": "This department develops probes and CubeSats 3D models for their manufacturing. They also project supports for the embedded systems. ",
+            "core": "CORES",
+            "technologies": ["Solid Works","Solid Edge","ANSYS"],
+            "cores": [
+                {
+                    "title": "Structure Development: ",
+                    "detail": "Development of the structure's CAD 3D model."
+                },
+                {
+                    "title": "Vibration Attenuation : ",
+                    "detail": "Responsible for tests and simulations to make sure that the modeled structure supports the vibrations."
+                },
+                {
+                    "title": "Thermal Insulation : ",
+                    "detail": "Development of the structure's complete thermal model, making sure it is in the correct working temperature."
+                }
+            ]
+        },
+        "astrobiologia": {
+            "title": "Astrobiology",
+            "detail": "This department develops biological experiments, aiming to expose those experiments to space-like environmental conditions.",
+            "core": "CORES",
+            "technologies": ["TODO"],
+            "cores": [
+                {
+                    "title": "Kurumin Project support: ",
+                    "detail": "Selecting and manipulating Kurumin's educational experiments that will be attached to the stratospheric probes."
+                },
+                {
+                    "title": "Scientific: ",
+                    "detail": "Conducting experiments which can lead to the publication of scientific papers"
+                },
+                {
+                    "title": "Partnerships: ",
+                    "detail": "Providing needed technical and operational support to researchers interested in attaching experiments to vehicles made by Zenith "
+                }
+            ]
+        },
+        "gestao": {
+            "title": "Management",
+            "detail": "This department is responsible for organizing and administrating the group.",
+            "core": "NÚCLEOS",
+            "technologies": ["Slack","Trello","Facebook","Discord","Word","Excel","Instagram", "LinkedIn","Google Drive","Excel","Google Calendar"],
+            "cores": [
+                {
+                    "title": "Finances: ",
+                    "detail": "Budget and expenses control, responsible for looking for and maintaining sponsorships."
+                },
+                {
+                    "title": "Marketing: ",
+                    "detail": "Social network management, planning strategies to attract new partners and make the group known."
+                },
+                {
+                    "title": "Human Resources: ",
+                    "detail": "Group members management, analyzing their performance and satisfaction."
+                },
+                {
+                    "title":"Events: ",
+                    "detail": "Promoting interactions between the Group and society throught educational events, such as 'Sábado Aeroespacial'."
+                }
+            ]
+        },
+        "astronautica": {
+            "title": "Astronáutica",
+            "detail": "Esse departamento é responsável pela pesquisa e desenvolvimento das ferramentas necessárias para a exploração dos limites da atmosfera terrestre, bem como a execução das normas para tal atividade.",
+            "core": "NÚCLEOS",
+            "technologies": [],
+            "cores": [
+                {
+                    "title": "Dinâmica de Voo: ",
+                    "detail": "Realiza simulações de voo, fornece noções sobre estabilidade estática e dinâmica dos balões e traça estratégias de lançamento e de recuperação da sonda."
+                },
+                {
+                    "title": "Pesquisa e Desenvolvimento: ",
+                    "detail": "Realizam pesquisas no ramo da Fluidodinâmica e Mecânica Orbital, buscando aplicar modelos teóricos em missões futuras do Zenith."
+                },
+                {
+                    "title":"Legislação: ",
+                    "detail": "Responsável pela parte normativa das missões com balões estratosféricos, de acordo com as prescrições de uso do espaço aéreo brasileiro."
+                }
+            ]
+        }
+    },
+    "homePageBanners": {
+        "genus": {
+            "title": "Genus",
+            "detail": "Modularized hardware to be used in aerospace applications",
+            "link": "https://github.com/zenitheesc/Genus"
+        },
+        "zenithMonitor": {
+            "title": "Zenith Monitor",
+            "detail": "Aerospace probes tracking technology",
+            "link": "https://github.com/zenitheesc/Zenith-Monitor"
+        }
+    },
+    "homePageStatistics": {
+        "title": "Eficiency described by numbers",
+        "subtitle": "since 2014",
+        "statistics": [
+            {
+                "number": 25,
+                "description": "PROJECTS"
+            },
+            {
+                "number": 400,
+                "description": "MEMBERS SINCE FOUNDATION"
+            },
+            {
+                "number": 2,
+                "description": "CAMPUS PARTY"
+            },
+            {
+                "number": 3,
+                "description": "CUBEDESIGNs"
+            },
+            {
+                "number": 7,
+                "description": "MEDIA REPORTS"
+            },
+            {
+                "number": 12765,
+                "description": "HOURS WORKING"
+            }
+        ]
+    },
+    "homePageSupporters": {
+        "title": "Our supporters",
+        "detail": "without them, nothing would be possible",
+        "supporters": [ 
+            {   
+                "logo": "OZ Produtora",
+                "link": "https://www.ozprodutora.com.br/"
+            },
+            {
+                "logo": "USP",
+                "link": "https://www5.usp.br/"
+            },
+            {
+                "logo": "EESC-USP",
+                "link": "https://eesc.usp.br/"
+            },
+            {
+                "logo": "Vercel",
+                "link":"http://vercel.com/?utm_source=zenith-aerospace&utm_campaign=oss"
+            }
+        ]
+    },
+    "footer": {
+        "copyright": "© 2021  Zenith Aerospace",
+        "easterEgg": "MADE WITH TONS OF JAVASCRIPT AND CONFUSION ON DISCORD"
+    }
+}

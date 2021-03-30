@@ -1,0 +1,135 @@
+.sectorsContainer{
+	width: auto;
+	padding: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	align-items: center;
+	background-color: #E5E5E5;
+}
+
+.textSection {
+    text-align: center;
+	max-width: 1328px;
+} 
+
+.sectorsButtons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 2.5em 0em;
+}
+
+.sectorsButton {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0rem 2.75rem;
+}
+
+.sectorsButton > button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding: 0;
+	width: 100%;
+	outline: none;
+}
+
+.sectorsButton > button:hover {
+	fill: #3c3b3d;
+}
+
+.sectorsButton > button:hover + h3 {
+	color: #3c3b3d;
+}
+
+.sectorsButton > button > svg {
+	width: 10em;
+	fill: #a3a3a3;
+	height: auto;
+}
+
+.sectorsButton:hover > button > svg{
+	fill: #4B4B4B;
+}
+
+.sectorsButton:hover > h3{
+	color: #4B4B4B;
+}
+
+.sectorsButton > h3 {
+	font-weight: 600;
+	font-size: 1.125rem;
+	margin-top: 0.5em;
+	letter-spacing: -0.03em;
+	color: #a3a3a3;
+}
+
+
+.sectorsButtonSelected > button > svg{
+	fill: #4B4B4B;
+}
+
+.sectorsButtonSelected > h3 {
+	text-align: center;
+	color: #4B4B4B;
+}
+
+.st0 {
+	display: none;
+}
+
+.st1 {
+	display: inline;
+}
+
+.st2 {
+	fill: none;
+	stroke: #B3B3B3;
+	stroke-width: 0.1;
+	stroke-miterlimit: 10;
+}
+
+@media screen and (max-width: 1024px) {
+
+	.textSection {
+		width: 100%;
+		text-align: center;
+	}
+
+	.sectorsButtons {
+		display: grid;
+		grid-template-columns: 50% 50%;
+	} 
+	
+	.sectorsButton { 
+		margin: 0rem 2.0rem;
+	}
+
+	.sectorsButton > button > svg {
+		width: 9em;
+		height: auto;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.sectorsContainer {
+		padding: 2.5em 2em;
+	}
+
+	.sectorsButton > button > svg {
+		width: 7em;
+	}
+
+}
+
+@media screen and (max-width: 350px) {
+
+	.sectorsButton {
+		margin: 0 5vw;
+	}
+	
+}

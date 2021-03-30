@@ -1,0 +1,136 @@
+.row {
+    display: flex;
+    flex-flow: row;
+    border: 0px;
+    font-size: 1.25rem;
+    color: #545454;
+    gap: 2rem;
+    border-radius: 0.75rem;
+    margin: 1rem 0rem;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: inherit;
+    border: 1px solid #D7D7D7;
+}
+
+.card>h1 {
+    margin: 2rem 0 1rem 0;
+    font-size: 2.2rem;
+    font-weight: 570;
+    color: #444;
+}
+
+.card>p {
+    text-align: justify;
+}
+
+.card>p,
+.card>h1 {
+    padding: 0 2rem;
+}
+
+.card h2 {
+    margin-bottom: 2px;
+}
+
+.card p {
+    margin-top: 2px;
+}
+
+.card a {
+    color: #444;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 2rem;
+}
+
+.text {
+    padding-bottom: 2rem;
+}
+
+.bigger {
+    width: 60%;
+}
+
+.smaller {
+    width: 40%;
+}
+
+.card__left {
+    left: 0;
+}
+
+.card__right {
+    position: relative;
+}
+
+.card > img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+    .row {
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 0rem;
+        border: 1px solid lightgray;
+        font-size: 1.2rem;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .card > img {
+        max-height: 65vh;
+    }
+
+    .card__left {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.75rem 0.75rem 0 0;
+    }
+    
+    .card__right {
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 0.75rem 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .card > h1 {
+        margin: 2rem 0 1rem 0;
+        font-size: 1.75rem;
+        padding-left: 1.5rem;
+    }
+
+    .card>p,
+    .card>a,
+    .card>h1 {
+        padding: 0 1.5rem;
+    }
+
+    .card a {
+        margin: 0 1.5rem;
+    }
+
+    .card > img {
+        max-height: 100%;
+    }
+
+    .text {
+        padding-bottom: 1.5rem;
+    }
+
+    .row {
+        font-size: 1.0rem;
+    }
+
+}

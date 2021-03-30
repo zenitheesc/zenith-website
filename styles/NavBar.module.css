@@ -1,0 +1,161 @@
+.navBarHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    width: 100%;
+    height: 90px;
+    position: relative;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+}
+
+.navBarContainerDeactive {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0px;
+}
+
+.navBarContainerActive {
+    display: flex;
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: opacity 0.2s ease-in;
+}
+
+.navBarContainerBackground {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.navigationMenuDeactive {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+    top: -100vh;
+    margin: 0px;
+    padding-top: 100px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    background-color: black;
+    transition: top 0.6s;
+    box-sizing: border-box;
+}
+
+.navigationMenuActive {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+    top: 0px;
+    margin: 0px;
+    padding-top: 100px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    background-color: black;
+    transition: top 0.6s;
+    box-sizing: border-box;
+}
+
+.navigationMenuActive .navBarItem {
+    box-sizing: border-box;
+    padding-top: 1.2em;
+    opacity: 1;
+    padding-bottom: 1.2em;
+    border-bottom: 1px solid rgba(169, 169, 169, 0.301);
+    transition: opacity 0.4s;
+}
+
+.navigationMenuDeactive .navBarItem {
+    box-sizing: border-box;
+    opacity: 0;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    border-bottom: 1px solid rgba(169, 169, 169, 0.301);
+    transition: opacity 0.4s;
+}
+
+.navigationHeader {
+    display: flex;
+}
+
+.navBarIcon {
+    width: 150px;
+    height: auto;
+}
+
+.navBarItem {
+    margin-right: 1em;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navBarItem>a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+}
+
+.navBarItem>a:hover {
+    color: lightgray;
+}
+
+.menuIconWrapper {
+
+    display: none;
+
+}
+
+.menuIconWrapper *{
+
+    cursor: default !important;
+
+}
+
+@media screen and (min-width: 768px) {
+    .navBarHeaderContainer {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navigationHeader {
+        display: none;
+    }
+
+    .menuIconWrapper{
+        display: flex;
+    }
+
+    .menuIconWrapper *{
+
+        cursor: default !important;
+    
+    }
+    
+
+}
