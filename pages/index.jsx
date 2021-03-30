@@ -8,6 +8,7 @@ import Sectors from 'components/home-components/sectors-section/Sectors';
 import Footer from 'components/Footer';
 import useTranslation from 'next-translate/useTranslation';
 import { NextSeo } from 'next-seo';
+import Head from 'next/head';
 
 function Home() {
 
@@ -17,7 +18,7 @@ function Home() {
     <>
       <NextSeo
         title="Zenith"
-        description="Descrição da página inicial"
+        description="Apresentação da equipe e dos projetos recentes"
       />
       <NavBar />
       <HomeHeroSection />

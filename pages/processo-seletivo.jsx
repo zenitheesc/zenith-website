@@ -24,7 +24,7 @@ function ProcessoSeletivo() {
         <>
             <NextSeo
                 title="Zenith | Processo Seletivo"
-                description="Descrição da página inicial"
+                description="Explicação detalhada sobre o processo de ingresso na equipe"
             />
             <NavBar />
             <HeroSection
