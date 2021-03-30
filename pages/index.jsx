@@ -18,6 +18,10 @@ function Home() {
     <>
       <Head>
         <meta name="google-site-verification" content={process.env.googleVerification} />
+        <link rel="canonical" href="https://zenith.eesc.usp.br" />
+        <link rel="alternate" href="https://zenith.eesc.usp.br/es" hrefLang="es" />
+        <link rel="alternate" href="https://zenith.eesc.usp.br/en" hrefLang="en" />
+        <link rel="alternate" href="https://zenith.eesc.usp.br" hrefLang="pt" />
       </Head>
       <NextSeo
         title="Zenith Aerospace || EESC"
