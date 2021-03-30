@@ -7,6 +7,7 @@ import SupportersBanner from 'components/banners-components/SupportersBanner';
 import Sectors from 'components/home-components/sectors-section/Sectors';
 import Footer from 'components/Footer';
 import useTranslation from 'next-translate/useTranslation';
+import Head from "next/head";
 import { NextSeo } from 'next-seo';
 
 function Home() {
@@ -15,6 +16,9 @@ function Home() {
 
   return (
     <>
+      <Head>
+        <meta name="google-site-verification" content={process.env.googleVerification} />
+      </Head>
       <NextSeo
         title="Zenith Aerospace || EESC"
         description="Apresentação do Zenith Aerospace e dos seus projetos recentes."
