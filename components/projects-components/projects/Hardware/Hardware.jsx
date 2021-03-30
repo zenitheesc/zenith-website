@@ -12,23 +12,23 @@ export default function Hardware(props) {
   const { groundStation } = props.textContent.projects;
 
   const groundStationPaths = [
-    'Hardware/GroundStation.mp4',
+    'Hardware/Genus.webp',
   ];
 
   const varellaPaths = [
-    'Hardware/VarellaAcquisitionModule.webm',
+    'Hardware/Varella.webp',
   ];
 
   const genusPaths = [
-    'Hardware/Genus.mp4',
+    'Hardware/Genus.webp',
   ];
 
   const controladorPIDPaths = [
-    'Hardware/Genus.mp4',
+    'Hardware/Genus.webp',
   ];
 
   const osciloscopioPaths = [
-    'Hardware/Genus.mp4',
+    'Hardware/Genus.webp',
   ];
 
   return (
