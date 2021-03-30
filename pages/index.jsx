@@ -16,7 +16,7 @@ function Home() {
   return (
     <>
       <NextSeo
-        title="Zenith Aerospace"
+        title="Zenith Aerospace || EESC"
         description="Apresentação do Zenith Aerospace e dos seus projetos recentes."
       />
       <NavBar />
