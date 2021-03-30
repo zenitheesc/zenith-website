@@ -7,7 +7,7 @@ import ImageComponent from 'components/zenith-page-components/ImageComponent';
 import UnderlinedButton from 'components/general/UnderlinedButton';
 import Card from "components/general/Card";
 import CardContainer from "components/general/CardContainer";
-import TextWithIcons from "components/zenith-components/TextWithIcons";
+import TextWithIcons from "components/general/TextWithIcons";
 import boldParser from "components/utils/boldParser";
 import { NextSeo } from 'next-seo';
 

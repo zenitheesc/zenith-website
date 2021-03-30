@@ -7,6 +7,7 @@ import CardContainer from "components/general/CardContainer";
 import FormWrapper from "components/general/FormWrapper"
 import Card from "components/general/Card";
 import boldParser from "components/utils/boldParser";
+import Config from "configs/configs.json";
 import styles from 'styles/ProcessoSeletivo.module.css';
 import { NextSeo } from 'next-seo';
 
@@ -68,7 +69,10 @@ function ProcessoSeletivo() {
                     }
                     text={'right'}
                 />
-                <FormWrapper link={"https://docs.google.com/forms/d/e/1FAIpQLSdFoITXWmuJYgJPlvQFGBNkeOm84htc2GHxZpzSLIi1UEoB1g/viewform?embedded=true"} />
+                {(Config.processoSeletivoOpen) 
+                    ? <FormWrapper className={'-section'} link={Config.processoSeletivoForms} />
+                    : <> </>
+                }
             </CardContainer>
             <Footer />
         </>

@@ -7,6 +7,7 @@ import FormWrapper from "components/general/FormWrapper"
 import CardContainer from "components/general/CardContainer";
 import Card from "components/general/Card";
 import boldParser from "components/utils/boldParser";
+import Config from "configs/configs.json";
 import { NextSeo } from 'next-seo';
 
 function mapStylish(content, idx) {
@@ -77,7 +78,10 @@ function Kurumim() {
                     }
                     text={'right'}
                 />
-                <FormWrapper className={'-section'} link={"https://docs.google.com/forms/d/e/1FAIpQLSdFoITXWmuJYgJPlvQFGBNkeOm84htc2GHxZpzSLIi1UEoB1g/viewform?embedded=true"} />
+                {(Config.kurumimOpen) 
+                    ? <FormWrapper className={'-section'} link={Config.kurumimForms} />
+                    : <> </>
+                }
             </CardContainer>
             <Footer />
         </>
