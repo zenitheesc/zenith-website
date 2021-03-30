@@ -1,0 +1,100 @@
+.projectData h1,
+.projectData h2,
+.projectData h3,
+.projectData span {
+    color: #CCCCCC;
+}
+
+.projectData.dark h1,
+.projectData.dark h2,
+.projectData.dark h3,
+.projectData.dark span {
+    color: #666161;
+}
+
+.projectData {
+    width: 55vw;
+    max-width: 27.5em;
+    background-color: transparent;
+}
+
+.projectData.dark {
+    width: 55vw;
+    background-color: transparent;
+}
+
+.projectData h1 {
+	font-size: 36px;
+} 
+
+.projectData h2 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.projectData h3 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.projectData span {
+    font-size: 14px;
+}
+
+.projectData * {
+    border-color: #CCCCCC7c !important;
+}
+
+.projectData.dark * {
+    border-color: #6661617c !important;
+}
+
+.projectData svg {
+    color: #CCCCCC;
+}
+
+.projectData.dark svg {
+    color: #666161;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .projectData {
+        width: 70vw;
+    }
+    
+    .projectData.dark {
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .projectData {
+        width: 85vw;
+    }
+    
+    .projectData.dark {
+        width: 85vw;
+    }
+
+    .projectData h1 {
+        font-size: 30px;
+    } 
+    
+    .projectData h2 {
+        font-size: 15px;
+    }
+    
+    .projectData h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .projectData span {
+        font-size: 14px;
+    }
+
+}

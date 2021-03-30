@@ -1,0 +1,57 @@
+.underlinedButton {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    padding-bottom: 2.5px;
+}
+
+.underlinedButton::before {    
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #ffffff;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.underlinedButton:hover::before { 
+    right: 0 !important;
+}
+
+.underlinedButton svg {
+    margin-left: 4px;
+    font-size: 20px;
+}
+
+.dark {
+    color: #444444;
+}
+
+.dark::before {
+    background: #444444;
+}
+
+@media screen and (max-width: 768px) {
+
+    .underlinedButton {
+        font-size: 16px;
+        height: 16px;
+        padding: 0rem !important;
+        padding-bottom: 2.5px !important;
+    }
+
+    .underlinedButton svg {
+        font-size: 16px;
+    }
+
+}

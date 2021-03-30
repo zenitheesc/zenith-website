@@ -1,0 +1,16 @@
+.formWrapper {
+    background-color: #efefef;
+    padding-top: 0rem;
+    width: 100%;
+}
+
+.formWrapper iframe {
+    border: none;
+    border-radius: 5px;
+    padding: 0px;
+    width: 100%;
+    max-width: 1328px;
+    background-color: white;
+	height: 60vh;
+    margin: 1rem 0rem;
+}

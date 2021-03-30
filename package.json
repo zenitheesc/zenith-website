@@ -1,0 +1,69 @@
+{
+  "name": "zenith-website",
+  "version": "1.0.0",
+  "description": "Reimagining Zenith's web presence through a modern website that respects the group's technical knowledge and passion for development. We're a student group based in Brazil, we develop open software and hardware.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zenitheesc/zenith-website.git"
+  },
+  "contributors": [
+    {
+      "name": "Jorge Marcelo Risco",
+      "url": "https://github.com/jorgemrisco"
+    },
+    {
+      "name": "Leonardo Celente",
+      "url": "https://github.com/leocelente"
+    },
+    {
+      "name": "Maíra Canal",
+      "url": "https://github.com/mairacanal"
+    },
+    {
+      "name": "Matheus Vieira Gonçalves",
+      "url": "https://github.com/Math-42"
+    },
+    {
+      "name": "Vitor F. Carrera Miguel",
+      "url": "https://github.com/VitorFCM"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zenitheesc/zenith-website/issues"
+  },
+  "homepage": "https://github.com/zenitheesc/zenith-website#readme",
+  "dependencies": {
+    "hamburger-react": "^2.4.0",
+    "next": "^10.0.9",
+    "next-seo": "^4.23.0",
+    "next-sitemap": "^1.6.9",
+    "next-translate": "^1.0.5",
+    "react": "^17.0.2",
+    "react-countup": "^4.3.3",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-player": "^2.9.0",
+    "react-responsive-carousel": "^3.2.16",
+    "react-rotating-text": "^1.4.1",
+    "react-visibility-sensor": "^5.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1"
+  }
+}

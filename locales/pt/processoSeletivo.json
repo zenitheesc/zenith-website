@@ -1,0 +1,39 @@
+{
+    "processoSeletivoHero": {
+        "title": "Processo Seletivo",
+        "subtitle": "Você deseja ser parte do Zenith Aerospace?"
+    },
+    "cards": {
+        "processoSeletivoCard1": {
+            "title": "Como participar?",
+            "text": [
+                "Todo ano nós abrimos um processo seletivo para recrutarmos novos membros ao Zenith.",
+                "Infelizmente, não podemos aceitar todos os interessados, então nós realizamos um processo seletivo para selecionar os candidatos.",
+                "Graduandos da USP São Carlos e da Ufscar podem se inscrever no nosso processo seletivo e */nenhum/* conhecimento prévio é necessário!",
+                "*/Está interessado?/* Veja se o nosso processo seletivo está aberto."
+            ]
+        },
+        "processoSeletivoCard2": {
+            "title": "Cronograma",
+            "detail": "Estamos ansiosos para receber novos membros no Zenith Aerospace esse ano. Nesse ano de */2021/*, o nosso processo seletivo vai ser 100% digital! Para se inscrever, preencha o */Google Forms/* abaixo e acompanhe os resultados nas nossas */Redes Sociais/*!",
+            "text": [
+                ["05/04", "LANÇAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
+                ["13/04", "RODA DE CONVERSA COM MEMBROS DO ZENITH"],
+                ["19/04", "PALESTRA DE APRESENTAÇÃO"],
+                ["24/04", "FECHAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
+                ["26/04", "1º FASE DO PROCESSO SELETIVO"],
+                ["30/04", "DIVULGAÇÃO DOS APROVADOS DA PRIMEIRA FASE"],
+                ["03/05", "INÍCIO DA 2º FASE DO PROCESSO SELETIVO"],
+                ["07/05", "FIM DA 2º FASE DO PROCESSO SELETIVO"],
+                ["10/05", "DIVULGAÇÃO DOS RESULTADOS"]
+            ]
+        },
+        "processoSeletivoCard3": {
+            "title": "Fases do Processo Seletivo",
+            "text": [
+                "*/1º Fase: Dinâmica em Grupo/*", "Nessa fase, os candidatos serão divididos em */grupos/* e expostos a uma */situação-problema/* inspirada em missões espaciais. Nós avaliaremos a capacidade do candidato de */trabalhar em equipe/*, predisposição à */liderança/* e a */criatividade/* diante de um problema.",
+                "*/2º Fase: Entrevista/*", "Na 2º fase, os candidatos aprovados na 1º fase serão entrevistados por membros de departamentos do Zenith Aerospace. Nessa etapa, nós buscamos conhecer melhor o candidato, descobrindo suas */motivações/* e */expectativas/* sobre o grupo."
+            ]
+        }
+    }
+}

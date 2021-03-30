@@ -1,0 +1,47 @@
+.projectBannerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: auto; 
+}
+
+.projectBannerMidia {
+    align-self: center;
+    width: 50%;
+} 
+
+.projectBannerContainer > picture {
+    display: flex;
+    justify-content: center;
+}
+
+.projectBannerContainer > picture > img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .projectBannerContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectBannerMidia {
+        width: 80%;
+        align-self: center;
+        margin-bottom: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .projectBannerContainer {
+        padding: 4em 2em;
+    }
+    
+    .projectBannerMidia {
+        width: 100%;
+    }
+
+}

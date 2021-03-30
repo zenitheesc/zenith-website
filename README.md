@@ -48,11 +48,18 @@ You can check us out [here](https://www.youtube.com/watch?v=QoqiUDDEepY)
 
 ## Environment and tools
 
-`Add list of dependencies and software needed to run this project (if possible add the versions that were used in development).`
+  - [Next.js](https://nextjs.org/): ^10.0.6,
+  - [React](https://reactjs.org/): ^17.0.1,
+  - [npm](https://www.npmjs.com/get-npm): ^7.5.4,
+  - [node](https://www.npmjs.com/get-npm): ^15.8.0,
+
+We're using [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for linting/formatting.
 
 ## Steps to run and debug
 
-`A simple list of steps indicating how one can run and test the project.`
+ -  (recommended) `npm run dev` to compile it in development mode and run it on localhost:3000.
+ -  `npm run build` to create an optimized production build
+ -  `npm start` to run the production build on localhost
 
 ## How to contribute
 
@@ -81,6 +88,12 @@ Report bugs and/or feature-requests on our [_issue tab_](https://github.com/zeni
 - **Classes**: PascalCase;
 - **Archives**: PascalCase;
 - **Folders**: kebab-case;
+
+### Linting and formatting
+
+We're using [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for linting/formatting.
+
+Specific details can be found on `.eslintrc.json` and `.pretierrc.js`
 
 ---
 

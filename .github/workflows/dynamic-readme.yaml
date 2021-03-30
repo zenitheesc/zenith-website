@@ -1,7 +1,7 @@
 name: Dynamic Template
 
 on:
-  push:
+  create:
   workflow_dispatch:
 
 jobs:

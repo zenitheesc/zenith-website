@@ -1,0 +1,12 @@
+{
+    "locales"      : ["pt", "en", "es"],
+    "defaultLocale": "pt",
+    "pages"        : {
+		"*" : ["common"],
+		"/"                : ["homePage"],
+		"/kurumim"         : ["kurumim"],
+		"/processo-seletivo": ["processoSeletivo"],
+		"/projetos"        : ["projetos"],
+		"/zenith"          : ["oZenith"]
+	}
+}

@@ -1,0 +1,50 @@
+{
+    "kurumimHero": {
+        "title": "Kurumim",
+        "subtitle": "Garatéa-E's new generation"
+    },
+    "cards": {
+        "kurumimCard1": {
+            "title":"Conquering The Moon",
+            "text": [
+                "*/Kurumin/* is the next step from the */Garatéa-E/* Project, keeping its commitment to */promoting education and scientific initiation/*.",
+                "This year, keeping in mind NASA's Artemis Mission, the project's theme will be */Conquering the Moon/*.",
+                "Even though it is not mandatory that your project fits the theme, projects that fit are eligible to participate in the Competition."
+            ]
+        },
+        "kurumimCard2": {
+            "title":"Expanding the project",
+            "text": [
+                "Our goal is to reach even more children. Given that, we'll be accepting participants from all */Latin america/*.",
+                "The projects will be attached to a probe and sent to the stratosphere."
+            ],
+            "stylish": [
+                { "line": ["UP TO  ", 83, " PROJECTS WILL BE LAUNCHED"] },
+                { "line": [3, " SAT MODELS"] }
+            ]
+        },
+        "kurumimCard3": {
+            "title":"Kurumim Sat",
+            "text": [
+                "Our goal is to bring children closer to satellite development",
+                "The teams that won Garatéa-E's last edition will be invited to test a new CanSat model, the */Kurumin Sat/*, that has multiple sensors, a board computer and an energy module.",
+                "The children will learn */programming concepts/*, developing their */logical thinking/* and */having fun/* whith this development kit. "
+            ]
+        },
+        "kurumimCard4": {
+            "title":"Can't wait to participate?",
+            "text": [
+                "Before registering, it's important to read the participation notice.",
+                "PARTICIPATION NOTICE",
+                "Some important documents for your pre-registration",
+                "ID",
+                "PARTICIPATION REPORT TEMPLATE",
+                "Are you struggling with the experiments? Here we have some examples: ",
+                "MINISAT EXAMPLE",
+                "SMALLSAT EXAMPLE",
+                "BIGSAT EXAMPLE"
+            ]
+        }
+    }
+    
+}
