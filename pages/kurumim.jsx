@@ -32,7 +32,7 @@ function Kurumim() {
         <>
             <NextSeo
                 title="Zenith | Kurumim"
-                description="Explicação detalhada sobre o projeto educacional Kurumim"
+                description="Explicação detalhada sobre o projeto educacional Kurumim."
             />
             <NavBar />
             <HeroSection

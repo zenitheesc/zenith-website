@@ -27,7 +27,7 @@ function Zenith() {
         <>
             <NextSeo
                 title="Zenith | Sobre Nós"
-                description="Apresentação da equipe e de seu histórico"
+                description="Apresentação da equipe e de seu histórico."
             />
             <NavBar />
             <HeroSection
