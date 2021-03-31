@@ -28,7 +28,7 @@ function Model (props) {
                     <CheckList title={techSpecification[0]} itens={techSpecification.slice(1)} dark />
                 </ProjectTable>
             </ProjectData>
-            <ProjectsCarousel paths={paths} />
+            <ProjectsCarousel center paths={paths} />
         </div>      
     );
 }
