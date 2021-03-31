@@ -1,4 +1,9 @@
 {
+    "metaTags": {
+        "pageName": "processo-seletivo",
+        "title": "Zenith | Processo Seletivo",
+        "description": "Você deseja ser parte do Zenith Aerospace?"
+    },
     "processoSeletivoHero": {
         "title": "Processo Seletivo",
         "subtitle": "Você deseja ser parte do Zenith Aerospace?"

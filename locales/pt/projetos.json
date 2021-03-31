@@ -1,4 +1,9 @@
 {
+    "metaTags": {
+        "pageName": "projetos",
+        "title": "Zenith | Projetos",
+        "description": "Diversos projetos utilizando a integração de diversos campos da Engenharia no setor aeroespacial"
+    },
     "projetosHero": {
         "title": "Nossos projetos",
         "subtitle": "Integração de diversos campos da Engenharia no setor aeroespacial"

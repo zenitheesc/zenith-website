@@ -1,4 +1,9 @@
 {
+    "metaTags": {
+        "pageName": "processo-seletivo",
+        "title": "Zenith | Selection Process",
+        "description": "Would you like to be a part of Zenith Aerospace?"
+    },
     "processoSeletivoHero": {
         "title": "Selection Process",
         "subtitle": "Would you like to be a part of Zenith Aerospace?"

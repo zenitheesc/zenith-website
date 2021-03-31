@@ -1,4 +1,9 @@
 {
+    "metaTags": {
+        "pageName": "projetos",
+        "title": "Zenith | Projects",
+        "description": "Integrating multiple engineering fields in the aerospace sector."
+    },
     "projetosHero": {
         "title": "Our Projects",
         "subtitle": "Integrating multiple engineering fields in the aerospace sector."

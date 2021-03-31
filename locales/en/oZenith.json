@@ -1,4 +1,9 @@
 {
+    "metaTags": {
+        "pageName": "zenith",
+        "title": "Zenith | About us",
+        "description": "We are an extracurricular group from the University of São Paulo (EESC-USP) focused on building satellites and aerospace probes."
+    },
     "oZenithHero": {
         "title": "What is Zenith?",
         "subtitle": "We are ",
