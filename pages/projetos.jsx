@@ -4,24 +4,16 @@ import useTranslation from 'next-translate/useTranslation';
 import HeroSection from 'components/projects-components/HeroSection';
 import ProjectTab from 'components/projects-components/ProjectTab';
 import Footer from 'components/Footer';
-import { NextSeo } from 'next-seo';
-import Head from "next/head";
+import HeadTags from 'components/general/HeadTags';
 
 function Projetos() {
   const { t } = useTranslation();
   const title = t('projetos:projetosHero.title');
   const subtitle = t('projetos:projetosHero.subtitle');
+  const metaTags = t('projetos:metaTags', { count: -1 }, { returnObjects: true });
   return (
     <>
-      <Head>
-        <link rel="alternate" href="https://zenith.eesc.usp.br/es/projetos" hrefLang="es" />
-        <link rel="alternate" href="https://zenith.eesc.usp.br/en/projetos" hrefLang="en" />
-        <link rel="alternate" href="https://zenith.eesc.usp.br/projetos" hrefLang="pt" />
-      </Head>
-      <NextSeo
-        title="Zenith | Projetos"
-        description="Descrição detalhada de diversos projetos da equipe."
-      />
+      <HeadTags pageName={metaTags.pageName} title={metaTags.title} description={metaTags.description} />
       <NavBar />
       <HeroSection
         backgroundColor="#000000"

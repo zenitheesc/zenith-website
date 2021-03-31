@@ -9,8 +9,7 @@ import Card from "components/general/Card";
 import CardContainer from "components/general/CardContainer";
 import TextWithIcons from "components/general/TextWithIcons";
 import boldParser from "components/utils/boldParser";
-import { NextSeo } from 'next-seo';
-import Head from "next/head";
+import HeadTags from 'components/general/HeadTags';
 
 const icons = ['sat.svg', 'sci.svg', 'ppl.svg', 'pro.svg'];
 
@@ -23,18 +22,11 @@ function Zenith() {
     const card2 = t('oZenith:oZenithCard2', { count: -1 }, { returnObjects: true });
     const card3 = t('oZenith:oZenithCard3', { count: -1 }, { returnObjects: true });
     const card4 = t('oZenith:oZenithCard4', { count: -1 }, { returnObjects: true });
+    const metaTags = t('oZenith:metaTags', { count: -1 }, { returnObjects: true });
 
     return (
         <>
-            <Head>
-                <link rel="alternate" href="https://zenith.eesc.usp.br/es/zenith" hrefLang="es" />
-                <link rel="alternate" href="https://zenith.eesc.usp.br/en/zenith" hrefLang="en" />
-                <link rel="alternate" href="https://zenith.eesc.usp.br/zenith" hrefLang="pt" />
-            </Head>
-            <NextSeo
-                title="Zenith | Sobre Nós"
-                description="Apresentação da equipe e de seu histórico."
-            />
+            <HeadTags pageName={metaTags.pageName} title={metaTags.title} description={metaTags.description} />
             <NavBar />
             <HeroSection
                 backgroundImage="url(../images/Zenith/Header.webp)"

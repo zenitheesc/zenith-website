@@ -9,8 +9,7 @@ import Card from "components/general/Card";
 import boldParser from "components/utils/boldParser";
 import Config from "configs/configs.json";
 import styles from 'styles/ProcessoSeletivo.module.css';
-import { NextSeo } from 'next-seo';
-import Head from "next/head";
+import HeadTags from 'components/general/HeadTags';
 
 function mapTable(content, idx) {
     return <p className={styles.cronogram} key={idx}><b>{content[0]}</b>: <span key={idx}>{content[1]}</span></p>;
@@ -21,18 +20,10 @@ function ProcessoSeletivo() {
     const title = t('processoSeletivo:processoSeletivoHero.title');
     const subtitle = t('processoSeletivo:processoSeletivoHero.subtitle');
     const TextContent = t('processoSeletivo:cards', { count: -1 }, { returnObjects: true });
-
+    const metaTags = t('processoSeletivo:metaTags', { count: -1 }, { returnObjects: true });
     return (
         <>
-            <Head>
-                <link rel="alternate" href="https://zenith.eesc.usp.br/es/processo-seletivo" hrefLang="es" />
-                <link rel="alternate" href="https://zenith.eesc.usp.br/en/processo-seletivo" hrefLang="en" />
-                <link rel="alternate" href="https://zenith.eesc.usp.br/processo-seletivo" hrefLang="pt" />
-            </Head>
-            <NextSeo
-                title="Zenith | Processo Seletivo"
-                description="Explicação detalhada sobre o processo de ingresso na equipe."
-            />
+            <HeadTags pageName={metaTags.pageName} title={metaTags.title} description={metaTags.description} />
             <NavBar />
             <HeroSection
                 backgroundImage="url(../images/ProcessoSeletivo/header.webp)"

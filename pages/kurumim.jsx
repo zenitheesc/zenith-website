@@ -8,8 +8,7 @@ import CardContainer from "components/general/CardContainer";
 import Card from "components/general/Card";
 import boldParser from "components/utils/boldParser";
 import Config from "configs/configs.json";
-import { NextSeo } from 'next-seo';
-import Head from "next/head";
+import HeadTags from 'components/general/HeadTags';
 
 function mapStylish(content, idx) {
     // TODO: Put style in class
@@ -29,18 +28,10 @@ function Kurumim() {
     const title = t('kurumim:kurumimHero.title');
     const subtitle = t('kurumim:kurumimHero.subtitle');
     const TextContent = t('kurumim:cards', { count: -1 }, { returnObjects: true });
-
+    const metaTags = t('kurumim:metaTags', { count: -1 }, { returnObjects: true });
     return (
         <>
-            <Head>
-                <link rel="alternate" href="https://zenith.eesc.usp.br/es/kurumim" hrefLang="es" />
-                <link rel="alternate" href="https://zenith.eesc.usp.br/en/kurumim" hrefLang="en" />
-                <link rel="alternate" href="https://zenith.eesc.usp.br/kurumim" hrefLang="pt" />
-            </Head>
-            <NextSeo
-                title="Zenith | Kurumim"
-                description="Explicação detalhada sobre o projeto educacional Kurumim."
-            />
+            <HeadTags pageName={metaTags.pageName} title={metaTags.title} description={metaTags.description} />
             <NavBar />
             <HeroSection
                 backgroundImage="url(../images/Kurumim/header.webp)"
