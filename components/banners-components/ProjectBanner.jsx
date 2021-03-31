@@ -22,6 +22,11 @@ function ProjectBanner(props) {
 
 	const playVideo = (isInViewPort) => {
 		if (isInViewPort && !autoPlay) {
+
+			if (folderName === 'genus-banner') {
+				videoElement.current.playbackRate = 1.6;
+			}
+
 			setIsVisible(true);
 			videoElement.current.play()
 		}
