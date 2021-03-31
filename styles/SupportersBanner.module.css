@@ -15,7 +15,7 @@
 
 .squares{
     display: grid;
-    grid-template-columns: 11.5em 11.5em;
+    grid-template-columns: repeat(3, minmax(8rem, 11.5em));
     grid-template-rows: 11.5em 11.5em;
     gap: 1.2em;
     margin-left: 3em;
@@ -49,7 +49,7 @@
         margin: 0px;
         margin-top: 2em;
         grid-template-columns: 11.5em 11.5em;
-        grid-template-rows: 11.5em 11.5em;
+        grid-template-rows: 11.5em 11.5em 11.5em;
     }
     
     .emptySquare {
@@ -76,7 +76,7 @@
 
     .squares {
         grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(2, minmax(8rem, 10rem));
+        grid-template-rows: repeat(3, minmax(8rem, 10rem));
     }
 
 }

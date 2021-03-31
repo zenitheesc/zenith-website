@@ -15,12 +15,15 @@ function GridElement(props) {
                         target="_blank"
                         rel="noopener noreferrer" 
                         key={index}>
-                            <img src={`/images/HomePage/banners/supporters-banner/${supporter.logo}.svg`} className={styles.supportersLogo} alt = "Suporter Logo"/>
+                            <img src={`/images/HomePage/banners/supporters-banner/${supporter.logo}.svg`} className={styles.supportersLogo} alt = {supporter.logo}/>
                         </a>
                     );
 
                 })
             }
+            <a>
+                <img src={`/images/HomePage/banners/supporters-banner/BlankLogoPT.svg`} className={styles.supportersLogo} alt = {'Anuncie seu logo aqui!'}/>    
+            </a>
         </div>
 	)
 }
