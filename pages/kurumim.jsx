@@ -9,6 +9,7 @@ import Card from "components/general/Card";
 import boldParser from "components/utils/boldParser";
 import Config from "configs/configs.json";
 import HeadTags from 'components/general/HeadTags';
+import UnderlinedButton from 'components/general/UnderlinedButton';
 
 function mapStylish(content, idx) {
     // TODO: Put style in class
@@ -51,7 +52,6 @@ function Kurumim() {
                         <>
                             <h1 className="-homepage-section-title">{TextContent.kurumimCard2.title}</h1>
                             {TextContent.kurumimCard2.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
-                            {TextContent.kurumimCard2.stylish.map(mapStylish)}
                         </>
                     }
                     text={'right'}
@@ -73,7 +73,8 @@ function Kurumim() {
                         <>
                             <h1 className="-homepage-section-title">{TextContent.kurumimCard4.title}</h1>
                             {TextContent.kurumimCard4.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
-
+                            <UnderlinedButton link={'https://www.facebook.com/zenitheesc'} label={'Facebook'} dark/>
+                            <UnderlinedButton link={'https://www.instagram.com/zenith_eesc/?fbclid=IwAR1izFqO3DijeIsUgwUW1gzXXpSs1aJrYoz3dtDcbfcoYOEzmvXBmdXaVqA'} label={'Instagram'} dark/>
                         </>
                     }
                     text={'right'}
