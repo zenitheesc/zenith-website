@@ -26,7 +26,7 @@ export default function Hardware(props) {
   ];
 
   const controladorPIDPaths = [
-    'Hardware/Genus.webp',
+    'Hardware/PID.webp',
   ];
 
   const osciloscopioPaths = [
