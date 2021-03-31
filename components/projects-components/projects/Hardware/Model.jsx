@@ -1,4 +1,3 @@
-import React, { useRef, useState, useEffect } from 'react';
 import CheckList from '../../projects-structure/CheckList';
 import ProjectData from '../../ProjectData';
 import ProjectTitle from '../../projects-structure/ProjectTitle';
@@ -29,7 +28,7 @@ function Model (props) {
                     <CheckList title={techSpecification[0]} itens={techSpecification.slice(1)} dark />
                 </ProjectTable>
             </ProjectData>
-            <ProjectsCarousel paths={paths} />
+            <ProjectsCarousel center paths={paths} />
         </div>      
     );
 }

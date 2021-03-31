@@ -2,6 +2,10 @@
     margin-left: 5em;
 }
 
+.projectsCarouselCenter {
+    align-self: center;
+}
+
 .projectsCarousel > div {
     border-radius: 5px;
     left: 15%;

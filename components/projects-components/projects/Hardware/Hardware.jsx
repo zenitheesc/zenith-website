@@ -5,38 +5,38 @@ import styles from 'styles/Projects.module.css';
 import { Timeline, Event } from "components/projects-components/projects-structure/TimeLine";
 
 export default function Hardware(props) {
-  const { controladorPID } = props.textContent.projects;
-  const { osciloscopio } = props.textContent.projects;
-  const { genus } = props.textContent.projects;
-  const { varella } = props.textContent.projects;
-  const { groundStation } = props.textContent.projects;
+  const { 
+    controladorPID,
+    osciloscopio,
+    genus,
+    varella,
+    groundStation 
+  } = props.textContent.projects;
 
   const groundStationPaths = [
-    'Hardware/varella-e1e1e1.mov',
+    'Hardware/GroundStation.webp',
   ];
 
   const varellaPaths = [
-    'Hardware/varella-e1e1e1.mov',
+    'Hardware/VarellaAcquisitionModule.webp',
   ];
 
   const genusPaths = [
-    'Hardware/varella-e1e1e1.mov',
-
+    'Hardware/Genus.webp',
   ];
 
   const controladorPIDPaths = [
-    'Hardware/varella-e1e1e1.mov',
+    'Hardware/PID.webp',
   ];
 
   const osciloscopioPaths = [
-    'Hardware/varella-e1e1e1.mov',
+    'Hardware/Osciloscopio.webp',
   ];
 
   return (
     <section className={`-section ${styles.projectsSection}`} style={{ backgroundColor: '#E1E1E5' }}>
       <ProjectHeader textContent ={ props.textContent } />
       <Timeline theme="light">
-
         <Event interval={2021}>
           <Model paths={groundStationPaths} textContent={groundStation} />
           <Model paths={varellaPaths} textContent={varella} />

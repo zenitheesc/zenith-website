@@ -34,15 +34,14 @@ function CarouselVideo({ path }) {
   )
 }
 
-
 export default function ProjectsCarousel(props) {
-  const { paths, autoPlay } = props;
+  const { paths, autoPlay, center } = props;
   const customRenderItem = (item, props) => <item.type {...item.props} {...props} />;
 
   return (
     <Carousel
       width='85%'
-      className={style.projectsCarousel}
+      className={`${center ? style.projectsCarouselCenter : ''} ${style.projectsCarousel}`}
       showStatus={false}
       showThumbs={false}
       renderItem={customRenderItem}
