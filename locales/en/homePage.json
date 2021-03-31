@@ -71,7 +71,7 @@
         "gestao": {
             "title": "Management",
             "detail": "This department is responsible for organizing and administrating the group.",
-            "core": "NÚCLEOS",
+            "core": "CORES",
             "cores": [
                 {
                     "title": "Finances: ",
@@ -92,7 +92,7 @@
             ]
         },
         "astronautica": {
-            "title": "Astronautic",
+            "title": "Astronautics",
             "detail": "This department is responsible for researching and developing the needed tools for exploring the limits of Earth's atmosphere, as well as executing said 'exploration'.",
             "core": "CORES",
             "cores": [
