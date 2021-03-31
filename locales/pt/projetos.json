@@ -98,7 +98,7 @@
                 "link": "https://github.com/zenitheesc/Garatea-V",
                 "menus": ["OVERVIEW", "TECNOLOGIAS"],
                 "launchDate": ["LANÇAMENTO", "11/11/2018"],
-                "altitude": ["ALTITUDE ALCANÇADA", "?? km"],
+                "altitude": ["ALTITUDE ALCANÇADA", "26 km"],
                 "embedded": [
                     "Sistema de */aquisição de dados/*, desenvolvido pelo grupo, baseado em ATmega2560",
                     "Controle da altitude do vôo da sonda a partir do uso de válvula no balão",
