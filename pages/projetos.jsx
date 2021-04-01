@@ -1,9 +1,9 @@
 import React from 'react';
 import NavBar from 'components/navbar-components/NavBar';
 import useTranslation from 'next-translate/useTranslation';
-import HeroSection from 'components/projects-components/HeroSection';
 import ProjectTab from 'components/projects-components/ProjectTab';
 import Footer from 'components/Footer';
+import HeroSection from 'components/general/HeroSection';
 
 function Projetos() {
   const { t } = useTranslation();
@@ -13,10 +13,9 @@ function Projetos() {
     <>
       <NavBar />
       <HeroSection
-        backgroundColor="#000000"
+        backgroundImage="url(../images/Projetos/header.webp)"
         title={title}
         subtitle={subtitle}
-        path={"Hero/cube-01-black.mp4"}
       />
       <ProjectTab />
       <Footer />
