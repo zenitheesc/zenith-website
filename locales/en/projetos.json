@@ -123,7 +123,7 @@
         "projects": {
             "zenSat": {
                 "title": "ZenSat",
-                "subtitle": "Our first step towards nanosatellite development and, also, the 1st place in */CubeDesign/*.",
+                "subtitle": "Our first step towards nanosatellite development and, also, the 1st place in CubeDesign.",
                 "year": 2018,
                 "link": "https://github.com/zenitheesc/ZenSat_1.0",
                 "menus": ["OVERVIEW", "DOCUMENTATION"],
