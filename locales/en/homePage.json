@@ -156,6 +156,7 @@
     "homePageSupporters": {
         "title": "Our supporters",
         "detail": "without them, nothing would be possible",
+        "supportersMerchant": "BlankLogoEN",
         "supporters": [ 
             {   
                 "logo": "OZ Produtora",
