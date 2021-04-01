@@ -50,7 +50,7 @@
 }
 
 .imgContainer img {
-    padding: 2em;
+    padding-top: 90px;
     max-width: 100%;
     object-fit: contain;
     max-height: 100%;
@@ -75,7 +75,13 @@
     }
 
     .imgContainer {
+        width: 80%;
+    }
+
+    .imgContainer img {
         width: 100%;
+        height: 100%;
+        padding-top: 0em;
     }
 
     .textContainer {
@@ -84,11 +90,6 @@
 }
 
 @media (min-width: 768px) {
-    .heroContainer {
-        padding-left: 2em;
-        padding-right: 2em;
-        
-    }
 
     .heroContainer h1 {
         font-size: 3rem;
@@ -98,4 +99,5 @@
         font-size: 1.5rem;
         line-height: 1.32;
     }
+
 }
