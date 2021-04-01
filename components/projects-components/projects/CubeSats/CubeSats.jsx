@@ -8,7 +8,7 @@ export default function CubeSats(props) {
   const { zenSat, uspSat } = props.textContent.projects;
 
   const uspSatPaths = [
-    'Cubesats/cube-01-cinza.mp4',
+    'Cubesats/USPSat.webp',
 
   ];
 
