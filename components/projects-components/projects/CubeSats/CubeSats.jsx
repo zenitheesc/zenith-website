@@ -13,7 +13,7 @@ export default function CubeSats(props) {
   ];
 
   const zenSatPaths = [
-    'Cubesats/cube-01-cinza.mp4',
+    'Cubesats/ZenSat.webp',
   ];
 
   return (
