@@ -6,96 +6,64 @@
 	xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 	<url>
 		<loc>https://zenith.eesc.usp.br</loc>
-		<changefreq>daily</changefreq>
-		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.211Z</lastmod>
+		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>https://zenith.eesc.usp.br/kurumim</loc>
-		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.212Z</lastmod>
 	</url>
 	<url>
 		<loc>https://zenith.eesc.usp.br/processo-seletivo</loc>
-		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.212Z</lastmod>
 	</url>
 	<url>
 		<loc>https://zenith.eesc.usp.br/projetos</loc>
-		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.213Z</lastmod>
 	</url>
 	<url>
 		<loc>https://zenith.eesc.usp.br/zenith</loc>
-		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.213Z</lastmod>
 	</url>
 
 	<url>
 		<loc>https://zenith.eesc.usp.br/en</loc>
-		<changefreq>daily</changefreq>
-		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.211Z</lastmod>
+		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>https://zenith.eesc.usp.br/en/kurumim</loc>
-		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.212Z</lastmod>
 	</url>
 	<url>
 		<loc>https://zenith.eesc.usp.br/en/processo-seletivo</loc>
-		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.212Z</lastmod>
 	</url>
 	<url>
 		<loc>https://zenith.eesc.usp.br/en/projetos</loc>
-		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.213Z</lastmod>
 	</url>
 	<url>
 		<loc>https://zenith.eesc.usp.br/en/zenith</loc>
-		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.213Z</lastmod>
 	</url>
 
 	<url>
 		<loc>https://zenith.eesc.usp.br/es</loc>
-		<changefreq>daily</changefreq>
-		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.211Z</lastmod>
+		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>https://zenith.eesc.usp.br/es/kurumim</loc>
-		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.212Z</lastmod>
 	</url>
 	<url>
 		<loc>https://zenith.eesc.usp.br/es/processo-seletivo</loc>
-		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.212Z</lastmod>
 	</url>
 	<url>
 		<loc>https://zenith.eesc.usp.br/es/projetos</loc>
-		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.213Z</lastmod>
 	</url>
 	<url>
 		<loc>https://zenith.eesc.usp.br/es/zenith</loc>
-		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
-		<lastmod>2021-03-30T19:25:29.213Z</lastmod>
 	</url>
-
-	
 </urlset>
