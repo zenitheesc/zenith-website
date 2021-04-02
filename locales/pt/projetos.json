@@ -21,7 +21,7 @@
             "garatea1": {
                 "title": "Garatéa-I",
                 "year": 2016,
-                "link": "",
+                "link": "./",
                 "menus": ["OVERVIEW", "TECNOLOGIAS"],
                 "launchDate": ["LANÇAMENTO", "14/05/2016"],
                 "altitude": ["ALTITUDE ALCANÇADA", "27 km"],

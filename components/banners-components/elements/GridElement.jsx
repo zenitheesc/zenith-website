@@ -23,7 +23,7 @@ function GridElement(props) {
 
             {
                 supporters.length % 2 !== 0 ?
-                    <a>
+                    <a href="./">
                         <img
                             src={`/images/HomePage/banners/supporters-banner/${supportersMerchant}.svg`}
                             className={styles.supportersLogo}
