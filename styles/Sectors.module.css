@@ -27,6 +27,10 @@
 	margin: 0rem 2.75rem;
 }
 
+.sectorsButton > h3 {
+	text-align: center;
+}
+
 .sectorsButton > button {
 	background-color: transparent;
 	border: none;
