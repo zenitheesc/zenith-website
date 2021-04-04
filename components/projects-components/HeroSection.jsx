@@ -18,7 +18,7 @@ export default function HeroSection(props) {
         </h2>
       </div>
       <div className={styles.imgContainer}>
-        <img src={`/images/Projetos/${path}`} />
+        <img alt={"Projeto explodido do cubesat zensat mostrando cada uma de suas placase os paineis laterais"} src={`/images/Projetos/${path}`} />
       </div>
 
     </div>

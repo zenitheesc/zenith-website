@@ -77,7 +77,7 @@ function Footer() {
           </a>
         </div>
         <a href="http://vercel.com/?utm_source=zenith-aerospace&utm_campaign=oss">
-          <img src={'images/Footer/Vercel.svg'} />
+          <img alt="Vercel Logo" src={'images/Footer/Vercel.svg'} />
         </a>
       </div>
     </div>
