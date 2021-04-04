@@ -39,6 +39,12 @@ You can check us out [here](https://www.youtube.com/watch?v=QoqiUDDEepY)
     <img src = "https://img.shields.io/github/issues-pr-raw/zenitheesc/zenith-website?style=for-the-badge">
     </a>
 </p>
+<p align="center">
+	<a href="http://zenith.eesc.usp.br/">
+    <img src="https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fzenith.eesc.usp.br"/>
+    </a>
+
+</p>
 
 <p align="center">
     <a href="#environment-and-tools">Environment and Tools</a> •
