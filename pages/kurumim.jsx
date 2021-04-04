@@ -44,13 +44,13 @@ function Kurumim() {
                     lean="none"
                     left={
                         <>
-                            <h1 className="-homepage-section-title">{TextContent.kurumimCard1.title}</h1>
+                            <h2 className="-homepage-section-title">{TextContent.kurumimCard1.title}</h2>
                             {TextContent.kurumimCard1.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
                         </>
                     }
                     right={
                         <>
-                            <h1 className="-homepage-section-title">{TextContent.kurumimCard2.title}</h1>
+                            <h2 className="-homepage-section-title">{TextContent.kurumimCard2.title}</h2>
                             {TextContent.kurumimCard2.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
                         </>
                     }
@@ -64,14 +64,14 @@ function Kurumim() {
                     lean="none"
                     left={
                         <>
-                            <h1 className="-homepage-section-title">{TextContent.kurumimCard3.title}</h1>
+                            <h2 className="-homepage-section-title">{TextContent.kurumimCard3.title}</h2>
                             {TextContent.kurumimCard3.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
 
                         </>
                     }
                     right={
                         <>
-                            <h1 className="-homepage-section-title">{TextContent.kurumimCard4.title}</h1>
+                            <h2 className="-homepage-section-title">{TextContent.kurumimCard4.title}</h2>
                             {TextContent.kurumimCard4.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
                             <UnderlinedButton link={'https://www.facebook.com/zenitheesc'} label={'Facebook'} dark/>
                             <UnderlinedButton link={'https://www.instagram.com/zenith_eesc/?fbclid=IwAR1izFqO3DijeIsUgwUW1gzXXpSs1aJrYoz3dtDcbfcoYOEzmvXBmdXaVqA'} label={'Instagram'} dark/>

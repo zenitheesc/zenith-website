@@ -1,5 +1,5 @@
 .row {
-    display: flex;
+    display: flex; 
     flex-flow: row;
     border: 0px;
     font-size: 1.25rem;
@@ -15,7 +15,7 @@
     border: 1px solid #D7D7D7;
 }
 
-.card>h1 {
+.card>h2 {
     margin: 2rem 0 1rem 0;
     font-size: 2.2rem;
     font-weight: 570;
@@ -27,11 +27,11 @@
 }
 
 .card>p,
-.card>h1 {
+.card>h2 {
     padding: 0 2rem;
 }
 
-.card h2 {
+.card h3 {
     margin-bottom: 2px;
 }
 
@@ -105,7 +105,7 @@
 
 @media only screen and (max-width: 768px) {
 
-    .card > h1 {
+    .card > h2 {
         margin: 2rem 0 1rem 0;
         font-size: 1.75rem;
         padding-left: 1.5rem;
@@ -113,7 +113,7 @@
 
     .card>p,
     .card>a,
-    .card>h1 {
+    .card>h2 {
         padding: 0 1.5rem;
     }
 

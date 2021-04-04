@@ -39,7 +39,7 @@ function Zenith() {
                     left={<img src="../images/Zenith/Card-1.webp" alt="Students working" />}
                     right={
                         <>
-                            <h1 className="-homepage-section-title">{card1.title}</h1>
+                            <h2 className="-homepage-section-title">{card1.title}</h2>
                             <TextWithIcons content={{ title: "", text: card1.text[0] }} index={0} icons={icons} />
                             <br />
                             <p>{card1.text[1]}</p>
@@ -58,7 +58,7 @@ function Zenith() {
                     lean="left"
                     left={
                         <>
-                            <h1 className="-homepage-section-title">{card2.title}</h1>
+                            <h2 className="-homepage-section-title">{card2.title}</h2>
                             {card2.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
                         </>
                     }
@@ -71,7 +71,7 @@ function Zenith() {
                     left={<img src="../images/Zenith/Card-3.webp" alt="Board stack" />}
                     right={
                         <>
-                            <h1 className="-homepage-section-title">{card3.title}</h1>
+                            <h2 className="-homepage-section-title">{card3.title}</h2>
                             {card3.text.map((c, i) => <TextWithIcons content={c} key={i} index={i + 1} icons={icons} />)}
                             <br />
                         </>
@@ -83,7 +83,7 @@ function Zenith() {
                     right={<img src="../images/Zenith/Card-4.webp" alt="Joãozinho" />}
                     left={
                         <>
-                            <h1 className="-homepage-section-title">{card4.title}</h1>
+                            <h2 className="-homepage-section-title">{card4.title}</h2>
                             {card4.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
                             {card4.links.map((l, idx) => <UnderlinedButton key={idx} link={l.url} label={l.text} dark />)}
                         </>

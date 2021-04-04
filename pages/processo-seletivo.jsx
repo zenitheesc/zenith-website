@@ -35,7 +35,7 @@ function ProcessoSeletivo() {
                     left={<img src="../images/ProcessoSeletivo/Card-1.webp" alt="Processo Seletivo Card" />}
                     right={
                         <>
-                            <h1>{TextContent.processoSeletivoCard1.title}</h1>
+                            <h2>{TextContent.processoSeletivoCard1.title}</h2>
                             {TextContent.processoSeletivoCard1.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
 
                         </>
@@ -46,7 +46,7 @@ function ProcessoSeletivo() {
                 <Card
                     left={
                         <>
-                            <h1>{TextContent.processoSeletivoCard2.title}</h1>
+                            <h2>{TextContent.processoSeletivoCard2.title}</h2>
                             <p>{boldParser(TextContent.processoSeletivoCard2.detail)}</p>
                             {TextContent.processoSeletivoCard2.text.map((a, idx) => mapTable(a, idx))}
 
@@ -59,7 +59,7 @@ function ProcessoSeletivo() {
                     left={<img src="../images/ProcessoSeletivo/Card-3.webp" alt="Processo Seletivo Card" />}
                     right={
                         <>
-                            <h1>{TextContent.processoSeletivoCard3.title}</h1>
+                            <h2>{TextContent.processoSeletivoCard3.title}</h2>
                             {TextContent.processoSeletivoCard3.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
 
                         </>
