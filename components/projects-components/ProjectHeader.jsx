@@ -4,10 +4,10 @@ import styles from 'styles/projects/ProjectHeader.module.css';
 
 export default function ProjectHeader(props) {
   const { title, subtitle } = props.textContent;
-  const { h1Color, pColor } = props;
+  const { h2Color, pColor } = props;
 
-  const h1Style = {
-    color: h1Color,
+  const h2Style = {
+    color: h2Color,
   };
 
   const pStyle = {
@@ -19,9 +19,9 @@ export default function ProjectHeader(props) {
   return (
     <section className={styles.projectHeader}>
       <div className={styles.textSection}>
-        <h1 style={ h1Style }>
+        <h2 style={ h2Style }>
           {title}
-        </h1>
+        </h2>
         {parsedSubtitle.map((value, index) => {
           return (<p style={ pStyle } key={index}> {value} </p>);
         })}

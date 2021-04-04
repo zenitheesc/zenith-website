@@ -10,7 +10,7 @@
     max-width: 46rem;
 }
 
-.textSection h1 {
+.textSection h2 {
     font-size: 36px;
     margin: 0px;
     color: #484848;
@@ -28,7 +28,7 @@
         padding: 3em 2em;
     }
 
-    .textSection h1 {
+    .textSection h2 {
         font-size: 30px;
     } 
 

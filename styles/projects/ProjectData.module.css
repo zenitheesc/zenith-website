@@ -1,11 +1,9 @@
-.projectData h1,
 .projectData h2,
 .projectData h3,
 .projectData span {
     color: #CCCCCC;
 }
 
-.projectData.dark h1,
 .projectData.dark h2,
 .projectData.dark h3,
 .projectData.dark span {
@@ -22,10 +20,6 @@
     width: 55vw;
     background-color: transparent;
 }
-
-.projectData h1 {
-	font-size: 36px;
-} 
 
 .projectData h2 {
     font-weight: 600;
@@ -80,10 +74,6 @@
         width: 85vw;
     }
 
-    .projectData h1 {
-        font-size: 30px;
-    } 
-    
     .projectData h2 {
         font-size: 15px;
     }

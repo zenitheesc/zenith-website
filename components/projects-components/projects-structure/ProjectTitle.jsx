@@ -7,9 +7,9 @@ export default function ProjectTitle(props) {
 
 	return (
 		<div className={`${styles.projectTitle} ${noSpace ? styles.noSpace : ''}`}>
-			<h1>
+			<h2>
 				{title}
-			</h1>
+			</h2>
 			{
 				gitLink != null
 				? <a href={gitLink} aria-label="GitHub" target="_blank" rel="noopener noreferrer">

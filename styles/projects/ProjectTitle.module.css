@@ -5,8 +5,9 @@
     margin-bottom: 1em;
 }
 
-.projectTitle > h1 {
+.projectTitle > h2 {
     margin: 0px;
+	font-size: 36px !important;
 }
 
 .noSpace {
@@ -29,4 +30,12 @@
 .projectTitle > a > svg > path {
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .projectTitle h2 {
+        font-size: 30px !important;
+    } 
+
 }
