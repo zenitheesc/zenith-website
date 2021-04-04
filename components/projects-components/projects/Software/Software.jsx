@@ -9,7 +9,7 @@ export default function Software(props) {
 
   return (
     <section className={`-section ${styles.projectsSection}`} style={{ backgroundColor: '#000000' }}>
-      <ProjectHeader textContent ={ props.textContent } h1Color={ '#CCCCCC' } pColor={ '#CCCCCC' } />
+      <ProjectHeader textContent ={ props.textContent } h2Color={ '#CCCCCC' } pColor={ '#CCCCCC' } />
       <Timeline theme="dark">
         <Event interval={2021}>
           <Model textContent={ zenView } path={'Software/ZenView.webp'} />
