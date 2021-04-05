@@ -12,7 +12,7 @@ html {
 
 /* Homepage standards */
 ::-webkit-scrollbar {
-    width: 0.3em;
+    width: 0.35em;
     height: 0.5em;
 }
 
@@ -25,7 +25,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(194, 23, 23);
+    background: rgb(93, 93, 99);
 
 }
 
