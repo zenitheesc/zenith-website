@@ -1,7 +1,7 @@
 import React from 'react';
 import CounterText from 'components/general/CounterText';
-import style from 'styles/HighlightsSection.module.css';
 import useTranslation from 'next-translate/useTranslation';
+import style from 'styles/HighlightsSection.module.css';
 
 export default function HighlightsSection() {
   const { t } = useTranslation();
@@ -20,9 +20,9 @@ export default function HighlightsSection() {
           <CounterText className={style.countUp} value={statistics[4].number} suffix={statistics[4].description} />
         </div>
         <div className={style.textSection}>
-          <h1 className="-homepage-section-title">
+          <h2 className="-homepage-section-title">
             {title}
-          </h1>
+          </h2>
           <h3 className="-homepage-section-subtitle">
             {subtitle}
           </h3>

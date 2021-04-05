@@ -7,18 +7,18 @@
     align-self: center;
 }
 
-.bannersText h1 {
+.bannersText h2 {
     margin: 0px;
 }
 
-.bannersText h2 {
+.bannersText h3 {
     font-size: 1.8em;
     margin-bottom: 0.5em;
 }
 
 @media screen and (max-width: 1024px) {
 
-    .bannersText h2 {
+    .bannersText h3 {
         font-size: 1.5em;
     }
 
@@ -26,7 +26,7 @@
 
 @media screen and (max-width: 768px) {
 
-    .bannersText h2 {
+    .bannersText h3 {
         font-size: 1.2em;
     }
 

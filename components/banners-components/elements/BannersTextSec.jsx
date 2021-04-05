@@ -7,15 +7,16 @@ function BannersTextSec(props) {
 
     return ( 
         <div className={styles.bannersText}>
-            <h1 className="-homepage-section-title">
-                {title}
-            </h1>
             <h2 className="-homepage-section-title">
-                {detail} 
+                {title}
             </h2>
+            <h3 className="-homepage-section-title">
+                {detail} 
+            </h3>
             <UnderlinedButton label={"GitHub"} link={ link }/>
         </div> 
     );
-  }
+
+}
   
 export default BannersTextSec;

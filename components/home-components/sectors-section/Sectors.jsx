@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
+import useTranslation from 'next-translate/useTranslation';
 import Embarcados from './icons/Embarcados';
 import Estruturas from './icons/Estruturas';
 import Astrobiologia from './icons/Astrobiologia';
 import Gestão from './icons/Gestão';
 import Astronautica from './icons/Astronáutica';
 import SectorsButtons from './SectorsButtons';
-import styles from 'styles/Sectors.module.css';
-import useTranslation from 'next-translate/useTranslation';
 import SectorCard from './SectorCard';
+import styles from 'styles/Sectors.module.css';
 
 function SectorsCards({ textContent, currSector }) {
   const sectorsCards = {
@@ -31,9 +31,9 @@ function Sectors() {
   return (
     <div className={styles.sectorsContainer}>
       <div className={styles.textSection}>
-        <h1 className="-homepage-section-title">
+        <h2 className="-homepage-section-title">
           {title}
-        </h1>
+        </h2>
         <h3 className="-homepage-section-subtitle">
           {subtitle}
         </h3>

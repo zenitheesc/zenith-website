@@ -34,9 +34,9 @@ export default function SectorCard({ textContent, name}) {
     <div className={style.container}>
       <div className={style.info}>
 
-        <h1>{textContent.title}</h1>
+        <h2>{textContent.title}</h2>
         <span>{textContent.detail}</span>
-        <h2>{textContent.core}:</h2>
+        <h3>{textContent.core}:</h3>
         <div>
           {
             cores.map((value, key) => {

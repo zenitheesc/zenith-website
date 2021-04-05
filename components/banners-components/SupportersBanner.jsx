@@ -8,9 +8,9 @@ function SupportersBanner(props) {
 		<section className={`-section ${styles.supportersSection}`}>
 			<div className={`-standardContainer ${styles.supportersBanner}`}>
 				<div className={styles.textSection}>
-					<h1 className="-homepage-section-title">
+					<h2 className="-homepage-section-title">
 						{title}
-					</h1>
+					</h2>
 					<h3 className="-homepage-section-subtitle">
 						{detail}
 					</h3>
