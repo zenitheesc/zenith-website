@@ -49,9 +49,9 @@ export default function HeadTags(props) {
 			<Head>
 				<meta name="google-site-verification" content={process.env.googleVerification} />
 				{mainPage ? <link rel="canonical" href="https://zenith.eesc.usp.br" /> : <link rel="canonical" href={`https://zenith.eesc.usp.br/${lang}/${pageName}`} />}
-				<link rel="alternate" href={`https://zenith.eesc.usp.br/es/${pageName}`} hrefLang="es" />
-				<link rel="alternate" href={`https://zenith.eesc.usp.br/en/${pageName}`} hrefLang="en" />
-				<link rel="alternate" href={`https://zenith.eesc.usp.br/${pageName}`} hrefLang="pt" />
+				{(lang !== "es") ? <link rel="alternate" href={`https://zenith.eesc.usp.br/es/${pageName}`} hrefLang="es" /> : <></>}
+				{(lang !== "en") ? <link rel="alternate" href={`https://zenith.eesc.usp.br/en/${pageName}`} hrefLang="en" /> : <></>}
+				{(lang !== "pt") ? <link rel="alternate" href={`https://zenith.eesc.usp.br/${pageName}`} hrefLang="pt" /> : <></>}
 				<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYP8Y3JHR0"></script>
 				<script
 					async
@@ -73,6 +73,11 @@ export default function HeadTags(props) {
 					title: title,
 					description: description,
 					locale: lang,
+				}}
+				twitter={{
+						handle: '@handle',
+					site: '@site',
+					cardType: 'summary_large_image',
 				}}
 				title={title}
 				description={description}
