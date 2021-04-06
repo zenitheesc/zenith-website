@@ -1,4 +1,9 @@
 {
+    "metaTags": {
+        "pageName": "zenith",
+        "title": "Sobre Nosotros: Somos Innovación || Zenith EESC",
+        "description": "Somos uma extracurricular da Escola de Engenharia de São Carlos (EESC) focada na construção de satélites e sondas aeroespaciais."
+    },
     "oZenithHero": {
         "title": "O que é o Zenith?",
         "subtitle": "Nós somos ",
