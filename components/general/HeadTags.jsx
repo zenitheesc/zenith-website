@@ -75,8 +75,6 @@ export default function HeadTags(props) {
 					locale: lang,
 				}}
 				twitter={{
-						handle: '@handle',
-					site: '@site',
 					cardType: 'summary_large_image',
 				}}
 				title={title}
