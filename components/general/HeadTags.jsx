@@ -72,6 +72,7 @@ export default function HeadTags(props) {
 					url: 'https://zenith.eesc.usp.br',
 					title: title,
 					description: description,
+					locale: lang,
 				}}
 				title={title}
 				description={description}
