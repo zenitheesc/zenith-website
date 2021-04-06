@@ -32,7 +32,7 @@ function Kurumim() {
     const metaTags = t('kurumim:metaTags', { count: -1 }, { returnObjects: true });
     return (
         <>
-            <HeadTags pageName={metaTags.pageName} title={metaTags.title} description={metaTags.description} />
+            <HeadTags pageName={metaTags.pageName} title={metaTags.title} description={metaTags.description} pageTitle={metaTags.pageTitle} lang={metaTags.lang}/>
             <NavBar />
             <HeroSection
                 backgroundImage="url(../images/Kurumim/header.webp)"

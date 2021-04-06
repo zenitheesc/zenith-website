@@ -1,14 +1,48 @@
 import React from 'react'
 import Head from "next/head";
-import { NextSeo } from 'next-seo';
+import { NextSeo, BreadcrumbJsonLd } from 'next-seo';
+
+function Breadcrumb (props) {
+	const {
+		mainPage,
+		pageName,
+		pageTitle,
+		lang
+	} = props;
+
+	const itemList = (mainPage)
+		? [{
+			position: 1,
+			name: 'Zenith Aerospace',
+			item: 'https://zenith.eesc.usp.br/',
+		  }]
+		: [{
+			position: 1,
+			name: 'Zenith Aerospace',
+			item: 'https://zenith.eesc.usp.br/',
+		},{
+			position: 2,
+			name: pageTitle,
+			item: `https://zenith.eesc.usp.br/${lang}/${pageName}`,
+		}];
+
+	return(
+		<BreadcrumbJsonLd 
+			itemListElements={itemList}
+		/>
+	);
+
+}
 
 export default function HeadTags(props) {
 	const {
 		pageName,
 		title,
 		description,
-		mainPage
-	} = props
+		mainPage,
+		pageTitle,
+		lang
+	} = props;
 
 	return (
 		<>
@@ -30,7 +64,15 @@ export default function HeadTags(props) {
 					}}
 				/>
 			</Head>
+			<Breadcrumb mainPage={mainPage} pageName={pageName} pageTitle={pageTitle} lang={lang}/>
 			<NextSeo
+				openGraph={{
+					type: 'website',
+					site_name: 'Zenith Aerospace',
+					url: 'https://zenith.eesc.usp.br',
+					title: title,
+					description: description,
+				}}
 				title={title}
 				description={description}
 			/>

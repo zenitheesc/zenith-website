@@ -15,7 +15,7 @@ function Home() {
   const metaTags = t('homePage:metaTags', { count: -1 }, { returnObjects: true });
   return (
     <>
-      <HeadTags pageName={metaTags.pageName} title={metaTags.title} description={metaTags.description} />
+      <HeadTags pageName={metaTags.pageName} title={metaTags.title} description={metaTags.description} pageTitle={metaTags.pageTitle} lang={metaTags.lang} mainPage/>
       <NavBar />
       <HomeHeroSection />
       <Sectors />
