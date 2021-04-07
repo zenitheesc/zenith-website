@@ -48,7 +48,9 @@ export default function HeadTags(props) {
 		<>
 			<Head>
 				<meta name="google-site-verification" content={process.env.googleVerification} />
-				{mainPage ? <link rel="canonical" href="https://zenith.eesc.usp.br" /> : <link rel="canonical" href={`https://zenith.eesc.usp.br/${lang}/${pageName}`} />}
+				{(lang === "pt") 
+					? <link rel="canonical" href={`https://zenith.eesc.usp.br/${pageName}`} />}
+					: <link rel="canonical" href={`https://zenith.eesc.usp.br/${lang}/${pageName}`} />}
 				{(lang !== "es") ? <link rel="alternate" href={`https://zenith.eesc.usp.br/es/${pageName}`} hrefLang="es" /> : <></>}
 				{(lang !== "en") ? <link rel="alternate" href={`https://zenith.eesc.usp.br/en/${pageName}`} hrefLang="en" /> : <></>}
 				{(lang !== "pt") ? <link rel="alternate" href={`https://zenith.eesc.usp.br/${pageName}`} hrefLang="pt" /> : <></>}
