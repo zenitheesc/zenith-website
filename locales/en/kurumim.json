@@ -1,53 +1,43 @@
 {
     "metaTags": {
         "pageName": "kurumim",
-        "title": "Kurumim: The new generation of Garatéa-E || Zenith EESC",
-        "description": "Our educational project to promote curiosity and scientific initiation in basic education through the contact with Space."
+        "title": "Kurumim: Garatéa-E's next generation|| Zenith EESC",
+        "description": "Our educational project to promote curiosity and STEM in basic education groups through the contact with space."
     },
     "kurumimHero": {
         "title": "Kurumim",
-        "subtitle": "Garatéa-E's new generation"
+        "subtitle": "Garatéa-E's next generation"
     },
     "cards": {
         "kurumimCard1": {
-            "title":"Conquering The Moon",
+            "title":"Kurumim 2021",
             "text": [
-                "*/Kurumin/* is the next step from the */Garatéa-E/* Project, keeping its commitment to */promoting education and scientific initiation/*.",
-                "This year, keeping in mind NASA's Artemis Mission, the project's theme will be */Conquering the Moon/*.",
-                "Even though it is not mandatory that your project fits the theme, projects that fit are eligible to participate in the Competition."
+                "*/Kurmin/* is an expansion of the */Garatéa-E/* project, keeping its compromise with the */promotion of education and STEM/* in basic education.",
+                "We aim to encourage the development of scientific experiments made by studants of all */Latin America/* through the analysis of results obtained when the experiment is exposed to stress environments.",
+                "Keeping the */global pandemic/* in mind, in this year's edition - 2021 - the environment conditions that were before experienced through the Atmospheric Probes flights, must be */simulated by the students/*."
             ]
         },
         "kurumimCard2": {
-            "title":"Expanding the project",
+            "title":"Guardians of the Amazon",
             "text": [
-                "Our goal is to reach even more children. Given that, we'll be accepting participants from all */Latin america/*.",
-                "The projects will be attached to a probe and sent to the stratosphere."
-            ],
-            "stylish": [
-                { "line": ["UP TO  ", 83, " PROJECTS WILL BE LAUNCHED"] },
-                { "line": [3, " SAT MODELS"] }
+                "This year, celebrating the */Amazônia-1/* launch, the first 100% brazilian satellite, conceived for monitoring of the Amazon Rainforest, the project's theme will be: */Guardians of the Amazon/*. ",
+                "The participants are encouraged to develop projects with the following primary goal: */the preservation of the Amazon's fauna and flora/*.",
+                "It is not mandatory that your project fits the theme, but projects that do will be able to participate in specific categories of our Competition."
             ]
         },
         "kurumimCard3": {
-            "title":"Kurumim Sat",
+            "title":"Aerospace Saturday",
             "text": [
-                "Our goal is to bring children closer to satellite development",
-                "The teams that won Garatéa-E's last edition will be invited to test a new CanSat model, the */Kurumin Sat/*, that has multiple sensors, a board computer and an energy module.",
-                "The children will learn */programming concepts/*, developing their */logical thinking/* and */having fun/* whith this development kit. "
+                "*/Aerospace Saturday/* is a project that aims to promote aerospace focused science for everyone.",
+                "The event has lectures, interactive activies and presentations by multiple groups. In */2021/*, Aerospace Saturday will be */100% online/* and, as always, completely */free/*.",
+                "In this day of */science celebration/* we will also announce the */award winners/* in the */Kurumin Competition/*'s categories."
             ]
         },
         "kurumimCard4": {
-            "title":"Can't wait to participate?",
+            "title":"Looking forward to participating?",
             "text": [
-                "Before registering, it's important to read the participation notice.",
-                "PARTICIPATION NOTICE",
-                "Some important documents for your pre-registration",
-                "ID",
-                "PARTICIPATION REPORT TEMPLATE",
-                "Are you struggling with the experiments? Here we have some examples: ",
-                "MINISAT EXAMPLE",
-                "SMALLSAT EXAMPLE",
-                "BIGSAT EXAMPLE"
+                "On */May 12th/*, we will be launching the */Kurumin 2021 Edict/* here! There you will be able to find more information regarding how to participate and more details about the experiment's development. ", 
+                "Be sure to follow us on our Social Networks so you don't lose any news regarding */Kurumin 2021/*"
             ]
         }
     }
