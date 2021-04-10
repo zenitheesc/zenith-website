@@ -1,0 +1,409 @@
+{
+
+    "Footer":{ 
+        "logo":{
+            "alt": "",        
+            "imgSrc":  "images/Footer/logo.svg"
+        },
+        "Vercel":{
+            "alt": "",        
+            "imgSrc":  "images/Footer/Vercel.svg"} 
+    },
+ 
+
+    "HomePage":{
+        "banners":{
+            "genus-banner":{
+                "static":{
+                    "alt": "",        
+                    "imgSrc":  ""
+                }
+            },
+            "monitor-banner":{
+                "static":{
+                    "alt": "",        
+                    "imgSrc":  ""
+                }
+            }  
+        },
+        "static":{
+            "alt": "",        
+            "imgSrc": ""
+        }
+    },
+
+
+    "Kurumin":{ 
+        "header":{
+            "alt": "",        
+            "imgSrc":  ""
+        },
+        "mobilePoster":{
+            "alt": "",        
+            "imgSrc":  ""
+        },
+        "poster":{
+            "alt": "",        
+            "imgSrc":  ""
+        }
+    },
+
+
+    "NavigationBar":{ 
+        "logo":{
+            "alt": "",        
+            "imgSrc":  ""
+        }
+    },
+
+
+    "ProcessoSeletivo":{
+        "Card-1":{
+            "alt": "",        
+            "imgSrc": "" 
+        },
+        "Card-2":{
+            "alt": "",        
+            "imgSrc": ""
+        },
+        "Card-3":{
+            "alt": "",        
+            "imgSrc":  ""
+        },    
+        "headerps":{ 
+            "alt": "",        
+            "imgSrc": "" 
+        }
+    },
+    
+ 
+    "Projetos":{
+        "Cubesats":{
+            "USPSat":{  
+                "alt": "",        
+                "imgSrc":  ""
+            },
+            "ZenSat":{  
+                "alt": "",        
+                "imgSrc":  ""
+            }
+        },
+
+        "Educacional":{
+            "garateaE":{    
+
+                "2017":{ 
+                   "photo1":{
+                        "alt": "",        
+                        "imgSrc":""
+                    },
+                   "photo2":{
+                       "alt": "",        
+                        "imgSrc":""
+                    }, 
+                   "photo3":{
+                       "alt": "",        
+                        "imgSrc":""
+                    },
+                   "photo4":{
+                       "alt": "",        
+                       "imgSrc":""
+                    },
+                   "photo5":{
+                       "alt": "",        
+                       "imgSrc":""
+                    }
+                },
+
+                "2018":{
+                   "photo1":{
+                       "alt": "",        
+                       "imgSrc":""
+                    },
+                   "photo2":{
+                       "alt": "",        
+                       "imgSrc":""
+                    },
+                    "photo3":{
+                        "alt": "",        
+                        "imgSrc":""
+                    },
+                    "photo4":{
+                        "alt": "",         
+                        "imgSrc":"" 
+                    },
+                    "photo5":{
+                        "alt": "",        
+                        "imgSrc":""
+                    },
+                    "photo6":{
+                       "alt": "",        
+                       "imgSrc":""
+                    },
+                    "photo7":{
+                        "alt": "",        
+                        "imgSrc":""
+                    },
+                    "photo8":{
+                        "alt": "",        
+                        "imgSrc":""
+                    } 
+                },
+        
+            "2019":{ 
+                   "photo1":{
+                        "alt": "",        
+                        "imgSrc": ""
+                    } 
+                }            
+            }
+        },
+
+
+        "Hardware":{
+            "Genus":{
+                "alt":"",
+                "imgSrc": ""
+            },
+            "GroundStation":{
+                "alt":"",
+                "imgSrc": ""
+            },
+            "Osciloscopio":{
+                "alt":"",
+                "imgSrc": ""
+            },
+            "PID":{
+                "alt":"",
+                "imgSrc": ""
+            },
+            "VarellaAcquisitionModule":{
+                "alt":"",
+                "imgSrc": ""
+            }
+        },
+
+
+        "Hero":{
+            "render":{
+                "alt":"",
+                "imgSrc": ""
+            }
+        },
+        
+
+        "Software":{
+            "ReportMaker":{
+                "alt":"",
+                "imgSrc": ""
+            },
+            "Website":{
+                "alt":"",
+                "imgSrc": ""
+            },
+            "ZenithMonitor":{
+                "alt":"",
+                "imgSrc": ""
+            },
+            "ZenView":{
+                "alt":"",
+                "imgSrc": ""
+            }
+        },
+        
+
+        "SondasAeroespaciais":{
+            "Garatea-I":{
+
+                "photo1":{
+                    "alt": "",        
+                    "imgSrc":""
+                },
+                "photo2":{
+                    "alt": "",        
+                    "imgSrc":""
+                },
+                 "photo3":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo4":{
+                     "alt": "",         
+                     "imgSrc":"" 
+                },
+                 "photo5":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo6":{
+                    "alt": "",        
+                    "imgSrc":""
+                },
+                 "photo7":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo8":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo9":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo10":{
+                     "alt": "",        
+                     "imgSrc":""
+                }
+            },
+
+            "Garatea-II":{
+
+                "photo1":{
+                    "alt": "",        
+                    "imgSrc":""
+                },
+                "photo2":{
+                    "alt": "",        
+                    "imgSrc":""
+                },
+                 "photo3":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo4":{
+                     "alt": "",         
+                     "imgSrc":"" 
+                },
+                 "photo5":{
+                     "alt": "",        
+                     "imgSrc":""
+                }
+
+            },
+
+            "Garetea-III":{
+
+                "photo1":{
+                    "alt": "",        
+                    "imgSrc":""
+                },
+                "photo2":{
+                    "alt": "",        
+                    "imgSrc":""
+                },
+                 "photo3":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo4":{
+                     "alt": "",         
+                     "imgSrc":"" 
+                },
+                 "photo5":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo6":{
+                    "alt": "",        
+                    "imgSrc":""
+                },
+                 "photo7":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo8":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo9":{
+                     "alt": "",        
+                     "imgSrc":""
+                }
+            },
+
+            "Garatea-V":{
+
+                "photo1":{
+                    "alt": "",        
+                    "imgSrc":""
+                },
+                "photo2":{
+                    "alt": "",        
+                    "imgSrc":""
+                },
+                 "photo3":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo4":{
+                     "alt": "",         
+                     "imgSrc":"" 
+                },
+                 "photo5":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo6":{
+                    "alt": "",        
+                    "imgSrc":""
+                },
+                 "photo7":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo8":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo9":{
+                     "alt": "",        
+                     "imgSrc":""
+                },
+                 "photo10":{
+                     "alt": "",        
+                     "imgSrc":""
+                }
+            }
+        }
+    },
+
+
+    "techonologies":{
+
+
+    },
+
+
+    "Zenith":{
+        
+        "Card-1":{
+            "alt": "",        
+            "imgSrc": "" 
+        },
+        "Card-2":{
+            "alt": "",        
+            "imgSrc": ""
+        },
+        "Card-3":{
+            "alt": "",        
+            "imgSrc":  ""
+        },
+        "Card-4":{
+            "alt": "",        
+            "imgSrc":  ""
+        },
+        "Header":{
+            "alt": "",        
+            "imgSrc":  ""
+        },
+        "photo1":{
+            "alt": "",        
+            "imgSrc":  ""
+        },
+        "photo2":{
+            "alt": "",        
+            "imgSrc":  ""
+        }
+    }
+}
