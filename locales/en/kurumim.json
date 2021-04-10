@@ -6,7 +6,7 @@
     },
     "kurumimHero": {
         "title": "Kurumim",
-        "subtitle": "Kurumim: Garatéa-E's next generation|| Zenith EESC"
+        "subtitle": "Garatéa-E's next generation"
     },
     "cards": {
         "kurumimCard1": {
@@ -36,7 +36,7 @@
         "kurumimCard4": {
             "title":"Looking forward to participating?",
             "text": [
-                "On */May 12th/*, we will be launching the */Kurumin 2021 Edict/* here! There you will be able to find more information regarding how to participate and more details about the experiments development. ", 
+                "On */May 12th/*, we will be launching the */Kurumin 2021 Edict/* here! There you will be able to find more information regarding how to participate and more details about the experiment's development. ", 
                 "Be sure to follow us on our Social Networks so you don't lose any news regarding */Kurumin 2021/*"
             ]
         }
