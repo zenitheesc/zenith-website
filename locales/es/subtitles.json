@@ -1,15 +1,5 @@
 {
 
-    "Footer":{ 
-        "logo":{
-            "alt": "",        
-            "imgSrc":  "images/Footer/logo.svg"
-        },
-        "Vercel":{
-            "alt": "",        
-            "imgSrc":  "images/Footer/Vercel.svg"} 
-    },
- 
 
     "HomePage":{
         "banners":{
