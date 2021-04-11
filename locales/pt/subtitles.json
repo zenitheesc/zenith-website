@@ -4,7 +4,7 @@
         "banners":{
             "genus-banner":{
                 "static":{
-                    "alt": "Ilustração do genus, um hardware modularizado para aplicações aeroespaciais",        
+                    "alt": "Ilustração do genus, um hardware modularizado para aplicações aeroespaciais.",        
                     "imgSrc":  "images/HomePage/static.webp"
                 }
             },
@@ -16,7 +16,7 @@
             }  
         },
         "static":{
-            "alt": "Espaço sideral estrelado",        
+            "alt": "Espaço sideral estrelado.",        
             "imgSrc": "HomePage/static.webp"
         }
     },
@@ -24,7 +24,7 @@
 
     "Kurumin":{ 
         "header":{
-            "alt": "Conjunto diverso de experimentos científicos que serão destinados a uma missão aeroespacial",        
+            "alt": "Conjunto diverso de experimentos científicos que serão destinados a uma missão aeroespacial.",        
             "imgSrc":  "images/Kurumim/header.webp"
         },
         "mobilePoster":{
@@ -79,7 +79,7 @@
                         "imgSrc":"Projetos/Educacional/garateaE2017/photo1.webp"
                     },
                    "photo2":{
-                       "alt": "Equipe do Zenith se preparando para o lançamento da Garatéa-E2017",        
+                       "alt": "Equipe do Zenith se preparando para o lançamento da Garatéa-E2017.",        
                         "imgSrc":"Projetos/Educacional/garateaE2017/photo2.webp"
                     }, 
                    "photo3":{
@@ -91,7 +91,7 @@
                        "imgSrc":"Projetos/Educacional/garateaE2017/photo4.webp"
                     },
                    "photo5":{
-                       "alt": "Projeto garatéa-E recebendo prepativos para seu lançamento",        
+                       "alt": "Projeto garatéa-E recebendo prepativos para seu lançamento.",        
                        "imgSrc":"Projetos/Educacional/garateaE2017/photo5.webp"
                     }
                 },
@@ -122,7 +122,7 @@
                        "imgSrc":"Projetos/Educacional/garateaE2018/photo6.webp"
                     },
                     "photo7":{
-                        "alt": "Membros do Zenith interagingo com o projeto Garatea-E2018",        
+                        "alt": "Membros do Zenith interagingo com o projeto Garatea-E2018.",        
                         "imgSrc":"Projetos/Educacional/garateaE2018/photo7.webp"
                     },
                     "photo8":{
@@ -133,7 +133,7 @@
         
             "2019":{ 
                    "photo1":{
-                        "alt": "Foto tirada pela Garatea-E2019 diretamente do espaço",        
+                        "alt": "Foto tirada pela Garatea-E2019 diretamente do espaço.",        
                         "imgSrc": "Projetos/Educacional/garateaE2019/photo1.webp"
                     } 
                 }            
@@ -143,23 +143,23 @@
 
         "Hardware":{
             "Genus":{
-                "alt":"Ilustração de perfil do genus, um hardware modularizado para aplicações aeroespaciais",
+                "alt":"Ilustração de perfil do genus, um hardware modularizado para aplicações aeroespaciais.",
                 "imgSrc": "Projetos/Hardware/Genus.webp"
             },
             "GroundStation":{
-                "alt":"Ilustração da Ground Station do Zenith",
+                "alt":"Ilustração da Ground Station do Zenith.",
                 "imgSrc": "Projetos/Hardware/GroundStation.webp"
             },
             "Osciloscopio":{
-                "alt":"Ilustração do Osciloscópio",
+                "alt":"Ilustração do Osciloscópio.",
                 "imgSrc": "Projetos/Hardware/Osciloscopio.webp"
             },
             "PID":{
-                "alt":"Ilustração de placas PID",
+                "alt":"Ilustração de placas PID.",
                 "imgSrc": "Projetos/Hardware/PID.webp"
             },
             "VarellaAcquisitionModule":{
-                "alt":"Ilustração do Módulo VarellaAcquisition",
+                "alt":"Ilustração do Módulo VarellaAcquisition.",
                 "imgSrc": "Projetos/Hardware/VarellaAcquisitionModule.webp"
             }
         },
@@ -197,43 +197,43 @@
             "Garatea-I":{
 
                 "photo1":{
-                    "alt": "Miniatura de um astronauta ao lado de uma placa eletrônica",        
+                    "alt": "Miniatura de um astronauta ao lado de uma placa eletrônica.",        
                     "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-I/photo1.webp"
                 },
                 "photo2":{
-                    "alt": "Integrantes do Zenith interagindo com a sonda Aeroespacial do Zenith",        
+                    "alt": "Integrantes do Zenith interagindo com a sonda Aeroespacial do Zenith.",        
                     "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-I/photo2.webp"
                 },
                  "photo3":{
-                     "alt": "Integrantes do Zenith realizando as últimas interações com o sistema da Garatéa-I",        
+                     "alt": "Integrantes do Zenith realizando as últimas interações com o sistema da Garatéa-I.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-I/photo3.webp"
                 },
                  "photo4":{
-                     "alt": "Integrantes do Zenith realizando as últimas interações com o sistema da Garatéa-I",         
+                     "alt": "Integrantes do Zenith realizando as últimas interações com o sistema da Garatéa-I.",         
                      "imgSrc":"public/images/Projetos/SondasAeroespaciais/Garatéa-I/photo4.webp" 
                 },
                  "photo5":{
-                     "alt": "Integrante do Zenith interagindo com o sistema da Garatéa-I",        
+                     "alt": "Integrante do Zenith interagindo com o sistema da Garatéa-I.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-I/photo5.webp"
                 },
                  "photo6":{
-                    "alt": "Sonda Aeroespacial do Zenith sendo lançada",        
-                    "imgSrc":""
+                    "alt": "Sonda Aeroespacial do Zenith sendo lançada.",        
+                    "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-I/photo6.webp"
                 },
                  "photo7":{
-                     "alt": "Foto tirada pela Garatéa da sua vista da troposfera da Garatéa-I sendo lançada",        
+                     "alt": "Foto tirada pela Garatéa da sua vista da troposfera da Garatéa-I sendo lançada.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-I/photo7.webp"
                 },
                  "photo8":{ 
-                     "alt": "Foto tirada pela Garatéa-I da sua vista da Terra",        
+                     "alt": "Foto tirada pela Garatéa-I da sua vista da Terra.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-I/photo8.webp"
                 },
                  "photo9":{
-                     "alt": "Foto tirada pela Garatéa da sua vista da troposfera da Garatéa-I",        
+                     "alt": "Foto tirada pela Garatéa da sua vista da troposfera da Garatéa-I.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-I/photo9.webp"
                 },
                  "photo10":{
-                     "alt": "Integrantes do Zenith na área de lançamento",        
+                     "alt": "Integrantes do Zenith na área de lançamento.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-I/photo10.webp"
                 }
             },
@@ -241,23 +241,23 @@
             "Garatea-II":{
 
                 "photo1":{
-                    "alt": "Integrantes do Zenith realizando as últimas interações com o sistema da Garatéa-I",        
-                    "imgSrc":""
+                    "alt": "Integrantes do Zenith realizando as últimas interações com o sistema da Garatéa-I.",        
+                    "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-II/photo1.webp"
                 },
                 "photo2":{
-                    "alt": "Foto tirada pela Garatéa-II da sua vista da Terra",        
+                    "alt": "Foto tirada pela Garatéa-II da sua vista da Terra.",        
                     "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-II/photo2.webp"
                 },
                  "photo3":{
-                     "alt": "Integrante do Zenith interagindo com o sistema da Garatéa-II",        
+                     "alt": "Integrante do Zenith interagindo com o sistema da Garatéa-II.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-II/photo3.webp"
                 },
                  "photo4":{
-                     "alt": "Foto tirada pela Garatéa-II da sua vista da Terra, diretamente do espaço",         
+                     "alt": "Foto tirada pela Garatéa-II da sua vista da Terra, diretamente do espaço.",         
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-II/photo4.webp" 
                 },
                  "photo5":{
-                     "alt": "Foto anterior ao lançamento da Garatéa-II",        
+                     "alt": "Foto anterior ao lançamento da Garatéa-II.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-II/photo5.webp"
                 }
 
@@ -270,35 +270,35 @@
                     "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-III/photo1.webp"
                 },
                 "photo2":{
-                    "alt": "Foto dos integrantes do zenith antes do lançamento da Garatea-III",        
+                    "alt": "Foto dos integrantes do zenith antes do lançamento da Garatea-III.",        
                     "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-III/photo2.webp"
                 },
                  "photo3":{
-                     "alt": "Integrantes segurando a Garatea-III",        
+                     "alt": "Integrantes segurando a Garatea-III.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-III/photo3.webp"
                 },
                  "photo4":{
-                     "alt": "Integrantes segurando a Garatea-III",         
+                     "alt": "Integrantes segurando a Garatea-III.",         
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-III/photo4.webp" 
                 },
                  "photo5":{
-                     "alt": "Foto da Garatea-III, com enfoque no seu interior",        
+                     "alt": "Foto da Garatea-III, com enfoque no seu interior.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-III/photo5.webp"
                 },
                  "photo6":{
-                    "alt": "Integrante interagindo com a Garatea-III",        
+                    "alt": "Integrante interagindo com a Garatea-III.",        
                     "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-III/photo6.webp"
                 },
                  "photo7":{
-                     "alt": "Integrante interagindo com a Garatea-III",        
+                     "alt": "Integrante interagindo com a Garatea-III.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-III/photo7.webp"
                 },
                  "photo8":{
-                     "alt": "Interior da Garatea-III",        
+                     "alt": "Interior da Garatea-III.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-III/photo8.webp"
                 },
                  "photo9":{
-                     "alt": "Foto tirada pela Garatea-III com a vista da Terra, direta do espaço",        
+                     "alt": "Foto tirada pela Garatea-III com a vista da Terra, direta do espaço.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-III/photo9.webp"
                 }
             },
@@ -306,43 +306,43 @@
             "Garatea-V":{
 
                 "photo1":{
-                    "alt": "Integrantes interagindo com a Garatea-V",        
+                    "alt": "Integrantes interagindo com a Garatea-V.",        
                     "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-V/photo1.webp"
                 },
                 "photo2":{
-                    "alt": "Integrantes do Zenith com coordenador",        
+                    "alt": "Integrantes do Zenith com coordenador.",        
                     "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-V/photo2.webp"
                 },
                  "photo3":{
-                     "alt": "Integrante do Zenith realizando ajustes na Garatéa-V",        
+                     "alt": "Integrante do Zenith realizando ajustes na Garatéa-V.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-V/photo3.webp"
                 },
                  "photo4":{
-                     "alt": "Integrantes do Zenith levando a sonda para seu lançamento",         
+                     "alt": "Integrantes do Zenith levando a sonda para seu lançamento.",         
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-V/photo4.webp" 
                 },
                  "photo5":{
-                     "alt": "Lançamento da Garatéa-V",        
+                     "alt": "Lançamento da Garatéa-V.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-V/photo5.webp"
                 },
                  "photo6":{
-                    "alt": "Imagem do balão utilizado na Garatéa-V",        
+                    "alt": "Imagem do balão utilizado na Garatéa-V.",        
                     "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-V/photo6.webp"
                 },
                  "photo7":{
-                     "alt": "Lançamento da Garatéa-V",        
+                     "alt": "Lançamento da Garatéa-V.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-V/photo7.webp"
                 },
                  "photo8":{
-                     "alt": "Imagem tirada pela Garatéa-V do espaço em seu lançamento",        
+                     "alt": "Imagem tirada pela Garatéa-V do espaço em seu lançamento.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-V/photo8.webp"
                 },
                  "photo9":{
-                     "alt": "Imagem tirada pela Garatéa-V das nuvens em seu lançamento",        
+                     "alt": "Imagem tirada pela Garatéa-V das nuvens em seu lançamento.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-V/photo9.webp"
                 },
                  "photo10":{
-                     "alt": "Membros do Zenith na área de lançamento",        
+                     "alt": "Membros do Zenith na área de lançamento.",        
                      "imgSrc":"Projetos/SondasAeroespaciais/Garatéa-V/photo10.webp"
                 }
             }
@@ -352,32 +352,33 @@
     "Zenith":{
         
         "Card-1":{
-            "alt": "Membros realizando ajustes em uma sonda espacial",        
+            "alt": "Membros realizando ajustes em uma sonda espacial.",        
             "imgSrc": "Zenith/Card-1.webp" 
         },
         "Card-2":{
-            "alt": "Imagem do planeta Terra tirada pela sonda aeroespacial ",        
+            "alt": "Imagem do planeta Terra tirada pela sonda aeroespacial.",        
             "imgSrc": "Zenith/Card-2.webp"
         },
         "Card-3":{
-            "alt": "Conjunto de placas utilizada na sonda",        
+            "alt": "Conjunto de placas utilizada na sonda.",        
             "imgSrc":  "Zenith/Card-3.webp"
         },
         "Card-4":{
-            "alt": "Membro do Zenith",        
+            "alt": "Membro do Zenith.",        
             "imgSrc":  "Zenith/Card-4.webp"
         },
         "Header":{
-            "alt": "Membros do Zenith indo para o lançamento da sonda aeroespacial",        
+            "alt": "Membros do Zenith indo para o lançamento da sonda aeroespacial.",        
             "imgSrc":  "Zenith/Header.webp"
         },
         "photo1":{
-            "alt": "Membro do Zenith",        
+            "alt": "Membro do Zenith.",        
             "imgSrc":  "Zenith/photo1.webp"
         },
         "photo2":{
-            "alt": "Membro do Zenith em seu notebook",        
+            "alt": "Membro do Zenith em seu notebook.",        
             "imgSrc":  "Zenith/photo2.webp"
         }
     }
 }
+
