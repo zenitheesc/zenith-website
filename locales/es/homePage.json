@@ -2,31 +2,31 @@
     "metaTags": {
         "pageName": "",
         "title": "Zenith Aerospace || Tecnología Aeroespacial || EESC-USP",
-        "description": "Desde 2014, Zenith Aerospace se ha dedicado a la construcción de CubeSats y Aerospace Probes como extracurricular de USP. ¡Ven a conocernos!"
+        "description": "Desde 2014, Zenith Aerospace se ha dedicado a la construcción de CubeSats y satélites espaciales como extracurricular de USP. ¡Ven a conocernos!"
     },
     "homePageHero": {
-        "title": "O LAR DAS ESTRELAS EM SÃO CARLOS",
-        "subtitle": "Desde 2014, o Zenith Aerospace proporciona a centenas de alunos a oportunidade de chegar ao espaço"
+        "title": "EL HOGAR DE LAS ESTRELLAS EN SÃO CARLOS",
+        "subtitle": "Desde 2014, Zenith Aerospaace ha proporcionado a cientos de estudiantes la oportunidad de alcanzar el espacio"
     },
     "homePageDepartaments": {
-        "title": "Construindo tecnologia aeroespacial em todos os setores",
-        "subtitle": "Construímos os nossos produtos desde a concepção da missão até a manufatura do hardware e da estrutura",
+        "title": "Construyendo tecnología aeroespacial en todos los sectores",
+        "subtitle": "Construimos todos nuestros productos desde la concepción de la missión hasta la manufactura de hardware e estructuras.",
         "embarcados": {
-            "title": "Embarcados",
-            "detail": "Esse departamento pesquisa e desenvolve tecnologias em sistemas embarcados voltada para aplicações aeroespaciais.",
+            "title": "Embebidos",
+            "detail": "Este departamento pesquisa y desarrolla tecnologias en sistemas embebidos destinada a aplicaciones aeroespaciales",
             "core": "NÚCLEOS",
             "cores": [
                 {
                     "title": "Hardware: ",
-                    "detail": "Desenvolvem placas de circuito impresso para diversas aplicações aeroespaciais e realizam a manufatura das mesmas."
+                    "detail": "Desarrollan placas de circuito impresso para diversas aplicaciones aeroespaciales y las fabrican."
                 },
                 {
-                    "title": "Baixo Nível: ",
-                    "detail": "Programam os microcontroladores envolvidos nos diversos projetos embarcados."
+                    "title": "Bajo Nivel: ",
+                    "detail": "Programan los microcontroladores de los varios proyectos embebidos"
                 },
                 {
-                    "title": "Alto Nível: ",
-                    "detail": "Programam aplicações web, mobile e desktop que auxiliam no sucesso das missões."
+                    "title": "Alto Nivel: ",
+                    "detail": "Programam aplicaciones web, mobile y desktop que ayudan al éxito de las missiones"
                 }
             ]
         },
