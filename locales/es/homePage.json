@@ -31,21 +31,21 @@
             ]
         },
         "estruturas": {
-            "title": "Estruturas",
-            "detail": "Esse departamento realiza o desenvolvimento de modelos 3D de Sondas e CubeSats e realiza a manufatura desses. Além disso, atua projetando suportes para sistemas embarcados.",
+            "title": "Estructura",
+            "detail": "Este departamento desarrolla modelos 3D de sondas y cubeSats y los fabrica. Además, trabaja diseñando soportes para sistemas embebidos.",
             "core": "NÚCLEOS",
             "cores": [
                 {
-                    "title": "Desenvolvimento da Estrutura: ",
-                    "detail": "Desenvolvem o modelo 3D do projeto CAD da estrutura."
+                    "title": "Desarrollo de estructura: ",
+                    "detail": "Desarrollan el modelo 3D del proyecto CAD de la estructura."
                 },
                 {
-                    "title": "Atenuação de Vibração: ",
-                    "detail": "Realizam teste e simulações para assegurar que a estrutura modelada suportará a vibração."
+                    "title": "Atenuación de vibración: ",
+                    "detail": "Realizam pruebas y simulaciones para assegurar que la estructura modelada suportará la vibración"
                 },
                 {
-                    "title": "Isolamento Térmico: ",
-                    "detail": "Desenvolvem todo o modelamento térmico da estrutura, assegurando sua temperatura de trabalho."
+                    "title": "Aislamiento térmico: ",
+                    "detail": "Desarrollan todo el modelado térmico de la estructura, asegurando su temperatura de trabajo"
                 }
             ]
         },
