@@ -9,6 +9,7 @@
         "subtitle": "Integração de diversos campos da Engenharia no setor aeroespacial"
     },
     "picker": ["Sondas aeroespaciais", "CubeSats", "Software", "Hardware", "Educacional"],
+    "atualmente": "Atualmente",
     "sondasAeroespaciais": {
         "title": "O que são Sondas Aeroespaciais?",
         "subtitle": [
@@ -20,7 +21,7 @@
             "garatea1": {
                 "title": "Garatéa-I",
                 "year": 2016,
-                "link": "",
+                "link": "./",
                 "menus": ["OVERVIEW", "TECNOLOGIAS"],
                 "launchDate": ["LANÇAMENTO", "14/05/2016"],
                 "altitude": ["ALTITUDE ALCANÇADA", "27 km"],
