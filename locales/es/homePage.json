@@ -114,26 +114,26 @@
     "homePageBanners": {
         "genus": {
             "title": "Genus",
-            "detail": "Hardware modularizado voltado para aplicações aeroespaciais",
+            "detail": "Hardware modularizado destinado a aplicaciones aeroespaciales",
             "link": "https://github.com/zenitheesc/Genus"
         },
         "zenithMonitor": {
             "title": "Zenith Monitor",
-            "detail": "Tecnologia para rastreamento de sondas aeroespaciais",
+            "detail": "Tecnologia para rastreo de sondas aeroespaciales",
             "link": "https://github.com/zenitheesc/Zenith-Monitor"
         }
     },
     "homePageStatistics": {
-        "title": "Eficiência descrita em números",
+        "title": "Eficiencia descrita en números",
         "subtitle": "desde 2014",
         "statistics": [
             {
                 "number": 25,
-                "description": "PROJETOS"
+                "description": "PROYECTOS"
             },
             {
                 "number": 400,
-                "description": "MEMBROS DESDE A FUNDAÇÃO"
+                "description": "MIEMBROS DESDE LA FUNDACIÓN"
             },
             {
                 "number": 2,
@@ -145,17 +145,17 @@
             },
             {
                 "number": 7,
-                "description": "REPORTAGENS NA MÍDIA"
+                "description": "INFORMES EN LOS MEDIOS DE COMUNICACIÓN"
             },
             {
                 "number": 12765,
-                "description": "HORAS NA SALINHA"
+                "description": "HORAS TRABAJANDO"
             }
         ]
     },
     "homePageSupporters": {
-        "title": "Nossos apoiadores",
-        "detail": "Sem eles, nada disso seria possível",
+        "title": "Nuestros apoyadores",
+        "detail": "sin ellos, nada de esto sería posible",
         "supportersMerchant": "BlankLogoPT",
         "supporters": [ 
             {   
@@ -182,6 +182,6 @@
     },
     "footer": {
         "copyright": "© 2021  Zenith Aerospace",
-        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
+        "easterEgg": "HECHO CON MUCHO JAVASCRIPT Y CONFUSIÓN EN DISCORD"
     }
 }
