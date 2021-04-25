@@ -74,20 +74,20 @@
             "core": "NÚCLEOS",
             "cores": [
                 {
-                    "title": "Financeiro: ",
-                    "detail": "Realizam o planejamento orçamentário, o controle de gastos e a busca e manutenção de patrocínios."
+                    "title": "Financiero: ",
+                    "detail": "Realizan la planificación presupuestaria, el control de gastos y la búsqueda y mantenimiento de patrocinios."
                 },
                 {
                     "title": "Marketing: ",
-                    "detail": "Atuam nas redes sociais do grupo, elaborando estratégias para atrair novas parcerias e divulgar o grupo."
+                    "detail": "Operan en las redes sociales del grupo, elaborando estrategias para atraer a nuevas asociaciones y dar a conocer el grupo."
                 },
                 {
                     "title": "Recursos Humanos: ",
-                    "detail": "Acompanham os membros do grupo, analizando o seu desempenho e satisfação."
+                    "detail": "Acompañan a los integrantes del grupo, analizando su desempeño y satisfacción."
                 },
                 {
                     "title":"Eventos: ",
-                    "detail": "Promovem a interação do grupo com a sociedade através de eventos educacionais, como o Sábado Aeroespacial."
+                    "detail": "Promueven la interacción grupal con la sociedad a través de eventos educativos, como el Sábado Aeroespacial."
                 }
             ]
         },
