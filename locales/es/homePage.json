@@ -50,27 +50,27 @@
             ]
         },
         "astrobiologia": {
-            "title": "Astrobiologia",
-            "detail": "Esse departamento desenvolve experimentos biológicos a fim de expô-los a condições ambientais semelhantes às espaciais.",
+            "title": "Astrobiología",
+            "detail": "Este departamento desarrolla experimentos biológicos con el fin de exponerlos a condiciones ambientales similares a las del espacio.",
             "core": "NÚCLEOS",
             "cores": [
                 {
-                    "title": "Suporte ao Projeto Kurumim: ",
-                    "detail": "Selecionam e manipulam os experimentos educacionais do projeto Kurumim que serão embarcados em sondas estratosféricas."
+                    "title": "Apoyo al Projeycto Kurumim ",
+                    "detail": "Seleccionan y manipulan los experimentos educativos del proyecto Kurumim que se enviarán en sondas estratosféricas."
                 },
                 {
                     "title": "Científico: ",
-                    "detail": "Produzem experimentos científicos que conduzem a publicação de artigos científicos."
+                    "detail": "Producen experimentos científicos que conducen a la publicación de artículos científicos."
                 },
                 {
-                    "title": "Parcerias: ",
-                    "detail": "Fornecem o suporte técnico e operacional necessário para que pesquisadores interessados possam embarcar experimentos em veículos produzidos pelo Zenith."
+                    "title": "Asociaciones: ",
+                    "detail": "Proporcionan el apoyo técnico y operativo necesario para que los investigadores interesados ​​puedan embarcarse en experimentos en vehículos producidos por Zenith. "
                 }
             ]
         },
         "gestao": {
-            "title": "Gestão",
-            "detail": "Esse departamento é responsável pela organização e administração do grupo.",
+            "title": "Gestión",
+            "detail": "Este departamento es responsable por la organización y administración del grupo. ",
             "core": "NÚCLEOS",
             "cores": [
                 {
