@@ -93,20 +93,20 @@
         },
         "astronautica": {
             "title": "Astronáutica",
-            "detail": "Esse departamento é responsável pela pesquisa e desenvolvimento das ferramentas necessárias para a exploração dos limites da atmosfera terrestre, bem como a execução das normas para tal atividade.",
+            "detail": "Este departamento es responsable por la investigación y desarrollo de las herramientas necesarias para la exploración de los límites de la atmósfera terrestre, así como de la ejecución de las normas para dicha actividad.",
             "core": "NÚCLEOS",
             "cores": [
                 {
-                    "title": "Dinâmica de Voo: ",
-                    "detail": "Realiza simulações de voo, fornece noções sobre estabilidade estática e dinâmica dos balões e traça estratégias de lançamento e de recuperação da sonda."
+                    "title": "Dinámica de vuelo: ",
+                    "detail": "Realiza simulaciones de vuelo, proporciona nociones sobre la estabilidad estática y dinámica de los globos y describe estrategias para lanzar y recuperar la sonda."
                 },
                 {
-                    "title": "Pesquisa e Desenvolvimento: ",
-                    "detail": "Realizam pesquisas no ramo da Fluidodinâmica e Mecânica Orbital, buscando aplicar modelos teóricos em missões futuras do Zenith."
+                    "title": "Investigación y desarrollo: ",
+                    "detail": "Realizan investigaciones en el campo de la dinámica de fluidos y la mecánica orbital, buscando aplicar modelos teóricos en futuras misiones Zenith."
                 },
                 {
-                    "title":"Legislação: ",
-                    "detail": "Responsável pela parte normativa das missões com balões estratosféricos, de acordo com as prescrições de uso do espaço aéreo brasileiro."
+                    "title":"Legislación: ",
+                    "detail": "Responsable por la parte normativa de las misiones con globos estratosféricos, según las prescripciones para el uso del espacio aéreo brasileño."
                 }
             ]
         }
