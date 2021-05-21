@@ -11,6 +11,10 @@ import Config from "configs/configs.json";
 import HeadTags from 'components/general/HeadTags';
 import UnderlinedButton from 'components/general/UnderlinedButton';
 
+function mapTable(content, idx) {
+    return <p style={{ fontSize: '0.9em' }} key={idx}><b>{content[0]}</b>: <span key={idx}>{content[1]}</span></p>;
+}
+
 function mapStylish(content, idx) {
     // TODO: Put style in class
     return <p key={idx} style={{ textAlign: 'center', fontWeight: 'lighter' }}>
@@ -72,9 +76,9 @@ function Kurumim() {
                     right={
                         <>
                             <h2 className="-homepage-section-title">{TextContent.kurumimCard4.title}</h2>
-                            {TextContent.kurumimCard4.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
-                            <UnderlinedButton link={'https://www.facebook.com/zenitheesc'} label={'Facebook'} dark/>
-                            <UnderlinedButton link={'https://www.instagram.com/zenith_eesc/?fbclid=IwAR1izFqO3DijeIsUgwUW1gzXXpSs1aJrYoz3dtDcbfcoYOEzmvXBmdXaVqA'} label={'Instagram'} dark/>
+                            {TextContent.kurumimCard4.detail.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
+                            {TextContent.kurumimCard4.text.map((a, idx) => mapTable(a, idx))}
+                            <UnderlinedButton link={'https://drive.google.com/file/d/11UZdunr024ojVrvO4wNcCSsNT1MXkSvO/view?usp=sharing'} label={TextContent.kurumimCard4.link} dark/>
                         </>
                     }
                     text={'right'}

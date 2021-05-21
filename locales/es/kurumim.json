@@ -40,18 +40,26 @@
         },
         "kurumimCard4": {
             "title":"Ansioso para participar?",
+            "detail": [
+                "O */Edital do Kurumim 2021/* já está no ar e você já pode se inscrever até o dia */20 de julho/*. Não deixe de ler o edital para ter todas as informações sobre como se inscrever e mais detalhes sobre o desenvolvimento dos experimentos."
+            ],
             "text": [
-                "Antes de se inscrever, é importante ler o edital de participação.",
-                "EDITAL DE PARTICIPAÇÃO",
-                "Alguns documentos importantes para a sua pré-inscrição:",
-                "FICHA DE DADOS",
-                "TEMPLATE DO RELATÓRIO DE PARTICPIPAÇÃO",
-                "Está em dúvida como fazer os experimentos? Temos alguns exemplos de experimentos.",
-                "EXEMPLO DE MINISAT",
-                "EXEMPLO DE SMALLSAT",
-                "EXEMPLO DE BIGSAT"
-            ]
+                ["21/05", "ABERTURA DO PERÍODO DE INSCRIÇÕES"],
+                ["04/06", "DIVULGAÇÃO DO RELATÓRIO MODELO"],
+                ["20/07", "FIM DO PERÍODO DE INSCRIÇÕES"],
+                ["21/07", "COMEÇO DO PRAZO DE ENVIOS DE PROJETOS"],
+                ["24/08", "FIM DO PRAZO DE ENVIOS DE PROJETOS"],
+                ["25/08", "INÍCIO DO ENVIO DE FEEDBACK DOS PROJETOS"],
+                ["10/09", "TÉRMINO DOS FEEDBACKS"],
+                ["10/09", "INÍCIO DO DESENVOLVIMENTO DE PROJETOS"],
+                ["15/10", "TÉRMINO DO DESENVOLVIMENTO DE PROJETOS"],
+                ["15/10", "INÍCIO DO ENVIO DE RELATÓRIOS"],
+                ["29/10", "FIM DO PRAZO DE ENVIO DE RELATÓRIOS"],
+                ["30/10", "INÍCIO DA CORREÇÃO DOS RELATÓRIOS"],
+                ["14/11", "ENVIO DOS FEEDBACKS E DIVULGAÇÃO DE RESULTADOS"],
+                ["20/11", "SÁBADO AEROESPACIAL"]
+            ],
+            "link": "Edital de Participação"
         }
     }
-    
 }

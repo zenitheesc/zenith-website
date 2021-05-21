@@ -2,8 +2,6 @@
 
 <h4 align="center">Reimagining Zenith's web presence through a modern website that respects the group's technical knowledge and passion for development. We're a student group based in Brazil, we develop open software and hardware. #AdAstraPerAspera</h4>
 
-You can check us out [here](https://www.youtube.com/watch?v=QoqiUDDEepY)
-
 <p align = "center">
 <a href="http://vercel.com/?utm_source=zenith-aerospace&utm_campaign=oss">
 <img src="https://raw.githubusercontent.com/zenitheesc/zenith-website/8bfb22b1dbb8a86ada67ac7fbc0dfc34b9518b0d/powered-by-vercel.svg"/>
