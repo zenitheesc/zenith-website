@@ -35,9 +35,24 @@
         },
         "kurumimCard4": {
             "title":"Ansioso para participar?",
+            "detail": [
+                "O */Edital do Kurumim 2021/* já está no ar e você já pode se inscrever até o dia */20 de julho/*. Não deixe de ler o edital para ter todas as informações sobre como se inscrever e mais detalhes sobre o desenvolvimento dos experimentos."
+            ],
             "text": [
-                "O Edital do Kurumim 2021 já está no ar e você já pode se inscrever até o dia */20 de julho/*. Não deixe de ler o edital para ter todas as informações sobre como se inscrever e mais detalhes sobre o desenvolvimento dos experimentos.", 
-                "Para não perder nenhuma novidade sobre o */Kurumim 2021/*, acompanhe-nos nas Redes Sociais!"
+                ["21/05", "ABERTURA DO PERÍODO DE INSCRIÇÕES"],
+                ["04/06", "DIVULGAÇÃO DO RELATÓRIO MODELO"],
+                ["20/07", "FIM DO PERÍODO DE INSCRIÇÕES"],
+                ["21/07", "COMEÇO DO PRAZO DE ENVIOS DE PROJETOS"],
+                ["24/08", "FIM DO PRAZO DE ENVIOS DE PROJETOS"],
+                ["25/08", "INÍCIO DO ENVIO DE FEEDBACK DOS PROJETOS"],
+                ["10/09", "TÉRMINO DOS FEEDBACKS"],
+                ["10/09", "INÍCIO DO DESENVOLVIMENTO DE PROJETOS"],
+                ["15/10", "TÉRMINO DO DESENVOLVIMENTO DE PROJETOS"],
+                ["15/10", "INÍCIO DO ENVIO DE RELATÓRIOS"],
+                ["29/10", "FIM DO PRAZO DE ENVIO DE RELATÓRIOS"],
+                ["30/10", "INÍCIO DA CORREÇÃO DOS RELATÓRIOS"],
+                ["14/11", "ENVIO DOS FEEDBACKS E DIVULGAÇÃO DE RESULTADOS"],
+                ["20/11", "SÁBADO AEROESPACIAL"]
             ],
             "link": "Edital de Participação"
         }
