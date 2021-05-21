@@ -36,9 +36,10 @@
         "kurumimCard4": {
             "title":"Looking forward to participating?",
             "text": [
-                "On */May 12th/*, we will be launching the */Kurumin 2021 Edict/* here! There you will be able to find more information regarding how to participate and more details about the experiment's development. ", 
+                "The Public Notice for Kurumim 2021 is now live and you can register until July 20th. Be sure to read the announcement for all the information on how to apply and more details on the development of the experiments.", 
                 "Be sure to follow us on our Social Networks so you don't lose any news regarding */Kurumin 2021/*"
-            ]
+            ],
+            "link": "Participation Notice"
         }
     }
     

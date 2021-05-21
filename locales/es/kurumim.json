@@ -39,16 +39,10 @@
         "kurumimCard4": {
             "title":"Ansioso para participar?",
             "text": [
-                "Antes de se inscrever, é importante ler o edital de participação.",
-                "EDITAL DE PARTICIPAÇÃO",
-                "Alguns documentos importantes para a sua pré-inscrição:",
-                "FICHA DE DADOS",
-                "TEMPLATE DO RELATÓRIO DE PARTICPIPAÇÃO",
-                "Está em dúvida como fazer os experimentos? Temos alguns exemplos de experimentos.",
-                "EXEMPLO DE MINISAT",
-                "EXEMPLO DE SMALLSAT",
-                "EXEMPLO DE BIGSAT"
-            ]
+                "O Edital do Kurumim 2021 já está no ar e você já pode se inscrever até o dia */20 de julho/*. Não deixe de ler o edital para ter todas as informações sobre como se inscrever e mais detalhes sobre o desenvolvimento dos experimentos.", 
+                "Para não perder nenhuma novidade sobre o */Kurumim 2021/*, acompanhe-nos nas Redes Sociais!"
+            ],
+            "link": "Edital de Participação"
         }
     }
     

@@ -73,7 +73,7 @@ function Kurumim() {
                         <>
                             <h2 className="-homepage-section-title">{TextContent.kurumimCard4.title}</h2>
                             {TextContent.kurumimCard4.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
-                            <UnderlinedButton link={'https://drive.google.com/file/d/11UZdunr024ojVrvO4wNcCSsNT1MXkSvO/view?usp=sharing'} label={'Edital de Participação'} dark/>
+                            <UnderlinedButton link={'https://drive.google.com/file/d/11UZdunr024ojVrvO4wNcCSsNT1MXkSvO/view?usp=sharing'} label={TextContent.kurumimCard4.link} dark/>
                         </>
                     }
                     text={'right'}
