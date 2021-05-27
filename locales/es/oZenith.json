@@ -2,52 +2,52 @@
     "metaTags": {
         "pageName": "zenith",
         "title": "Sobre Nosotros: Somos Innovación || Zenith EESC",
-        "description": "Somos un extracurricular de la Escuela de Ingeniería de São Carlos (EESC) enfocado en la construcción de satélites y sondas aeroespaciales."
+        "description": "Somos un grupo extracurricular de la Escuela de Ingeniería de São Carlos (EESC) enfocado en la construcción de satélites y sondas aeroespaciales."
     },
     "oZenithHero": {
-        "title": "O que é o Zenith?",
-        "subtitle": "Nós somos ",
-        "array": ["CIÊNCIA", "TECNOLOGIA", "INOVAÇÃO", "CONEXÕES", "ZENITH"]
+        "title": "¿Qué es Zenith? ",
+        "subtitle": "Nosotros somos ",
+        "array": ["CIENCIA", "TECNOLOGÍA", "INNOVACIÓN", "CONEXIONES", "ZENITH"]
     },
     "oZenithCard1": {
-        "title":"Nós amamos o espaço",
+        "title":"Amamos el espacio",
         "text": [
-            "Somos uma extracurricular da Escola de Engenharia de São Carlos (EESC) focada na construção de */satélites/* e */sondas aeroespaciais/*.",
-            "Unindo cerca de 60 estudantes da Universidade de São Paulo (USP) e da Universidade Federal de São Carlos (Ufscar), nós somos capazes de construir o hardware, software e estrutura dos nossos projetos."
+            "Somos un grupo extracurricular de la Escuela de Ingeniería de São Carlos (EESC) enfocado en la construcción de */satélites/* y */sondas aeroespaciales/*. ",
+            "Reuniendo a unos 60 estudiantes de la Universidad de São Paulo (USP) y la Universidad Federal de São Carlos (Ufscar), podemos construir el hardware, software y estructura de nuestros proyectos. "
         ]
     },
     "oZenithCard2": {
-        "title":"O Começo",
+        "title":"El Comienzo",
         "text": [
-            "O Zenith nasceu a partir da proposta de Lucas Fonseca, participante da missão Rosetta, de desenvolver um CubeSat dentro da universidade. A partir de 2013, alunos da graduação começaram a se reunir com Lucas e estudar a área espacial.",
-            "Mas, somente em 2014, o grupo se consolidou. Com uma comunicação com dois pesquisadores do Laboratório Nacional de Luz Síncrotron (LNLS), o Zenith começou a desenvolver um experimento em alta altitude e  */nunca mais parou de avançar/*."
+            "Zenith nació de la propuesta de Lucas Fonseca, participante de la misión Rosetta, de desarrollar un CubeSat dentro de la universidad (USP). A partir de 2013, los estudiantes de pregrado comenzaron a reunirse con Lucas y estudiar el área espacial.",
+            "Pero, solo en 2014, el grupo se consolidó. Con una comunicación con dos investigadores del Laboratorio Nacional de Luz de Sincrotrón (LNLS), Zenith comenzó a desarrollar un experimento a gran altitud y */nunca dejó de avanzar/*."
         ]
     },
     "oZenithCard3": {
-        "title":"Nossos valores",
+        "title":"Nuestros valores",
         "text": [
             {
-                "title": "Ciência",
-                "text": "Incentivar a produção científica nacional e facilitar o acesso à ciência no ambiente universitário."
+                "title": "Ciencia",
+                "text": "Fomentar la producción científica nacional y facilitar el acceso a la ciencia en el ámbito universitario."
             },
             {
-                "title": "Pessoas",
-                "text": "O Zenith possui uma */hierarquia horizontal/*, onde todos os integrantes possuem voz, mas responsabilidades distintas."
+                "title": "Personas",
+                "text": "Zenith tiene una */jerarquía horizontal/*, donde todos los miembros tienen voz, pero diferentes responsabilidades."
             },
             {
-                "title": "Capacitação profissional",
-                "text": "Os integrantes tem a oportunidade de desenvolver habilidades técnicas em grupo, praticando suas */soft skills/*."
+                "title": "Capacitación profesional",
+                "text": "Los miembros tienen la oportunidad de desarrollar habilidades técnicas en grupos, practicando sus */soft skills/*."
             }
         ]
     },
     "oZenithCard4": {
-        "title":"Você deseja ser parte dessa exploração?",
+        "title":"¿Quieres ser parte de esa exploración?",
         "text": [
-            "Todo ano nos abrimos um */processo seletivo/* para recrutar novos integrantes!",
-            "Estamos buscando pessoas curiosas e tão apaixonadas pelo espaço e por tecnologia quanto nós!"
+            "¡Cada año abrimos un */proceso de selección/* para reclutar nuevos miembros!",
+            "¡Buscamos gente curiosa y tan apasionados por el espacio y la tecnología como nosotros!"
         ],
         "links": [
-            { "text": "Processo Seletivo", "url": "processo-seletivo" }
+            { "text": "Proceso de selección", "url": "processo-seletivo" }
         ]
     }
 }
