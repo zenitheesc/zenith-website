@@ -68,21 +68,28 @@ function Kurumim() {
                     lean="none"
                     left={
                         <>
-                            <h2 className="-homepage-section-title">{TextContent.kurumimCard3.title}</h2>
-                            {TextContent.kurumimCard3.text.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
+                            <h2 className="-homepage-section-title">{TextContent.kurumimCard3.titleSabado}</h2>
+                            {TextContent.kurumimCard3.textSabado.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
 
+                            <h2 className="-homepage-section-title">{TextContent.kurumimCard3.titleParticipacao}</h2>
+                            {TextContent.kurumimCard3.detailParticipacao.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
+                            
                         </>
                     }
                     right={
                         <>
-                            <h2 className="-homepage-section-title">{TextContent.kurumimCard4.title}</h2>
-                            {TextContent.kurumimCard4.detail.map((a, idx) => <p key={idx}>{boldParser(a)}</p>)}
+                            <h2 className="-homepage-section-title">{TextContent.kurumimCard4.titleDates}</h2>
                             {TextContent.kurumimCard4.text.map((a, idx) => mapTable(a, idx))}
-                            <UnderlinedButton link={'https://drive.google.com/file/d/11UZdunr024ojVrvO4wNcCSsNT1MXkSvO/view?usp=sharing'} label={TextContent.kurumimCard4.link} dark/>
+                            <h2 className="-homepage-section-title">{TextContent.kurumimCard4.linksTitle}</h2>
+                            <div style={{display:"flex",flexDirection:"row"}}>
+                                <UnderlinedButton link={'https://drive.google.com/file/d/11UZdunr024ojVrvO4wNcCSsNT1MXkSvO/view?usp=sharing'} label={TextContent.kurumimCard4.linkEdital} dark/>
+                                <UnderlinedButton link={'https://drive.google.com/file/d/1yj2OK3sNE3OF2zB0W-C2pGvRBp6ZSFns/view?usp=sharing'} label={TextContent.kurumimCard4.linkModelo} dark/>
+                            </div>
                         </>
                     }
                     text={'right'}
                 />
+                
                 {(Config.kurumimOpen)
                     ? <FormWrapper className={'-section'} link={Config.kurumimForms} />
                     : <> </>

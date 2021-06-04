@@ -28,18 +28,19 @@
             ]
         },
         "kurumimCard3": {
-            "title":"Aerospace Saturday",
-            "text": [
+            "titleSabado":"Aerospace Saturday",
+            "textSabado": [
                 "*/Aerospace Saturday/* is a project that aims to promote aerospace focused science for everyone.",
                 "The event has lectures, interactive activies and presentations by multiple groups. In */2021/*, Aerospace Saturday will be */100% online/* and, as always, completely */free/*.",
                 "In this day of */science celebration/* we will also announce the */award winners/* in the */Kurumin Competition/*'s categories."
+            ],
+            "titleParticipacao":"Looking forward to participating?",
+            "detailParticipacao": [
+                "The */Public Notice for Kurumim 2021/* is now live and you can register until July 20th. Be sure to read the announcement for all the information on how to apply and more details on the development of the experiments."
             ]
         },
         "kurumimCard4": {
-            "title":"Looking forward to participating?",
-            "detail": [
-                "The */Public Notice for Kurumim 2021/* is now live and you can register until July 20th. Be sure to read the announcement for all the information on how to apply and more details on the development of the experiments."
-            ],
+            "titleDates": "Dates",
             "text": [
                 ["21/05", "ABERTURA DO PERÍODO DE INSCRIÇÕES"],
                 ["04/06", "DIVULGAÇÃO DO RELATÓRIO MODELO"],
@@ -56,7 +57,9 @@
                 ["14/11", "ENVIO DOS FEEDBACKS E DIVULGAÇÃO DE RESULTADOS"],
                 ["20/11", "SÁBADO AEROESPACIAL"]
             ],
-            "link": "Participation Notice"
+            "linksTitle": "Useful Links",
+            "linkEdital": "Participation Notice",
+            "linkModelo": "Template Project"
         }
     }
 }
