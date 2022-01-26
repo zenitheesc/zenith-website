@@ -49,7 +49,7 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-player": "^2.9.0",
-    "react-responsive-carousel": "^3.2.18",
+    "react-responsive-carousel": "^3.2.22",
     "react-rotating-text": "^1.4.1",
     "react-visibility-sensor": "^5.1.1"
   },
@@ -59,7 +59,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.3.0"
