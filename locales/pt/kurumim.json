@@ -1,66 +1,69 @@
 {
-    "metaTags": {
-        "pageName": "kurumim",
-        "lang": "pt",
-        "pageTitle": "Kurumim",
-        "title": "Kurumim: A nova geração do Garatéa-E || Zenith EESC",
-        "description": "Nosso projeto educacional para promover a curiosidade e a iniciação científica no ensino básico por meio do contato com o Espaço."
-    },
-    "kurumimHero": {
-        "title": "Kurumim",
-        "subtitle": "A nova geração do Garatéa-E"
-    },
-    "cards": {
-        "kurumimCard1": {
-            "title":"Kurumim 2021",
-            "text": [
-                "O */Kurumim/* é a expansão do */Garatéa-E/*, mantendo o compromisso de */promover a educação e a iniciação científica/* no ensino básico.",
-                "Nossa proposta, é incentivar o desenvolvimento de experimentos científicos por estudantes de toda a */América Latina/* por meio da análise de resultados obtidos quando o experimento é submetido a ambientes de estresse.",
-                "Por conta da */pandemia/*, nesse ano de 2021, as condições ambientais adversas, anteriormente experienciadas nos vôos de Sondas Atmosféricas, terão que ser */simuladas nas casas do alunos./*"
-            ]
-        },
-        "kurumimCard2": {
-            "title":"Guardiões da Amazônia",
-            "text": [
-                "Nesse ano, comemorando o lançamento do */Amazônia-1/*, o primeiro satélite 100% brasileiro, concebido para monitoramento da Amazônia, a temática do projeto será: */Guardiões da Amazônia/*.",
-                "Nessa temática, os participantes podem desenvolver projetos que tenham como foco principal: */a preservação da fauna e flora da floresta amazônica./*",
-                "Apesar de não ser obrigatório que o experimento se encaixe na temática, os projetos que se encaixarem poderão concorrer em quesitos específicos na Olimpíada."
-            ]
-        },
-        "kurumimCard3": {
-            "titleSabado":"Sábado Aeroespacial",
-            "textSabado": [
-                "O */Sábado Aeroespacial/* é um projeto que promove a divulgação da ciência com foco na área aeroespacial para toda a sociedade.",
-                "O evento conta com palestras, atividades interativas e exposição de vários grupos de extensão distribuídas ao longo do sábado inteiro. Em */2021/*, o Sábado Aeroespacial será */100% online./* e, como sempre, */gratuito/*.",
-                "Nesse dia de celebração da ciência, também ocorrerá a apresentação dos projetos premiados nas diferentes categorias da */Olimpíada Kurumim/*."
-            ],
-            "titleParticipacao":"Ansioso para participar?",
-            "detailParticipacao": [
-                "O */Edital do Kurumim 2021/* já está no ar e você já pode se inscrever até o dia */20 de julho/*. Não deixe de ler o edital para ter todas as informações sobre como se inscrever e mais detalhes sobre o desenvolvimento dos experimentos."
-            ]
-        },
-        "kurumimCard4": {
-            "titleDates": "Datas",
-            "text": [
-                ["21/05", "ABERTURA DO PERÍODO DE INSCRIÇÕES"],
-                ["04/06", "DIVULGAÇÃO DO RELATÓRIO MODELO"],
-                ["21/07", "COMEÇO DO PRAZO DE ENVIOS DE PROJETOS"],
-                ["20/08", "FIM DO PERÍODO DE INSCRIÇÕES"],
-                ["08/09", "FIM DO PRAZO DE ENVIOS DE PROJETOS"],
-                ["02/09", "INÍCIO DO ENVIO DE FEEDBACK DOS PROJETOS"],
-                ["13/09", "TÉRMINO DOS FEEDBACKS"],
-                ["10/09", "INÍCIO DO DESENVOLVIMENTO DE PROJETOS"],
-                ["15/10", "TÉRMINO DO DESENVOLVIMENTO DE PROJETOS"],
-                ["15/10", "INÍCIO DO ENVIO DE RELATÓRIOS"],
-                ["29/10", "FIM DO PRAZO DE ENVIO DE RELATÓRIOS"],
-                ["30/10", "INÍCIO DA CORREÇÃO DOS RELATÓRIOS"],
-                ["14/11", "ENVIO DOS FEEDBACKS E DIVULGAÇÃO DE RESULTADOS"],
-                ["20/11", "SÁBADO AEROESPACIAL"]
-            ],
-            "linksTitle": "Links Úteis",
-            "linkEdital": "Edital de Participação",
-            "linkModelo": "Projeto Modelo"
-        }
-    }
-    
+	"metaTags": {
+		"pageName": "kurumim",
+		"lang": "pt",
+		"pageTitle": "Kurumim",
+		"title": "Kurumim: A nova geração do Garatéa-E || Zenith EESC",
+		"description": "Nosso projeto educacional para promover a curiosidade e a iniciação científica no ensino básico por meio do contato com o Espaço."
+	},
+	"kurumimHero": {
+		"title": "Kurumim",
+		"subtitle": "A nova geração do Garatéa-E"
+	},
+	"cards": {
+		"kurumimCard1": {
+			"title": "Kurumim 2022",
+			"text": [
+				"A Missão Kurumim é a expansão do Garatéa-E, mantendo o compromisso de promover a educação e a iniciação científica.",
+				"Nossa proposta é incentivar o desenvolvimento de experimentos científicos por estudantes de toda a América Latina por meio da análise de resultados obtidos quando o experimento é submetido a ambientes de estresse."
+			]
+		},
+		"kurumimCard2": {
+			"title": "Exploração do sistema solar",
+			"text": [
+				"Neste ano, a temática é a exploração do sistema solar, permitindo que os estudantes desenvolvam pesquisas sobre os diferentes elementos que orbitam o sol.",
+				"Apesar de não ser obrigatório que o experimento se encaixe na temática, os projetos que se encaixarem poderão concorrer em quesitos específicos na Olimpíada."
+			]
+		},
+		"kurumimCard3": {
+			"titleSabado": "Sábado Aeroespacial",
+			"textSabado": [
+				"O */Sábado Aeroespacial/* é um projeto que promove a divulgação da ciência com foco na área aeroespacial para toda a sociedade.",
+				"O evento conta com palestras, atividades interativas e exposição de vários grupos de extensão distribuídas ao longo do sábado inteiro.",
+				" Nesse dia de celebração da ciência, também ocorrerá a apresentação dos projetos premiados nas diferentes categorias da Olimpíada Kurumim, assim como o lançamento dos projetos inscritos para o voo estratosférico."
+			],
+			"titleParticipacao": "Ansioso para participar?",
+			"detailParticipacao": [
+				"O Edital da Missão Kurumim já está no ar e você já pode se inscrever. Não deixe de ler o edital para ter todas as informações sobre como se inscrever e mais detalhes sobre o desenvolvimento dos experimentos."
+			]
+		},
+		"kurumimCard4": {
+			"titleDates": "Datas",
+			"text": [
+
+				["25/02 - Abertura das pré-inscrições"],
+				["07/03 - Início do prazo de envio dos projetos"],
+				["01/04 - Término do período de pré-inscrições"],
+				["08/04 - Data limite para sugerir mudanças no edital"],
+				["15/04 - Início do envio dos feedbacks"],
+				["18/04 - Abertura das inscrições"],
+				["29/04 - Término do envio dos feedbacks"],
+				["02/05 - Início do desenvolvimento dos projetos"],
+				["03/06 - Término do período de inscrições"],
+				["30/07 - Hackathon"],
+				["08/08 - Término do período de desenvolvimento"],
+				["05/09 - Data limite para recebimento dos experimentos"],
+				["24/09 - Sábado Aeroespacial"],
+				["03/10 - Início do prazo de envio de relatórios"],
+				["28/10 - Término do prazo de envio de relatórios"],
+				["01/11 - Início do envio dos feedbacks"],
+				["07/11 - Início do envio dos certificados de participação"]
+
+			],
+			"linksTitle": "Links Úteis",
+			"linkEdital": "Edital de Participação",
+			"linkModelo": "Projeto Modelo"
+		}
+	}
+
 }
