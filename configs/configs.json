@@ -1,6 +1,6 @@
 {
     "kurumimOpen": true,
     "kurumimForms": "https://docs.google.com/forms/d/e/1FAIpQLSftzVbKqPDbdpGuvykOdW2gt426UR14AAcFJCvXGfACw5JrJA/viewform",
-    "processoSeletivoOpen": false,
-    "processoSeletivoForms": ""
+    "processoSeletivoOpen": true,
+    "processoSeletivoForms": "https://docs.google.com/forms/d/e/1FAIpQLSdQvwpzcgNNgFbIHvK83FfJwgqKz5EbgHz6R9Qk8XNylAKH5Q/viewform"
 }
