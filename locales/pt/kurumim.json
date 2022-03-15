@@ -41,23 +41,19 @@
 			"titleDates": "Datas",
 			"text": [
 
-				["25/02 - Abertura das pré-inscrições"],
-				["07/03 - Início do prazo de envio dos projetos"],
-				["01/04 - Término do período de pré-inscrições"],
-				["08/04 - Data limite para sugerir mudanças no edital"],
-				["15/04 - Início do envio dos feedbacks"],
-				["18/04 - Abertura das inscrições"],
-				["29/04 - Término do envio dos feedbacks"],
-				["02/05 - Início do desenvolvimento dos projetos"],
-				["03/06 - Término do período de inscrições"],
+				["24/02 - Abertura das pré-inscrições"],
+				["15/04 - Fim das pré-inscrições15/04 - Fim "],
+				["22/04 - Data limite para sugerir mudanças no edital"],
+				["03/06 - Data limite para submissão do relatório de participação"],
+				["24/06 - Anúncio dos aprovados"],
+				["03/07 - Fim do período de inscrições"],
 				["30/07 - Hackathon"],
-				["08/08 - Término do período de desenvolvimento"],
-				["05/09 - Data limite para recebimento dos experimentos"],
+				["05/08 - Data limite para recebimento dos experimentos"],
 				["24/09 - Sábado Aeroespacial"],
-				["03/10 - Início do prazo de envio de relatórios"],
-				["28/10 - Término do prazo de envio de relatórios"],
-				["01/11 - Início do envio dos feedbacks"],
-				["07/11 - Início do envio dos certificados de participação"]
+				["28/10 - Fim do prazo de envio de relatórios"],
+				["01/11 - Envio dos feedbacks"],
+				["07/11 - Envio dos certificados de participação"]
+
 
 			],
 			"linksTitle": "Links Úteis",
