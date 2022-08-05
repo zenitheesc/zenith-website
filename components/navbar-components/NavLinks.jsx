@@ -29,6 +29,11 @@ export default function NavLinks(props) {
             <a href="/processo-seletivo">{navTexts[3]}</a>
           </li>
         </Link>
+        <Link href="https://ob-site.vercel.app/" passHref={true}>
+          <li className={navBarItem}>
+            <a href="https://ob-site.vercel.app/" passHref={true}>{navTexts[4]}</a>
+          </li>
+        </Link>
       </ul>
     </>
   );
