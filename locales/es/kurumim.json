@@ -11,58 +11,51 @@
         "subtitle": "A nova geração do Garatéa-E"
     },
     "cards": {
-        "kurumimCard1": {
-            "title":"Conquistando a Lua",
-            "text": [
-                "O */Kurumim/* é a expansão do */Garatéa-E/*, mantendo o compromisso de */promover a educação e a iniciação científica/* no ensino básico.",
-                "Nesse ano, considerando a Missão Artemis da NASA, a temática do projeto será */Conquistando a Lua/*.",
-                "Apesar de não ser obrigatório que o experimento se encaixe na temática, os projetos que se encaixarem poderam concorrer na Olimpíada."
-            ]
+		"kurumimCard1": {
+			"title": "Kurumim 2022",
+			"text": [
+				"A Missão Kurumim é a expansão do Garatéa-E, mantendo o compromisso de promover a educação e a iniciação científica.",
+				"Nossa proposta é incentivar o desenvolvimento de experimentos científicos por estudantes de toda a América Latina por meio da análise de resultados obtidos quando o experimento é submetido a ambientes de estresse."
+			]
+		},
+		"kurumimCard2": {
+			"title": "Exploração do sistema solar",
+			"text": [
+				"Neste ano, a temática é a exploração do sistema solar, permitindo que os estudantes desenvolvam pesquisas sobre os diferentes elementos que orbitam o sol.",
+				"Apesar de não ser obrigatório que o experimento se encaixe na temática, os projetos que se encaixarem poderão concorrer em quesitos específicos na Olimpíada."
+			]
         },
-        "kurumimCard2": {
-            "title":"Expansão do projeto",
-            "text": [
-                "Nossa meta é conseguir alcançar cada vez mais crianças. Sendo assim, serão aceitas inscrições de toda a */América Latina/*.",
-                "Os projetos, totalmente desenvolvidos por */estudantes do Ensino Fundamental, Médio e Técnico/*, serão acoplados a uma sonda e enviados para a estratosfera."
-            ],
-            "stylish": [
-                { "line": ["ATÉ ", 83, " PROJETOS SERÃO LANÇADOS"] },
-                { "line": [3, " MODELOS DE SATs"] }
-            ]
-        },
-        "kurumimCard3": {
-            "titleSabado":"Sábado Aeroespacial",
-            "textSabado": [
-                "O */Sábado Aeroespacial/* é um projeto que promove a divulgação da ciência com foco na área aeroespacial para toda a sociedade.",
-                "O evento conta com palestras, atividades interativas e exposição de vários grupos de extensão distribuídas ao longo do sábado inteiro. Em */2021/*, o Sábado Aeroespacial será */100% online./* e, como sempre, */gratuito/*.",
-                "Nesse dia de celebração da ciência, também ocorrerá a apresentação dos projetos premiados nas diferentes categorias da */Olimpíada Kurumim/*."
-            ],
+		"kurumimCard3": {
+			"titleSabado": "Sábado Aeroespacial",
+			"textSabado": [
+				"O */Sábado Aeroespacial/* é um projeto que promove a divulgação da ciência com foco na área aeroespacial para toda a sociedade.",
+				"O evento conta com palestras, atividades interativas e exposição de vários grupos de extensão distribuídas ao longo do sábado inteiro.",
+				" Nesse dia de celebração da ciência, também ocorrerá a apresentação dos projetos premiados nas diferentes categorias da Olimpíada Kurumim, assim como o lançamento dos projetos inscritos para o voo estratosférico."
+			],
             "titleParticipacao":"Ansioso para participar?",
-            "detailParticipacao": [
-                "O */Edital do Kurumim 2021/* já está no ar e você já pode se inscrever até o dia */20 de julho/*. Não deixe de ler o edital para ter todas as informações sobre como se inscrever e mais detalhes sobre o desenvolvimento dos experimentos."
-            ]
+			"detailParticipacao": [
+				"O */Edital da Missão Kurumim/* já está no ar e você já pode se inscrever. Não deixe de ler o edital para ter todas as informações sobre como se inscrever e mais detalhes sobre o desenvolvimento dos experimentos."
+			]
         },
         "kurumimCard4": {
             "titleDates": "Datas",
             "title":"Ansioso para participar?",
             "detail": [
-                "O */Edital do Kurumim 2021/* já está no ar e você já pode se inscrever até o dia */20 de julho/*. Não deixe de ler o edital para ter todas as informações sobre como se inscrever e mais detalhes sobre o desenvolvimento dos experimentos."
+                "O */Edital do Kurumim 2022/* já está no ar e você já pode se inscrever até o dia */29 de julho/*. Não deixe de ler o edital para ter todas as informações sobre como se inscrever e mais detalhes sobre o desenvolvimento dos experimentos."
             ],
             "text": [
-                ["21/05", "ABERTURA DO PERÍODO DE INSCRIÇÕES"],
-                ["04/06", "DIVULGAÇÃO DO RELATÓRIO MODELO"],
-                ["21/07", "COMEÇO DO PRAZO DE ENVIOS DE PROJETOS"],
-                ["20/08", "FIM DO PERÍODO DE INSCRIÇÕES"],
-                ["08/09", "FIM DO PRAZO DE ENVIOS DE PROJETOS"],
-                ["02/09", "INÍCIO DO ENVIO DE FEEDBACK DOS PROJETOS"],
-                ["13/09", "TÉRMINO DOS FEEDBACKS"],
-                ["10/09", "INÍCIO DO DESENVOLVIMENTO DE PROJETOS"],
-                ["15/10", "TÉRMINO DO DESENVOLVIMENTO DE PROJETOS"],
-                ["15/10", "INÍCIO DO ENVIO DE RELATÓRIOS"],
-                ["29/10", "FIM DO PRAZO DE ENVIO DE RELATÓRIOS"],
-                ["30/10", "INÍCIO DA CORREÇÃO DOS RELATÓRIOS"],
-                ["14/11", "ENVIO DOS FEEDBACKS E DIVULGAÇÃO DE RESULTADOS"],
-                ["20/11", "SÁBADO AEROESPACIAL"]
+				["24/02 - Abertura das pré-inscrições"],
+				["15/04 - Fim das pré-inscrições"],
+				["22/04 - Data limite para sugerir mudanças no edital"],
+				["03/06 - Data limite para submissão do relatório de participação"],
+				["08/07 - Anúncio dos aprovados"],
+				["29/07 - Fim do período de inscrições"],
+				["30/07 - Hackathon"],
+				["05/08 - Data limite para recebimento dos experimentos"],
+				["08/10 - Sábado Aeroespacial"],
+				["11/11 - Fim do prazo de envio de relatórios"],
+				["25/11 - Envio dos feedbacks"],
+				["09/12 - Envio dos certificados de participação"]
             ],
             "linksTitle": "Links Úteis",
             "linkEdital": "Edital de Participação",

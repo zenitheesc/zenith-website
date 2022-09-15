@@ -12,50 +12,46 @@
     },
     "cards": {
         "kurumimCard1": {
-            "title":"Kurumim 2021",
+            "title":"Kurumim 2022",
             "text": [
-                "*/Kurmin/* is an expansion of the */Garatéa-E/* project, keeping its compromise with the */promotion of education and STEM/* in basic education.",
-                "We aim to encourage the development of scientific experiments made by studants of all */Latin America/* through the analysis of results obtained when the experiment is exposed to stress environments.",
-                "Keeping the */global pandemic/* in mind, in this year's edition - 2021 - the environment conditions that were before experienced through the Atmospheric Probes flights, must be */simulated by the students/*."
+                "The Kurumim Mission is the expansion of Garatéa-E, maintaining the commitment to promote education and scientific initiation.",
+                "Our proposal is to encourage the development of scientific experiments by students from all over Latin America through the analysis of results obtained when the experiment is subjected to environmental stress"
             ]
         },
         "kurumimCard2": {
-            "title":"Guardians of the Amazon",
+            "title":"Exploration of the solar system",
             "text": [
-                "This year, celebrating the */Amazônia-1/* launch, the first 100% brazilian satellite, conceived for monitoring of the Amazon Rainforest, the project's theme will be: */Guardians of the Amazon/*. ",
-                "The participants are encouraged to develop projects with the following primary goal: */the preservation of the Amazon's fauna and flora/*.",
-                "It is not mandatory that your project fits the theme, but projects that do will be able to participate in specific categories of our Competition."
+                "This year, the theme is the exploration of the solar system, allowing students to develop research on the different elements that orbit the sun.",
+                "Although it is not mandatory that the experiment fits the theme, the projects that fit will be able to compete in specific requirements in the Olympics."
             ]
         },
         "kurumimCard3": {
             "titleSabado":"Aerospace Saturday",
             "textSabado": [
                 "*/Aerospace Saturday/* is a project that aims to promote aerospace focused science for everyone.",
-                "The event has lectures, interactive activies and presentations by multiple groups. In */2021/*, Aerospace Saturday will be */100% online/* and, as always, completely */free/*.",
-                "In this day of */science celebration/* we will also announce the */award winners/* in the */Kurumin Competition/*'s categories."
+                "The event has lectures, interactive activities and exhibitions by various extension groups distributed throughout the entire Saturday.",
+                "On this day of celebration of science, there will also be the presentation of the awarded projects in the different categories of the Kurumim Olympics, as well as the launch of the projects registered for the stratospheric flight."
             ],
             "titleParticipacao":"Looking forward to participating?",
             "detailParticipacao": [
-                "The */Public Notice for Kurumim 2021/* is now live and you can register until July 20th. Be sure to read the announcement for all the information on how to apply and more details on the development of the experiments."
+                "The */Public Notice for Kurumim 2022/* is now live and you can register until July 29th. Be sure to read the announcement for all the information on how to apply and more details on the development of the experiments."
             ]
         },
         "kurumimCard4": {
             "titleDates": "Dates",
             "text": [
-                ["21/05", "ABERTURA DO PERÍODO DE INSCRIÇÕES"],
-                ["04/06", "DIVULGAÇÃO DO RELATÓRIO MODELO"],
-                ["21/07", "COMEÇO DO PRAZO DE ENVIOS DE PROJETOS"],
-                ["20/08", "FIM DO PERÍODO DE INSCRIÇÕES"],
-                ["08/09", "FIM DO PRAZO DE ENVIOS DE PROJETOS"],
-                ["02/09", "INÍCIO DO ENVIO DE FEEDBACK DOS PROJETOS"],
-                ["13/09", "TÉRMINO DOS FEEDBACKS"],
-                ["10/09", "INÍCIO DO DESENVOLVIMENTO DE PROJETOS"],
-                ["15/10", "TÉRMINO DO DESENVOLVIMENTO DE PROJETOS"],
-                ["15/10", "INÍCIO DO ENVIO DE RELATÓRIOS"],
-                ["29/10", "FIM DO PRAZO DE ENVIO DE RELATÓRIOS"],
-                ["30/10", "INÍCIO DA CORREÇÃO DOS RELATÓRIOS"],
-                ["14/11", "ENVIO DOS FEEDBACKS E DIVULGAÇÃO DE RESULTADOS"],
-                ["20/11", "SÁBADO AEROESPACIAL"]
+				["02/24 - Opening of pre-registrations"],
+				["04/15 - End of pre-registration"],
+				["04/22 - Deadline to suggest changes in the public notice"],
+				["06/03 - Deadline for submission of the participation report"],
+				["07/08 - Announcement of those approved"],
+				["07/29 - End of registration period"],
+				["07/30 - Hackathon"],
+				["08/05 - Deadline for receiving the experiments"],
+				["10/08 - Aerospace Saturday"],
+				["11/11 - Deadline for submitting reports"],
+				["11/25 - Sending feedbacks"],
+				["12/09 - Submission of participation certificates"]
             ],
             "linksTitle": "Useful Links",
             "linkEdital": "Participation Notice",
