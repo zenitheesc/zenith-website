@@ -112,6 +112,28 @@
                     "Isolamento térmico feito em */Kapton/* e */Depron Aeronáutico/*",
                     "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
                 ]
+            },
+            "zenbee": {
+                "title": "ZenBee",
+                "year": 2022,
+                "menus": ["OVERVIEW", "TECNOLOGIAS"],
+                "launchDate": ["NÚMERO DE LANÇAMENTOS", "4"],
+                "altitude": ["ALTITUDE ALCANÇADA", "27,4 km"],
+                "experiments": [
+                    "MISSÕES",
+                    "Levar satélites dos competidores da primeira Olimpíada Brasileira de Satélites (OBSAT)",
+                    "Possibilitar comunicação entre competidores na base terrestre e as sondas"
+                ],
+                "embedded": [
+                    "Sistema de */aquisição de dados/*, desenvolvido pelo grupo, baseado em STM32",
+                    "Sistema de */imageamento/* baseado em */Linux/*",
+                    "Utilização de sistema de */geolocalização próprio/*"
+                ],
+                "structure": [
+                    "Utilização de */impressão 3D/*",
+                    "Estrutura de */hipercubo/* feita em fibra de carbono, desenvolvida para */minimizar impactos/* e ser totalmente */reaproveitável/*",
+                    "Paraquedas confeccionado em */fios de Kevlar/* e */Nylon/*"
+                ]
             }
         }
     },
