@@ -112,6 +112,29 @@
                     "Thermal insulation made with */Kapton/* and */Aeronautic Depron/*",
                     "Parachute made with */Kevlar strings/* and */Nylon/*"
                 ]
+            },
+            "zenbee": {
+                "title": "ZenBee",
+                "year": 2022,
+                "menus": ["OVERVIEW", "TECHNOLOGIES"],
+                "launchDate": ["NUMBER OF LAUNCHES", "4"],
+                "altitude": ["MAX ALTITUDE", "27.4 km"],
+                "experiments": [
+                    "MISSIONS",
+                    "Carry satellites from competitors of the first Brazilian Satellite Olympics (OBSAT)",
+                    "Provide communication between competitors at launch site and probes"
+                ],
+                "embedded": [
+                    "*/Data acquisition/* system developed by the group, based on STM32",
+                    "*/Imaging/* system based on */Linux/*",
+                    "Usage of our own */geolocation/* system"
+                ],
+                "structure": [
+                    "Baloon and parachute */deploy mechanism/*",
+                    "*/3D printing/* usage",
+                    "Carbon fiber */Hypercube/* structure, developed to */minimize impacts/*  and be completely */re-usable/*",
+                    "Parachute made with */Kevlar strings/* and */Nylon/*"
+                ]
             }
         }
     },

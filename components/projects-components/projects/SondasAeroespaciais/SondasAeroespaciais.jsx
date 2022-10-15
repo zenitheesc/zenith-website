@@ -9,6 +9,7 @@ export default function SondasAeroespaciais(props) {
   const { garatea2 } = props.textContent.projects;
   const { garatea3 } = props.textContent.projects;
   const { garatea5 } = props.textContent.projects;
+  const { zenbee } = props.textContent.projects;
 
   const garatea1Images = [
     'SondasAeroespaciais/Garatéa-I/photo8.webp',
@@ -56,11 +57,22 @@ export default function SondasAeroespaciais(props) {
     'SondasAeroespaciais/Garatéa-V/photo10.webp'
   ];
 
+  const zenbeeImages = [
+    'SondasAeroespaciais/ZenBee/photo5.webp',
+    'SondasAeroespaciais/ZenBee/photo2.webp',
+    'SondasAeroespaciais/ZenBee/photo3.webp',
+    'SondasAeroespaciais/ZenBee/photo4.webp',
+    'SondasAeroespaciais/ZenBee/photo6.webp',
+    'SondasAeroespaciais/ZenBee/photo1.webp'
+  ];
+
   return (
     <section className={`-section ${styles.projectsSection}`} style={{ backgroundColor: '#E1E1E5' }}>
       <ProjectHeader textContent={props.textContent} />
       <Timeline theme="light">
-
+        <Event interval={2022}>
+          <Model textContent={zenbee} paths={zenbeeImages} />
+        </Event>
         <Event interval={2019}>
           <Model textContent={garatea5} paths={garatea5Images} />
           <Model textContent={garatea3} paths={garatea3Images} />
