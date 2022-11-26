@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    height: 77.5vh;
+}
+
+.ul {
+    height: 1000px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: white;
+    margin-top: 6em;
+    margin-right: 2.5em;
+    margin-left: 2.5em;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.button {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 10em;
+    margin-left: 10em;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+.button:hover {
+    background-color: gainsboro;
+}
+
+.iframe {
+    text-align: center;
+    margin-top: 6em;
+    margin-right: 2.5em;
+    display: flex;
+    width: 70%;
+}

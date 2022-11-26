@@ -34,6 +34,11 @@ export default function NavLinks(props) {
             <a href="https://ob-site.vercel.app/" passHref={true}>{navTexts[4]}</a>
           </li>
         </Link>
+        <Link href="/lancamentos" passHref={true}>
+          <li className={navBarItem}>
+            <a href="/lancamentos" passHref={true}>{navTexts[5]}</a>
+          </li>
+        </Link>
       </ul>
     </>
   );
