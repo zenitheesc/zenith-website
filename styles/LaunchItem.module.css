@@ -1,37 +1,31 @@
 .launchContainer {
     padding: 0.5em;
-    margin-top: 2em;
     margin-bottom: 2em;
     display: flex;
     flex-direction: column;
     color: black;
     border-color: black;
-    border-radius: 1px;
+    border-width: 0.8px;
+    border-radius: 7px;
     border-style: solid;
 }
 
-.launchButton {
-    font-weight: bold;
-    color: black;
-    background-color: white;
-}
-
-.launchButton:hover {
+.launchContainer:hover {
     background-color: gainsboro;
+    cursor: pointer;
 }
 
 .launchTitle {
     font-weight: bold;
     font-size: 14px;
     display: flex;
-    text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
 }
 
 .launchInfo {
     font-style: italic;
     font-size: 14px;
     display: flex;
-    text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }

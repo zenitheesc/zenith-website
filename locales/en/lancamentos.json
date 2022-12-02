@@ -12,30 +12,34 @@
     },
     "launches": {
         "sabado_4": { 
-            "title": "Sábado Aeroespacial",
+            "title": "ZenBee",
             "date": 2022,
-            "launchDate": "Data: 09-10-2022",
+            "launchDate": " 09/10/2022",
+            "local": "Kurumin, São Carlos - SP",
             "altitude": "Altitude: 22.7 km",
             "link": "https://sondehub.org/#!mt=Mapnik&f=J4830341&q=J4830341"
         },
         "sabado_3": { 
-            "title": "Sábado Aeroespacial",
+            "title": "ZenBee",
             "date": 2022,
-            "launchDate": "Data: 09-10-2022",
+            "launchDate": "09/10/2022",
+            "local": "Kurumin, São Carlos - SP",
             "altitude": "Altitude: 6.8 km",
             "link": "https://sondehub.org/#!mt=Mapnik&f=J4840152&q=J4840152"
         },
         "sabado_2": { 
-            "title": "Sábado Aeroespacial",
+            "title": "ZenBee",
             "date": 2022,
-            "launchDate": "Data: 09-10-2022",
+            "launchDate": "09/10/2022",
+            "local": "Kurumin, São Carlos - SP",
             "altitude": "Altitude: 23.2 km",
             "link": "https://sondehub.org/#!mt=Mapnik&f=J4840095&q=J4840095"
         },
         "sabado_1": { 
-            "title": "Sábado Aeroespacial",
+            "title": "ZenBee",
             "date": 2022,
-            "launchDate": "Data: 09-10-2022",
+            "launchDate": "09/10/2022",
+            "local": "Kurumin, São Carlos - SP",
             "altitude": "Altitude: 25.2 km",
             "link": "https://sondehub.org/#!mt=Mapnik&f=J4830342&q=J4830342"
         }

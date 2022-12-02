@@ -10,18 +10,20 @@ function LaunchItem (props) {
         title, 
         date,
         launchDate,
+        local,
         altitude,
         link
     } = props.textContent;
 
     return (
-        <div className={styles.launchContainer}>
+        <div onClick={() => changeUrl(link)} className={styles.launchContainer}>
             <div className={styles.launchTitle}>
-                {title} {launchDate}
+                <div>{title}</div>
+                <div>{altitude}</div>
             </div>
             <div className={styles.launchInfo}>
-                {altitude}
-                <button className={styles.launchButton} type="button" onClick={() => changeUrl(link)}>VIEW</button>
+                <div>{local}</div>
+                <div>{launchDate}</div>
             </div>
         </div>  
     );
