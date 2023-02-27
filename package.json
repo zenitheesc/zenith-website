@@ -58,7 +58,7 @@
     "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
-    "eslint": "^8.7.0",
+    "eslint": "^8.35.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.22.1",
