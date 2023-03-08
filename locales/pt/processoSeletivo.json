@@ -24,21 +24,24 @@
             "title": "Cronograma",
             "detail": "Estamos ansiosos para receber novos membros. Para se inscrever, preencha o */Google Forms/* abaixo e acompanhe as novidades nas nossas */Redes Sociais/*!",
             "text": [
-                ["07/03", "LANÇAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
-                ["22/03", "RODA DE CONVERSA COM OS MEMBROS DO ZENITH"],
-                ["29/03", "PALESTRA DE APRESENTAÇÃO"],
-                ["04/04", "ENCERRAMENTO DAS INSCRIÇÕES"],
-                ["07/04", "1º FASE"],
-                ["12/04", "RESULTADO DA PRIMEIRA FASE"],
-                ["18/04", "2º FASE"],
-                ["27/04", "DIVULGAÇÃO DOS APROVADOS"]
+                ["13/03", "LANÇAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
+                ["16/03", "PRESENÇA NA MOSTRA DE OPORTUNIDADES EESC"],
+                ["18/03", "LANÇAMENTO DE SONDA AEROESPACIAL"],
+                ["23/03", "PALESTRA DE APRESENTAÇÃO"],
+                ["28/03", "RODA DE CONVERSA COM OS MEMBROS DO ZENITH"],
+                ["08/04", "ENCERRAMENTO DAS INSCRIÇÕES"],
+                ["13/04", "1ª FASE - DINÂMICA EM GRUPO"],
+                ["15/04", "RESULTADO DA 1ª FASE"],
+                ["18/04", "INÍCIO DA 2ª FASE - DESENVOLVIMENTO DE PROJETOS"],
+                ["18/05", "FIM DA 2ª FASE - APRESENTAÇÃO DOS PROJETOS"],
+                ["22/05", "DIVULGAÇÃO DOS APROVADOS"]
             ]
         },
         "processoSeletivoCard3": {
             "title": "Fases do Processo Seletivo",
             "text": [
                 "*/1º Fase: Dinâmica em Grupo/*", "Nessa fase, os candidatos serão divididos em */grupos/* e expostos a uma */situação-problema/* inspirada em missões espaciais. Nós avaliaremos a capacidade do candidato de */trabalhar em equipe/*, predisposição à */liderança/* e a */criatividade/* diante de um problema.",
-                "*/2º Fase: Entrevista/*", "Na 2º fase, os candidatos aprovados na 1º fase serão entrevistados por membros de departamentos do Zenith Aerospace. Nessa etapa, nós buscamos conhecer melhor o candidato, descobrindo suas */motivações/* e */expectativas/* sobre o grupo."
+                "*/2º Fase: Desenvolvimento de Projetos/*", "Nessa fase, com duração de um mês, os candidatos serão novamente organizados em */grupos/*, devendo */trabalhar em equipe/* para desenvolver, auxiliados por um membro do */Zenith/*, um projeto capaz de solucionar o problema proposto, com */aplicações reais/* no design e operação de sondas e satélites."
             ]
         }
     }
