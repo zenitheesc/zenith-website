@@ -1,0 +1,13 @@
+.launchContainer {
+    overflow-y: scroll;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2em;
+    max-width: 1328px;
+    color: black;
+}
+
+.launchItem {
+    display: flex;
+}

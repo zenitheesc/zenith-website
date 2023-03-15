@@ -1,0 +1,31 @@
+.launchContainer {
+    padding: 0.5em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border-color: black;
+    border-width: 0.8px;
+    border-radius: 7px;
+    border-style: solid;
+}
+
+.launchContainer:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.launchTitle {
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.launchInfo {
+    font-style: italic;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
