@@ -24,23 +24,19 @@
             "title": "Timeline",
             "detail": "We're looking forward to meeting our new members this year. To participate, fill in the */Google Forms/* below and follow us in our */Social Networks/* to be notified when the results come out!.",
             "text": [
-                ["13/03", "PARTICIPATION FORMS OPENS"],
-                ["16/03", "PRESENCE AT EESC OPORTUNITIES FAIR"],
-                ["23/03", "PRESENTATION TALK"],
-                ["28/03", "MEETING WITH ZENITH MEMBERS"],
-                ["08/04", "PARTICIPATION FORMS CLOSES"],
-                ["13/04", "1ª PHASE - GROUP DYNAMIC"],
-                ["15/04", "1ª PHASE RESULTS"],
-                ["18/04", "2ª PHASE STARTS- PROJECT DEVELOPMENT"],
-                ["18/05", "2ª PHASE ENDS - PROJECT PRESENTATION"],
-                ["22/05", "DISCLOSURE OF THE APPROVED MEMBERS"]
+                ["26/02", "PARTICIPATION FORMS OPENS"],
+                ["28/02 from 14:00 to 17:00", "PRESENCE AT ICMC OPORTUNITIES FAIR"],
+                ["28/02 and 29/02 from 8:00 to 12:00", "PRESENCE AT EESC OPORTUNITIES FAIR"],
+                ["01/03 from 8:00 to 10:30", "PRESENCE AT IFSC OPORTUNITIES FAIR"],
+                ["07/03 at 19:00", "PRESENTATION TALK"],
+                ["06/04", "PROBE LAUNCH"]
             ]
         },
         "processoSeletivoCard3": {
-            "title": "Selection Process Parts",
+            "title": "The Selection Process",
             "text": [
-                "*/1st Phase: Group Dynamic/*", "In this phase, the candidates will be divided in */groups/* and exposed to a */problem-situation/* inspired by real space missions. We will evaluate the candidate's affinity with */teamwork/*, */leadership/* predisposition and */creativity/* when facing a problem.",
-                "*/2nd Phase: Project Development/*", "In the 2nd phase, covering one month's span, the remaining candidates will be again organized into */groups/*, aiming to */work together/* on developping, helped by a */Zenith/* member, a solution to a proposed problem, with */real world applications/* in the design and use of probes and sattelites."
+                "*/Participe in the meetings/*", "The candidates must regularly participate in the general and departamental */meetings/*, where they can meet other members and discover more about how we work. In these meetings, there will be offered */practical assignments/* (such as testing sensors or developping small pieces of software), letting you learn and get involved with the group's projects.",
+                "*/Group Dynamic/*", "At last, to the officialize the cadidate's admission, they will be divided in */groups/* and exposed to a */problem-situation/* inspired by real space missions, were they must exercise their */teamwork/* and */creativity/* when facing a problem."
             ]
         }
     }

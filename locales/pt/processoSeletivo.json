@@ -24,23 +24,19 @@
             "title": "Cronograma",
             "detail": "Estamos ansiosos para receber novos membros. Para se inscrever, preencha o */Google Forms/* abaixo e acompanhe as novidades nas nossas */Redes Sociais/*!",
             "text": [
-                ["13/03", "LANÇAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
-                ["16/03", "PRESENÇA NA MOSTRA DE OPORTUNIDADES EESC"],
-                ["23/03", "PALESTRA DE APRESENTAÇÃO"],
-                ["28/03", "RODA DE CONVERSA COM OS MEMBROS DO ZENITH"],
-                ["08/04", "ENCERRAMENTO DAS INSCRIÇÕES"],
-                ["13/04", "1ª FASE - DINÂMICA EM GRUPO"],
-                ["15/04", "RESULTADO DA 1ª FASE"],
-                ["18/04", "INÍCIO DA 2ª FASE - DESENVOLVIMENTO DE PROJETOS"],
-                ["18/05", "FIM DA 2ª FASE - APRESENTAÇÃO DOS PROJETOS"],
-                ["22/05", "DIVULGAÇÃO DOS APROVADOS"]
+                ["26/02", "LANÇAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
+                ["28/02 das 14:00 às 17:00", "PRESENÇA NA MOSTRA DE OPORTUNIDADES ICMC"],
+                ["28/02 e 29/02 das 8:00 às 12:00", "PRESENÇA NA MOSTRA DE OPORTUNIDADES EESC"],
+                ["01/03 das 8:00 às 10:30", "PRESENÇA NA MOSTRA DE OPORTUNIDADES IFSC"],
+                ["07/03 às 19:00", "PALESTRA DE APRESENTAÇÃO"],
+                ["06/04", "LANÇAMENTO DE SONDA"]
             ]
         },
         "processoSeletivoCard3": {
-            "title": "Fases do Processo Seletivo",
+            "title": "O Processo Seletivo",
             "text": [
-                "*/1º Fase: Dinâmica em Grupo/*", "Nessa fase, os candidatos serão divididos em */grupos/* e expostos a uma */situação-problema/* inspirada em missões espaciais. Nós avaliaremos a capacidade do candidato de */trabalhar em equipe/*, predisposição à */liderança/* e a */criatividade/* diante de um problema.",
-                "*/2º Fase: Desenvolvimento de Projetos/*", "Nessa fase, com duração de um mês, os candidatos serão novamente organizados em */grupos/*, devendo */trabalhar em equipe/* para desenvolver, auxiliados por um membro do */Zenith/*, um projeto capaz de solucionar o problema proposto, com */aplicações reais/* no design e operação de sondas e satélites."
+                "*/Participe das reuniões/*", "Os candidatos devem participar regularmente das */reuniões/* gerais e do departamento escolhido, onde poderão conhecer os demais membros e descobrir mais sobre como trabalhamos. Nestas reuniões, serão oferecidas */tarefas práticas/* (como o teste de sensores ou desenvolvimento de pequenos softwares), já permitindo-o aprender e se envolver com os projetos do grupo.",
+                "*/Dinâmica em grupo/*", "Em seguida, para oficializar sua entrada na extracurricular, os candidatos serão divididos em */grupos/* e expostos a uma */situação-problema/* inspirada em missões espaciais, onde deverão */trabalhar em equipe/* e atuar com */criatividade/* diante de um problema."
             ]
         }
     }
