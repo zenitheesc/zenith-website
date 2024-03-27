@@ -23,12 +23,12 @@
                     "detail": "Circuit board development for aerospace applications and their manufacture."
                 },
                 {
-                    "title": "Low Level: ",
+                    "title": "Embedded Software: ",
                     "detail": "Microcontroller programming related to multiple embedded system projects."
                 },
                 {
-                    "title": "High Level: ",
-                    "detail": "Development of web, mobile and desktop aplications for mission support."
+                    "title": "User Software: ",
+                    "detail": "Development of web, mobile and desktop aplications for mission support, in addition to projects related to computer vision."
                 }
             ]
         },
