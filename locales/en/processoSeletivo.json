@@ -24,12 +24,11 @@
             "title": "Timeline",
             "detail": "We're looking forward to meeting our new members this year. To participate, fill in the */Google Forms/* below and follow us in our */Social Networks/* to be notified when the results come out!.",
             "text": [
-                ["26/02", "PARTICIPATION FORMS OPENS"],
-                ["28/02 from 14:00 to 17:00", "PRESENCE AT ICMC OPORTUNITIES FAIR"],
-                ["28/02 and 29/02 from 8:00 to 12:00", "PRESENCE AT EESC OPORTUNITIES FAIR"],
-                ["01/03 from 8:00 to 10:30", "PRESENCE AT IFSC OPORTUNITIES FAIR"],
-                ["07/03 at 19:00", "PRESENTATION TALK"],
-                ["06/04", "PROBE LAUNCH"]
+                ["26/02 to 28/03", "REGISTRATION PERIOD VIA FORM"],
+                ["25/03", "INTRODUCTORY LECTURE"],
+                ["31/01 to 04/04", "INTERVIEW"],
+                ["04/04", "GROUP DYNAMICS"],
+                ["TO BE DEFINED", "PROBE LAUNCH"]
             ]
         },
         "processoSeletivoCard3": {
