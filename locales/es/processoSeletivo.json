@@ -22,17 +22,13 @@
         },
         "processoSeletivoCard2": {
             "title": "Cronograma",
-            "detail": "Estamos ansiosos para receber novos membros no Zenith Aerospace esse ano. Nesse ano de */2021/*, o nosso processo seletivo vai ser 100% digital! Para se inscrever, preencha o */Google Forms/* abaixo e acompanhe os resultados nas nossas */Redes Sociais/*!",
+            "detail": "Estamos ansiosos para receber novos membros no Zenith Aerospace esse ano. Nesse ano de */2025/*, o nosso processo seletivo vai ser 100% digital! Para se inscrever, preencha o */Google Forms/* abaixo e acompanhe os resultados nas nossas */Redes Sociais/*!",
             "text": [
-                ["05/04", "LANÇAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
-                ["13/04", "RODA DE CONVERSA COM MEMBROS DO ZENITH"],
-                ["19/04", "PALESTRA DE APRESENTAÇÃO"],
-                ["24/04", "FECHAMENTO DO FORMULÁRIO DE INSCRIÇÃO"],
-                ["26/04", "1º FASE DO PROCESSO SELETIVO"],
-                ["30/04", "DIVULGAÇÃO DOS APROVADOS DA PRIMEIRA FASE"],
-                ["03/05", "INÍCIO DA 2º FASE DO PROCESSO SELETIVO"],
-                ["07/05", "FIM DA 2º FASE DO PROCESSO SELETIVO"],
-                ["10/05", "DIVULGAÇÃO DOS RESULTADOS"]
+                ["26/02 al 28/03", "PERÍODO DE INSCRIPCIÓN A TRAVÉS DEL FORMULARIO"],
+                ["25/03", "CHARLA INTRODUCTORIA"],
+                ["31/01 al 04/04", "ENTREVISTA"],
+                ["04/04", "DINÁMICA DE GRUPO"],
+                ["POR DEFINIR", "LANZAMIENTO DE SONDA"]
             ]
         },
         "processoSeletivoCard3": {
