@@ -48,7 +48,7 @@
   },
   "homepage": "https://github.com/zenitheesc/zenith-website#readme",
   "dependencies": {
-    "hamburger-react": "^2.4.0",
+    "hamburger-react": "^2.5.2",
     "next": "^12.1.0",
     "next-seo": "^4.24.0",
     "next-translate": "^1.0.6",
