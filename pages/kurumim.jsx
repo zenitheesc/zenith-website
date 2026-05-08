@@ -12,7 +12,11 @@ import HeadTags from 'components/general/HeadTags';
 import UnderlinedButton from 'components/general/UnderlinedButton';
 
 function mapTable(content, idx) {
-    return <p style={{ fontSize: '0.9em' }} key={idx}><b>{content[0]}</b>: <span key={idx}>{content[1]}</span></p>;
+    if (Array.isArray(content) && content.length === 2) {
+        return <p style={{ fontSize: '0.9em' }} key={idx}><b>{content[0]}</b>: <span>{content[1]}</span></p>;
+    }
+
+    return <p style={{ fontSize: '0.9em' }} key={idx}><b>{Array.isArray(content) ? content[0] : content}</b></p>;
 }
 
 function mapStylish(content, idx) {
@@ -62,7 +66,7 @@ function Kurumim() {
                 />
                 <picture>
                     <source media="(max-width: 768px)" srcSet="images/Kurumim/mobilePoster.webp" type="image/webp" />
-                    <img style={{ borderRadius: '0.75rem', width: '100%', margin: '0rem' }} src="../images/Kurumim/poster.webp" alt="Kurumim 2024 - poster" />
+                    <img style={{ borderRadius: '0.75rem', width: '100%', margin: '0rem' }} src="../images/Kurumim/capa-kurumim-2026.png" alt="Kurumim 2026 - poster" />
                 </picture>
                 <Card
                     lean="none"
@@ -82,7 +86,7 @@ function Kurumim() {
                             {TextContent.kurumimCard4.text.map((a, idx) => mapTable(a, idx))}
                             <h2 className="-homepage-section-title">{TextContent.kurumimCard4.linksTitle}</h2>
                             <div style={{display:"flex",flexDirection:"row"}}>
-                                <UnderlinedButton link={'https://github.com/zenitheesc/kurumim/blob/main/Documentos/Edital_Kurumim_2024.pdf'} label={TextContent.kurumimCard4.linkEdital} dark/>
+                                <UnderlinedButton link={'https://drive.google.com/file/d/1dL26c7MvemdJ7or_wSK5g-TOPspCp3Ye/view'} label={TextContent.kurumimCard4.linkEdital} dark/>
                             </div>
                         </>
                     }
@@ -90,7 +94,16 @@ function Kurumim() {
                 />
                 
                 {(Config.kurumimOpen)
-                    ? <FormWrapper className={'-section'} link={Config.kurumimForms} />
+                        ? <>
+                            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                <UnderlinedButton
+                                    link={Config.kurumimForms}
+                                    label={'Abrir formulário em nova guia'}
+                                    dark
+                                />
+                            </div>
+                            <FormWrapper className={'-section'} link={Config.kurumimForms} />
+                        </>
                     : <> </>
                 }
             </CardContainer>

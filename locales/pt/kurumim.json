@@ -12,7 +12,7 @@
 	},
 	"cards": {
 		"kurumimCard1": {
-			"title": "Kurumim 2024",
+			"title": "Kurumim 2026",
 			"text": [
 				"A Missão Kurumin é a vertente educacional do grupo Zenith, tendo por objetivo promover e difundir a ciência e engenharia aeroespacial através de experimentos técnicos e científicos lançados nas sondas estratosféricas do grupo.",
 				"O ambiente estratosférico, devido à suas características ambientais, é perfeita para a emulação de condições espaciais, com radiação, temperatura, pressão e altitude extremas, configurando um excelente ambiente de testes.",
@@ -20,11 +20,11 @@
 			]
 		},
 		"kurumimCard2": {
-			"title": "Jornada Lunar",
+			"title": "Mistérios Lunares e o Futuro das Viagens Espaciais",
 			"text": [
-				"Neste ano, a temática é \"Jornada Lunar\"em homenagem aos 10 anos de fundação do grupo Zenith, criado com o objetivo de desenvolver o satélite Garatéa-L, a ser lançado em órbita lunar.",
-				"Incentivamos os participantes a desenvolverem um projeto relacionado à temática lunar, em qualquer um de seus aspectos, o importante é a criatividade.",
-				"São diversas vertentes de experimentação possíveis: mecânica orbital, vida em situações extremas, comunicação de longa distância, sistemas mecânicos e eletrônicos resistentes a condições espaciais, experimentos bioquímicos no espaço profundo, dentre muitos outros."
+				"Nesta edição, o tema é a exploração da Lua e as viagens espaciais. Sob o título oficial Missão Kurumim: Mistérios Lunares e o Futuro das Viagens Espaciais, a proposta convida os participantes a explorarem desafios e possibilidades da presença humana e tecnológica no espaço.",
+				"O enfoque principal está na Lua, mas a temática não se limita a ela. A ideia é estimular a criatividade e o desenvolvimento de projetos diversos, como experimentos de monitoramento ambiental, estudos de adaptação de espécies para o espaço, pesquisas sobre materiais e sensores, entre muitas outras possibilidades.",
+				"O mais importante é que o projeto tenha uma abordagem aeroespacial e dialogue com o tema proposto, valorizando soluções originais, científicas e criativas."
 			]
 		},
 		"kurumimCard3": {
@@ -43,18 +43,17 @@
 		"kurumimCard4": {
 			"titleDates": "Datas",
 			"text": [
-				["22/04 - Abertura das inscrições"],
-				["24/06 - Fim das inscrições"],
-				["08/07 - Data limite para submissão da Proposta Experimental"],
-				["30/07 - Data limite para anúncio dos aprovados"],
-				["07/08 - Fim do período para preencher o formulário de continuidade na olimpíada"],
-				["12/10 - Data limite para recebimento dos Sats, do Relatório Parcial e da Ficha de Dados"],
-				["19/10 - Sábado Aeroespacial e Lançamento"],
+				["08/05 - Abertura das inscrições"],
+				["19/07 - Fim das inscrições"],
+				["31/08 - Data limite para submissão da Proposta Experimental"],
+				["21/09 - Data limite para anúncio dos aprovados"],
+				["28/10 - Data limite para recebimento dos Sats e da Ficha de Dados"],
+				["31/10 - Sábado Aeroespacial e Lançamento"],
 				["30/11 - Fim do prazo de envio de Relatório Final e Formulário de Avaliação"],
-				["31/12 - Envio das premiações e certificados de participação"]
+				["Janeiro de 2027 - Envio das premiações e certificados de participação"]
 			],
 			"linksTitle": "Links Úteis",
-			"linkEdital": "Edital de Participação",
+			"linkEdital": "Edital Kurumim 2026",
 			"linkModelo": "Projeto Modelo"
 		}
 	}
