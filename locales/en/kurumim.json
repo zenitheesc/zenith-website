@@ -8,53 +8,53 @@
     },
     "kurumimHero": {
         "title": "Kurumim",
-        "subtitle": "Garatéa-E's next generation"
+        "subtitle": "The new generation of Garatéa-E"
     },
     "cards": {
         "kurumimCard1": {
-            "title":"Kurumim 2024",
+            "title": "Kurumim 2026",
             "text": [
-                "The Kurumim Mission is the expansion of Garatéa-E, maintaining the commitment to promote education and scientific initiation.",
-                "Our proposal is to encourage the development of scientific experiments by students from all over Latin America through the analysis of results obtained when the experiment is subjected to environmental stress"
+                "The Kurumim Mission is the educational branch of Zenith, aimed at promoting and spreading aerospace science and engineering through technical and scientific experiments launched on the group's stratospheric balloons.",
+                "The stratospheric environment, due to its environmental characteristics, is ideal for emulating space conditions, with extreme radiation, temperature, pressure, and altitude, making it an excellent testing ground.",
+                "Our proposal is to encourage the development of scientific experiments by students from all over Latin America across a wide range of knowledge areas, inspiring them to pursue science and engineering."
             ]
         },
         "kurumimCard2": {
-            "title":"Exploration of the solar system",
+            "title": "Lunar Mysteries and the Future of Space Travel",
             "text": [
-                "This year, the theme is the exploration of the solar system, allowing students to develop research on the different elements that orbit the sun.",
-                "Although it is not mandatory that the experiment fits the theme, the projects that fit will be able to compete in specific requirements in the Olympics."
+                "This edition focuses on the exploration of the Moon and space travel. Under the official title Kurumim Mission: Lunar Mysteries and the Future of Space Travel, the proposal invites participants to explore the challenges and possibilities of human and technological presence in space.",
+                "The main focus is the Moon, but the theme is not limited to it. The idea is to encourage creativity and the development of diverse projects, such as environmental monitoring experiments, studies on species adaptation to space, research on materials and sensors, among many other possibilities.",
+                "What matters most is that the project has an aerospace focus and connects with the proposed theme, while valuing original, scientific, and creative solutions."
             ]
         },
         "kurumimCard3": {
-            "titleSabado":"Aerospace Saturday",
+            "titleSabado": "Aerospace Saturday",
             "textSabado": [
-                "*/Aerospace Saturday/* is a project that aims to promote aerospace focused science for everyone.",
-                "The event has lectures, interactive activities and exhibitions by various extension groups distributed throughout the entire Saturday.",
-                "On this day of celebration of science, there will also be the presentation of the awarded projects in the different categories of the Kurumim Olympics, as well as the launch of the projects registered for the stratospheric flight."
+                "The */Aerospace Saturday/* is a project that promotes science outreach with a focus on the aerospace field for the entire community.",
+                "The event features lectures, interactive activities, and exhibitions from several outreach groups spread throughout the whole day.",
+                "On this day of celebration of science, the Kurumim projects will also be presented, along with the launch of the projects registered for the stratospheric flight."
             ],
-            "titleParticipacao":"Looking forward to participating?",
+            "titleParticipacao": "Looking forward to participating?",
             "detailParticipacao": [
-                "The */Public Notice for Kurumim 2024/* is now live. Be sure to read the announcement for all the information on how to apply and more details on the development of the experiments.",
-                "This edition, you can choose to develop and launch open experiments or satellites!"
+                "The Kurumim Mission Call for Proposals is now live, and you can already register. Be sure to read the call for all the information on how to apply and more details about project development.",
+                "This year, we will have formats for launching small open experiments, as well as for launching complete satellites. Sign up!"
             ]
         },
         "kurumimCard4": {
             "titleDates": "Dates",
             "text": [
-
-				["04/22 - Opening of registrations"],
-				["06/24 - End of registrations"],
-				["07/08 - Deadline for submission of the experimental proposal"],
-				["07/30 - Announcement of the approved"],
-				["08/07 - Deadline for filling the continuation forms"],
-				["10/12 - Deadline for submitting the Sats, partial report and data sheet"],
-				["10/19 - Aerospace Saturday"],
-				["11/30 - Deadline for submitting final reports and evalution forms"],
-				["12/31 - Submission of participation certificates and awards"]
+                ["08/05 - Open of registrations"],
+                ["19/07 - End of registrations"],
+                ["31/08 - Deadline for submitting the Experimental Proposal"],
+                ["21/09 - Deadline for announcing the approved projects"],
+                ["28/10 - Deadline for receiving the Sats and the Data Sheet"],
+                ["31/10 - Aerospace Saturday and Launch"],
+                ["30/11 - Deadline for submitting the Final Report and Evaluation Form"],
+                ["January 2027 - Delivery of awards and participation certificates"]
             ],
             "linksTitle": "Useful Links",
-            "linkEdital": "Participation Notice",
-            "linkModelo": "Template Project"
+            "linkEdital": "Kurumim 2026 Call for Proposals",
+            "linkModelo": "Project Template"
         }
     }
 }

@@ -8,54 +8,53 @@
     },
     "kurumimHero": {
 		"title": "Kurumim",
-		"subtitle": "A nova geração do Garatéa-E"
+		"subtitle": "La nueva generación de Garatéa-E"
 	},
 	"cards": {
 		"kurumimCard1": {
-			"title": "Kurumim 2024",
+			"title": "Kurumim 2026",
 			"text": [
-				"A Missão Kurumin é a vertente educacional do grupo Zenith, tendo por objetivo promover e difundir a ciência e engenharia aeroespacial através de experimentos técnicos e científicos lançados nas sondas estratosféricas do grupo.",
-				"O ambiente estratosférico, devido à suas características ambientais, é perfeita para a emulação de condições espaciais, com radiação, temperatura, pressão e altitude extremas, configurando um excelente ambiente de testes.",
-				"Nossa proposta é incentivar o desenvolvimento de experimentos científicos por estudantes de toda a América Latina nos mais diversos campos do conhecimento,  buscando inspirá-los a seguir o rumo da ciência e engenharia."
+				"La Misión Kurumim es la vertiente educativa del grupo Zenith, cuyo objetivo es promover y difundir la ciencia y la ingeniería aeroespacial a través de experimentos técnicos y científicos lanzados en los globos estratosféricos del grupo.",
+				"El entorno estratosférico, por sus características ambientales, es ideal para emular condiciones espaciales, con radiación, temperatura, presión y altitud extremas, configurando un excelente ambiente de pruebas.",
+				"Nuestra propuesta es incentivar el desarrollo de experimentos científicos por estudiantes de toda América Latina en las más diversas áreas del conocimiento, buscando inspirarlos a seguir el camino de la ciencia y la ingeniería."
 			]
 		},
 		"kurumimCard2": {
-			"title": "Jornada Lunar",
+			"title": "Misterios Lunares y el Futuro de los Viajes Espaciales",
 			"text": [
-				"Neste ano, a temática é \"Jornada Lunar\"em homenagem aos 10 anos de fundação do grupo Zenith, criado com o objetivo de desenvolver o satélite Garatéa-L, a ser lançado em órbita lunar.",
-				"Incentivamos os participantes a desenvolverem um projeto relacionado à temática lunar, em qualquer um de seus aspectos, o importante é a criatividade.",
-				"São diversas vertentes de experimentação possíveis: mecânica orbital, vida em situações extremas, comunicação de longa distância, sistemas mecânicos e eletrônicos resistentes a condições espaciais, experimentos bioquímicos no espaço profundo, dentre muitos outros."
+				"En esta edición, el tema es la exploración de la Luna y los viajes espaciales. Bajo el título oficial Misión Kurumim: Misterios Lunares y el Futuro de los Viajes Espaciales, la propuesta invita a los participantes a explorar los desafíos y posibilidades de la presencia humana y tecnológica en el espacio.",
+				"El enfoque principal está en la Luna, pero la temática no se limita a ella. La idea es estimular la creatividad y el desarrollo de proyectos diversos, como experimentos de monitoreo ambiental, estudios de adaptación de especies al espacio, investigaciones sobre materiales y sensores, entre muchas otras posibilidades.",
+				"Lo más importante es que el proyecto tenga un enfoque aeroespacial y se relacione con el tema propuesto, valorando soluciones originales, científicas y creativas."
 			]
 		},
 		"kurumimCard3": {
 			"titleSabado": "Sábado Aeroespacial",
 			"textSabado": [
-				"O */Sábado Aeroespacial/* é um projeto que promove a divulgação da ciência com foco na área aeroespacial para toda a sociedade.",
-				"O evento conta com palestras, atividades interativas e exposição de vários grupos de extensão distribuídas ao longo do sábado inteiro.",
-				" Nesse dia de celebração da ciência, também ocorrerá a apresentação dos projetos da Olimpíada Kurumim, assim como o lançamento dos projetos inscritos para o voo estratosférico."
+				"El */Sábado Aeroespacial/* es un proyecto que promueve la divulgación científica con enfoque en el área aeroespacial para toda la sociedad.",
+				"El evento cuenta con conferencias, actividades interactivas y exposición de varios grupos de extensión distribuidas a lo largo de todo el sábado.",
+				"En este día de celebración de la ciencia, también se presentarán los proyectos de Kurumim, así como el lanzamiento de los proyectos inscritos para el vuelo estratosférico."
 			],
-			"titleParticipacao": "Ansioso para participar?",
+			"titleParticipacao": "¿Ansioso por participar?",
 			"detailParticipacao": [
-				"O Edital da Missão Kurumim já está no ar e você já pode se inscrever. Não deixe de ler o edital para ter todas as informações sobre como se inscrever e mais detalhes sobre o desenvolvimento dos projetos.",
-				"Este ano, contaremos com modulidades para lançamento de pequenos experimentos abertos, e também para o lançamento de satélites completos. Inscreva-se!"
+				"La convocatoria de la Misión Kurumim ya está disponible y ya puedes inscribirte. No dejes de leerla para tener toda la información sobre cómo postularte y más detalles sobre el desarrollo de los proyectos.",
+				"Este año contaremos con modalidades para el lanzamiento de pequeños experimentos abiertos y también para el lanzamiento de satélites completos. ¡Inscríbete!"
 			]
 		},
 		"kurumimCard4": {
-			"titleDates": "Datas",
+			"titleDates": "Fechas",
 			"text": [
-				["22/04 - Abertura das inscrições"],
-				["10/06 - Fim das inscrições"],
-				["30/06 - Data limite para submissão da Proposta Experimental"],
-				["21/07 - Data limite para anúncio dos aprovados"],
-				["07/08 - Fim do período para preencher o formulário de continuidade na olimpíada"],
-				["12/10 - Data limite para recebimento dos Sats, do Relatório Parcial e da Ficha de Dados"],
-				["26/10 - Sábado Aeroespacial e Lançamento"],
-				["30/11 - Fim do prazo de envio de Relatório Final e Formulário de Avaliação"],
-				["31/12 - Envio das premiações e certificados de participação"]
+				["08/05 - Apertura de inscripciones"],
+				["19/07 - Cierre de inscripciones"],
+				["31/08 - Fecha límite para la presentación de la Propuesta Experimental"],
+				["21/09 - Fecha límite para el anuncio de los aprobados"],
+				["28/10 - Fecha límite para la recepción de los Sats y de la Hoja de Datos"],
+				["31/10 - Sábado Aeroespacial y Lanzamiento"],
+				["30/11 - Fecha límite para el envío del Informe Final y del Formulario de Evaluación"],
+				["Enero de 2027 - Envío de premios y certificados de participación"]
 			],
-			"linksTitle": "Links Úteis",
-			"linkEdital": "Edital de Participação",
-			"linkModelo": "Projeto Modelo"
+			"linksTitle": "Enlaces útiles",
+			"linkEdital": "Convocatoria Kurumim 2026",
+			"linkModelo": "Plantilla de proyecto"
 		}
 	}
 
