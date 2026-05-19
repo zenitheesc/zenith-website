@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-    // Caso alguém queira adicionar +1 path pra import abosluto, só seguir o seguinte padrão abaixo:  
-    //   "@/components/*": ["components/*"]
-    }
-  }
-}
