@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Reimagining Zenith's web presence through a modern website that respects the group's technical knowledge and passion for development. We're a student group based in Brazil, we develop open software and hardware.",
   "main": "index.js",
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build --webpack",
