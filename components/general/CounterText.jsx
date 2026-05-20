@@ -1,35 +1,38 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
 
 export default function CounterText(props) {
   const { value } = props;
   const { suffix } = props;
   const { plus } = props;
   const [isVisible, setIsVisible] = useState(false);
+  const triggerRef = useRef(null);
 
-  const startCounting = (isInViewPort) => {
-    if (isInViewPort) {
-      setIsVisible(true);
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+        observer.disconnect();
+      }
+    }, { threshold: 0.2 });
+
+    if (triggerRef.current) {
+      observer.observe(triggerRef.current);
     }
-  };
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
       <div className={props.className}>
-        <CountUp
-          prefix={plus ? '+' : ''}
-          end={value}
-          start={isVisible ? null : 0}>
-          {({ countUpRef }) => (
-            <VisibilitySensor
-              active={!isVisible}
-              onChange={startCounting}
-              delayedCall>
-              <span ref={countUpRef} />
-            </VisibilitySensor>
-          )}
-        </CountUp>
+        <span ref={triggerRef} aria-hidden="true" />
+        {isVisible && (
+          <CountUp
+            prefix={plus ? '+' : ''}
+            end={value}
+          />
+        )}
         <h2>{suffix}</h2>
         <br />
       </div>
