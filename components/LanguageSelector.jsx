@@ -9,23 +9,17 @@ export default function LanguageSelector() {
     <>
       <div className={languageSelector}>
         <ul>
-          <Link href={currPage} locale="pt">
-            <li>
-              Português
-              </li>
-          </Link>
+          <li>
+            <Link href={currPage} locale="pt">Português</Link>
+          </li>
 
-          <Link href={currPage} locale="en">
-            <li>
-              English
-              </li>
-          </Link>
+          <li>
+            <Link href={currPage} locale="en">English</Link>
+          </li>
 
-          <Link href={currPage} locale="es">
-            <li>
-              Español
-            </li>
-          </Link>
+          <li>
+            <Link href={currPage} locale="es">Español</Link>
+          </li>
         </ul>
       </div>
     </>
