@@ -15,6 +15,7 @@ import {
 } from '@mui/material';
 import { useEffect } from 'react';
 
+// TODO mover textos para arquivo de tradução
 export default function LaunchesPage() {
   const { launches, isLoadingAllLaunches, error } = useAllLaunches();
 
@@ -31,19 +32,21 @@ export default function LaunchesPage() {
         </Typography>
       </Stack>
 
-      {error ? (
+      {error && (
         <Alert severity="error" sx={{ mb: 3 }}>
           {error}
         </Alert>
-      ) : null}
+      )}
 
-      {isLoadingAllLaunches ? (
+      {isLoadingAllLaunches && (
         <Box sx={{ display: 'flex', justifyContent: 'center', py: 10 }}>
           <CircularProgress />
         </Box>
-      ) : launches.length === 0 ? (
-        <Alert severity="info">Nenhum lançamento encontrado.</Alert>
-      ) : (
+      )}
+
+      {!isLoadingAllLaunches && launches.length === 0 && <Alert severity="info">Nenhum lançamento encontrado.</Alert>}
+
+      {!isLoadingAllLaunches && launches.length > 0 && (
         <Box
           sx={{
             display: 'grid',
