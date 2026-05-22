@@ -2,6 +2,6 @@ import dynamic from 'next/dynamic';
 import { useMemo } from 'react';
 
 export default function LaunchesPage() {
-  const Map = useMemo(() => dynamic(() => import('../../src/components/Map'), { ssr: false }), []);
+  const Map = useMemo(() => dynamic(() => import('../../src/components/Map/Map'), { ssr: false }), []);
   return <Map />;
 }
