@@ -17,5 +17,10 @@ export const formatLaunchDatetime = (datetime: string): string => {
     locale: ptBR
   });
 
-  return `${formattedDate} ${date.toLocaleTimeString('pt-BR')}`;
+  return `${formattedDate} - ${date.toLocaleTimeString('pt-BR')} UTC`;
+};
+
+export const convertAltitudeToKm = (altitude: number): string => {
+  const altitudeInKm = altitude / 1000;
+  return `${altitudeInKm.toFixed(2)} km`;
 };

@@ -1,19 +1,18 @@
-import { useAllLaunches } from '@/src/core/services/launches/useGetAllLaunches.service';
-import { formatLaunchDatetime, formatLaunchName } from '@/src/shared/utils/formatters.utils';
-import {
-  Alert,
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardHeader,
-  CircularProgress,
-  Container,
-  Stack,
-  Typography
-} from '@mui/material';
 import { useEffect } from 'react';
+import { useAllLaunches } from '@/src/core/services/launches/useGetAllLaunches.service';
+import { convertAltitudeToKm, formatLaunchDatetime, formatLaunchName } from '@/src/shared/utils/formatters.utils';
+import { Alert, Box, Button, Card, CardActions, CardContent, CardHeader } from '@mui/material';
+import { Chip, CircularProgress, Container, Stack, Typography } from '@mui/material';
+import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector } from '@mui/lab';
+import { TimelineContent, TimelineDot, timelineItemClasses } from '@mui/lab';
+import type {} from '@mui/lab/themeAugmentation';
+import PinDropIcon from '@mui/icons-material/PinDrop';
+import GpsNotFixedIcon from '@mui/icons-material/GpsNotFixed';
+import HeightIcon from '@mui/icons-material/Height';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import RouteIcon from '@mui/icons-material/Route';
+import SouthIcon from '@mui/icons-material/South';
+import ShareLocationIcon from '@mui/icons-material/ShareLocation';
 
 // TODO mover textos para arquivo de tradução
 export default function LaunchesPage() {
@@ -68,26 +67,55 @@ export default function LaunchesPage() {
                 }
                 subheader={formatLaunchDatetime(launch.launch_datetime)}
               />
-              <CardContent sx={{ pt: 1 }}>
+              <CardContent sx={{ py: 0, mb: 0 }}>
                 <Stack spacing={2}>
-                  <Box>
-                    <Typography variant="body2" color="text.secondary">
-                      {launch.launch_city} → {launch.landing_city}
-                    </Typography>
-                  </Box>
+                  <Box sx={{ display: 'flex', alignItems: 'flex-start' }}>
+                    <Timeline
+                      sx={{
+                        flex: 1,
+                        p: 0,
+                        mb: 0,
+                        [`& .${timelineItemClasses.root}:before`]: {
+                          flex: 0,
+                          padding: 0
+                        }
+                      }}>
+                      <TimelineItem>
+                        <TimelineSeparator>
+                          <TimelineDot sx={{ boxShadow: 'none', backgroundColor: 'transparent', py: 0, my: 1 }}>
+                            <ShareLocationIcon color="primary" />
+                          </TimelineDot>
+                          <TimelineConnector />
+                          {/* <RouteIcon sx={{ color: '#bdbdbd' }} /> */}
+                          {/* <TimelineConnector /> */}
+                        </TimelineSeparator>
+                        <TimelineContent>{launch.launch_city}</TimelineContent>
+                      </TimelineItem>
 
-                  <Box>
-                    <Typography variant="overline" color="text.secondary">
-                      Altitude máxima
-                    </Typography>
-                    <Typography variant="body1" sx={{ fontWeight: 600 }}>
-                      {launch.max_altitude.toLocaleString('pt-BR')} m
-                    </Typography>
+                      <TimelineItem sx={{ mb: 0, pb: 0 }}>
+                        <TimelineSeparator>
+                          <TimelineDot sx={{ boxShadow: 'none', backgroundColor: 'transparent', py: 0, my: 1 }}>
+                            <PinDropIcon color="primary" />
+                          </TimelineDot>
+                        </TimelineSeparator>
+                        <TimelineContent>{launch.landing_city}</TimelineContent>
+                      </TimelineItem>
+                    </Timeline>
+
+                    <Chip
+                      icon={<HeightIcon />}
+                      label={convertAltitudeToKm(launch.max_altitude)}
+                      color="primary"
+                      variant="filled"
+                      sx={{ alignSelf: 'flex-start', mt: 3 }}
+                    />
                   </Box>
                 </Stack>
               </CardContent>
               <CardActions sx={{ justifyContent: 'flex-end' }}>
-                <Button size="small">Ver detalhes</Button>
+                <Button size="small" endIcon={<ChevronRightIcon />}>
+                  Ver detalhes
+                </Button>
               </CardActions>
             </Card>
           ))}
