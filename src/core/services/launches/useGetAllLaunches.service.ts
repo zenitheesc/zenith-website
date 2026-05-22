@@ -1,28 +1,44 @@
-import { environment } from '@/src/environments/environment';
-import { LaunchRecord } from '@/src/types/api/launches-api.types';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { LaunchSummary } from '@/src/types/api/launches-api.types';
+import { getAllLaunches } from '../../api/launches/launches-api.service';
 
-export const useGetAllLaunches = () => {
-  const [content, setContent] = useState<LaunchRecord[] | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
+export const useAllLaunches = () => {
+  const [launches, setLaunches] = useState<LaunchSummary[]>([]);
+  const [isLoadingAllLaunches, setIsLoadingAllLaunches] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  const fetchAllLaunches = async () => {
-    setIsLoading(true);
-    setError(null);
-    try {
-      const response = await fetch(environment.launchesEndpoints.launches.all);
-      if (!response.ok) {
-        throw new Error('Failed to fetch all launches');
-      }
-      const data = await response.json();
-      setContent(data);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  useEffect(() => {
+    const controller = new AbortController();
 
-  return { content, isLoading, error, fetchAllLaunches };
+    const fetchLaunches = async () => {
+      setIsLoadingAllLaunches(true);
+      setError(null);
+
+      try {
+        const res = await getAllLaunches(controller.signal);
+        if (!res.ok) throw new Error('Erro ao buscar lançamentos');
+
+        const rawData = await res.json();
+        setLaunches(rawData);
+      } catch (err) {
+        if (err instanceof Error && err.name === 'AbortError') {
+          return;
+        }
+
+        setError(err instanceof Error ? err.message : 'Ocorreu um erro inesperado');
+      } finally {
+        if (!controller.signal.aborted) {
+          setIsLoadingAllLaunches(false);
+        }
+      }
+    };
+
+    fetchLaunches();
+
+    return () => {
+      controller.abort();
+    };
+  }, []);
+
+  return { launches, isLoadingAllLaunches, error };
 };

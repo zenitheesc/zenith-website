@@ -1,8 +1,8 @@
 import { environment } from '@/src/environments/environment';
 import { LaunchRecord, LaunchSummary } from '@/src/types/api/launches-api.types';
 
-export const getAllLaunches = async () => {
-  const allLaunches = await fetch(environment.launchesEndpoints.launches.all);
+export const getAllLaunches = async (signal?: AbortSignal) => {
+  const allLaunches = await fetch(environment.launchesEndpoints.launches.all, { signal });
   return allLaunches;
 };
 

@@ -4,18 +4,17 @@ import 'leaflet-defaulticon-compatibility';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import { MapProps } from '@/src/types/map.types';
 import { useEffect } from 'react';
-import { getAllLaunches } from '@/src/core/api/launches/launches-api.service';
+import { useAllLaunches } from '@/src/core/services/launches/useGetAllLaunches.service';
 
 export default function MyMap(props: MapProps) {
   const { position = [0, 0], zoom = 2 } = props;
+  const { launches, isLoadingAllLaunches } = useAllLaunches();
+
   useEffect(() => {
-    try {
-      const response = getAllLaunches();
-      console.log(response);
-    } catch (error) {
-      console.error('Error fetching launches data:', error);
+    if (!isLoadingAllLaunches) {
+      console.log('Lançamentos carregados:', launches);
     }
-  }, []);
+  }, [isLoadingAllLaunches, launches]);
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
