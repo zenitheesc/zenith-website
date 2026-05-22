@@ -51,6 +51,10 @@
   },
   "homepage": "https://github.com/zenitheesc/zenith-website#readme",
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^9.0.1",
+    "date-fns": "^4.2.1",
     "hamburger-react": "^2.4.0",
     "leaflet": "^1.9.4",
     "leaflet-defaulticon-compatibility": "^0.1.2",

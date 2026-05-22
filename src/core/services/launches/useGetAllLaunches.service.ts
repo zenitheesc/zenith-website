@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { LaunchSummary } from '@/src/types/api/launches-api.types';
-import { getAllLaunches } from '../../api/launches/launches-api.service';
+import { LaunchSummary } from '@/src/shared/types/api/launches-api.types';
+import { getAllLaunches } from '../launches.service';
 
 export const useAllLaunches = () => {
   const [launches, setLaunches] = useState<LaunchSummary[]>([]);
@@ -15,11 +15,10 @@ export const useAllLaunches = () => {
       setError(null);
 
       try {
-        const res = await getAllLaunches(controller.signal);
-        if (!res.ok) throw new Error('Erro ao buscar lançamentos');
-
-        const rawData = await res.json();
-        setLaunches(rawData);
+        const rawData = await getAllLaunches();
+        if (!controller.signal.aborted) {
+          setLaunches(rawData);
+        }
       } catch (err) {
         if (err instanceof Error && err.name === 'AbortError') {
           return;
