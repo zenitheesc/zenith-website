@@ -1,0 +1,15 @@
+{
+  "printWidth": 130,
+  "bracketSameLine": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "semi": true,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "auto",
+  "htmlWhitespaceSensitivity": "ignore",
+  "embeddedLanguageFormatting": "auto",
+  "angular-eslint/no-injectable-provided-in-root": "off"
+}

@@ -52,6 +52,8 @@
   "homepage": "https://github.com/zenitheesc/zenith-website#readme",
   "dependencies": {
     "hamburger-react": "^2.4.0",
+    "leaflet": "^1.9.4",
+    "leaflet-defaulticon-compatibility": "^0.1.2",
     "next": "^16.2.6",
     "next-seo": "^4.24.0",
     "next-translate": "^1.0.6",
@@ -60,12 +62,14 @@
     "react-countup": "^6.1.1",
     "react-dom": "^19.2.6",
     "react-icons": "^4.2.0",
+    "react-leaflet": "^5.0.0",
     "react-player": "^2.9.0",
     "react-responsive-carousel": "^3.2.22",
     "react-rotating-text": "^1.4.1",
     "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.21",
     "@types/node": "^25.9.1",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
