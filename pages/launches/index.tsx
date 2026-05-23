@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useAllLaunches } from '@/src/core/services/launches/useGetAllLaunches.service';
 import {
   convertAltitudeToKm,
@@ -17,11 +17,19 @@ import HeightIcon from '@mui/icons-material/Height';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ShareLocationIcon from '@mui/icons-material/ShareLocation';
 
+const SELECTED_LAUNCH_STORAGE_KEY = 'zenith-selected-launch';
+
 // TODO mover textos para arquivo de tradução
 export default function LaunchesPage() {
   const { launches, isLoadingAllLaunches, error } = useAllLaunches();
+  const router = useRouter();
 
   useEffect(() => {}, [isLoadingAllLaunches, launches]);
+
+  const handleLaunchDetails = (launch: (typeof launches)[number]) => {
+    sessionStorage.setItem(SELECTED_LAUNCH_STORAGE_KEY, JSON.stringify(launch));
+    router.push(`/launches/${slugifyLaunchName(launch.name)}`);
+  };
 
   return (
     <Container maxWidth="md" sx={{ py: 6 }}>
@@ -116,11 +124,7 @@ export default function LaunchesPage() {
                 </Stack>
               </CardContent>
               <CardActions sx={{ justifyContent: 'flex-end' }}>
-                <Button
-                  component={Link}
-                  href={`/launches/${slugifyLaunchName(launch.name)}`}
-                  size="small"
-                  endIcon={<ChevronRightIcon />}>
+                <Button size="small" endIcon={<ChevronRightIcon />} onClick={() => handleLaunchDetails(launch)}>
                   Ver detalhes
                 </Button>
               </CardActions>

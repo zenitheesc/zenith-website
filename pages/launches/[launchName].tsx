@@ -3,10 +3,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Alert, Box, Button, Card, CardContent, Chip, CircularProgress, Container, Grid, Stack, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { useAllLaunches } from '@/src/core/services/launches/useGetAllLaunches.service';
-import { getLaunchContent } from '@/src/core/services/launches.service';
 import { formatLaunchDatetime, formatLaunchName, slugifyLaunchName } from '@/src/shared/utils/formatters.utils';
-import { LaunchRecord } from '@/src/shared/types/api/launches-api.types';
+import { useGetLaunchContent } from '@/src/core/services/launches/useGetLaunchContent.service';
+import { LaunchSummary } from '@/src/shared/types/api/launches-api.types';
+
+const SELECTED_LAUNCH_STORAGE_KEY = 'zenith-selected-launch';
 
 const renderTelemetryValue = (value: string | number): string => {
   return typeof value === 'number' ? value.toLocaleString('pt-BR') : String(value);
@@ -15,41 +16,60 @@ const renderTelemetryValue = (value: string | number): string => {
 export default function LaunchDetailsPage() {
   const router = useRouter();
   const launchName = typeof router.query.launchName === 'string' ? router.query.launchName : '';
-  const { launches, isLoadingAllLaunches, error } = useAllLaunches();
-  const [records, setRecords] = useState<LaunchRecord[]>([]);
-  const [isLoadingRecords, setIsLoadingRecords] = useState(false);
-  const [recordsError, setRecordsError] = useState<string | null>(null);
-
-  const launch = useMemo(() => {
-    return launches.find((launchItem) => slugifyLaunchName(launchItem.name) === launchName);
-  }, [launches, launchName]);
+  const [launch, setLaunch] = useState<LaunchSummary | null>(null);
 
   useEffect(() => {
-    if (!launch) return;
+    const storedLaunch = sessionStorage.getItem(SELECTED_LAUNCH_STORAGE_KEY);
 
-    const controller = new AbortController();
+    if (!storedLaunch) {
+      setLaunch(null);
+      return;
+    }
 
-    const fetchLaunchRecords = async () => {
-      setIsLoadingRecords(true);
-      setRecordsError(null);
-      try {
-        const data = await getLaunchContent(launch.download_url);
-        if (!controller.signal.aborted) setRecords(data);
-      } catch (fetchError) {
-        if (fetchError instanceof Error && fetchError.name === 'AbortError') return;
-        setRecordsError(
-          fetchError instanceof Error ? fetchError.message : 'Não foi possível carregar os detalhes do lançamento.'
-        );
-      } finally {
-        if (!controller.signal.aborted) setIsLoadingRecords(false);
+    try {
+      const parsedLaunch: LaunchSummary = JSON.parse(storedLaunch);
+      const storedLaunchName = slugifyLaunchName(parsedLaunch.name);
+
+      if (storedLaunchName !== launchName) {
+        setLaunch(null);
+        return;
       }
-    };
 
-    fetchLaunchRecords();
-    return () => controller.abort();
-  }, [launch]);
+      setLaunch(parsedLaunch);
+    } catch {
+      setLaunch(null);
+    }
+  }, [launchName]);
 
-  if (isLoadingAllLaunches) {
+  const { records, isLoadingRecords, recordsError } = useGetLaunchContent(launch?.download_url ?? '');
+
+  if (!launchName) {
+    return (
+      <Container maxWidth="md" sx={{ py: 6 }}>
+        <Stack spacing={3}>
+          <Button component={Link} href="/launches" startIcon={<ArrowBackIcon />} sx={{ width: 'fit-content' }}>
+            Voltar para lançamentos
+          </Button>
+          <Alert severity="info">Lançamento não encontrado.</Alert>
+        </Stack>
+      </Container>
+    );
+  }
+
+  if (!launch) {
+    return (
+      <Container maxWidth="md" sx={{ py: 6 }}>
+        <Stack spacing={3}>
+          <Button component={Link} href="/launches" startIcon={<ArrowBackIcon />} sx={{ width: 'fit-content' }}>
+            Voltar para lançamentos
+          </Button>
+          <Alert severity="info">Lançamento não encontrado nesta sessão. Volte para a lista e abra o detalhe novamente.</Alert>
+        </Stack>
+      </Container>
+    );
+  }
+
+  if (isLoadingRecords) {
     return (
       <Container maxWidth="md" sx={{ py: 6 }}>
         <Box sx={{ display: 'flex', justifyContent: 'center', py: 10 }}>
@@ -59,15 +79,15 @@ export default function LaunchDetailsPage() {
     );
   }
 
-  if (error) {
+  if (recordsError) {
     return (
       <Container maxWidth="md" sx={{ py: 6 }}>
-        <Alert severity="error">{error}</Alert>
+        <Alert severity="error">{recordsError}</Alert>
       </Container>
     );
   }
 
-  if (!launch) {
+  if (records.length === 0) {
     return (
       <Container maxWidth="md" sx={{ py: 6 }}>
         <Stack spacing={3}>
@@ -112,35 +132,6 @@ export default function LaunchDetailsPage() {
           <Typography variant="h5" component="h2" sx={{ fontWeight: 700, mb: 2 }}>
             Leituras do lançamento
           </Typography>
-
-          {isLoadingRecords ? (
-            <Box sx={{ display: 'flex', justifyContent: 'center', py: 8 }}>
-              <CircularProgress />
-            </Box>
-          ) : recordsError ? (
-            <Alert severity="error">{recordsError}</Alert>
-          ) : records.length === 0 ? (
-            <Alert severity="info">Nenhuma leitura encontrada para esse lançamento.</Alert>
-          ) : (
-            <Grid container spacing={2}>
-              {records.slice(0, 6).map((record, index) => (
-                <Grid item xs={12} sm={6} md={4} key={`${record.datetime}-${index}`}>
-                  <Card variant="outlined" sx={{ borderRadius: 3, height: '100%' }}>
-                    <CardContent>
-                      <Stack spacing={1.5}>
-                        <Typography variant="subtitle2" color="text.secondary">
-                          {new Date(record.datetime).toLocaleString('pt-BR')}
-                        </Typography>
-                        <Typography variant="body2">Altitude: {renderTelemetryValue(record.alt)}</Typography>
-                        <Typography variant="body2">Velocidade vertical: {renderTelemetryValue(record.vel_v)}</Typography>
-                        <Typography variant="body2">Velocidade horizontal: {renderTelemetryValue(record.vel_h)}</Typography>
-                      </Stack>
-                    </CardContent>
-                  </Card>
-                </Grid>
-              ))}
-            </Grid>
-          )}
         </Box>
       </Stack>
     </Container>
