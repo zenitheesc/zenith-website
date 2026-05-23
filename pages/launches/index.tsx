@@ -32,7 +32,7 @@ export default function LaunchesPage() {
   };
 
   return (
-    <Container maxWidth="md" sx={{ py: 6 }}>
+    <Container maxWidth="lg" sx={{ py: 6 }}>
       <Stack spacing={1} sx={{ mb: 4 }}>
         <Typography variant="h3" component="h1" sx={{ fontWeight: 800 }}>
           Lançamentos

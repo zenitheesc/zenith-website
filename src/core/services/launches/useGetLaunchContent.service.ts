@@ -2,13 +2,13 @@ import { useEffect, useState } from 'react';
 import { getLaunchContent } from '../launches.service';
 import { LaunchRecord } from '@/src/shared/types/api/launches-api.types';
 
-export const useGetLaunchContent = (downloadUrl: string) => {
+export const useGetLaunchContent = (downloadUrl: string, enabled = true) => {
   const [records, setRecords] = useState<LaunchRecord[]>([]);
   const [isLoadingRecords, setIsLoadingRecords] = useState(false);
   const [recordsError, setRecordsError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!downloadUrl) return;
+    if (!enabled || !downloadUrl) return;
 
     const controller = new AbortController();
 
@@ -39,7 +39,7 @@ export const useGetLaunchContent = (downloadUrl: string) => {
     return () => {
       controller.abort();
     };
-  }, [downloadUrl]);
+  }, [downloadUrl, enabled]);
 
   return { records, isLoadingRecords, recordsError };
 };

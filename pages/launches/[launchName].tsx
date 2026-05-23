@@ -1,22 +1,30 @@
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Alert, Box, Button, Card, CardContent, Chip, CircularProgress, Container, Grid, Stack, Typography } from '@mui/material';
+import { Alert, Box, Button, Card, CardContent, Chip, CircularProgress, Container, Stack, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { formatLaunchDatetime, formatLaunchName, slugifyLaunchName } from '@/src/shared/utils/formatters.utils';
 import { useGetLaunchContent } from '@/src/core/services/launches/useGetLaunchContent.service';
 import { LaunchSummary } from '@/src/shared/types/api/launches-api.types';
+import dynamic from 'next/dynamic';
 
 const SELECTED_LAUNCH_STORAGE_KEY = 'zenith-selected-launch';
-
-const renderTelemetryValue = (value: string | number): string => {
-  return typeof value === 'number' ? value.toLocaleString('pt-BR') : String(value);
-};
 
 export default function LaunchDetailsPage() {
   const router = useRouter();
   const launchName = typeof router.query.launchName === 'string' ? router.query.launchName : '';
   const [launch, setLaunch] = useState<LaunchSummary | null>(null);
+
+  const { records, isLoadingRecords, recordsError } = useGetLaunchContent(launch?.download_url ?? '', Boolean(launch));
+
+  const Map = useMemo(
+    () =>
+      dynamic(() => import('@/src/components/Map/Map'), {
+        loading: () => <p>A map is loading</p>,
+        ssr: false
+      }),
+    []
+  );
 
   useEffect(() => {
     const storedLaunch = sessionStorage.getItem(SELECTED_LAUNCH_STORAGE_KEY);
@@ -40,8 +48,6 @@ export default function LaunchDetailsPage() {
       setLaunch(null);
     }
   }, [launchName]);
-
-  const { records, isLoadingRecords, recordsError } = useGetLaunchContent(launch?.download_url ?? '');
 
   if (!launchName) {
     return (
@@ -101,7 +107,7 @@ export default function LaunchDetailsPage() {
   }
 
   return (
-    <Container maxWidth="md" sx={{ py: 6 }}>
+    <Container maxWidth="lg" sx={{ py: 6 }}>
       <Stack spacing={3}>
         <Button component={Link} href="/launches" startIcon={<ArrowBackIcon />} sx={{ width: 'fit-content' }}>
           Voltar para lançamentos
@@ -132,6 +138,10 @@ export default function LaunchDetailsPage() {
           <Typography variant="h5" component="h2" sx={{ fontWeight: 700, mb: 2 }}>
             Leituras do lançamento
           </Typography>
+        </Box>
+
+        <Box>
+          <Map position={[records[0]?.lat, records[0]?.lon]} zoom={20} />
         </Box>
       </Stack>
     </Container>
