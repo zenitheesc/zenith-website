@@ -1,17 +1,20 @@
 import { useEffect } from 'react';
+import Link from 'next/link';
 import { useAllLaunches } from '@/src/core/services/launches/useGetAllLaunches.service';
-import { convertAltitudeToKm, formatLaunchDatetime, formatLaunchName } from '@/src/shared/utils/formatters.utils';
+import {
+  convertAltitudeToKm,
+  formatLaunchDatetime,
+  formatLaunchName,
+  slugifyLaunchName
+} from '@/src/shared/utils/formatters.utils';
 import { Alert, Box, Button, Card, CardActions, CardContent, CardHeader } from '@mui/material';
 import { Chip, CircularProgress, Container, Stack, Typography } from '@mui/material';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector } from '@mui/lab';
 import { TimelineContent, TimelineDot, timelineItemClasses } from '@mui/lab';
 import type {} from '@mui/lab/themeAugmentation';
 import PinDropIcon from '@mui/icons-material/PinDrop';
-import GpsNotFixedIcon from '@mui/icons-material/GpsNotFixed';
 import HeightIcon from '@mui/icons-material/Height';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import RouteIcon from '@mui/icons-material/Route';
-import SouthIcon from '@mui/icons-material/South';
 import ShareLocationIcon from '@mui/icons-material/ShareLocation';
 
 // TODO mover textos para arquivo de tradução
@@ -113,7 +116,11 @@ export default function LaunchesPage() {
                 </Stack>
               </CardContent>
               <CardActions sx={{ justifyContent: 'flex-end' }}>
-                <Button size="small" endIcon={<ChevronRightIcon />}>
+                <Button
+                  component={Link}
+                  href={`/launches/${slugifyLaunchName(launch.name)}`}
+                  size="small"
+                  endIcon={<ChevronRightIcon />}>
                   Ver detalhes
                 </Button>
               </CardActions>
