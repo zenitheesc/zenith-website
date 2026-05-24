@@ -1,91 +1,87 @@
 .heroContainer {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: cover;
-    cursor: default;
-}
-
-.heroContainerStaticImage {
-    background: url('../public/images/HomePage/static.webp') center center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px;
+  object-fit: cover;
+  cursor: default;
 }
 
 .particlesLayer {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .heroContainer > h1 {
-    color: #fff;
-    font-size: 4.6vw;
-    width: 85%;
-    font-weight: 250;
-    margin-bottom: 8px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
+  color: #fff;
+  font-size: 4.6vw;
+  width: 85%;
+  font-weight: 250;
+  margin-bottom: 8px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .heroContainer > hr {
-    background-color: #fff;
-    width: 90%;
-    position: relative;
-    z-index: 1;
+  background-color: #fff;
+  width: 90%;
+  position: relative;
+  z-index: 1;
 }
 
 .heroContainer > p {
-    color: #fff;
-    font-size: 1.8vw;
-    font-weight: 280;
-    width: 70%;
-    text-align: center;
-    margin-top: 8px;
-    position: relative;
-    z-index: 1;
+  color: #fff;
+  font-size: 1.8vw;
+  font-weight: 280;
+  width: 70%;
+  text-align: center;
+  margin-top: 8px;
+  position: relative;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1024px) {
-    .heroContainer > h1 {
-        font-size: 45px;
-    }
-    .heroContainer > p {
-        font-size: 21px;
-    }
+  .heroContainer > h1 {
+    font-size: 45px;
+  }
+  .heroContainer > p {
+    font-size: 21px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .heroContainer > h1 {
-        font-size: 35px;
-    }
-    .heroContainer > p {
-        font-size: 18px;
-    }
+  .heroContainer > h1 {
+    font-size: 35px;
+  }
+  .heroContainer > p {
+    font-size: 18px;
+  }
 }
 
 .hrAnimation {
-    width: 100%;
-    border: 1px solid white;
-    animation-name: horizontal-line;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
+  width: 100%;
+  border: 1px solid white;
+  animation-name: horizontal-line;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes horizontal-line {
-    0% {
-        width: 5%;
-        opacity: 0%;
-    }
-    100% {
-        width: 90%;
-        opacity: 100%;
-    }
+  0% {
+    width: 5%;
+    opacity: 0%;
+  }
+  100% {
+    width: 90%;
+    opacity: 100%;
+  }
 }

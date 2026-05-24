@@ -141,7 +141,14 @@ export default function LaunchDetailsPage() {
         </Box>
 
         <Box>
-          <Map position={[records[0]?.lat, records[0]?.lon]} zoom={20} />
+          <Map
+            position={[records[0]?.lat, records[0]?.lon]}
+            zoom={20}
+            trajectory={records.map((r) => [r.lat, r.lon])}
+            lineColor="#f44336"
+            lineWeight={4}
+            mapHeight="100vh"
+          />
         </Box>
       </Stack>
     </Container>
