@@ -16,6 +16,7 @@ import PinDropIcon from '@mui/icons-material/PinDrop';
 import HeightIcon from '@mui/icons-material/Height';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ShareLocationIcon from '@mui/icons-material/ShareLocation';
+import useTranslation from 'next-translate/useTranslation';
 
 const SELECTED_LAUNCH_STORAGE_KEY = 'zenith-selected-launch';
 
@@ -23,6 +24,10 @@ const SELECTED_LAUNCH_STORAGE_KEY = 'zenith-selected-launch';
 export default function LaunchesPage() {
   const { launches, isLoadingAllLaunches, error } = useAllLaunches();
   const router = useRouter();
+
+  const { t } = useTranslation();
+  const launchesTitle = t('allLaunches:allLaunchesPage.header.title');
+  const launchesDescription = t('allLaunches:allLaunchesPage.header.description');
 
   useEffect(() => {}, [isLoadingAllLaunches, launches]);
 
@@ -35,10 +40,10 @@ export default function LaunchesPage() {
     <Container maxWidth="lg" sx={{ py: 6 }}>
       <Stack spacing={1} sx={{ mb: 4 }}>
         <Typography variant="h3" component="h1" sx={{ fontWeight: 800 }}>
-          Lançamentos
+          {launchesTitle}
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          Acompanhe os lançamentos e os dados de cada missão.
+          {launchesDescription}
         </Typography>
       </Stack>
 
