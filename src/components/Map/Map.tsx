@@ -6,20 +6,23 @@ import 'leaflet-defaulticon-compatibility';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import { MapProps } from '@/src/shared/types/map.types';
 
-const startMarkerIcon = L.divIcon({
-  className: 'trajectory-start-marker',
-  html: '<div style="background:#2e7d32;color:#fff;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35);">I</div>',
-  iconSize: [24, 24],
-  iconAnchor: [12, 12],
-  popupAnchor: [0, -12]
+const parachutIconUrl = '/images/markersSondehub/parachute.svg';
+const startMarkerIconUrl = '/images/markersSondehub/target.svg';
+
+const startMarkerIcon = L.icon({
+  iconUrl: startMarkerIconUrl,
+  iconSize: [12, 12],
+  iconAnchor: [6, 6],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
 });
 
-const endMarkerIcon = L.divIcon({
-  className: 'trajectory-end-marker',
-  html: '<div style="background:#c62828;color:#fff;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35);">F</div>',
-  iconSize: [24, 24],
-  iconAnchor: [12, 12],
-  popupAnchor: [0, -12]
+const endMarkerIcon = L.icon({
+  iconUrl: parachutIconUrl,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
 });
 
 function FitBoundsToTrajectory({ trajectory }: { trajectory: MapProps['trajectory'] }) {
@@ -37,7 +40,7 @@ function FitBoundsToTrajectory({ trajectory }: { trajectory: MapProps['trajector
 }
 
 export default function MyMap(props: MapProps) {
-  const { position = [0, 0], zoom = 2, trajectory = [], lineColor = '#d32f2f', lineWeight = 4, mapHeight = '100vh' } = props;
+  const { position = [0, 0], zoom = 2, trajectory = [], lineColor = '#d32f2f', lineWeight = 2, mapHeight = '100vh' } = props;
   const hasTrajectory = trajectory.length > 1;
   const startPosition = hasTrajectory ? trajectory[0] : position;
   const endPosition = hasTrajectory ? trajectory[trajectory.length - 1] : position;
