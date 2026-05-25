@@ -107,50 +107,58 @@ export default function LaunchDetailsPage() {
   }
 
   return (
-    <Container maxWidth="lg" sx={{ py: 6 }}>
-      <Stack spacing={3}>
-        <Button component={Link} href="/launches" startIcon={<ArrowBackIcon />} sx={{ width: 'fit-content' }}>
-          Voltar para lançamentos
-        </Button>
+    <Box sx={{ width: '100%' }}>
+      <Container maxWidth="lg" sx={{ py: 6 }}>
+        <Stack spacing={3}>
+          <Button component={Link} href="/launches" startIcon={<ArrowBackIcon />} sx={{ width: 'fit-content' }}>
+            Voltar para lançamentos
+          </Button>
 
-        <Card elevation={4} sx={{ borderRadius: 3 }}>
-          <CardContent>
-            <Stack spacing={2}>
-              <Box>
-                <Typography variant="h4" component="h1" sx={{ fontWeight: 800 }}>
-                  {formatLaunchName(launch.name)}
-                </Typography>
-                <Typography variant="body1" color="text.secondary">
-                  {formatLaunchDatetime(launch.launch_datetime)}
-                </Typography>
-              </Box>
+          <Card elevation={4} sx={{ borderRadius: 3 }}>
+            <CardContent>
+              <Stack spacing={2}>
+                <Box>
+                  <Typography variant="h4" component="h1" sx={{ fontWeight: 800 }}>
+                    {formatLaunchName(launch.name)}
+                  </Typography>
+                  <Typography variant="body1" color="text.secondary">
+                    {formatLaunchDatetime(launch.launch_datetime)}
+                  </Typography>
+                </Box>
 
-              <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap' }} useFlexGap>
-                <Chip label={launch.launch_city} color="primary" variant="outlined" />
-                <Chip label={launch.landing_city} color="primary" variant="outlined" />
-                <Chip label={`${launch.max_altitude.toLocaleString('pt-BR')} m`} variant="outlined" />
+                <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap' }} useFlexGap>
+                  <Chip label={launch.launch_city} color="primary" variant="outlined" />
+                  <Chip label={launch.landing_city} color="primary" variant="outlined" />
+                  <Chip label={`${launch.max_altitude.toLocaleString('pt-BR')} m`} variant="outlined" />
+                </Stack>
               </Stack>
-            </Stack>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
 
-        <Box>
-          <Typography variant="h5" component="h2" sx={{ fontWeight: 700, mb: 2 }}>
-            Leituras do lançamento
-          </Typography>
-        </Box>
+          <Box>
+            <Typography variant="h5" component="h2" sx={{ fontWeight: 700, mb: 2 }}>
+              Leituras do lançamento
+            </Typography>
+          </Box>
+        </Stack>
+      </Container>
 
-        <Box>
-          <Map
-            position={[records[0]?.lat, records[0]?.lon]}
-            zoom={20}
-            trajectory={records.map((r) => [r.lat, r.lon])}
-            lineColor="#f44336"
-            lineWeight={4}
-            mapHeight="100vh"
-          />
-        </Box>
-      </Stack>
-    </Container>
+      <Box
+        sx={{
+          width: '95%',
+          maxWidth: '95%',
+          mx: 'auto',
+          overflow: 'hidden'
+        }}>
+        <Map
+          position={[records[0]?.lat, records[0]?.lon]}
+          zoom={20}
+          trajectory={records.map((r) => [r.lat, r.lon])}
+          lineColor="#f44336"
+          lineWeight={4}
+          mapHeight="100vh"
+        />
+      </Box>
+    </Box>
   );
 }
