@@ -5,6 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import { MapProps } from '@/src/shared/types/map.types';
+import { convertAltitudeToKm, formatLaunchDatetime } from '@/src/shared/utils/formatters.utils';
 
 const parachutIconUrl = '/images/markersSondehub/parachute.svg';
 const startMarkerIconUrl = '/images/markersSondehub/target.svg';
@@ -39,11 +40,62 @@ function FitBoundsToTrajectory({ trajectory }: { trajectory: MapProps['trajector
   return null;
 }
 
+function LaunchPointPopup({
+  title,
+  record,
+  fallbackLabel
+}: {
+  title: string;
+  record?: MapProps['trajectoryRecords'][number];
+  fallbackLabel: string;
+}) {
+  const formatNumber = (value: number, digits = 2) => value.toFixed(digits);
+  const formatVelocity = (velocity: number) => `${formatNumber(velocity)} m/s`;
+  const formatBattery = (battery: number) => `${formatNumber(battery)} V`;
+
+  return (
+    <div style={{ minWidth: 240 }}>
+      <div style={{ fontWeight: 700, marginBottom: 8 }}>{title}</div>
+      {record ? (
+        <div style={{ display: 'grid', gap: 4 }}>
+          <div>{formatLaunchDatetime(record.datetime)}</div>
+          <div>Callsign: {record.uploader_callsign}</div>
+          <div>Serial: {record.serial}</div>
+          <div>Fabricante: {record.manufacturer}</div>
+          <div>
+            Tipo/Subtipo: {record.type} / {record.subtype}
+          </div>
+          <div>Bateria: {formatBattery(record.batt)}</div>
+
+          <div>Altitude: {convertAltitudeToKm(record.alt)}</div>
+          <div>Vel. horizontal: {formatVelocity(record.vel_h)}</div>
+          <div>Vel. vertical: {formatVelocity(record.vel_v)}</div>
+          <div>
+            Lat/Lon: {record.lat.toFixed(5)}, {record.lon.toFixed(5)}
+          </div>
+        </div>
+      ) : (
+        <div>{fallbackLabel}</div>
+      )}
+    </div>
+  );
+}
+
 export default function MyMap(props: MapProps) {
-  const { position = [0, 0], zoom = 2, trajectory = [], lineColor = '#d32f2f', lineWeight = 2, mapHeight = '100vh' } = props;
+  const {
+    position = [0, 0],
+    zoom = 2,
+    trajectory = [],
+    trajectoryRecords = [],
+    lineColor = '#d32f2f',
+    lineWeight = 2,
+    mapHeight = '100vh'
+  } = props;
   const hasTrajectory = trajectory.length > 1;
   const startPosition = hasTrajectory ? trajectory[0] : position;
   const endPosition = hasTrajectory ? trajectory[trajectory.length - 1] : position;
+  const startRecord = trajectoryRecords[0];
+  const endRecord = trajectoryRecords[trajectoryRecords.length - 1];
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: mapHeight }}>
@@ -58,10 +110,14 @@ export default function MyMap(props: MapProps) {
         {hasTrajectory ? (
           <>
             <Marker position={startPosition} icon={startMarkerIcon}>
-              <Popup>Inicio da trajetoria</Popup>
+              <Popup>
+                <LaunchPointPopup title="Início da trajetória" record={startRecord} fallbackLabel="Inicio da trajetoria" />
+              </Popup>
             </Marker>
             <Marker position={endPosition} icon={endMarkerIcon}>
-              <Popup>Fim da trajetoria</Popup>
+              <Popup>
+                <LaunchPointPopup title="Fim da trajetória" record={endRecord} fallbackLabel="Fim da trajetoria" />
+              </Popup>
             </Marker>
           </>
         ) : (

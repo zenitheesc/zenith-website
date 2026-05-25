@@ -154,6 +154,7 @@ export default function LaunchDetailsPage() {
           position={[records[0]?.lat, records[0]?.lon]}
           zoom={20}
           trajectory={records.map((r) => [r.lat, r.lon])}
+          trajectoryRecords={records}
           lineColor="#f44336"
           lineWeight={4}
           mapHeight="100vh"
