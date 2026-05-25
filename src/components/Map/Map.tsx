@@ -47,7 +47,7 @@ export default function MyMap(props: MapProps) {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: mapHeight }}>
-      <MapContainer center={position} zoom={zoom} scrollWheelZoom={false} style={{ height: '100%', width: '100%' }}>
+      <MapContainer center={position} zoom={zoom} scrollWheelZoom={true} style={{ height: '100%', width: '100%' }}>
         <FitBoundsToTrajectory trajectory={trajectory} />
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
