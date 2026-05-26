@@ -2,7 +2,7 @@ import { Card, CardActions, CardContent, CardHeader, Button, Chip, Stack, Typogr
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import HeightIcon from '@mui/icons-material/Height';
 import LaunchAndLandingCities from '@/src/components/LaunchAndLandingCities/LaunchAndLandingCities';
-import { convertAltitudeToKm, formatLaunchDatetime, formatLaunchName } from '@/src/shared/utils/formatters.utils';
+import { formatAltitudeInKm, formatLaunchDatetime, formatLaunchName } from '@/src/shared/utils/formatters.utils';
 import { LaunchSummaryCardProps } from '@/src/shared/props/components/launch-summary-card.props';
 
 export default function LaunchSummaryCard({ launch, onDetailsClick }: LaunchSummaryCardProps) {
@@ -24,7 +24,7 @@ export default function LaunchSummaryCard({ launch, onDetailsClick }: LaunchSumm
 
             <Chip
               icon={<HeightIcon />}
-              label={convertAltitudeToKm(launch.max_altitude)}
+              label={formatAltitudeInKm(launch.max_altitude)}
               color="primary"
               variant="filled"
               sx={{ alignSelf: 'flex-start', mt: 3 }}

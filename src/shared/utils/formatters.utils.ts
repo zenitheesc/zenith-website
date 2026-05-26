@@ -60,13 +60,7 @@ export const formatLaunchDatetime = (datetime: string): string => {
   return `${formattedDate} - ${date.toLocaleTimeString('pt-BR')}`;
 };
 
-/**
- * Converts altitude from meters to kilometers for display.
- *
- * @param altitude - Altitude value in meters.
- * @returns The altitude formatted in kilometers with two decimal places.
- */
-export const convertAltitudeToKm = (altitude: number): string => {
-  const altitudeInKm = altitude / 1000;
-  return `${altitudeInKm.toFixed(2)} km`;
-};
+export const formatAltitude = (altitude: number) =>
+  `${new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} m`;
+export const formatAltitudeInKm = (altitude: number) =>
+  `${new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(altitude / 1000)} km`;

@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import { MapProps } from '@/src/shared/types/map.types';
-import { convertAltitudeToKm, formatLaunchDatetime } from '@/src/shared/utils/formatters.utils';
+import { formatAltitudeInKm, formatLaunchDatetime } from '@/src/shared/utils/formatters.utils';
 
 const parachutIconUrl = '/images/markersSondehub/parachute.svg';
 const payloadNotRecoveredIconUrl = '/images/markersSondehub/payload-not-recovered.png';
@@ -77,7 +77,7 @@ function LaunchPointPopup({
           </div>
           <div>Bateria: {formatBattery(record.batt)}</div>
 
-          <div>Altitude: {convertAltitudeToKm(record.alt)}</div>
+          <div>Altitude: {formatAltitudeInKm(record.alt)}</div>
           <div>Vel. horizontal: {formatVelocity(record.vel_h)}</div>
           <div>Vel. vertical: {formatVelocity(record.vel_v)}</div>
           <div>

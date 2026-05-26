@@ -3,12 +3,30 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Alert, Box, Button, Card, CardContent, Chip, CircularProgress, Container, Stack, Typography } from '@mui/material';
-import { formatLaunchDatetime, formatLaunchName, slugifyLaunchName } from '@/src/shared/utils/formatters.utils';
+import {
+  formatAltitude,
+  formatAltitudeInKm,
+  formatLaunchDatetime,
+  formatLaunchName,
+  slugifyLaunchName
+} from '@/src/shared/utils/formatters.utils';
 import { useGetLaunchContent } from '@/src/core/services/launches/useGetLaunchContent.service';
 import { LaunchSummary } from '@/src/shared/types/api/launches-api.types';
 import dynamic from 'next/dynamic';
+import LaunchAndLandingCities from '@/src/components/LaunchAndLandingCities/LaunchAndLandingCities';
 
 const SELECTED_LAUNCH_STORAGE_KEY = 'zenith-selected-launch';
+
+// TODO mover textos para arquivo de tradução
+// TODO mover para arquivos de formatters
+const formatMissionDuration = (start: string, end: string) => {
+  const durationInSeconds = Math.max(0, Math.round((new Date(end).getTime() - new Date(start).getTime()) / 1000));
+  const hours = Math.floor(durationInSeconds / 3600);
+  const minutes = Math.floor((durationInSeconds % 3600) / 60);
+  const seconds = durationInSeconds % 60;
+
+  return `${hours}h ${minutes}min ${seconds}seg`;
+};
 
 export default function LaunchDetailsPage() {
   const router = useRouter();
@@ -103,7 +121,7 @@ export default function LaunchDetailsPage() {
             <React.Fragment>
               <Card elevation={4} sx={{ borderRadius: 3 }}>
                 <CardContent>
-                  <Stack spacing={2}>
+                  <Stack spacing={3}>
                     <Box>
                       <Typography variant="h4" component="h1" sx={{ fontWeight: 800 }}>
                         {formatLaunchName(launch.name)}
@@ -113,10 +131,24 @@ export default function LaunchDetailsPage() {
                       </Typography>
                     </Box>
 
+                    <LaunchAndLandingCities startLabel={launch.launch_city} endLabel={launch.landing_city} />
+
                     <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap' }} useFlexGap>
-                      <Chip label={launch.launch_city} color="primary" variant="outlined" />
-                      <Chip label={launch.landing_city} color="primary" variant="outlined" />
-                      <Chip label={`${launch.max_altitude.toLocaleString('pt-BR')} m`} variant="outlined" />
+                      {/* <Chip label="Altitude máxima" color="primary" variant="outlined" /> */}
+                      <Chip
+                        label={`Altitude máxima: ${formatAltitude(launch.max_altitude)} m (${formatAltitudeInKm(
+                          launch.max_altitude
+                        )} km)`}
+                        variant="outlined"
+                        color="primary"
+                      />
+                      <Chip
+                        label={`Duração aprox.: ${formatMissionDuration(
+                          records[0].datetime,
+                          records[records.length - 1].datetime
+                        )}`}
+                        variant="outlined"
+                      />
                     </Stack>
                   </Stack>
                 </CardContent>
