@@ -9,14 +9,11 @@ import {
 } from '@/src/shared/utils/formatters.utils';
 import { Alert, Box, Button, Card, CardActions, CardContent, CardHeader } from '@mui/material';
 import { Chip, CircularProgress, Container, Stack, Typography } from '@mui/material';
-import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector } from '@mui/lab';
-import { TimelineContent, TimelineDot, timelineItemClasses } from '@mui/lab';
 import type {} from '@mui/lab/themeAugmentation';
-import PinDropIcon from '@mui/icons-material/PinDrop';
 import HeightIcon from '@mui/icons-material/Height';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ShareLocationIcon from '@mui/icons-material/ShareLocation';
 import useTranslation from 'next-translate/useTranslation';
+import LaunchAndLandingCities from '@/src/components/LaunchAndLandingCities/LaunchAndLandingCities';
 
 const SELECTED_LAUNCH_STORAGE_KEY = 'zenith-selected-launch';
 
@@ -86,37 +83,7 @@ export default function LaunchesPage() {
               <CardContent sx={{ py: 0, mb: 0 }}>
                 <Stack spacing={2}>
                   <Box sx={{ display: 'flex', alignItems: 'flex-start' }}>
-                    <Timeline
-                      sx={{
-                        flex: 1,
-                        p: 0,
-                        mb: 0,
-                        [`& .${timelineItemClasses.root}:before`]: {
-                          flex: 0,
-                          padding: 0
-                        }
-                      }}>
-                      <TimelineItem>
-                        <TimelineSeparator>
-                          <TimelineDot sx={{ boxShadow: 'none', backgroundColor: 'transparent', py: 0, my: 1 }}>
-                            <ShareLocationIcon color="primary" />
-                          </TimelineDot>
-                          <TimelineConnector />
-                          {/* <RouteIcon sx={{ color: '#bdbdbd' }} /> */}
-                          {/* <TimelineConnector /> */}
-                        </TimelineSeparator>
-                        <TimelineContent>{launch.launch_city}</TimelineContent>
-                      </TimelineItem>
-
-                      <TimelineItem sx={{ mb: 0, pb: 0 }}>
-                        <TimelineSeparator>
-                          <TimelineDot sx={{ boxShadow: 'none', backgroundColor: 'transparent', py: 0, my: 1 }}>
-                            <PinDropIcon color="primary" />
-                          </TimelineDot>
-                        </TimelineSeparator>
-                        <TimelineContent>{launch.landing_city}</TimelineContent>
-                      </TimelineItem>
-                    </Timeline>
+                    <LaunchAndLandingCities startLabel={launch.launch_city} endLabel={launch.landing_city} />
 
                     <Chip
                       icon={<HeightIcon />}
