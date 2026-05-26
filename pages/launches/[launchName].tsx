@@ -19,7 +19,7 @@ export default function LaunchDetailsPage() {
 
   const Map = useMemo(
     () =>
-      dynamic(() => import('@/src/components/Map/Map'), {
+      dynamic(() => import('@/src/components/Map/MapTrajectory'), {
         loading: () => <p>A map is loading</p>,
         ssr: false
       }),

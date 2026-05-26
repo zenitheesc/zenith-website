@@ -82,7 +82,7 @@ function LaunchPointPopup({
   );
 }
 
-export default function MyMap(props: MapProps) {
+export default function MapTrajectory(props: MapProps) {
   const {
     position = [0, 0],
     zoom = 2,
