@@ -1,8 +1,8 @@
-import { useEffect, useMemo, useState } from 'react';
-import Link from 'next/link';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
-import { Alert, Box, Button, Card, CardContent, Chip, CircularProgress, Container, Stack, Typography } from '@mui/material';
+import Link from 'next/link';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { Alert, Box, Button, Card, CardContent, Chip, CircularProgress, Container, Stack, Typography } from '@mui/material';
 import { formatLaunchDatetime, formatLaunchName, slugifyLaunchName } from '@/src/shared/utils/formatters.utils';
 import { useGetLaunchContent } from '@/src/core/services/launches/useGetLaunchContent.service';
 import { LaunchSummary } from '@/src/shared/types/api/launches-api.types';
@@ -14,6 +14,7 @@ export default function LaunchDetailsPage() {
   const router = useRouter();
   const launchName = typeof router.query.launchName === 'string' ? router.query.launchName : '';
   const [launch, setLaunch] = useState<LaunchSummary | null>(null);
+  const [launchResolved, setLaunchResolved] = useState(false);
 
   const { records, isLoadingRecords, recordsError } = useGetLaunchContent(launch?.download_url ?? '', Boolean(launch));
 
@@ -27,10 +28,17 @@ export default function LaunchDetailsPage() {
   );
 
   useEffect(() => {
+    if (!router.isReady) {
+      return;
+    }
+
+    setLaunchResolved(false);
+
     const storedLaunch = sessionStorage.getItem(SELECTED_LAUNCH_STORAGE_KEY);
 
     if (!storedLaunch) {
       setLaunch(null);
+      setLaunchResolved(true);
       return;
     }
 
@@ -40,71 +48,17 @@ export default function LaunchDetailsPage() {
 
       if (storedLaunchName !== launchName) {
         setLaunch(null);
+        setLaunchResolved(true);
         return;
       }
 
       setLaunch(parsedLaunch);
     } catch {
       setLaunch(null);
+    } finally {
+      setLaunchResolved(true);
     }
-  }, [launchName]);
-
-  if (!launchName) {
-    return (
-      <Container maxWidth="md" sx={{ py: 6 }}>
-        <Stack spacing={3}>
-          <Button component={Link} href="/launches" startIcon={<ArrowBackIcon />} sx={{ width: 'fit-content' }}>
-            Voltar para lançamentos
-          </Button>
-          <Alert severity="info">Lançamento não encontrado.</Alert>
-        </Stack>
-      </Container>
-    );
-  }
-
-  if (!launch) {
-    return (
-      <Container maxWidth="md" sx={{ py: 6 }}>
-        <Stack spacing={3}>
-          <Button component={Link} href="/launches" startIcon={<ArrowBackIcon />} sx={{ width: 'fit-content' }}>
-            Voltar para lançamentos
-          </Button>
-          <Alert severity="info">Lançamento não encontrado nesta sessão. Volte para a lista e abra o detalhe novamente.</Alert>
-        </Stack>
-      </Container>
-    );
-  }
-
-  if (isLoadingRecords) {
-    return (
-      <Container maxWidth="md" sx={{ py: 6 }}>
-        <Box sx={{ display: 'flex', justifyContent: 'center', py: 10 }}>
-          <CircularProgress />
-        </Box>
-      </Container>
-    );
-  }
-
-  if (recordsError) {
-    return (
-      <Container maxWidth="md" sx={{ py: 6 }}>
-        <Alert severity="error">{recordsError}</Alert>
-      </Container>
-    );
-  }
-
-  if (records.length === 0) {
-    return (
-      <Container maxWidth="md" sx={{ py: 6 }}>
-        <Stack spacing={3}>
-          <Button component={Link} href="/launches" startIcon={<ArrowBackIcon />} sx={{ width: 'fit-content' }}>
-            Voltar para lançamentos
-          </Button>
-          <Alert severity="info">Lançamento não encontrado.</Alert>
-        </Stack>
-      </Container>
-    );
-  }
+  }, [launchName, router.isReady]);
 
   return (
     <Box sx={{ width: '100%' }}>
@@ -114,53 +68,83 @@ export default function LaunchDetailsPage() {
             Voltar para lançamentos
           </Button>
 
-          <Card elevation={4} sx={{ borderRadius: 3 }}>
-            <CardContent>
-              <Stack spacing={2}>
+          {!router.isReady ||
+            (!launchResolved && (
+              <Box sx={{ display: 'flex', justifyContent: 'center', py: 10 }}>
+                <CircularProgress />
+              </Box>
+            ))}
+
+          {!launchName ||
+            (!launch && (
+              <Alert severity="info">
+                {!launchName
+                  ? 'Lançamento não encontrado.'
+                  : 'Lançamento não encontrado nesta sessão. Volte para a lista e abra o detalhe novamente.'}
+              </Alert>
+            ))}
+
+          {isLoadingRecords && (
+            <Box sx={{ display: 'flex', justifyContent: 'center', py: 10 }}>
+              <CircularProgress />
+            </Box>
+          )}
+
+          {recordsError && <Alert severity="error">{recordsError}</Alert>}
+
+          {records.length === 0 && <Alert severity="info">Lançamento não encontrado.</Alert>}
+
+          {launch && records.length > 0 && (
+            <React.Fragment>
+              <Card elevation={4} sx={{ borderRadius: 3 }}>
+                <CardContent>
+                  <Stack spacing={2}>
+                    <Box>
+                      <Typography variant="h4" component="h1" sx={{ fontWeight: 800 }}>
+                        {formatLaunchName(launch.name)}
+                      </Typography>
+                      <Typography variant="body1" color="text.secondary">
+                        {formatLaunchDatetime(launch.launch_datetime)}
+                      </Typography>
+                    </Box>
+
+                    <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap' }} useFlexGap>
+                      <Chip label={launch.launch_city} color="primary" variant="outlined" />
+                      <Chip label={launch.landing_city} color="primary" variant="outlined" />
+                      <Chip label={`${launch.max_altitude.toLocaleString('pt-BR')} m`} variant="outlined" />
+                    </Stack>
+                  </Stack>
+                </CardContent>
+              </Card>
+
+              <Box
+                sx={{
+                  width: '95%',
+                  maxWidth: '95%',
+                  mx: 'auto',
+                  overflow: 'hidden'
+                }}>
                 <Box>
-                  <Typography variant="h4" component="h1" sx={{ fontWeight: 800 }}>
-                    {formatLaunchName(launch.name)}
-                  </Typography>
-                  <Typography variant="body1" color="text.secondary">
-                    {formatLaunchDatetime(launch.launch_datetime)}
+                  <Typography variant="h5" component="h2" sx={{ fontWeight: 700, mb: 2 }}>
+                    Trajetória do lançamento
                   </Typography>
                 </Box>
 
-                <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap' }} useFlexGap>
-                  <Chip label={launch.launch_city} color="primary" variant="outlined" />
-                  <Chip label={launch.landing_city} color="primary" variant="outlined" />
-                  <Chip label={`${launch.max_altitude.toLocaleString('pt-BR')} m`} variant="outlined" />
-                </Stack>
-              </Stack>
-            </CardContent>
-          </Card>
-
-          <Box>
-            <Typography variant="h5" component="h2" sx={{ fontWeight: 700, mb: 2 }}>
-              Trajetória do lançamento
-            </Typography>
-          </Box>
+                <MapTrajectory
+                  position={[records[0]?.lat, records[0]?.lon]}
+                  zoom={20}
+                  trajectory={records.map((r) => [r.lat, r.lon])}
+                  trajectoryRecords={records}
+                  landingCity={launch.landing_city}
+                  lineColor="#f44336"
+                  lineWeight={4}
+                  mapHeight="100vh"
+                />
+              </Box>
+            </React.Fragment>
+          )}
         </Stack>
       </Container>
-
-      <Box
-        sx={{
-          width: '95%',
-          maxWidth: '95%',
-          mx: 'auto',
-          overflow: 'hidden'
-        }}>
-        <MapTrajectory
-          position={[records[0]?.lat, records[0]?.lon]}
-          zoom={20}
-          trajectory={records.map((r) => [r.lat, r.lon])}
-          trajectoryRecords={records}
-          landingCity={launch.landing_city}
-          lineColor="#f44336"
-          lineWeight={4}
-          mapHeight="100vh"
-        />
-      </Box>
     </Box>
   );
 }
