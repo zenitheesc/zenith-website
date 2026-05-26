@@ -1,19 +1,11 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useAllLaunches } from '@/src/core/services/launches/useGetAllLaunches.service';
-import {
-  convertAltitudeToKm,
-  formatLaunchDatetime,
-  formatLaunchName,
-  slugifyLaunchName
-} from '@/src/shared/utils/formatters.utils';
-import { Alert, Box, Button, Card, CardActions, CardContent, CardHeader } from '@mui/material';
-import { Chip, CircularProgress, Container, Stack, Typography } from '@mui/material';
+import { slugifyLaunchName } from '@/src/shared/utils/formatters.utils';
+import { Alert, Box, CircularProgress, Container, Stack, Typography } from '@mui/material';
 import type {} from '@mui/lab/themeAugmentation';
-import HeightIcon from '@mui/icons-material/Height';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import useTranslation from 'next-translate/useTranslation';
-import LaunchAndLandingCities from '@/src/components/LaunchAndLandingCities/LaunchAndLandingCities';
+import LaunchSummaryCard from '@/src/components/LaunchCard/LaunchSummaryCard';
 
 const SELECTED_LAUNCH_STORAGE_KEY = 'zenith-selected-launch';
 
@@ -70,37 +62,11 @@ export default function LaunchesPage() {
             }
           }}>
           {launches.map((launch) => (
-            <Card key={`${launch.name}-${launch.launch_datetime}`} elevation={4} sx={{ height: '100%', borderRadius: 3 }}>
-              <CardHeader
-                sx={{ pb: 0 }}
-                title={
-                  <Typography variant="h6" component="h2" sx={{ fontWeight: 700 }}>
-                    {formatLaunchName(launch.name)}
-                  </Typography>
-                }
-                subheader={formatLaunchDatetime(launch.launch_datetime)}
-              />
-              <CardContent sx={{ py: 0, mb: 0 }}>
-                <Stack spacing={2}>
-                  <Box sx={{ display: 'flex', alignItems: 'flex-start' }}>
-                    <LaunchAndLandingCities startLabel={launch.launch_city} endLabel={launch.landing_city} />
-
-                    <Chip
-                      icon={<HeightIcon />}
-                      label={convertAltitudeToKm(launch.max_altitude)}
-                      color="primary"
-                      variant="filled"
-                      sx={{ alignSelf: 'flex-start', mt: 3 }}
-                    />
-                  </Box>
-                </Stack>
-              </CardContent>
-              <CardActions sx={{ justifyContent: 'flex-end' }}>
-                <Button size="small" endIcon={<ChevronRightIcon />} onClick={() => handleLaunchDetails(launch)}>
-                  Ver detalhes
-                </Button>
-              </CardActions>
-            </Card>
+            <LaunchSummaryCard
+              key={`${launch.name}-${launch.launch_datetime}`}
+              launch={launch}
+              onDetailsClick={handleLaunchDetails}
+            />
           ))}
         </Box>
       )}
