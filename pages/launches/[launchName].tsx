@@ -17,7 +17,7 @@ export default function LaunchDetailsPage() {
 
   const { records, isLoadingRecords, recordsError } = useGetLaunchContent(launch?.download_url ?? '', Boolean(launch));
 
-  const Map = useMemo(
+  const MapTrajectory = useMemo(
     () =>
       dynamic(() => import('@/src/components/Map/MapTrajectory'), {
         loading: () => <p>A map is loading</p>,
@@ -150,11 +150,12 @@ export default function LaunchDetailsPage() {
           mx: 'auto',
           overflow: 'hidden'
         }}>
-        <Map
+        <MapTrajectory
           position={[records[0]?.lat, records[0]?.lon]}
           zoom={20}
           trajectory={records.map((r) => [r.lat, r.lon])}
           trajectoryRecords={records}
+          landingCity={launch.landing_city}
           lineColor="#f44336"
           lineWeight={4}
           mapHeight="100vh"

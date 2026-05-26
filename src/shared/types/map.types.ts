@@ -5,6 +5,7 @@ export type MapProps = {
   zoom?: number;
   trajectory?: LaunchTrajectory;
   trajectoryRecords?: LaunchRecord[];
+  landingCity?: string;
   lineColor?: string;
   lineWeight?: number;
   mapHeight?: string;

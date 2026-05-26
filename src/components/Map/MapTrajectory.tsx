@@ -8,6 +8,7 @@ import { MapProps } from '@/src/shared/types/map.types';
 import { convertAltitudeToKm, formatLaunchDatetime } from '@/src/shared/utils/formatters.utils';
 
 const parachutIconUrl = '/images/markersSondehub/parachute.svg';
+const payloadNotRecoveredIconUrl = '/images/markersSondehub/payload-not-recovered.png';
 const startMarkerIconUrl = '/images/markersSondehub/target.svg';
 
 const startMarkerIcon = L.icon({
@@ -23,6 +24,14 @@ const endMarkerIcon = L.icon({
   iconSize: [25, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+const unknownEndMarkerIcon = L.icon({
+  iconUrl: payloadNotRecoveredIconUrl,
+  iconSize: [28, 28],
+  iconAnchor: [14, 14],
+  popupAnchor: [1, -16],
   shadowSize: [41, 41]
 });
 
@@ -88,6 +97,7 @@ export default function MapTrajectory(props: MapProps) {
     zoom = 2,
     trajectory = [],
     trajectoryRecords = [],
+    landingCity = '',
     lineColor = '#d32f2f',
     lineWeight = 2,
     mapHeight = '100vh'
@@ -98,6 +108,10 @@ export default function MapTrajectory(props: MapProps) {
   const startRecord = trajectoryRecords[0];
   const endRecord = trajectoryRecords[trajectoryRecords.length - 1];
   const { BaseLayer } = LayersControl;
+  const isUnknownEndPoint = Boolean(
+    landingCity && (landingCity.toLowerCase().includes('desconhecido') || landingCity.toLowerCase().includes('unknown'))
+  );
+  const finalMarkerIcon = isUnknownEndPoint ? unknownEndMarkerIcon : endMarkerIcon;
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: mapHeight }}>
@@ -126,7 +140,7 @@ export default function MapTrajectory(props: MapProps) {
                 <LaunchPointPopup title="Início da trajetória" record={startRecord} fallbackLabel="Inicio da trajetoria" />
               </Popup>
             </Marker>
-            <Marker position={endPosition} icon={endMarkerIcon}>
+            <Marker position={endPosition} icon={finalMarkerIcon}>
               <Popup>
                 <LaunchPointPopup title="Fim da trajetória" record={endRecord} fallbackLabel="Fim da trajetoria" />
               </Popup>
