@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import L from 'leaflet';
-import { MapContainer, Marker, Polyline, Popup, TileLayer, useMap } from 'react-leaflet';
+import { LayersControl, MapContainer, Marker, Polyline, Popup, TileLayer, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
@@ -49,6 +49,7 @@ function LaunchPointPopup({
   record?: MapProps['trajectoryRecords'][number];
   fallbackLabel: string;
 }) {
+  // TODO: move formatters to utils
   const formatNumber = (value: number, digits = 2) => value.toFixed(digits);
   const formatVelocity = (velocity: number) => `${formatNumber(velocity)} m/s`;
   const formatBattery = (battery: number) => `${formatNumber(battery)} V`;
@@ -96,15 +97,26 @@ export default function MyMap(props: MapProps) {
   const endPosition = hasTrajectory ? trajectory[trajectory.length - 1] : position;
   const startRecord = trajectoryRecords[0];
   const endRecord = trajectoryRecords[trajectoryRecords.length - 1];
+  const { BaseLayer } = LayersControl;
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: mapHeight }}>
       <MapContainer center={position} zoom={zoom} scrollWheelZoom={true} style={{ height: '100%', width: '100%' }}>
         <FitBoundsToTrajectory trajectory={trajectory} />
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
+        <LayersControl position="topright">
+          <BaseLayer checked name="Mapa">
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+          </BaseLayer>
+          <BaseLayer name="Satélite">
+            <TileLayer
+              attribution="Tiles &copy; Esri"
+              url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+            />
+          </BaseLayer>
+        </LayersControl>
         {hasTrajectory && <Polyline positions={trajectory} pathOptions={{ color: lineColor, weight: lineWeight }} />}
 
         {hasTrajectory ? (

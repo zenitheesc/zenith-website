@@ -108,7 +108,7 @@ export default function LaunchDetailsPage() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Container maxWidth="lg" sx={{ py: 6 }}>
+      <Container maxWidth="xl" sx={{ py: 2 }}>
         <Stack spacing={3}>
           <Button component={Link} href="/launches" startIcon={<ArrowBackIcon />} sx={{ width: 'fit-content' }}>
             Voltar para lançamentos
@@ -137,7 +137,7 @@ export default function LaunchDetailsPage() {
 
           <Box>
             <Typography variant="h5" component="h2" sx={{ fontWeight: 700, mb: 2 }}>
-              Leituras do lançamento
+              Trajetória do lançamento
             </Typography>
           </Box>
         </Stack>
