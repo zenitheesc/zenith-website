@@ -57,7 +57,7 @@ export const formatLaunchDatetime = (datetime: string): string => {
     locale: ptBR
   });
 
-  return `${formattedDate} - ${date.toLocaleTimeString('pt-BR')} UTC`;
+  return `${formattedDate} - ${date.toLocaleTimeString('pt-BR')}`;
 };
 
 /**
