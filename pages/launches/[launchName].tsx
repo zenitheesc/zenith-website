@@ -136,9 +136,9 @@ export default function LaunchDetailsPage() {
                     <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap' }} useFlexGap>
                       {/* <Chip label="Altitude máxima" color="primary" variant="outlined" /> */}
                       <Chip
-                        label={`Altitude máxima: ${formatAltitude(launch.max_altitude)} m (${formatAltitudeInKm(
+                        label={`Altitude máxima: ${formatAltitude(launch.max_altitude)} (${formatAltitudeInKm(
                           launch.max_altitude
-                        )} km)`}
+                        )})`}
                         variant="outlined"
                         color="primary"
                       />
