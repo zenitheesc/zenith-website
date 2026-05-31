@@ -8,7 +8,7 @@ function HomepageHeroSection() {
   const title = t('homePage:homePageHero.title');
   const subtitle = t('homePage:homePageHero.subtitle');
 
-  useEffect(() => { 
+  useEffect(() => {
     let isMounted = true;
 
     const initializeParticles = async () => {
