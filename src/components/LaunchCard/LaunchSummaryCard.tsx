@@ -34,7 +34,7 @@ export default function LaunchSummaryCard({ launch, onDetailsClick }: LaunchSumm
       </CardContent>
       <CardActions sx={{ justifyContent: 'flex-end' }}>
         <Button size="small" endIcon={<ChevronRightIcon />} onClick={() => onDetailsClick(launch)}>
-          Ver detalhes
+          Ver trajetória
         </Button>
       </CardActions>
     </Card>

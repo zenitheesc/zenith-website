@@ -12,6 +12,7 @@ import HeroSection from '@/components/projects-components/HeroSection';
 import { LOCALE } from '@/src/shared/consts/locales.const';
 
 const SELECTED_LAUNCH_STORAGE_KEY = 'zenith-selected-launch';
+const SCROLL_POSITION_KEY = 'zenith-launches-scroll';
 
 // TODO mover textos para arquivo de tradução
 export default function LaunchesPage() {
@@ -22,10 +23,19 @@ export default function LaunchesPage() {
   const launchesTitle = t('allLaunches:allLaunchesPage.header.title');
   const launchesDescription = t('allLaunches:allLaunchesPage.header.description');
 
-  useEffect(() => {}, [isLoadingAllLaunches, launches]);
+  useEffect(() => {
+    if (isLoadingAllLaunches || launches.length === 0) return;
+
+    const savedScroll = sessionStorage.getItem(SCROLL_POSITION_KEY);
+    if (savedScroll) {
+      window.scrollTo({ top: parseInt(savedScroll), behavior: 'instant' });
+      sessionStorage.removeItem(SCROLL_POSITION_KEY);
+    }
+  }, [isLoadingAllLaunches, launches]);
 
   const handleLaunchDetails = (launch: (typeof launches)[number]) => {
     sessionStorage.setItem(SELECTED_LAUNCH_STORAGE_KEY, JSON.stringify(launch));
+    sessionStorage.setItem(SCROLL_POSITION_KEY, String(window.scrollY));
     router.push(`/launches/${slugifyLaunchName(launch.name)}`);
   };
 
