@@ -71,7 +71,7 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        
+        background-position: center;
     }
 
     .imgContainer {
