@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Alert, Box, Button, Card, CardContent, Chip, CircularProgress, Container, Stack, Typography } from '@mui/material';
 import {
@@ -83,8 +82,7 @@ export default function LaunchDetailsPage() {
       <Container maxWidth="xl" sx={{ py: 2 }}>
         <Stack spacing={1}>
           <Button
-            component={Link}
-            href="/launches"
+            onClick={() => router.back()}
             startIcon={<ArrowBackIcon />}
             sx={{ width: 'fit-content', margin: 0, padding: 0 }}
           >

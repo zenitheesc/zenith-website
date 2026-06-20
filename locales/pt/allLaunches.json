@@ -1,4 +1,12 @@
 {
+  "metaTags": {
+    "pageName": "lançamentos",
+    "lang": "pt",
+    "pageTitle": "Lançamentos",
+    "title": "Lançamentos",
+    "description": "Acompanhe alguns  lançamentos e os dados de cada missão.",
+    "subtitle": "Acompanhe alguns  lançamentos e os dados de cada missão."
+  },
   "allLaunchesPage": {
     "header": {
       "title": "Lançamentos",
