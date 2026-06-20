@@ -1,7 +1,7 @@
 {
-    "navBar": ["SOBRE NÓS", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO", "OBSAT"],
-    "footer": {
-        "copyright": "© 2024  Zenith Aerospace",
-        "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
-    }
+  "navBar": ["SOBRE NÓS", "PROJETOS", "KURUMIM", "PROCESSO SELETIVO", "LANÇAMENTOS", "OBSAT"],
+  "footer": {
+    "copyright": "© 2024  Zenith Aerospace",
+    "easterEgg": "FEITO COM MUITO JAVASCRIPT E CONFUSÃO NO DISCORD"
+  }
 }
