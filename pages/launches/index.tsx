@@ -53,38 +53,41 @@ export default function LaunchesPage() {
         subtitle={t(LOCALE.LAUNCHES.META_TAGS.SUBTITLE)}
         page="launches"
       />
-      <Container maxWidth="lg" sx={containerSx}>
-        {error && (
-          <Alert severity="error" sx={errorAlertSx}>
-            {error}
-          </Alert>
-        )}
+      <Box sx={pageBackgroundSx}>
+        <Container maxWidth="lg" sx={containerSx}>
+          {error && (
+            <Alert severity="error" sx={errorAlertSx}>
+              {error}
+            </Alert>
+          )}
 
-        {isLoadingAllLaunches && (
-          <Box sx={loadingBoxSx}>
-            <CircularProgress />
-          </Box>
-        )}
+          {isLoadingAllLaunches && (
+            <Box sx={loadingBoxSx}>
+              <CircularProgress />
+            </Box>
+          )}
 
-        {!isLoadingAllLaunches && launches.length === 0 && <Alert severity="info">Nenhum lançamento encontrado.</Alert>}
+          {!isLoadingAllLaunches && launches.length === 0 && <Alert severity="info">Nenhum lançamento encontrado.</Alert>}
 
-        {!isLoadingAllLaunches && launches.length > 0 && (
-          <Box sx={launchesGridSx}>
-            {launches.map((launch) => (
-              <LaunchSummaryCard
-                key={`${launch.name}-${launch.launch_datetime}`}
-                launch={launch}
-                onDetailsClick={handleLaunchDetails}
-              />
-            ))}
-          </Box>
-        )}
-      </Container>
+          {!isLoadingAllLaunches && launches.length > 0 && (
+            <Box sx={launchesGridSx}>
+              {launches.map((launch) => (
+                <LaunchSummaryCard
+                  key={`${launch.name}-${launch.launch_datetime}`}
+                  launch={launch}
+                  onDetailsClick={handleLaunchDetails}
+                />
+              ))}
+            </Box>
+          )}
+        </Container>
+      </Box>
     </>
   );
 }
 
-const containerSx = { py: 6, backgroundColor: BACKGROUND_COLOR };
+const pageBackgroundSx = { backgroundColor: BACKGROUND_COLOR };
+const containerSx = { py: 6 };
 const errorAlertSx = { mb: 3 };
 const loadingBoxSx = { display: 'flex', justifyContent: 'center', py: 10 };
 const launchesGridSx = {
