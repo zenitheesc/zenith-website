@@ -8,12 +8,12 @@ import MapIcon from '@mui/icons-material/Map';
 
 export default function LaunchSummaryCard({ launch, onDetailsClick }: LaunchSummaryCardProps) {
   return (
-    <Card key={`${launch.name}-${launch.launch_datetime}`} elevation={1} sx={{ height: '100%', borderRadius: 3 }}>
+    <Card key={`${launch.name}-${launch.launch_datetime}`} elevation={1} sx={cardSx}>
       <CardHeader
-        sx={{ pb: 0 }}
+        sx={cardHeaderSx}
         title={
-          <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 2 }}>
-            <Typography variant="h6" component="h2" sx={{ fontWeight: 700 }}>
+          <Box sx={titleBoxSx}>
+            <Typography variant="h6" component="h2" sx={titleTypographySx}>
               {formatLaunchName(launch.name)}
             </Typography>
             <Chip icon={<HeightIcon />} label={formatAltitudeInKm(launch.max_altitude)} color="primary" variant="filled" />
@@ -21,14 +21,14 @@ export default function LaunchSummaryCard({ launch, onDetailsClick }: LaunchSumm
         }
         subheader={formatLaunchDatetime(launch.launch_datetime)}
       />
-      <CardContent sx={{ py: 0, mb: 0 }}>
+      <CardContent sx={cardContentSx}>
         <Stack spacing={2}>
-          <Box sx={{ display: 'flex', alignItems: 'flex-start' }}>
+          <Box sx={citiesBoxSx}>
             <LaunchAndLandingCities startLabel={launch.launch_city} endLabel={launch.landing_city} />
           </Box>
         </Stack>
       </CardContent>
-      <CardActions sx={{ justifyContent: 'flex-end', pt: 0 }}>
+      <CardActions sx={cardActionsSx}>
         <Button size="small" startIcon={<MapIcon />} endIcon={<ChevronRightIcon />} onClick={() => onDetailsClick(launch)}>
           Ver trajetória
         </Button>
@@ -36,3 +36,11 @@ export default function LaunchSummaryCard({ launch, onDetailsClick }: LaunchSumm
     </Card>
   );
 }
+
+const cardSx = { height: '100%', borderRadius: 3 };
+const cardHeaderSx = { pb: 0 };
+const titleBoxSx = { display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 2 };
+const titleTypographySx = { fontWeight: 700 };
+const cardContentSx = { py: 0, mb: 0 };
+const citiesBoxSx = { display: 'flex', alignItems: 'flex-start' };
+const cardActionsSx = { justifyContent: 'flex-end', pt: 0 };
