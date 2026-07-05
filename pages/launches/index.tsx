@@ -31,6 +31,12 @@ export default function LaunchesPage() {
     }
   }, [isLoadingAllLaunches, launches]);
 
+  useEffect(() => {
+    if (isLoadingAllLaunches || launches.length === 0) return;
+
+    router.prefetch('/launches/[launchName]', `/launches/${slugifyLaunchName(launches[0].name)}`);
+  }, [isLoadingAllLaunches, launches, router]);
+
   const handleLaunchDetails = (launch: (typeof launches)[number]) => {
     sessionStorage.setItem(SELECTED_LAUNCH_STORAGE_KEY, JSON.stringify(launch));
     sessionStorage.setItem(SCROLL_POSITION_KEY, String(window.scrollY));
