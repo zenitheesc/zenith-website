@@ -45,6 +45,10 @@ export default function LaunchDetailsPage() {
   );
 
   useEffect(() => {
+    router.prefetch('/launches');
+  }, [router]);
+
+  useEffect(() => {
     if (!router.isReady) {
       return;
     }
