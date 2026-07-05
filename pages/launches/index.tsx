@@ -19,7 +19,6 @@ const SCROLL_POSITION_KEY = 'zenith-launches-scroll';
 export default function LaunchesPage() {
   const { launches, isLoadingAllLaunches, error } = useAllLaunches();
   const router = useRouter();
-
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -38,15 +37,15 @@ export default function LaunchesPage() {
     router.push(`/launches/${slugifyLaunchName(launch.name)}`);
   };
 
+  const pageName = t(LOCALE.LAUNCHES.META_TAGS.PAGE_NAME);
+  const headTagsTitle = t(LOCALE.LAUNCHES.META_TAGS.TITLE);
+  const pageTitle = t(LOCALE.LAUNCHES.META_TAGS.PAGE_TITLE);
+  const pageDescription = t(LOCALE.LAUNCHES.META_TAGS.DESCRIPTION);
+  const lang = t(LOCALE.LAUNCHES.META_TAGS.LANG);
+
   return (
     <>
-      <HeadTags
-        pageName={t(LOCALE.LAUNCHES.META_TAGS.PAGE_NAME)}
-        title={t(LOCALE.LAUNCHES.META_TAGS.TITLE)}
-        description={t(LOCALE.LAUNCHES.META_TAGS.DESCRIPTION)}
-        pageTitle={t(LOCALE.LAUNCHES.META_TAGS.PAGE_TITLE)}
-        lang={t(LOCALE.LAUNCHES.META_TAGS.LANG)}
-      />
+      <HeadTags pageName={pageName} title={headTagsTitle} description={pageDescription} pageTitle={pageTitle} lang={lang} />
       <NavBar />
       <HeroSection
         backgroundImage="url(../images/Projetos/SondasAeroespaciais/Garatéa-II/photo4.webp)"
