@@ -10,6 +10,7 @@ import HeadTags from '@/components/general/HeadTags';
 import NavBar from '@/src/components/Navbar/NavBar';
 import HeroSection from '@/components/projects-components/HeroSection';
 import { LOCALE } from '@/src/shared/consts/locales.const';
+import { BACKGROUND_COLOR } from '@/src/shared/styles/colors';
 
 const SELECTED_LAUNCH_STORAGE_KEY = 'zenith-selected-launch';
 const SCROLL_POSITION_KEY = 'zenith-launches-scroll';
@@ -20,8 +21,6 @@ export default function LaunchesPage() {
   const router = useRouter();
 
   const { t } = useTranslation();
-  const launchesTitle = t('allLaunches:allLaunchesPage.header.title');
-  const launchesDescription = t('allLaunches:allLaunchesPage.header.description');
 
   useEffect(() => {
     if (isLoadingAllLaunches || launches.length === 0) return;
@@ -55,24 +54,15 @@ export default function LaunchesPage() {
         subtitle={t(LOCALE.LAUNCHES.META_TAGS.SUBTITLE)}
         page="launches"
       />
-      <Container maxWidth="lg" sx={{ py: 6 }}>
-        {/* <Stack spacing={1} sx={{ mb: 4 }}>
-          <Typography variant="h3" component="h1" sx={{ fontWeight: 800 }}>
-            {launchesTitle}
-          </Typography>
-          <Typography variant="body1" color="text.secondary">
-            {launchesDescription}
-          </Typography>
-        </Stack> */}
-
+      <Container maxWidth="lg" sx={containerSx}>
         {error && (
-          <Alert severity="error" sx={{ mb: 3 }}>
+          <Alert severity="error" sx={errorAlertSx}>
             {error}
           </Alert>
         )}
 
         {isLoadingAllLaunches && (
-          <Box sx={{ display: 'flex', justifyContent: 'center', py: 10 }}>
+          <Box sx={loadingBoxSx}>
             <CircularProgress />
           </Box>
         )}
@@ -80,17 +70,7 @@ export default function LaunchesPage() {
         {!isLoadingAllLaunches && launches.length === 0 && <Alert severity="info">Nenhum lançamento encontrado.</Alert>}
 
         {!isLoadingAllLaunches && launches.length > 0 && (
-          <Box
-            sx={{
-              display: 'grid',
-              gap: 3,
-              gridTemplateColumns: {
-                xs: '1fr',
-                sm: 'repeat(2, minmax(0, 1fr))',
-                md: 'repeat(2, minmax(0, 1fr))'
-              }
-            }}
-          >
+          <Box sx={launchesGridSx}>
             {launches.map((launch) => (
               <LaunchSummaryCard
                 key={`${launch.name}-${launch.launch_datetime}`}
@@ -104,3 +84,16 @@ export default function LaunchesPage() {
     </>
   );
 }
+
+const containerSx = { py: 6, backgroundColor: BACKGROUND_COLOR };
+const errorAlertSx = { mb: 3 };
+const loadingBoxSx = { display: 'flex', justifyContent: 'center', py: 10 };
+const launchesGridSx = {
+  display: 'grid',
+  gap: 3,
+  gridTemplateColumns: {
+    xs: '1fr',
+    sm: 'repeat(2, minmax(0, 1fr))',
+    md: 'repeat(2, minmax(0, 1fr))'
+  }
+};

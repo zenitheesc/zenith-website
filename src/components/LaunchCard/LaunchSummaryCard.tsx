@@ -4,16 +4,20 @@ import HeightIcon from '@mui/icons-material/Height';
 import LaunchAndLandingCities from '@/src/components/LaunchAndLandingCities/LaunchAndLandingCities';
 import { formatAltitudeInKm, formatLaunchDatetime, formatLaunchName } from '@/src/shared/utils/formatters.utils';
 import { LaunchSummaryCardProps } from '@/src/shared/props/components/launch-summary-card.props';
+import MapIcon from '@mui/icons-material/Map';
 
 export default function LaunchSummaryCard({ launch, onDetailsClick }: LaunchSummaryCardProps) {
   return (
-    <Card key={`${launch.name}-${launch.launch_datetime}`} elevation={4} sx={{ height: '100%', borderRadius: 3 }}>
+    <Card key={`${launch.name}-${launch.launch_datetime}`} elevation={1} sx={{ height: '100%', borderRadius: 3 }}>
       <CardHeader
         sx={{ pb: 0 }}
         title={
-          <Typography variant="h6" component="h2" sx={{ fontWeight: 700 }}>
-            {formatLaunchName(launch.name)}
-          </Typography>
+          <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 2 }}>
+            <Typography variant="h6" component="h2" sx={{ fontWeight: 700 }}>
+              {formatLaunchName(launch.name)}
+            </Typography>
+            <Chip icon={<HeightIcon />} label={formatAltitudeInKm(launch.max_altitude)} color="primary" variant="filled" />
+          </Box>
         }
         subheader={formatLaunchDatetime(launch.launch_datetime)}
       />
@@ -21,19 +25,11 @@ export default function LaunchSummaryCard({ launch, onDetailsClick }: LaunchSumm
         <Stack spacing={2}>
           <Box sx={{ display: 'flex', alignItems: 'flex-start' }}>
             <LaunchAndLandingCities startLabel={launch.launch_city} endLabel={launch.landing_city} />
-
-            <Chip
-              icon={<HeightIcon />}
-              label={formatAltitudeInKm(launch.max_altitude)}
-              color="primary"
-              variant="filled"
-              sx={{ alignSelf: 'flex-start', mt: 3 }}
-            />
           </Box>
         </Stack>
       </CardContent>
-      <CardActions sx={{ justifyContent: 'flex-end' }}>
-        <Button size="small" endIcon={<ChevronRightIcon />} onClick={() => onDetailsClick(launch)}>
+      <CardActions sx={{ justifyContent: 'flex-end', pt: 0 }}>
+        <Button size="small" startIcon={<MapIcon />} endIcon={<ChevronRightIcon />} onClick={() => onDetailsClick(launch)}>
           Ver trajetória
         </Button>
       </CardActions>
