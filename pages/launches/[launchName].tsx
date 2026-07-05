@@ -10,6 +10,7 @@ import {
   slugifyLaunchName
 } from '@/src/shared/utils/formatters.utils';
 import { useGetLaunchContent } from '@/src/core/services/launches/useGetLaunchContent.service';
+import { getAllLaunches } from '@/src/core/services/launches.service';
 import { LaunchSummary } from '@/src/shared/types/api/launches-api.types';
 import dynamic from 'next/dynamic';
 import LaunchAndLandingCities from '@/src/components/LaunchAndLandingCities/LaunchAndLandingCities';
@@ -32,6 +33,7 @@ export default function LaunchDetailsPage() {
   const launchName = typeof router.query.launchName === 'string' ? router.query.launchName : '';
   const [launch, setLaunch] = useState<LaunchSummary | null>(null);
   const [launchResolved, setLaunchResolved] = useState(false);
+  const [launchNotFound, setLaunchNotFound] = useState(false);
 
   const { records, isLoadingRecords, recordsError } = useGetLaunchContent(launch?.download_url ?? '', Boolean(launch));
 
@@ -53,32 +55,65 @@ export default function LaunchDetailsPage() {
       return;
     }
 
-    setLaunchResolved(false);
+    const controller = new AbortController();
 
-    const storedLaunch = sessionStorage.getItem(SELECTED_LAUNCH_STORAGE_KEY);
+    const resolveFromStorage = (): LaunchSummary | null => {
+      const storedLaunch = sessionStorage.getItem(SELECTED_LAUNCH_STORAGE_KEY);
+      if (!storedLaunch) {
+        return null;
+      }
 
-    if (!storedLaunch) {
-      setLaunch(null);
-      setLaunchResolved(true);
-      return;
-    }
+      try {
+        const parsedLaunch: LaunchSummary = JSON.parse(storedLaunch);
+        return slugifyLaunchName(parsedLaunch.name) === launchName ? parsedLaunch : null;
+      } catch {
+        return null;
+      }
+    };
 
-    try {
-      const parsedLaunch: LaunchSummary = JSON.parse(storedLaunch);
-      const storedLaunchName = slugifyLaunchName(parsedLaunch.name);
+    const resolveLaunch = async () => {
+      setLaunchResolved(false);
+      setLaunchNotFound(false);
 
-      if (storedLaunchName !== launchName) {
-        setLaunch(null);
+      const storedMatch = resolveFromStorage();
+      if (storedMatch) {
+        setLaunch(storedMatch);
         setLaunchResolved(true);
         return;
       }
 
-      setLaunch(parsedLaunch);
-    } catch {
-      setLaunch(null);
-    } finally {
-      setLaunchResolved(true);
-    }
+      try {
+        const allLaunches = await getAllLaunches();
+        if (controller.signal.aborted) {
+          return;
+        }
+
+        const matchedLaunch = allLaunches.find((item) => slugifyLaunchName(item.name) === launchName) ?? null;
+
+        if (matchedLaunch) {
+          sessionStorage.setItem(SELECTED_LAUNCH_STORAGE_KEY, JSON.stringify(matchedLaunch));
+          setLaunch(matchedLaunch);
+        } else {
+          setLaunch(null);
+          setLaunchNotFound(true);
+        }
+      } catch {
+        if (!controller.signal.aborted) {
+          setLaunch(null);
+          setLaunchNotFound(true);
+        }
+      } finally {
+        if (!controller.signal.aborted) {
+          setLaunchResolved(true);
+        }
+      }
+    };
+
+    resolveLaunch();
+
+    return () => {
+      controller.abort();
+    };
   }, [launchName, router.isReady]);
 
   return (
@@ -86,7 +121,7 @@ export default function LaunchDetailsPage() {
       <Container maxWidth="xl" sx={{ py: 2 }}>
         <Stack spacing={1}>
           <Button
-            onClick={() => router.back()}
+            onClick={() => router.push('/launches')}
             startIcon={<ArrowBackIcon />}
             sx={{ width: 'fit-content', margin: 0, padding: 0 }}
           >
@@ -100,14 +135,9 @@ export default function LaunchDetailsPage() {
               </Box>
             ))}
 
-          {!launchName ||
-            (!launch && (
-              <Alert severity="info">
-                {!launchName
-                  ? 'Lançamento não encontrado.'
-                  : 'Lançamento não encontrado nesta sessão. Volte para a lista e abra o detalhe novamente.'}
-              </Alert>
-            ))}
+          {launchResolved && (!launchName || (!launch && launchNotFound)) && (
+            <Alert severity="info">Lançamento não encontrado.</Alert>
+          )}
 
           {isLoadingRecords && (
             <Box sx={{ display: 'flex', justifyContent: 'center', py: 10 }}>
@@ -136,7 +166,6 @@ export default function LaunchDetailsPage() {
                     <LaunchAndLandingCities startLabel={launch.launch_city} endLabel={launch.landing_city} />
 
                     <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap' }} useFlexGap>
-                      {/* <Chip label="Altitude máxima" color="primary" variant="outlined" /> */}
                       <Chip
                         label={`Altitude máxima: ${formatAltitude(launch.max_altitude)} (${formatAltitudeInKm(
                           launch.max_altitude
