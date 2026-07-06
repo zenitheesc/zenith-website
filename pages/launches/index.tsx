@@ -77,10 +77,11 @@ export default function LaunchesPage() {
 
           {!isLoadingAllLaunches && launches.length > 0 && (
             <Box sx={launchesGridSx}>
-              {launches.map((launch) => (
+              {launches.map((launch, index) => (
                 <LaunchSummaryCard
                   key={`${launch.name}-${launch.launch_datetime}`}
                   launch={launch}
+                  index={index}
                   onDetailsClick={handleLaunchDetails}
                 />
               ))}
