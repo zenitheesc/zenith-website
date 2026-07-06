@@ -122,7 +122,7 @@ export default function LaunchDetailsPage() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Container maxWidth="xl" sx={{ py: 2 }}>
+      <Container sx={{ py: 2 }}>
         <Stack spacing={1}>
           <Button
             onClick={() => router.push('/launches')}
@@ -189,35 +189,28 @@ export default function LaunchDetailsPage() {
                 </CardContent>
               </Card>
 
-              <Box
-                sx={{
-                  width: '100%',
-                  maxWidth: '100%',
-                  mx: 'auto',
-                  overflow: 'hidden'
-                }}
-              >
-                <Box>
-                  <Typography variant="h5" component="h2" sx={{ fontWeight: 700, my: 2 }}>
-                    Trajetória do lançamento
-                  </Typography>
-                </Box>
-
-                <MapTrajectory
-                  position={[records[0]?.lat, records[0]?.lon]}
-                  zoom={20}
-                  trajectory={records.map((r) => [r.lat, r.lon])}
-                  trajectoryRecords={records}
-                  landingCity={launch.landing_city}
-                  lineColor="#f44336"
-                  lineWeight={4}
-                  mapHeight="100vh"
-                />
-              </Box>
+              <Typography variant="h5" component="h2" sx={{ fontWeight: 700, my: 2 }}>
+                Trajetória do lançamento
+              </Typography>
             </React.Fragment>
           )}
         </Stack>
       </Container>
+
+      {launch && records.length > 0 && (
+        <Box sx={{ width: '100%', overflow: 'hidden' }}>
+          <MapTrajectory
+            position={[records[0]?.lat, records[0]?.lon]}
+            zoom={20}
+            trajectory={records.map((r) => [r.lat, r.lon])}
+            trajectoryRecords={records}
+            landingCity={launch.landing_city}
+            lineColor="#f44336"
+            lineWeight={4}
+            mapHeight="100vh"
+          />
+        </Box>
+      )}
     </Box>
   );
 }
