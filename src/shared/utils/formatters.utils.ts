@@ -61,6 +61,6 @@ export const formatLaunchDatetime = (datetime: string): string => {
 };
 
 export const formatAltitude = (altitude: number) =>
-  new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(altitude) + ' m';
+  new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(altitude) + ' m';
 export const formatAltitudeInKm = (altitude: number) =>
-  `${new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(altitude / 1000)} km`;
+  `${new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(altitude / 1000)} km`;
