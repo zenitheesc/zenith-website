@@ -1,7 +1,10 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { Alert, Box, Button, Card, CardContent, Chip, CircularProgress, Container, Stack, Typography } from '@mui/material';
+import { Alert, Box, Button, Card, CardContent, CircularProgress, Container, Stack, Typography } from '@mui/material';
+import HeightIcon from '@mui/icons-material/Height';
+import ScheduleIcon from '@mui/icons-material/Schedule';
+import RouteIcon from '@mui/icons-material/Route';
 import {
   formatAltitude,
   formatAltitudeInKm,
@@ -14,6 +17,7 @@ import { getAllLaunches } from '@/src/core/services/launches.service';
 import { LaunchSummary } from '@/src/shared/types/api/launches-api.types';
 import dynamic from 'next/dynamic';
 import LaunchAndLandingCities from '@/src/components/LaunchAndLandingCities/LaunchAndLandingCities';
+import StatCard from '@/src/components/StatCard/StatCard';
 
 const SELECTED_LAUNCH_STORAGE_KEY = 'zenith-selected-launch';
 
@@ -163,22 +167,22 @@ export default function LaunchDetailsPage() {
                       </Typography>
                     </Box>
 
-                    <LaunchAndLandingCities startLabel={launch.launch_city} endLabel={launch.landing_city} />
-
                     <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap' }} useFlexGap>
-                      <Chip
-                        label={`Altitude máxima: ${formatAltitude(launch.max_altitude)} (${formatAltitudeInKm(
-                          launch.max_altitude
-                        )})`}
-                        variant="outlined"
-                        color="primary"
+                      <StatCard
+                        label="Lançamento e pouso"
+                        value={<LaunchAndLandingCities startLabel={launch.launch_city} endLabel={launch.landing_city} />}
+                        icon={<RouteIcon fontSize="small" />}
                       />
-                      <Chip
-                        label={`Duração aprox.: ${formatMissionDuration(
-                          records[0].datetime,
-                          records[records.length - 1].datetime
-                        )}`}
-                        variant="outlined"
+
+                      <StatCard
+                        label="Altitude máxima"
+                        value={`${formatAltitude(launch.max_altitude)} (${formatAltitudeInKm(launch.max_altitude)})`}
+                        icon={<HeightIcon fontSize="small" />}
+                      />
+                      <StatCard
+                        label="Duração aprox."
+                        value={formatMissionDuration(records[0].datetime, records[records.length - 1].datetime)}
+                        icon={<ScheduleIcon fontSize="small" />}
                       />
                     </Stack>
                   </Stack>
@@ -194,7 +198,7 @@ export default function LaunchDetailsPage() {
                 }}
               >
                 <Box>
-                  <Typography variant="h5" component="h2" sx={{ fontWeight: 700, mb: 2 }}>
+                  <Typography variant="h5" component="h2" sx={{ fontWeight: 700, my: 2 }}>
                     Trajetória do lançamento
                   </Typography>
                 </Box>
