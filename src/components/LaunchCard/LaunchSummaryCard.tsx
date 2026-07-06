@@ -7,16 +7,21 @@ import { LaunchSummaryCardProps } from '@/src/shared/props/components/launch-sum
 import MapIcon from '@mui/icons-material/Map';
 import { colors } from '@/src/shared/styles/colors';
 
-export default function LaunchSummaryCard({ launch, onDetailsClick }: LaunchSummaryCardProps) {
+export default function LaunchSummaryCard({ launch, index, onDetailsClick }: LaunchSummaryCardProps) {
   return (
     <Card key={`${launch.name}-${launch.launch_datetime}`} elevation={1} sx={cardSx}>
       <CardHeader
         sx={cardHeaderSx}
         title={
           <Box sx={titleBoxSx}>
-            <Typography variant="h6" component="h2" sx={titleTypographySx}>
-              {formatLaunchName(launch.name)}
-            </Typography>
+            <Box sx={titleTextBoxSx}>
+              <Typography variant="body2" color="text.secondary" sx={indexTypographySx}>
+                {`#${index + 1}`}
+              </Typography>
+              <Typography variant="h6" component="h2" sx={titleTypographySx}>
+                {formatLaunchName(launch.name)}
+              </Typography>
+            </Box>
             <Chip
               icon={<HeightIcon />}
               label={formatAltitudeInKm(launch.max_altitude)}
@@ -54,7 +59,9 @@ const cardSx = { height: '100%', borderRadius: 3 };
 const chipSx = { backgroundColor: colors.primary[600] };
 const cardHeaderSx = { pb: 0 };
 const titleBoxSx = { display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 2 };
+const titleTextBoxSx = { display: 'flex', alignItems: 'center', gap: 1 };
 const titleTypographySx = { fontWeight: 700 };
+const indexTypographySx = { fontWeight: 500, color: colors.primary[600] };
 const cardContentSx = { py: 0, mb: 0 };
 const citiesBoxSx = { display: 'flex', alignItems: 'flex-start' };
 const cardActionsSx = { justifyContent: 'flex-end', pt: 0 };
