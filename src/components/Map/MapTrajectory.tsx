@@ -1,11 +1,15 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import L from 'leaflet';
 import { LayersControl, MapContainer, Marker, Polyline, Popup, TileLayer, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
+import FullscreenIcon from '@mui/icons-material/Fullscreen';
+import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
+import { IconButton, Tooltip } from '@mui/material';
 import { MapProps } from '@/src/shared/types/map.types';
 import { formatAltitudeInKm, formatLaunchDatetime } from '@/src/shared/utils/formatters.utils';
+import { colors } from '@/src/shared/styles/colors';
 
 const parachutIconUrl = '/images/markersSondehub/parachute.svg';
 const payloadNotRecoveredIconUrl = '/images/markersSondehub/payload-not-recovered.png';
@@ -100,8 +104,9 @@ export default function MapTrajectory(props: MapProps) {
     landingCity = '',
     lineColor = '#d32f2f',
     lineWeight = 2,
-    mapHeight = '100vh'
+    mapHeight = '360px'
   } = props;
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const hasTrajectory = trajectory.length > 1;
   const startPosition = hasTrajectory ? trajectory[0] : position;
   const endPosition = hasTrajectory ? trajectory[trajectory.length - 1] : position;
@@ -113,18 +118,69 @@ export default function MapTrajectory(props: MapProps) {
   );
   const finalMarkerIcon = isUnknownEndPoint ? unknownEndMarkerIcon : endMarkerIcon;
 
+  useEffect(() => {
+    if (!isFullscreen) {
+      return;
+    }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsFullscreen(false);
+      }
+    };
+
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isFullscreen]);
+
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: mapHeight }}>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: isFullscreen ? '100vh' : mapHeight,
+        width: '100%',
+        position: isFullscreen ? 'fixed' : 'relative',
+        top: isFullscreen ? 0 : 'auto',
+        left: isFullscreen ? 0 : 'auto',
+        zIndex: isFullscreen ? 1300 : 'auto'
+      }}
+    >
+      <Tooltip title={isFullscreen ? 'Sair da tela cheia' : 'Expandir mapa'}>
+        <IconButton
+          onClick={() => setIsFullscreen((current) => !current)}
+          sx={{
+            position: 'absolute',
+            top: 90,
+            left: 8,
+            zIndex: 1400,
+            width: 40,
+            height: 40,
+            backgroundColor: 'background.paper',
+            boxShadow: 1,
+            '&:hover': { backgroundColor: 'background.paper' }
+          }}
+        >
+          {isFullscreen ? <FullscreenExitIcon fontSize="medium" /> : <FullscreenIcon fontSize="medium" />}
+        </IconButton>
+      </Tooltip>
+
       <MapContainer center={position} zoom={zoom} scrollWheelZoom={true} style={{ height: '100%', width: '100%' }}>
         <FitBoundsToTrajectory trajectory={trajectory} />
         <LayersControl position="topright">
-          <BaseLayer checked name="Mapa">
+          <BaseLayer name="Mapa">
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
           </BaseLayer>
-          <BaseLayer name="Satélite">
+          <BaseLayer checked name="Satélite">
             <TileLayer
               attribution="Tiles &copy; Esri"
               url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"

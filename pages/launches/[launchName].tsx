@@ -207,7 +207,7 @@ export default function LaunchDetailsPage() {
             landingCity={launch.landing_city}
             lineColor="#f44336"
             lineWeight={4}
-            mapHeight="100vh"
+            mapHeight="600px"
           />
         </Box>
       )}
