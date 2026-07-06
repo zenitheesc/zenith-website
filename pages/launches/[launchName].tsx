@@ -1,7 +1,10 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { Alert, Box, Button, Card, CardContent, Chip, CircularProgress, Container, Stack, Typography } from '@mui/material';
+import { Alert, Box, Button, Card, CardContent, CircularProgress, Container, Stack, Typography } from '@mui/material';
+import HeightIcon from '@mui/icons-material/Height';
+import ScheduleIcon from '@mui/icons-material/Schedule';
+import RouteIcon from '@mui/icons-material/Route';
 import {
   formatAltitude,
   formatAltitudeInKm,
@@ -10,9 +13,11 @@ import {
   slugifyLaunchName
 } from '@/src/shared/utils/formatters.utils';
 import { useGetLaunchContent } from '@/src/core/services/launches/useGetLaunchContent.service';
+import { getAllLaunches } from '@/src/core/services/launches.service';
 import { LaunchSummary } from '@/src/shared/types/api/launches-api.types';
 import dynamic from 'next/dynamic';
 import LaunchAndLandingCities from '@/src/components/LaunchAndLandingCities/LaunchAndLandingCities';
+import StatCard from '@/src/components/StatCard/StatCard';
 
 const SELECTED_LAUNCH_STORAGE_KEY = 'zenith-selected-launch';
 
@@ -32,6 +37,7 @@ export default function LaunchDetailsPage() {
   const launchName = typeof router.query.launchName === 'string' ? router.query.launchName : '';
   const [launch, setLaunch] = useState<LaunchSummary | null>(null);
   const [launchResolved, setLaunchResolved] = useState(false);
+  const [launchNotFound, setLaunchNotFound] = useState(false);
 
   const { records, isLoadingRecords, recordsError } = useGetLaunchContent(launch?.download_url ?? '', Boolean(launch));
 
@@ -45,44 +51,81 @@ export default function LaunchDetailsPage() {
   );
 
   useEffect(() => {
+    router.prefetch('/launches');
+  }, [router]);
+
+  useEffect(() => {
     if (!router.isReady) {
       return;
     }
 
-    setLaunchResolved(false);
+    const controller = new AbortController();
 
-    const storedLaunch = sessionStorage.getItem(SELECTED_LAUNCH_STORAGE_KEY);
+    const resolveFromStorage = (): LaunchSummary | null => {
+      const storedLaunch = sessionStorage.getItem(SELECTED_LAUNCH_STORAGE_KEY);
+      if (!storedLaunch) {
+        return null;
+      }
 
-    if (!storedLaunch) {
-      setLaunch(null);
-      setLaunchResolved(true);
-      return;
-    }
+      try {
+        const parsedLaunch: LaunchSummary = JSON.parse(storedLaunch);
+        return slugifyLaunchName(parsedLaunch.name) === launchName ? parsedLaunch : null;
+      } catch {
+        return null;
+      }
+    };
 
-    try {
-      const parsedLaunch: LaunchSummary = JSON.parse(storedLaunch);
-      const storedLaunchName = slugifyLaunchName(parsedLaunch.name);
+    const resolveLaunch = async () => {
+      setLaunchResolved(false);
+      setLaunchNotFound(false);
 
-      if (storedLaunchName !== launchName) {
-        setLaunch(null);
+      const storedMatch = resolveFromStorage();
+      if (storedMatch) {
+        setLaunch(storedMatch);
         setLaunchResolved(true);
         return;
       }
 
-      setLaunch(parsedLaunch);
-    } catch {
-      setLaunch(null);
-    } finally {
-      setLaunchResolved(true);
-    }
+      try {
+        const allLaunches = await getAllLaunches();
+        if (controller.signal.aborted) {
+          return;
+        }
+
+        const matchedLaunch = allLaunches.find((item) => slugifyLaunchName(item.name) === launchName) ?? null;
+
+        if (matchedLaunch) {
+          sessionStorage.setItem(SELECTED_LAUNCH_STORAGE_KEY, JSON.stringify(matchedLaunch));
+          setLaunch(matchedLaunch);
+        } else {
+          setLaunch(null);
+          setLaunchNotFound(true);
+        }
+      } catch {
+        if (!controller.signal.aborted) {
+          setLaunch(null);
+          setLaunchNotFound(true);
+        }
+      } finally {
+        if (!controller.signal.aborted) {
+          setLaunchResolved(true);
+        }
+      }
+    };
+
+    resolveLaunch();
+
+    return () => {
+      controller.abort();
+    };
   }, [launchName, router.isReady]);
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Container maxWidth="xl" sx={{ py: 2 }}>
+      <Container sx={{ py: 2 }}>
         <Stack spacing={1}>
           <Button
-            onClick={() => router.back()}
+            onClick={() => router.push('/launches')}
             startIcon={<ArrowBackIcon />}
             sx={{ width: 'fit-content', margin: 0, padding: 0 }}
           >
@@ -96,14 +139,9 @@ export default function LaunchDetailsPage() {
               </Box>
             ))}
 
-          {!launchName ||
-            (!launch && (
-              <Alert severity="info">
-                {!launchName
-                  ? 'Lançamento não encontrado.'
-                  : 'Lançamento não encontrado nesta sessão. Volte para a lista e abra o detalhe novamente.'}
-              </Alert>
-            ))}
+          {launchResolved && (!launchName || (!launch && launchNotFound)) && (
+            <Alert severity="info">Lançamento não encontrado.</Alert>
+          )}
 
           {isLoadingRecords && (
             <Box sx={{ display: 'flex', justifyContent: 'center', py: 10 }}>
@@ -129,58 +167,50 @@ export default function LaunchDetailsPage() {
                       </Typography>
                     </Box>
 
-                    <LaunchAndLandingCities startLabel={launch.launch_city} endLabel={launch.landing_city} />
-
                     <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap' }} useFlexGap>
-                      {/* <Chip label="Altitude máxima" color="primary" variant="outlined" /> */}
-                      <Chip
-                        label={`Altitude máxima: ${formatAltitude(launch.max_altitude)} (${formatAltitudeInKm(
-                          launch.max_altitude
-                        )})`}
-                        variant="outlined"
-                        color="primary"
+                      <StatCard
+                        label="Lançamento e pouso"
+                        value={<LaunchAndLandingCities startLabel={launch.launch_city} endLabel={launch.landing_city} />}
+                        icon={<RouteIcon fontSize="small" />}
                       />
-                      <Chip
-                        label={`Duração aprox.: ${formatMissionDuration(
-                          records[0].datetime,
-                          records[records.length - 1].datetime
-                        )}`}
-                        variant="outlined"
+
+                      <StatCard
+                        label="Altitude máxima"
+                        value={`${formatAltitude(launch.max_altitude)} (${formatAltitudeInKm(launch.max_altitude)})`}
+                        icon={<HeightIcon fontSize="small" />}
+                      />
+                      <StatCard
+                        label="Duração aprox."
+                        value={formatMissionDuration(records[0].datetime, records[records.length - 1].datetime)}
+                        icon={<ScheduleIcon fontSize="small" />}
                       />
                     </Stack>
                   </Stack>
                 </CardContent>
               </Card>
 
-              <Box
-                sx={{
-                  width: '100%',
-                  maxWidth: '100%',
-                  mx: 'auto',
-                  overflow: 'hidden'
-                }}
-              >
-                <Box>
-                  <Typography variant="h5" component="h2" sx={{ fontWeight: 700, mb: 2 }}>
-                    Trajetória do lançamento
-                  </Typography>
-                </Box>
-
-                <MapTrajectory
-                  position={[records[0]?.lat, records[0]?.lon]}
-                  zoom={20}
-                  trajectory={records.map((r) => [r.lat, r.lon])}
-                  trajectoryRecords={records}
-                  landingCity={launch.landing_city}
-                  lineColor="#f44336"
-                  lineWeight={4}
-                  mapHeight="100vh"
-                />
-              </Box>
+              <Typography variant="h5" component="h2" sx={{ fontWeight: 700, my: 2 }}>
+                Trajetória do lançamento
+              </Typography>
             </React.Fragment>
           )}
         </Stack>
       </Container>
+
+      {launch && records.length > 0 && (
+        <Box sx={{ width: '100%', overflow: 'hidden' }}>
+          <MapTrajectory
+            position={[records[0]?.lat, records[0]?.lon]}
+            zoom={20}
+            trajectory={records.map((r) => [r.lat, r.lon])}
+            trajectoryRecords={records}
+            landingCity={launch.landing_city}
+            lineColor="#f44336"
+            lineWeight={4}
+            mapHeight="600px"
+          />
+        </Box>
+      )}
     </Box>
   );
 }

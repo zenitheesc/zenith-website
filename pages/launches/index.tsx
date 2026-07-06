@@ -10,6 +10,7 @@ import HeadTags from '@/components/general/HeadTags';
 import NavBar from '@/src/components/Navbar/NavBar';
 import HeroSection from '@/components/projects-components/HeroSection';
 import { LOCALE } from '@/src/shared/consts/locales.const';
+import { BACKGROUND_COLOR } from '@/src/shared/styles/colors';
 
 const SELECTED_LAUNCH_STORAGE_KEY = 'zenith-selected-launch';
 const SCROLL_POSITION_KEY = 'zenith-launches-scroll';
@@ -18,10 +19,7 @@ const SCROLL_POSITION_KEY = 'zenith-launches-scroll';
 export default function LaunchesPage() {
   const { launches, isLoadingAllLaunches, error } = useAllLaunches();
   const router = useRouter();
-
   const { t } = useTranslation();
-  const launchesTitle = t('allLaunches:allLaunchesPage.header.title');
-  const launchesDescription = t('allLaunches:allLaunchesPage.header.description');
 
   useEffect(() => {
     if (isLoadingAllLaunches || launches.length === 0) return;
@@ -33,21 +31,27 @@ export default function LaunchesPage() {
     }
   }, [isLoadingAllLaunches, launches]);
 
+  useEffect(() => {
+    if (isLoadingAllLaunches || launches.length === 0) return;
+
+    router.prefetch('/launches/[launchName]', `/launches/${slugifyLaunchName(launches[0].name)}`);
+  }, [isLoadingAllLaunches, launches, router]);
+
   const handleLaunchDetails = (launch: (typeof launches)[number]) => {
     sessionStorage.setItem(SELECTED_LAUNCH_STORAGE_KEY, JSON.stringify(launch));
     sessionStorage.setItem(SCROLL_POSITION_KEY, String(window.scrollY));
     router.push(`/launches/${slugifyLaunchName(launch.name)}`);
   };
 
+  const pageName = t(LOCALE.LAUNCHES.META_TAGS.PAGE_NAME);
+  const headTagsTitle = t(LOCALE.LAUNCHES.META_TAGS.TITLE);
+  const pageTitle = t(LOCALE.LAUNCHES.META_TAGS.PAGE_TITLE);
+  const pageDescription = t(LOCALE.LAUNCHES.META_TAGS.DESCRIPTION);
+  const lang = t(LOCALE.LAUNCHES.META_TAGS.LANG);
+
   return (
     <>
-      <HeadTags
-        pageName={t(LOCALE.LAUNCHES.META_TAGS.PAGE_NAME)}
-        title={t(LOCALE.LAUNCHES.META_TAGS.TITLE)}
-        description={t(LOCALE.LAUNCHES.META_TAGS.DESCRIPTION)}
-        pageTitle={t(LOCALE.LAUNCHES.META_TAGS.PAGE_TITLE)}
-        lang={t(LOCALE.LAUNCHES.META_TAGS.LANG)}
-      />
+      <HeadTags pageName={pageName} title={headTagsTitle} description={pageDescription} pageTitle={pageTitle} lang={lang} />
       <NavBar />
       <HeroSection
         backgroundImage="url(../images/Projetos/SondasAeroespaciais/Garatéa-II/photo4.webp)"
@@ -55,52 +59,49 @@ export default function LaunchesPage() {
         subtitle={t(LOCALE.LAUNCHES.META_TAGS.SUBTITLE)}
         page="launches"
       />
-      <Container maxWidth="lg" sx={{ py: 6 }}>
-        {/* <Stack spacing={1} sx={{ mb: 4 }}>
-          <Typography variant="h3" component="h1" sx={{ fontWeight: 800 }}>
-            {launchesTitle}
-          </Typography>
-          <Typography variant="body1" color="text.secondary">
-            {launchesDescription}
-          </Typography>
-        </Stack> */}
+      <Box sx={pageBackgroundSx}>
+        <Container maxWidth="lg" sx={containerSx}>
+          {error && (
+            <Alert severity="error" sx={errorAlertSx}>
+              {error}
+            </Alert>
+          )}
 
-        {error && (
-          <Alert severity="error" sx={{ mb: 3 }}>
-            {error}
-          </Alert>
-        )}
+          {isLoadingAllLaunches && (
+            <Box sx={loadingBoxSx}>
+              <CircularProgress />
+            </Box>
+          )}
 
-        {isLoadingAllLaunches && (
-          <Box sx={{ display: 'flex', justifyContent: 'center', py: 10 }}>
-            <CircularProgress />
-          </Box>
-        )}
+          {!isLoadingAllLaunches && launches.length === 0 && <Alert severity="info">Nenhum lançamento encontrado.</Alert>}
 
-        {!isLoadingAllLaunches && launches.length === 0 && <Alert severity="info">Nenhum lançamento encontrado.</Alert>}
-
-        {!isLoadingAllLaunches && launches.length > 0 && (
-          <Box
-            sx={{
-              display: 'grid',
-              gap: 3,
-              gridTemplateColumns: {
-                xs: '1fr',
-                sm: 'repeat(2, minmax(0, 1fr))',
-                md: 'repeat(2, minmax(0, 1fr))'
-              }
-            }}
-          >
-            {launches.map((launch) => (
-              <LaunchSummaryCard
-                key={`${launch.name}-${launch.launch_datetime}`}
-                launch={launch}
-                onDetailsClick={handleLaunchDetails}
-              />
-            ))}
-          </Box>
-        )}
-      </Container>
+          {!isLoadingAllLaunches && launches.length > 0 && (
+            <Box sx={launchesGridSx}>
+              {launches.map((launch) => (
+                <LaunchSummaryCard
+                  key={`${launch.name}-${launch.launch_datetime}`}
+                  launch={launch}
+                  onDetailsClick={handleLaunchDetails}
+                />
+              ))}
+            </Box>
+          )}
+        </Container>
+      </Box>
     </>
   );
 }
+
+const pageBackgroundSx = { backgroundColor: BACKGROUND_COLOR };
+const containerSx = { py: 6 };
+const errorAlertSx = { mb: 3 };
+const loadingBoxSx = { display: 'flex', justifyContent: 'center', py: 10 };
+const launchesGridSx = {
+  display: 'grid',
+  gap: 3,
+  gridTemplateColumns: {
+    xs: '1fr',
+    sm: 'repeat(2, minmax(0, 1fr))',
+    md: 'repeat(2, minmax(0, 1fr))'
+  }
+};
