@@ -1,43 +1,53 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { LaunchSummary } from '@/src/shared/types/api/launches-api.types';
 import { getAllLaunches } from '../launches.service';
 
 export const useAllLaunches = () => {
   const [launches, setLaunches] = useState<LaunchSummary[]>([]);
   const [isLoadingAllLaunches, setIsLoadingAllLaunches] = useState(true);
+  const [isRefreshingLaunches, setIsRefreshingLaunches] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const isMountedRef = useRef(true);
 
-  useEffect(() => {
-    const controller = new AbortController();
+  const fetchLaunches = useCallback(async (forceRefresh: boolean): Promise<boolean> => {
+    setError(null);
 
-    const fetchLaunches = async () => {
-      setIsLoadingAllLaunches(true);
-      setError(null);
-
-      try {
-        const rawData = await getAllLaunches();
-        if (!controller.signal.aborted) {
-          setLaunches(rawData);
-        }
-      } catch (err) {
-        if (err instanceof Error && err.name === 'AbortError') {
-          return;
-        }
-
-        setError(err instanceof Error ? err.message : 'Ocorreu um erro inesperado');
-      } finally {
-        if (!controller.signal.aborted) {
-          setIsLoadingAllLaunches(false);
-        }
+    try {
+      const rawData = await getAllLaunches({ forceRefresh });
+      if (isMountedRef.current) {
+        setLaunches(rawData);
       }
-    };
-
-    fetchLaunches();
-
-    return () => {
-      controller.abort();
-    };
+      return true;
+    } catch (err) {
+      if (isMountedRef.current) {
+        setError(err instanceof Error ? err.message : 'Ocorreu um erro inesperado');
+      }
+      return false;
+    }
   }, []);
 
-  return { launches, isLoadingAllLaunches, error };
+  useEffect(() => {
+    isMountedRef.current = true;
+
+    fetchLaunches(false).finally(() => {
+      if (isMountedRef.current) {
+        setIsLoadingAllLaunches(false);
+      }
+    });
+
+    return () => {
+      isMountedRef.current = false;
+    };
+  }, [fetchLaunches]);
+
+  const refreshLaunches = useCallback(async (): Promise<boolean> => {
+    setIsRefreshingLaunches(true);
+    const succeeded = await fetchLaunches(true);
+    if (isMountedRef.current) {
+      setIsRefreshingLaunches(false);
+    }
+    return succeeded;
+  }, [fetchLaunches]);
+
+  return { launches, isLoadingAllLaunches, isRefreshingLaunches, refreshLaunches, error };
 };
