@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { Alert, Box, Button, Card, CardContent, CircularProgress, Container, Stack, Typography } from '@mui/material';
+import { Alert, Box, Button, Card, CardContent, CircularProgress } from '@mui/material';
+import { Container, Stack, ToggleButton, ToggleButtonGroup, Typography } from '@mui/material';
 import HeightIcon from '@mui/icons-material/Height';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import RouteIcon from '@mui/icons-material/Route';
@@ -38,12 +39,22 @@ export default function LaunchDetailsPage() {
   const [launch, setLaunch] = useState<LaunchSummary | null>(null);
   const [launchResolved, setLaunchResolved] = useState(false);
   const [launchNotFound, setLaunchNotFound] = useState(false);
+  const [mapViewMode, setMapViewMode] = useState<'2d' | '3d'>('3d');
 
   const { records, isLoadingRecords, recordsError } = useGetLaunchContent(launch?.download_url ?? '', Boolean(launch));
 
   const MapTrajectory = useMemo(
     () =>
       dynamic(() => import('@/src/components/Map/MapTrajectory'), {
+        loading: () => <p>A map is loading</p>,
+        ssr: false
+      }),
+    []
+  );
+
+  const MapTrajectory3D = useMemo(
+    () =>
+      dynamic(() => import('@/src/components/Map/MapTrajectory3D'), {
         loading: () => <p>A map is loading</p>,
         ssr: false
       }),
@@ -189,9 +200,25 @@ export default function LaunchDetailsPage() {
                 </CardContent>
               </Card>
 
-              <Typography variant="h5" component="h2" sx={{ fontWeight: 700, my: 2 }}>
-                Trajetória do lançamento
-              </Typography>
+              <Stack
+                direction="row"
+                spacing={2}
+                sx={{ alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', my: 2 }}
+              >
+                <Typography variant="h5" component="h2" sx={{ fontWeight: 700 }}>
+                  Trajetória do lançamento
+                </Typography>
+                <ToggleButtonGroup
+                  value={mapViewMode}
+                  exclusive
+                  size="small"
+                  onChange={(_event, value: '2d' | '3d' | null) => value && setMapViewMode(value)}
+                  aria-label="Modo de visualização do mapa"
+                >
+                  <ToggleButton value="2d">2D</ToggleButton>
+                  <ToggleButton value="3d">3D</ToggleButton>
+                </ToggleButtonGroup>
+              </Stack>
             </React.Fragment>
           )}
         </Stack>
@@ -199,16 +226,20 @@ export default function LaunchDetailsPage() {
 
       {launch && records.length > 0 && (
         <Box sx={{ width: '100%', overflow: 'hidden' }}>
-          <MapTrajectory
-            position={[records[0]?.lat, records[0]?.lon]}
-            zoom={20}
-            trajectory={records.map((r) => [r.lat, r.lon])}
-            trajectoryRecords={records}
-            landingCity={launch.landing_city}
-            lineColor="#f44336"
-            lineWeight={4}
-            mapHeight="600px"
-          />
+          {mapViewMode === '2d' ? (
+            <MapTrajectory
+              position={[records[0]?.lat, records[0]?.lon]}
+              zoom={20}
+              trajectory={records.map((r) => [r.lat, r.lon])}
+              trajectoryRecords={records}
+              landingCity={launch.landing_city}
+              lineColor="#f44336"
+              lineWeight={4}
+              mapHeight="600px"
+            />
+          ) : (
+            <MapTrajectory3D records={records} lineColor="#f44336" lineWeight={4} mapHeight="600px" />
+          )}
         </Box>
       )}
     </Box>

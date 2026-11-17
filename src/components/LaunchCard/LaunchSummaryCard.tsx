@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { Card, CardActions, CardContent, CardHeader, Button, Chip, Stack, Typography, Box } from '@mui/material';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import HeightIcon from '@mui/icons-material/Height';
@@ -6,6 +7,18 @@ import { formatAltitudeInKm, formatLaunchDatetime, formatLaunchName } from '@/sr
 import { LaunchSummaryCardProps } from '@/src/shared/props/components/launch-summary-card.props';
 import MapIcon from '@mui/icons-material/Map';
 import { colors } from '@/src/shared/styles/colors';
+
+/** Permite quebra de linha depois de "_" e "-", para nomes como "014_J4840095_day_2" não estourarem o card. */
+const withSeparatorBreaks = (text: string) =>
+  text
+    .replace(/[_-]/g, '$&\n')
+    .split('\n')
+    .map((part, index) => (
+      <Fragment key={index}>
+        {index > 0 && <wbr />}
+        {part}
+      </Fragment>
+    ));
 
 export default function LaunchSummaryCard({ launch, index, onDetailsClick }: LaunchSummaryCardProps) {
   return (
@@ -19,7 +32,7 @@ export default function LaunchSummaryCard({ launch, index, onDetailsClick }: Lau
                 {`#${index + 1}`}
               </Typography>
               <Typography variant="h6" component="h2" sx={titleTypographySx}>
-                {formatLaunchName(launch.name)}
+                {withSeparatorBreaks(formatLaunchName(launch.name))}
               </Typography>
             </Box>
             <Chip
@@ -56,11 +69,11 @@ export default function LaunchSummaryCard({ launch, index, onDetailsClick }: Lau
 }
 
 const cardSx = { height: '100%', borderRadius: 3 };
-const chipSx = { backgroundColor: colors.primary[600] };
-const cardHeaderSx = { pb: 0 };
+const chipSx = { backgroundColor: colors.primary[600], flexShrink: 0 };
+const cardHeaderSx = { pb: 0, '& .MuiCardHeader-content': { minWidth: 0 } };
 const titleBoxSx = { display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 2 };
-const titleTextBoxSx = { display: 'flex', alignItems: 'center', gap: 1 };
-const titleTypographySx = { fontWeight: 700 };
+const titleTextBoxSx = { display: 'flex', alignItems: 'center', gap: 1, minWidth: 0 };
+const titleTypographySx = { fontWeight: 700, minWidth: 0, overflowWrap: 'anywhere' };
 const indexTypographySx = { fontWeight: 500, color: colors.primary[600] };
 const cardContentSx = { py: 0, mb: 0 };
 const citiesBoxSx = { display: 'flex', alignItems: 'flex-start' };
