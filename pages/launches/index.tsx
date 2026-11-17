@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useAllLaunches } from '@/src/core/services/launches/useGetAllLaunches.service';
 import { slugifyLaunchName } from '@/src/shared/utils/formatters.utils';
-import { Alert, Box, CircularProgress, Container, Stack, Typography } from '@mui/material';
+import { Alert, Box, Button, CircularProgress, Container, Snackbar } from '@mui/material';
+import RefreshIcon from '@mui/icons-material/Refresh';
 import type {} from '@mui/lab/themeAugmentation';
 import useTranslation from 'next-translate/useTranslation';
 import LaunchSummaryCard from '@/src/components/LaunchCard/LaunchSummaryCard';
@@ -17,9 +18,22 @@ const SCROLL_POSITION_KEY = 'zenith-launches-scroll';
 
 // TODO mover textos para arquivo de tradução
 export default function LaunchesPage() {
-  const { launches, isLoadingAllLaunches, error } = useAllLaunches();
+  const { launches, isLoadingAllLaunches, isRefreshingLaunches, refreshLaunches, error } = useAllLaunches();
   const router = useRouter();
   const { t } = useTranslation();
+  const [isRefreshSnackbarOpen, setIsRefreshSnackbarOpen] = useState(false);
+
+  const handleRefreshLaunches = async () => {
+    const succeeded = await refreshLaunches();
+    if (succeeded) {
+      setIsRefreshSnackbarOpen(true);
+    }
+  };
+
+  const handleCloseRefreshSnackbar = (_event?: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') return;
+    setIsRefreshSnackbarOpen(false);
+  };
 
   useEffect(() => {
     if (isLoadingAllLaunches || launches.length === 0) return;
@@ -61,6 +75,19 @@ export default function LaunchesPage() {
       />
       <Box sx={pageBackgroundSx}>
         <Container maxWidth="lg" sx={containerSx}>
+          {!isLoadingAllLaunches && (
+            <Box sx={toolbarSx}>
+              <Button
+                variant="outlined"
+                onClick={handleRefreshLaunches}
+                disabled={isRefreshingLaunches}
+                startIcon={isRefreshingLaunches ? <CircularProgress size={18} color="inherit" /> : <RefreshIcon />}
+              >
+                {t(LOCALE.LAUNCHES.ACTIONS.REFRESH)}
+              </Button>
+            </Box>
+          )}
+
           {error && (
             <Alert severity="error" sx={errorAlertSx}>
               {error}
@@ -89,13 +116,27 @@ export default function LaunchesPage() {
           )}
         </Container>
       </Box>
+
+      <Snackbar
+        open={isRefreshSnackbarOpen}
+        autoHideDuration={3000}
+        onClose={handleCloseRefreshSnackbar}
+        anchorOrigin={snackbarAnchorOrigin}
+      >
+        <Alert onClose={handleCloseRefreshSnackbar} severity="success" variant="filled" sx={snackbarAlertSx}>
+          {t(LOCALE.LAUNCHES.ACTIONS.REFRESH_SUCCESS)}
+        </Alert>
+      </Snackbar>
     </>
   );
 }
 
 const pageBackgroundSx = { backgroundColor: BACKGROUND_COLOR };
 const containerSx = { py: 6 };
+const toolbarSx = { display: 'flex', justifyContent: 'flex-end', mb: 3 };
 const errorAlertSx = { mb: 3 };
+const snackbarAnchorOrigin = { vertical: 'bottom', horizontal: 'center' } as const;
+const snackbarAlertSx = { width: '100%' };
 const loadingBoxSx = { display: 'flex', justifyContent: 'center', py: 10 };
 const launchesGridSx = {
   display: 'grid',

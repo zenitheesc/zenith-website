@@ -6,6 +6,10 @@ export const LAUNCHES = {
     TITLE: 'allLaunches:metaTags.title',
     DESCRIPTION: 'allLaunches:metaTags.description',
     SUBTITLE: 'allLaunches:metaTags.subtitle'
+  },
+  ACTIONS: {
+    REFRESH: 'allLaunches:actions.refresh',
+    REFRESH_SUCCESS: 'allLaunches:actions.refreshSuccess'
   }
 } as const;
 

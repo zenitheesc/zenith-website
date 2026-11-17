@@ -4,5 +4,9 @@
       "title": "Lançamentos",
       "description": "Acompanhe os lançamentos e os dados de cada missão."
     }
+  },
+  "actions": {
+    "refresh": "Refresh launches",
+    "refreshSuccess": "Data updated"
   }
 }
